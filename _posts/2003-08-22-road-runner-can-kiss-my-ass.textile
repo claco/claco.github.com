@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Road Runner Can Kiss My Ass"
+category: WTF
+published:
+  epoch: 1061601552
+  utc: 2003-08-23T01:19:12
+---
+
+<p>
+Starting sometime in the last month, Sham Warner/Choad Runner decided it would be a wise idea to block all incoming email from "Residential" internet users. To bad I'm a fucking Business user. Repeat after me: <strong>DSL does not always equal residential customer</strong>.  Butt huggers.
+</p>
+<pre>
+<samp>&lt;xxxxx@neo.rr.com&gt;: host ohmx04.mgw.rr.com[65.24.0.113] said: 550 5.7.1 Mail
+    Refused - dsl.akrnoh.ameritech.net_Residential_Range - See
+   <a href="http://security.rr.com/residential.htm"> http://security.rr.com/residential.htm</a> - 030813d</samp>
+</pre>
+
+
+<p>
+Now I have to wade through god knows how many people and forms just to get their DNS to delegate reverse lookups for my IP block to my servers. That should be fun to explain.
+</p>
+
+<ins>
+<h4>Update</h4>
+<p>
+With a little Postfix magic, two can play this game.
+</p>
+
+
+<pre>
+<samp>/etc/postfix/main.cf
+     smtp_sasl_auth_enable = yes
+     smtp_sasl_password_maps = hash:/etc/postfix/saslpass
+     smtp_sasl_security_options =
+ 
+/etc/postfix/transport
+     .rr.com     smtp:[smtp.sbcglobal.yahoo.com]
+ 
+/etc/postfix/saslpass
+     smtp-sbc-v1.mail.vip.sc5.yahoo.com     xxxx@sbcglobal.net:yourpassword
+ 
+$ postmap /etc/postfix/transport
+$ postmap /etc/postfix/saslpass
+$ postfix reload</samp>
+</pre>
+
+
+<p>
+There. Now I can sit around without stressing over undeliverables and see how long it takes fro the DNS request to go through the SBC pipeline.
+</p>
+</ins>
+
+

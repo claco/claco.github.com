@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Handel 0.03 Released"
+category: Perl
+published:
+  epoch: 1108653146
+  utc: 2005-02-17T15:12:26
+---
+
+I finally got a few release versions of <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> out the door complete with an assload of tests including the XSP taglib tests. I also included a small cart demo in AxKit/XSP. It's not feature complete, but it's start.
+
+I got bored last night and decided to install <a href="http://search.cpan.org/search?query=Template-Toolkit&amp;mode=distribution">Template Toolkit 2</a> for the first time. After getting <a href="http://search.cpan.org/search?query=Apache::Template&amp;mode=distribution">Apache::Template</a> installedas well, I set about the task of writing Template::Plugins for Handel along with a sister demo site built in TT2.
+
+As soon as I get that done I can kick version 0.04 out the door.
+
+And of course, I need to finish/fix this damn site; at least the stylesheets...
+
+

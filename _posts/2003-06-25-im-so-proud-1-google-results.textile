@@ -1,0 +1,49 @@
+---
+layout: post
+title: "I'm So Proud. #1 Google Results"
+category: Humor
+published:
+  epoch: 1056514841
+  utc: 2003-06-25T04:20:41
+---
+
+<p>
+I'm so proud, yet so very frightened that my site comes up as the first search result on Google for the following terms:
+</p>
+<ul>
+<li><a href="http://www.google.com/search?q=clownpenis%20fart">clownpenis fart</a> - <strong>#1 referrer from Google @ 767 Requests</strong></li>
+<li><a href="http://www.google.com/search?q=www.clownpenis.fart">www.clownpenis.fart</a> - <strong>#2 referrer from Google @ 511 Requests</strong></li>
+<li><a href="http://www.google.com/search?q=clownpenis.fart">clownpenis.fart</a></li>
+<li><a href="http://www.google.com/search?q=clownpenis">clownpenis</a></li>
+<li><a href="http://www.google.com/search?q=www.clownpenis">www.clownpenis</a></li>
+<li><a href="http://www.google.com/search?q=shaved%20monkeys">shaved monkeys</a></li>
+<li><a href="http://www.google.com/search?q=jacknut">jacknut</a></li>
+<li><a href="http://www.google.com/search?q=free%20geek%20porn">free geek porn</a></li>
+<li><a href="http://www.google.com/search?q=understatement%20of%20the%20year">understatement of the year</a></li>
+<li><a href="http://www.google.com/search?q=citibank%20atm">citibank atm</a></li>
+<li><a href="http://www.google.com/search?q=bsd%20porn">bsd porn</a></li>
+<li><a href="http://www.google.com/search?q=xhtml%20porn">xhtml porn</a></li>
+<li><a href="http://www.google.com/search?q=monkey%20speak">monkey speak</a></li>
+<li><a href="http://www.google.com/search?q=back%20to%20you%20fuckers">back to you fuckers</a></li>
+</ul>
+<p>
+And of course:
+</p>
+<ul>
+<li><a href="http://www.google.com/search?q=i%20can%27t%20focus">i can't focus</a></li>
+<li><a href="http://www.google.com/search?q=can%27t%20focus">can't focus</a></li>
+<li><a href="http://www.google.com/search?q=icantfocus">icantfocus</a></li>
+</ul>
+
+<p>
+Who knew clown penis was so popular? :-)
+</p>
+<p>
+While not number one on the list, I find the placement of the following result next to their Best Buy counterparts fitting <a href="/search/?search=best+buy">considering the piss poor service I received from them</a>. "Experts" indeed.
+</p>
+
+<ul>
+<li><a href="http://www.google.com/search?q=Best+Buy+repair">Best Buy repair</a></li>
+</ul>
+
+

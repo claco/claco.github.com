@@ -1,0 +1,14 @@
+---
+layout: post
+title: "New Layout"
+category: WWW
+published:
+  epoch: 1057978427
+  utc: 2003-07-12T02:53:47
+---
+
+<p>
+In another random act of tinkerage, I've changed the CSS layout for this site. I haven't yet tested it in things other than IE6/Mozilla/Firebird, but it should be fairly close. Nothing to complicated here. Please move along.
+</p>
+
+

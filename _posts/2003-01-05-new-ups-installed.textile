@@ -1,0 +1,14 @@
+---
+layout: post
+title: "New UPS Installed"
+category: Hardware
+published:
+  epoch: 1041782689
+  utc: 2003-01-05T16:04:49
+---
+
+<p>
+Well, the <a href="/blog/archives/entries/000074/">new CyberPower 1500AVR UPS</a> I bought yesterday is installed and running. All the servers got powered down and powered back on again without and frozen or dead hard drives. Bonus.
+</p>
+
+

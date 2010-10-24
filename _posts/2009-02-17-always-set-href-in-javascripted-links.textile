@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Always Set Href In Javascripted Links
+wordpress_id: 143
+wordpress_url: http://chrislaco.com/?p=143
+published:
+  epoch: 1234917120
+  utc: 2009-02-18T00:32:00
+---
+When using javascript in links onclick event to open windows or perform other navigation related tasks, always set href just like you would if javascript didn't exist. If javascript is broken, links still work.
+
+<pre class="brush:html">&lt;a href="http://example.com/" onclick="doStuff(this.href);"&gt;Open&lt;/a&gt;</pre>

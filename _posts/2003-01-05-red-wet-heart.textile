@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Red Wet Heart"
+category: WWW
+published:
+  epoch: 1041744776
+  utc: 2003-01-05T05:32:56
+---
+
+<p>
+Just the casual surfing of recently updated weblogs. I really dig the <a href="http://www.redwetheart.com/" title="Visit www.redwetheart.com">look of this site</a>.  Nice and clean. Simple. Easy to use and pleasing to look at. Great job!
+</p>
+
+

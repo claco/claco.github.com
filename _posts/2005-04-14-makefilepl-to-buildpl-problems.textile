@@ -1,0 +1,49 @@
+---
+layout: post
+title: "Makefile.PL To Build.PL Problems"
+category: Perl
+published:
+  epoch: 1113531426
+  utc: 2005-04-15T02:17:06
+---
+
+After <a href="http://www.nntp.perl.org/group/perl.qa/3889">starting</a> a big crapstorm on the <a href="http://www.nntp.perl.org/group/perl.qa">perl-qa list</a> about <samp>META.yml</samp> generation in <samp>ExtUtils::MakeMaker</samp> vs. <samp>Module::Build</samp>, and Schwerns following <a href="http://www.nntp.perl.org/group/perl.qa/3914">rant</a> about <samp>Module::Build</samp>, I decided to eat the dog food I've created and convert to using <samp>Module::Build</samp> and <samp>Build.PL</samp>.
+
+Minutes after starting I had issues with my dists that were based on <samp>Apache::Test</samp>. When running <samp>perl Build test</samp> I would be in an endless loop of A::T asking where <samp>Apache.exe</samp> was. That info was already in <samp>Apache/TestConfigData.pm</samp> and worked just fine under <samp>ExtUtils::MakeMaker</samp> and <samp>Makefile.PL</samp>.
+
+After a couple weeks of ignoring the problem and a few hours of frustration this evening, I finally found the problems. Yes, two problems not just one.
+First, under <samp>Makefile.PL</samp>, we have these two lines:
+
+<pre>$build->generate_script('t/TEST');
+$build->generate_script('t/SMOKE');</pre>
+
+This generates <samp>t/TEST</samp> and <samp>t/SMOKE</samp>, and calling <samp>make test</samp> always ran <samp>t/TEST</samp>.
+
+Now under <samp>Build.PL</samp>, those same two lines also created <samp>t/TEST</samp> and <samp>t/SMOKE</samp>, but running <samp>perl Build test</samp> trys to run <samp>t/SMOKE</samp> as the test script. That's the first problem. To further illustrate the issue this code:
+
+<pre>$build->generate_script('t/TEST');
+$build->generate_script('t/SMOKE');
+$build->generate_script('t/POOP');</pre>
+
+would cause <samp>perl Build test</samp> to try and run <samp>t/POOP</samp> as the apache test script.
+
+This leads me two the second problem [but the first symptom]. This sequence:
+
+<pre>perl Makefile.PL
+perl t/TEST
+perl t/SMOKE</pre>
+
+works just fine. <samp>TestConfigData.pm</samp> is read and everyone is happy. However:
+
+<pre>perl Makefile.PL
+perl t/SMOKE</pre>
+
+fails with the "where's apache" loop. It appears that <samp>t/TEST</samp> autogenerates <samp>t/conf/apache_test_config.pm</samp> while <samp>t/SMOKE</samp> does not. So, for now, <samp>t/SMOKE</samp> requires that <samp>t/TEST</samp> runs at least once before it.
+
+As for the solution, changing the <samp>Build.PL</samp> to:
+
+<pre>$build->generate_script('t/SMOKE');
+$build->generate_script('t/TEST');</pre>
+
+solves the current problem. It's not clear which version of <samp>generate_script (TestMM.pm vs. TestMB.pm)</samp> is correct or whether the config autogen behavour is really missing from <samp>t/SMOKE (TestSmoke.pm)</samp> or if that is by design.
+

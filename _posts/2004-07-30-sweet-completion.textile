@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Sweet Completion"
+category: Software
+published:
+  epoch: 1091219877
+  utc: 2004-07-30T20:37:57
+---
+
+I've <em>finally</em> "finshed" a project. By finished I mean the NUnit tests were written, the C# code completed, and the compiled HTML help documentation is done.
+
+I haven't been able to do that in...yeah: <strong>NEVER</strong>, at least not at work. That's why I turned it into a skunkworks project at home so I could complete software to the level I wanted it to be at.
+
+Go figure.
+
+No, let's see if I can do the same with that website -&gt; mod_perl conversion project I've been sitting on forever.
+
+

@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Another Visit From St. Murphy"
+category: WTF
+published:
+  epoch: 1055912692
+  utc: 2003-06-18T05:04:52
+---
+
+<p>
+So, we've been working on the kitchen for the last couple of weeks. Nothin to major. New flooring. New paint. New Trim/Moulding.
+We know we wanted to eventually replace the sink, but didn't think now was the time.
+</p>
+<p>
+Well, apparently St. Murphy didn't agree. :-) This morning, the garbage disposal broke and fell off of the sink.
+So, we got to put in a new sink, faucet, and garbage disposal this evening. How entertaining.
+</p>
+<p>
+Now that everything doesn't leak when we turn the water on, I'm going to bed. :-P
+</p>
+<p>
+Hopefully tomorrow night I can tackle:
+</p>
+<ul>
+<li>why firewire drive stopped working in my new game rig, yet works in my lappy</li>
+<li>why my front USB 2.0 ports on the case only work as 1.1 when they worked as 2.0 on my old computer</li>
+<li>why it won't overclock past a 3.3 :-(</li>
+<li>get the rest of the trim cut and stained</li>
+<li>clean the office</li>
+<li>reassemble my old computer</li>
+<li>sleep</li>
+<li>cure for cancer</li>
+<li>meaning of life</li>
+<li>UFO proof</li>
+</ul>
+
+

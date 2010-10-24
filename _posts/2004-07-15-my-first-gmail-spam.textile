@@ -1,0 +1,21 @@
+---
+layout: post
+title: "My First Gmail Spam"
+category: Humor
+published:
+  epoch: 1089917112
+  utc: 2004-07-15T18:45:12
+---
+
+I finally got my first Gmail spam after posting my new Gmail address on June 30th. It took 16 days to get my first spam. I figured it would be a whole lot sooner. It probably would've been longer, but I recently changed the email in the footer to my Gmail account.
+
+Oh yeah, it was a 419 Nigerian scam. Even better is the sponsored links Google spits out:
+
+<blockquote><pre>Sponsored Links
+Nigerian Properties
+Buy, sell, lease or rent real estate in Nigeria online
+www.nigerianproperties.com</pre></blockquote>
+
+Ha ha.
+
+

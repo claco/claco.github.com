@@ -1,0 +1,10 @@
+{% include header.textile %}
+
+{% if user %}
+  Tags: {{ page.tags | array_to_sentence_string }} <br />
+{% endif %}
+Created: {{ page.published.utc }}
+
+{{ content }}
+
+{% include footer.textile %}

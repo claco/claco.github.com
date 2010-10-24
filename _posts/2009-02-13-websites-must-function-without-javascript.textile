@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Websites Must Function Without Javascript
+wordpress_id: 87
+wordpress_url: http://chrislaco.com/?p=87
+published:
+  epoch: 1234585740
+  utc: 2009-02-14T04:29:00
+---
+Websites need to function without javascript enabled.  AJAX and Web 2.0 are fine tools, but don't abandon the basics. The ability to interact with a website without javascript means you can easily unit test your website just like you would your other classes and executables. Yes, I'm looking at your ASP.NET 2.0 PostBack Forms.
+
+<pre class="brush:shell">$ curl -F "username=claco" -F "password=badpass" http://localhost/login/ | grep "login failed"</pre>

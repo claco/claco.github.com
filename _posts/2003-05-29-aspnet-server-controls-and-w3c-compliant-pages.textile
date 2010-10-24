@@ -1,0 +1,36 @@
+---
+layout: post
+title: "ASP.NET, Server Controls, and W3C Compliant Pages"
+category: MicroShaft
+published:
+  epoch: 1054248173
+  utc: 2003-05-29T22:42:53
+---
+
+<p>
+Some <a href="http://www.haloscan.com/comments.php?user=scoble&amp;comment=3134">interesting comments</a> on the <a href="http://radio.weblogs.com/0001011/">Robert Scoble's</a> page regarding the previously mentioned <a href="http://www.tbray.org/ongoing/When/200x/2003/05/28/CSS-IE">Tim Bray article on MSIE and CSS issues and standards</a>.  Someone brought up ASP.NET server side controls, which prompted me to issue this rant.
+</p>
+
+<p>
+ASP.NET server side controls are a fucking joke, from the standpoint of having W3C compliant HTML/XHTML web pages. Why a company who is on the W3C standards committees and was building a project like ASP.NET from scratch couldn't get their controls to output valid fucking HTML, let alone XHTML is beyond my fathom. Although, this same company can't seem to build a compliant web page on their site either so at least they're consistent.  Even if the XHTML specs weren't final, update the shit now that they are and give us something better.
+</p>
+
+<p>
+This is even more maddening considering that server side controls in ASP.NET (along with the fact that ever page object is programmable without interspersed ASP code within the HTML) is the best idea to come out of .NET development. Things like the damn asp:form server side junk which outputs VIEWSTATE input elements even after you turn off all view state in the config is insane. So anyone who wants to move to ASP.NET and output W3C compliant pages (mainly XHTML) is forced into 3 shitty choices:
+</p>
+<ol>
+<li>Don't use any server side controls. Yeah, lets have the programmers reinvent the wheel every page, and slow down development time instead of using postbacks.</li>
+<li>Use server side controls and never have a page that validates.</li>
+<li>Spend a retarded amount of time inheriting and overriding all server side controls using customized <samp>Render()</samp> methods to output the desired code.</li>
+</ol>
+
+<p>
+Personally, #3 will be my option for another reason. I think server side controls that output HTML/XHTML is just a plain wrong idea from the start, esp. from the viewpoint of separation of content vs. look and feel.
+To me, HTML4 is part of the look and view (View) of the site. What if you want text, or PDF, or XHTML? Then your screwed. All server side controls should output XML, and accept a pointer to a style sheet so you can transform it's output on the fly to whatever you need.  
+</p>
+
+<p>
+Don't get me wrong. I love ASP.NET and C#, even after admitting that I'm a big Perl/Apache fan and usually hate the dark side. I'll never use .NET for freelance websites or projects so people don't have to buy SQL or W2K Server and licenses. But I'm not happy about having to jump through many hoops to be efficient using existing server side controls AND trying, begging, forcing ASP.NET to output compliant pages. 
+</p>
+
+

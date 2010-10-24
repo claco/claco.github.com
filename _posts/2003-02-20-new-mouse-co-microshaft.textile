@@ -1,0 +1,25 @@
+---
+layout: post
+title: "New Mouse c/o MicroShaft"
+category: Hardware
+published:
+  epoch: 1045794327
+  utc: 2003-02-21T02:25:27
+---
+
+<p>
+Well, by now you probably know how I feel about MicroShaft. I try not to sell my soul to Billy G. unless I really have to. Tonight was an exception however.
+</p>
+<p>
+I've been looking for a new mouse to use on the laptop. Having that damn mouse cord dangling around is a pain in the ass and all the 'notebook' mice are pathetic compared to normal mice.
+To make matters worse, ever cordless mouse that I've seen still has a 6' long dongle which on a laptop makes wireless even more pointless. Enter the <a href="http://www.microsoft.com/hardware/mouse/wiebt_info.asp">Wireless IntelliMouse Explorer for Bluetooth</a>
+</p>
+<p>
+Now I'm not really interested in the Bluetooth part. I'm sure there's something cool about it. What sold me on this cordless mouse was the notebook adapter included in the kit. Finally, someone who makes a small (well, smaller than a long corded wireless antenna) wireless dongle for notebook usage.
+</p>
+<p class="center">
+<img src="/blog/images/hardware/bluetooth_wireless_adapter.jpg" alt="Wireless IntelliMouse Bluetooth Adapters" />
+<img src="/blog/images/hardware/bluetooth_wireless_mouse.jpg" alt="Wireless IntelliMouse Explorer for Bluetooth" />
+</p>
+
+

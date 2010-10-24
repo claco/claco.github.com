@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Worldcom/MCI Billing New Math"
+category: WTF
+published:
+  epoch: 1055629348
+  utc: 2003-06-14T22:22:28
+---
+
+<p>
+No wonder Worldcom/MCI had money problems, <strong>because their fucking billing system doesn't work!</strong>
+That's right, they can't bill or do math do save their life. Sit back, and I shall share a story of billing lunacy.
+</p>
+<p>
+A long itme ago, in a land far far away, I was responsible for some servers on a Worldcom Dial Office ISDN line. This conneciton was a 'business' class account with half a C class of IP addresses and 24/7 uptme with <strong>no</strong>, I repeat <strong>no/none/zip/zilch/nada/zero</strong> hourly connect charges.
+</p>
+<p>
+Lo and behold one month, a new bill arrives for <strong>$5000.00+</strong>!@#$# And get this, I was being charged for a months worth of hourly charges, which is wrong. To top that off, it was for <strong>3368.368 hours</strong> for <strong>30</strong> days of service. Now let's go over that again: 24 hours x ~30 days somehow equals 3368.368 hours. Sure it does, on their planet. Our normal bill for the first 7 months or so was ~$126.00 including tax hoopla.
+</p>
+<p>
+So, I call in to billing and customer service. After 2 days, no one knows what the hell is wrong. They claim they will issue a credit and to pay the normal bill. Next month, you guessed if, same shit. I call  in again. Everyone pleads ignorance, says thers nothing thay can do, and they again issue a credit for the mysterious hourly rates on an unlimited account and we pay the normal fee.
+</p>
+<p>
+This shit went on for 6 months before we terminated our account with them. To this very day, we are still getting bills and phone calls about collection. Calling customer services and billing <em>still</em> yields pure ignorance and a blind eye to an obviously horribly stupid billing system. #$%$#@#
+</p>
+
+

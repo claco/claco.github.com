@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Going Low Tech"
+category: OffTopic
+published:
+  epoch: 1174715457
+  utc: 2007-03-24T05:50:57
+---
+
+I'm a programmer. I'm not a designer. I've never seen a site design I like that I also like on my content. Since I need to post more, and worry about design less, I'm going low tech. The new layout is pure minimal content with a little of style from the MT Style Contest, modified to style the Google Search AJAX API. Ugly, but functional.
+
+

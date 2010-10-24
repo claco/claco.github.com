@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Why I'll Hate ASP.NET 2.0/VS.NET 2005"
+category: MicroShaft
+published:
+  epoch: 1127242377
+  utc: 2005-09-20T18:52:57
+---
+
+First, let me say that there are many vastly improved things in ASP.NET 2.0 and Visual Studio (Express) 2005 to be praised. Master pages. SQL dependency caching. XHTML output. The list goes on and on.
+
+There is one thing in ASP.NET 2.0/Studio that really chaps my ass: the SQLDataSource control. You see, back in 1.1, when you dragged a table from the server explorer into your web form, a SQLConnection and SQLDataAdapter were created for you. Way cool. All of the code it created got put into the pages codebehind file.
+
+In 2.0, this SQLDataSource control stuffs a load of HTML server-side tag goop into your HTML...things like connection strings, stored procedure parameter declarations, etc. I call bullshit on that action. It defeats the purpose of codebehind and seperation of code/content.
+
+Sure, you can still program against the SQLConnector/SQLDataAdapter directly, but people who code using the toolbox controls are out of luck: it's either crap in your HTML, or start writing code. This seems like a big step backwords in 2.0.
+
+Apparently, I'm not alone. These links get the the heart of the problem:
+
+http://weblogs.asp.net/cazzu/archive/2004/08/25/LosingComponents.aspx
+http://lab.msdn.microsoft.com/ProductFeedback/viewfeedback.aspx?feedbackid=e2996990-64a5-4308-921d-245071e6f174
+
+

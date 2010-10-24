@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Ubuntu Breezy Desktop"
+category: Linux
+published:
+  epoch: 1129254527
+  utc: 2005-10-14T01:48:47
+---
+
+Since Ubuntu 5.10 Breezy Badger came out today, I decided to wipe my tinkered-up (technical term) 5.02 Hoary Hedgehog install and do a fresh install of Breezy. As usual, the only thing I had to fight was the wireless pcmcia card.
+
+Here's screenshot of my desktop after I got a not-so-brown wallpaper and tweaked the window style:
+
+<a title="Click image to view the full size image." href="/blog/images/screenshots/ubuntu.gif"><img src="/blog/images/screenshots/ubuntu_thumb.gif" alt="Ubuntu Screenshot"/></a>
+
+

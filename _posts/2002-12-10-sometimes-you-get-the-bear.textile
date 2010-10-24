@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Sometimes you get the bear..."
+category: FreeBSD
+published:
+  epoch: 1039576427
+  utc: 2002-12-11T03:13:47
+---
+
+<p>
+...and sometimes the bear gets you.
+</p>
+<h4>Nugget of goodness #1: renewing a VeriSign <acronym title="Secure Sockets Layer">SSL</acronym> Certificate.</h4>
+
+<p>
+I've done this a million times at work without incident. So of course, this time MicroShat proves me a liar.
+It was the usual routine, send in a new renewal request to VeriSign, pay for the renewal, and they send you back a 
+nice shiiy, umm..shiny new certificate to install.
+Upon opening the key manager in <acronym title="Internet Informaiton Server">IIS</acronym> and trying to install said certificate, you are greeted by a plethora of bad 
+password errors even though you know and can use your passphrase on the verisign site.
+To add flames to the fire, restoring the old keyset from backups also fails. Welcome to MicroShaft IIS SSL Keyring hell.
+</p>
+<p>
+Luckily, VeriSign iwll let you replace the cert (revoke, resubmit new <acronym title="Certificate Signing Request">CSR</acronym>) for no charge within the first 30 days. I guess this happens a lot.
+Once the renewal renewaled cert arrives, it installs fine. Weeeeeee.
+</p>
+<h4>Chapter #2: File server boot drive 'shits the bed'</h4>
+
+<p>
+As if I wasn't having enough fun. Come home, no proxy, no share drives, no tunes. Hmmmm.
+Hookup ye olde monitor and keyboard. Oy boy Wally! Hard Read Errors! Reboot into single user; <kbd>$ fsck /. Hard Read Errors</kbd>!
+Hot damn! It's a charlie foxtrot party!
+</p>
+<p>
+Luckily, everything important is on raid, and the boot is only 4110MB @ &lt; %50 capicity. Reappropriate one spare 3200MB 
+drive, reformat, repartition, reinstall minimal, mount elswhere, tar like crazy, rinse lather repeat.
+All is well again; until I buy a new hard drive to repeat the process.
+</p>
+<p>
+This is a great day.....FOR ME TO POOP ON!
+</p>
+
+

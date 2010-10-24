@@ -1,0 +1,14 @@
+---
+layout: post
+title: "One Year Gone"
+category: WTF
+published:
+  epoch: 1065657064
+  utc: 2003-10-08T23:51:04
+---
+
+<p>
+Holy crap. This blog has been around for a year as of Sunday the 5th. Where the hell did that come from.
+</p>
+
+

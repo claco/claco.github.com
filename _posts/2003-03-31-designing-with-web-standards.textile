@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Designing With Web Standards"
+category: WWW
+published:
+  epoch: 1049165036
+  utc: 2003-04-01T02:43:56
+---
+
+<p>
+I can't wait to get my paws on <a href="http://www.amazon.com/exec/obidos/ASIN/0735712018/ref%3Dnosim/jeffreyzeldmanprA/102-3740158-6344938">Designing With Web Standards</a> by Jeffrey Zeldman. I'm alreay pre-ordered and ready to read. While I was ther, I snagged <a href="http://www.amazon.com/exec/obidos/ASIN/1886411743/102-3740158-6344938">Absolute BSD: The Ultimate Guide to FreeBSD</a> by Michael Lucas and Jordan Hubbard.  All the reviews are 5 starts, and every seems to rave about the book. Number 5 needs more input.
+</p>
+
+<p class="center">
+<img src="/blog/images/www/absolutebsd.jpg" alt="Absolute BSD Book Cover" />
+</p>
+
+

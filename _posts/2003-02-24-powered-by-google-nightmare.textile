@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Powered By Google Nightmare"
+category: WWW
+published:
+  epoch: 1046104438
+  utc: 2003-02-24T16:33:58
+---
+
+<p>
+Sit back, and listen to my tale of why every large ISP who newly impliments the
+"Powered By Google" search on their site doesn't bother to test any of it.
+</p>
+<p>
+A long time ago at the day job, I decided to install a simple 404 page on the
+servers that would email me every time an internet user requested a resource
+that doesn't exist. Like all things Murphy, sometimes images of pages are
+forgotten during a rollout. No biggie. Better to know something is missing than to not bother checking.
+</p>
+<p>
+For the 3rd time in the last year however, I've started getting thousands of 404
+error emails a day from users of a large ISP implimenting the "Powered By Google" search and
+it's now time to vent. First it was Attbi.com, now it's AOL. You'd think these
+people would notice that every search result link with a querystring in it
+returns a 404 Not Found page. Guess not.
+</p>
+<ol>
+
+<li>Go to <a href="http://search.aol.com/aolcom/" title="AOL  Search">http://search.aol.com/aolcom/</a></li>
+<li>Enter <em>Carbon Fiber Fenders</em> into the search box and click the Search
+button.</li>
+<li>Click on the second search result labeled "Online Showoff" (that's not us
+BTW)</li>
+
+<li>Say hello to your new friend: the 404 NOt Found error.</li>
+<li>Page through the search results. Click on any url with querystrings. Say
+hello to your new friend 404 :-(</li>
+</ol>
+
+
+<p>
+<code><![CDATA[
+<a href="redir?src=websearch&amp;requestId=74ad6aa9215e6815&amp;clickedItemRank=
+2&amp;userQuery=Carbon+Fiber+Fenders&amp;clickedItemURN=
+http%3A%2F%2Fwww.onlineshowoff.com%2Fservices%2Fforum%2Fmessage.asp%253Fcid%253D
+20%2526tid%253D2881"  onmouseover="self.status='
+http://www.onlineshowoff.com/services/forum/message.asp?cid=20&tid=2881'; return
+true" onmouseout="self.status=''; return true">
+]]></code>
+</p>
+
+<p>
+Isn't that nice. Take note of this part:
+</p>
+
+<p>
+<code><![CDATA[
+clickedItemURN=
+http%3A%2F%2Fwww.onlineshowoff.com%2Fservices%2Fforum%2Fmessage.asp%253Fcid%253D
+20%2526tid%253D2881
+]]></code>
+</p>
+
+
+<p>
+When that crap comes out of their redirect script, we get this:
+</p>
+
+<p><code><![CDATA[
+http://www.onlineshowoff.com/services/forum/message.asp%3Fcid%3D20%26tid%3D2881
+]]></code>
+</p>
+
+<p>
+instead of this:
+</p>
+
+<p><code><![CDATA[
+http://www.onlineshowoff.com/services/forum/message.asp?cid=20&tid=2881
+]]></code>
+</p>
+
+<p>
+Briiiing. Clue Phone. It's for you AOL. 
+</p>
+

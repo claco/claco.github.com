@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Dot.Mil For Your Thoughts?"
+category: Humor
+published:
+  epoch: 1043597416
+  utc: 2003-01-26T16:10:16
+---
+
+<p>
+According to <a href="http://www.theregister.co.uk/content/55/29026.html" title="The Register article about .mil domains">this article</a> over at <a  href="http://www.theregister.co.uk/">The Register</a>, Google has cached poorly "secured" administration pages that allows anyone to create or alter their own .mil domain names. Real fuckin nice. As the people I work with like to point out, there is no shadow government or secret agency. Why? They're to fuckin stupid to run one. Check out the <a href="http://slashdot.org/article.pl?sid=03/01/26/1449249&amp;mode=flat&amp;tid=172" title="Slashdot thread about the Register article">Slashdot thread</a> on the matter.
+</p>
+
+

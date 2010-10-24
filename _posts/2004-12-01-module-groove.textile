@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Module Groove"
+category: Perl
+published:
+  epoch: 1101930508
+  utc: 2004-12-01T19:48:28
+---
+
+I'm glad I decided to take adopt a few <a href="http://search.cpan.org/~claco/">CPAN modules</a>. It's gotten me back into a groove of using source coontrol and <a href="http://svn.apache.org/viewcvs?view=rev&amp;rev=109277">contributing to other projects</a>. More importantly, it's gotten me back in programming mode at home instead of just sit on my ass mode.
+
+Along those lings, I'm thinking about an upgrade to <a href="http://subversion.tigris.org/">Subversion</a> from CVS. I don't do enough major things with CVS to need to upgrade to Subversion, but I think I like Subversions anon web access better than CVS. It sucks to run a copy of Apache2 to do it, but what the hell.
+
+Anyone out there got and experience with sharing anon CVS over the web vs. anon sharing of SVN?
+
+Either way, at least I have TortoiseCVS and TortoiseSVN.
+
+

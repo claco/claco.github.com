@@ -1,0 +1,25 @@
+---
+layout: post
+title: "2003 Resolutions"
+category: Humor
+published:
+  epoch: 1041403604
+  utc: 2003-01-01T06:46:44
+---
+
+<ol>
+<li>Slowly weed out alternate voices in head.</li>
+<li>Finish something. One thing. Any thing. Sweet completion here I come!</li>
+<li>Clean the office.</li>
+<li>Pay off credit card. Again.</li>
+<li>Remodel 3rd floor.</li>
+<li>Redesign/Simplify this site's construction.</li>
+<li>Finish converting from Windows to FreeBSD.</li>
+<li>Get my photo collection online.</li>
+<li>Finish repairing/ripping my CD collection to Ogg Vorbis.</li>
+<li>Salvage my old Compaq 18XL380. Ever room MUST have a computer in it. :-)</li>
+<li>Vacation. No really. This time I mean it.</li>
+</ol>
+
+
+

@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Netscape: R.I.P. Finally."
+category: WWW
+published:
+  epoch: 1058316853
+  utc: 2003-07-16T00:54:13
+---
+
+<p><a href="http://mozillazine.org/talkback.html?article=3422">"He's Dead Jim."</a>
+</p>
+<p>
+And I say "Don't let the door hit your ass on the way out" to the Netscape brand.
+</p>
+<p>
+It's a shame those people will get laid off, but I won't miss that "Netscape" browser name that goes along with that piece of shit Nutscrape 4.x that couldn't render a web page to save it's own ass. I hope now when Joe Sixpack hears that Netscape is dead, that he'll stop using that damn 4.x browser.
+</p>
+<p>Nor will I miss those damn Netscape 6 and 7 suites that were just Mozilla, with 12 extra pounds of marketing and bugz added on top. Good riddence.
+</p>
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Web Development: IE Sucks"
+category: WWW
+published:
+  epoch: 1055038229
+  utc: 2003-06-08T02:10:29
+---
+
+<p>
+I found this link via <a href="http://www.scripting.com/">Scripting News</a> to <a href="http://blogs.osafoundation.org/mitch/000224.html">this post by Mitch Kapor</a> about his switching to Mozilla.
+</p>
+<p>
+All other security, browsing, and standards issues aside between IE and Mozilla based browsers, I find that as a web developer, I simply can't develop web pages using IE any more. It's to devoid of decent page information. In Mozilla-based browsers, a page info command yields me dates, time, size, forms, images, cache info, standards info, etc. With browser extensions, I can even see the full resquest/response headers, turn off stylesheets, turn off font tags, highlight tables and block elements, show form contents, and even convert form post's to get's. 
+</p>
+<p>
+All of that makes my life as a web developer a whole lot easier than using IE. I would switch for those reasons alone, let alone less security issues, and more standards support.
+</p>
+
+

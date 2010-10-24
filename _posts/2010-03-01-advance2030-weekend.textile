@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: Advance2030 Weekend
+wordpress_id: 246
+wordpress_url: http://chrislaco.com/?p=246
+published:
+  epoch: 1267497840
+  utc: 2010-03-02T02:44:00
+---
+This last weekend, I was fortunate enough to attend the <a href="http://advance2030.wordpress.com/">Advance2030 Web Development Weekend</a> held on the LeanDog boat and spend some time with a great bunch of web folk from the area. This included sitting next to Joe Fiorini and Nate Klaiber and getting schooled in Rails on a nonstop basis. While the weekend was a great experience, I wanted to get some thoughts up about it while they're still fresh.
+
+Friday night was a great start. After a group gathering to go over the site, we split up into pairs to get a set of story cards created. This was a relatively new experience for me in terms of planning a development cycle.  After tinkering with Cucumber over the last month, it seems to fit right into the Agile/BDD way and it's something that certainly helps me focus on knowing what I plan on doing before I start coding.
+
+Saturday was a different story. I literally spent the first 5 hours or so struggling with the Rails environment chosen for the weekend. I'm no Rails expert and I understand why some gems were chosen, like Bundler in a forward looking approach to the impending Rails3 release.  But it seems a few of us had issues with it in combination with Authlogic because of which gems loaded first and if we had previously installed any gems using sudo instead of installing them into local gems. When it's all said and done, I could run rake spec but Command-R in Textmate never worked right. Even after moving on I spent a lot of time dealing with schema.rb merge conflicts when pulling from upstream. This isn't a terribly surprise given that file is a bottleneck of sorts when you have a lot of people adding migrations in rapid fire.
+
+All in all, I got nothing done Saturday and I'm not proud of it. I lost my will to live at around 3PM. If I were to start an event like this, I would give serious thought to removing some of these pain points for the developers, esp for people who aren't Rails experts. Stick to the stock Rails gem management setup. The less gems you load, the less shenanigans you have to fight, esp ones that try and manage gems/paths. At list for the first iteration. Also, I would either get the migrations/schema done before the event, or at least funnel migration creation through 1-2 people. Let everyone else mock their way down from the outside in.
+
+Sunday was awesome. I did what I should've done Saturday. Grab a card and get something out the door and stop worrying if I'm doing it "right" the first time. It's easier to re-factor than it is to create. Move forward. By the end of the night I managed to get a calendar page up, styled with the help of Parag including next/previous and month dropdown selection support.
+
+I'm definitely looking forward to the next event like this. Hopefully by then I can get my current Rails project done so I won't suck so much at the next event. :-)

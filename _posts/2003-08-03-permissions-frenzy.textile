@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Permissions Frenzy"
+category: WWW
+published:
+  epoch: 1059965123
+  utc: 2003-08-04T02:45:23
+---
+
+<p>
+Heads up. I'm futzing with permissions and suExec. Give me a yell if somethings broken.
+</p>
+<p>
+I'm also moving some of the outer pages into MT, so are going to see some strange posts that just happen to look like other non-blog pages. :-)
+</p>
+
+

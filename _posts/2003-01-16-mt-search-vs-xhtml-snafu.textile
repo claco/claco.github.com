@@ -1,0 +1,40 @@
+---
+layout: post
+title: "MT Search vs. XHTML Snafu"
+category: Perl
+published:
+  epoch: 1042773308
+  utc: 2003-01-17T03:15:08
+---
+
+<p>
+For those of you using the search functionality in MT 2.51 and are trying to make your pages XHTML 1.0/1.1 compliant, consider this a heads up.
+<code>MT::App::Search.pm</code> kindly sets the check boxes and select boxes for us before it returns the results. Unfortunately, it sets them using HTML. :-(
+That means the search output checkboxes will have the <code>checked</code> attribute set and the select lists will have <code>selected</code> set. These of course are not XHTML compliant and this is in the core modules and <strong>cannot</strong> be fixed in the search templates them selves.
+</p>
+<p>
+Here is a patch to remove that functionality from <code>MT::App:Search.pm</code>. I have opted to emove the function entirely as this should really funciton like the comments form does, where this stuff is set via javascript. If you would like a patch the change <code>checked</code> to <code>checked="checked"</code> and <code>selected</code> to <code>selected="selected"</code> let me know and I'll put on up.
+</p>
+
+<p>
+<textarea rows="15" cols="45">
+--- Search.pm.orig        Thu Jan 16 21:56:19 2003
++++ Search.pm        Thu Jan 16 21:58:20 2003
+@@ -276,6 +276,11 @@
+ 
+ sub _set_form_elements {
+     my($app, $tmpl) = @_;
++
++    ## Skip this stuff. It created potentiall 
++    ## non-compliant html. Usejavascript instead.
++
++    return $tmpl;
++
+     ## Fill in user-defined template with proper form settings.
+     if ($app->{searchparam}{Type} eq 'newcomments') {
+         if ($app->{searchparam}{CommentSearchCutoff}) {
+</textarea>
+</p>
+
+
+

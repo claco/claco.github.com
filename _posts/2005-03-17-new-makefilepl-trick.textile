@@ -1,0 +1,24 @@
+---
+layout: post
+title: "New Makefile.PL Trick"
+category: Perl
+published:
+  epoch: 1111115212
+  utc: 2005-03-18T03:06:52
+---
+
+I knew there had to be an easy way to keep the README file updated. ANd there was.
+
+<pre>WriteMakefile(
+    NAME            => 'MyModule',
+    VERSION_FROM    => 'lib/MyModule.pm',
+	...
+    dist => {
+        PREOP => 'pod2text lib/MyModule.pm > $(DISTVNAME)/README',
+    },
+	...
+);</pre>
+
+Now the README gets created everytime I do a <samp>nmake dist</samp>.
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "MySQL-Front Lives!"
+category: Software
+published:
+  epoch: 1072806032
+  utc: 2003-12-30T17:40:32
+---
+
+<p>
+For the longest time, I've been using <a href="http://www.mysqlfront.de/">MySQL-Front</a> 2.5. It's a frontend Admin GUI for MySQL. The original developer dropped the project for personal resons I assume, and someone else has finally picked it up!
+</p>
+<p>
+A beta of MySQL-Front 3 is finally out! Glad to see this app hasn't died. It really is one of the best MySQL admin front ends I've used.
+</p>
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Microsoft Wireless Hardware"
+category: MicroShaft
+published:
+  epoch: 1070506928
+  utc: 2003-12-04T03:02:08
+---
+
+<p>
+Well, for anyone reading, you've no doubt already seen my rants about horrible inconsistant Linksys Wireless hardware. Well I took some advice and ignore my Microsoft bashing for a moment, and purchased a <a href="http://www.microsoft.com/hardware/broadbandnetworking/productdetails.aspx?pid=006">Microsoft MN-730 Wireless-G NIC</a>.
+</p>
+<p>
+When I first learned that Microsoft was going to sell wireless hardware, I laughed. I figured it would be horrible, and indeed the first round of things looked to be a bit rough. But I must say, this card and it's drivers have been <strong>ROCK SOLID</strong> where the Linksys simply crapped on itself over and over.  If I ever convert to WPA and full 802.11g 54Mbps, I might just stick with MS wireless hardware (NIC/PCMCIA). 
+</p>
+<p>
+Since I only need a WAP, and not a router, I probably won't get the <a href="http://www.microsoft.com/hardware/broadbandnetworking/productdetails.aspx?pid=002">MN-700</a>. Then again, some of the Router/PCMCIA card package deals are pretty good.
+</p>
+
+

@@ -1,0 +1,140 @@
+---
+layout: post
+title: "Help Using This Site"
+category: Static
+published:
+  epoch: 1060049307
+  utc: 2003-08-05T02:08:27
+---
+
+<h2>It's the help, stupid!</h2>
+
+<h3>Accessibility</h3>
+	
+This site has been constructed with the goal of being as usable as possible by those users with physical, mental, technological or other disabilities using varying types of readers or browsers. Should you have any problems, questions, or concerns about this site's functionality, please feel free to contact me at <a href="mailto:chrislaco@hotmail.com">chrislaco@hotmail.com</a>.
+
+<h3>Standards Compliance</h3>
+
+Great effort has been made to ensure that every page on this website validate as <acronym title="Extensible HyperText Markup Language">XHTML</acronym> 1.1 <a title="View XHTML Strict specification" href="http://www.w3.org/TR/xhtml11/">Strict</a> and that the style of this website uses valid <acronym title="Cascading Stylesheets">CSS</acronym> syntax. In an effort to keep this author "eating his own dog food", please send an email to <a href="chrislaco@hotmail.com">chrislaco@hotmail.com</a> if you find any page that does not validate. Please make sure to include the <strong>full </strong> <acronym title="Uniform Resource Locator">URL</acronym> of the offending page. Public floggings may be necessary.
+
+<h3>Navigation Enhancements</h3>
+
+Extra navigational aids have been added to this site to make it easier to use.
+
+<h4>Navigational Link Tags</h4>
+
+Extra links tags have been added to each page to better describe the relationship between pages and make navigation quicker in certain browsers. Most pages include "Top", "First", "Previous", "Next", and "Last" relational links where possible. The should be viewable in text based browsers like Lynx. Graphical browsers like iCab and Mozilla have a special toolbar that will read these links and present the appropriate buttons. Mozilla users can enable this toolbar by selecting <kbd>View menu, Show/Hide, Site Navigation Bar, Show Only As Needed</kbd>.
+
+All pages also have "Help", "Copyright" and "Authors" links defined as well as the bookmarks "Return to Top" and "Jump to Content" which will always take you to the top of the current page and to the start of each page's main content respectively. Individual entry archive pages also have "Jump to Comments" and "Jump to Trackbacks" defined, which will take to you the comments and trackback sections respectively.
+
+<h4>Keyboard Shortcuts (Access Keys)</h4>
+
+This website makes use of keyboard shortcuts or "access keys" to make moving from item to item of section to section quicker for those who use the keyboard more than the mouse. On windows, these can be used by pressing <kbd>ALT +</kbd> the access key. On Macs you can use them by pressing <kbd>Control +</kbd> the access key.
+
+The following access keys have been defined for use on every page of this site:
+
+<dl>
+	<dt>Access Key 1</dt>
+		<dd>Home Page</dd>
+	<dt>Access Key 5</dt>
+		<dd>Jump to Content/Skip Navigation</dd>
+	<dt>Access Key 6</dt>
+		<dd>Return to Top</dd>
+	<dt>Access Key 9</dt>
+		<dd>Help and Accessibility Statement (this page)</dd>
+	<dt>Access Key V</dt>
+		<dd>Validate Current Page</dd>
+</dl>
+
+Access keys are also defined for each element in the forms used on this website. The access key for each form element will be underlined within the name or label for that element. For example, the access key for the field labeled <strong><span class="underline">N</span>ame</strong> would be <strong>N</strong>. Pressing <kbd>ALT+N</kbd> on Windows or <kbd>Control+N</kbd> on a Macintosh should bring focus to or place the cursor in the <strong>Name</strong> field.
+
+<h3>Layout and Design</h3>
+
+This site's "look and feel" is applied using <acronym title="Cascading Style Sheets">CSS</acronym>. The default style sheet for this website uses relative font sizes so each user may increase or decrease the sizes of all the fonts used using the option in their browser. If your browser doesn't support cascading style sheets, this site should still be fully functional and easily readable.
+
+If you would like to select a different cascading style sheet ("skin") of specify on of your own for this website check out the <a href="/preferences/">site preferences page</a>.
+
+<h3><a id="glossary">Glossary</a></h3>
+
+Listed below are some of the common acronyms and phrases used in this website.
+
+<dl>
+	<dt>ASP</dt>
+		<dd>Active Server Pages</dd>
+	<dt>CGI</dt>
+		<dd>Common Gateway Interface</dd>
+	<dt>CSS</dt>
+		<dd>Cascading Style Sheets</dd>
+	<dt>CVS</dt>
+		<dd>Concurrent Versioning System</dd>
+	<dt>CPAN</dt>
+		<dd>Comprehensive Perl Acrhive Network</dd>
+	<dt>GIF</dt>
+		<dd>Graphic Interchange Format</dd>
+	<dt>HTML</dt>
+		<dd>HyperText Markup Language</dd>
+	<dt>HTML3</dt>
+		<dd>HyperText Markup Language - Version 3.x</dd>
+	<dt>HTML4</dt>
+		<dd>HyperText Markup Language - Version 4.x</dd>
+	<dt>IE, Internet Exploder</dt>
+		<dd>Internet Explorer</dd>
+	<dt>IIS</dt>
+		<dd>Internet Information Server</dd>
+	<dt>JSP</dt>
+		<dd>Java Server Pages</dd>
+	<dt>JPEG, JPG</dt>
+		<dd>Joint Photographic Experts Group</dd>
+	<dt>LVD</dt>
+		<dd>Low Voltage Differential</dd>
+	<dt>MS, MicroShaft, MicroSuck, MicroShit, MickeySoft</dt>
+		<dd>Microsoft</dd>
+	<dt>MT</dt>
+		<dd>Movable Type</dd>
+	<dt>Mac</dt>
+		<dd>Macintosh</dd>
+	<dt>Perl</dt>
+		<dd>Practical Extraction and Reporting Language</dd>
+	<dt>PHP</dt>
+		<dd>PHP: Hypertext Preprocessor</dd>
+	<dt>PNG</dt>
+		<dd>Portable Network Graphic</dd>
+	<dt>RAID</dt>
+		<dd>Redundant Array of Inexpensive Disk</dd>
+	<dt>RDF</dt>
+		<dd>Resource Description Framework</dd>
+	<dt>RSS</dt>
+		<dd>Rich Site Summary</dd>
+	<dt>RTFM</dt>
+		<dd>Read The Fucking Manual</dd>
+	<dt>SCSI</dt>
+		<dd>Small Computer System Interface</dd>
+	<dt>SQL</dt>
+		<dd>Structured Query Language</dd>
+	<dt>TIMTOWTDI</dt>
+		<dd>Perl-ism: There Is More Than One Way To Do It</dd>
+	<dt>TSM, Trained Shaved Monkeys</dt>
+		<dd>Humans</dd>
+	<dt>URL</dt>
+		<dd>Uniform Resource Locator</dd>
+	<dt>VB</dt>
+		<dd>Visual Basic</dd>
+	<dt>VHDCI</dt>
+		<dd>Very High Density Cable Interconnect</dd>
+	<dt>W3C</dt>
+		<dd>World Wide Web Consortium</dd>
+	<dt>Windblows</dt>
+		<dd>Windows</dd>
+	<dt>XHTML</dt>
+		<dd>eXtensible HyperText Markup Language</dd>
+	<dt>XML</dt>
+		<dd>eXtensible Markup Language</dd>
+	<dt>XSL</dt>
+		<dd>eXtensible Stylesheet Language</dd>
+	<dt>XSLT</dt>
+		<dd>eXtensible Stylesheet Language Transformation</dd>
+	<dt>XSP</dt>
+		<dd>eXtensible Server Pages</dd>
+</dl>
+
+

@@ -1,0 +1,148 @@
+---
+layout: post
+title: "MVC Marathon"
+category: OffTopic
+tags:
+  - c#
+  - cakephp
+  - catalyst
+  - django
+  - mvc
+  - perl
+  - php
+  - python
+  - rails
+  - ruby
+published:
+  epoch: 1214714537
+  utc: 2008-06-29T04:42:17
+---
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>MVC Marathon: Introduction</title>
+</head>
+	<body>
+		<h2>Introduction</h2>
+		<p>
+			Over the last few years, I've spent a fair amount of time on the
+			same projects, using the same tools, in the same languages. By
+			day, I'm a mild mannered .NET programmer. By night, I fly the Perl
+			flag, and spend a lot of time using Catalyst, one of the Perl
+			based MVC frameworks. While I'm not abandoning those technologies,
+			I think it's time for something new.
+		</p>
+		<p>
+			They say you should learn a new programming language every year or
+			so, and I'm long over due. Why not learn three languages at the
+			same time to make up for lost time? :-)
+		</p>
+		
+		<h2>The Challenge</h2>
+		<p>
+			The challenge is to build the same mvc application on all of the
+			frameworks listed below. While I'm comfortable with Catalyst/Perl
+			and ASP.NET, I'd like to be able to work on any project that comes
+			along rather than simply answering "Sorry, I can't help. I don't
+			program in that frameowork/language." I started my career as a
+			Windows-only web programmer and over time, learned my way through
+			FreeBSD, Apache, Perl and Catalyst.
+		</p>
+		<p>
+			Will I be an 'expert' in Ruby or Python when I'm done? Surely not.
+			But 3 years ago, I couldn't program in Perl either and 10 years
+			ago, I could't even begin to get a *nix OS installed and
+		configured to run Apache.
+		</p>
+		
+		<h2>The Frameworks</h2>
+		<p>
+			For this adventure, I've picked what might be considered the most
+			popular mvc framework for each language. These frameworks will be:
+		</p>
+		<h3><a href="http://www.asp.net/mvc/">ASP.NET MVC: Preview 3</a></h3>
+		<p>
+			While my day job includes programming in ASP.NET 2.0 WebForms and
+			I have followed the MVC progress, I have not yet created an
+			ASP.NET MVC app. Just to be a little more challenging, I will be
+			doing this project in C# instead of the usual VB.NET that we use
+			at work.
+		</p>
+		<h3><a href="http://www.cakephp.org/">CakePHP: 1.2RC2</a></h3>
+		<p>
+			I've read as much of the manual as I can at this point. This will
+			be my first CakePHP application and my first PHP programming since
+			PHP4 was released.
+		</p>
+		<h3><a href="http://www.catalystframework.org/">Catalyst: 5.7</a></h3>
+		<p>
+			Catalyst is one of the many MVC frameworks written in Perl. I've
+			been using Perl and Catalyst for about 3 years. While this could
+			be my strongest framework, I'll be using none of my existing bag
+			of tricks.
+		</p>
+		<h3><a href="http://www.djangoproject.com/">Django: 0.96</a></h3>
+		<p>
+			I've never written a single line of Python before. After looking
+			at the Python and Ruby syntax on multiple occasions in the past,
+			Python seems to be the language furthest from how my brain works
+			now compared to Perl/C#.
+		</p>
+		<h3><a href="http://www.rubyonrails.org/">Ruby on Rails: 2.1</a></h3>
+		<p>
+			Just like Django/Python, I've never written a line if Ruby in my
+			life. I've been through the screen casts and sifted around a few
+			articles and book excerpts. However, unlike Python, Ruby seems
+			to fit how my brain works with Perl a littler cleaner.
+		</p>
+
+		<h2>The Application</h2>
+		<p>
+			I'm sick of the usual blog demo applications so I'm going to go
+			with something a little closer to my heart. Those who know me know
+			that I'm a big fan of hot food: If you don't sweat, it's not hot
+			enough. So for this challenge, I'm going to build a site that
+			tracks lists of restaurants and a list of menu items for each
+			eatery hot dish.
+		</p>
+		<p>
+			The application will be built in stages. Each stage will be built
+			in every framework before moving on to the next step. After
+			completing each stage, I'll post a new blog entry covering what
+			code needed to be created in each framework and the pros and cons
+			each framework provides. You can follow the source code progress
+			in my subversion repository:
+		</p>
+		<p>
+			<a href="http://github.com/claco/mvc-marathon/">
+				http://github.com/claco/mvc-marathon/
+			</a>
+		</p>
+
+		<h2>Step by Step</h2>
+		<ol>
+			<li><a href="/blog/mvc-marathon-part-1-creating-a-new-application/">Part 1. Creating a New Application</a></li>
+			<li><a href="/blog/mvc-marathon-part-2-creating-a-database-and-model/">Part 2. Creating a Database and Model</a></li>
+<li><a href="/blog/mvc-marathon-part-3-creating-a-restaurants-controller-and-view/">Part 3. Creating a Restaurants Controller and View</a></li>
+<!--
+			<li>Part 3. Creating Site HTML/CSS Templates</li>
+			<li>Part 4. Creating the Restaurants Model</li>
+			<li>Part 5. CRUD Restaurants w/Scaffolding</li>
+			<li>Part 6. Adding Menu Items w/o Scaffolding</li>
+			<li>Part 7. Adding AJAX</li>
+			<li>Part 8. Adding Atom Feeds</li>
+			<li>Part 9. Adding Unit Tests</li>
+			<li>Part 10. Adding User Tests</li>
+			<li>Part 11. Adding REST API</li>
+			<li>Part 12. Adding User Authentication</li>
+-->
+			<li>...</li>
+		</ol>
+	</body>
+</html>
+
+
+

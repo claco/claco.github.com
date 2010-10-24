@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Quoted In The Washington Times"
+category: Humor
+published:
+  epoch: 1077644529
+  utc: 2004-02-24T17:42:09
+---
+
+<p>
+It's not every day that you get <a href="http://washingtontimes.com/upi-breaking/20040219-051132-9368r.htm">quoted in the Washington Times</a>, especially for a nobody like me. :-)
+</p>
+<blockquote>
+<p>
+ "I was looking at Alienware (a high-end computer gaming manufacturer), then learned that their stuff was made by Sager," he said. Laco then started looking for a Sager laptop dealer, and found out that PowerNotebooks.com was the largest one in the United States.
+</p>
+<p>
+"What attracted me to PowerNotebooks.com was their prices, and the fact that I could e-mail or call and actually get a human that treated me like a customer instead of an order number," he said. 
+</p>
+</blockquote>
+
+

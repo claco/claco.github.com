@@ -1,0 +1,34 @@
+---
+layout: post
+title: "More MT Hacks: Apache::Filter"
+category: Perl
+published:
+  epoch: 1042766634
+  utc: 2003-01-17T01:23:54
+---
+
+<p>
+If you are reading this, then you are probably already aware of the big redesign going on at this site. As part of trying to get this site in sync with the suggestions over at
+<a href="http://diveintoaccessibility.org/" title="Guide to making your site more accessible to text/braile/phone readers">Dive Into Accessibility</a>, I decided to tackle the search functionality of this site, or the lack of search functionality as the case may be.
+</p>
+<p>
+The main problem with the search was that it as a standalone cgi wasn't using the same method of page construction that this site uses.
+This site is built around <a href="http://www.axkit.org/" title="Visit axkit.org">AxKit</a>, an XML Application Framework using pipelines. In english, that means that this site uses a series of <acronym title="eXtensible Server Pages">XSP</acronym> / <acronym title="eXtensible Markup Language">XML</acronym> / <acronym title="eXtensible Stylesheet Language">XSL</acronym> pages to make the final page a browser sees while the <code>mt-search.cgi</code> simple dumps it's output to the browser bypassing all the flexibility and layout of the other pages. Bummer.
+</p>
+<p>
+So, how do we fix this, or pipe the <code>mt-search.cgi</code> output through the existing pageflow? <a href="http://search.cpan.org/search?query=Apache%3A%3AFilter&amp;mode=module" title="CPAN page for Apache::Filter">Apache::Filter</a> to the rescue.
+</p>
+<p>
+What Apache::Filter does is rearranged the order that PerlHandlers fire under mod_perl and allows the output from one handler to be filter through another handler.
+Now it just so happens that <code>mt-search.cgi</code> can also be run under mod_perl using handlers. I also lucked out in that the current pageflow system can receive input from Apache::Filter. But after some <code>httpd.conf</code> config changes, nothing worked.  The reasons turned out to be threefold:
+</p>
+<ol>
+<li>MT::App::handler was Apache::Filter ignorant. Not surprising. Who would ever need it to be. Just a matter of registering itself with the Apache::Filter module.</li>
+<li>MT::App::print was mod_perl aware, but was using the Apache::print method instead of printing to STDOUT. Another easy fix.</li>
+<li>MT::App::send_header was mod_perl aware, but if we have Apache::Filter turned on, no need to send headers.</li>
+</ol>
+<p>
+So, with all that in mind I present to the masses <a href="/downloads/MTApacheFilter/2.51/" title="MTApacheFilter patch download">MTApacheFilter</a>, a patch to allow the mod_perl handlers in MT::App be more Apache::Filter friendly.
+</p>
+
+

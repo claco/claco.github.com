@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Linux Is Viral Right?"
+category: MicroShaft
+published:
+  epoch: 1075055682
+  utc: 2004-01-25T18:34:42
+---
+
+<p>
+Apparently not enough to avoid <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=4415a0aa-a62a-4f1e-91b4-761f32cefccf&amp;displaylang=en">pushing Passport onto it</a>. Go figure.
+</p>
+
+

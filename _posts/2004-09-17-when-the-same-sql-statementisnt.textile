@@ -1,0 +1,48 @@
+---
+layout: post
+title: "When The Same SQL Statement...Isn't."
+category: MicroShaft
+published:
+  epoch: 1095447429
+  utc: 2004-09-17T18:57:09
+---
+
+This is always a fun problem to track down. Part of a DTS package I worked on had this problem where it converted 'New York' to 'NE' instead of 'NY' using a table full of state abbreviations. Once I found out where this problem was, I'm even more mystified at what the problem really is.
+
+Within the SQL Designer for creating Lookup queries in DTS, I created the following query:
+
+<pre><code>SELECT
+	RTRIM(UPPER(Abbreviation)) AS State
+FROM
+	States
+WHERE
+	(Name = ?) OR
+	(Abbreviation = ?)</code></pre>
+
+This yielded <strong>two</strong> results: NE amd NY. So there's where the error occurred. Now for the shitty part.
+
+I take the same query and run it in SQL Analyzer like so:
+
+<pre><code>SELECT
+	RTRIM(UPPER(Abbreviation)) AS State
+FROM
+	States
+WHERE
+	(Name = 'New York') OR
+	(Abbreviation = 'New York')</code></pre>
+
+and of course, it returns <strong>one</strong> result: NY.
+
+I don't know what in the hell paramaterized queries do in the background within DTS, but I don't like it.
+
+In the end, I just ended up cheating:
+
+<pre><code>SELECT
+	RTRIM(UPPER(Abbreviation)) AS State
+FROM
+	States
+WHERE
+	(Name = ?) OR
+	(CAST(Abbreviation AS VARCHAR(50)) = ?)</code></pre>
+
+

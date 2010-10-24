@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Wireless Fixed...I Hope"
+category: WTF
+published:
+  epoch: 1070334450
+  utc: 2003-12-02T03:07:30
+---
+
+<p>
+Well, after much head bashing I purchased a WMP11 PCI wireless NIC. Yet my network availability problems persisted, even after installing my signal booster just for giggles.
+</p>
+<p>
+Luckily some kind aware soul pointed out the <a href="http://support.microsoft.com/?kbid=826942">Microsoft Wireless Update Rollup Package</a>. Of course, it's not part of the usual Windows Update process. :-)  It seems to have solved my problem. But now I'm pissed even more...why just this computer and not the PCMCIA cards on the laptops? Grrrr. Fargin wireless.
+</p>
+<p>
+<strong>
+Mother #$%$#@#!!!!! Still flakey. I hate this shit.
+</strong>
+</p>
+
+

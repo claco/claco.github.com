@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Scobleized"
+category: OffTopic
+published:
+  epoch: 1059951097
+  utc: 2003-08-03T22:51:37
+---
+
+<p>
+It must have been a long weekend. Somehow I missed that I got "<a href="http://radio.weblogs.com/0001011/2003/08/02.html#a4122">Scobleized</a>".
+</p>
+
+<blockquote>
+<p>
+Christopher Laco hates Microsoft. He even spells it like a lot of the Slashdotter's do. You know, "Micro$haft."
+</p>
+<p>
+So, when he admits something Microsoft does is pretty good, I take note. Here he admits that Windows Media Player is better at ripping his CDs than other tools.
+</p>
+</blockquote>
+
+<p>
+Cool.
+</p>
+
+

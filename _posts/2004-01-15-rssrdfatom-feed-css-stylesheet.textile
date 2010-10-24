@@ -1,0 +1,20 @@
+---
+layout: post
+title: "RSS/RDF/Atom Feed CSS Stylesheet"
+category: WWW
+published:
+  epoch: 1074227234
+  utc: 2004-01-16T04:27:14
+---
+
+<p>
+OK, this time, I'll use the correct stylesheet type. :-) I've added a <a href="/style/css/feeds.css">CSS stylesheet</a> to all of my feeds at the top. It's two parts messy and 6 parts redundant with a touch of bloat. But it works.
+</p>
+<p>
+ The first thing you'll notice is that everything looks great in Gecko based browser, and stupid in IE. The reason is simply that IE appears to be completely ignorant of the [draft or official?] 1999 <a href="http://www.w3.org/TR/css3-namespace/">CSS <code>@namespace</code> extensions</a>. Shocking. 
+</p>
+<p>
+This leads me to my other question. I know there was a big debate about custom namespaces in feeds and what is or isn't "funky". Is there any way to hide namespaced stuff in the feeds from IE by adding custom namespace elements ot attributes?
+</p>
+
+

@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Mozilla.org Redesign: Browser Sniffing"
+category: WWW
+published:
+  epoch: 1058298242
+  utc: 2003-07-15T19:44:02
+---
+
+<p>
+Well, this is going to really bug me. <a href="http://www.mozilla.org/">Mozilla.org</a> redesigned the front page along with the new <a href="http://www.mozillafoundation.org/">Mozilla Foundation</a>. While I like it overall, they did something that really irks me after drinking the CSS/W3C/WaSP kool-aide: browser sniffing.
+</p>
+<p>
+At first I did a view source, and it looks like good ole HTML4. Yet, when I validated, the W3C validator choked up errors (AFTER telling it what endocing it was; that's missing too) about missing <samp>type</samp> attributes in the <samp>style</samp> and <samp>script</samp> tags.
+</p>
+<p>
+So, I whipped out IE6 (ouchie) and did a view source.  Sure enough, it's getting sniffed and sent non HTML4 compliant code. Come on. I expect a little better from the Mozilla camp on this one.
+</p>
+<p>
+<strong>UPDATE:<br />I may have spoken too soon. :-)</strong> Looks like there are some strange cache/proxy/replication/new page issues afoot. Either way, nothing sending in patches won't cure.
+</p>
+
+

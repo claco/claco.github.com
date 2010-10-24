@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Best Buy Closure"
+category: Hardware
+published:
+  epoch: 1045409767
+  utc: 2003-02-16T15:36:07
+---
+
+<p>
+Well, Best Buy called Yesterday day and guess what? <em>They're replacing the unit.</em> Finally. I guess the repair center finally gave up on repairing it which make me even more curious as to what was wrong with it after the first two repairs.
+</p>
+<p>
+So, off we went to Best Buy last night. I was really tempted to tell them we wanted a refund and that we refused to do business with them. But I took the easy route and we got a new laptop. Actually, they gave us in-store credit for the purchase price of the original snd they also gave us pro-rated credit for the remainder of the service agreement.
+</p>
+<p>
+Our local Best Buy has the following laptop brands: Sony, HP, Compaq, Matrix, and Toshiba. Well of course given those options we went with a new Toshiba Satellite 2435-S255 with the following specs:
+</p>
+
+<ul>
+<li>Intel Pentium 4 Processor (2.40GHz)</li>
+<li>40GB HDD (4200rpm)</li>
+<li>15" XGA Display (1024 x 768)</li>
+<li>512MB PC2100 DDR SDRAM (256MB x 2)</li>
+<li>Microsoft Windows XP Home Edition</li>
+<li>DVD/CD-RW</li>
+<li>3-USB (2.0) ports</li>
+<li>iLINK (IEEE 1394) port</li>
+<li>Infrared port</li>
+<li>SD media slot</li>
+<li>TV-Out port</li>
+<li>10/100 Ethernet</li>
+<li>V.92/56K modem</li>
+</ul>
+
+<p>
+All in all, it looks like a great machine and it cost the same as what we paid for the old HP lappy, which was an 800Mhz, 128Mb Ram, 20Gb hard drive turd.
+We did buy the 3 year extended service plan again. Hey, it worked if I have a new laptop didn't it? And of course, it still shouldn't have had to get that far.
+</p>
+
+

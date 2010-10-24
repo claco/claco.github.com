@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Del.icio.us For Tags Broken"
+category: WTF
+published:
+  epoch: 1136645943
+  utc: 2006-01-07T14:59:03
+---
+
+I do hereby declare that the <samp>for:user</samp> tags, and the <samp>/for/user</samp> pages on del.icio.us are completely useless and broken.
+
+I caught the <a href="http://del.icio.us">del.icio.us</a> buzz late, just last month late. Better late than never though. One of the features that intrigued me was the <samp>for:</samp> tag...the ability to send bookmarks to other people, and the ability to view bookmarks sent to you by goind to <a href="http://del.icio.us/for/claco">/for/claco</a>. Great. Sounds fun. Too bad it doesn't work.
+
+Two weeks ago, a friend sent me my first bookmark. When I went to my "for" page, it never showed up. After poking around, I finally noticed that it was in the private RSS feed, but not in the page. I sent an email to support, but didn't get anywhere.
+
+Now, two weeks later, I had 2 people send me 3 more bookmarks. As soon as they did, the first bookmark from two weeks ago showed up on the for page immedately. As of today, non of the new bookmarks have appeared on the for page, but they are all in the private RSS feed.
+
+What the hell is going on there?
+
+I've sent support another email, but I don't have high hopes, and the online help for the "for" functionality is pretty slim.
+
+

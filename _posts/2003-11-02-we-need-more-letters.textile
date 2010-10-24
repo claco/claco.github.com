@@ -1,0 +1,15 @@
+---
+layout: post
+title: "We Need More Letters"
+category: Perl
+published:
+  epoch: 1067830634
+  utc: 2003-11-03T03:37:14
+---
+
+<p class="image">
+<img src="/blog/images/perl/usrbinperl.jpg" alt="" /><br />
+<a href="http://www.acme.com/licensemaker/">ACME License Maker</a>
+</p>
+
+

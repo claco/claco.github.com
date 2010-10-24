@@ -1,0 +1,30 @@
+---
+layout: post
+title: "D-Link DNS-323 NAS Revisited"
+category: Hardware
+tags:
+  - dlink
+  - nas
+  - sata
+published:
+  epoch: 1173713603
+  utc: 2007-03-12T15:33:23
+---
+
+In our previous episode, I mentioned that I was getting a <a title="D-Link DNS-323 NAS" href="/blog/archives/entries/dlink_dns323_nas.icf">D-Link DNS-323 NAS</a> to replace a wonky RAID5 file server at home. It arrived Friday and the comedy trail of errors began.
+
+As prescribed, I placed the 200GB SATA drives in the unit, plugged it into the network and powered it on. Once I fired up the Easy Search utility I was greeted with nothing. Nada. Zip. The utility didn't see the unit. This didn't surprise me really since I run DHCP at home that isn't the standard 192.168.0.x used in all of these consumer devices. Once I logged into the DHCP server and got the units IP address, I was off to the races.
+
+The unit shipped with the 1.0 firmware which is junk at best. First on the list was to update to the 1.02b version. After uploading the new firmware, the update progress page never really indicated that it was done. At some point, I just assumed it was and rebooted the unit.
+
+The next order of business was to configure the drives for RAID1. Once I did so and got the formatting process page, it kept freezing at 94%. Eventually, I assumed this 'feature' was just a glitch and the format was complete, and rebooted the unit.
+
+Once I configured some users and shares, it was time to start copying files to the unit. Right out of the gate I started getting "Network name no longer available" and "File in use by another process" errors. Bummer. Not good things for a device you want to rely on to house your files.
+
+After troubleshooting for a couple of days, I found out that the problem only occurred on my wireless connection, but not when I was directly connected to the unit. Eventually I stumbled across a KB article that mentioned that Windows File Sharing (SMB) gets really cranky if ICMP packets are blocked. Sure enough, my wireless connection settings had all of the ICMP stuff disabled. Once I turned that back on, things went much better, or so I thought.
+
+I still had the occasional copy problem. This time, when the unit acted up, I went to the admin page interface. Instead of getting the D-Link page, I got my file server page. Like a dumb ass, apparently I assigned the NAS to a secondary IP my file server already had. Duh. Once I fixed that problem, the unit has been rock solid ever since.
+
+So, aside from the owner bumbling, this unit has a great price point. At $200 for the unit, and another $100 for a couple of 200GB SATA drives for a unit that does RAID1 without all the power consumption of running a server is a no brainer.
+
+

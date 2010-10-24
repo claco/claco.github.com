@@ -1,0 +1,14 @@
+---
+layout: post
+title: "New Disizzle In The Hizouse"
+category: WWW
+published:
+  epoch: 1069778690
+  utc: 2003-11-25T16:44:50
+---
+
+<p>
+We have DSL in the new house finally!!!!!!!!!!! It only took 3 phone calls and 2 incorrect self-install kits, but it's up and working. Now, time to figure out how and when to move DNs and the servers.
+</p>
+
+

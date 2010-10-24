@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The 4440 Just Jumped The Shark"
+category: WTF
+published:
+  epoch: 1121648710
+  utc: 2005-07-18T01:05:10
+---
+
+It was only a matter of time. The 440 just jumped the shark with the 'hes crazy it was all in his head' scenerio. Jeez.
+
+

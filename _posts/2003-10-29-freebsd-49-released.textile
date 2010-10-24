@@ -1,0 +1,14 @@
+---
+layout: post
+title: "FreeBSD 4.9 Released"
+category: FreeBSD
+published:
+  epoch: 1067475538
+  utc: 2003-10-30T00:58:58
+---
+
+<p>
+FreeBSD 4.9 has been <a href="http://www.freebsd.org/releases/4.9R/relnotes-i386.html">set out into the wild</a>. A fun night of <kbd>buildworld</kbd> ahead.
+</p>
+
+

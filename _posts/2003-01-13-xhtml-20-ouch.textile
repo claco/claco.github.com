@@ -1,0 +1,19 @@
+---
+layout: post
+title: "XHTML 2.0. Ouch."
+category: WTF
+published:
+  epoch: 1042493519
+  utc: 2003-01-13T21:31:59
+---
+
+<p>
+I feel <a href="http://diveintomark.org/archives/2003/01/13.html#semantic_obsolescence" title="Mark Pilgrim's opinions on the XHTML 2.0 recomendation">Mark Pilgrim's pain</a>, I really do.
+So much for forward compatibility. :-( Just when I was getting happy about catching the <a href="http://www.webstandards.org/" title="Group advocating the broader use of web standards">Web Standards Project</a> religion.
+</p>
+<p>
+On an upnote, this showcases one of the reasons I'm all about <a href="http://www.axkit.org/" title="XML Application Server Framework">AxKit</a> and complete seperation of content and code via taglibs and stylesheet transformations.
+All I have to do is change my <code>to_xhtml.xsl</code> transformation to <code>to_xhtml2.xsl</code> and everyone is happy. Looks good on paper at least.
+</p>
+
+

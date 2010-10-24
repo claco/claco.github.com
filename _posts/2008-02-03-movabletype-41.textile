@@ -1,0 +1,22 @@
+---
+layout: post
+title: "MovableType 4.1"
+category: Apache
+tags:
+  - apache2
+  - fastcgi
+  - mod_perl
+  - movable type
+  - wordpress
+published:
+  epoch: 1202084063
+  utc: 2008-02-04T00:14:23
+---
+
+I like MovableType. It's Perl. That's a plus for me. It keep getting better, and now there's MTOS. That's where my love stops.
+
+First, the default templates combined with one of the 5 types of formatting for entries STILL yields non compliant XHTML, even within some of the templates themselves. Publishing is still too hard in that respect. It's 2008, and I still can't just plop in a paragraph or two and have awesome auto generated XHTML.
+
+Their "4.1 supports FastCGI" is not very good support. mt-upgrade/check/xmlrpc still don't work under FastCGI, and it's so slow under normal cgi that it's still annoying. Again, it's 2008 and it still doesn't support mod_perl under Apache2. WordPress and PHP: Just Works.
+
+

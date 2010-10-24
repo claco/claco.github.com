@@ -1,0 +1,16 @@
+---
+layout: post
+title: "SBC IP Madness"
+category: WTF
+published:
+  epoch: 1100532719
+  utc: 2004-11-15T15:31:59
+---
+
+So I woke up Sunday morning to no internet connection. After some investigation, it appears that my upgrade <strong>2 weeks ago</strong> cause another PPPoE profile to be created which gave me a whole new set of IP addresses. So of course, you can't read this right now. :-)
+
+On top of that, I find out this morning that the database used for this profile stuff is being upgraded and won't be changable until tomorrow. Damnit.
+
+So, hello to everyone reading thos tomorrow. :-/
+
+

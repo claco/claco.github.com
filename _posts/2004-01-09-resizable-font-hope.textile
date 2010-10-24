@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Resizable Font Hope"
+category: WWW
+published:
+  epoch: 1073699574
+  utc: 2004-01-10T01:52:54
+---
+
+<p>
+Someone has <a href="http://www.alistapart.com/articles/elastic/">finally figured out a way</a> to use the more flexibile <code>ems</code> for the CSS <code>font-size</code> property and have IE not display the smaller or smallest fonts in an insanely unreadable size. Now I can ditch the <code>font-size</code> keywords, which work, but are just a little to large and small for my taste.
+</p>
+<p>
+CSS breakage to follow...
+</p>
+
+

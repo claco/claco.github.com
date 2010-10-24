@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Here it comes..."
+category: WTF
+published:
+  epoch: 1071708669
+  utc: 2003-12-18T00:51:09
+---
+
+<p>
+Just started getting that sore swallow funky head feeling. Here comes the getting sick thing. Joy.
+</p>
+
+

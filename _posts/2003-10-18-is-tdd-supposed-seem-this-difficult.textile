@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Is TDD Supposed Seem This Difficult?"
+category: Perl
+published:
+  epoch: 1066514957
+  utc: 2003-10-18T22:09:17
+---
+
+<p>
+Just some mild tinkering today on converting and existing ASP site to <acronym title="FreeBSD, Apache, ModPerl">FAMP</acronym>. Of course, I'm trying to be a good boy and write my tests first. Is it really as hard as it seams?
+</p>
+<p>
+Sometimes, I feel dirty, like I'm doing something wrong by having to Test::MockObject everything just to test one module by itself. It feels like a whole lot of work just to test one module. Is there a point where you should stop mocking objects? To test one module, should you only mock your sibling modules in the same package, but use the real live 3rd party modules instead of mocking them too? Mocking DBI. Mocking Error. Mocking Local::MakeText. I think the TDD process is mocking me. :-/
+</p>
+<p>
+Wow. Most of an afternoon mocking a Cart::add sub to verify it Does The Right Thing when you send a quantity &lt; 0 or something non numeric, or forget to send a sku. Creating similiar tests between standalone module testing and integrated testing with Error and  exceptions running for real. I'm sure it will pay off in the futre. When? Grrrr.
+</p>
+
+

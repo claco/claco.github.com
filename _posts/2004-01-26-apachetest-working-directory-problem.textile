@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Apache::Test Working Directory Problem"
+category: Perl
+published:
+  epoch: 1075175015
+  utc: 2004-01-27T03:43:35
+---
+
+<p>
+Anyone out there do any tinkering with Apache::Test? Here's my problem. Whenever I'm doing normal tests, the working directory is the project root. I can reference files in the test folder via <samp>t/somefile</samp>. The minute I load and use Apache::Test, it changes my working directory to <samp>t</samp>, thus breaking all references to <samp>t/somefile</samp>.
+</p>
+<p>
+So my first question is whether this is a feature or a bug. Second, what's the best way to deal with this? I can either <samp>chdir</samp> up to the root if I'm inside of <samp>t/</samp> or change the test files to alter the file path based on the current working directory.
+</p>
+<p>
+Of course, my other gripe is Apache::Test isn't quoting the <samp>httpd.conf</samp> paths sent to the Apache binary, so I'm forced to move my Apache install to <samp>C:\</samp>  when developing on Windows. Nice.
+</p>
+
+

@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Dead Sequels"
+category: Movies
+published:
+  epoch: 1062474211
+  utc: 2003-09-02T03:43:31
+---
+
+<p>
+From the I-used-to-like-it-but-now-it's-gone-to-far department; movies that won't die.
+</p>
+
+<ul>
+<li><a href="http://us.imdb.com/Find?for=Hellraiser">Hellraiser</a></li>
+<li><a href="http://us.imdb.com/Find?for=Prophecy">Prophecy</a></li>
+<li><a href="http://us.imdb.com/Find?for=Friday+The+13th">Friday The 
+13th</a></li>
+<li><a href="http://us.imdb.com/Find?for=Planet+Of+The+Apes">Planet of the Apes</a></li>
+</ul>
+
+<p>
+I just hope the Matrix and Blade franchises have enough sense to stop at their current state (Blade Trinity and Matrix Revolutions).
+</p>
+
+

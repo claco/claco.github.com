@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Register.com Redux"
+category: WTF
+published:
+  epoch: 1058974886
+  utc: 2003-07-23T15:41:26
+---
+
+<p>
+More on the Register.com fiasko. I talked to two humans this morning. One wasn't so helpful.  The other one however, did verify that my invoice on Sept 18, 2002 was paid, which means that the domain name is mine until Sept 18, 2003.
+</p>
+
+<p>
+Unfortunately, he can't change anything. and now I must deal with the affiliate, which I think is bogus.
+</p>
+
+<p>
+Here's my theory on what happened this year <em>and last year</em>:
+</p>
+
+<p>
+Register.com's Safe Renew tried to hit my credit card 3 months too early. When it failed for whatever reason, instead of honoring my remaining 3 months (until Sept 18, 2003), they simply handed my domain name to the next person waiting in line. Needless to say, that's not going to cut it.
+</p>
+
+<h3>Update</h3>
+<p>
+Well, I contacted their partner PartnerEU. Their answer: "Contact the firm who it's registered with". Bah!@#$#</p>
+<p>
+I've since called Register.com again and told them to get a person on it. I paid for a year. I'm their customer. They need to fix it. Not me. Not the people who snagged it. Not PartnerEU.
+</p>
+
+<p>
+Supposedly, she was giving all the information to an account manager to research and fix. She also mentioned something about transfer papers, to which I remined them that I have no relationship with the eronious domain holders, nor have I ever approved a transfer of any kind. I'll be real curious to find out if someone tried to pull a fast one by forging my authorization. This could be fun considering the people who snagged is is a law firm.
+</p>
+
+

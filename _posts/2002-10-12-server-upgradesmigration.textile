@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Server Upgrades / Migration"
+category: OffTopic
+published:
+  epoch: 1034399497
+  utc: 2002-10-12T05:11:37
+---
+
+<p>
+My apologies to anyone (all -2,538 of you) actually coming to this site over the next couple of days. I'm in the process of migrating from my old ISDN line over to the new ADSL connection. I'm a little hesitant to leave these new servers on until I can give them the upgrade to 4.7-STABLE and double check all the security related stuff. In other words, I shut them off at night! All is not lost. They should be 24x7 by Monday.
+</p>
+
+

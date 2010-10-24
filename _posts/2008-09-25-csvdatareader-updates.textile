@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: CsvDataReader Updates
+wordpress_id: 24
+wordpress_url: http://chrislaco.com/?p=24
+published:
+  epoch: 1222393500
+  utc: 2008-09-26T01:45:00
+---
+A few batches of udates to <a href="http://github.com/claco/csvdatareader/">CsvDataReader</a> this week. I added support for schema.ini files including all of the TabDelimited, CsvDelimited, FixedLength and Delimited(*) formats. I also added support and tests for using Streams.
+<!--more-->
+Bugs and maybe some option flags not withstanding, I think its done for now.

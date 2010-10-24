@@ -1,0 +1,20 @@
+---
+layout: post
+title: "New WAP"
+category: Hardware
+published:
+  epoch: 1071290338
+  utc: 2003-12-13T04:38:58
+---
+
+<p>
+After her WPC11 Linksys Wireless-B card started freaking (actually, I think it's really her OS is fubared), I purchased an Microsoft MN-820 Wireless Notebook package. It's the Wireless Notebook kit with the MN-700 router and the MN-720 PCMCIA card.
+</p>
+<p>
+It has definately been a case of The Good, The Bad, and The Ugly so far this evening. I plan on spewing forth a long review of the pros and cons of this hardware tomorrow once I awaken from my slumber.
+</p>
+<p>
+On the upshot, it was $127, and there's another $30 MS rebate after that.
+</p>
+
+

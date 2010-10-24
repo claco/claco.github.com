@@ -1,0 +1,862 @@
+---
+layout: post
+title: "MVC Marathon Part 3: Creating a Restaurants Controller and View"
+category: OffTopic
+tags:
+  - c#
+  - cakephp
+  - catalyst
+  - controller
+  - django
+  - perl
+  - php
+  - python
+  - rails
+  - ruby
+  - templates
+  - view mvc
+published:
+  epoch: 1218395723
+  utc: 2008-08-10T19:15:23
+---
+
+		<p>
+			Welcome to part 3 of <a href="/blog/mvc-madness/">MVC Marathon</a>,
+			a multipart excursion into creating an application in the major
+			MVC frameworks available today.
+		</p>
+		<p>
+			The source code for this part can be found here:
+			<a href="http://github.com/claco/mvc-marathon/tree/part3/">http://github.com/claco/mvc-marathon/tree/part3/</a>
+		</p>
+		<h2>Part 3: Creating a Restaurants Controller and View</h2>
+		<p>
+			In our last installment, we created a database, schema and model
+			to get at our list of restaurants. In this episode, I'm going to
+			create a controller and view that uses that model to list the
+			restaurants in our database.  Where available, I will also use
+			any existing CRUD/scaffolding to enter some test data.
+		</p>
+		<p>
+			You can jump to any specific framework using the links below.
+		</p>
+		<ul>
+			<li><a href="#aspnetmvc">ASP.NET MVC</a></li>
+			<li><a href="#cakephp">CakePHP</a></li>
+			<li><a href="#catalyst">Catalyst</a></li>
+			<li><a href="#django">Django</a></li>
+			<li><a href="#rails">Ruby on Rails</a></li>
+			<li><a href="#conclusions">Conclusions</a></li>
+		</ul>
+
+		
+		<h2><a name="aspnetmvc"></a>ASP.NET MVC</h2>
+		<p>
+			While .NET 3.0 and MVC have made a lot of strides with LINQ and
+			Entity Framework (ORM), they completely lack any kind of
+			scaffolding or helpers for data management. I'm sure someone is
+			working on it, and there are 3rd party package available. For now,
+			we'll stick to just creating a controller for the restaurants.
+		</p>
+<p><strong>Update: I dropped the ball on this one. There is the new Dynamic Data scaffolding in .NET 3.5. It appears that you can create an entirely separate Dynamic Data site, or <a href="http://msdn.microsoft.com/en-us/library/cc668188.aspx">try and work it into an existing site</a>. As it stands,  a separate site doesn't count as part of the MVC solution, and the steps to integrate it are woefully long and complicated. I declare that the same as no real new user friendly solution for the context of this series.</strong></p>
+		<h3>Creating the Data</h3>
+		<p>
+			Before we create our controller, we need to add some test data.
+			First, Double-Click the BurningPlate.mdf file in the App_Data
+			directory to open the Server Explorer pane. Right-Click on the
+			Restaurants table and select "Show Table Data".
+		</p>
+		<p>
+			<a href="aspnet1.png">
+				<img src='aspnet1.png' width="204" height="152" alt="create data" />
+			</a>
+		</p>
+		<p>
+			Now enter two restaurants into the Name field: "Siamone Thai"
+			and "Azteca".
+		</p>
+		<h3>Creating the Controller</h3>
+		<p>
+			Now that we have our test data, we're going to create a controller
+			to list that data. Right-Click on the Controllers folder and choose
+			"Add New Item".
+		</p>
+		<p>
+			<a href="aspnet2.png">
+				<img src='aspnet2.png' width="204" height="152" alt="create controller" />
+			</a>
+		</p>
+		<p>
+			Select "MVC Controller Class", type RestaurantsController.cs for
+			the name and click "Add". By convention in .NET MVC, the controller
+			class name should always end in Controller. The default routing
+			will assume that any controller path named /foo/ will map to the
+			controller FooController. This of course can be changed by tweaking
+			the routing, but why create more work for yourself?
+		</p>
+		<p>
+			Much like inflection to relate models to tables automatically,
+			controller and view naming is typically referred to as "convention
+			or configuration". You can follow naming conventions and have things
+			"Just Work", or you can usually deviate from the norm and use
+			configuration to over come situations where you need t name things
+			differently.
+		</p>
+		<p>
+			<em>Update: The file name in the add item dialog above is wrong. :-)</em>
+		</p>
+		<p>
+			<a href="aspnet3.png">
+				<img src='aspnet3.png' width="204" height="152" alt="new controller" />
+			</a>
+		</p>
+		<p>
+			Now we have a shiny new controller class that by default spits
+			out a NotImplementedException. Let's add some code to get a list
+			of restaurants and feed that to a view.
+		</p>
+		<p>
+			<a href="aspnet4.png">
+				<img src='aspnet4.png' width="204" height="152" alt="new controller code" />
+			</a>
+		</p>
+		<pre>public ActionResult Index()
+{
+    BurningPlateDataContext db = new BurningPlateDataContext();
+    List&lt;Restaurant&gt; restaurants = db.Restaurants.ToList();
+
+    return View(restaurants);
+}</pre>
+		<p>
+			In the code above, all we've had to do is instantiate an instance
+			of the BurningPlateDataContext class that was auto generated when
+			we <a href="/blog/mvc-marathon-part-2-creating-a-database-and-model/#aspnetmvc">created our Model</a>.
+			Then we asked it for a list of restaurants using ToList. Finally,
+			we passed that list of restaurants to the View method.
+		</p>
+		<p>
+			Explore the View method when you have time. It has many options, 
+			and there is more than one way to get data into a view. In our case
+			we've chosen to pass the restaurants list using the Model parameter.
+			You can also pass it in the ViewData itself. I personally think
+			that the main model data should be passed in the Model, and ViewData
+			is reserved for all of the extra information like page titles,
+			meta tag keywords, links, etc.
+		</p>
+		<h3>Creating the View</h3>
+		<p>
+			Now that we have a controller that assembles the data, we need
+			a way to display it. My much like the routes to controller mappings, 
+			.NET MVC will look for a view matching the ControllerName/Action
+			path. Since our controller is Restaurants and our action is Index,
+			we need to create an Index view in the Restaurants folder.
+		</p>
+		<p>
+			Just like the routing naming conventions, this can also be customized
+			to use views with alternate names and in alternate locations using the
+			various View method options.
+		</p>
+		<p>
+			To create the view, Right-Click the Views folder and create a
+			folder called "Restaurants". Right-Click that new folder and select
+			"Add Item".
+		</p>
+		<p>
+			<a href="aspnet5.png">
+				<img src='aspnet5.png' width="204" height="152" alt="new view" />
+			</a>
+		</p>
+		<p>
+			Because .NET MVC supports master pages (wrapper templated layouts)
+			by default, select "MVC View Content Page" and name it after our
+			default RestaurantController method "Index" and click "Add". You
+			will then be prompted to select a master page. Select the "Site" master
+			page in the Shared folder and click "OK".
+		</p>
+		<p>
+			<a href="aspnet6.png">
+				<img src='aspnet6.png' width="204" height="152" alt="new view master select" />
+			</a>
+		</p>
+		<p>
+			Now that we have a new view page, we need to tell it about the
+			type of model data we're passing it from the controllers View method
+			call in the controller. In our case, we're passing a list o restaurants.
+			Right-Click on your new Index.aspx page and select "View Code".
+		</p>
+		<p>
+			<a href="aspnet7.png">
+				<img src='aspnet7.png' width="204" height="152" alt="new view model type" />
+			</a>
+		</p>
+		<pre>public partial class Index : ViewPage&lt;List&lt;Restaurant&gt;&gt;</pre>
+		<p>
+			To tell the view to expect a list of restaurants, we simply add
+			a type definition to the view class definition. In our case, that
+			means changing ViewPage to ViewPage&lt;List&lt;Restaurans&gt;&gt;.
+			This tells intellisense that when accessing the ViewData.Model
+			property that it is a List of Restaurants objects.
+		</p>
+		<p>
+			Now that we have told the page what the model is, we simply
+			need to add a loop to the template to display the list of restaurants.
+			Double-Click your Index.aspx file to open the page view.
+		</p>
+		<p>
+			<a href="aspnet8.png">
+				<img src='aspnet8.png' width="204" height="152" alt="new view model loop" />
+			</a>
+		</p>
+		<pre>&lt;ul&gt;
+&lt;% foreach (var restaurant in ViewData.Model) { %&gt;
+	&lt;li&gt;&lt;%= restaurant.Name %&gt;&lt;/li&gt;
+&lt;% } %&gt;
+&lt;/ul&gt;</pre>
+		<p>
+			In our view, we added a loop against the ViewData.Model and printed
+			out each restaurants name in an unordered list.
+		</p>
+		<p>
+			Now that we have a controller and a view, let's check out our
+			work by going to /restaurants/.
+		</p>
+		<p>
+			<a href="aspnet11.png">
+				<img src='aspnet11.png' width="204" height="152" alt="new view model browser" />
+			</a>
+		</p>
+		<p>
+			As a final touch, let's add a link to the home page to get to
+			our new restaurants index view. To do that, open the Site.Master
+			view and between the Home and About Us links, add a call to
+			Html.ActionLink to build our link.
+		</p>
+		<p>
+			<a href="aspnet9.png">
+				<img src='aspnet9.png' width="204" height="152" alt="new view model browser" />
+			</a>
+		</p>
+		<pre>&lt;li&gt;
+    &lt;%= Html.ActionLink(&quot;Restaurants&quot;, &quot;Index&quot;, &quot;Restaurants&quot;)%&gt;
+&lt;/li&gt;</pre>
+		<p>
+			Hardcoding links suck. MVC takes care of this by using the routing
+			tables to create a link using the controller and action names.
+			This means that if the controller or action names change, the links
+			to then automatically change as well. No need to go rooting through code
+			to update links.
+		</p>
+		<p>
+			Let's check out our link to make sure it works.
+		</p>
+		<p>
+			<a href="aspnet10.png">
+				<img src='aspnet10.png' width="204" height="152" alt="new view model browser" />
+			</a>
+		</p>
+
+
+
+
+
+		
+
+
+		<h2><a name="cakephp"></a>CakePHP</h2>
+		<p>
+			Unlike .NET MVC, CakePHP has CRUD scaffolding already built into
+			the framework. Because of this, we're going to create our
+			controller first and then create our data.
+		</p>
+		<h3>Creating the Controller</h3>
+		<p>
+			Just like when we created our model, we'll use
+			<kbd>cake bake</kbd> to create the controller for us.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/cakephp/BurningPlate $ cake bake
+
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : BurningPlate
+Path: /Users/claco/mvc-marathon/cakephp/BurningPlate
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+&gt; C
+---------------------------------------------------------------
+Bake Controller
+Path: /Users/claco/mvc-marathon/cakephp/BurningPlate/controllers/
+---------------------------------------------------------------
+Possible Controllers based on your current database:
+1. Restaurants
+Enter a number from the list above, type in the name of another controller, or &#x27;q&#x27; to exit  
+[q] &gt; 1
+---------------------------------------------------------------
+Baking RestaurantsController
+---------------------------------------------------------------
+Would you like to build your controller interactively? (y/n) 
+[y] &gt; 
+Would you like to use scaffolding? (y/n) 
+[n] &gt; y
+
+---------------------------------------------------------------
+The following controller will be created:
+---------------------------------------------------------------
+Controller Name:  Restaurants
+		   var $scaffold;
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] &gt; 
+
+Creating file /Users/claco/mvc-marathon/cakephp/BurningPlate/controllers/restaurants_controller.php
+Wrote /Users/claco/mvc-marathon/cakephp/BurningPlate/controllers/restaurants_controller.php
+Cake test suite not installed.  Do you want to bake unit test files anyway? (y/n) 
+[y] &gt; 
+
+You can download the Cake test suite from http://cakeforge.org/projects/testsuite/
+
+Baking unit test for Restaurants...
+
+Creating file /Users/claco/mvc-marathon/cakephp/BurningPlate/tests/cases/controllers/restaurants_controller.test.php
+Wrote /Users/claco/mvc-marathon/cakephp/BurningPlate/tests/cases/controllers/restaurants_controller.test.php
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+&gt; Q</pre>
+		<p>
+			Here we've asked to create a new controller. Cake knew what models
+			and tables we have and prompts us to choose one. It also asked if
+			we want to use scaffolding and create unit tests.
+		</p>
+		<pre>&lt;?php
+class RestaurantsController extends AppController {
+
+	var $name = &#x27;Restaurants&#x27;;
+	var $scaffold;
+}
+?&gt;</pre>
+		<p>
+			As we see form the controller that was created, the only code
+			needed to CRUD data is <samp>var $scaffold;</samp>. Also, just
+			like .NET MVC, the class is named RestaurantsController, which
+			routing will map to the /restaurants/ path.
+		</p>
+		<h3>Creating the View</h3>
+		<p>
+			Because we've chosen to use scaffolding, the views and all of the
+			necessary code needed to maintait the restaurants table is already
+			taken care of. Let's take a look at what it provides:
+		</p>
+		<p>
+			<a href="cake1.png">
+				<img src='cake1.png' width="204" height="152" alt="cake list" />
+			</a>
+			<a href="cake2.png">
+				<img src='cake2.png' width="204" height="152" alt="cake new" />
+			</a>
+			<a href="cake3.png">
+				<img src='cake3.png' width="204" height="152" alt="cake list" />
+			</a>
+		</p>
+		<p>
+			With one variable, we have a full working scaffolding to manage
+			our data. Now, let's add a link to the front page going to our
+			new restaurants controller.
+		</p>
+		<p>
+			To add our link we need to edit the home.ctp page in the Views
+			fåolder.
+		</p>
+		<pre>&lt;a href=&quot;&lt;?php echo Router::url(array(&#x27;controller&#x27; =&gt; &#x27;Restaurants&#x27;, &#x27;action&#x27; =&gt; &#x27;index&#x27;));?&gt;&quot;&gt;Restaurants&lt;/a&gt;</pre>
+		<p>
+			Just like .NET MVC, we're using the routing information to
+			generate a link rather than hard coding it, passing in the 
+			controller name and the action we're linking to. Now that should
+			appear on the default home page.
+		</p>
+		<p>
+			<a href="cake4.png">
+				<img src='cake4.png' width="204" height="152" alt="new view model browser" />
+			</a>
+		</p>
+
+
+
+		<h2><a name="catalyst"></a>Catalyst</h2>
+		<p>
+			Because Catalyst doesn't force any specific ORM upon you, that
+			also means that there is no official CRUD or scaffolding support
+			out of the box. Depending on the ORM you choose, there are some
+			pretty good options.
+		</p>
+		<p>
+			Class::DBI users have Catalyst::Enzyme.
+			Rose::DB users have Rose::DBx::Garden::Catalyst
+			(based on CatalystX::CRUD). While there are CatalystX::CRUD Models
+			, you still have to write forms views and processing for it.
+			There is also Catalyst-Example-InstantCRUD seems to be old and dead.
+			There's also CatalystX::ListFramework and CatalystX::ListFramework::Builder
+			<span style="text-decoration: line-through;">which requires some wireup work for the former and the latter
+			creates an entire application, apparently separate from the public application.</span>
+		</p>
+		<p style="text-decoration: line-through;">
+			Since we're using DBIx::Class, and the current options don't meet
+			our needs without a divergence from this series, we'll skip CRUD
+			scaffolding for the time being.
+		</p>
+		<h3>Creating the Data</h3>
+		<p style="text-decoration: line-through;">
+			Since we have no CRUD scaffolding, we need to create the data the
+			old fashioned way. You have to choices. First, use the dbicadmin script
+			to run insert statements. Second, use the sqlite command line
+			utilities to run SQL insert statement. I chose the latter. I won't
+			cover that utility usage here.
+		</p>
+
+<p>
+To add the CRUD scaffolding to our add, we need to load the CatalystX::ListFramework::Builder plugin, point it to our extjs javascript files and tell it to live in the admin url space.
+</p>
+<p>
+To load the plugin, simple add it to the <kdb>use Catalyst</kdb> line in your application file:
+</p>
+<pre># Start the application
+__PACKAGE__-&gt;setup(qw/
+    -Debug
+    ConfigLoader
+    +CatalystX::ListFramework::Builder
+    Static::Simple
+/);</pre>
+
+<p>Now we need to tell it where our ExtJS files are located. We do this by adding enries to our configuration file for the plugins root controller. This is covered in its documentation. While we're in the config file, we can also tell it to put the CRUD in the admin url namespace:</p>
+
+<pre>extjs2   /static/extjs
+&lt;Controller::LFB::Root&gt;
+	&lt;action&gt;
+		&lt;base&gt;
+			PathPart admin
+		&lt;/base&gt;
+	&lt;/action&gt;
+&lt;/Controller::LFB::Root&gt;</pre>
+
+<p style="text-decoration: line-through;">Currently, the CRUD requires it's own Model to access the database. I expect this will change in the future. In the mean time, we can just create a model that inherits from the model we've previously created.</p>
+
+<pre style="text-decoration: line-through;">package BurningPlate::Model::LFB::DBIC;
+
+use strict;
+use base 'BurningPlate::Model::DB';
+
+1;</pre>
+
+<p>
+The latest versions of LFB automatically detect any models that use DBIC::Schema and adds them to the main admin index page.
+</p>
+
+<p>Now fire up your application and go to the admin url you specified in config. From there we can use the interface to add data.</p>
+
+
+<p>
+			<a href="catalyst2.png">
+				<img src="catalyst2.png" alt="catalyst list" height="152" width="204">
+			</a>
+			<a href="catalyst3.png">
+				<img src="catalyst3.png" alt="catalyst add" height="152" width="204">
+			</a>
+			<a href="catalyst4.png">
+				<img src="catalyst4.png" alt="catalyst add" height="152" width="204">
+			</a>
+			<a href="catalyst5.png">
+				<img src="catalyst5.png" alt="catalyst list" height="152" width="204">
+			</a>
+		</p>
+
+
+		<h3>Creating the Controller</h3>
+		<p>
+			To create the controller, we'll just call the scripts/*create.pl
+			script, giving it the name of the controller to create.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*create.pl controller Restaurants
+ exists &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/Controller&quot;
+ exists &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/Controller/Restaurants.pm&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t/controller_Restaurants.t&quot;</pre>
+
+		<p>
+			The script has created a new controller class for us along with
+			a unit test file for that controller. Now we need to add code
+			to retrieve a list of restaurants and send that to a view.
+		</p>
+		<pre>$c-&gt;stash-&gt;{&#x27;restaurants&#x27;} = [$c-&gt;model(&#x27;Restaurant&#x27;)-&gt;search-&gt;all];</pre>
+		<p>
+			In the code above, we ask the Restaurant model to search for all
+			restaurant records and assign the results to an array called
+			restaurants in the stash. The stash is just like the ViewData in 
+			.NET MVC, holding data for the view to access and render.
+		</p>
+		<h3>Creating the View</h3>
+		<p>
+			Now that we have our restaurants, we need a view to display them.
+			Catalyst doesn't assume out of the box that your views will be
+			in any specific language, or even that they will use templates at all.
+			This means we need to create a view class to render templates and
+			an actual template.
+		</p>
+		<p>
+			We'll use the create.pl script again to create a view class.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*create.pl view TT TT
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/View&quot;
+ exists &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/View/TT.pm&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t/view_TT.t&quot;</pre>
+
+		<p>
+			Here's we've created a view class using the TT (Template Toolkit)
+			helper. By default, Catalyst will use the first view it finds as the
+			default view renderer. If you have multiple views, you can call
+			the view explicitly or set the default_view or current_view
+			config options.
+		</p>
+		<p>
+			Now we need to create a template for our controller. Just like
+			.NET MVC above, the TT view will look for a template file matching
+			the controllers name and action. In our case, the file would be
+			named index.tt in a restaurants folder in the root directory.
+			You can override the name of the template using the template
+			stash variable.
+		</p>
+		<pre>&lt;ul&gt;
+[% FOREACH restaurant IN restaurants %]
+	&lt;li&gt;[% restaurant.name %]&lt;/li&gt;
+[% END %]
+&lt;/ul&gt;</pre>
+		<p>
+			Just like the index template for .NET MVC, we simply use the template
+			language of choice to create an unordered list, loop through each
+			restaurant and print out the name.
+		</p>
+		<p>
+			Now that we have our view, let's check out our restaurants list
+			by going to /restaurants/. Just like Cake and .NET, the path is
+			derived form the name of the class. Unlike Cake and .NET, there
+			is no central routing configuration to tweak if you need to
+			change the urls. Instead, you can simply change the path
+			configuration variable in each controller. You can however change
+			that config parameter within the main configuration file too, 
+			so I guess there technically is a central routing table. :-)
+		</p>
+		<p>
+			<a href="catalyst1.png">
+				<img src='catalyst1.png' width="204" height="152" alt="catalyst browser" />
+			</a>
+		</p>
+
+
+
+
+
+
+
+		<h2><a name="django"></a>Django</h2>
+		<p>
+			Because Django was born our of the publishing industry, it has
+			very strong CRUD/scaffolding support out of the box. One needs
+			only to load the "admin" modules in their configuration, tell
+			it what models to administer, set the admin url and create
+			the necessary tables and user using manage.py.
+		</p>
+		<h3>Creating the Data</h3>
+		<p>
+			In our settings.py, we add a line to load the django.contrib.admin
+			module:
+		</p>
+		<pre>INSTALLED_APPS = (
+    &#x27;django.contrib.auth&#x27;,
+    &#x27;django.contrib.contenttypes&#x27;,
+    &#x27;django.contrib.sessions&#x27;,
+    &#x27;django.contrib.sites&#x27;,
+    &#x27;django.contrib.admin&#x27;,
+    &#x27;BurningPlate&#x27;
+)</pre>
+
+	<p>
+		Now we need to tell the admin code which models to administer. We can
+		do this anywhere, but I'll put it in our model for now.
+	</p>
+	<pre>admin.site.register(Restaurant)</pre>
+	
+	<p>
+		Now we need to tell Django what url to use for admin access. To do this,
+		all we have to do is uncomment some like already in the urls.py file:
+	</p>
+	<pre>from django.conf.urls.defaults import *
+
+# Uncomment the next two lines to enable the admin:
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns(&#x27;&#x27;,
+    # Example:
+    # (r&#x27;^BurningPlate/&#x27;, include(&#x27;BurningPlate.foo.urls&#x27;)),
+
+    # Uncomment the next line to enable admin documentation:
+    # (r&#x27;^admin/doc/&#x27;, include(&#x27;django.contrib.admindocs.urls&#x27;)),
+
+    # Uncomment the next line for to enable the admin:
+    (r&#x27;^admin/(.*)&#x27;, admin.site.root),
+)</pre>
+
+	<p>
+		Now that we loaded the admin code and told it which models to administer,
+		we need to update the database to include the necessary admin related
+		tables. To do this, simply run syncdb.
+	</p>
+	<pre>claco@mbp ~/BurningPlate $ python manage.py syncdb
+Creating table auth_permission
+Creating table auth_group
+Creating table auth_user
+Creating table auth_message
+Creating table django_content_type
+Creating table django_session
+Creating table django_site
+Creating table django_admin_log
+Creating table BurningPlate_restaurant
+
+You just installed Django&#x27;s auth system, which means you don&#x27;t have any superusers defined.
+Would you like to create one now? (yes/no): yes
+Username (Leave blank to use &#x27;claco&#x27;): admin
+E-mail address: claco@chrislaco.com
+Password: 
+Password (again): 
+Superuser created successfully.
+Installing index for auth.Permission model
+Installing index for auth.Message model
+Installing index for admin.LogEntry model</pre>
+		<p>
+			Django created the needed tables for us and also prompted us to create
+			a username/password for access. Now let's check out the admin web
+			interface. and add our data.
+		</p>
+		<p>
+			<a href="django1.png">
+				<img src='django1.png' width="204" height="152" alt="django list" />
+			</a>
+			<a href="django2.png">
+				<img src='django2.png' width="204" height="152" alt="django new" />
+			</a>
+			<a href="django3.png">
+				<img src='django3.png' width="204" height="152" alt="django list" />
+			</a>
+			<a href="django4.png">
+				<img src='django4.png' width="204" height="152" alt="django list" />
+			</a>
+		</p>
+
+		<h3>Creating the Controller</h3>
+		<p>
+			While Django is an "MVC" like framework, it considers the Controller
+			to be the "view", and the View as the "template". Aside from this
+			naming juggle, it's still the same in practice: a separation of
+			getting the data and displaying the data.
+		</p>
+		<p>
+			To create our controller, simply create a restaurants directory
+			and define the views for it.
+		</p>
+		<pre>from django.shortcuts import render_to_response
+from BurningPlate.models import Restaurant
+
+def index(request):
+    restaurants = Restaurant.objects.all()
+    return render_to_response(&#x27;restaurants/index.html&#x27;, {&#x27;restaurants&#x27;: restaurants})
+</pre>
+		<p>
+			In the code above, we loaded request handling modules, loaded our
+			Restaurants model and defined an index action that loads all restaurants
+			and renders the index.html template, passing it the restaurants list in much
+			the same we use the stash in Catalyst of the ViewData in .NET.
+			Like Catalyst, the template can be named anything you want it to be.
+		</p>
+		<p>
+			Unlike the other frameworks, url mapping is a manual process. To
+			expose the restaurants controller, we need to add it to our urls.py
+			file:
+		</p>
+		<pre>(r&#x27;^restaurants/$&#x27;, &#x27;BurningPlate.restaurants.views.index&#x27;)</pre>
+	
+		<h3>Creating the View</h3>
+		<p>
+			By default, Django looks for
+			its templates in a path outside of the application root.
+		</p>
+		<p>
+			For the sake of keeping it all in the same directory in the
+			repository, I've tweaked the config to point to the current
+			directory as the root template directory.
+		</p>
+		<pre>TEMPLATE_DIRS = (
+    # Put strings here, like &quot;/home/html/django_templates&quot; or &quot;C:/www/django/templates&quot;.
+    # Always use forward slashes, even on Windows.
+    # Don&#x27;t forget to use absolute paths, not relative paths.
+    &quot;.&quot;
+)</pre>
+		<p>
+			Now in our restaurants directory, we create an index.html with
+			the code to print out the restaurants.
+		</p>
+		<pre>&lt;ul&gt;
+{% for restaurant in restaurants %}
+    &lt;li&gt;{{ restaurant.name }}&lt;/li&gt;
+{% endfor %}
+&lt;/ul&gt;</pre>
+		<p>
+			Looks familiar doesn't it? Let's check it out in our browser.
+		</p>
+		<p>
+			<a href="django5.png">
+				<img src='django5.png' width="204" height="152" alt="django browser" />
+			</a>
+		</p>
+
+
+
+
+
+
+
+		<h2><a name="rails"></a>Ruby on Rails</h2>
+		<p>
+			Unfortunately for me, I upgraded to Leopard, which means I also got
+			the latest Rails 2.1. The scaffolding in 2.1 has changed from
+			previous versions. It also apparently can't be added to an existing
+			model as it insists on creating it's own model as part of the process.
+			This means we have to ditch the model we built in the last
+			article.
+		</p>
+		<h3>Creating the Controller/View/Data</h3>
+		<p>
+			To create the controller and scaffolding, simply run the generate
+			scaffold command, passing it the name of the model and the fields
+			to create:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ script/generate scaffold restaurant name:string
+    exists  app/models/
+    exists  app/controllers/
+    exists  app/helpers/
+    create  app/views/restaurants
+    create  app/views/layouts/
+    exists  test/functional/
+    exists  test/unit/
+    create  public/stylesheets/
+    create  app/views/restaurants/index.html.erb
+    create  app/views/restaurants/show.html.erb
+    create  app/views/restaurants/new.html.erb
+    create  app/views/restaurants/edit.html.erb
+    create  app/views/layouts/restaurants.html.erb
+    create  public/stylesheets/scaffold.css
+    create  app/controllers/restaurants_controller.rb
+    create  test/functional/restaurants_controller_test.rb
+    create  app/helpers/restaurants_helper.rb
+     route  map.resources :restaurants
+dependency  model
+    exists    app/models/
+    exists    test/unit/
+    exists    test/fixtures/
+    create    app/models/restaurant.rb
+    create    test/unit/restaurant_test.rb
+    create    test/fixtures/restaurants.yml
+    exists    db/migrate
+    create    db/migrate/20080731023309_create_restaurants.rb</pre>
+
+		<p>
+			As you can see, this created everything we need to get started.
+			The mode, the migration, the views, the controller and the
+			tests/test fixtures. Normally you would run rake db:migrate to
+			setup the database. But because we've already done the same in our
+			previous article, we don't need to do that here.
+		</p>
+		<p>
+			Let's check out what we have in the browser.
+		</p>
+		<p>
+			<a href="rails1.png">
+				<img src='rails1.png' width="204" height="152" alt="rails list" />
+			</a>
+			<a href="rails2.png">
+				<img src='rails2.png' width="204" height="152" alt="rails new" />
+			</a>
+			<a href="rails3.png">
+				<img src='rails3.png' width="204" height="152" alt="rails list" />
+			</a>
+			<a href="rails3.png">
+				<img src='rails3.png' width="204" height="152" alt="rails list" />
+			</a>
+		</p>
+
+
+		
+		<h2><a name="conclusions"></a>Conclusions</h2>
+
+		<ul>
+			<li>
+				<p>
+					It would be nice if ASP.NET MVC, Catalyst and Django created
+					controllers that pushed the idea of using an app level
+					base class like Cake and Rails do. I hear "use a base class"
+					all the time in Catalyst discussions  in response to people
+					wanting to create plugins. It  would be better for the new
+					user to be led to practice what is preached.
+				</p>
+			</li>
+			<li>
+				<p>
+					While Rails scaffolding is nice and can be customized, 
+					it can't be added to and existing controller/model. This means
+					you need to know that you have to use it first. It would be
+					much more useful if you could at least point it to an existing
+					model.
+				</p>
+			</li>
+			<li>
+				<p>
+					CakePHP scaffolding is quite nice but it's not very easy
+					to customize like the Django admin section is. It is pretty
+					easy to move into an admin set of controllers namespace though.
+				</p>
+<p>Ruby strikes a nice balance here as well. It generates CRUD scaffold for you, but in the end it's just code on your app you can tweak any way you want.</p>
+			</li>
+			<li>
+				<p>
+					Django admin scaffolding is the bomb. It's in it's own
+					directory with authentication already rolled in.
+				</p>
+			</li>
+			<li>
+				<p>
+					CRUD scaffolding in Catalyst is mostly non existent
+					for the DBIx::Class user (the ORM pushed in the tutorials)
+					unless you're willing to write some glue classes. If you're running
+					Rose::DB as your ORM, you're golden. The ListFramework is promising and so is the CatalystX::CRUD stuff. I imagine that given some time, it will have strong CRUD like Django does.
+				</p>
+			</li>
+			<li>
+				<p>
+					.NET MVC falls flat in the CRUD Scaffold arena.
+				</p>
+			</li>
+		</ul>
+

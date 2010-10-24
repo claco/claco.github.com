@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Thunderbird In Da House"
+category: OffTopic
+published:
+  epoch: 1061426400
+  utc: 2003-08-21T00:40:00
+---
+
+<p>
+Well, I finally broke down and installed <a href="http://www.texturizer.net/thunderbird/">Mozilla Thunderbird</a> this evening. Very nice. I much prefer the seperation of Mozilla into Firebird and Thunderbird.
+</p>
+<p>
+As soon as the Thumderbird themes become as plentiful as the Firebird themes, I'll be even happier, especially ORbit 3+1 and Breeze.
+</p>
+
+

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Firefox Gripe: Toolbar Search Box"
+category: WWW
+published:
+  epoch: 1088810284
+  utc: 2004-07-02T23:18:04
+---
+
+This is about my only realy gripe with Firefox. I always wish I could change the size and/or position of the toolbar search box.
+
+My laptop runs at 1600x1200, and my desktops run at 1280x1024. With those kinds of sizes, the search box is always waaaaaay over on the right when I need it. That's a pain in the ass in a reading left-to-right environment.
+
+<ins><em>Yes, I just realized I can customize a toolbar and drag the search box to the left. That's on half of the problem solved.</em></ins>
+
+I also wish I could click-drag the left side of the searchbox and make it larger. As a programmer, I'm usuall searching for much longer strings, especially when I'm searching MSDN for .NET namespaces.
+
+I'm sure there is some XUL/CSS magic I could conjure up. I just shouldn't even have to.
+
+<ins><em>Two for two. Apparently I'm <a href="http://www.digitalmediaminute.com/article/672">not the only one</a> who hates the size. Thanks for the CSS example.</em></ins>
+
+

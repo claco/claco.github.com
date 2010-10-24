@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Accessible Navigational Links"
+category: WWW
+published:
+  epoch: 1042426209
+  utc: 2003-01-13T02:50:09
+---
+
+<p>
+Cheesus my brain hurtz. The accessibility navigation links are now in place thanks to <a href="http://diveintoaccessibility.org/day_9_providing_additional_navigation_aids.html" title="Tips about adding better navigation to a site">a little example</a> from <a href="http://diveintoaccessibility.org/" title="Website about making a site more accessibile"><cite>Dive Into Accessibility</cite></a>. If you are using IE, this means nothing to you. If you are using a text reader, it may mean a easier navigation. If you are using Mozilla 1+/Netscape 6+, select <code>View -> Show/Hide -> Site Navigation Bar -> Show Only As Needed</code>. This will enable a tool bar at the top that interprets the navigation link tags; things like Top, First, Next, Previous, Last. There are also some site-wide links, like Copyright, Author, and Help. If you see anything that should go to somewhere other than where it does, give me a shout out.
+</p>
+<p>
+This is turning out to be a process with a life of it's own. One you get started on accessibility, standards compliance and Doing The Right Thing, it's hard to stop. I guess I've <a href="http://www.webstandards.org/" title="Group advocating the broader use of web standards">caught the religion</a>.
+</p>
+
+

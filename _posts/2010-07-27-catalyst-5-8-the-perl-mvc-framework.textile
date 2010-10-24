@@ -1,0 +1,45 @@
+--- 
+layout: post
+title: "Book Review: Catalyst 5.8: The Perl MVC Framework"
+wordpress_id: 256
+wordpress_url: http://chrislaco.com/?p=256
+published:
+  epoch: 1280272620
+  utc: 2010-07-27T23:17:00
+---
+<a href="/wp-content/uploads/2010/07/Catalyst-5.8_Front-cover.jpg"><img class="alignleft size-thumbnail wp-image-257" title="Catalyst 5.8 Front Cover" src="http://chrislaco.com/wp-content/uploads/2010/07/Catalyst-5.8_Front-cover-121x150.jpg" alt="" width="121" height="150" /></a><em>Disclaimer: I was contacted by Packt Publishing about reviewing <a href="https://www.packtpub.com/catalyst-5-8-the-perl-mvc-framework/book?utm_source=chrislaco.com&amp;utm_medium=bookrev&amp;utm_content=blog&amp;utm_campaign=mdb_003900">this book</a> and was sent a free copy to do so.</em>
+<h2>Background</h2>
+A long time ago in a land far far away (2004), I started programming in Perl as my non-MS language of choice. It all started innocently enough by taking over others' CPAN dists, then eventually creating my own shopping cart system intertwined with Catalyst 5.6/5.7 and DBIx::Class.
+
+Then a few years ago as more and more Rails opportunities came along and as ASP.NET MVC 1.0 came into existence, I slowly migrated away from Perl as my primary language. This review is primarily from the perspective of someone who is still fairly familiar with most of Catalyst and while I'm familiar with what Moose has to offer, I haven't ever done any projects that make use of it.
+
+Enough about me. On with the show!
+<h2>The Good</h2>
+This book does a pretty good job of covering all of the basics for people new to Catalyst from installation and app creation to using the most common ORM (DBIX::Class), testing and deployment. There always seems to be a debate about what examples books should use for beginners: best practices vs. simple examples. This book does a pretty good job of finding that middle ground in that area. For example, some of the templating examples aren't the greatest when it comes to reuse, but the prevention of XSS and security/html encoding are explained fro the beginning.
+
+I'm also fond of this books treatment of models. While it doesn't explicitly mention "domain model" vs. "data model" arguments, it does a great job of having the user think about having their "models" be reusable and working outside of Catalyst (like in a pl script) before applying "glue" to use those models inside of Catalyst. This is reinforced by creating a few utility scripts to prepopulate the database with data before using that data in Catalyst itself as well as creating non database models for use as Catalyst "models".
+
+This book spends a fair amount of time talking about the most common features of DBIx::Class as well as presenting options to do the same things in DBI without an ORM for contrast. This book feels like it's really 35% of a DBIx::Class book. I think that's a good thing.
+
+Another good area for me was Authentication/Authorization. Those two things aren't the same and a lot of framework book gloss over that fact. This book did a good job of explaining the difference and showing how to implement each part.
+
+One of my favorite chapters of the book was the "Hot Web Topic" area which covered REST  and AJAX. While most people are familiar with these things, it's nice that a beginners book covers them. My favorite nugget though is Jemplate, which allows you to essentially reuse templates from your views within your AJAX handlers. While everyone seems to talk about AJAX, I've not seem too many people take up the topic of templating your dynamically generated HTML for the sake of DRY.
+
+Last but not least, it's always nice to be able to download the source code for the examples included in the book.
+<h2>The Bad</h2>
+Like all books, there are some things that feel like they were glossed over for the sake or brevity that would've have made for a more complete book for Catalyst beginners.
+
+First, in the tempting examples, this book uses an admittedly "unsupported" module called TTSite, which have the common header/footer/wrapper type issues already implemented. I think it would have been better to walk users through setting up those things using the default view and the <em>wrapper</em> options in Template Toolkit.
+
+This is a minor nit and not really a bad thing, but it would've been nice for the book to talk a little more about the use of <em>go()</em> vs <em>forward()</em> when transferring between actions.
+
+My last complaint is one of linking to CPAN. CPAN modules often change hands or are updated by many people. Almost all of the links to CPAN in this book link to a specific persons account when they should probably be linking to the dist instead:
+<pre><code># Current
+http://search.cpan.org/~bobtfish/Catalyst-Action-REST-0.85/
+
+# Better
+http://search.cpan.org/dist/Catalyst-Action-REST-0.85/</code></pre>
+<h2>The Ugly</h2>
+The worst part about this book for me was the code formatting. The wrapping of long lines isn't very readable and for the most part it feels like someone formatted code using Microsoft Word. I haven't ready any other Catalyst books for comparison, but the code formatting in my Rails books are much easier on the eyes to read. I don't know if that's due to language differences, color/font choices, or if maybe putting the code inside of images would help.
+<h2>Conclusions</h2>
+Without having read other Catalyst books, I do think this book is a good resource for beginners of Catalyst MVC development. People already familiar with an older version of Catalyst might not find too many surprises, but there are a few nuggets of information about Catalyst+Moose and a good overview of DBIx::Class to refresh your brain.

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The Legend of 1900"
+category: Movies
+published:
+  epoch: 1088962308
+  utc: 2004-07-04T17:31:48
+---
+
+I saw a great movie today on the Independent Film Channel called <a href="http://www.imdb.com/title/tt0120731/">The Legend of 1900</a>. It's about a boy born on a ship  and left there to grow up. He becomes a piano virtuoso. He becomes so used to a life of limits that he can not bring himself to leave the ship and venture out into a limitless world; even when the ship is decommissioned.
+
+

@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Photo Uploading: Complete"
+category: OffTopic
+published:
+  epoch: 1188089574
+  utc: 2007-08-26T00:52:54
+---
+
+<a href="http://www.flickr.com/photos/claco/">5,499 photos</a>. That's it. No more. Well, no more that are digital anyways. Time to go back to programming and ripping CDs to my U3.
+
+

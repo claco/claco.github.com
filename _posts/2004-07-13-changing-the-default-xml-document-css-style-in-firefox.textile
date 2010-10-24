@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Changing The Default XML Document CSS Style In Firefox"
+category: WWW
+published:
+  epoch: 1089741848
+  utc: 2004-07-13T18:04:08
+---
+
+Any one out there know how to change the default CSS style used fordisplaying XML documents?
+
+Currently, when I load an XML file in Firefox, it uses the "Basuc Theme". I personally like the "Monospace" theme better and I'm tired of switching to it every time I load an XML file.
+
+I'm sure the userContent.css file in my profile directly has something to do with it. If I just wanted to override all <code>&lt;p&gt;</code> tags on the web, it would be easy. However, I have no clue on how to target all XML content using that mechanism.
+
+Anyone?
+
+Update-ola! I've figure this out somewhat.
+
+Open up <kbd>Mozilla Firefox\chrome\comm.jar</kbd> in WinZip or some such program and edit the <samp>XMLPrettyPrint.css</samp> file until your hearts content.
+
+I simply added the monospace CSS from <samp>XMLMonoPrint.css</samp> file in the same location.
+
+For giggles, I also tried changing the following in <samp>XMLPrettyPrint.xsl</samp> from:
+
+<pre>&lt;link href="chrome://communicator/content/xml/XMLPrettyPrint.css" type="text/css" rel="stylesheet"/&gt;
+&lt;link title="Monospace" href="chrome://communicator/content/xml/XMLMonoPrint.css" type="text/css" rel="alternate stylesheet"/&gt;</pre>
+
+to something like
+
+<pre>&lt;link href="chrome://communicator/content/xml/XMLMonoPrint.css" type="text/css" rel="stylesheet"/&gt;
+&lt;link title="Stock Style" href="chrome://communicator/content/xml/XMLPrettyPrint.css" type="text/css" rel="alternate stylesheet"/&gt;</pre>
+
+It didn't quite work right. While it did change the font to monospace, the colors were no longer there. I'm sure it's just an import/namespace order issue I missed.
+
+Happy hacking.
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Back To The Basics"
+category: WTF
+published:
+  epoch: 1042333308
+  utc: 2003-01-12T01:01:48
+---
+
+<p>
+As I'm sure you have just noticed, this site is very plain Jane. This is on purpose.
+</p>
+<p>
+I am in the middle of a severe code restructure below these pages, most of which is already done. Before I layered look and feel on top of this site, I wanted to get my <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> validation and usability ducks in a row.  It's a lot easier to make sure everything works when you aren't also concentrating on  <acronym title="Cascading Style Sheets">CSS</acronym> look and feel. I figure if I can't stand using it as is, then no amount of CSS is going to help.
+</p>
+<p>
+Thank you for your understanding. :-)
+</p>
+
+

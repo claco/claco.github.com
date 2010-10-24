@@ -1,0 +1,29 @@
+---
+layout: post
+title: "And So It Begins"
+category: WTF
+published:
+  epoch: 1099609032
+  utc: 2004-11-04T22:57:12
+---
+
+Thank god there is no paper trail to track <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=694&amp;e=5&amp;u=/ap/voting_problems">these missing votes</a>.
+
+<blockquote>
+
+JACKSONVILLE, N.C. - More than 4,500 votes have been lost in one North Carolina county because officials believed a computer that stored ballots electronically could hold more data than it did. Scattered other problems may change results in races around the state.
+
+</blockquote>
+
+It gets better.
+
+<blockquote>
+
+ Officials said 3,005 early votes were stored, but 4,530 were lost.
+
+</blockquote>
+
+
+Now, how many times do you think this has happened?
+
+

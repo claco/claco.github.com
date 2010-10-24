@@ -1,0 +1,15 @@
+---
+layout: post
+title: "I'm Stupid Redux"
+category: WTF
+published:
+  epoch: 1050822039
+  utc: 2003-04-20T07:00:39
+---
+
+<p>
+Holy asleep at the wheel batman. Apparently my trackback links have been broken for a long time.
+Thanks to <a href="http://www.divagation.com/journal/">Damelon Kimbrough</a> for pointing that out to me. They are corrected, and hopefully working.
+</p>
+
+

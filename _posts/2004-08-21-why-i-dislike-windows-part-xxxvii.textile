@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Why I Dislike Windows: Part XXXVII"
+category: MicroShaft
+published:
+  epoch: 1093118158
+  utc: 2004-08-21T19:55:58
+---
+
+Ok, this is such a small thing, but it underscores why I really wislike windows sometimes.
+
+I'm in the process of installing perl 5.005_03, 5.6.1, and 5.8.4 on my laptop running XP. I have the installers. Everything installed fine. Life is good.
+
+Now, I need to install <samp>DBI</samp> and <samp>Class::DBI</samp> for the project I'm working one. Under 5.6.1 and 5.8.4 it's easy using <kbd>ppm install DBI</kbd> and I get pretty new versions of both of those. Under 5.005, the only available version of DBI is 1.14. That's not going to do. In order to get an updated version from CPAN, I'd have to install my own. This means needing to compile the XS modules files as well.
+
+Now, where's the only place on Earth you can get the needed <kbd>cl.exe</kbd>? <strong>By purchasing Visual C++</strong>. Thanks but no thanks.
+
+I can understand charging for an IDE, but for the love of all that is holy MS, please release the cl.exe for all to use. Hell, I can download the VB.NET and C# compilers and the SDK. How about fessing up with some of the old C++ stuff?
+
+<em>Hmmm, there may finally be <a href="http://msdn.microsoft.com/visualc/vctoolkit2003/">hope</a>.</em>
+
+

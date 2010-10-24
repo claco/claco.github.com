@@ -1,0 +1,34 @@
+---
+layout: post
+title: "What a JackNut"
+category: MicroShaft
+published:
+  epoch: 1034623292
+  utc: 2002-10-14T19:21:32
+---
+
+<p>
+Someone in MicroShaft PR, please make him stop.#@!$%<br />
+From an <a href="http://www.silicon.com/public/door?6004REQEVENT=&amp;REQINT1=55937&amp;REQSTR1=silicon.com" title="Interview with Craig Mundie">article</a> over at <a href="http://www.silicon.com/" title="Visit silicon.com">Silicon.com</a> :
+</p>
+<blockquote>
+<p>
+Second thing, our product is a more complete product. <strong>We have a built-in application server that's well integrated - there is no such comparable notion in the Linux server. We have a directory server built in - there is no such comparable thing in Linux</strong>. The Linux client hardly runs any applications, except a bunch of shareware stuff that's not very good.
+</p>
+</blockquote>
+<p>
+What MicroShaft calls 'incomplete' I call choice. Here's a crazy thought. Maybe I <em>don't want</em> the application server 'in' the OS. Maybe I want to use a different application server. No such comparable app server in Linux? Ever heard of <a href="http://jakarta.apache.org/tomcat/" title="Tomcat home page"><cite>Tomcat</cite></a>? No such comparable directory server in Linux? Ever heard of <a href="http://www.isc.org/products/BIND/" title="Bind home page"><cite>Bind</cite></a> and <a href="http://www.openldap.org/" title="OpenLDAP home page"><cite>OpenLDAP</cite></a>?
+</p>
+<blockquote>
+<p>
+I think it's not complete,<strong>it's a poor value proposition versus Windows</strong>. It is a clone of an operating system. <strong>There has yet to be any innovation, new features or new capabilities out of the Linux platform</strong>. First they cloned Unix, and there are people working on cloning some of our stuff. But it's just a cloning operating system. That doesn't mean we can stand still - we have to push along. <strong>But I don't think anyone should expect anything innovative coming out of that world</strong>. There's no data to support that.
+</p>
+</blockquote>
+<p>
+Brrring. Clue phone, it's for you. Nothing innovative? Poor value? By poor value he must mean doesn't need security-patched and rebooted every other day.
+</p>
+<p>
+<strong><em>Unbelievable.</em></strong>
+</p>
+
+

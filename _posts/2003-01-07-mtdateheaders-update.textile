@@ -1,0 +1,19 @@
+---
+layout: post
+title: "MTDateHeaders Update"
+category: Perl
+published:
+  epoch: 1041917930
+  utc: 2003-01-07T05:38:50
+---
+
+<p>
+I've made <a href="/downloads/MTDateHeaders/" title="Download MTDateHeaders package">MTDateHeaders</a> into a <acronym title="Comprehensive Perl Acrhive Network">CPAN</acronym>-like package, imported it into <acronym title="Concurrent Versioning System">CVS</acronym> and moved it to this website finally.
+I did a clean install on the test and live servers here without any problems. Now that it's a true package, I've also included the base test to check for the existance of <a href="http://search.cpan.org/search?query=Date::Calc&amp;mode=module" title="Date::Calc page on CPAN">Date::Calc</a> version 5 or greater.
+</p>
+<p>
+Still plenty left to do I'm sure. Clean up the pod docs. Figure out how to create a changelog from CVS -> Changes. Decide how to treat revisions. You know the routine.
+</p>
+
+
+

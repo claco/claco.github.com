@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Arrrgh."
+category: WWW
+published:
+  epoch: 1042179360
+  utc: 2003-01-10T06:16:00
+---
+
+<p>
+So I'm chuggin along with a redesign and I stumble across <a href="http://www.bradchoate.com/past/reboot2003.php"><cite>Brad Choates redesign list</cite></a>. Great list. I'm doing most of that myself. But what I'm really after is the download for his smart_breaks global tag plugin. To bad I can't find a download link anywhere on the site. Would've been nice to put up a link to a browseable file downloads directory while all the pages/urls are in flux. :-(
+</p>
+
+

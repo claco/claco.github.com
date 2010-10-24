@@ -1,0 +1,31 @@
+--- 
+layout: post
+title: WebFormViewEngine Path Defaults Seem Broken
+wordpress_id: 239
+wordpress_url: http://chrislaco.com/?p=239
+published:
+  epoch: 1264046040
+  utc: 2010-01-21T03:54:00
+---
+This post is about 60% fact and 40% opinion. Not a bad ratio. I've been working a lot in ASP.NET MVC lately building up a set of classes to be reused across multiple sites in the near future. A few of these legos are small view classes that inherit from <code>WebFormViewEngine</code>. They all do small things, like adding additional file search paths, loading views from resources and fetching views from remote storage. Since you can stack view engines in <code>ViewEngines.Engines</code>, you can add and number of these engines together to get the functionality you want on a site per site basis. First engine to claim it can service a view wins. Nothing special there really.
+
+I stumbled across something today that seems obvious in retrospect that leads me to the opinion that the default view/partial view search patterns are broken. If you crack open Reflector.NET and point it towards <code>WebFormViewEngine</code>, you'll see that <code>ViewLocationFormats</code> and <code>PartialViewLocationFormats</code> are declared the same:
+<pre style="padding-left: 30px;">~/Views/{1}/{0}.aspx</pre>
+<pre style="padding-left: 30px;">~/Views/{1}/{0}.ascx</pre>
+<pre style="padding-left: 30px;">~/Views/Shared/{0}.aspx</pre>
+<pre style="padding-left: 30px;">~/Views/Shared/{0}.ascx</pre>
+<span style="font-family: Georgia, 'Times New Roman', 'Bitstream Charter', Times, serif; line-height: 19px; white-space: normal; font-size: 13px;">In other words, for the <code>Index</code> action on the <code>Home</code> controller, the following paths are searched:</span>
+<pre style="padding-left: 30px;">~/Views/Home/Index.aspx</pre>
+<pre style="padding-left: 30px;">~/Views/Home/Index.ascx</pre>
+<pre style="padding-left: 30px;">~/Views/Shared/Index.aspx</pre>
+<pre style="padding-left: 30px;">~/Views/Shared/Index.ascx</pre>
+This all seems well and good until you happen to have a partial view that has the same name as an action that either happens to be shared, or the parti is being overridden in the local controllers folder. Here's a somewhat plausible example: A <code>Search</code> controller with an <code>Items</code> action:
+<pre style="padding-left: 30px;">~/Views/Search/Items.aspx</pre>
+<pre style="padding-left: 30px;">    (the view page for the Items action)</pre>
+<pre style="padding-left: 30px;">~/Views/Home/Index.ascx</pre>
+<pre style="padding-left: 30px;">    (possibly an items partial view customized just for this controller/action)</pre>
+<pre style="padding-left: 30px;">~/Views/Shared/Items.ascx</pre>
+<pre style="padding-left: 30px;">    (the shared partial view to render items in many controllers/actions/views)</pre>
+This is where the problems start. By default, a call to <code>RenderPartial("Items")</code> within the <code>Items.aspx</code> page is going to find the <code>Items.aspx</code> file first and not the <code>Items.ascx</code>. I've never ever seen anyone in the wild put <em>partial views</em> in an <em>aspx</em> file nor have I ever seen anyone put a full <em>action view</em> in an <em>ascx</em> file. So why on earth did they all them to be interchangeable in the location paths? Broken I say. Broken.
+
+The good news is that it's super easy to tweak these kinds of things in ASP.NET MVC. Inherit from <code>WebFormViewEngine</code> and set your own <code>ViewLocationFormats</code> and <code>PartialViewLocationFormats</code>. I my case I decided to force the issue explicitly. <code>ViewLocationFormats</code> <em>only looks for aspx</em> files and <code>PartialViewLocationFormats</code> <code>only look for ascx</code> files. Now we can override shared partial views locally in controller folders without worrying about name collisions.

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "SharpDevelop 1.0 Released"
+category: Software
+published:
+  epoch: 1095087206
+  utc: 2004-09-13T14:53:26
+---
+
+SharpDevelop 1.0 has been <a href="http://www.icsharpcode.net/OpenSource/SD/">released</a> into the wild.
+
+I downloaded it and gave it a try. Overall, I like it a lot. It beats using textpad and a command line compiler. Even better, has has the three musts for me to use it:
+
+<ul>
+<li>Configurable Line Endings - I always use Unix line endings.</li>
+<li>Configurable Encodings - I almost always save files UTF-8 encoded.</li>
+<li>Leave my source alone - I lothe VS.NET and how it mangles code. #Develop plays nice with others.</li>
+</ul>
+
+Oh yeah, and it's Free!
+
+

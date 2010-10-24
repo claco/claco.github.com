@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Gates Gives Billions"
+category: MicroShaft
+published:
+  epoch: 1064276327
+  utc: 2003-09-23T00:18:47
+---
+
+<p>
+As much as I loathe Microsoft at times, you can't say anything too bad about Billy G. while doing things like <a href="http://www.sundaytimes.co.za/2003/09/21/news/africa/africa01.asp">this</a>, regardless of the reason. Not only that, but he WENT there the personally deliver it.
+</p>
+
+

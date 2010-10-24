@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Congratulations"
+category: Static
+published:
+  epoch: 1059967310
+  utc: 2003-08-04T03:21:50
+---
+
+<h2>Here's Johnny!</h2>
+
+Congratulations. You've managed to find my empty boring non-descript home page. Chances are I'll either never update it more than once a month, of it will contain so much dribble that no one will read it.
+
+Head on over to my <a href="/blog/" title="View my weblog">weblog</a> for slightly more active reading.
+
+

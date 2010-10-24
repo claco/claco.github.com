@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Search Foo"
+category: WWW
+published:
+  epoch: 1058314213
+  utc: 2003-07-16T00:10:13
+---
+
+<p>
+More random acts of tinkering. I need some opinions on this one. On the 404 error page, I decided to add a search form pre-populated with the path of the requested but missing file. Currently, it strips off any trailing slashes and file extensions, splits each part of the path into a single word, then puts those words into the keywords field.
+</p>
+<p>
+In English, that means that any searches for <samp>/new/stuff</samp>, <samp>/new/stuff.htm</samp>, <samp>/new/stuff/</samp>, etc. gets put into the keywords fields as <samp>new stuff</samp>.
+</p>
+<p>
+Nothin fancy there really. My question is this. Do you think it's better to present people with a 404 page letting them know that something is missing and filling out a search form for them, or is it better to simply redirect the user to the search results automatically?
+</p>
+<p>
+Some of that comes down to user expectations. Which is less confusing? Being told something isn't found, or asking for one page/url, and ending up at a search page for no particular reason?
+</p>
+
+

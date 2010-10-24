@@ -1,0 +1,34 @@
+---
+layout: post
+title: "VALVe, Half Life 2, and Steam"
+category: Games
+published:
+  epoch: 1100718441
+  utc: 2004-11-17T19:07:21
+---
+
+So we all went to the mall (or Mizall) yesterday for lunch. THey just happen to have a GameStop right by the food court, so I snagged a copy of Half-Life 2: Collectors Edition; hereafter known as HL2CE. HL2CE comes on DVD and contains HL2, HL1, HL1 Counter Strike, a HL2 T-shirt, and a mini Prima strategy guide.
+
+I had already heard rumors that even the retail version of HL2 required an "internet connection" for activation. I suffered through that every time I installed or reinstalled XP Pro, so how bad could it be? Pretty bad apparently. From the looks of all the net feedback around the HL2 release, I don't appear to be the only one that dislikes their attempt and online delivery and authentication of gaming.
+First, a little tangent about Steam and "Steam Powered" games. Steam is an online content delivery and DRM system which appears to allow one to download the encrypted source file to a game. One creates a Steam user account and registers CD keys with Steam or purchased keys online. Once that is done, Steam unencrypts the source files and allows you to play the game; sort of. When unencrypted, these source files are still packed in a virtual file system within single files that still rely on the login and authentication to Steam to run. Hence, the required internet connection. This is what runs most people. "I bought the damn game, let me play it when I see fit and away from the internet or when the Steam servers are down."
+
+The first step was easy. Pop in the DVD and it installs Steam, then it installed the source files to HL1, HL1: Counter Strike, and HL2.
+
+Now the shitty user experience begins. The next step is creating a Steam user account. This fails oodles and oodles of times with Winsock errors. Fucking great. All I could keep thinking was how I was going to go to bed pissed about not being able to play a $70 game that I just "bought". Then it dawned on me to disable the firewall in XP SP2. That did the trick, but the real question is why in the hell didn't Steam trigger the XP Firewall Exception popup question like all other applications that try to access the net for the first time?
+
+I went to the Steam FAQ pages, and the list of questions and answers there are completely unacceptable for an end user who purchased a retail copy. If you don't have net access, you're screwed. If you only have HTTP/HTTP/FTP proxy access to the net [AKA, college], you're screwed. If your CD key is already in use even though you just bought the game, you're screwed. If you're behind a NAT or firewall, you're screwed. Now granted, most basic firewall/NAT situations will work, the amount of ports you're forced to open is retarded. Hell, <strong>every internet connected home computer should be behind a firewall and probably NAT!</strong> At least make the Steam shit work over a proxy. #$%^%$#@
+
+Ok, so now I can connect to steam and start to create an account. Every other question and Next button yields a "Remote host forcibly closed the connection" Winsock errors, which means their shit is getting pounded. Once again this points out the fact that if their servers are not up, the DVD I just bought is a fucking expensive coaster.
+
+To add insult to injury, Once I finally added my CD keycode for authentication, it kept barking that authentication could not be processed to busy servers and it would finish the request later. At least it lets me play the damn game already on my hard drive.
+
+In a nutshell, I just spent over an hour fucking around with Steam just to get the game I just bought playable. That leaves a damn sour taste in my mouth, and I'd really think twice about every buying a Steam powered game again.
+
+Now, on to gameplay. The game itself kicks ass. THe graphics are awesome and so are the physics. THe video setup allowed me to choose my aspect ration and my resolution, so I have no problems getting a full screen 1920x1200 resolution. Even with all the options on High, the game play is almost always jitter free.
+
+This game does have some serious flaws thus far. First, the initial load time and the load times between checkpoints are way too long, anywhere from 30 seconds to a minute plus. This is on a 3.4Ghz 1GB dual PCC3700 ram machine with RAID-0 striped 10k SATA drives. AKA, it's not the hardware.
+
+Another bad thing, when in full screen mode, if anything in XP kicks off a taskbar notification, like say the wireless internet signal getting lost or such, the game freaks the hell out and forces you to restart it. I haven't tried running the game in windowed mode, but they certainly need to work on it.
+
+All in all, the jury is still out on this one. I like the gameplay and the storyline, but I think Steam has a looong way to go before it can be considered an acceptable user experience.
+

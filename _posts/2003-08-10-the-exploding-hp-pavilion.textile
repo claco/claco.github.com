@@ -1,0 +1,21 @@
+---
+layout: post
+title: "The Exploding HP Pavilion"
+category: Hardware
+published:
+  epoch: 1060535506
+  utc: 2003-08-10T17:11:46
+---
+
+<p>
+Once I finished building my new PC, I had the task of reassembling my old HP Pavilion 771n. They're not the greatest machines on Earth, but I've been pretty lucky with them <em>before they and Cpmpaq merged</em>.
+</p>
+<p>
+So like the retard I am, in a frenzy of taking my new rig to a LAN party I pulled the wrong cable and the 771n went crashing to the floor from about 4 feet up on a desk.
+Parts went flying everywhere.  The case bezel. The bezel inserts. The top. The top CD lid. The top insert.  <strong>@#$%^!</strong>
+</p>
+<p>
+Much to my surprise, <strong>nothing</strong> was broke. It all snapped back together without any problems, and the hard drive survived.  Kinda cool actually, not that I want to try it again anytime soon.
+</p>
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "XML/XHTML/Encoding Debate"
+category: WWW
+published:
+  epoch: 1073869351
+  utc: 2004-01-12T01:02:31
+---
+
+<p>
+Someone help me out here. If I'm wrong, explain it to me in another way. Maybe I'm not explaining it clearly myself. But I really don't think I'm wrong.  I don't believe that after converting line feeds to BR tags and P container tags, that the result needs to have those tags encoded. The result is a valid piece of XML by itself.
+</p>
+<p>
+Here's <a href="http://www.movabletype.org/support/index.php?act=ST&amp;f=9&amp;t=33527&amp;s=74478feddb56943b1247dfdaa5a7506f">the thread that</a> is getting me frustrated.
+</p>
+
+

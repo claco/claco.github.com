@@ -1,0 +1,17 @@
+---
+layout: post
+title: "2003 Bug Convertable"
+category: OffTopic
+published:
+  epoch: 1034718330
+  utc: 2002-10-15T21:45:30
+---
+
+<p>
+I stumbled across <a href="http://www.vwvortex.com/news/09_02/09_12/index.shtml" title="VW Audi Convertable defailt page">this link</a> to the 2003 Volkswagen New Beetle convertible over at <a href="http://www.escobosa.com/" title="Visit escobosa.com"><cite>Marc Escobosa's site</cite></a>.
+</p>
+<p>
+Well, it looks nice. Let's hope it runs better. Everyone I know with some sort of VW has had nothing but problems. Maybe it's in the water here.
+</p>
+
+

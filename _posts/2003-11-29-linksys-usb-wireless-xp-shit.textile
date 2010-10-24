@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Linksys USB Wireless + XP = Shit"
+category: WTF
+published:
+  epoch: 1070148374
+  utc: 2003-11-29T23:26:14
+---
+
+<p>
+I've said it before, and I'll say it again. Linksys USB Wireless products are fucking horrible when combined with XP and it's "Zero Configuration".
+</p>
+<p>
+I have no less than (2) WUSB11 v2.6 USB units and (2) WPC11 v2.5 PCMCIA units; all running under XP. Not one of those products installed correctly, or ran correctly even after triple checking all wireless and network parameters. All of them have require constant hakcing during installation and setup to get them on the network, with or without Zero Config disabled.
+</p>
+<p>
+I just spend an hour installing a WUSB11 on XP pro. Install. Missing Parameters in hardware config. Reinstall. Setup WAP profile. No conneciton. Deinstall. Reinstall.  Deinstall. Reinstall. WEP parameters in hardware manager now show up.  Can connection with Zero Config disabled and hardware properties set. Can't connect with Linksys monitor/config utility. <strong>#$%$#@</strong>
+Hey the hell do NON computer techies deal with it all? Oh yeah, they leave WEP off and SSID browdcasts on. :-/
+</p>
+<p>
+Next time, I'm going with DLink.
+</p>
+<p>
+<ins>
+Oh, and have I mentioned that one WUSB11 drops packets like no tomorow?
+Time to try the PCI NIC. After that, I'm gonna find a way to run Cat5.
+</ins>
+</p>
+
+

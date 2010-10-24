@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Designing With Web Standards: Part Deaux"
+category: WWW
+published:
+  epoch: 1052881911
+  utc: 2003-05-14T03:11:51
+---
+
+<p>
+Supposedly, <a href="http://www.zeldman.com/dwws/">Designing With Web Standards</a> will ship tomorrow-ish. I've had mine pre-ordered from Amazon for quite some time now. I'm looking forward to this book.
+</p>
+<p class="center">
+<a href="http://www.amazon.com/exec/obidos/ASIN/0735712018/ref%3Dnosim/yourAmazon Affiliate ID/">
+<img src="/blog/images/www/dws100.gif" width="100" height="128" alt="Designing With Web Standards" title="Designing With Web Standards. Order from Amazon.com." />
+</a>
+</p>
+<p>
+Ironic Funny:  When I pasted in the banner link code from his site, it failed validation for my doctype. :-)
+</p>
+
+

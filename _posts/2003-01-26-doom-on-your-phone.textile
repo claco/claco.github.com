@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Doom On Your Phone!"
+category: OffTopic
+published:
+  epoch: 1043598105
+  utc: 2003-01-26T16:21:45
+---
+
+<p>
+From the too-much-time-on-your-hands and -because-we-can departments, did you know you can play <a href="http://www.yipton.net/" title="EDoom for Sony Ericsson P900">Doom on your Sony Ericsson P900</a> phone?
+Now I've seen it all.
+</p>
+
+

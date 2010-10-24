@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Geek Confessional"
+category: Hardware
+published:
+  epoch: 1048645598
+  utc: 2003-03-26T02:26:38
+---
+
+<p>
+<cite>
+Forgive me Father for I have sinned. I have taken up gaming with another who is not my own video card. I know I shouldn't, but I've had impure thoughts and just don't feel happy with my old GeForce Ti4400. I have also purchased from the forsaken garden of Best Buy after vowing I would not do so. The temptation of higher frame rates was just to great in this time of need. I was weak and vulnerable while my Ti4400 makes the pilgrimage back to it's creator for replacement under the great and holy warranty.</cite>
+</p>
+<p class="center">
+<img src="/blog/archives/radeo9700pro.jpg" alt="ATI Radeon 9700 Pro Video Card" />
+</p>
+
+

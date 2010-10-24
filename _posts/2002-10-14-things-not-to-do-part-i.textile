@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Things Not To Do: Part I."
+category: MicroShaft
+published:
+  epoch: 1034639078
+  utc: 2002-10-14T23:44:38
+---
+
+<p>
+From <a href="http://scriptingnews.userland.com/backissues/2002/10/14" title="Post about the Microsoft switch campaigne"><cite>Scripting News</cite></a> :
+</p>
+<p>
+Things not to do if your are a big convicted monopoly trying to convert people away from using Mac OSX towards using Windblows XP:
+</p>
+
+<blockquote>
+<p>
+Create a <a title="Screenshot c/o Niklaus Gustavson via Scripting News" href="/blog/images/microshaft/gustavson_screenshot.png">nice new</a> 'switch' 
+<a title="Google cache verison of original page" href="http://216.239.51.100/search?q=cache:JmwQcVoG-ucJ:www.microsoft.com/insider/opsystems/windowsxp_setup.asp+After+eight+years+as+a+Macintosh+owner,+I+switched+to+a+PC+with+Windows+XP+and+Office+XP.&amp;hl=en&amp;ie=UTF-8">campaign</a> like Apple to convert people from OSX to XP using a 
+<a title="Stock photo used in campaigne" href="http://creative.gettyimages.com/source/search/detail.asp?source=searchResults&amp;imageIndex=10&amp;hdnSync=%22One+Woman+Only%3AOnly+Women%22+and+%22Coffee%3AHot+Drink%22~0%2C12%2C449%2C3%2C15%2C1%2C0%2C0%2C0%2C12287%2C0%2C1%2C0%2C0%2C0%2C0%2C0%2C0%2C0%2Cen-us%2C1%2C%22One+Woman+Only%3AOnly+Women%22+and+%22Coffee%3AHot+Drink%22%2C389%2C257%2C1%2C&amp;hdnCurrPage=4">stock photo image</a>
+instead of a real person.
+</p>
+</blockquote>
+
+<p>
+Whoopsie! And I wonder how many of their 'benchmark' are made up on the fly?
+This is way to funny. At least put some effort into having a real human for your switch campaign to make it at least a little believable.
+</p>
+<p>
+The screen shot come from <cite>Niklaus Gustavson</cite> by way of <cite>Dave Winer</cite> at <a href="http://www.scripting.com/"><cite>Scripting News</cite></a>. Be sure to check out the <a href="http://slashdot.org/comments.pl?sid=42252&amp;cid=4447391" title="Slashdot post about the campaigne">Slashdot thread</a> as well.
+</p>
+
+

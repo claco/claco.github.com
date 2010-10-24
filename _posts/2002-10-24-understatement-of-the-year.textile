@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Understatement of The Year"
+category: Humor
+published:
+  epoch: 1035504389
+  utc: 2002-10-25T00:06:29
+---
+
+<p>
+<a href="http://story.news.yahoo.com/news?tmpl=story2&amp;cid=857&amp;e=5&amp;u=/nm/20021024/od_uk_nm/oukoe_life_condoms_britain" title="Article about student testing condoms"><cite>Students to test ride condoms</cite></a>.  Literally. That is all. Please move along.
+</p>
+
+

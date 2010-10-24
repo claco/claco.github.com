@@ -1,0 +1,18 @@
+---
+layout: post
+title: "In love with w.bloggar"
+category: WWW
+published:
+  epoch: 1041550960
+  utc: 2003-01-02T23:42:40
+---
+
+<p>
+OK, I just may have to stop using the <acronym title="Movable Type">MT</acronym> administration. <acronym title="Graphical User Interface">GUI</acronym>. I just downloaded and installed <a href="http://wbloggar.com/" title="Visit wbloggar.com">w.bloggar 3.0</a>.
+I'm in love. Small. Simple. Attractive, HTML syntax coloring, and thank all that is holy, <strong> a built in spell checker</strong> for people like me you can't spell to save their lives.
+</p>
+<p>
+Now, back to patching MT. :-D
+</p>
+
+

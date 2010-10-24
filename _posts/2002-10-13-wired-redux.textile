@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Wired Redux"
+category: WWW
+published:
+  epoch: 1034487514
+  utc: 2002-10-13T05:38:34
+---
+
+<p>
+As noted over on <a href="http://www.zeldman.com/daily/1002a.html#challenge" title="Zeldman's comments on the Wired NEws redesign"><cite>Zeldman's</cite></a> site, <a href="http://www.wired.com/" title="Visit wirednews.com"><cite>Wired News</cite></a> has squished the final bugs and it <a href="http://validator.w3.org/check?uri=http://www.wired.com" title="Validate Wired News">now validates</a>, makeing us purists happy. Congrats to them on what I'm sure was a very tough journey.
+</p>
+
+

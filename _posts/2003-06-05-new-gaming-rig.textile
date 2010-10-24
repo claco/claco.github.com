@@ -1,0 +1,48 @@
+---
+layout: post
+title: "New Gaming Rig"
+category: Hardware
+published:
+  epoch: 1054843081
+  utc: 2003-06-05T19:58:01
+---
+
+<p>
+Well, I was a very <em>very</em> bad boy today. I ordered the parts for my new game rig. This time, I decided to follow my own adivce. Buy what you want, top of the line even, so you won't regret not getting it later just for the sake of a few bucks here and there. My real goal is the best game box I can get for a reasonable amount of cash, and something that will run Doom III and Half-Life<sup>2</sup> without batting an eye with all of the fancy options turned on/up..
+</p>
+<p>
+With that in mind, here she is:
+</p>
+
+<ul>
+<li>(1) <a href="http://www.antec-inc.com/pro_details_enclosure.php?ProdID=91082">Antec PLUS1080AMG Case</a> (Already have one)</li>
+<li>(1) <a href="http://www.ati.com/products/pc/aiw9700pro/">ATI Redeon 9700 Pro</a> (Already have one)</li>
+<li>(1) <a href="http://www.soundblaster.com/products/audigy2/">Creative Labs Audigy2 Sound Card</a> (Already have one)</li>
+<li>(1) <a href="http://www.americas.creative.com/products/product.asp?product=487">Creative Labs Inspire 6600 6.1 Speakers</a> (Already have one)</li>
+<li>(1) <a href="http://www.asus.com/prog/spec.asp?m=P4C800%20Deluxe">Asus P4C800 Deluxe Motherboard</a> (800FSB)</li>
+<li>(1) Intel P4 3.0GHz (800FSB)</li>
+<li>(1) <a href="http://www.zalman.co.kr/usa/product/cnps7000alcu.htm">Zalman CNPS7000-AlCu CPU Cooler</a></li>
+<li>(2) <a href="http://www.ocztechnology.com/products/memory/OCZ+EL+DDR++PC-3700+Dual+Channel+Gold">OCZ 512MB (2x256MB) DDR PC3700 (DDR446) Dual Channel Gold Edition</a></li>
+<li>(2) <a href="http://www.wdc.com/en/products/WD360GD.asp">Western Digital Raptor 36GB SATA 10,000RPM Drives</a></li>
+<li>(2) <a href="http://www.wdc.com/en/products/products.asp?DriveID=36">Western Digital WD400JB 40GB ATA100 7200RPM Drives</a></li>
+<li>(1) <a href="http://www.plextor.com/english/products/Premium.html">Plextor 52x32x52 PlexWriter Premium CD-RW Drive</a></li>
+<li>(1) <a href="http://www.jlms.com.tw/new_p_E/jlms_165X.htm">Lite-On 16/48 DVD/CD-ROM</a></li>
+<li>(2) SATA Power Cable Adapters</li>
+<li>(1) Wndows XP Professional (OEM)</li>
+</ul>
+
+<p>
+The two SATA Raptors will be RAID0, the two EIDE drives will be RAID0, then both of those RAID0's will be mirrored (RAID0+1).
+Lucky for me, I snagged the Audigy2 card and the Inspire 6600 speakers a last month, on the last day that they both had a $30 rebated. :-)
+</p>
+<p>
+I've seen posts on net where people have has this rig overclocked to ~3.5-3.7Ghz, yielding 16,500+ on 3DMark01 and insane Frames Per Second (400+) in QuakeIII and UT2003.
+</p>
+<p>
+The woman is going to become a computer widow for a while once I get this machine assembled. There will be a whole lot of Jedi Outcast, Splinter Cell, Enter the Matrix, and Soldier of Fortune II going on.
+</p>
+<p>
+I feel so dirty. :-)
+</p>
+
+

@@ -1,0 +1,19 @@
+---
+layout: post
+title: "MN-700 Review"
+category: Hardware
+published:
+  epoch: 1071367272
+  utc: 2003-12-14T02:01:12
+---
+
+<p>
+Here would be the Microsoft MN-700 review had I not taken it back for a refund. Let's just say it didn't really work in Access Point mode past reboot it after every card connects for the first time via DHCP. More on that later when I calm down a bit. 
+</p>
+<ins>
+<p>
+Read the <a href="/blog/archives/entries/000406/">whole wireless story</a> in this posting.
+</p>
+</ins>
+
+

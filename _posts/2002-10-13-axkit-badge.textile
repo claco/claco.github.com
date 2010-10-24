@@ -1,0 +1,28 @@
+---
+layout: post
+title: "AxKit Badge"
+category: WWW
+published:
+  epoch: 1034540385
+  utc: 2002-10-13T20:19:45
+---
+
+<p>
+From the shut-your-cake-hole-and-make-one department.
+</p>
+<p>
+Since AxKit seemed to not have a badge in the style I like (see bottom left of all pages), I fired up ye olde Power Mac G3 w/ Photoshop and made one. First time that machine has been on in the last 7 months I believe.
+</p>
+<p class="image">
+<img src="/images/axkit_pb.gif" width="102" height="47" alt="Assembled By AxKit Badge: GIF" /> <br />
+<img src="/images/axkit_pb.png" width="102" height="47" alt="Assembled By AxKit Badge: PNG" />
+<br />
+<span class="caption">
+In both GIF and PNG formats
+</span>
+</p>
+<p>
+Michael Nachbaur was kind enough to mirror them <a href="http://nachbaur.com/resources/axkit-badges/" title="AxKit Badge download mirror">here</a> until the servers are up full time.
+</p>
+
+

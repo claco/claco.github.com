@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Spiderman 2 Was Pretty Darn Good"
+category: Movies
+published:
+  epoch: 1088647535
+  utc: 2004-07-01T02:05:35
+---
+
+We went and saw Spiderman 2 this evening. I thought it was pretty darn good. I think it was better than the first one, but that was pretty good too.
+
+Out of all the "marvel movies", these is certainly a lot better than the others (Punisher, DareDevil, Hulk).
+
+

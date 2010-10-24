@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Hello From Hoary Hedgehog"
+category: Software
+published:
+  epoch: 1128729606
+  utc: 2005-10-08T00:00:06
+---
+
+After two days of tinkering, I finally got one of my many wireless cards working under the Ubuntu 5.2 Hoary Hedgehog Live CD.
+
+And what took so long? THe format of the WEP key. Here's a tip for the wireless config developers: give examples! IT won't work with AABBCCDDEEFF, but it does work with AABB-CCDD-EEFF because that's what it's expecting.
+
+Even better, put those in yourself if the user doesn't. Don't make it any more harder for the user than you have too.
+
+Now, I think I might just wipe FreeBSD off the lappy and give a real install a try. THat would give me another test platform since I'll still have FreeBSD on the servers.
+
+Now, I just need an iBook to complete the test farm. ;-)
+
+

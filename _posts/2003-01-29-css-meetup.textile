@@ -1,0 +1,33 @@
+---
+layout: post
+title: "CSS MeetUp"
+category: WWW
+published:
+  epoch: 1043885717
+  utc: 2003-01-30T00:15:17
+---
+
+<p>
+If was reading <a href="http://www.meyerweb.com/eric/thoughts/2003a.html#t20030129">Eric Meyers latest blurbs</a>, and found this little nugget:
+</p>
+<blockquote>
+<p>
+I'd been toying with the idea of trying to get local Web folks to assemble for socialization and (human-relation) networking for a while now, but thanks to Meetup I don't have to undertake the organizational effort. That's pretty cool. It just makes sense someone named Eric would be involved in something that cool. We're everywhere, and everywhere we go is cool. That's the kind of cool we are.
+</p>
+</blockquote>
+<p>
+Being from Akron, and Eric being from Cleveland, he had mentiond  a get together in a passing email. I was just thinking about this again this morning, but maybe something more than a Meetup. On that note, there is no CSS MeetUp, but there is a Web Standards MeetUp. :-)
+</p>
+<p class="center">
+
+<a href="http://webstandards.meetup.com/"><img src="http://img.meetup.com/img/logo/small/w/webstandards.png" alt="" /></a>
+
+</p>
+<p>
+You know how local Perl user groups get labeled MyCityName<em>.pm</em>? A <code>.pm</code> file in Perl is a perl module. <em>Akron.pm</em> would be the virtual perl users module in Akron. Kinda cool I always thought.
+</p>
+<p>
+This morning I was thinking the same thing about CSS.  Let's start an <em>Akron.css</em> or a <em>Cleveland.css</em> users group. :-)
+</p>
+
+

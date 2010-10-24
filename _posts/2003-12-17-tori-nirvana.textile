@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Tori Nirvana"
+category: Movies
+published:
+  epoch: 1071701633
+  utc: 2003-12-17T22:53:53
+---
+
+<p>
+Just when I thought I'd heard it all, XM Radio starts playing Tori Amos singing to her piano rendition of Nirvana's "Smells Like Teen Spirit". Stop The Insanity.
+</p>
+
+

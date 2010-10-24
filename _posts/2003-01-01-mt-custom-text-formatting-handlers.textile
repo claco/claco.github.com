@@ -1,0 +1,29 @@
+---
+layout: post
+title: "MT Custom Text Formatting Handlers"
+category: Perl
+published:
+  epoch: 1041407002
+  utc: 2003-01-01T07:43:22
+---
+
+<p>
+I can't wait to get my paws on <a href="http://www.sixapart.com/log/2002/12/simple_and_powe.shtml" title="MT post about custom text formatting plugins">this new MT feature</a>.As many others probably do, I've been struggling with formatting for quite a while.
+</p>
+<p>
+My site is built and delivered using <acronym title="eXtensible Markup Language">XML</acronym> pipelines and stylesheets. The stock "Convert Line Breaks" isn't to friendly to <acronym title="eXtensible HyperText Markup Languag">XHTML</acronym>. It's easy to start having problems when you enter a single line containing &lt;ul&gt;&lt;/ul&gt; and the "Convert To Breaks" puts that inside of &lt;p&gt;&lt;/p&gt; tags, which is invalid XHTML markup.
+</p>
+<p>
+The only way around stuff like that is to type in ALL of the XHTML into each post which is a lot of work. Plus having XHTML in post content makes content reuse a litle bit harder in place where text only content is desired. Writing your own text formatting handlers will solve this problem quite nicely allowing each situation to have it's own formatting routine.
+</p>
+<p>
+Yes, I'm sure I could write a plugin, and use the <a href="http://www.bradchoate.com/past/mtmacros.php" title="Brad Choate's  MTMacros plugin page"><cite>MTMacros</cite></a> stuff from <a href="http://www.bradchoate.com/" title="Brad Choate's website"><cite>Brad Choat</cite></a>, but I just haven't yet. And like the article points out, I would still have to alter all of my templates with new/changed tags.
+</p>
+<p>
+Assuming the new formatting selection box makes it into the code, I wonder how they'll deal with changing the format of all previous posts? Luckily, I've got a small amount of posts to tweak/clean/hack/bastardize when the time comes.
+</p>
+<p>
+Bring it on!
+</p>
+
+

@@ -1,0 +1,26 @@
+---
+layout: post
+title: "If I Owned IBM..."
+category: WTF
+published:
+  epoch: 1047006885
+  utc: 2003-03-07T03:14:45
+---
+
+<p>
+I would buy SCO and run their asses into the ground <a href="http://news.com.com/2100-1016-991464.html?tag=fd_top">for this bullshit</a>. It's going to be a fun one to watch, that's for sure.
+Let us pray that MickeySoft doesn't buy them first.
+</p>
+<blockquote>
+<p>
+The suit, filed Thursday afternoon in the 3rd District Court of Salt Lake County in Utah, alleges misappropriation of trade secrets, unfair competition, breach of contract and tortious interference with SCO's business, the Lindon, Utah-based company said. SCO also sent a letter Thursday demanding that if IBM doesn't meet various demands, SCO will revoke IBM's license to ship its version of Unix, called AIX, in 100 days.
+</p>
+<p>
+"We are alleging they have contaminated their Linux work with inappropriate knowledge from Unix," said Chris Sontag, senior vice president of operating systems at SCO and head of the company's SCO source effort to make more money from its intellectual property. 
+</p>
+</blockquote>
+<p>
+Yes, I know. I think SCO is within their <em>right</em> to defend their IP. However, they've been turning this Unix/Linux thing into a money/press game for a while now. Clearly a desperate last gasp for corporate life. Goodbye SCO, you <em>won't</em> be missed by many.
+</p>
+
+

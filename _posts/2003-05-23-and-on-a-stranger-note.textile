@@ -1,0 +1,17 @@
+---
+layout: post
+title: "And on a stranger note..."
+category: Hardware
+published:
+  epoch: 1053716087
+  utc: 2003-05-23T18:54:47
+---
+
+<p>
+I called PNY this morning to fetch my lost RMA# to return my supposedly flakey Ti4400 GeForce4 card. (I have since purchased an ATI Radeon 9700 Pro)
+Just for giggles, I reinstalled it. While I did get some junk lines during BIOS POST, the card worked. I installed updated drivers and it is now functioning fully. Same mobo. Same computer. Same everything.</p>
+<p>
+Isn't technology grand? Fuck you St. Murphy. :-)
+</p>
+
+

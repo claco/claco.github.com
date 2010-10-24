@@ -1,0 +1,14 @@
+---
+layout: post
+title: "IQ Test"
+category: OffTopic
+published:
+  epoch: 1063424461
+  utc: 2003-09-13T03:41:01
+---
+
+<p>
+Curiousity killed the cat. I got crazy and took <a href="http://www.emode.com/tests/uiq/">this mini IQ test</a>. I got a 136. I still feel stupid.
+</p>
+
+

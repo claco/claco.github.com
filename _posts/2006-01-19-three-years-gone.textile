@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Three Years Gone"
+category: OffTopic
+published:
+  epoch: 1137702747
+  utc: 2006-01-19T20:32:27
+---
+
+Wow. I just realized that this blog is 3 years old as of this past October. Now, if I could just find a design I liked and posted a little more often...
+
+

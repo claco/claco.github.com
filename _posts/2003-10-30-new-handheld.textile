@@ -1,0 +1,28 @@
+---
+layout: post
+title: "New Handheld"
+category: Hardware
+published:
+  epoch: 1067557391
+  utc: 2003-10-30T23:43:11
+---
+
+<p>
+Well, someone at work showed me one. Margeaux needs one for school. And I like playing with new toyz. So I bought her one today. Problem solved. :-)
+</p>
+<p>
+It's a <a href="http://www.amazon.com/exec/obidos/ASIN/B0000A1EEF/">Toshiba x750 PocketPC</a> running Windows Mobile 2003.
+</p>
+<p class="image">
+<img src="/blog/images/hardware/toshiba_e750.jpg" alt="Toshiba e750 PocketPC" />
+</p>
+<p>
+The price wasn't too bad all things considered. 
+I went with the Toshiba because the price was good, and I here the wireless config is a lot more flexable than most of the IPAQs.  We'll see.
+</p>
+<p>
+Now here's the sad part. The first thing I want to do with it? Use it to build and test "handheld" stylesheets for the website. Go figure.
+</p>
+
+
+

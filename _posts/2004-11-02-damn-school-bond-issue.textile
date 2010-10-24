@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Damn School Bond Issue"
+category: WTF
+published:
+  epoch: 1099455177
+  utc: 2004-11-03T04:12:57
+---
+
+Who in their right fucking mind is voting for this god damn bond issue? <strong>28 years! Are you crazy?</strong>
+
+<pre>
+Issue 80 - Tallmadge C.S.D.
+Proposed Bond Issue - 28 Years
+Improvements, 4.69 Mills
+    (precincts counted/total)       (15 / 19)          78.95
+  For The Bond Issue                         4,035     51.00
+  Against The Bond Issue                     3,876     49.00
+    TOTAL                                    7,911    100.00
+</pre>
+
+<pre>
+Issue 80 - Tallmadge C.S.D.
+Proposed Bond Issue - 28 Years
+Improvements, 4.69 Mills
+    (precincts counted/total)       (16 / 19)          84.21
+  For The Bond Issue                         4,330     51.60
+  Against The Bond Issue                     4,062     48.40
+    TOTAL                                    8,392    100.00
+</pre>
+
+<pre>
+Issue 80 - Tallmadge C.S.D.
+Proposed Bond Issue - 28 Years
+Improvements, 4.69 Mills
+    (precincts counted/total)       (19 / 19)         100.00
+  For The Bond Issue                         5,064     51.99
+  Against The Bond Issue                     4,677     48.01
+    TOTAL                                    9,741    100.00
+</pre>
+
+Damnit. Between that and Ohio, this was a wash. Why did I vote again? 
+
+

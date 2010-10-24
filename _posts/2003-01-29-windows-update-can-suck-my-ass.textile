@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Windows Update Can Suck My Ass"
+category: MicroShaft
+published:
+  epoch: 1043876227
+  utc: 2003-01-29T21:37:07
+---
+
+<p>
+I should know better, but apparently I fell under the stupid spell this morning. The plan was simple. Get up early. Update database servers' OS. Update database server software.
+Go home early. Praise Murphy, it didn't quite happen that way.
+</p>
+<p>
+Instead, it went something like this:
+</p>
+<ol>
+<li>Get up early</li>
+<li>Install OS service pack</li>
+<li>Reboot</li>
+<li>Install IE SP1</li>
+<li>Reboot</li>
+<li>Install more OS patchs</li>
+<li>Reboot</li>
+<li>Do ANYTHING</li>
+<li>Reboot (No wonder people don't update their servers)</li>
+<li>Look at the server wrong</li>
+<li>Reboot</li>
+<li>Server hangs at startup. Fsck.</li>
+<li>Spend another hour in recovery console finding bad driver.</li>
+<li>Reboot</li>
+</ol>
+<p>
+So much for database service packs. Maybe tomorrow. Let's not even talk about why in the hell Windblows Upchuck fed me the wrong drivers.
+</p>
+
+
+

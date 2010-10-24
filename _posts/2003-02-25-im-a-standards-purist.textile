@@ -1,0 +1,27 @@
+---
+layout: post
+title: "I'm a Standards Purist"
+category: WWW
+published:
+  epoch: 1046218326
+  utc: 2003-02-26T00:12:06
+---
+
+<blockquote>
+<p>"Hi. My name is Chris, and I'm a standards purist."</p>
+</blockquote>
+<p>
+So today, I finally realized that I've crossed over into the web standards purist camp (aka Standards Nazi) with full force.
+</p>
+<p>
+How do I know?  Well, our new Web Project Leader and myself were chatting about the high number of IE browsers in our web stats, which led to the evil "m" word: "marketing" and their ideas of IE only web page hacks and silly user features for IE only.
+</p>
+<p>
+I think I immediately started to foam at the mouth and ramble about accessibility, web standards, validation, usibility, etc, etc. So kudos to Mr. Meyer, Mr. Zeldman, Mr. Pilgrim and the like for stearing me toward sensible web markup.
+</p>
+<p>
+Now don't get me wrong. I really like the new guy. He's very smart and knows how to organize a group like ours and prioritize. That is why we hired him after all. And I'm not even saying  he's wrong, or that we shouldn't be looking into IE specific page features if it means use and speed increases. All I'm saying is that usibility, standards, accessibility and the like should be priority #1. They are for me, and I hope they will be so at work.
+</p>
+
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Obsolete Motherboard"
+category: Hardware
+published:
+  epoch: 1055038995
+  utc: 2003-06-08T02:23:15
+---
+
+<p>
+I no more than order my <a href="http://today.icantfocus.com/blog/archives/entries/000210/">new game rig</a>, and <a href="http://www.asus.com/prog/spec.asp?m=P4C800%20Deluxe">the motherboard</a> becomes obsolete to an <a href="http://www.newegg.com/app/viewproduct.asp?description=P4C800-E">updated model</a>. Figures.
+</p>
+
+

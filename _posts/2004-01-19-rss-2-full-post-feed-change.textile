@@ -1,0 +1,18 @@
+---
+layout: post
+title: "RSS 2 Full Post Feed Change"
+category: WWW
+published:
+  epoch: 1074489538
+  utc: 2004-01-19T05:18:58
+---
+
+<p>
+For whatever reason I was stripping HTML from the <a href="/blog/rss2full.xml">RSS 2.0 Full Posts Feed</a>.
+I've corrected that, so let me know if you have any problems with it.
+</p>
+<p>
+Same goes for the <a href="/blog/atom.xml">Atom 0.3 Feed</a>.
+</p>
+
+

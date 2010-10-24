@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Must...Clean..."
+category: Humor
+published:
+  epoch: 1048953566
+  utc: 2003-03-29T15:59:26
+---
+
+<p>
+OK, I need to clean today. That's all there is to it. The house is a wreck. I'd much rather sleep all day, or tinker around with .NET, or convert a site to Perl, but I shall resist the urge.
+</p>
+
+

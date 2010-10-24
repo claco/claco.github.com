@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Sager Review Fixed. Again."
+category: WTF
+published:
+  epoch: 1049426502
+  utc: 2003-04-04T03:21:42
+---
+
+<p>
+The <a href="/blog/archives/entries/000039/" title="Sager Review">Sager Review</a> is back online <strong>again</strong>. Apparently during my <a href="/search/?search=patch+mt">fits of MovableType patching</a>  of recent past, I missed some Perl generated HTML that added the <code>target</code> attribute to the <code>a</code> tags, which is of course, illegal XHTML 1.0 Strict and you can't lie to an XML parser to well. :-)
+</p>
+<p>
+Should this happen again, send me an email to <samp>chrislaco  *at*  hotmail.com</samp>
+</p>
+
+

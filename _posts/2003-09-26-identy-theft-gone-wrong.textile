@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Identy Theft Gone Wrong"
+category: Humor
+published:
+  epoch: 1064619453
+  utc: 2003-09-26T23:37:33
+---
+
+<p>
+Remember boyz and girlz, if you're going to <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=817&amp;e=14&amp;u=/ap/identity_theft">steal someones identity</a> make sure they aren't:
+</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Your Neighbor</li>
+<li>A Registered Sex Offender</li>
+<li>All The Above</li>
+</ol>
+<blockquote>
+<p>
+ Police said James Perry stole the name and identity of a neighbor who turned out to be a convicted sex offender.
+</p>
+</blockquote>
+
+

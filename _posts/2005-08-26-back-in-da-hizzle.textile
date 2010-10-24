@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Back In Da Hizzle"
+category: OffTopic
+published:
+  epoch: 1125106114
+  utc: 2005-08-27T01:28:34
+---
+
+Well, it took a big of work, but we're back online for the most part. I must say that I'm very impressed with MovableType 3.2. The upgraded went fine and the interface and features are much improved. I've upgraded to FreeBSD 5.4-STABLE, installed MT 3.2 [obviously], installed Apache2/ModPerl2 and Subversion. I still need to my my repository to the <A href="http://handelframework.com">new Handel site</a>. Plenty of work to do.
+
+

@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Movies That Make My Brain Hurt"
+category: Movies
+published:
+  epoch: 1063586928
+  utc: 2003-09-15T00:48:48
+---
+
+<p>
+While not remotely complete, listed below are a few movies that intrigue me for one reason or another.
+</p>
+
+<ul>
+
+<li><h4><a href="http://www.imdb.com/title/tt0307479/">Solaris</a></h4>
+<p>
+This movie seemed to get a log of bad reviews, but I liked it. Any movie that leaves me thinking and questioning things at the end can't be that bad.
+</p>
+</li>
+
+<li><h4><a href="http://us.imdb.com/title/tt0259711/">Vanilla Sky</a></h4>
+<p>
+I consider myself a fairly bright person considering what I do for a living. I had to watch this movie a second time to "get it".
+</p>
+</li>
+
+<li>
+<h4><a href="http://us.imdb.com/title/tt0120663/">Eyes Wide Shut</a></h4>
+<p>
+I still don't get this one. I managed to appreciate other Kubrick films, even <a href="http://us.imdb.com/title/tt0066921/">A Clockwork Orange</a>, but this film lost me completely.
+</p>
+</li>
+
+
+<li><h4><a href="http://us.imdb.com/title/tt0102900/">Shattered</a></h4>
+<p>
+The ending on this one is quite the surprise. I also like movies that keep me from guessing the correct plot ending.
+</p>
+</li>
+
+</ul>
+
+

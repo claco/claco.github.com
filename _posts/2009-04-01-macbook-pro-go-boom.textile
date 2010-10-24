@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: Macbook Pro Go Boom
+wordpress_id: 203
+wordpress_url: http://chrislaco.com/?p=203
+published:
+  epoch: 1238627940
+  utc: 2009-04-01T23:19:00
+---
+Slowly over the last couple of weeks, my Macbook Pro started going downhill. It started with a big bad pixel in the top middle of the screen. Nothing worth pursuing since there was only one. Then Saturday while doing some full screen editing in Textmate I noticed a rash of speckles on the right side. I thought it was dirt. Of course, it didn't come off when I cleaned the screen.<!--more-->
+
+Off I went to the Apple store Sunday to get it fixed.  Aside from the wait due to the place being packed as always, the process was pretty easy. My Genius called over another Genius and said "Hey, come look at this."  Oh no I thought. Apparently, one thing that gets the Genius folk excited are laptops that are old but in mint condition. They seemed pleased that my old 2007 was cherry. Of course it was. I pamper the thing. The Speck case doesn't hurt either. And it doesn't hurt my chances of getting the screen fixed without issue as well.
+
+Luckily for me, the LCD replacement was an in store repair. Once the part came in Tuesday the repair was done and they called me this evening to come pick it up.
+
+Nice. Thank god I spent the $ I saved on an Apple store refurb on AppleCare. :-)

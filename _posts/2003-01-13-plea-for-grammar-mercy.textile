@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Plea For Grammar Mercy"
+category: OffTopic
+published:
+  epoch: 1042500228
+  utc: 2003-01-13T23:23:48
+---
+
+<p>
+<cite>Damn it Jim, I'm a programmer, not a grammar teacher.</cite>
+</p>
+<p>
+This is a part opinion part proper grammar question for everyone. While going through the <a href="http://diveintoaccessibility.org/" title="Guide to making your website more accessibile in 30 days"><cite>30 days to a more accessible site</cite></a> guide and making sure all my page titles are appropriate to their content, I can't seem to decide whether I like all of the words in a title proper cased or not.
+</p>
+<p>
+<strong>About The Author</strong> looks better to me than <strong>About the author</strong> or <strong>About the Author</strong>.
+<strong>Current Projects</strong> looks better to me than <strong>Current projects</strong>.
+But <strong>Help and Accessibility Statement</strong> looks better to me than <strong>Help And Accessibility Statement</strong> or <strong>Help and accessibility statement</strong>.
+</p>
+<p>
+Oh the quandary. I just want to be consistent. :-/
+What do you think?
+</p>
+
+

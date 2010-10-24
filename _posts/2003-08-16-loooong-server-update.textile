@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Loooong Server Update"
+category: Hardware
+published:
+  epoch: 1061085029
+  utc: 2003-08-17T01:50:29
+---
+
+<p>
+Holy crap. No wonder I don't  update the file server that often. 12 hours of <kbd>portupgrade</kbd> goodness. And after all the compiles and updates, everything still works.
+</p>
+
+

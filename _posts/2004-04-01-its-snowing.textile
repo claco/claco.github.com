@@ -1,0 +1,17 @@
+---
+layout: post
+title: "It's Snowing"
+category: Humor
+published:
+  epoch: 1080862649
+  utc: 2004-04-01T23:37:29
+---
+
+<p>
+It's Spring. It's Ohio. It's Snowing. No April Fools on this one.
+</p>
+<p class="image">
+<img src="/blog/images/humor/snow.gif" />
+</p>
+
+

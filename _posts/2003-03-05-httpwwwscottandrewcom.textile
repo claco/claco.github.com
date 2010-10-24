@@ -1,0 +1,14 @@
+---
+layout: post
+title: "http://www.scottandrew.com/"
+category: WWW
+published:
+  epoch: 1046912777
+  utc: 2003-03-06T01:06:17
+---
+
+<p>
+A daily reader of <a href="http://www.scottandrew.com/">scottandrew.com</a>.  I was shocked to see a big redesign when I visited this evening! AWESOME! I love it. That is all.
+</p>
+
+

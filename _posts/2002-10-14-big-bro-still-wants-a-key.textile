@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Big Bro Still Wants a Key"
+category: Security
+published:
+  epoch: 1034627455
+  utc: 2002-10-14T20:30:55
+---
+
+<p>
+If there ever was a time to start using *pgp products, this will be one of them.
+From <a href="http://news.com.com/2100-1023-961969.html" title="Article about law enforcement and encryption"><cite>News.com</cite></a> :
+</p>
+<blockquote>
+<p>
+Replied Freeh: "I have not given up on encryption." In his statement at the time, he said that "law enforcement remains in unanimous agreement that the continued widespread availability and increasing use of strong, non-recoverable encryption products will soon nullify our effective use of court-authorized electronic surveillance." ...
+Soon after the Sept. 11 attacks, Gregg said he would introduce legislation to limit the availability of encryption without backdoors for government spying. After encountering widespread criticism, however, Gregg chose not to introduce the proposal.
+</p>
+</blockquote>
+<p>God forbid we should be able to keep other people from seeing what we type, especially Big Brother. Outlaw guns, only criminals have guns. Outlaw encryption, yadda yadaa. Just ask Australia how well outlawing guns went and what it did for their crime rates.
+</p>
+
+

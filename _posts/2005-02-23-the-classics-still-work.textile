@@ -1,0 +1,12 @@
+---
+layout: post
+title: "The Classics Still Work"
+category: Games
+published:
+  epoch: 1109215359
+  utc: 2005-02-24T03:22:39
+---
+
+I got tired of programming for a while and installed Quake II. It's no Half-Life 2, but it still is fun to play after all these years.
+
+

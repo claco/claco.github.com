@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Splinter Cell 3"
+category: Games
+published:
+  epoch: 1112560073
+  utc: 2005-04-03T20:27:53
+---
+
+<img src="/blog/images/games/sc3banner.gif" alt="SC3 Banner" />
+
+I must say, after all the crap with the last version of Splinter Cell; the crappy patches, the crashes, the corrupt profile issues; this new version is actually great.
+
+On top of that, it's cheap too. $30-$40. That's great compared to friggin Half-Life<sup>2</sup> and Doom<sup>3</sup> that were above $50 when they were released.
+
+I had to turn down all the featuresto get 1920x1200 playable. Time for an X800 XT PE or X850 XT PE. I think Margo would kill me. :-)
+
+

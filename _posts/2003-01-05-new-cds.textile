@@ -1,0 +1,50 @@
+---
+layout: post
+title: "New CDs"
+category: Music
+published:
+  epoch: 1041814868
+  utc: 2003-01-06T01:01:08
+---
+
+<p>
+I needed some new tunes this week. Mostly old stuff, and some new stuff from older bands.
+</p>
+<ul>
+<li>
+<strong>Edgar Winter: The Best Of Edgar Winter</strong>
+<p>
+I bought this album for one song and one song only: <strong>Frankenstein</strong>.
+If of the coolest rock type instrumentals with a great wind/brass section IMHO.
+</p>
+</li>
+
+<li>
+<strong>Primus: Sailing The Seas Of Cheese</strong>
+<p>
+I heard <strong>Tommy The Cat</strong> on the new <a href="/blog/archives/entries/000078/" title="XMSKYFi radio product details">XM SKYFi Radio</a> and remembered that this was missing from the <a href="/music/?artist=36">Primus albums I already have</a>. My college roomie got me into Primus, along with King Crimson and Brand X.
+</p>
+</li>
+
+<li>
+<strong>Iron Maiden: Brave New World</strong>
+<p>
+I've always been a huge Iron Maiden fan. I used to have every cassette, and now I'm trying to get every CD.
+I'm not sure what it is about them. Maybe it's just that their songs were more story like than the usual hair band dribble. Of course, I really dig Eddie and the album cover art over the years.
+</p>
+</li>
+
+<li>
+<strong>W.A.S.P.: Inside The Electric Circus</strong>
+<p>
+One of the more hard core rock bands of the 80s IMHO. Not quite death metal or anyhting, but still more aggressive than the usual Warrant/Bullet Boys junk.
+</p>
+</li>
+
+</ul>
+
+<p>
+One of these days I need to finish ripping my CD collection and get it's info into the <a href="/music/" title="Browse my music collection">music</a> section of this site. That should go quicker now that I have a lappy with 2 <acronym title="Compact Disc Rewritable">CD-R</acronym> drives, a desktop with 2 CD drives, and 2 more drives in the file server.
+</p>
+
+

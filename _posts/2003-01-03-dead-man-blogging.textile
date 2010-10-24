@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Dead Man Blogging"
+category: WWW
+published:
+  epoch: 1041609782
+  utc: 2003-01-03T16:03:02
+---
+
+<p>
+<a href="http://www.pepysdiary.com/" title="Visit pepysdiary.com">This</a> is the most creative blogging idea I've seen in a while; It is the <cite>The Diary of Samuel Pepys (1633-1703)</cite> blogged daily, entry by entry as if Mr. Pepys himself was blogging. I think this would be a facinating way to study history. Have a hard time learning the sequence of events leading up to say WWII or The Battle of *, blog it chronologically. I bet it would work.
+</p>
+<p>
+Now all of the great writers of the past can get in there long overdue "First Post Bitches!".
+</p>
+
+

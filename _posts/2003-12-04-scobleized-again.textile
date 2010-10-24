@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Scobleized Again"
+category: Humor
+published:
+  epoch: 1070578984
+  utc: 2003-12-04T23:03:04
+---
+
+<p>
+I've been <a href="http://radio.weblogs.com/0001011/2003/12/03.html#a5645">Scobleized</a> again. How does he do it? How does he find my pro/con Microsoft posts? I guess if he reads my RSS feed, or site, then I'm flattered. Still shocked anyone tunes in after all the complaining. :-)
+</p>
+<p>
+Guess it's time to put on a new attitude and start contributing in a meaningful way.
+</p>
+<p>
+<ins>
+Thank you sire, may I have <a href="http://radio.weblogs.com/0001011/2003/12/05.html#a5677">another</a>?
+</ins>
+</p>
+
+

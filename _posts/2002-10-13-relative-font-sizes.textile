@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Relative Font Sizes"
+category: WWW
+published:
+  epoch: 1034550261
+  utc: 2002-10-13T23:04:21
+---
+
+<p>
+Well, I finally took the plunge and tweaked the stylesheet  to use relative font sizes with the help of 
+<a href="http://diveintoaccessibility.org/day_26_using_relative_font_sizes.html" title="Article on using relative font sizes">this article</a> over at 
+<a href="http://diveintoaccessibility.org/" title="Visit diveintoaccessibility.org">Dive Into Accessability</a>.
+</p>
+<p>
+What I don't like so far:
+</p>
+
+<ul>
+<li>The font size for most of the content uses small, which compared to the pixel sizes is somewhere between to small and to big.</li>
+<li>The stylesheet used to pass the W3C validator with no errors and no warnings. here still are no errors, but a whole lot of warnings creeped in.</li>
+<li>The layout gets crazy in Mozilla when I resize now. It never used to do that with pixel fonts sizes. Although, Mozilla would resize all fonts regarless of relative or fixed while IE wouldn't play nice.
+
+</li>
+</ul>
+
+<p>
+It all comes back to eating your own dog food again I guess. Something to change my mind about later go do with cookies/javascript selected stylesheets 
+with the pixel sizes changed instead of being relative.
+</p>
+<p>
+What do you think?
+</p>
+<h4>Update</h4>
+<p>
+Damn. The CSS validator does fine if I upload and specify the options, but it does't work in general from the Valid CSS links on this page. Time to ditch relative and go back to fixed. :-(
+</p>
+
+

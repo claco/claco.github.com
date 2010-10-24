@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Best Buy, Worst Repair"
+category: Hardware
+published:
+  epoch: 1042939936
+  utc: 2003-01-19T01:32:16
+---
+
+<p>
+&lt;begin rant&gt;
+</p>
+
+<p>
+Stuff like this pisses me off, so of course, why not write about it in my blog? :-)
+</p>
+
+<p>
+About 1.5 years ago, I bought Margeaux an HP N5450 Pavilion laptop for school. Knowing how pissy laptops get with age, I decided to spring for the Best Buy extended warranty.
+The money we were saving in rebates made the extra cost of the extended warranty a non issue.
+</p>
+<p>
+Well, here it is a year and a half later, and the power jack on the motherboard shits the bed (yes, that's a technical term). Since we got the extended warranty and the HP warranty had run out, no big deal right? Well, not at first.
+</p>
+<p>
+We dropped the laptop off at the Best Buy repair desk on December 22nd. I've had laptops service before. Even replacing the mobo thought the manufacturer shouldn't take more than a week. Well, four and a half weeks later and the tell us the laptop is fixed. Why it took four and a half weeks, I can only imagine but I have my theories. The main one is that they spent that time looking for a cheap power jack to solder onto the same motherboard.
+</p>
+<p>
+Having been down this road with other things, I made sure we fired up the laptop at Best Buy before we left the store. It appeared to work, but the power jack was still a lot more loose than when it was brand new. But hey, to each his own, so we went home.
+</p>
+<p>
+We get home, she plugs the laptop in, fires it up, and logs onto the net. All of a sudden, the laptop clicks and goes dead. No amount of power button pushing of adding/removing the batter will get this thing to boot up. So back to Best Buy she goes with the laptop.
+</p>
+<p>
+Once there, they plug it in and it worked I am told, with the blue shirted wonders spouting something about power surges. Home she returns with the laptop in hand.
+We plug it in, no dice. At this point I want to point out that it is plugged into a surge protector. So I let it sit for a while then try to plug it into the <acronym title="Uninterruptible Power Supply">UPS</acronym> in the office. No dice. 
+I would also like to point out that the UPS is a CyberPower 1500AVR, that "AVR" stands for <strong>Automatic Voltage Regulator</strong>. Think about that for a second. That means no power surges.
+</p>
+<p>
+Tomorrow morning I will try this lappy at work on a completely different power grid. Assuming it still doesn't work, I'm heading back to Best Buy to demand that they replace the motherboard, which is what should've happened to begin with. </p>
+<ins>
+<p>
+Hell, assuming it does work, theres no reason this laptop should be this flakey about power source AFTER a repair when it have no problems for the first year and a half.
+</p>
+<p>
+It may be time for a "<acronym title="Named after my friend Mark who could fix anything with a solder and a paperclip. The MacGyver of computers.">Marky-Fix</acronym>".
+</p>
+</ins>
+
+
+<p>
+&lt;end rant&gt;
+</p>
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "CC: MT Comments"
+category: WWW
+published:
+  epoch: 1060136557
+  utc: 2003-08-06T02:22:37
+---
+
+<p>
+I decided to tinker, so a few snippets are forthecoming.
+</p>
+<p>
+First, I've got a few patches to allow MT to send the new comment notification to a CC: list of email addresses in addition to just the author's email. This is configurable in the MT blog preferences.
+</p>
+<p>
+I'm also going to hack together a script that will suck in emails from a specified account and stuff their contents into the comments data for the entry specified in the subject line (assuming the email is a reply to the new comment notificaiton email). 
+</p>
+
+

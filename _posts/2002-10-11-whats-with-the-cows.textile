@@ -1,0 +1,28 @@
+---
+layout: post
+title: "What's With The Cows?"
+category: Humor
+published:
+  epoch: 1034378045
+  utc: 2002-10-11T23:14:05
+---
+
+<p>
+So I've been asked twice now what the deal with the cows at the top of the page is all about. Well, first of all, the title of this site <i>is</i> I Can't Focus, so if you can find any rhyme or reason to this site, well accidents will happen! Meanwhile, back at the ranch...
+</p>
+<p>
+On any given day around the cube at work or in the livingroom at home you would probably hear the phrase 'Moo' eightygazillion times. Why?
+</p>
+
+<ol>
+<li>The <a href="http://www.gateway.com/" title="Visit gateway.com">Gateway</a> Cow Commercials.</li>
+<li>
+The <a href="http://members.iinet.net.au/~afleay/cow/" title="I'm A Cow flash movie">funniest flash cartoon</a> I've ever seen (Beware of popups).
+</li>
+</ol>
+
+<p>
+<cite>I'm a cow can't you see, I'm a cow yes indeed. Moooooo. I'm a cow.</cite>
+</p>
+
+

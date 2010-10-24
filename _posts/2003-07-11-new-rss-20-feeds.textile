@@ -1,0 +1,23 @@
+---
+layout: post
+title: "New RSS 2.0 Feeds"
+category: WWW
+published:
+  epoch: 1057950715
+  utc: 2003-07-11T19:11:55
+---
+
+<p>
+Well, I had a few minutes to tinker, and tinker I did. I've added two new RSS 2.0 feeds.
+</p>
+<ol>
+<li><a href="/blog/rss2.xml">RSS 2.0 Feed</a> - This contains excerpts of the last 25 posts just like the RSS 0.91 and RSS 1.0 feeds.</li>
+<li><a href="/blog/rss2full.xml">RSS 2.0 Full Post Feed</a> - This contains the full version of the last <strong>15</strong> posts.</li>
+</ol>
+
+<p>
+I haven't made my mind up about inline images in the posts yet. On the one hand, I don't want to hard code them with my domain name. Hardcoding Bad.
+Yet, it sure would be nice if they worked properly in RSS readers. Wonder if there is a &lt;base&gt; tag in the RSS spec somwhere?
+</p>
+
+

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "I'm Tired"
+category: WTF
+published:
+  epoch: 1049419996
+  utc: 2003-04-04T01:33:16
+---
+
+<p>
+Bushed. Pooped. Cooked. Done. Fried.
+</p>
+<p>
+Up at 5:50am, to work at 6:00am for a rather large install/update. Spent the rest of the day 'til 5:30pm putting out small fires here and there caused by the redesign/install. Stab me with a fork, cuz I am done.
+Too tired to play Splinter Cell. Too tired to read programming dos. Too tired start any other work. Too tired to look at pr0n. OK, I'm <em>never</em> too tired for that. :-D
+</p>
+
+

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Geek Confessional II"
+category: Games
+published:
+  epoch: 1112566316
+  utc: 2005-04-03T22:11:56
+---
+
+Apparently <a href="/blog/archives/entries/geek_confessional.icf">in two year cycles</a>...
+
+<a href="http://www.newegg.com/app/ViewProductDesc.asp?description=14-102-398">Sapphire Radeon X800 XT Platinum Edition</a>.
+
+
+

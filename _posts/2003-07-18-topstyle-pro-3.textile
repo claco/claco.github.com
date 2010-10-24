@@ -1,0 +1,27 @@
+---
+layout: post
+title: "TopStyle Pro 3"
+category: WWW
+published:
+  epoch: 1058572470
+  utc: 2003-07-18T23:54:30
+---
+
+<p>
+Lately I've been in the mood to do more CSS. I've tried HomeSite in the past, and even earlier versions of <a href="http://www.bradsoft.com/topstyle/">TopStyle</a>. I've never been a fan of WYSIWYG editors, even IDEs like Visual Studio/Interdev that try and second guess me. I'm a diehard Notepad/Textpad user. Give me a text editor or give me death, and leave my formatting alone!
+</p>
+
+<p>
+On a whim I decided to try TopStyle Pro after I had tried <a href="http://www.bradsoft.com/feeddemon/">FeedDemon</a>, a new RSS newsreader developed by the same BradSoft via Nick Bradbury.
+</p>
+
+<p>
+After a day of tinkering, I bought a copy. Nick has a real gift and making highly usable GUI programs that Do What I Mean and get out of the way. That's a hard skill to come by, even for Microsoft sometimes.
+</p>
+
+<p>
+What I like even more, is the non-greedy licensing. I buy 1 license for me to use this program anywhere I am; at home, at work; on the laptop, on the desktop.
+That's how it should be. That makes me want to pay for software. This draconian per per user, per seat, per connection crap the BigCO's play is for the birds.
+</p>
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Firebird RSS Reader"
+category: Software
+published:
+  epoch: 1074486236
+  utc: 2004-01-19T04:23:56
+---
+
+<p>
+There are a couple of RSS reader extensions for Mozilla Firebird; <a href="http://fls.moo.jp/moz/rssreader.html">RSS Reader</a>, <a href="http://aggreg8.mozdev.org/">Aggreg8</a>, and <a href="http://newsmonster.org/">NewsMonster</a>. On the first try a month or so ago Aggreg8 didn't work and NewsMonster borked my install so bad I had to reinstall Firebird. So far though, RSS Reader is rock solid, and simple without all the extras to slow it down.
+</p>
+<p>
+I definately like having an RSS reader inside of the browser instead of the other way around.
+</p>
+
+

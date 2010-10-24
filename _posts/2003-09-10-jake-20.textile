@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Jake 2.0"
+category: OffTopic
+published:
+  epoch: 1063244243
+  utc: 2003-09-11T01:37:23
+---
+
+<p>
+I'm watching the series premiere of <a href="http://www.imdb.com/title/tt0367344/">Jake 2.0</a>. Not the newest series idea ever (person infected with nana tech gets powers), but it's pretty good.
+</p>
+
+

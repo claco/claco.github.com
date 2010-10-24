@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Safari GZip Bug"
+category: WWW
+published:
+  epoch: 1074215987
+  utc: 2004-01-16T01:19:47
+---
+
+<p>
+Someone at work noticed that the new Safari under Pather, which now has Gzip support,  throws up an error after loading and displaying pages [correctly] on this site.
+</p>
+<p class="image">
+<img src="/blog/images/www/safarierror.gif" alt="Safari Gzip Error" />
+</p>
+<p>
+Supposedly, this is a "feature" in Safari when a server doesn't sent the <samp>Content-Length:</samp> header along with the gzipped content.  After chatting with the  AxKit mail list, this is fixed in the CVS tree. I've backported a patch and installed it. Since I don't have OSX or Safari, I'll have to check it tomorrow. 
+</p>
+<ins>
+<p>
+Confirmed. Adding <code>Content-Length:</code> cured the Safari problem.
+</p>
+</ins>
+
+

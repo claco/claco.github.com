@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Carnivale"
+category: OffTopic
+published:
+  epoch: 1063678209
+  utc: 2003-09-16T02:10:09
+---
+
+<p>
+I just watched the first episode of <a href="http://www.imdb.com/title/tt0319969/">Carnivale</a>. It's wicked strange. Kinda of like Stephen King's <a href="http://www.imdb.com/title/tt0108941/">The Stand</a> meets <a href="http://www.imdb.com/title/tt0098936/">Twin Peaks</a>.
+</p>
+
+

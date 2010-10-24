@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Still Tinkering"
+category: OffTopic
+published:
+  epoch: 1034223155
+  utc: 2002-10-10T04:12:35
+---
+
+<p>
+Another round of changes for this site.
+</p>
+
+<ul>
+<li>Added page title below the site menu</li>
+<li>Decreased the size the the entry titles</li>
+<li>Finally got that stupid posted date closer to the entry title</li>
+<li>Monthly archive links on the left of most blog pages</li>
+</ul>
+
+<p>
+Still on the To Do list:
+</p>
+
+<ul>
+<li>Font-size friendly style sheets</li>
+<li>Printer friendly style sheets</li>
+<li>Get a clue</li>
+<li>RSS Feed(s)</li>
+</ul>
+
+<p>
+Let me know what you think!? It's been a looong time since I've even had a homepage!
+</p>
+<p>
+<strong>P.S.</strong> I still say there is something strange with pings to moveabletype.org. Sometimes the screen says it's pinging even though I'm just making a spelling correction; no new entry; no Post Status change. Curious.
+</p>
+
+

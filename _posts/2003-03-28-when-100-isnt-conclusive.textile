@@ -1,0 +1,31 @@
+---
+layout: post
+title: "When 100% Isn't Conclusive"
+category: WTF
+published:
+  epoch: 1048906665
+  utc: 2003-03-29T02:57:45
+---
+
+<p>
+Straight from the briing-clue-phone-its-for-you department. Apparently a <a href="http://www.reuters.com/newsArticle.jhtml?type=topNews&amp;storyID=2469167">3rd person has died</a> after getting their Smallpox vaccine. This time, it was a soldier. And like the previous 2 nurses before him, he also had a heart attack.
+</p>
+<blockquote>
+<p>
+ Department of Defense (news - web sites) official said on Friday that the 55-year-old National Guardsman had died in an unidentified U.S. military hospital on March 26, six days after receiving his smallpox vaccination.
+</p>
+<p>
+Two female health care workers who were recently vaccinated against smallpox have died in the past week of heart attacks. 
+</p>
+</blockquote>
+<blockquote>
+<p>
+ "We are categorizing this event at the moment as <strong>unlikely to be due to smallpox vaccination</strong>," Grabenstein said during a conference call with other smallpox vaccination experts and government immunization experts.
+</p>
+</blockquote>
+
+<p>
+Umm,. hello? Is this thing on? Three people dead after getting their Smallpox vaccines; all from the same immediate cause. Now I know why Margeaux refused to get one at work (she's a nurse). 100% seems like a hell of a coincidence to me.
+</p>
+
+

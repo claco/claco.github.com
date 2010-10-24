@@ -1,0 +1,14 @@
+---
+layout: post
+title: "He's Dead Jim"
+category: WWW
+published:
+  epoch: 1060045494
+  utc: 2003-08-05T01:04:54
+---
+
+<p>
+I decided that the web server having write access to things was bad, so I've turned on suExec for my blog. This means all files are rebuilt as me. This also means that when comments are posted, the index page and the entry page will NOT reflect the comments immediately. A fare trade-off I think.
+</p>
+
+

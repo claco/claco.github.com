@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Powernotebooks.com"
+category: Hardware
+published:
+  epoch: 1035647209
+  utc: 2002-10-26T15:46:49
+---
+
+<p>
+	Just a quick follow-up to my <a href="/blog/archives/entries/000039/" title="My review of the Sager NP5660 laptop">recent review/purchase</a> of the 
+	Sager NP5660 from <a href="http://www.powernotebooks.com/" title="PowerNotebooks home page"><cite>PowerNotebooks</cite></a>.  
+	Not to long after I received my new lappy, I got an email from Donald at PowerNotebooks thanking 
+	me once again for my business and asking if i have any problems with it so far.
+</p>
+<p>
+	Way cool. Stuff like that makes me a happy consumer. Did I get an email from Compaq when I bought a lappy? No. 
+	From HP? No. From CompUSA? No. Getway? No. Now guess who out of those will be getting my laptop business from now on? PowerNotebooks.
+</p>
+
+

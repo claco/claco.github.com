@@ -1,0 +1,23 @@
+---
+layout: post
+title: "FeedDemon In The House"
+category: Software
+published:
+  epoch: 1076022599
+  utc: 2004-02-05T23:09:59
+---
+
+<p>
+I decided today that I'm spending way to much time at work keeping up with the latest news, hacks, patches, and software. So I decided to buy a copy of <a href="http://www.bradsoft.com/feeddemon/">FeedDemon</a>.
+</p>
+<p>
+I've said it before and I'll say it again. Nick has a great talent for making  software visually appealing, flexible with many options, and functional; all in the same program. That's quite a talent in a pool of over complicated, ugly, unusable pieces of software.</p>
+<p>
+I do find the software activation annoying at best, but I don't mind. Why? 
+Because the software has a practical license: I  can use if on ANY machine I own. Now, if Microsoft would just learn that lesson, I'd hate them, and $500 Office a little less.
+</p>
+<p class="image">
+<a href="http://www.bradsoft.com/feeddemon/"><img src="/blog/images/software/fd120x60a.gif" alt="FeedDemon Banner" /></a>
+</p>
+
+

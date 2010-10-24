@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Marry A SysAdmin?"
+category: Humor
+published:
+  epoch: 1033860093
+  utc: 2002-10-05T23:21:33
+---
+
+<h4>Who want's to marry a sysadmin?</h4>
+<p>
+<a href="http://www.fistfullofunix.com/" title="Visit fistfullofunix.com">This</a> is definately one of the funniest things I've seen in a while:
+</p>
+
+<blockquote>
+<p>
+"There's no time to waste. We're all getting fatter and paler by the second. Hook up now before we can't keep track of our processes anymore and our hair forks all to hell."
+</p>
+</blockquote>
+
+<p>
+Check out this <a href="http://www.fistfullofunix.com/images/big_jpg/frank_action_1.jpg">action shot</a>!
+</p>
+<p>
+Don't forget to fill out an <a href="http://www.fistfullofunix.com/application.html">application</a>.
+</p>
+<p>
+P.S. Yes. <em>of course</em> I've filled it out already. :-)
+</p>
+
+

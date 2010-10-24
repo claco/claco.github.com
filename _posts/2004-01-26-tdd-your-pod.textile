@@ -1,0 +1,14 @@
+---
+layout: post
+title: "T.D.D. Your P.O.D."
+category: Perl
+published:
+  epoch: 1075156479
+  utc: 2004-01-26T22:34:39
+---
+
+<p>
+OK, <a href="http://search.cpan.org/search?query=Test::Pod&amp;mode=module">this Test module</a> is really really sick in a cool sort of way. For those who hate writing documentation even more than writing unit tests, <a href="http://search.cpan.org/search?query=Test::Pod&amp;mode=module">Test::Pod</a> is for you. And for the really sick at heart, <a href="http://search.cpan.org/search?query=Test::Pod::Coverage&amp;mode=module">Test::Pod::Coverage</a> can compare your Pod to your module and make sure you're documentating those new subs you've just added.
+</p>
+
+

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Comments Snafu"
+category: OffTopic
+published:
+  epoch: 1033888134
+  utc: 2002-10-06T07:08:54
+---
+
+<p>
+Slight snafu/fubar/charlie-foxrot with the comment links and forms.
+Should be working fine now (famous last words).
+</p>
+<h4>Update</h4>
+<p>I also forgot to turn 'anonymous' comments on. They are on now, so email/name are not required.
+</p>
+
+

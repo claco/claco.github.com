@@ -1,0 +1,24 @@
+---
+layout: post
+title: "The Worlds Largest Tangent"
+category: FreeBSD
+published:
+  epoch: 1107572782
+  utc: 2005-02-05T03:06:22
+---
+
+The last 3 weeks have been like that show "Connections" where the British dude relates the length of toothpicks to the building of the first atomic bomb; seemingly unrelated.
+
+I was happily writing TDD test for <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> when I needed to upgrade AxKit. Only 1.61 was available for win32, so I begged Randy Kobes to build 1.62.
+
+Once he had done that, libxslt/libxml started crashing apache since they were upgraded to newer versions as well. So now it was time to figure out how to build my own.
+
+A week later, after begging Randy for even more hints and help, I finally managed to squeak out new versions of libxml, libxslt, their XML:: counterparts, and AxKit 1.62.
+
+Now, back to writing tests. Hey, why not another distraction or two? Let's put FreeBSD on the laptop so I can run my tests there too. After another couple days of tinkering, I've finally got the sound working, the wireless working, and KDE 3.3.2 actually runs. Using it to post right now.
+
+Boy has KDE gotten a lot better since 3.0!
+
+As if that wasn't enough, I converted a couple other modules to SVN and uploaded new versions to CPAN, along with getting CPANPLUS/Test::Reporter running so I can post test reports to cpan-testers.
+
+

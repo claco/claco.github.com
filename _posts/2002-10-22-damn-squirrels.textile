@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Damn Squirrels"
+category: Hardware
+published:
+  epoch: 1035336012
+  utc: 2002-10-23T01:20:12
+---
+
+<p>
+So the last week at work has been ... strange, in terms of computers acting up for no apparent reason, then fixing themselves. While a co-worker proclaims 'sunspots', my vote is on squirrels moving from machine to machine causing mayhem, It looks like the squirrels <a href="http://www.smiq.com/archives/000492.htm" title="Post about strange computer problems">are on the move</a> again. This is definately one of the strangest problems I've ever heard of. All praise St. Murphy.
+</p>
+
+

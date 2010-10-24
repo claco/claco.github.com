@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Linux Is For Bitches"
+category: Humor
+published:
+  epoch: 1061760705
+  utc: 2003-08-24T21:31:45
+---
+
+<p>
+Remember boyz and girlz, <a href="http://www.linuxisforbitches.com/">Linux is for Bitches</a>. Yeah, I know, "Right Tool for the Right Job(TM)". Yada yada. Bla bla. Now laugh.  :-)
+</p>
+
+<ins>
+<p>
+Don't forget to check out the <a href="http://www.linuxisforbitches.com/aol.php">AOL Buddy Icons</a> while you're at it, and the <a href="http://people.freebsd.org/~wpaul/daemonette/Dcp00473.jpg">Daemonette </a>too! Wooba.
+</p>
+</ins>
+
+<p class="image">
+<img src="/blog/images/humor/lifb.jpg" alt="Linux Is For Bitches" /><br />
+<a href="http://www.thinkgeek.com/">Think Geek</a> should start selling this logo on T-shirts.
+</p>
+
+

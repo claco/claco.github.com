@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Shore Leave"
+category: OffTopic
+published:
+  epoch: 1068404953
+  utc: 2003-11-09T19:09:13
+---
+
+<p>
+We're in the process of moving, and it'll be another week until we have DSl at the new place, and another week after that before I get around to moving my computers and servers.
+</p>
+<p>
+So I'll be on a shore leave of sorts away form my computers for a bit.
+</p>
+
+

@@ -1,0 +1,51 @@
+--- 
+layout: post
+title: An Introduction To Siphon
+wordpress_id: 157
+wordpress_url: http://chrislaco.com/?p=157
+published:
+  epoch: 1237134420
+  utc: 2009-03-15T16:27:00
+---
+This is the first in a series of posts about Siphon, a set of data monitoring utilities for .NET under the MIT license. The source code can be found on <a title="Siphon on GitHub" href="http://github.com/claco/siphon/">GitHub</a>.
+<h2><!--more-->Introduction</h2>
+For me, writing software seems to be about scratching an itch, filling a need by creating your own solution. Siphon is such a project. It seems that almost every project that come across my desk has the need to monitor some directory for files to process. Sometimes that's a local directory. Sometimes that's a remote ftp directory. Sometimes it's even a pop3 mailbox. After watching numerous similar scheduled tasks, batch files, vbscript and command line utilities  being created I decided to create Siphon to help get all of these tasks back into more consistent manageable pieces.
+
+Siphon is a set of tools to allow you to monitor data on a specific schedule and send that data off or processing. There are three basic parts used to accomplish this:
+<ol>
+	<li>Data Monitors: What do you want to monitor?</li>
+	<li>Monitor Schedules: When do you want to check for new data?</li>
+	<li>Data Processors: What do you want to do with the new data?</li>
+</ol>
+These three parts are combined in code or in config files to accomplish the task of monitors and processing new data. These tasks can be configured and run manually using SiphonConsole, and command line utilities for running local/remote monitoring jobs, or SiphonService, a Windows Service that runs jobs based on the schedules supplied.
+<h2>Data Monitors</h2>
+The following data monitors are currently supported:
+<ul>
+	<li>LocalDirectoryMonitor: Monitor local file system directories for new files.</li>
+	<li>FtpDirectoryMonitor: Monitor remote ftp directories for new files.</li>
+	<li>ImapMonitor: Monitor IMAP mail boxes for new messages.</li>
+	<li>Pop3Monitor: Monitor POP3 mail boxes for new messages.</li>
+	<li>MessageQueueMonitor: Monitor MSMQ queues for new messages.</li>
+	<li>DatabaseMonitor: Monitor any DbProviderFactory support database for new records.</li>
+</ul>
+Data monitors can take separate sets of actions against the data when processing complete/fails. These actions include:
+<ul>
+	<li>Delete: Delete the data when processing completes/fails.</li>
+	<li>Move:  Move the data when processing completes/fails.</li>
+	<li>Rename: Rename the data when processing completes/fails.</li>
+	<li>Update: Update the data when processing completes/fails.</li>
+	<li>Combined: combine any of these actions together, i.e. Rename then Move.</li>
+</ul>
+<h2>Monitor Schedules</h2>
+The following monitor schedules are currently supported:
+<ul>
+	<li>IntervalSchedule: Run whenever a specified amount of time as passed.</li>
+	<li>DailySchedule: Run at the same time(s) every day.</li>
+</ul>
+<h2>Requirements</h2>
+In order to run Siphon you must have the following:
+<ul>
+	<li>.NET 3.5</li>
+	<li>log4Net for logging (Free)</li>
+	<li>Lumisoft.NET for FTP/IMAP/POP3 protocol support (Free)</li>
+</ul>

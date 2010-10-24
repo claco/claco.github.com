@@ -1,0 +1,49 @@
+---
+layout: post
+title: "New MT 2.51 Patches"
+category: Perl
+published:
+  epoch: 1041488567
+  utc: 2003-01-02T06:22:47
+---
+
+<p>
+	Well, I may have not finished the list for today, but I made a big dent and fixed another problem as well.
+	I've put together to following sets of <acronym title="Movable Type">MT</acronym> 2.51 patches that may never be of use to anyone but me.
+</p>
+<p>
+<strong>MTEntryTrackbackID</strong> could easily be a plugin instead of patches, but I'm hoping that they might 
+make it into the core MT program. If not, then a plugin it will become.
+</p>
+<h4>MTPingInterface</h4>
+<p>
+	<a href="http://today.icantfocus.com/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
+	As mentioned earlier, this set of patches allows me to specify what local ip or ip:port the server should
+	bind to before sending out recently-updated or trackback pings.
+</p>
+
+<h4>MTEntryTrackbackID</h4>
+<p>
+	<a href="http://today.icantfocus.com/downloads/MTEntryTrackbackID/2.51/" title="Download MTEntryTrackbackID patches">Download Files</a><br />
+	When circumstances decided that I needed to manually build my trackback urls, I quickly found out that
+	the was no <code>&lt;$MTEntryTrackbackID$&gt;</code> tag to be found. There is now. :-)
+</p>
+
+<h4>Update</h4>
+<p>
+	Looks like the <code>&lt;$MTEntryTrackbackID$&gt;</code> code will make it's way into MT at some point 
+	in the future. Although I realized today that I forgot to do the documentation patch for the new tag. 
+	Doh! Should have that done shortly.
+</p>
+<p>
+	Ben brought up a good point about the <strong>MTPingInterface</strong>: globalize it and put it in in 
+	<code>mt.cfg</code>. Duh. Don't know why I missed that one. I'm also entertaining the idea of of adding 
+	a setting in there to send pings through the proxy server as well.
+</p>
+<p>
+	Ben also pointed out that there is an <code>AdminCGIPath</code> setting in <code>mt.cfg</code> that 
+	appears to solve my problem. I missed it in the the CONFIGURAITON SETTINGS prtion of the docs. <acronym title="Read The Fucking Manual">RTFM</acronym>.
+</p>
+
+
+

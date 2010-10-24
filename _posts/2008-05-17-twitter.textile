@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Twitter"
+category: WWW
+tags:
+  - twitter
+published:
+  epoch: 1211075594
+  utc: 2008-05-18T01:53:14
+---
+
+I've given in. I now have a <a href="https://twitter.com/claco/">Twitter account</a>.
+
+

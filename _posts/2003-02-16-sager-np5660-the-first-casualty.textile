@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Sager NP5660: The First Casualty"
+category: Hardware
+published:
+  epoch: 1045410980
+  utc: 2003-02-16T15:56:20
+---
+
+<p>
+Well, as much as I like my Sager NP5660, it just shed it's first casualty: the AC adapter. Actually, the adapter itself is fine, but the little metal part that plugs into the computer liberated itself from it's plastic/rubber sheathing.
+I have a suspicion that the cord got tugged sometime and I don't remember or someone else did it and didn't fess up. It's actually stranger. The metal fitting sits glued inside the sheathing and it has little metal spikes that sit in holes inside the cord. Nothing is hard wired.
+</p>
+<p>
+So, if they are built this way so the cord breaks before the jack on the motherboard does, then kudos to them. I'll take buying a new AC adapter over a broken mobo any day. I've ordered another AC cord, and when I have that in had, I may take a stab at rewiring the broken one. That should be pretty straight forward.
+</p>
+
+

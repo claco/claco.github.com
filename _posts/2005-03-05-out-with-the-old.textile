@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Out With The Old"
+category: WWW
+published:
+  epoch: 1110081175
+  utc: 2005-03-06T03:52:55
+---
+
+Out with the old. In with the new. Every wanted to just delete your entire web directory and start over? <strong>Done</strong>.
+
+Just a few more links to fix and I'm done. Simple. Easy. Quick. Now, back to CPAN.
+
+

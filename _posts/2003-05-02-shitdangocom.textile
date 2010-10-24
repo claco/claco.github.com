@@ -1,0 +1,24 @@
+---
+layout: post
+title: "shitdango.com"
+category: WTF
+published:
+  epoch: 1051915649
+  utc: 2003-05-02T22:47:29
+---
+
+<p>
+That's what they should call fangango.com. Cheesus H. Rice. This is possibly the worst site I've ever used to <strong>attempt</strong> to buy something online. It's not that their site layout or design is bad, it's just that the site doesn't fucking work. No way. No how.
+</p>
+<p>
+Every other click, literally, yields me a "session timeout" or a "an error has ocurred" message. What a turd of a site.
+Session timeout? Don't think so. just logged in. Cookies are on. No proxy involved. Javascript is on.
+</p>
+<p>
+Let me just clarify. I work in the biz. I've built my share of shit code and had problems. But something as large as Fandango should be doing a lot better.
+</p>
+<p>
+My bet: Their ASP is shitting upon itself on a busy Friday night. Time to upgrade to .NET. I here that 1 degree of seperation will solve their problems. That, or they forgot to sprinkle on the magic server pixie dust.
+</p>
+
+

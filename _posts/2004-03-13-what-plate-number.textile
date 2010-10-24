@@ -1,0 +1,41 @@
+---
+layout: post
+title: "What Plate Number?"
+category: OffTopic
+published:
+  epoch: 1079232620
+  utc: 2004-03-14T02:50:20
+---
+
+<p>
+So, I'm going to need to get new plates, and I can't use my <strong>WEB MAN</strong> truck plates as I still drive the truck. So, I need some computer geek suggestions for numbers.
+</p>
+<p>
+I'm thinking about <strong>USE PERL</strong>. <strong>RTFM</strong> is taken. There's <strong>PERL WT</strong>.  Any ideas? 
+</p>
+<p>Time to start a list:</p>
+<ul>
+<li>USE PERL</li>
+<li>BSD GUY</li>
+<li>FREEBSD</li>
+<li>SANS MS (Couldn't Resist)</li>
+<li>NO MSFT</li>
+<li>ANY KEY</li>
+<li>BSD GEEK</li>
+<li>CPS LOCK</li>
+<li>CVSUPME</li>
+<li>PERL WT</li>
+<li>MAX CPU</li>
+<li>NO GATES</li>
+<li>XHTML</li>
+<li>XHTML10</li>
+<li>ETHRNET</li>
+<li>RAQ MNT</li>
+<li>RSS FEED</li>
+</ul>
+
+<p>
+Thanks for the link Gary. Check <a href="http://webreference.com/outlook/license/gallery.html">these</a> out.
+</p>
+
+

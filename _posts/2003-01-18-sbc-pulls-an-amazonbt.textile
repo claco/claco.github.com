@@ -1,0 +1,65 @@
+---
+layout: post
+title: "SBC Pulls An Amazon/BT"
+category: WTF
+published:
+  epoch: 1042919018
+  utc: 2003-01-18T19:43:38
+---
+
+<p>
+Assuming <a href="http://www.museumtour.com/sbclawsuit.html" title="SBC legal package about frames patent">this post</a> is true, SBC is at the
+very least bad netizens, and at the very most clueless greedy patent whores. This is worse than Amazon patenting 1-click,
+of BT patenting linking. You should NOT be allowed to patent obvious internet practices, esp when it comes to W3C standards.
+Check out the <a href="http://yro.slashdot.org/article.pl?sid=03/01/18/1359218&amp;mode=flat&amp;tid=155">Slashdot conversation</a> about the matter.
+I'm with <a href="http://davenet.userland.com/2001/06/07/mossbergOnsmartTags#corporateDeathPenalty" title="Dave Winer On A Corperate Death Penalty">Dave Winer</a>, there
+should be a corperate death penalty for business who don't act in the best interest of their customers.
+</p>
+<blockquote>
+<p>
+January 14th, 2003
+</p>
+<p>
+Dear President of MuseumTour.com '
+</p>
+<p>
+
+SBC Intellectual Property is the owner of US Patent no. 5,933,841 entitled "Stuctured Document Browser". The purpose of this letter is to advise you of an opportunity to acquire a license to the patents - view patent link at the bottom of this page.:
+</p><p>
+
+- We recently observed several useful navigation features within the user interface or your site www.museumtour.com. For example your site includes several selectors or tabs that correspond to specific locations within your site documents. These selectors seem to reside in their own frame or part of the user interface. And, as such, the selectors are not lost when a different part of the document is displayed to the user - see screen shots from museumtour.com enclosed. By sperating the selectors from the content, Museumetour has truly simplified site navigation and improved the shopping experience for its users.
+
+</p>
+<p>
+As you review the Structured Document Patent you will notice that the above-discussed features appear to infringe several issued claims in our patent. In light of Museum Tours presumed respect for the intellectual property rights of others, we are pleased to offer you a Preferred Rate license under the structured Document Patent - see enclosed rate schedule -
+
+</p><p>
+Actual licensing amounts are calculated using SBC's then current Royalty equation. SBC will gladly determine your actual licensing amount if you provide us with your 2002 Company Gross Revnue (their fees are based on how much annual revenue the company does).
+</p><p>
+
+ For your convenience and to assist your analysis of the patent, I have enclosed a document that charts the claim language of an example claim to your site structure.
+</p><p>
+
+ After reviewing the patents and determining wheather you prefer a prepaid license or a recurring annual licence please contact Ms. Jill Walker at 512.231.7008 to determin your actual royalty amount. If you have your 2002 gross revenue number Ms. Walker will provide you with an accurate royalty number and will facilityate the execution of an appropriate license.
+
+</p><p>
+Thank you for your prompt attention to this matter.
+
+</p><p>
+ Sincerly,
+</p><p>
+
+Harlie D. Frost
+</p><p>
+President
+
+</p>
+</blockquote>
+<ins>
+<p>
+Yes, SBC is my phone service and internet service provider. :-(
+</p>
+</ins>
+
+
+

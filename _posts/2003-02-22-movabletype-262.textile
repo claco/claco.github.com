@@ -1,0 +1,15 @@
+---
+layout: post
+title: "MovableType 2.62"
+category: Perl
+published:
+  epoch: 1045963381
+  utc: 2003-02-23T01:23:01
+---
+
+<p>
+Well, since I wasn't getting anything else done today, I decided to update my MovableType install to 2.62.
+Everything works as expected which means my patches (aka Hacks) made it into MT and actually work. :-)
+</p>
+
+

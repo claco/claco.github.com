@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Best Buy Silliness: Round 2.5.1063"
+category: WTF
+published:
+  epoch: 1043876653
+  utc: 2003-01-29T21:44:13
+---
+
+<p>
+It's official: Best Buy can suck my left testage. Their lack of ability in servicing their customer or providing service on their extended shams..um..warranties is amazing.
+For those keeping score, here's whay happened so far:
+</p>
+<ol>
+<li>Purchased HP N5450 Laptop + Extended Warranty</li>
+<li>Power jack dies after a year and a half.</li>
+<li>Take to Best Buy on Dec. 22, 2002 for repair.</li>
+<li>Wait 2 weeks. They order motherboard and don't use it.</li>
+<li>Wait another 2 weeks. The order jack and resolder the motherboard.</li>
+<li>Pick up laptop on Jan 17, 2003. Boots fine in the store.</li>
+<li>Return home. Laptop stops working after the 15 minutes.</li>
+<li>Return to Best Buy that night. Laptop boots. Got excuse about power surge.</li>
+<li>Return home. Laptop still won't boot plugged into UPS.</li>
+<li>Remove battery. Won't boot in the morning.</li>
+<li>Return to Best Buy for re-repair.</li>
+<li>Call manager on Jan 20, 2003. Will "rush repair".</li>
+<li>Call repair center on Jan 27, 2003. LAptop hasn't even been touched.</li>
+</ol>
+<p>
+There you have it. A crock of horse poop in my opinion. CompUSA and any manufacturer could have this repair completed in 7 days, including shipping.
+So, more phone calls. The latest plan:
+</p>
+<ol>
+<li>Motherboard arriving today, Jan 29, 2003.</li>
+<li>Install mobo today ot tomorrow.</li>
+<li>Ship back to Best Buy on Thirsday, Jan 30th, 2003.</li>
+<li>????</li>
+</ol>
+
+<p>
+Place your bets. If I don't see this laptop fully functional by Monday, I will become the official pissed off customer in the store on a crowded evening.
+</p>
+
+

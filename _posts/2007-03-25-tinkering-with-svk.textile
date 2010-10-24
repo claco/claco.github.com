@@ -1,0 +1,52 @@
+---
+layout: post
+title: "Tinkering With SVK"
+category: OffTopic
+tags:
+  - source control
+  - subversion
+  - svk
+published:
+  epoch: 1174803069
+  utc: 2007-03-25T06:11:09
+---
+
+Just out of curiosity, I installed <a href="http://svk.bestpractical.com/view/HomePage">SVK</a> on my laptop and started tinkering with it. For those not aware of it:
+
+<blockquote><p>svk is a decentralized version control system built with the robust Subversion filesystem. It supports repository mirroring, disconnected operation, history-sensitive merging, and integrates with other version control systems, as well as popular visual merge tools.</p></blockquote>
+
+Like most tinkering sessions of mine, I always end up stumped because I find some bug on the edge. In this case, it appears to be a date/time formatting issue on Win32 when changes are commit and pushed upstream.
+
+Here's a sample message from a recent commit to local, pushed up to the mirror/master:
+
+<blockquote><code>r118@np5660:  claco | 2007-03-25  Eastern Daylight Time</code></blockquote>
+
+If it weren't for the missing time, it wouldn't be so bad. I would expect something more like this format, which is what I see on commits made by 1/x and non Win32 svk users:
+
+<blockquote><code>r118@np5660:  claco | 2007-02-16 16:29:26 -0500</code></blockquote>
+
+Curious. Then I finally thought to just try using the <kbd>log</kbd> command and compare both svn and svk:
+
+<blockquote><pre>C:\Development\CPAN\Mango>svn log
+http://svn.handelframework.com/CPAN/Mango/trunk/lib/Mango/Provider/Products.pm
+------------------------------------------------------------------------
+r1784 | claco | 2007-03-25 01:37:32 -0400 (Sun, 25 Mar 2007) | 3 lines
+
+r118@np5660: claco | 2007-03-25 Eastern Daylight Time
+Added tags() to products provider</pre></blockquote>
+
+<blockquote><pre>C:\Development\CPAN\Mango>svk log
+http://svn.handelframework.com/CPAN/Mango/trunk/lib/Mango/Provider/Products.pm
+----------------------------------------------------------------------
+r119 (orig r1784): claco | 2007-03-25 Eastern Daylight Time
+
+r118@np5660: claco | 2007-03-25 Eastern Daylight Time
+Added tags() to products provider</pre></blockquote>
+
+There's also this message in the Changes file for SVK:
+
+<blockquote><pre>Use POSIX::strftime for date formatting rather than Date::Parse</pre></blockquote>
+
+Yup. Something is definately afoot. Time to file an RT bug report and move on. Sigh.
+
+

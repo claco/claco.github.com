@@ -1,0 +1,14 @@
+---
+layout: post
+title: "It's Alive!"
+category: Humor
+published:
+  epoch: 1100645750
+  utc: 2004-11-16T22:55:50
+---
+
+After the <a href="/blog/archives/entries/sbc_ip_madness.icf">SBC IP Incident or 2004</a>, everything is back to where it should be and I'm available to the world again. Oh happy days.
+
+I really missed the penis elargment comments spam.
+
+

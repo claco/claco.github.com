@@ -1,0 +1,46 @@
+---
+layout: post
+title: "Nice Design: Wired.com"
+category: WWW
+published:
+  epoch: 1034372290
+  utc: 2002-10-11T21:38:10
+---
+
+<p>
+From <a href="http://www.wired.com/news/culture/0,1284,55675,00.html" title="Article about Wired News redesign"><cite>Wired News</cite></a> :
+</p>
+<blockquote>
+<p>
+Wired News has a different appearance, but the new design isn't just about look and feel. The site now complies with standards recommended by the World Wide Web Consortium for greater access to all users.
+</p>
+</blockquote>
+
+<p class="image">
+<a href="/blog/images/www/wired_screenshot_large.png"><img src="/blog/images/www/wired_screenshot_small.png" width="350" height="250"  alt="Wired.com Screenshot" /></a><br />
+<span class="caption">Click for larger image.</span>
+</p>
+<p>
+I've got mixed feelings about this one. I'm a programmer by trade, so I tend to see things like this in black and white. <acronym title="You can't lie to a compiler">It either compiles or it doesn't</acronym>. So on the one hand, when they say they've used W3C standards like XHTML and and CSS instead of crappy HTML3.2 and Tables, I say Bravo!
+</p>
+<p>
+However, my first instinct was to run the page through the W3C validator, and to my dismay, it <a href="http://validator.w3.org/check?uri=http://www.wired.com/" title="Validate wirednews.com">does not validate</a>. So, the programmer in me say they are NOT using standards because it doesn't validate as such.
+</p>
+<p>
+<a href="http://www.zeldman.com/daily/1002a.html#wired" title="Zeldman's comments on redesign">Jeffrey Zeldman</a> brings up a few good points for people like me with that first reaction. He says
+</p>
+
+<blockquote>
+<p>
+"Hardcore standards geeks sometimes judge the intentions of a site's owners and creators based on one critieria only: does it validate? When a site fails to validate, some geeks infer that the people behind the site made no effort. As the Wired redesign makes clear, validation alone does not tell the full story. ... In short, do not confuse fundamentalism with evangelism, or necessarily equate lack of compliance with lack of care."
+</p>
+</blockquote>
+
+<p>
+I'm not quite sure I buy into the "3rd Part Software/Advertising Code" issue though. Now a days, we have these high tech things called <a href="http://sitescooper.org/tao_regexps.html" title="Link to regular expression how to">regular expressions</a> and find/replace to fix problems like that. :-)
+</p>
+<p>
+He's right. Sometimes it's the measure of the effort, not the result that counts. Congrats to Wired News!
+</p>
+
+

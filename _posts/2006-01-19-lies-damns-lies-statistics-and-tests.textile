@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Lies, Damns Lies, Statistics, and Tests"
+category: OffTopic
+published:
+  epoch: 1137726013
+  utc: 2006-01-20T03:00:13
+---
+
+Well, all things considered 22 isn't bad on <a href="http://www.mensa-test.com/">this test</a>.
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Test::Strict"
+category: Perl
+published:
+  epoch: 1110855669
+  utc: 2005-03-15T03:01:09
+---
+
+This <a href="http://search.cpan.org/search?query=Test::Strict&amp;mode=module">CPAN module</a> is such a simple idea; so obvious yet the void was unfilled ...until now.
+
+I should have it integrated within the test suite of all of my modules by the end of the evening.
+
+

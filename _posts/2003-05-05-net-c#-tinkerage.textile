@@ -1,0 +1,15 @@
+---
+layout: post
+title: ".NET C# Tinkerage"
+category: MicroShaft
+published:
+  epoch: 1052167640
+  utc: 2003-05-05T20:47:20
+---
+
+<p>
+Well, I just spent about 3 days or so tinkering with C# and I must admit that I liked it.
+I didn't realize how much I missed doing interface based programming. So far, I'd have to put C# as my second favorite language; Perl still being the first. One of the things I <em>don't</em> like about .NET/C# is that inheritance/overloading etc feels way to complicated compared to Perl's dwimish nature of OOP.
+</p>
+
+

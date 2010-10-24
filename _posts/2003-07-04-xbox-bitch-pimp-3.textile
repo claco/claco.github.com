@@ -1,0 +1,33 @@
+---
+layout: post
+title: "Xbox: Bitch Pimp #3"
+category: MicroShaft
+published:
+  epoch: 1057326451
+  utc: 2003-07-04T13:47:31
+---
+
+<p>
+For those of you keeping track, it's Xbox hackers: 3; MicroShaft: 0. :-)
+</p>
+<p>
+Way back when, <a href="/blog/archives/entries/000021/">I commented on the humor</a> in the fact that MicroShit was trying to keep people from running what they wanted on their purchased Xbox. First, someone broek the encryption on the first round of Xboxen. Then MickeySoft used their deep pockets to shut down modchip makers and changed the encryption. Then someone brfoke that encryption too. Then came more legal threats and shutdowns. Now, the Xbox gets owned again, this time by their <a href="http://lists.netsys.com/pipermail/full-disclosure/2003-July/010895.html">own buffer overflow</a>. I know, that's a shocker. "Trustworthy Computing" indeed.
+</p>
+<p>
+Here's some <a href="http://www.zdnet.com.au/newstech/security/story/0,2000048600,20275965-1,00.htm">fud spewed forth from a M$ spokesperson</a>:
+</p>
+<blockquote>
+<p>
+"We do need to inform yourself and this... contact that Microsoft Xbox takes pirating of videogames very seriously," a Microsoft spokeswoman told ZDNet Australia by e-mail. "The protection of our intellectual properties and copyrights, and those of our partners, is a top priority and therefore we reserve the right to pursue and take action against anyone facilitating piracy of videogames".
+</p>
+</blockquote>
+<p>
+OK, so what does this exploit have to do with piracy? Sure, it allows me to play copied games on my Xbox, but fuck, it's <em>my</em> Xbox. Shouldn't I be able to make backup copies of my discs and play them?
+Shouldn't I be able to run non-game stuff on my hardware if I so choose? An exploit doesn't promote piracy, software piraters do.
+</p>
+<p>
+Here's <a href="http://www.maxconsole.com/?topic=news&amp;sys=all&amp;article=230">the response</a> from the Free-X group. While they probably could have worded it better, I still say M$ can go pound salt.
+MicroShafts whole attitude on what people do with their purchased Xboxen is while I'll never own one no matter how good they are. Then again, 3 of them in a cheap cluster running Linux is a good way to spite them.
+</p>
+
+

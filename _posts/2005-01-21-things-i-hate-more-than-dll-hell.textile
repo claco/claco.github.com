@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Things I Hate More Than DLL Hell"
+category: MicroShaft
+published:
+  epoch: 1106314116
+  utc: 2005-01-21T13:28:36
+---
+
+I've found something that I despise even more than DLL Hell on Windows.
+
+I'm trying to compile versions of libxml2, XML::LibXML, libxslt, XML::LibXSLT, and AxKit-1.62 on windows. It's a friggin impossible task.
+
+I'll get libxml2 to compile, then XML::LibXML won't compile, even against a known good version in the README. I'll try another version, then libxml2 and XML::LibXML will compile, then libxslt will look for header files not in that version of libxml2.
+
+Rinse, Lather, and Repeat. How does anyone ever get anything working in C/VC++ on Windows? Thank god for Perl of C#. No headers. No symbols. When errors occur I can actually troubleshoot them.
+
+Grrr.
+
+

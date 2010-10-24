@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Feeds, Readers, XSL And @media"
+category: WWW
+published:
+  epoch: 1074263284
+  utc: 2004-01-16T14:28:04
+---
+
+<p>
+<strong>This is a quick thought. I'll need to clean this post up a bit when I have more time.</strong>
+</p>
+<p>
+After my <a href="/blog/archives/entries/000430/">tinkerage [and breaking]</a> of my feeds by applying XSL Stylesheets to them, I've come to the complusion 
+that we need a new <code>@media</code> type for "feedreader", or "automated", or something else other than "screen".
+</p>
+<p>
+The whole reason I wanted to use a client-side XSL stylesheet was to transform the highly-namespaced feeds into pure HTML, then apply a 
+CSS stylesheet to the result; a sort of "pretty" version of an RSS feed when viewing it in a browser. This is even more important to use XSL to transform it into HTML considering how non-working IE is in terms of applying CSS stylesheets to namespaced XML.
+What led me astray was the misconception that the XSL stylsheet would NOT be applied by feed readers. A silly misconception, but a valid one.
+</p>
+<p>
+If I view the <em>whole</em> feed XML document in a browssr (or rendering engine), I would expect it to apply the xsl stylehseet. Fine.
+But, if I only intend to download and parse the XML feed document, why apply the screen stylesheet?
+Why does feedvalidators.com apply a screen XSL stylesheet and  fail to read and validate my feed when all it is supposed to do is parse and validate the contents of the primary XML feed file?
+Don't get me wrong. I think it's Doing The Right thing. I just think that we need a way to specify that n automated reader should not parse external stylesheets.
+</p>
+<p>
+Let's take this example:
+</p>
+<pre>
+<code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;?xml-stylesheet href="rss.xsl" type="text/xsl" media="screen"?&gt;
+&lt;rss&gt;
+    ...
+&lt;/rss&gt;</code>
+</pre>
+<p>
+Feedvalidator.com, and presumeably all feed readera, break because they apply the XSL stylesheet and then try to render/parse XHTML, which is not a valid feed format.
+Does feedvalidator.com really belong to any of these possible <a href="http://www.w3.org/TR/REC-CSS2/media.html">CSS @media types</a>?
+</p>
+<dl>
+    <dt>all</dt>
+        <dd>Used for all media type devices</dd>
+    <dt>aural</dt>
+        <dd>Used for speech and sound synthesizers</dd>
+    <dt>braille</dt>
+        <dd>Used for braille tactile feedback devices</dd>
+    <dt>embossed</dt>
+        <dd>Used for paged braille printers</dd>
+    <dt>handheld</dt>
+        <dd>Used for small or handheld devices</dd>
+    <dt>print</dt>
+        <dd>Used for printers</dd>
+    <dt>projection</dt>
+        <dd>Used for projected presentations, like slides</dd>
+    <dt>screen</dt>
+        <dd>Used for computer screens</dd>
+    <dt>tty</dt>
+        <dd>Used for media using a fixed-pitch character grid, like teletypes and terminals</dd>
+    <dt>tv</dt>
+        <dd>Used for television-type devices</dd>
+</dl>
+<p>
+Not really. Or more importantly, we need a new type that is purposely geared for non-screen displaying, remote, automated parsers.
+In addition to that, things like feedvalidator.com and and feed readers who simple load the XML doc and parse it (as apposed to displaying it as a whole document) should <strong>ignore</strong>
+the media type of "screen".
+</p>
+
+

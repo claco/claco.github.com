@@ -1,0 +1,33 @@
+---
+layout: post
+title: "IE? Not In My House."
+category: MicroShaft
+published:
+  epoch: 1041741295
+  utc: 2003-01-05T04:34:55
+---
+
+<p>
+I simply don't use Internet Exploder any more, esp. after Mozilla 1.0 went final. Why? Two very simple yet stunningly pleasing reasons.
+</p>
+<ol>
+<li>
+<strong>No virus of the week concerns</strong>
+<p>
+Don't get me wrong. If you own a PC, connect to the internet and <em>don't</em> have Norton AntiVirus or another like product installed, you should be taken out back and put out of our collective miseries. I'm so sick if seeing another MicroShaft Internet Information Server or Internet Explorer user trying to infect my machine in the logs. Come on. How long has Nimda and Code Red been out? Get with the fucking program people. I can surf using Mozilla, happily confident that there are much much less security issues with it.
+</p>
+</li>
+<li>
+<strong>Four Words: Middle-Click New Tab</strong>
+<p>
+Yeah, I know IE can use a 3rd party addin for tabbed browsing (See #1 above), but I simply can't function on the web without tabbed browsing in Mozilla.
+Rock on Moz.
+</p>
+</li>
+</ol>
+
+<p>
+<em>Yes, I know I've been a post-o-holic lately. wBloggar really has changed my posting habits for a bit. It's sooo much easier than the <acronym title="Movable Type">MT</acronym> Admin GUI.</em>
+</p>
+
+

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Google Rocks"
+category: WWW
+published:
+  epoch: 1034542578
+  utc: 2002-10-13T20:56:18
+---
+
+<p>
+Gogle is an amazing thing. This site is not yet 'live', aka I still shut the servers off at night until I feel they are ready for prime time.
+So that fact that Google found the time to spider my site, and that I show close to the top for something is really cool.
+</p>
+<p>
+Now granted, that 'something' is that stupid <a href="http://members.iinet.net.au/~afleay/cow/" title="I'm a Cow flash movie">I'm a Cow</a> song I <a href="/blog/archives/entries/000011/" title="Post about cows">mentioned earlier</a>, but hey, I'll take it. :-)
+</p>
+<p class="image">
+<a href="/blog/images/www/google_screenshot_large.png"><img src="/blog/images/www/google_screenshot_small.png" alt="Google.com Screenshot" width="350" height="250" /></a><br />
+<span class="caption">Click for larger image.</span>
+</p>
+<p>
+Once again, the loser factor kicks in! I figure this out by looking at the traffic logs. I pitty the poor sap who actually finds this link, then finds that song.
+It stays in your head for weeks at a time!!! Must...not...listen......to....that.........
+</p>
+<p>
+<cite>Chew my cud, eat my hay. Same olde damn thing every day...</cite>
+</p>
+
+<h4>Update</h4>
+<p>
+In true St. Murphy fashion, the minute I posted this, the search results changed. Damn, they <em>ARE</em> fast over there at Google.
+</p>
+
+

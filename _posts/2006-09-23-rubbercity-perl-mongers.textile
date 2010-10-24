@@ -1,0 +1,21 @@
+---
+layout: post
+title: "RubberCity Perl Mongers"
+category: Perl
+tags:
+  - mongers
+  - perl
+  - tdd
+  - testing
+published:
+  epoch: 1159025748
+  utc: 2006-09-23T15:35:48
+---
+
+Well, after a loooong downtime, it looks like the <a href="http://www.markymoon.com/rubbercity/">RubberCity Perl Mongers</a> group may be getting back together.
+
+Last night we met at the <a href="http://www.cafemomus.com/">Cafe' Momus</a> with our guests <a href="http://www.petdance.com/">Andy Lester (PETDANCE)</a> and <a href="http://www.petekrawczyk.com/">Pete Krawczyk (PETEK)</a>. We had a nice long discussion about TDD and Perl testing, and Andy showed off <a href="http://search.cpan.org/dist/ack/">ack</a>.
+
+With any luck, I'll be putting together some slides for our next meeting to go over Handel.
+
+

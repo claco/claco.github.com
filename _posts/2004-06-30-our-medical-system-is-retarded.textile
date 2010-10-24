@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Our Medical System Is Retarded"
+category: WTF
+published:
+  epoch: 1088646762
+  utc: 2004-07-01T01:52:42
+---
+
+That is the only conclusion I can make after witnessing first hand the type of "new math" they use.
+
+I went to get my medications refilled and that's when the fun started. For one of the pills, I could pay ~$8.00 for a 30 day supply through insurance, or <strong>I</strong> could pay ~$12.00 dollars for a <strong>90 day supply</strong> of the same thing without going through insurance. What the fuck is that?
+
+No wonder insurance rates are skyrocketing and benifit quality and coverage is heading in a downward spiral.
+
+Here's another example. Someone goes in for an MRI. The hospital bills ~$8000 for the procedure. The insurance company says, "oh no, we know it costs xxx" and pays ~$1500. The hospital knows full well it has to bill ~$8000 so it will get the amount to cover the cost. The price you or I would pay <em>without</em> insurance? Yep. <strong>~$8000</strong>.
+
+Nice.
+
+

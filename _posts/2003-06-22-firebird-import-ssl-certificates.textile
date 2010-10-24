@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Firebird: Import SSL Certificates?"
+category: Security
+published:
+  epoch: 1056339401
+  utc: 2003-06-23T03:36:41
+---
+
+<p>
+While I really like the <a href="http://www.mozilla.org/projects/firebird/">Firebird 0.6 browser</a>, there is one annoying thing that is keeping it from being my only browser: the apparent lack of SSL certificate options or management; forcing me to still load Mozilla on occasion..
+</p>
+<p>
+When I installed my latest servers last year, I decided to protect things like IMAP, POP3, SquirrelMail and the MovableType admin pages with SSL using custom signed SSL certificates. In IE and Mozilla, this meant loading a client side certificate to gain access to those services. I haven't yet found a way to do that in Firebird, which means it can't access my MT and webmail pages. :-(
+</p>
+
+

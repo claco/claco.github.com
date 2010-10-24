@@ -1,0 +1,23 @@
+---
+layout: post
+title: "I'm a Loser"
+category: OffTopic
+published:
+  epoch: 1034456615
+  utc: 2002-10-12T21:03:35
+---
+
+<p>
+You know your a loser when...
+</p>
+
+<ul>
+<li>You're surfing the Recently Updated blogs list on the <a href="http://www.movabletype.org/" title="Visit movabletype.org">MoveableType</a> website.</li>
+<li>You pick a <a href="http://movementbuilding.org/amanda/" title="A random site">site</a> from said list, and immedately recognise the <a href="http://bluerobot.com/web/layouts/layout2.html" title="Site with stylesheet templates">stylesheet</a>.</li>
+</ul>
+
+<p>
+Damn, I need to get out more.
+</p>
+
+

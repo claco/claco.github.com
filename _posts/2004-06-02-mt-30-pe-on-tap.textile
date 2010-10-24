@@ -1,0 +1,17 @@
+---
+layout: post
+title: "MT 3.0 PE On Tap"
+category: Software
+published:
+  epoch: 1086200920
+  utc: 2004-06-02T18:28:40
+---
+
+<p>
+So I caved in an purchased MT 3.0 PE. What the hell. Why not. After past donations and two Recently Updated keys plus the current discount rate, I paid ~#24.00. Lord knows when I'll get a chance to convert my installation. I'd love to do a new install, and possibly make my site innards a little more simple.
+</p>
+<p>
+Then again, I should still be working on that other site conversion that has yet to happen. Go figure.
+</p>
+
+

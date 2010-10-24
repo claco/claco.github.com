@@ -1,0 +1,23 @@
+---
+layout: post
+title: "And The Winner Is"
+category: OffTopic
+published:
+  epoch: 1081034746
+  utc: 2004-04-03T23:25:46
+---
+
+<p>
+I finally got my memorandum title so I went out this morning and got my e-check (ala waste of money) and registration taken car of and ordered my custom plates.
+</p>
+<p>
+ And after all of the <a href="/blog/archives/entries/000470/">choices</a>, the winner is:
+</p>
+<p>
+<strong>USE PERL</strong>
+</p>
+<p>
+I think that works out fine. We've been calling her "pearl" anyways. SO now it's "Perl". :-)
+</p>
+
+

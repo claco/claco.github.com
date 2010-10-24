@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Movable Type 2.64 Upgrade"
+category: OffTopic
+published:
+  epoch: 1054259220
+  utc: 2003-05-30T01:47:00
+---
+
+<p>
+Just upgraded to <a href="http://www.movabletype.org/news/2003_05.shtml#000842">Movable Type 2.64</a>. It went easier than I remember. I didn't have to run <a href="/search/?search=MT+patch">any of my patch files</a>. Keep your eyes peeled for completely broken items. :-)
+</p>
+
+

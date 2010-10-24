@@ -1,0 +1,22 @@
+---
+layout: post
+title: "I Miss Drumming"
+category: Music
+tags:
+  - drums
+published:
+  epoch: 1201916128
+  utc: 2008-02-02T01:35:28
+---
+
+As my co-workers can testify to, my feet and hands never stop drumming on the desk between coding sessions, especially when the MP3 player is running. I really need to get back into it, but I suck so bad now that it's depressing compared to high school. I see it in my head. I can made my hands do it. But try it on the drumset, and all hell breaks loose. :-/
+
+<object width="425" height="373"><param name="movie" value="http://www.youtube.com/v/wQ6pvkv1GLc&rel=1&border=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/wQ6pvkv1GLc&rel=1&border=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="373"></embed></object>
+
+<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/eqoYT3TCqGk&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/eqoYT3TCqGk&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
+
+<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/oKfA8-zHn2g&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/oKfA8-zHn2g&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
+
+<object width="425" height="355"><param name="movie" value="http://www.youtube.com/v/Ptta9IdVwyA&rel=1"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/Ptta9IdVwyA&rel=1" type="application/x-shockwave-flash" wmode="transparent" width="425" height="355"></embed></object>
+
+

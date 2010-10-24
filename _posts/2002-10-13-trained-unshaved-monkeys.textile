@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Trained (Un)Shaved Monkeys"
+category: Humor
+published:
+  epoch: 1034558568
+  utc: 2002-10-14T01:22:48
+---
+
+<p>
+I've been telling people that trained shaved monkeys were building these pages, but no one would listen. Now <a href="/blog/images/humor/trained_shaved_monkeys_large.png" title="View monkeys building this site">I have proof</a>. :-)
+</p>
+<p>
+Check out <a href="http://www.sciam.com/article.cfm?articleID=0008F8E1-DEAB-1D80-90FB809EC5880000" title="Article about monkeys hooked up to wires">this article</a> for more information.
+</p>
+<p>
+As for those naysayers, 
+we <a href="http://www.cen.uiuc.edu/~akapadia/moon.html">never</a>
+<a href="http://science.nasa.gov/headlines/y2001/ast23feb_2.htm">landed</a> on the 
+<a href="http://science.nasa.gov/headlines/y2001/ast23feb_2.htm">moon</a>, 
+Elvis is <a href="http://www.mexicomike.com/stories/elvis-1.htm">still</a> 
+<a href="http://www.elvissightingbulletinboard.com/SightingsArchive/Sighting7.shtml">alive</a>, 
+and that <a href="http://www.hillsboro.k12.nd.us/schools/students/sarah/paul_dead_myth.htm">isn't</a> 
+the 
+<a href="http://catless.ncl.ac.uk/Obituary/paul.html">real</a> 
+
+<a href="http://www.beatlesbeats.com/paul/dead/">Paul</a> <a href="http://www.bbc.co.uk/dna/h2g2/classic/A506648">McCartney</a>.
+</p>
+
+
+

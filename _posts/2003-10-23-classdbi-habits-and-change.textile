@@ -1,0 +1,78 @@
+---
+layout: post
+title: "Class::DBI, Habits and Change"
+category: Perl
+published:
+  epoch: 1066950350
+  utc: 2003-10-23T23:05:50
+---
+
+<p>
+I finally decided to get back to work on my commerce site conversion from ASP to mod_perl. Almost right away, I decided that using <a href="http://search.cpan.org/search?query=Class%3A%3ADBI&amp;mode=module">Class::DBI </a> was not only sane, but a real time saver. The last thing I want to do is spend my time writing data layer calls and code.
+</p>
+<p>
+After re-reading the <a href="http://www.perl.com/search/index.ncsp?sp-q=Class%22%22DBI&amp;submit=Search">articles on Perl.com</a> and trading some emails with Tony Bowden about Class::DBI, I've come to the acceptance (with his helpful suggestion) that they way most of us ecom people do shopping carts is wrong from a database schema perspective.
+</p>
+<p>
+Consider the following schema:
+</p>
+<ul>
+<li>cart
+<ul>
+<li>item_id</li>
+<li>shopper_id</li>
+<li>sku</li>
+<li>quantity</li>
+<li>price</li>
+</ul>
+</li>
+</ul>
+
+<p>
+From the perspective of mapping objects to database data, we have a cart table containing cart item rows. This could be mapped to a Cart object that contains a collection of Cart Items. Sounds good, until I started using Class::DBI.
+</p>
+<p>
+Once I created a Cart object, and mapped it to the cart table, it was clear to me that Class::DBI would return individual Cart objects, not Cart::Item objects. Sure, I can rename the base cart class Cart::Item instead, but symantically, it doesn't fit. A Cart Item object should be creating new cart item objects, nor loading the entire cart contents. This issue is made more true if I wanted to save or label shopping carts and their contents.
+</p>
+<p>
+What to do? Do what I should've always done, but never did out of habit: make a cart table and a cart_items table.
+</p>
+
+
+<ul>
+<li>cart
+<ul>
+<li>cart_id</li>
+<li>shopper_id</li>
+<li>cart_type</li>
+<li>name</li>
+</ul>
+</li>
+
+
+<li>cart_items
+<ul>
+<li>item_id</li>
+<li>cart_id</li>
+<li>sku</li>
+<li>quantity</li>
+<li>price</li>
+</ul>
+</li>
+</ul>
+
+<p>
+Not only does this make more sense, it also means that Class::DBI will yield more sane objects via the <code>has_many</code> method.
+</p>
+
+<p>
+Now, on to my second cart issue: <code>item_id</code>.
+</p>
+<p>
+I've seen many a shopping cart tables where the item_id , or the row identifier for shopping cart items are AUTO_INCRIMENT integers. This drives me nutty. It's a built in limitation. As some point in the future, the number of items added will reach it's maximum number allow for the integer type, then kaboom. Why build in that limitation?
+</p>
+<p>
+Personally, I always use unique identifiers (UUID) for each item id instead of integers. Of course, I could be smoking crack.
+</p>
+
+

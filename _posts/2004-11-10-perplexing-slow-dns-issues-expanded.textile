@@ -1,0 +1,43 @@
+---
+layout: post
+title: "Perplexing Slow DNS Issues Expanded"
+category: WWW
+published:
+  epoch: 1100140378
+  utc: 2004-11-11T02:32:58
+---
+
+This kind of stuff makes my eyes bleed. For the last 2 week, I've been aggrivated off and on with randomly slow DNS lookups. This was really apparent when my DSL was upgrade to the 3MB package. Everything <em>should</em> be blazingly fast but it just didn't feel right. I hadn't had the time to look at it.
+
+St. Murphy forced my hand at work today. I needed to add a new zone and upon rebooting all DNS servers I was greeted with errors about bogus root name servers on the hints file and no queries were being resolved.
+
+Fine. I downloaded the lates from Internic and slapped it in and restarted Bind. Sure enough the errors went away and the A and K root servers had changed. However, no queries were being resolved. Then mysteriously after about 10 minutes, queries were resolving. Damn strange.
+
+After beeting my head against the wall, I found some posts on Google about Bind >= 8.3.3 haveing new EDNS support, and this support being flaky and sometime slow or impossible behind certain firewalls.
+
+Not only that, but one of the posts also mentiond trouble resolving certain yahoo.com addresses; another problem I was having with news.yahoo.com.
+
+So, the 10 minute dead time was apparently happenging due to failed EDNS requests to the ROOT A server. Nice. The damn root servers don't even support the damn protocols all the way.
+
+Then I added any entry into the config the each root server:
+
+<pre><code>server 198.41.0.4 { edns no; };
+server 192.228.79.201 { edns no; };
+server 128.8.10.90 { edns no; };
+server 192.203.230.10 { edns no; };
+server 192.5.5.241 { edns no; };
+server 192.112.36.4 { edns no; };
+server 128.63.2.53 { edns no; };
+server 192.36.148.17 { edns no; };
+server 192.58.128.30 { edns no; };
+server 193.0.14.129  { edns no; };
+server 198.32.64.12 { edns no; };
+server 202.12.27.33 { edns no; };</code></pre>
+
+Whola! After another restart of Bind, they all now resolved queries right away. I'll still need to update them to Bind9 to keep it from crapping out on individual servers who use EDNS.
+
+After for the situation at home. I just did the same trick (I'm already on Bind9) and resolving names seems a whole lost faster.
+
+Heavy sigh. Finally.
+
+

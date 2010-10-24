@@ -1,0 +1,14 @@
+---
+layout: post
+title: "The Memory Hole"
+category: OffTopic
+published:
+  epoch: 1051958420
+  utc: 2003-05-03T10:40:20
+---
+
+<p>
+For those of you who are fans of <a href="http://www.thesmokinggun.com/">The Smoking Gun</a>, you may  want to take a gander at <a href="http://www.thememoryhole.org/">The Memory Hole</a>. There are some interesting reads to be had,
+</p>
+
+

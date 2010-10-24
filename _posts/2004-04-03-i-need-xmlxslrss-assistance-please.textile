@@ -1,0 +1,21 @@
+---
+layout: post
+title: "I Need XML/XSL/RSS Assistance Please"
+category: WWW
+published:
+  epoch: 1081045832
+  utc: 2004-04-04T02:30:32
+---
+
+<p>
+I need help. I know the answer is simple, but I don't see it. I can't figure out why some people RSS/Atom feeds that include XSL stylesheets validate and some peoples don't validate (mine). FeedValidator barfs trying to validate my XSLT's XHTML output instead of just the raw feed XML. For people whos feed validates, it ignores the xml-stylesheet processing instruction and just validats the RSS. My brain hurts.
+</p>
+<p>
+<a href="http://www.russellbeattie.com/notebook/rss.jsp">One that validates</a>
+</p>
+<p>
+<a href="/blog/atom.xml">...and mine that doesn't</a>
+</p>
+<p><strong>It's official. I'm a retard.</strong> You think that I would remember that all XML files pass through AxKit since the site is built on it. So of course, the XSLT was happening on the server. Now all is happy. Time to tweak the stylesheets and add some CSS. Now the only retarded thing is Mozilla's lack of output-escaping in XSLT.</p>
+
+

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "CPAN C ME"
+category: Perl
+published:
+  epoch: 1101133205
+  utc: 2004-11-22T14:20:05
+---
+
+Well, I finally took the plunge and adopted a few AxKit modules and did <a href="http://search.cpan.org/~claco/">my first upload</a> to CPAN. I feel special.
+
+No I'm working on getting some good tests in place to keep me from breaking things. :-)
+
+
+
+

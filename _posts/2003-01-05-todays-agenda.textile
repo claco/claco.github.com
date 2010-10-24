@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Today's Agenda"
+category: OffTopic
+published:
+  epoch: 1041783623
+  utc: 2003-01-05T16:20:23
+---
+
+<p>
+Day 5 of 365. Care to wager?
+</p>
+
+<ul>
+<li>
+<strong>Install new <acronym title="Uninterruptible Power Supply">UPS</acronym>. Done.</strong>
+<p>
+	This went pretty smooth. (4) servers, one PC w/ monitor, speakers, etc, and it's still only at half load. Not bad at all.
+</p>
+</li>
+
+<li>
+<strong>See <acronym title="Lord of the Rings: The Two Towers">LOTR: TTT</acronym>. Done.</strong>
+<p>I swore to myself I wasn't interested, but I got roped into seeing <acronym title="Lord of the Rings: Fllowship of the Ring">LOTR: FOTR</acronym> last week.
+I thought it was long and boring, but I just can leave myself hanging and miss the upcoming battle scenes.</p>
+<p>
+Wow was this movie long: 3 hours worth. We arrived at the theatre 5 minutes late and <em>still</em> managed to suffer though 6 more previews, then the Regal Cinemas "Welcome, Safety, Smoking, Enjoy" flick. On to the movie? Fuck no. ANOTHER fucking commercial before the movie. In the words of Monty Pythong "Get on with it!".
+</p>
+<p>
+It was better than the first, but I still don't get what all the fuss is about. Guess I'm just a Star Wars fan at heart. At least Star Wars movies are complete movies with an end. The let's-split-this-movie-into-3-parts crap with an ending handing in the wind drives me crazy. It's like playing Beethoven's 5th and not playing the very last chord.
+</p>
+</li>
+<li>
+<strong>Server Administration via <acronym title="Universal Serial Bus">USB</acronym>/Serial Adapter</strong>
+<p>I already have one server setup so I can administrate it via serial connection from the boot screen on in case I fubar something.
+Another server has a modem on the serial port, and another will soon have the UPS on a serial port. I recently purchased this <a href="http://www.iogear.com/products/product.php?Item=GUC232A" title="GUC232A USB to Serial product information page">Serial to USB adapter</a> from <a href="http://www.iogear.com/">IOGear</a> and it works great in XP. It's also supposed to work under FreeBSD and the ucomm drivers, so I'll be tinkering with that this afternoon. It appears to be recognized fine by the kernel modules, not the trick will be to set it up so if works as soon as possible after the machine is turned on.</p>
+</li>
+</ul>
+
+
+
+

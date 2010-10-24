@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Sun Says Java Sucks"
+category: Humor
+published:
+  epoch: 1044806334
+  utc: 2003-02-09T15:58:54
+---
+
+<p>
+I've seen this posted a couple days ago, and now it's on this <a href="http://developers.slashdot.org/developers/03/02/09/1347215.shtml?tid=108">Slashdot post</a>, and on this <a href="http://www.internalmemos.com/memos/memodetails.php?memo_id=1321">Internal Memos entry</a>. Apparently, Sun developers don't really like Java and find it unusable for internal development. Definately another fine example of not eating your own dog food.
+</p>
+
+

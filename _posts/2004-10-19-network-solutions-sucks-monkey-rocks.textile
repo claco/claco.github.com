@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Network Solutions Sucks Monkey Rocks"
+category: WTF
+published:
+  epoch: 1098225823
+  utc: 2004-10-19T22:43:43
+---
+
+Bullshit marketing tactics like this really piss me off.
+
+<blockquote>
+**********************
+Final Renewal Notice 
+**********************
+
+This is your official notification from Network Solutions® that the service(s) listed below will be <strong>deactivated and deleted if not renewed immediately</strong>. Renew Now. 
+http://www.networksolutions-em.com/renewal.cfm?id=2...
+
+If an alternate Billing Contact has been assigned to this account, both the Billing and Primary Contact have received this notice.
+
+Account: xxxxxxx
+
+xxxxxxxx.COM
+<strong>Expiration Date: Nov 04, 2004</strong>
+
+</blockquote>
+
+It sure as hell better not expire until November 5th and not a damn second earlier. I hate marketing.
+
+

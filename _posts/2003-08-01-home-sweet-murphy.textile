@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Home Sweet Murphy"
+category: WTF
+published:
+  epoch: 1059763856
+  utc: 2003-08-01T18:50:56
+---
+
+<p>
+So I woke up this morning at 5:45AM to the sound of a cornacopia of UPS beeping after a power failure.
+Apparently a tree fell on a power linme one street over and fried about 4 transformers in the process.
+</p>
+<p>
+I'm not to worried about the computer stuff. Just a couple of websites that will be fine once the power gets restored. 
+What I do worry about is the damn sump pump in the basement. No power = wet basement. So, I drudged to the local Home Despot to finally purchase a backup sump pump, marine battery, battery fluid, schedule 40 1.5" PVC pipe, Y fitting, 2 check valves, 2 45 degree elbows, and some PVC cement.
+</p>
+<p>
+In true St. Murphy fashion, the power came on just before I started cutting pipe. Guess I get to finish that all tomorrow.
+</p>
+
+

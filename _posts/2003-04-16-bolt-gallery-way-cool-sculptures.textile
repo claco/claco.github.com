@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Bolt Gallery: Way Cool Sculptures"
+category: Hardware
+published:
+  epoch: 1050549191
+  utc: 2003-04-17T03:13:11
+---
+
+<p>
+I found a link to <a href="http://www.boltgallery.com/">The Bolt Gallery</a> over on the <a href="http://j-walk.com/blog/archives/030414.htm#15-04">J-Walk Blog</a>. Way cool stuff. The only thing I like more than their sculptures is the site. It's got that cool techno scifi robot thing going on, but it's still nice and clean layout wise.
+</p>
+<p>
+I sure would like to have this <a href="http://www.boltgallery.com/sculptures/Scorpion.html">scorpion</a> walking across my desk. To bad the Add To Cart button yields this fun message:
+</p>
+<blockquote>
+<p>
+<samp>The recipient of this shopping cart link is not an approved shopping cart user. Please review your selection and try again. </samp>
+</p>
+</blockquote>
+<p>
+Whoopsie.
+</p>
+
+<p class="center">
+<a href="http://www.boltgallery.com/sculptures/Scorpion.html" title="View Larger Image"><img src="/blog/images/hardware/scorpion.jpg" alt="Bolt Gallery: Scorpion Scultpure" /></a>
+</p>
+
+

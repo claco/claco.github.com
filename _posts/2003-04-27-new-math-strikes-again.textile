@@ -1,0 +1,31 @@
+---
+layout: post
+title: "New Math Strikes Again"
+category: WTF
+published:
+  epoch: 1051484362
+  utc: 2003-04-27T22:59:22
+---
+
+<p>
+So here it is, Sunday around noon and I decided to finally install the rear brake drum shoes and spring kit thats been sitting on my back seet since the end of winter.
+</p>
+<p>
+Now I've never done rear brakes before. I did my first set of front brakes last summer. That's why they pay me to be a programmer, not a tech at work.
+Mechanical tinkerings and such aren't my bag. That's why we have things like the Haynes manuals. follow the pictures. :-)
+</p>
+<p>
+So I get the wheels and brake drums off, and tear off the old hardware, when I discover that the spring kit is a little odd.
+The sprint kit is sold labeled as "full axle", which usually in installation speak means there is enough hardware to do both sides/wheels.
+Yet there are 2 wheels, 4 shoes with 1 retention spring for each shoe.
+</p>
+<p>
+Sure enough, the bag had only 2 retention springs and two spring seats, yet if had 4 spring caps and 4 spring bolts.? WTF?
+So once I find someone to drive me to the local auto parts store, I bought a second kit. Same deal. 2 springs and 2 seats short.
+</p>
+<p>
+Welcome to my world.
+</p>
+
+
+

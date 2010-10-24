@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Change: She is a `comin."
+category: WWW
+published:
+  epoch: 1042161955
+  utc: 2003-01-10T01:25:55
+---
+
+<p>
+Heads up! I finally got tired of the site as it was and started work and the next major revision.
+</p>
+<p>
+Among the changes are:
+</p>
+<ul>
+<li>Simplify <acronym title="eXtensible Server Pages">XSP</acronym>/<acronym title="eXtensible Markup Language">XML </acronym>page schema</li>
+<li>Fewer DIVs, more symantic markup. i.e. strong tag instead the bold tag</li>
+<li>Move from <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> Transitional to XHTML Strict</li>
+<li>Change <acronym title="eXtensible Stylsheet Transformation Language">XSLT</acronym> engines from XML::Sablotron to XML::LibXSLT</li>
+<li>Ravamp <acronym title="Cascading Style Sheets">CSS</acronym> Layout</li>
+<li>Printabe / Text Only Stylesheets</li>
+<li>Relative Font Sizing (CSS)</li>
+</ul>
+<p>
+Yeah, that'll keep me busy. Actually, because of how this site is constructed, it only took 4 hours last night to get the schema changed, XHTML converted and get the XSLT engines swapped. So consider this an official warning:
+</p>
+<p>
+<strong>This site will be updated soon without CSS layout for a while.</strong> In other words, it will be like lookin at HTML1.
+</p>
+
+

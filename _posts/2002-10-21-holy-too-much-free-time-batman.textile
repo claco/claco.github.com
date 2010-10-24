@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Holy Too Much Free Time Batman!"
+category: Humor
+published:
+  epoch: 1035255865
+  utc: 2002-10-22T03:04:25
+---
+
+<p>
+I don't know whether to laugh or cry. Ever wanted to watch a low-bandwidth version of <cite>Star Wars A New Hope</cite>? Now <a href="telnet://blinkenlights.nl/" title="Telnet to the text movie of Star Wars A New Hope">you can </a>through the miracle that is telnet.
+</p>
+
+

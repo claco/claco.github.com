@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Nice Design: Gateway.com"
+category: WWW
+published:
+  epoch: 1034379041
+  utc: 2002-10-11T23:30:41
+---
+
+<p>
+Occasionally I'll stumble across websites that I really enjoy visually. In my effort to find some Gateway cow commercials, I noticed that they have redesigned their website since the last time I was there.
+</p>
+<p class="image">
+<a href="/blog/images/www/gateway_screenshot_large.png"><img src="/blog/images/www/gateway_screenshot_small.png" width="350" height="250" alt="Gateway.com Screenshot" /></a><br />
+<span class="caption">Click for larger image.</span>
+</p>
+<p>
+I dig it. Nice and clean. Easy to use. No flash on every page to contend with. To bad it has a bogus DOCTYPE and <a href="http://validator.w3.org/check?uri=http://www.gateway.com/" title="Validate gateway.com">doesn't validate</a>. Can't have it all I guess.
+</p>
+
+

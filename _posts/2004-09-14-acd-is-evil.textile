@@ -1,0 +1,14 @@
+---
+layout: post
+title: "ACD Is Evil"
+category: Hardware
+published:
+  epoch: 1095211392
+  utc: 2004-09-15T01:23:12
+---
+
+Boy did I sin this evening. :-)
+
+<img src="/blog/images/hardware/acd23.jpg" alt="Apple Cinema Display 23&quot;" title="Apple Cinema Display 23&quot; - My New Toy" />
+
+

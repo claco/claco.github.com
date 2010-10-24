@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Life Before TDD"
+category: Software
+published:
+  epoch: 1109654221
+  utc: 2005-03-01T05:17:01
+---
+
+How in the hell did we ever  develop software before TDD? Handel 0.10 is hitting CPAN this evening.
+
+If it weren't for the buttload (1300+) of test checks, I'd never have more than two version is a row that worked consistantly.
+
+Every version of so I'm gutting out code and refactoring in new features. IF it were for the test it would never work again. 
+
+

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Apple.com Redesign"
+category: WWW
+published:
+  epoch: 1062029861
+  utc: 2003-08-28T00:17:41
+---
+
+<p>
+I can't wait to see the results of <a href="http://www.zeldman.com/daily/0803a.shtml#apple">thie future project</a>.
+</p>
+
+<blockquote>
+<p>
+Apple Computer has contracted Mr Douglas Bowman of Stopdesign and Mr Jeffrey Zeldman of Happy Cog Studios to collaborate on a makeover of the company's well-known site. We'll be working with Messieurs Rand Hill, Douglas Vincent, and Chad Little of Apple's web design team.
+</p>
+</blockquote>
+
+<p>
+Now if they could just get <a href="http://www.meyerweb.com/">Eric Meyer</a> into the mix, I'd pay for tickets. :-)
+</p>
+
+

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Custom XP Install CD"
+category: MicroShaft
+published:
+  epoch: 1095634604
+  utc: 2004-09-19T22:56:44
+---
+
+Apparantly I felt the need to waste my weekend creating a custom XP installaton CD.
+
+<img src="/blog/images/microshaft/freshinstall.png" alt="RunOnceEx Window" title="THis will make Reboot, Reformat, Reinstall a lot quicker!" />
+
+While it's not perfect, it at least installs ATI, Audigy2 and wireless drivers along with .NET 1.1, .NET SP1, Firefix, Thunderbird, WMP10, Textpad and NUnit 2.2.
+
+It's all down hill from there. I got a chuckle out of the fact that my box has an assload of network in it; 3COM GB, 3C905, MN-730 Wireless, and IP on the two firewire ports.
+
+Also for the curious, you can find a boatload of unattended/slipstreaming information at the <a href="http://unattended.msfn.org/">Unattended XP CD</a> website.
+
+Keep this in mind though, regardless of some of the examples, <strong>always keep all of your files in 8.3 format</strong>.
+
+

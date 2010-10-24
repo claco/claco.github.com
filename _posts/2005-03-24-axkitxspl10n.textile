@@ -1,0 +1,12 @@
+---
+layout: post
+title: "AxKit:::XSP::L10N"
+category: Perl
+published:
+  epoch: 1111724207
+  utc: 2005-03-25T04:16:47
+---
+
+Yet another module in the CPAN arsenal. AxKit::XSP::L10N is a quick and dirty taglib for localizing text using Locale::Maketext.
+
+

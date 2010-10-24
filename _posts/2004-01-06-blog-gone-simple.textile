@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Blog Gone Simple"
+category: WWW
+published:
+  epoch: 1073447723
+  utc: 2004-01-07T03:55:23
+---
+
+<p>
+I had the itch. I scratched. Make sure to refresh <a href="/style/css/style.css">ye olde stylesheet</a>.
+</p>
+<p>
+Among the changes:
+</p>
+<ul>
+<li>Single column layout. I got tired of wasting space just for a sidebar full of junk.</li>
+<li>Archives have their <a href="/archives/">own page</a>.</li>
+<li>Links have their <a href="/links/">own page</a>.</li>
+<li>Nice wide layout to better spew forth code.</li>
+<li>Smaller pages. Less junk.</li>
+</ul>
+<p>
+Still plenty of stylesheet and database cleanup to do and I still need to find a good place for the RSS links.
+</p>
+
+

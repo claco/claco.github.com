@@ -1,0 +1,27 @@
+---
+layout: post
+title: "IE Bloweth Goateth"
+category: Security
+published:
+  epoch: 1051955714
+  utc: 2003-05-03T09:55:14
+---
+
+<p>
+Once again, showing how much ass IE really does suck. Now you can <a href="http://www.secunia.com/advisories/8642/">DDoS IE with a single line of code</a> (The link is safe. It goes to a security notice).
+</p>
+<p>
+And the magic line is (drumroll please....) :
+</p>
+<blockquote>
+<p>
+<code>
+&lt;input type&gt;
+</code>
+</p>
+</blockquote>
+<p>
+Nice. Very impressive indeed.
+</p>
+
+

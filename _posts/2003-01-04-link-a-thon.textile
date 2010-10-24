@@ -1,0 +1,30 @@
+---
+layout: post
+title: "Link-A-Thon"
+category: OffTopic
+published:
+  epoch: 1041729197
+  utc: 2003-01-05T01:13:17
+---
+
+<p>
+I'm still surfing the referrer logs. One good turn deserves another. Got to build up that linking mojo.
+</p>
+<p>
+<a href="http://davidcarr.org/blog/archives/000086.html#000086" title="Visit blog.davidcarr.org"><cite>Solitude In Motion</cite></a>
+</p>
+
+<blockquote>
+<p>
+I found this while surfing through random blogs that popped up on weblogs.com earlier tonight. The guy cracked me up.
+... [snip]...The rest of his page was pretty good too, it's located here or in my links section.
+</p>
+</blockquote>
+
+<p>For the record, the name if 'The guy' is Chris. :-) Hello David.
+</p>
+<p>
+More link-backs to come as I surf my own logs.
+</p>
+
+

@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Web Standards MeetUp"
+category: WWW
+published:
+  epoch: 1043893315
+  utc: 2003-01-30T02:21:55
+---
+
+<p>
+Just a quick update to the <a href="/blog/archives/entries/000131/">CSS MeetUp discussion</a> below. <a href="http://www.meyerweb.com/eric/thoughts/2003a.html#t20030129" title="Eric comments on Web Standards MeetUp">Eric Meyer has signed up</a> for the Cleveland MeetUp, so I've changed my Akron vote to a Cleveland Vote. Plus, he's giving a presentation earlier that evening at the Cuyahoga Community College; "<cite>CSS: The New Language of Web Design</cite>".
+</p>
+<blockquote>
+<p>
+I've watched word of the Web Standards Meetup work its way through various blogs like a slow conceptual pulse, so I may as well keep it going. I seem to be the only one in my area signed up so far, and I'm slightly bummed that there are cool people like Nick and Molly signed up in cities far away from me. Of course it was only after I signed up that I realized the meetup is the same night I'm presenting at a local community college, so I'd be incredibly late or in absentia anyway. Of course, people interested in standards could come meet at the talk, and then we could all go to a nearby place afterwards. It's an idea. It might even be a good one. You be the judge.
+</p>
+</blockquote>
+<p>
+I think it's a great idea myself. If nothing, it's an excuse to go to the presentation. I've wanted to meet Eric for a good while now, and hanging out with a group of web standards geeks can't be all that bad. :-P 
+</p>
+<p>
+<strong><em>Now for all you web programmer types in the Akron/Cleveland area, get your butts in gear and get signed up for a MeetUp!</em></strong>
+</p>
+
+

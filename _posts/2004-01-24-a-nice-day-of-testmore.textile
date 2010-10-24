@@ -1,0 +1,17 @@
+---
+layout: post
+title: "A Nice Day Of Test::More"
+category: Perl
+published:
+  epoch: 1074990393
+  utc: 2004-01-25T00:26:33
+---
+
+<p>
+So I finally got a little time to start working on writing (reinventing the wheel) a quick and dirty ecommerce package based on AxKit so I can convert my one remaining IIS4/ASP site.
+</p>
+<p>
+As with all things new, I'm sticking to the plan and writing my tests as I go. So far, it's not been that bad. Since it's mostly SQL work via Class::DBI, I'm spending more time really testing Class::DBI instead of my own code. Thanks to a little DBD::SQLite, I think that's ok. It means the Class::DBI is doing it's job and I'm  barely writing any code of my own.
+</p>
+
+

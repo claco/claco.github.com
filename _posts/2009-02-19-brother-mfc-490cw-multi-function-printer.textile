@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Brother MFC-490CW Multi Function Printer
+wordpress_id: 149
+wordpress_url: http://chrislaco.com/?p=149
+published:
+  epoch: 1235021040
+  utc: 2009-02-19T05:24:00
+---
+Last year, I bought the wife a new Dell Studio 17" laptop to replace her dead laptop and her old crusty desktop. New laptops don't come with parallel ports any more. This makes my 13 year old faithful HP LaserJet 6P very lonely. After 13 years, I've only had to replace the toner cartridge once. It's been  workhorse.
+<!--more-->
+Rather than spending money on trying to get a USB to Parallel adapter to work or trying to dig up an ethernet print server, I opted to purchase a new printer. A co worker invested in a Brother MFC-490CW and loved it. He hates everything, but loved this printer. Good enough for him; good enought for me.
+
+<a href="http://chrislaco.com/wp-content/uploads/2009/02/mfc-490cw.png"><img src="http://chrislaco.com/wp-content/uploads/2009/02/mfc-490cw-150x92.png" alt="MFC-490CW" title="MFC-490CW" width="150" height="92" class="aligncenter size-thumbnail wp-image-148" /></a>
+
+It's wireless. I can put it anywhere. Any computer in the house can print to it. Any computer can send faxes through it. It can also scan/copy documents and images and send the results to any computer that is online.
+
+Even better, the ink cartridges are cheap. Less than $10. Worth every penny and the wife is happy. I'm still a little sad that the LaserJet will be retired.

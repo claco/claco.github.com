@@ -1,0 +1,18 @@
+---
+layout: post
+title: "jUploadr to the Rescue"
+category: WWW
+tags:
+  - flickr
+  - juploadr
+  - photos
+published:
+  epoch: 1187406793
+  utc: 2007-08-18T03:13:13
+---
+
+<a href="http://juploadr.org/">jUploadr</a> is a must if you have a boatload of photos to get up into Flickr. Drag n Drop, batch apply tags, names, descriptions, assign to sets and upload in the background.
+
+After about 5 days or so, I managed to get about 3000 photos <a href="http://flickr.com/photos/claco/">online</a>. Not bad. Not bad at all. Now I just need to finis updating to MovableType 4.0 and get my Flickr feeds into my blog.
+
+

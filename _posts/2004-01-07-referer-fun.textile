@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Referer Fun"
+category: Music
+published:
+  epoch: 1073502561
+  utc: 2004-01-07T19:09:21
+---
+
+<p>
+I can't wait to dig into the logs at home tonight and see why this is in my referers list:
+</p>
+<p>
+<samp>www.riaa.com</samp>
+</p>
+<p>
+Wonder if their "smart" web seeker has mistakin my <a href="/music/">album listings</a> for pirate MP3s?
+</p>
+<ins>
+<p>
+Looks like some ass nuggets in Latin America spamming US sites. Why in the hell would people do that, unless the RIAA and the like are outsourcing to hide this junk.
+</p>
+<pre>
+<samp>
+200.60.77.10 - - [06/Jan/2004:23:34:36 -0500] "HEAD /blog/ HTTP/1.0" 200 23859
+     "http://www.riaa.com" "StarProse Referrer Advertising System 2004"
+</samp>
+</pre>
+</ins>
+
+

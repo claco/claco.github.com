@@ -1,0 +1,132 @@
+--- 
+layout: post
+title: Siphon Configuration
+wordpress_id: 166
+wordpress_url: http://chrislaco.com/?p=166
+published:
+  epoch: 1237168380
+  utc: 2009-03-16T01:53:00
+---
+This is the second in a series of posts about Siphon, a set of data monitoring utilities for .NET under the MIT license. The source code can be found on <a title="Siphon on GitHub" href="http://github.com/claco/siphon/">GitHub</a>.
+<h2><!--more-->Introduction</h2>
+In this article, I'm going to cover how Siphon configuration works, the options and how to use the configuration classes to read/write configuration information.
+<h2>Configuration Section</h2>
+Here's a sample Siphon configuration section from the source code:
+<pre class="brush:xml">&lt;configSections&gt;
+  &lt;section name="siphon" type="ChrisLaco.Siphon.SiphonConfigurationSection, Siphon" /&gt;
+&lt;/configSections&gt;
+
+&lt;siphon&gt;
+  &lt;monitors&gt;
+    &lt;monitor name="IntervalMonitor" type="ChrisLaco.Siphon.LocalDirectoryMonitor, Siphon"&gt;
+      &lt;settings&gt;
+        &lt;add name="Path" value="C:\" /&gt;
+        &lt;add name="Filter" value="*.tmp" /&gt;
+      &lt;/settings&gt;
+      &lt;schedule type="ChrisLaco.Siphon.IntervalSchedule, Siphon"&gt;
+        &lt;interval value="1.2:3:4" /&gt;
+      &lt;/schedule&gt;
+      &lt;processor type="ChrisLaco.Siphon.DummyProcessor, Siphon" /&gt;
+    &lt;/monitor&gt;
+  &lt;/monitors&gt;
+&lt;/siphon&gt;</pre>
+Let's break this down piece by piece. First, we need to tell .NET who's in charge of the siphon configuration section:
+<pre class="brush:xml">&lt;configSections&gt;
+ &lt;section name="siphon" type="ChrisLaco.Siphon.SiphonConfigurationSection, Siphon" /&gt;
+&lt;/configSections&gt;</pre>
+Next, we add a new monitor element to the monitors collection:
+<pre class="brush:xml">&lt;monitor name="IntervalMonitor" type="ChrisLaco.Siphon.LocalDirectoryMonitor, Siphon"&gt;</pre>
+Here we have a monitor named IntervalMonitor and told Siphon what type to load. If you're not familiar with using type strings in .NET configuration,  the string above tells .NET that we want to use the class ChrisLaco.Siphon.LocalDirectoryMonitor in the Siphon assembly. Note that if you want to use types that are installed into the GAC you will need to use the full type string including the Culture, PublicKeyToken and Version.
+
+Next, we configure setting required by the LocalDirectoryMonitor:
+<pre class="brush:xml">&lt;settings&gt;
+  &lt;add name="Path" value="C:\" /&gt;
+  &lt;add name="Filter" value="*.tmp" /&gt;
+&lt;/settings&gt;</pre>
+The settings consist of name/value pairs that are passed to the monitors Initialize() method. The number of options and their values vary depending on the monitor being used. Next, we'll tell the monitor how often to look for new data:
+<pre class="brush:xml">&lt;schedule type="ChrisLaco.Siphon.IntervalSchedule, Siphon"&gt;
+  &lt;interval value="1.2:3:4" /&gt;
+&lt;/schedule&gt;</pre>
+Just like with the monitor element above, we need to tell Siphon what schedule class we want to use. In our case, we're going to use the IntervalSchedule, and set the interval using a string TimeSpan.Parse() understands: 1 day, 2 hours, 3 minutes and 4 seconds. If you are interested in a daily schedule, you can also use the daily element to specify a daily schedule:
+<pre class="brush:xml">&lt;schedule type="ChrisLaco.Siphon.DailySchedule, Siphon"&gt;
+  &lt;daily&gt;
+    &lt;time value="8:00" /&gt;
+    &lt;time value="15:00" /&gt;
+  &lt;/daily&gt;
+&lt;/schedule&gt;</pre>
+Note: whether you use an interval or a daily schedule, the schedule type you use must understand the configuration you've chosen. As we'll see in the Configuration classes later, the configuration format is setup to handle the most common use cases, like daily schedule values. Just like the monitor element, the schedule element also has a settings element used to pass name/value options to the specified schedule type.
+
+Now that we've chosen a monitor and a schedule, the last thing to do is to tell Siphon who will process the newly found data as it arrives:
+<pre class="brush:xml">&lt;processor type="ChrisLaco.Siphon.DummyProcessor, Siphon" /&gt;</pre>
+Here we've loaded the DummyProcessor, which does does nothing with new data and always returns True. As with the monitor and schedule elements, the processor element also has a settings element collection.
+<h2>Reading Configuration</h2>
+Siphon comes with a set of classes to read/write siphon configuration data. Once you have finished setting up your app.config, you can use the SiphonConfigurationSection class to load the section and loop through all of the configured monitors:
+<pre class="brush:vb">REM Load config section: defaults to 'siphon'
+Dim section As SiphonConfigurationSection = SiphonConfigurationSection.GetSection
+
+REM Loop through monitor elements
+For Each monitor As MonitorElement In section.Monitors
+
+    REM Get a setting
+    Dim path As String = monitor.Settings("Path").Value
+
+    REM create an instance of the specified type
+    Dim instance As IDataMonitor = monitor.CreateInstance
+    instance.Path = path
+
+    REM Set the schedule
+    instance.Schedule = monitor.Schedule.CreateInstance
+
+    REM Set the processor
+    instance.Processor = monitor.Processor.CreateInstance
+
+    REM Process new data
+    instance.Process()
+Next</pre>
+The code above is pretty straight forward. One item of interest: when CreateInstance is called, it creates an instance of the specified type and calls the Initialize() method on the new instance. While we set the Path setting manually, the monitors Initialize() could have also done the same thing.
+
+All monitors must implement the IDataMonitor interface. All schedules must implement the IMonitorSchedule interface and all processors must implement the IDataProcessor interface. CreateInstance() looks for a constructor with no parameters in the type being created.
+<h2>Writing Configuration</h2>
+You can also use the configuration classes to programaticaly create configuration files. SImply create the settings in code, then save the config to the specified file:
+<pre class="brush:vb">Dim config As Configuration = ConfigurationManager.OpenExeConfiguration("C:\Path\To\SomeApp.exe")
+Dim section As New SiphonConfigurationSection
+Dim monitor As New MonitorElement("TestMonitor", "LocalDirectoryMonitor, Siphon")
+
+monitor.Settings.Add(New NameValueConfigurationElement("Path", "C:\"))
+monitor.Processor = New ProcessorElement("MockProcessor, SiphonTests")
+monitor.Processor.Settings.Add(New NameValueConfigurationElement("Foo", "Bar"))
+monitor.Schedule.Type = "IntervalSchedule, Siphon"
+monitor.Schedule.Daily.Add(New TimeElement(New TimeSpan(100)))
+monitor.Schedule.Daily.Add(New TimeSpan(200))
+section.Monitors.Add(monitor)
+
+config.Sections.Add("siphon", section)
+config.Save()</pre>
+This will update the app.config file for the specified executable path with the new configuration information. The code above will generate something like this:
+<pre class="brush:vb">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;configuration&gt;
+    &lt;configSections&gt;
+        &lt;section name="siphon" type="ChrisLaco.Siphon.SiphonConfigurationSection, Siphon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0576062738dd7ad9" /&gt;
+    &lt;/configSections&gt;
+    &lt;siphon&gt;
+        &lt;monitors&gt;
+            &lt;monitor name="TestMonitor" type="LocalDirectoryMonitor, Siphon"&gt;
+                &lt;schedule type="IntervalSchedule, Siphon"&gt;
+                    &lt;interval value="00:01:00" /&gt;
+                    &lt;daily&gt;
+                        &lt;time value="00:00:00.0000100" /&gt;
+                        &lt;time value="00:00:00.0000200" /&gt;
+                    &lt;/daily&gt;
+                &lt;/schedule&gt;
+                &lt;processor type="MockProcessor, SiphonTests"&gt;
+                    &lt;settings&gt;
+                        &lt;add name="Foo" value="Bar" /&gt;
+                    &lt;/settings&gt;
+                &lt;/processor&gt;
+                &lt;settings&gt;
+                    &lt;add name="Path" value="C:\" /&gt;
+                &lt;/settings&gt;
+            &lt;/monitor&gt;
+        &lt;/monitors&gt;
+    &lt;/siphon&gt;
+&lt;/configuration&gt;</pre>

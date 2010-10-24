@@ -1,0 +1,14 @@
+---
+layout: post
+title: "OpenSSH 2.5 Released"
+category: Security
+published:
+  epoch: 1034737136
+  utc: 2002-10-16T02:58:56
+---
+
+<p>
+Looks like a new version just hit pavement over at <a href="http://www.openssh.com/">OpenSSH.com</a>. Read <a href="http://www.bsdforums.org/forums/showthread.php?threadid=3756" title="OpenSSH new verison announcement">the announcement here</a>. Damn. I just got finished upgradeing and patching. Guess  I know what I'll be doing this weekend.
+</p>
+
+

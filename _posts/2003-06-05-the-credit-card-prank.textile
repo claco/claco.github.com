@@ -1,0 +1,23 @@
+---
+layout: post
+title: "The Credit Card Prank"
+category: Humor
+published:
+  epoch: 1054863127
+  utc: 2003-06-06T01:32:07
+---
+
+<p>
+I present to thee: <a href="http://www.zug.com/pranks/credit/">The Credit Card Prank</a>.
+</p>
+<p>
+Quite the example of a futile security effort. I always thought that signing your card was stupid. If someone stole your card, or created their own, the signature on their receipt and on the card will match likely anyways since they either created a new card, or just rubbed of te current sig.
+</p>
+<p>
+I find this even more funny since <strong>a)</strong> my signature is pretty much jibberish (since I can't really write in cursive any more. I print everything and I'm a lefty), and <strong>b)</strong> when we asked my college prof to sign some school forms, he would ask us "What name should I use?". "Abe Lincoln!". Mr Lincoln and Mr. Einstein signed many of my college forms for me. :-)
+</p>
+<p>
+Props to <a href="http://www.keithdevens.com/weblog/">Keith Devens .com</a> for the link.
+</p>
+
+

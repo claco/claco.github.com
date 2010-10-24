@@ -1,0 +1,14 @@
+---
+layout: post
+title: "New Blog?"
+category: WWW
+published:
+  epoch: 1054415690
+  utc: 2003-05-31T21:14:50
+---
+
+<p>
+I've been thinking about starting a new blog. In this blog, I would post simple small categorized snippets of things I learn and mistakes I make every day about SQL, C#, hardware, server problems, etc. Not a new idea by any means. I always thought it would be cool to have a place to search about a topic to see what things I've learned or corrected in the past. Call it deja vu, but I've had times in the past where I was stumped about a programming or hardware/server error only to realize later that I'd tackled the problem long ago and forgotten. Plus, other people I work with could also tap my mistakes and solutions when their having similiar issues.
+</p>
+
+

@@ -1,0 +1,36 @@
+---
+layout: post
+title: "A Valid Debate"
+category: WWW
+published:
+  epoch: 1074115039
+  utc: 2004-01-14T21:17:19
+---
+
+<p>
+Man, <a href="http://diveintomark.org/archives/2004/01/14/thought_experiment">this is getting fun</a> to watch..er..<a href="http://www.aaronsw.com/weblog/001025">read</a>. To <a href="http://nick.typepad.com/blog/2004/01/feeddemon_and_w.html">accept  or reject</a> invalid markup; that is the <a href="http://www.tbray.org/ongoing/When/200x/2004/01/11/PostelPilgrim">question</a>.
+</p>
+<p>
+On of the nice things about having your site built upon an XML foundation (AxKit, XML, XSLT) is that I can't get away with missing or bogus tags as easilt as just writing XHTML in Textpad. But one thing's for sure, I'm all about being the W3C validator purist.
+</p>
+<p>
+Is broken XML or XHTML, or even HTML4 really XML/XHTML/HTML4? No! So why be forgiving and read it, or try to. If a program says it can accept a test file, and you give it a PNG, should it try and render it anyways? Nope. That's why we're in the mess we are in now with IE, and all the other browser "Quirks" mode rendering. Don't bother calling it HTML if it isn't. Same goes for XML. IT either is or it isn't.
+</p>
+<ins>
+<p>
+My response elsewhere:
+</p>
+<blockquote>
+<p>
+The whole reason we have XHTML(XML) is that it was impossible to parse/reuse HTML docs consistantly because they were unpredictable in structure due to every syntaz mistake under the sun being tolerated.
+</p>
+<p>
+Now, if Atom, and RSS are indeed XML, then in no way shape or form should they be tolerated in any other form; i.e. non-validating XML. If they are, then we just lost the best feature of XML, and to some extent, XML as a standard: predictable parsibility.
+</p>
+</blockquote>
+<p>
+Put on the flame suit boyz, it's gonna be a long one.
+</p>
+</ins>
+
+

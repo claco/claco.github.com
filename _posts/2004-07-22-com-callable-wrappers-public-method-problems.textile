@@ -1,0 +1,75 @@
+---
+layout: post
+title: "COM Callable Wrappers: Public Method Problems"
+category: MicroShaft
+published:
+  epoch: 1090545491
+  utc: 2004-07-23T01:18:11
+---
+
+Anyone out there have any experience with <kbd>regasm</kbd> and creating COM Callable Wrappers for .NET assemblies?
+
+I've successfully created a CCW for a .NET assembly I've been working on, but I'm having some issues with what it decides to expose to COM and what it wants to name those methods.
+
+The first problem, and I think this is a big problem, is that it appears to work it's way up from the bottom when it comes to inheritance. One would think it would make more sense to start at the top with the most public view of an assembly and work your way back down to the base class.
+
+This is an especially tough thing to deal with when you are inheriting another class you aren't in control of.
+
+Here's and example.
+
+<pre><code>public class Foo : TcpClient
+{
+	public void Connect()
+	{
+		/* ... */
+		base.Connect(host, port);
+	}
+}
+</code></pre>
+
+I would like and expect it to expose <samp>Foo.Connect()</samp> first, then possibly <samp>TcpClient.Connect()</samp> second. For that matter, I'd like to tell it to ifnore the base class entirely.
+
+This is what really get's exposed via the CCW:
+
+<pre><code>Connect(host, port)	/* This is the TcpClient.Connect() /*
+Connect_1()		/* This is Foo.Connect()
+</code></pre>
+
+Not quite what I want, or need.
+
+<strong>Got this on figured out too. Using <code>[ClassInterface(ClassInterfaceType.None)]</code> on the class forces the CCW to expose the component by it's interfaces. Of course, that means you have to use interface implimentation/inheritence. :-) Now the only problem is figureing out how to specify what interfaces to expose while hiding others (aka <samp>IDisposable</samp>).</strong>
+
+Now, for the next problem. <kbd>Regasm</kbd> also generates both methods in a overload situation.
+
+<pre><code>public class Foo
+{
+	public void Read(uint length)
+	{
+		/* ... */
+		Read(length, true);
+	}
+	
+	public void Read(uint length, bool block)
+	{
+	
+	}
+}
+</code></pre>
+
+This is what gets exposed in the CCW:
+
+<pre><code>Read(length)
+Read_1(length, block)
+</code></pre>
+
+What I'd like to have it do is ignore the first public method and only expose the second method. At the very worst, let me reverse the names. The second method is the one that needs to be exposed to COM.
+
+Who wanted to write code for <code>myObj.Read_1</code>? That sucks big time, especially if you're trying to mimic the API from an old piece of software where the <code>Read_1</code> method is the same as the old API version of <code>Read</code>.
+
+<strong>Looks like I have the overloading problems solved via <code>[ComVisible(false)]</code></strong>
+
+Now, I know there are a buttload of attributes for use within <samp>System.Runtime.InteropServices</samp>. For example, I have to include <code>[ClassInterface(ClassInterfaceType.AutoDual)]</code> in my class definition so the CCW would work for early and late binding.
+
+So, any CCW/InteropServices gurus out there willing to share some wisdom?
+
+

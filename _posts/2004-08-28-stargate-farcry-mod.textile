@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Stargate FarCry Mod"
+category: Games
+published:
+  epoch: 1093735272
+  utc: 2004-08-28T23:21:12
+---
+
+<a href="http://www.fargate.org.uk/">This FarCry mod</a> is going to kick serious ass if it gains ground.
+
+

@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Third Times A Charm"
+category: WWW
+published:
+  epoch: 1058736235
+  utc: 2003-07-20T21:23:55
+---
+
+<p>
+I decided it was time to put TopStyle to better use, and the design at <a href="http://www.etherfarm.com/">Etherf@rm</a> got me inspired. I tried to be a good boy, and did no "View Sourcing" during the development. :-)
+</p>
+
+<p>
+You may have to clear your cache and  <a href="/style/css/style.css">reload this stylesheet</a> in your browser. I'm sure there's plenty to fix.
+</p>
+
+

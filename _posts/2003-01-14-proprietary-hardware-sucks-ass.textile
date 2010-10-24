@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Proprietary Hardware Sucks Ass"
+category: Hardware
+published:
+  epoch: 1042602929
+  utc: 2003-01-15T03:55:29
+---
+
+<p>
+Proprietary hardware sucks phat donkey ass, especially when it's expensive.
+I know that doesn't come as a shock to anyone, but I felt it needed to be repeated.
+</p>
+<p>
+I've recently come into the possession of some older IBM Netfinity 5600 servers and one EXP200 external <acronym title="Low Voltage Differential">LVD</acronym> / <acronym title="Very High Density Cable Interconnect">VHDCI </acronym> <acronym title="Small Computer System Interface">SCSI</acronym> enclosure. By enclosure they apparently mean proprietary hunk of shit. These were connected to the server via IBM ServeRAID 4-L controller card. By controller cards I mean proprietary  piece of shit. What follows is very frustrating to a FreeBSD junkie.
+</p>
+
+<p>
+These machines used to run Windows NT 4.0 Server, and were supposed to start a new life as static file servers for the web. They have one internal bank of 5 SCSI drives, and the external EXP200 has a bank of 10 SCSI drives that can either run all 10 drives together on one channel, or in two banks of 5 drives on two separate channels. Two channel operation is what we're after. One channel/bank per server.
+</p>
+<p>
+First operating system of choice: FreeBSD.<br />
+Of course, FreeBSD doesn't support these damn ServeRAID cards. IBM does support RedShat and a few other Linux variants. Yuck. No biggie. After looking around, Adaptec supports FreeBSD 4.4+ on 3 of their high end <acronym title="Redundant Array of Inexpensive Disk">RAID</acronym> cards:
+the <a href="http://www.adaptec.com/worldwide/product/proddetail.html?prodkey=ASR-3200S" title="Adaptec 3200S Product Page">3200S</a>,
+the <a href="http://www.adaptec.com/worldwide/product/proddetail.html?prodkey=ASR-3210S" title="Adaptec 3210S Product Page">3210S</a>,
+the <a href="http://www.adaptec.com/worldwide/product/proddetail.html?prodkey=ASR-3400S" title="Adaptec 3400S Product Page">3400S</a>,
+the <a href="http://www.adaptec.com/worldwide/product/proddetail.html?prodkey=ASR-3410S" title="Adaptec 3410S Product Page">3410S</a>,
+and the <a href="http://www.adaptec.com/worldwide/product/proddetail.html?prodkey=ASR-5400S" title="Adaptec 5400S Product Page">5400S</a>. Should work. After all, SCSI is SCSI. Assuming the connection drive types are compatible, it should work. So we ordered a couple of the Adaptec 5400S cards.
+</p>
+<p>
+Yesterday we yanked the ServeRAID cards, installed the newly arrived Adaptec cards, hooked the internal drives to channel 0, the external enclosure to channel 1 and booted into the SCSI BIOS setup utilities. So far so good. The card saw the all the internal and external drives just fine. We were able to configure 3 logical drives (containers):
+</p>
+<ol>
+<li>RAID 1 using first two drives in internal drive cage</li>
+<li>RAID 5 using last three drives in internal drive cage</li>
+<li>RAID 5 using all five drives in external drive enclosure</li>
+</ol>
+<p>
+So far so good. Initialize the containers and reboot into the FreeBSD 4.4 disc 1 install. During boot, the kernel message showed all 3 logical drives without issue without any apparent errors. This is nice especially since the Adaptec driver is part of the kernel as of 4.5-RELEASE. We continued to do a minimal install with all the usual partitions across container 1 and 2, and container 3 (the external enclosure) was made into a <samp>/data</samp> partition.
+</p>
+<p>
+After rebooting the servers, we started getting assload of timeout/drive failure errors. Keep in mind, there were no problems up to and through the install process.
+So once again we reboot into BIOS and scan the drives. All drive are fine. Boot into FreeBSD. More errors. To make matters worse, these errors are ONLY on the external EXP200 enclosure. All of the internal drives are functioning perfectly.
+</p>
+<p>
+At this point, IBM pleads ignorant. Not surprising. They won't say one way or the other whether this enclosure is just a bunch of SCSI drives, or if there is proprietary junk between the LVD connector and the drives that requires ServeRAID cards to function. They have a list of SCSI cards that work with the EXP200. Good luck finding that on the website. Their damn website automatically changes my query to  <em>EXP300</em> instead of the EXP200 that I enter in their search box. Adaptec isn't much help either, which I find ironic for a number of reasons. First, we can't be the first to try and connect EXP* enclosures to Adaptec RAID cards. Second, Adaptec MAKES a fair amount of the ServeRAID cards and/or ServeRAID controller chipsets. Go figure.
+</p>
+<p>
+I'm pretty sure it's not the operating system since the internal drives on channel 0 are quite happy. And I'd bet serious money that if the drives were taken out of the EXP and put in another enclosure that simply connected all of them to the LVD connector, they would work just fine as well. Hence, this EXP200/ServeRAID stuff is proprietary shit.
+</p>
+<p>
+So now we're fucked. We can put the ServeRAID card back in these machines and install NT or W2K. There's a real bargain. Or we can install RedShat or some other Linux variant; probably Debian. Better, but I'd have to learn those distros and Linux. I'm really comfortable with FreeBSD at this point. Bummer.
+</p>
+
+

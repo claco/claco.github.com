@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Notebook Mouse"
+category: OffTopic
+tags:
+  - logitech
+  - mouse
+  - v450
+published:
+  epoch: 1209917142
+  utc: 2008-05-04T16:05:42
+---
+
+I got tired of using a corded mouse on he MBP, so I broke down and bought a <a href="http://www.logitech.com/index.cfm/notebook_products/mice/devices/143">Logitech V450</a>. It's not a bad little mouse. Not too small. Small dongle.
+
+<a href="http://today.icantfocus.com/blog/blog/images/2188.1.0.jpg"><img src="http://today.icantfocus.com/blog/blog/images/2188.1.0-thumb-250x166.jpg" width="250" height="166" alt="LogiechV450.jpg" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a>
+
+I really wanted a Bluetooth mouse, but nobody carries them. Not Best Buy. Not Circuit City. Go figure.
+
+

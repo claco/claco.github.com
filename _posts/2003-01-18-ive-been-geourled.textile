@@ -1,0 +1,14 @@
+---
+layout: post
+title: "I've Been GeoURLed!"
+category: OffTopic
+published:
+  epoch: 1042942096
+  utc: 2003-01-19T02:08:16
+---
+
+<p>
+Useless feature of the evening. I've GeoURLed my site. See <a href="http://geourl.org/near/alt.html?p=http%3A%2F%2Ftoday.icantfocus.com%2F&amp;lat=&amp;lon=&amp;dist=100">what sites are within 100 miles</a> of this site. From the looks of it, we're very interested in weather in this part of the country. :-)
+</p>
+
+

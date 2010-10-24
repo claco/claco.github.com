@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Comments Are Borked..."
+category: WTF
+published:
+  epoch: 1073933397
+  utc: 2004-01-12T18:49:57
+---
+
+<p>
+Apparently I missed something permission wise when I upgraded MT. As a result, comments make it into MT, but MT errors out trying to rebuild the appropriate pages. Should be fixed tonight.
+</p>
+<p>
+On an off note, the damn escaping is still borked as well. If at first you don't succeed, get a bigger hammer. :-)
+</p>
+
+

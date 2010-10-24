@@ -1,0 +1,29 @@
+---
+layout: post
+title: "RIAA Sues Radio Stations"
+category: Humor
+published:
+  epoch: 1033954738
+  utc: 2002-10-07T01:38:58
+---
+
+<p>
+From <a href="http://www.theonion.com/onion3836/riaa_sues_radio_stations.html" title="Article about RIAA shutting down radio stations"><cite>The Onion</cite></a> :
+</p>
+
+<blockquote>
+<p>
+LOS ANGELES - The Recording Industry Association of America filed a $7.1 billion lawsuit against the nation's radio stations Monday, accusing them of freely distributing copyrighted music.
+</p>
+<p>... "It's criminal," RIAA president Hilary Rosen said. "Anyone at any time can simply turn on a radio and hear a copyrighted song...
+</p>
+</blockquote>
+
+<p>
+Here's the sad part: seeing this headline in a real newspaper would not surprise me one little bit. Especially when you have people like Jamie Kellner, CEO of Turner Broadcasting claiming that <a href="http://action.eff.org/action/moreinfo.asp?item=1517" title="Article about commercials and stealing">not watching commercials is stealing</a>.
+</p>
+<p>
+When are these people going to learn that one day, pissing off all of your customers by treating them like criminals is going to land them in deep sheep doo.
+</p>
+
+

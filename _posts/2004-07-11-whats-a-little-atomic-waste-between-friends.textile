@@ -1,0 +1,20 @@
+---
+layout: post
+title: "What's A Little Atomic Waste Between Friends?"
+category: WTF
+published:
+  epoch: 1089557239
+  utc: 2004-07-11T14:47:19
+---
+
+Recently, <a href="http://hosted.ap.org/dynamic/stories/Y/YUCCA_MOUNTAIN?SITE=OHCOD&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT">Nevada list it's appeal</a> to the block the new nuclear waste dump..ummm "site" at Yukka mountain.
+
+Hey, at least they're getting it stuffed into a mountain! Looks like <a href="http://hosted.ap.org/dynamic/stories/N/NUCLEAR_WASTE_TANKS?SITE=OHCOD&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT">Columbia, S.C. isn't so lucky</a>.
+
+<blockquote><p>Fifteen tanks holding deadly atomic waste at a nuclear weapons complex along the Savannah River have cracked, rusted or leaked, according to federal inspection reports.</p></blockquote>
+
+<blockquote><p>Westinghouse Savannah River Co., which runs the site for the U.S. Department of Energy, says <strong>some tanks are within 8 to 10 feet of the water table</strong>, raising concerns. But Dean Campbell, a spokesman for Westinghouse, says the government does not know of any tanks that currently are leaking.</p></blockquote>
+
+How nice.
+
+

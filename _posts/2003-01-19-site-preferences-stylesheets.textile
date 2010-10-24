@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Site Preferences: Stylesheets"
+category: WWW
+published:
+  epoch: 1043022680
+  utc: 2003-01-20T00:31:20
+---
+
+<p>
+One of my goals of this redesign was to make this site skinnable by simplifying my code. Well, it seems both have happened. :-)
+While I doubt anyone will every write their own stylesheet for this site, the possibility exists. Check out the <a href="/preferences/">site preferences page</a> to change the stylsheet used when viewing or pringint this site, or to specify your own. Of course, since I have CSS turned off for a bit, only your own stylesheets will work for now.
+</p>
+<p>
+Inspired by <a href="http://diveintomark.org/archives/2003/01/16.html#body_ids" title="Post about body id tags">this post</a> at <a href="http://www.diveintomark.org/">Dive Into Mark</a>,  I've also added the <code>id</code> attribute to my <code>body</code> tags.
+</p>
+<ins>
+<p>
+And how fucking cool this is, I'm working on a css file specified in MY cookie prefs without disturbing the look and  feel of others using the site. Damn cool.
+</p>
+</ins>
+
+

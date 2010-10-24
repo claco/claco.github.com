@@ -1,0 +1,17 @@
+---
+layout: post
+title: "System.Net.Sockets.TcpClient Connect Timeout"
+category: MicroShaft
+published:
+  epoch: 1080961919
+  utc: 2004-04-03T03:11:59
+---
+
+<p>
+Grrrr. Why in the hell doesn't System.Net.Sockets.TcpClient (or the pure System.Net.Socket interface) have a ConnectTimeout option? I know. There is a SendTimeout and a ReceiveTimeout, even and the socket options level. Why is there no connection timeout? IF the remote server is offline, the connect takes forever to timeout.
+</p>
+<p>
+Sure, I can jump through god knows how many hoops and dump the Connect into another timed thread, but  k'mon. That's silly.  Apparently the perl IO::Socket couterpart spoiled me into thinking it was something people actually wanted to change rather tha have everything grind to a halt waiting on a dead remote host. :-/ 
+</p>
+
+

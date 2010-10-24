@@ -1,0 +1,23 @@
+---
+layout: post
+title: "New Canon PowerShot A80"
+category: OffTopic
+published:
+  epoch: 1090341662
+  utc: 2004-07-20T16:41:02
+---
+
+Ok, I pulled the trigger on this problem and placed an order on Amazon for:
+
+<ul>
+<li>(1) SanDisk 512 MB CompactFlash Card - $83.99</li>
+<li>(1) Canon Powershot A Series Accessory Kit for A60, A70, A75 &amp; A80 - $48.94</li>
+<li>(1) Canon PowerShot A80 4MP Digital Camera w/ 3x Optical Zoom - $279.94</li>
+</ul>
+
+I wanted to go for the wide angle lens as well, but hey, I'll manage.
+With the price I saved at Amazon vs. retail, I opted for Next Day shipping as well. What the hell.
+
+<p class="image"><img src="/blog/images/hardware/a80.jpg" alt="Canon PowerShot A80" /></p>
+
+

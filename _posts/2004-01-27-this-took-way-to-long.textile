@@ -1,0 +1,36 @@
+---
+layout: post
+title: "This Took Way To Long"
+category: Perl
+published:
+  epoch: 1075262108
+  utc: 2004-01-28T03:55:08
+---
+
+<p>
+Lord knows I must be stupid because this took way too long:
+</p>
+<pre><code>if (eval {require Apache::Test}) {
+    Apache::Test-&gt;import();
+
+    plan(tests =&gt; 1, have('AxKit', 'mod_perl', &amp;have_apache(1), &amp;have_lwp));
+
+    ok(1);
+} else {
+    require Test::More;
+    Test::More-&gt;import();
+
+    plan(skip_all =&gt; 'Apache::Test not installed. Skipping AxKit XSP tests.');
+};
+</code></pre>
+
+<p>
+I used <samp>require/import</samp> instead of <samp>use</samp> because of this warning/error:
+</p>
+<pre><samp>main::ok() called too early to check prototype at - line 8.</samp></pre>
+
+<p>
+Why understand the problem when I can just avoid it? :-)
+</p>
+
+

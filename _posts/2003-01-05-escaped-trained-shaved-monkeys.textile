@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Escaped Trained Shaved Monkeys"
+category: Humor
+published:
+  epoch: 1041744120
+  utc: 2003-01-05T05:22:00
+---
+
+<p>
+I wonder if <a href="http://www.milbertus.com/archives/001521.php" title="Website entitled Ramblings of a Code Monkey">this person</a> is one of our escaped <a href="http://today.icantfocus.com/blog/archives/entries/000028/" title="Post about Trained Shaved Monkeys">Trained Shaved Monkeys</a>?
+</p>
+<p>
+<em>Oopsie. Wrong link. All fixed.</em>
+</p>
+
+

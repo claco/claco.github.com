@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Trackbacks Unborked"
+category: WWW
+published:
+  epoch: 1074563469
+  utc: 2004-01-20T01:51:09
+---
+
+<p>
+It figures. I find this in my refer logs only to realize that trackbacks are borked and it was sent to The Great Bit Bucket  in the Sky:
+</p>
+<p>
+<samp>http://blogs.osafoundation.org/mt-tb.cgi</samp>
+</p>
+<p>
+Someone one, or two, or three, give me a trackback from outside Ye Olde Firewall.
+</p>
+
+

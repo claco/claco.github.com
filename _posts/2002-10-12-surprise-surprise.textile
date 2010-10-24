@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Surprise Surprise."
+category: MicroShaft
+published:
+  epoch: 1034459081
+  utc: 2002-10-12T21:44:41
+---
+
+<p>
+You know, <a href="http://news.com.com/2100-1001-961769.html" title="Article about another Microsoft security problem">this</a> routine is really getting old. People wonder why I bash MicroShaft on a daily basis. Yes, I use XP on my game box. Yes I used XP on my laptop. I use Mozilla instead of IE. I use Mozilla Mail instead of Outllook. This is why. But come hell or high water I will never install another M$ server as long I shall live.
+</p>
+<p>
+I'm responsible for quite a few NT4 servers at work. The weekly install-security-patch-reboot routine is getting really old, and lately it's turning into a bi-weekly event.
+</p>
+
+

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "New Router Materializes"
+category: Hardware
+published:
+  epoch: 1035584398
+  utc: 2002-10-25T22:19:58
+---
+
+<p>
+Well, after some struggle, the new router is here and operational.
+Pretty encouraging so far. The undead telnet rules that wouldn't stay away after reboots are now gone for good. The next few days will determine whetehr the ip tilering rules say put and stop dissapearing. Keep your fingers crossed.
+</p>
+
+

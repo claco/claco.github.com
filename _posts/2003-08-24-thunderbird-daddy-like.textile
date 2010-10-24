@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Thunderbird: Daddy Like"
+category: WWW
+published:
+  epoch: 1061704023
+  utc: 2003-08-24T05:47:03
+---
+
+<p>
+The more I use <a href="http://www.mozilla.org/projects/thunderbird/">Mozilla Thunderbird</a> the more I like it, epsecially when it comes to multiple email accounts with multiple SMTP servers and settings. I still don't think that works right under Mozilla Mail, but it sure does in Thunderbird. Woot!
+</p>
+
+<p class="image">
+<img src="/blog/images/www/thunderbird.gif" alt="Thunderbird Icon" />
+</p>
+
+

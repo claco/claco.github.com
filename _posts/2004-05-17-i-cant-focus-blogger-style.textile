@@ -1,0 +1,14 @@
+---
+layout: post
+title: "I Can't Focus: Blogger Style"
+category: WWW
+published:
+  epoch: 1084841452
+  utc: 2004-05-18T00:50:52
+---
+
+<p>
+A little tinkering with <a href="http://icantfocus.blogspot.com/">my Blogger blog</a>.
+</p>
+
+

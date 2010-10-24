@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Service Movis Completis"
+category: OffTopic
+published:
+  epoch: 1069956659
+  utc: 2003-11-27T18:10:59
+---
+
+<p>
+Well, in theory, everything thing is moved and DNS should be propogated quite nicely by now. The only hitch so far is the damn router that came with the DSL. It's a Cayman 3546. Not a bad router, but it's NAT suffers from one caveat I hate: I can't access internal servers via their external IP address. I used to be able to do this on my old router (Efficient 5861) just fine.
+</p>
+<p>
+Oh well. Time to upgrade to Bind9 and use the view to send different records for my domains for internal and external clients.
+</p>
+
+

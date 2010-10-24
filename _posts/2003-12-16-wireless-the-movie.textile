@@ -1,0 +1,195 @@
+---
+layout: post
+title: "Wireless: The Movie"
+category: Hardware
+published:
+  epoch: 1071629690
+  utc: 2003-12-17T02:54:50
+---
+
+<p>
+	Now that I've had some time to calm down a bit and reflect on my past wireless grievances,
+	I figured I would air my wireless experience  with all who would read it in hopes that
+	someone else can save themselves many hours of hair pulling and constant bouts of
+	Tourette's syndrome.
+</p>
+<h2><a name="beginning">In The Beginning</a></h2>
+<p>
+	What started my wireless journey was moving into the new house. The old place had 100Mbit wired
+	to the first floor where I had one lone Linksys WAP11 v2.2 wireless-b access point. I also had
+	two Linksys WPC11 wireless-b PCMCIA cards for the laptops and one Linksys WUSB11.USB adapter for
+	the computer on the second floor. For the most part, everything worked
+	rather well from the living room to the office where the AP was located. The USB adapter on the second
+	floor was a little flaky. Sometimes it would just lose connection for no apparent reason, even though
+	it's signal strength and signal quality were both close to 100%.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/wap11.jpg" alt="Linksys WAP11" />
+	<img src="/blog/images/hardware/wpc11.jpg" alt="Linksys WPC11" />
+	<img src="/blog/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
+</p>
+<p>
+	After that, my only real problems 
+	were the usual Linksys firmware issues where one problem was fixed and others were created. For a long time
+	I ran a 1.0g version just so I can turn SSID broadcasts off and actually have all the wireless cards
+	connect. Imagine that, turn of SSID broadcast and Linksys cards won't connect to their own Linksys AP. Nice.
+	Just before I moved, I made the mistake of checking the Linksys site and finding that the latest version
+	of the firmware was 1.1, so I upgraded. This was probably the start of my problems.
+</p>
+<h2><a name="move">The Move</a></h2>
+<p>
+	After the move I stuck the servers and the WAP11 in the basement. The laptops are wireless and usually on the first floor 
+	and her desktop was wireless and on the second floor. I however was hardwired at the old house, 
+	so I had to get my computer online wirelessly. I first opted for getting another Linksys WUSB11 USB wireless-b adapter.
+	This inevitably led to another evening of fighting with Windows Zero Configuration, the drivers, and the Linksys installer.
+	On installed, everything appeared to be somewhat fine. Then the headaches started.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
+</p>
+<p>
+	After about a day or so of actual usage, the connection started dropping at random. Sometimes the signal would be 
+	at 100% (Excellent) then jump down to Low, then back up again. Then it would be fine for hours; then random drops again.
+	During this time, the laptop right next to me would be solid and connected without any problems. No microwaves running.
+	Not to many 2.4Ghz phones setup yet. Aluminum siding, so that should keep out most unwanted signals. After some Googling,
+	it looked like the WUSB adapters were just junk for the most part.
+</p>
+<p>
+	So, of to the evil Best Buy I went to snag a Linksys (now referred to as Limpsys) WMP11 PCI Wireless-B adapter.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/wmp11.jpg" alt="Linksys WMP11" />
+</p>
+<p>
+	I installed the WMP11. This meant yet another round of fighting the install, the drivers, and Wireless Zero Config.
+	The connection strength and signal quality was still strong. The connection seemed more stable at first, but after
+	another 3 days of troubleshooting, I still had random connection drops. And like before, the laptop right beside me would be rock solid.
+	Grrrrr.
+</p>
+<p>
+	Taking a chance I installed the Linksys WSB24 Signal Booster that I had snagged a month earlier in anticipation of having wireless in 
+	the basement and computers on the second floor.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/wsb24.jpg" alt="Linksys WSB24 Signal Booster" />
+</p>
+<p>
+	While this helped strengthen my signal and made it more consistent from a signal strength standpoint, the random disconnects 
+	persisted for both computers upstairs.
+</p>
+
+<p>
+	After surfing the <a href="http://www.dslreports.com/">Broadband Reports</a> wireless and Linksys forums, more than once I was given the advice to give the Microsoft
+	wireless products a try. I'll be honest, when I first heard that Microsoft was going to do wireless, I figured it was going to be junk.
+	The first gen products indeed were rumored to be less than stellar. I was reluctant to buy anything MS related for wireless hardware, but after a few more
+	words from people who already had Linksys problems then tried MS, I gave in.
+</p>
+<p>
+	So once again we head towards the evil Best Buy. I returned the Limpsys WMP11 PCI card and picked up the Microsoft MN-730.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/mn730.jpg" alt="Microsoft MN-730" />
+</p>
+<p>
+	I installed the software and then the card. The first problem I had was with the software "wizard" that tried to
+	guide me though the setup of the PCI card. While if gives me options of choosing whether I do or don't have a access point and whether
+	it is or isn't the MN-700, it in no way shape or form gave my the option to enter my WAP details. It just assumed I have SSID broadcasts turned on and
+	am running an open network. So I hit Cancel and proceeded to do the manual card setup. Once that was done and I was connected, my random disconnects appeared to stop. <strong>Score!</strong>
+</p>
+<p>
+	The MN-730 card was way more consistent than the Limpsys stuff I've tried thus far. So much so that I purchased a second card for her desktop
+	computer. Score one for Microsoft.
+</p>
+<p>
+	Now, up to this point, I was pretty aggravated to say the least. Since I do the computer thing for a living, I don't like losing
+	the battle when it comes to things not working. So I was pretty happy that the solution seems to be at hand.
+</p>
+
+
+<h2><a name="murphy">Hello St. Murphy</a></h2>
+<p>
+	In true St. Murphy style, her Linksys WPC11 PCMCIA card stopped working. It just wouldn't connect at all.
+	Even if I put the card in my laptop, it still wouldn't connect. <strong>#$%@#</strong>.
+</p>
+<p>
+	After fighting yet another piece of Linksys hardware, I decided to give the Microsoft MN-720 a try.
+	The local Circuit City had the MN-820 Wireless Notebook Kit on sale for $129.00 and it also had a $30 mail-in rebate.
+	A damn good deal I thought at the time, and since I needed the PCMCIA adapter and almost had all wireless-g adapters, a wireless-g access point (router) wouldn't suck for the extra $30 bucks 
+	above the cost of the PCMCIA card alone.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/mn820.jpg" alt="Microsoft MN-820 Wireless Kit" />
+</p>
+<p>
+	First I installed the MN-700 base station. Nothing too special. It has an Access Point mode in which the routing is turned off, the WAN port is disabled, and
+	it becomes a client on your network. The first downside was that in AP mode, it expects to get an IP address via DHCP from your network. But I don't have DHCP on my LAN. :-(
+	But that would be the least of my problems it seems.
+</p>
+<p>
+	After finishing the WPA config, changing the password, changing the SSID, turning off SSID broadcasts and putting the unit in AP mode, I installed the MN0720 PCMCIA adapter.
+	This time though, I didn't bother with the setup wizard since it wouldn't work with broadcasts disabled.
+</p>
+<p>
+	Once I was up and running on the laptop, I went upstairs to repoint my desktop to the new AP. When that worked, I went back downstairs. The laptop stopped working. :-(
+	Running <kbd>arp -a</kbd> showed no arp entried at all, not even the router. No amount of rebooting or restarting the network card would fix this. Damnit. So I rebooted the MN-700
+	and tried again. When the laptop started working I went back upstairs. This time, that machine stopped working. Again, <kbd>arp -a</kbd> showed no entried. Nothing would fix it. And Yes, they
+	had different IP addresses! :-)
+</p>
+<p>
+	At this point, I'll admit that my LAN is slightly more complicated than the norm. I'm running the usual private space of 192.168.0.0/16. While I'm running it as a B class space, the
+	damn MN-700 only supports 192.168.0.0/24, or a class C. You can't change the subnet mask on that unit. :-/
+</p>
+<p>
+	At this point, I decided to meet my MN-700 half way. I spent the better part of the afternoon that day implementing DHCP, and compacting my various 192.168.x blocks into a single
+	192.168.0.0/24 C class IP space. Now, time to try again..
+</p>
+<p>
+	Upon booting the MN-700, it now picked up an IP address so I could actually admin the damn thing. And now that the MN-700 and my LAN are playing on the same IP block size, time to give it another whirl.
+	Yet again, the computers would stopped receiving ARP broadcasts and no DHCP would be received. After some tinkering, I finally came up with the pattern.
+</p>
+<ol>
+	<li>Reboot MN-700</li>
+	<li>Connect any computer to MN-700 - DHCP and ARP works.</li>
+	<li>Right-Click->Disable Wireless Network Card</li>
+	<li>Right-Click->Enable Wireless Network Card</li>
+	<li>DHCP and ARP broken</li>
+</ol>
+<p>
+...or...
+</p>
+<ol>
+	<li>Reboot MN-700</li>
+	<li>Connect any computer to MN-700 - DHCP and ARP works.</li>
+	<li>Reboot</li>
+	<li>DHCP and ARP broken</li>
+</ol>
+<p>
+	This happened on any computer in the place. When the laptop would fail, I could insert my old card pointed to the WAP11 and everything worked dandy.
+	
+	When it was connected the 54Mbps speed was nice though! :-)
+	The make matters worse, when the DHCP and ARP would fail after the second	
+</p>
+<p>
+	So, back to Circuit City I went to return the obviously pissy MN-700. For $0.01 less, I snagged two MN-720 PCMCIA cards.
+	Once I got those installed, everyone was happy again. The laptops worked. The desktops worked. No random drops or disconnects...
+	
+</p>
+<p>
+	Until Sunday. :-(  After looking around, I noticed that the WAP11 had rebooted on it's own. This appears to be a know, yet unfixed problem with the WAP11 v2.2 using the 1.1 firmware.
+	Luckily, someone on the forums mentioned that they had the same problem, and the Limpsys FTP server had v1.1a firmware. Unsupported. Unofficial, yet my WAP hasn't rebooted on it's own since.
+</p>
+
+<h3>What I've learned</h3>
+<p>
+	Nothing. Absolutely nothing. I'm convinced that consumer wireless products as a whole are complete junk and a quality crap shoot. I truly believe that 
+	the Microsoft wireless adapter cards are much better than the Linksys cards. I'm convinced that the MN-700 is junk. And I'm convinced that I spent way to much time 
+	trying to get something as "simple" was plug-n-pray wireless working.
+</p>
+<p>
+	While I'm no expert, I'm not an idiot when it comes to computers. It's how I pay the bills. I guess being a techie makes dealing with this crap even more frustrating.
+	Lord knows how Joe Consumer does it.
+</p>
+<p>
+I'm considering upgrading to the Linksys WAP54G just to make use of all the wireless-g cards in the house. But then again, no telling how much worse that will make things. Rumour has it that the WSB24 Signal Booster will work on the WAP54G, unofficially of course.
+</p>
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "JK3 Gone Gold"
+category: Games
+published:
+  epoch: 1061166896
+  utc: 2003-08-18T00:34:56
+---
+
+<p>
+Woohoo! <a href="http://www.lucasarts.com/products/jediacademy/">Jedi Knight: Jedi Academy</a> has gone gold and will be in stores September 17th! I really really want to pre-order this game just for the JK license plate, but I think I'll take my chances at the local <a href="/search/?search=Best+Buy,+Worst+Repair">Worst Buy</a> instead. Better instant gratification that way. :-)
+</p>
+<p class="center">
+<img src="/blog/images/games/jk3box.jpg" alt="Jedi Knight: Jedi Academy Box Cover" />
+</p>
+
+

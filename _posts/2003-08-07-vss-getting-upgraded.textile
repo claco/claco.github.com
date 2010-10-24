@@ -1,0 +1,23 @@
+---
+layout: post
+title: "VSS Getting Upgraded?"
+category: MicroShaft
+published:
+  epoch: 1060310232
+  utc: 2003-08-08T02:37:12
+---
+
+<p>
+I stumbled across <a href="http://blogs.gotdotnet.com/korbyp/PermaLink.aspx/c62c59bb-619e-4aa6-81f7-62f7716aa5e3">this post</a> on <a href="http://blogs.gotdotnet.com/korbyp/">Korby Parnell's weblog</a>  aboutthe Visual Source Safe roadmap and furuture development progess. All I can say is I really really hope that some of the VSS developers take some time and use other things like <a href="http://www.cvshome.org/">CVS</a> and take some notes.
+</p>
+<p>
+I've never been shy at work about my severe dislike of VSS after using CVS at home. The brannching/merging/tagging in VSS is plain old painful compared to CVS, especially for the less savvy users who use the VSS explorer having to sort through no end of folders that are branches and such other messes.
+</p>
+<p>
+Don't even get me started about pinning. It always seemed so unnatural. I pin something to prevent a newer copy from getting deployed in Get Latest, yet I can't edit or checkout ANY version of that file. Grrrrr.
+</p>
+<p>
+Let's not forget the spontanous corruption / combustion of the source database every now and again. Ouch.
+</p>
+
+

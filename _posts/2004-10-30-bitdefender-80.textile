@@ -1,0 +1,18 @@
+---
+layout: post
+title: "BitDefender 8.0"
+category: Software
+published:
+  epoch: 1099176562
+  utc: 2004-10-30T22:49:22
+---
+
+I've had the itch for a while now to upgrade all of the antivirus software in the house, but I refuse to give Symantec any more money. They're the Microsoft of the AV world. The stuff keeps getting slower and more expensive. In a time where viri and spyware/adware are running rampant, $50 per machine is way too much for AV software.
+
+I used AVG version 6, the free version, for a while. It's ok, but it doesn't catch a lot of things, and even then, it won't remove half of them.
+
+After searching and reading reviews, I stumbled across <a href="http://www.bitdefender.com/bd/site/products.php?p_id=2">BitDefender 8.0 Standard Edition</a>. Not only is it <a href="http://www.anti-virus-software-review.com/bitdefender-review.html">highly  rated</a>, but it's only $29.95. Even better, it gets cheaper the more you buy! I got 4 copies for $67.08! Kick ass! Better yet, every renewal comes at %50 off for existing customers, so next year I pay $33.54 for 4 computers!
+
+Not only is it good software, but the price kicks ass for securing a 4 computer household.
+
+

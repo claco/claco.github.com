@@ -1,0 +1,23 @@
+---
+layout: post
+title: "MSSQL Roles Somewhat Worthless"
+category: MicroShaft
+published:
+  epoch: 1061851367
+  utc: 2003-08-25T22:42:47
+---
+
+<p>
+Roles. Internal SQL Groups. A way to abstract the who-can-do-what kind of details. Sounds good right? Not exactly.
+</p>
+<p>
+I had one simple mission this morning: create a set of roles in MSSQL and write a stored procedure to return a list of user rights based on which roles they're in. Once the roles were written, and user accounts and domain groups were added to those roles, it looked like a simple matter of running <kbd>IS_MEMBER(<em>'role name'</em>)</kbd> in T-SQL and creating a resultset.
+</p>
+<p>
+Much to my dismay, try as I might, I couldn't get this to work for my current login using NTLM. As it turns out, the <kbd>IS_MEMBER()</kbd> function does absolutely <strong>nothing</strong> when the current login is a member of the System Administrators role #$#@*!  Just because someone is an admin in the local server <strong>doesn't mean they should be all poweful in the dataase all of the time</strong>. At least have the damn function return accurate results.
+</p>
+<p>
+From better to worse it seems. The only way to remove myself from the SysAdmin role is to remove myself from the Domain Admins group on that server, whi9ch means I can't administer that server, and logging into the server as a generic server admin account is even worse since it doesn't allow us to know who did what when everyone administrates with the same generic account. Damnit! That make roles just about worthless in my book.
+</p>
+
+

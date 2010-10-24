@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Hell Yeah!"
+category: Music
+published:
+  epoch: 1080430788
+  utc: 2004-03-27T23:39:48
+---
+
+<p>
+The only thing I wanted to see other than the KISS reunion and Dave Mathews.
+</p>
+<h3>
+<a href="http://www.reuters.com/newsArticle.jhtml?type=entertainmentNews&amp;storyID=4675922">
+Van Halen Ends Feud with Former Singer, Sets Tour
+</a></h3>
+<blockquote>
+<p>
+LOS ANGELES (Reuters) - One of pop music's messiest feuds has come to an end with the return of vocalist Sammy Hagar to rock band Van Halen after an eight-year absence, the veteran group said on Friday.
+</p>
+<p>
+Additionally, Van Halen will return to the road this summer for the first time in nearly six years, launching a tour of indoor North American arenas in Greensboro, North Carolina on June 11. 
+</p>
+</blockquote>
+
+

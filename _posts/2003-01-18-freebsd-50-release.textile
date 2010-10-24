@@ -1,0 +1,14 @@
+---
+layout: post
+title: "FreeBSD 5.0-RELEASE"
+category: FreeBSD
+published:
+  epoch: 1042950597
+  utc: 2003-01-19T04:29:57
+---
+
+<p>
+<a href="http://www.internetnews.com/dev-news/article.php/1571431" title="FreeBSD Release Story">Rumor has it</a> that FreeBSD 5.0-RELEASE is about to hit the streets running. While I wouldn't trust any new major version until it's .1 release, this should be interesting to tinker with on the new lappy.
+</p>
+
+

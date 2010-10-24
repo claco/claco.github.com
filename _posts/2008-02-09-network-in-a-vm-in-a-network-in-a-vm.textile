@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Network In a VM, In a Network, In a VM"
+category: Networking
+published:
+  epoch: 1202580499
+  utc: 2008-02-09T18:08:19
+---
+
+Things that make my brain hurt. I can't actually believe this works.
+
+I have my MacBook Pro running on my internal network, which is NATed being my router, which also NATs my internet connection (That's another story). I tried the OSX Cisco VPN client, and it was less than stable so I deleted it.
+
+Now, I have Parallels running XP. Within that XP install, I installed the Windows Cisco VPN client...and it actually works. Even more fun, while XP is VPNed into work, my OSX network is unaffected and still local. :-)
+
+

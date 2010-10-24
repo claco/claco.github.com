@@ -1,0 +1,28 @@
+---
+layout: post
+title: "The Router Flu"
+category: Hardware
+published:
+  epoch: 1035324859
+  utc: 2002-10-22T22:14:19
+---
+
+<p>
+Again, I must apologize to anyone trying to actually read this site over the last week. The router I received with my <acronym title="Digital Subscriber Line">DSL</acronym> connection (Efficient  5861) sucks monkey butt. It now sufferes from 3 problems.
+</p>
+<h4>Issue #1. No telnet after reboot.</h4>
+<p>Every time I reboot the router, I can't telnet to it. The reason? The router keeps readding rules to deny telnet form the <acronym title="Local Area Network">LAN</acronym>.  Even after manually removing these rules and saveing the config. They are added again at the next reboot.
+</p>
+<h4>Issue #2. Ignoring filter rules.</h4>
+<p>
+In the kernel version SBC upgrade this router to, if will randomly ignore filtering rules. Once it ignores certain rules in the rule set, traffic then gets denies by the last rule (deny all). The effect is, <acronym title="Domain Name Service / World Wide Web">DNS/WWW</acronym> stops working for people trying to connect.
+</p>
+<h4>Issue #3. Missing filter rules.</h4>
+<p>
+I upgraded the kernel in the router. Now, instead of ignoring rules, is removes them altogether, causing the same problem for people trying to get to this site.
+</p>
+<p>
+I'm working on getting a replacement this week. Bummer.
+</p>
+
+

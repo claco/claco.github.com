@@ -1,0 +1,57 @@
+---
+layout: post
+title: "MCI Billing On Crack"
+category: WTF
+published:
+  epoch: 1063331290
+  utc: 2003-09-12T01:48:10
+---
+
+<p>
+Well, leave it to MCI to be completely clueless about all things billing. Just a quick synopsis for those just tuning in.
+</p>
+<ul>
+<li>~2001 - Enroll in 24/7 Unlimitied usage ISDN package</li>
+<li>April 2002 - WorldSham/MCI starts billling us for hourly usage</li>
+<li>Call in get it corrected</li>
+<li>May 2002 - more hourly usage charges on an unlimited account</li>
+<li>Call in get it fixed</li>
+<li>This pattern continues until we cancel account in November 2002</li>
+<li>Spend December 2002 until July 2003 still trying to get account credited for misbilled hours</li>
+</ul>
+<p>
+The finally in July we received the following email and also a snail mail invoice to the same effect:
+</p>
+
+<blockquote>
+<p>
+Account xxxxxxxxxx has already been credited in the amount of $2,976.39.
+Account xxxxxxxxxx ISDN connect hours billed incorrectly from
+05/02/02-06/02/02.
+Service was to receive unlimited usage, this adjustment will be reflected on
+the
+07/01/03 invoice.
+</p>
+<p>
+Thank you, for your patience.
+</p>
+<p>
+Kim Burgett<br />
+MCI Billing Analyst<br />
+Tel:  (703) 886-5857<br />
+VNET Number: 806-5857<br />
+Fax: (703) 886-0525<br />
+Toll Free: 1 (877) 709-8901<br />
+Email: kim.burgett@mci.com<br />
+or, ashburn-billsupport@wcom.com
+</p>
+</blockquote>
+
+<p>
+Great! Dead. Done. Problem over. Account closed. Closure. Balance credited.
+</p>
+<p>
+So guess what we got in the mail today? <strong>A fucking letter from Harvard Collections Services for $2993.17 on behald of MCI.</strong>. No wonder these people are getting sued twelve ways from Sunday. Unfucking believable.
+</p>
+
+

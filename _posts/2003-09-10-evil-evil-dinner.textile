@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Evil Evil Dinner"
+category: OffTopic
+published:
+  epoch: 1063249758
+  utc: 2003-09-11T03:09:18
+---
+
+<p>
+90% lean hamburgers, grilled in A1 Bold and Spicy plus Cajun Spice then baked in sauerkraut. Very good. Very evil. Mr. Tummy hurts. :-)
+</p>
+
+

@@ -1,0 +1,22 @@
+---
+layout: post
+title: "NRCC Telemarketing Whois Data"
+category: Humor
+published:
+  epoch: 1114625060
+  utc: 2005-04-27T18:04:20
+---
+
+The <a href="http://www.nrcc.org/">National Republican Congressional Committee</a> is apparently telemarketing whois data for donations and committee victims.
+
+Twice now I've gotten a phone call from the NRCC at work about being an honerary chairman at an event with my Congresscritter, and also getting a signed gavel and hat with  donation of $300 or more.
+
+The recorded messages are the usual crap about me being a small business leader and attending the event , taxes, hardship, replublicans fixing it, yada yada. They were started and followed by dialog from scripted humans.
+
+The first time I hung up. This time when they called, I let it all play out and then when the human came on I basically asked "Why in the hell are you calling me to be a chairperson?". I'm just a joe in a cube with a computer.
+
+Then she said that she had me listed as "business xyz". Yeah, the only place I'm connected with that business is via whois and a domain name registration where I'm the admin/tech contact. Asshats.
+
+If it weren't for the fact that it could give business xyz a bad name and I loath politics, I should've let it play out all the way and totally become the heckler at the event. :-)
+
+

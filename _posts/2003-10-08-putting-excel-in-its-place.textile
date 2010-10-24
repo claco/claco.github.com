@@ -1,0 +1,74 @@
+---
+layout: post
+title: "Putting Excel In Its Place"
+category: MicroShaft
+published:
+  epoch: 1065656389
+  utc: 2003-10-08T23:39:49
+---
+
+<p>
+Also known as "Dear Excel, stop fucking changing my data!".
+</p>
+<p>
+As you may or may not know, if you need to create an Excel spreadsheet "on the fly" from a web server and the server doesn't have Excel installed, and the server doesn't have any Excel generating components installed, you can simply create HTML tables and Excel will parse and load that as an Excel file. Happy days.
+</p>
+<p>
+Now for the bad news. Excel, just like the rest of Orifice likes to think for you and fuck with what you actually type into the document. Prime example: fractions.
+</p>
+<p>
+If you send the following document  to Excel:
+</p>
+<pre>
+<code>
+&lt;html&gt;
+	&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;
+	&lt;body&gt;
+		&lt;table&gt;
+			&lt;tr&gt;
+				&lt;td&gt;1 1/16&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+<p>
+Excel will gladly open the document with one column with a value of <samp>1 1/16</samp> in the first cell.
+But if you highlight that cell, the data entry box at the top shows <samp>1.0625</samp>. <strong>!@#$%</strong>.
+</p>
+<p>
+To make matters worse, if you save the file, the value of <strong>1.06525</strong> is saved. If you try and import the file into a 
+database using an Excel drivers (OLEDB/SQL Server), <samp>1.0625</samp> is the value imported, not <samp>1 1/16</samp>.
+</p>
+<p>
+Needless to say this is frustrating. I just want Excel to leave my shit alone. Do what I tell you damnit!
+</p>
+<p>
+Luckily after some tinkering, and saving Excel files as HTML documents, I found the answer/hack/solution.
+One single CSS style declaration and the addition of a <samp>&lt;col&gt;</samp> tags can tell Excel to treate every fields as a
+Text field rather than trying to "guess" what I want for me.
+</p>
+<pre>
+<code>
+&lt;html&gt;
+	&lt;head&gt;&lt;title&gt;&lt;/title&gt;&lt;/head&gt;
+	&lt;style&gt;
+		.leaveitalone {mso-number-format:"\@";}
+	&lt;/style&gt;
+	&lt;body&gt;
+		&lt;table&gt;
+			&lt;col class="leaveitalone"&gt;
+			&lt;tr&gt;
+				&lt;td class="leaveitalone"&gt;1 1/16&lt;/td&gt;
+			&lt;/tr&gt;
+		&lt;/table&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+
+<p>
+Open the updated version in Excel, and <samp>Right Click</samp> -> <samp>Format Cells</samp> on the first cell and whola, the format is <samp>Text</samp> instead of  <strong>General</strong>. Now Excel will finally leave your data alone.
+</p>
+

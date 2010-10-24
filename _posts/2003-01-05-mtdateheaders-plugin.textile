@@ -1,0 +1,21 @@
+---
+layout: post
+title: "MTDateHeaders Plugin"
+category: Perl
+published:
+  epoch: 1041826589
+  utc: 2003-01-06T04:16:29
+---
+
+<p>
+I completely forgot about this plugin. I created it when I was making this site. It's so odd to stumble <a href="http://love-productions.com/mt/docs/plugins/entry/mtdateheaders.php" title="MTDateHeaders plugin documentation">across it's documentation on another website</a>, but I guess it shows how important having documentation into software that small really is.
+</p>
+<p>
+I stumbled  across the above links in <a href="http://unixgal.techieswithcats.com/archives/001874.php" title="Post about MT plugin usage and links">a post</a> on  <a href="http://unixgal.techieswithcats.com/">Unix Gal's site</a>. I'm also part of the <a href="http://www.techieswithcats.com/" title="Techies with cats website">techies with cats</a> club. Two purebred Siamese sisters and two fat black furballs.
+</p>
+<p>
+I guess I need to get off my duff tomorrow night and move it into the <a href="/downloads/">downloads directory</a> and do any necessary code cleanup.
+At the very least, I need to get it into <acronym title="Concurrent Versioning System">CVS</acronym>.
+</p>
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Multiple IE Versions On One PC"
+category: WWW
+published:
+  epoch: 1068177898
+  utc: 2003-11-07T04:04:58
+---
+
+<p>
+Holy shit batman!  Someone figured out how to run multiple versions of IE side-by-side on the same machine without seperate partitions or virtual machine software! <a href="http://www.insert-title.com/web_design/?page=articles/dev/multi_IE">Check it out!</a>
+</p>
+<p>
+Now, for the big question. Why in the fuck didn't M$ tell us how to do this sooner? Pricks. And it runs locally, sans install? "Integrated into the OS" my ass.
+</p>
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Del.icio.us For Tags Fixed"
+category: WWW
+published:
+  epoch: 1138398061
+  utc: 2006-01-27T21:41:01
+---
+
+It looks like the Del.icio.us <samp>for:<samp> tags and the <samp>/for</samp> stuff is working again. People tag things for me and they show up right away.
+
+Now my only complaint is that I can't delete something from my For page. Since those links are really copies of other peoples real links, they hang around until the other user deletes them. What a pain to have all that crap hanging around. Oh well.
+
+

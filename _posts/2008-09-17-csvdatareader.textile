@@ -1,0 +1,21 @@
+---
+layout: post
+title: "CsvDataReader"
+category: Software
+tags:
+  - 2008
+  - csv
+  - idatareader
+  - vb.net
+published:
+  epoch: 1221624682
+  utc: 2008-09-17T04:11:22
+---
+
+Yes, there a few of these out there. Some free. Some not free. Some with IDataReader. Some without IDataReader. Some support IsDbNull. Some insist on always using Empty. Some are NotInheritable. Some are.
+
+I wanted a mix of those features and I also wanted to define the columns manually at times using the existing DataColumn bits from the Data namespace.
+
+Thus, the gazillionth <a href="http://github.com/claco/csvdatareader/wikis">CsvDataReader</a> was born. Use it. Steal it. Send patches.
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "C# By Hand"
+category: Software
+published:
+  epoch: 1080263314
+  utc: 2004-03-26T01:08:34
+---
+
+<p>
+Call me a sick little monkey, but I enjoy doing C# via text editor and command line compiling way more than fighthing an IDE. Even without Intellisense help, I find myself happy that I'm actually learning to code C# rather than haviing an IDE to do it for me.
+</p>
+<p>
+As for the project itself. A long time ago I packet sniffed a windows only client for the Minisoft Middleman client/server software for HP MPE and wrote a set of perl modules to do the client portion on Unix. Now that I'm looking into ASP.NET and possibly moving away from Minisoft towards just pure sockets, I'm gonna try writing a .NET library with interfaces so I can switch to a new protocl/sockets only client later without changing the consuming ASP.NET code.
+</p>
+
+

@@ -1,0 +1,86 @@
+---
+layout: post
+title: "Pin The Tail On The CSS Issue"
+category: WWW
+published:
+  epoch: 1043884261
+  utc: 2003-01-29T23:51:01
+---
+
+<p>
+I've done some more tinkering with Opera 7 trying to pinpoint the CSS problems with styleshets vs. alternate stylesheets.
+Here's a <a href="http://today.icantfocus.com/downloads/tests/opera7/index.htm" title="CSS selection in Opera 7 test pages">test page</a> for the curious. Here's what I found.
+</p>
+
+<pre>
+<code>
+&lt;link
+
+     rel="Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+&lt;link
+
+     rel="Alternate Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+     title="Left Navigation"
+/&gt;
+&lt;link
+     rel="Alternate Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-right.css"
+     type="text/css"
+     media="screen"
+     title="Right Navigation"
+/&gt;
+</code>
+</pre>
+<p>
+ In this version, style is applied in Opera 7 when the page is loaded. However, only the Right Navigation alternate stylesheet is appears in the user styles menu. Right Navigation alternate style works when selected.
+</p>
+<p>
+In Mozilla, style renders fine when the page loads. Both Right and Left Navigation alternate styles are in the styles menu, and both work when selected. 
+</p>
+
+
+<pre>
+<code>
+&lt;link
+
+     rel="Alternate Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+     title="Left Navigation"
+/&gt;
+&lt;link
+     rel="Alternate Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-right.css"
+     type="text/css"
+     media="screen"
+     title="Right Navigation"
+/&gt;
+&lt;link
+
+     rel="Stylesheet"
+     href="/downloads/tests/opera7/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+</code>
+</pre>
+
+<p>
+ In this version, style is NOT applied in Opera 7. Both Left and Right Navigation alternate styles appear in the style menu. Left Navigation works when selected. Right Navigation only loads the referenced stylesheet in href, but not the stylesheet inside of it using @import.
+</p>
+<p>
+In Mozilla, style is applied when the page loads. Both Right and Left Navigation alternates show up in the style menu, but neither Left nor Right alternate styles work when selected. 
+</p>
+<p>
+All in all, damn strange in my book. Why would you need to declare the same stylesheet as the main styleshet AND as an alternate? Well, in the case of this site, The 'default' style needs to be an alternate choice at all times since users can specify their own stylesheets. If the choose the site default as <em>their</em> default, the will both point ot the same file. Of course, there is a real fix: just make a default preferred stylesheet that simply loads the *left stylesheet, which will be different from the *left alternate stylesheet. I guess I was just expecting Mozilla/Opera to Do What I Mean. Load what I select and don't put to much thought into it.
+</p>
+
+

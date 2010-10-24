@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Wicked Guitar Clip"
+category: Music
+published:
+  epoch: 1070667458
+  utc: 2003-12-05T23:37:38
+---
+
+<p>
+Wow. This is <a href="http://albinoblacksheep.com/video/guitar.php">awesome</a>. Way to think outside of the box. Very nice.
+</p>
+<p>
+Via <a href="http://keithdevens.com/weblog/archive/2003/Dec/04/crazy-guitar">Keith Devans.com</a>.
+</p>
+
+

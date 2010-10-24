@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Iomega Micro Mini Thumb Drive"
+category: Hardware
+published:
+  epoch: 1079321629
+  utc: 2004-03-15T03:33:49
+---
+
+<p>
+I just ordered an Iomega USB Micro Mini 128MB Thumb Drive. The main goal: A portable copy of Firefox and Thunderbird with all my client SSL certs so I can get to my email and admin sites anywhere, even on other computers. This should be an interesting round of tinkering.
+</p>
+<p class="image">
+<img src="/blog/images/hardware/micromini.jpg" alt="Iomega Micro Mini Thumb Drive" />
+</p>
+<p>
+And yes, it is literally the size of your thumb.
+</p>
+
+

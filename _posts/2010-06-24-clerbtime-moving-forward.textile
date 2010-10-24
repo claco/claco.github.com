@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: Clerbtime & Moving Forward
+wordpress_id: 254
+wordpress_url: http://chrislaco.com/?p=254
+published:
+  epoch: 1277433540
+  utc: 2010-06-25T02:39:00
+---
+Had another great time at the Clerb "south" Meetup tonight in Akron hosted by Blue Frog Gaming. Always nice to see more locals at every new meetup. Beers and such afterwords doesn't hurt either.
+
+Going to these meetups are always humbling. I always leave feeling like I know nothing, but they also provide good motivation to learn something new. It also highlights how much people can do in a day and how much I'm not getting things done. I need to fix that somehow. Too much to learn and do. Too much opportunity being missed.
+
+Things I would like to accomplish in the next 180 days (in no certain order):
+<ul>
+	<li>Rework JanKenPon</li>
+	<li>Make JanKenPon a Facebook App</li>
+	<li>Finish HelpNear.Me Web/iPhone version</li>
+	<li>Get an iPad :-)</li>
+	<li>Make an iPhone/iPad game (HTML5?): Dock Crane Madness</li>
+	<li>Rebrand my blog/logo/cards</li>
+</ul>
+<span style="font-size: medium;">Nothing there is terribly difficult. I just need to sack up and do it. For rizzle.</span>

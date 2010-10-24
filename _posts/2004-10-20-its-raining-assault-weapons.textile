@@ -1,0 +1,34 @@
+---
+layout: post
+title: "It's Raining Assault Weapons!"
+category: WTF
+published:
+  epoch: 1098327199
+  utc: 2004-10-21T02:53:19
+---
+
+I'm not a gun owner and probably never will be, but I'm all for people having them. While talking election choices with a coworker, he educated me on how the asault weapons ban was useless and how all the hype about W letting it expire is bullshit.
+
+It goes something like this. When passing the law to make anti-gun people happy, the definition of assault weapons was changed [and I'm paraphrasing here] to be
+
+<blockquote>
+
+"...any firearm with <strong>more than 2</strong> of the following characteristics: threaded barrel for silencer/flash surpressor, bayonette knob for mounting a bayonette, more than 5/15 round clip semi or full auto for hand/rifle, and a hand grip stock instead of the rifle like shoulder stock"; or an AK-47 (Avtomat Kalashnikova model 1947)..."
+
+</blockquote>
+
+So what happens when the law went into effect? Well, the company changed their name and the gun name to WASR-10.
+
+<pre><code>AK-47 != WASR-10</code></pre>
+
+Not only that, but the company removed the threading since silencers and flash supressors have been banned for years and the bayonette mount.
+
+So, that leaves us with a WASR-10 what has (1) the hand grip, and (2) the automtic with 15+ clip. That's 2 characteristic of the "assault weapon" definition, but not <strong>more than 2</strong> characteristics.
+
+So what does this really mean? The assault weapons ban that just expired meant jack shit. You can, and always could run down to your local bullet shop and purchase a WASR-10. Even more so, any stistics about less violence or deaths due to ban on assault weapons is a complete crock of shit.
+
+In this case, W did the right thing. Let the worthless ban expire so they can try and push through a ban with a better definition of "assault weapon". Any election FUD about the ban expiring is just that FUD.
+
+Just goes to show you that people making those kinds of law don't know what the fuck they're doing.
+
+

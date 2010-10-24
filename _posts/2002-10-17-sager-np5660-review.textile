@@ -1,0 +1,247 @@
+---
+layout: post
+title: "Sager NP5660 Review"
+category: Hardware
+published:
+  epoch: 1034836675
+  utc: 2002-10-17T06:37:55
+---
+
+<p>
+	Well, it finally arrived! My brand new Sager NP5660, fully loaded.
+	As promised, this is the start of my review of this beast.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/np5660.jpg" alt="Photo of Sager NP5660 laptop" width="246" height="227" />
+</p>
+<p>
+It was getting a little late by the time I finished this, so be gentle. :-)
+</p>
+
+<ins>
+<p>
+<strong>
+Well, my <a href="/blog/archives/entries/000145/">NP5600 has suffered it's first casualty</a>. Nothing serious, just the AC adapter.
+</strong>
+</p>
+</ins>
+<h3>Sections</h3>
+
+<ol>
+<li><a href="#background">Background</a></li>
+<li><a href="#specs">Specs</a></li>
+<li><a href="#ordering">Ordering</a></li>
+<li><a href="#shipping">Shipping</a></li>
+<li><a href="#case">Case Design/Construction</a></li>
+<li><a href="#setup">Setup/Install</a></li>
+<li><a href="#video">Display/Video</a></li>
+<li><a href="#performance">Performance</a></li>
+<li><a href="#battery">Battery Life</a></li>
+<li><a href="#heat">Heat/Noise</a></li>
+<li><a href="#conclusions">Conclusions</a></li>
+</ol>
+
+<h4><a id="background">Background</a></h4>
+<p>
+As I've <a href="/blog/archives/entries/000007/" title="Post about ordering the Sager 5660">mentioned before</a>, my Compaq Presario 18XL380 died about 2 months ago.
+The power jack decided that it had enough, and broke away from the motherboard, leaving me with a pile of spare parts shaped like a laptop.
+Since the warranty had expired in December 2001, there was no way I was going to pay Compaq $600+ for another motherboard.
+So I set about the task of researching what was out there and what features I could live with for the right price.
+</p>
+<p>
+Compaq was out of the question again. I didn't much like IBM prices, Dell had a bad taste in my mouth after supporting them in college, but I did
+like the HP I bought the woman for school. IT had a durable case design and we've had no problems with it so far. However, after the HPaq-ComP merger,
+I wasn't having any real confidence in the current status of either brands laptop.
+</p>
+<p>
+Eventually I stumbled across the AlienWare <a href="http://www.alienware.com/main/system_pages/area51-m.asp" title="ALienware Area 51M product detail page">Area51m</a>, and started to drool at the options.
+Some more usenet grepping, and I found out about Sager,
+<a href="http://www.sagernotebooks.com/">sagernotebooks.com</a>, and eventually the <a href="http://www.powernotebooks.com/5660specs.php3" title="Sager NP5660 Specs">Sager NP5660</a>
+at <a href="http://www.powernotebooks.com/">powernotebooks.com</a>. I was a little hesitant to order from PowerNotebooks because of their "Cash Discount" stuff on the website,
+but after even more reviews and all the info at <a href="http://www.resellerratings.com/" title="Reseller Ratings Website">Reseller Ratings</a>, I felt the most comfortable ordering from PowerNotebooks.
+I could have save a few bucks here and there with Discount Laptops, but better safe than sorry.
+</p>
+
+
+
+<h4><a id="specs">Specs</a></h4>
+<p>
+I ordered the Sager NP5660 Supra with the following options:
+</p>
+
+<ul>
+<li>P4 2.8GHz CPU</li>
+<li>40GB Ultra ATA/100 Hard Drive at 5,400 RPM</li>
+<li>1024MB PC2100 DDR Memory</li>
+<li>UXGA (1600 x 1200) TFT Active Matrix LCD Display w/ ATI Radeon Mobility 9000 w/ 64MB</li>
+<li>Combo 8X DVD/16x10x24 CD-RW</li>
+<li>Extra 24X CD ROM Module</li>
+<li>3 Additional Years Extended Warranty</li>
+<li>UPS 2nd Day Shipping</li>
+</ul>
+
+<p>
+	Considering my last (still fixable) laptop croaked out of warranty, and the price of this new one, I would be insane to have not gotten the additional warranty.
+</p>
+
+
+
+<h4><a id="ordering">Ordering</a></h4>
+<p>
+Ordering was painless. I ordered on Wednesday, October 8th, 2002. I'm used to ordering things online, so fessing up that kind of bling over the net doesn't really phase me.
+I opted to used my credit card instead of a money order because a) I'm lazy, and b) I wanted the security of a card purchase in case I
+had to stop payment, of make and claims against the purchase w/ the credit card company. Just a little more leverage if needed over a money order.
+</p>
+<p>
+Within a few hours, someone from PowerNotebooks called to make sure it was actually me placing the order. I love when companies do that. That way they ward of fraud
+and I don't end up with a bill for 3 big ones with no idea who placed the order and where it went. By the end of the day, the payment stuff was completed and taken care of
+and I had email receipts in hand. I fired off an email inquiring about the ship date of the computer. I was told that the laptop would ship on Monday, October 14th, 2002, and that
+I should have it Wednesday, October 16th, 2002. Not bad. Not bad at all.
+</p>
+<p>
+On Monday, I sent another email just to make sure it was shipping. Both me and the woman work and she goes to school full time, so there rarely anyone here to accept packages.
+The were a chance that if I knew what day it would be here, I'd just scam a vacation day and play with the new toy. Donald returned my email promptly and told me that I was misinformed
+and that the laptop would ship either Tuesday or Wednesday.
+Apparently they were just a tad behind due to the dock workers strike on the west coast. No big deal really. These things happen. It actually turned out to be good as the 5400RPM hard drives were going to
+become available Tuesday, so I upgraded to the faster drive and sprung the extra $15 for the Next Day Air Saver shipping. :-)
+</p>
+<p>
+Let me just say that I'm really impressed with PowerNotebooks at this point. Try calling Dell or IBM and changing your order the day of or the day before it ships.
+I bet it doesn't go so well, or as easily as it did with PowerNotebooks. Donald was  very helpfull and understanding, and kept me informed whenever possible.
+</p>
+
+
+<h4><a id="shipping">Shipping</a></h4>
+<p>
+On Tueday, I got an email from Donald letting me know that the laptop had shipping and that I would probably get it long before they got a tracking number for it.
+Next Day Air Saver has guaranteed deliver by 3-4pm for commercial, and 'by the end of the day'  for residential. I had a meeting at work in the morning, but came home around 11:30am.
+i figured that UPS wouldn't even get there until after noon. Sure enough, they were too efficient that day, and tried delivery at 9:15am. DOH! So I called UPS and scheduled to have it held at the local hub
+for me to pickup. Unfortunately, the earliest I could pick up the laptop was going to be Thursday!!! Nooooo!!!!!!! :-) I went back to work. Damn. This has always been on of my complaints
+about UPS. WHen I get packages via FedEx, I can pick the packages up the same night as the first delivery attempt.
+</p>
+<p>
+When I got back to work, I decided to send nastygram to the customer service department of UPS about having to wait another day to pick up stuff at the local hub. I didn't really
+expect a reply from them.
+I've had very poor service and bad luck with UPS in the past. I've seen at least 3 servers with forklift holes in them upon delivery, and other packages
+completely smashed and put in different packaging from what they left the manufacturers warehouse in. So of course, I've learn to expect the worst from UPS.Much to my surpruse, I received a reply from them in about an hour.
+They apologized for the inconvenience and said that they've started a new On Hold Same Day Pickup service. Woohoo! Game on! I left my phone numbers with them, and they actually called me around
+3:30pm telling me I could pick it up that night when the truck returned from it's round. Sweet! By 6:30pm, this little scream machine was in my awaiting paws.
+</p>
+<p>
+Much to my surprise, the box was in mint condition. Expecting to receive a squished package, it was still in fact a square item! Bonus.
+</p>
+<p class="image">
+	<a href="/blog/images/np5660/unopened_large.png"><img src="/blog/images/np5660/unopened_small.png" width="100" height="100" alt="Photo of Unopened Package" /></a>
+	<br /><span class="caption">Click for larger image</span>
+</p>
+<p>
+I noticed a warning type label on the top about the condition of the package when shipped, and that damage were the responsibility of the carrier.
+I wish more shipper would put this on the packages.
+</p>
+<p class="image">
+	<a href="/blog/images/np5660/notice_large.png"><img src="/blog/images/np5660/notice_small.png" width="100" height="100" alt="Photo of Package Notice" /></a>
+	<br /><span class="caption">Click for larger image</span>
+</p>
+<p>
+Once I cracked open the boxed, I found that they double boxed the shipment. ANother nice touch.
+</p>
+<p class="image">
+	<a href="/blog/images/np5660/doublebox_large.png"><img src="/blog/images/np5660/doublebox_small.png" width="100" height="100" alt="Photo of Double Boxed Package" /></a>
+	<br /><span class="caption">Click for larger image</span>
+</p>
+<p>
+I like how the contents were packaged inside. Box of accessories on one side, and the carrying case on the other. The more protection the better.
+</p>
+<p class="image">
+	<a href="/blog/images/np5660/theprize_large.png"><img src="/blog/images/np5660/theprize_small.png" width="100" height="100" alt="Photo of The Prize Inside" /></a>
+	<br /><span class="caption">Click for larger image</span>
+</p>
+<p>
+And just for completeness, the box o stuff; power brick, manual (Great manual!), Drivers disc, extra CD-ROM module, etc.
+</p>
+<p class="image">
+	<a href="/blog/images/np5660/contents_large.png"><img src="/blog/images/np5660/contents_small.png" width="100" height="100" alt="Photo of Contents" /></a>
+	<br /><span class="caption">Click for larger image</span>
+</p>
+<p>
+Woohoo! We passed the UPS test. Onward.
+</p>
+
+
+
+<h4><a id="case">Case Design / Construction</a></h4>
+<p>
+On of the things I liked about her HP NP5440 notebook was that it had a beefy case design with nice sturdy material.
+My Compaq was made of jello by comparison. This NP5660 has a nice sturdy case. The lid has just enough resistance and the hinge assembly seems to be nice
+and rugged. Despite its 9.5 pound rating, I don't really find this laptop terribly heavy at all.
+</p>
+
+<h4><a id="setup">Setup / Installation</a></h4>
+<p>
+I had purchased a full copy of Windows XP Pro for my last laptop. Since it is now dead, I ordered the new Sager sans OS. I popped in the install CD and rebooted.
+I went into the BIOS  before installation just for giggles. This machine has a full BIOS by all appearances, unlike some of those other laptops where you can add/change a BIOS password and change the clock and that's all.
+After I installed XP and rebooted, the video was bumped up to 1600x1200 32bit color, although the XP driver was sluggish at best.
+I popped in the drivers CD and installed all the drivers without a hitch. The user manual covers the installation of all the drivers for each OS. The manual refers to 98SE, ME, 200o, and XP, so I'll assume all those
+other OSs are supported on this laptop. <acronym title="Your Mileage May Vary">YMMV</acronym>. The only hitch I had was with the USB 2.0 driver. If you double clicked the Setup.exe file, it ran but did nothing. IF you tried updating the driver via the device manager,
+the driver installed and we were off to the races. Another reboot. Installed XP Service Pack 1 (thank god for DSL and 1.5 down speads) and all the latest hotfixes and security patches. One last reboot. No errors. No problems. All devices found, loaded, and operating.
+</p>
+
+
+
+<h4><a id="video">Display / Video</a></h4>
+<p>
+Initially, I set the display to 1600x1200 32bit. Very nice, although it will take some getting used to. I turned on ClearType and bumped the resolution down to a non-native size.
+I tried both 1024x768 and 1200x1024. Under both resolutions, you could tell the screen text and such was 'different', but I wouldn't label it blurry and bothersome. All in all, I'm very impressed and happy with
+the choice of UXGA. I actually think it looks a little better than the Sony laptop I tinkered with the same LCD specs.
+</p>
+<p>
+Since I will be playing Jedi Knight II: Jedi Outcast, Unreal Tournament*, and Quake II on this thing, it was time to install 3DMark 2001. I installed 3dMark2001 Build 330. For the
+tests, I left all driver settings and 3DMArk settings as is with the exception of changing the resolutions.
+</p>
+
+<ul>
+<li>First run at 1024x768: 7100</li>
+<li>Second run at 1600x1200: 3859</li>
+<li>Third run at 1280x1024: 5148</li>
+<li>Fourth run at 800x600: 8753</li>
+</ul>
+
+<p>
+	All in all, this is a kick ass gaming machine for a laptop!
+</p>
+
+
+
+<h4><a id="performance">Performance</a></h4>
+<p>
+	Nothing to in depth here. A few SisSandra tests for the curious...
+</p>
+
+<ul>
+<li><a href="/blog/images/np5660/sandra_cpu_math.png">CPU Math Benchmark</a></li>
+<li><a href="/blog/images/np5660/sandra_cpu_mmedia.png">CPU MultiMedia Benchmark</a></li>
+<li><a href="/blog/images/np5660/sandra_cpu_memband.png">MEmory Bandwidth Benchmark</a></li>
+</ul>
+
+
+<h4><a id="battery">Battery Life</a></h4>
+<p>
+	My first run at testing the battery life wasn't any surprise. It took just over 1 hour and 30 minutes to go from 100% charge to 3% charge, at which time
+	the lappy started beeping and went into standyby mode.
+</p>
+
+
+<h4><a id="heat">Heat / Noise</a></h4>
+<p>
+The only noticeable heat comes out of the vents on the far left side of the laptop.
+Not much heat on the top or on the bottom of the machine. The noise isn't nearly as loud as it could be. Slightly louder than a
+regular laptop, but certainly nothing close to the noise coming out of a desktop box.
+</p>
+
+
+<h4><a id="conclusions">Conclusions</a></h4>
+<p>
+Overall I think this was a great purchase compared to what else is out there. Only time will tell when it comes to the durability of the machine.
+My only gripe is that the hard drive clicks slightly more than my other laptops have in the past, but I'm sure I'll get used to it.
+</p>
+

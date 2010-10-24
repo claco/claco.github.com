@@ -1,0 +1,17 @@
+---
+layout: post
+title: "RSS As A Spam Trigger?"
+category: WTF
+published:
+  epoch: 1055209995
+  utc: 2003-06-10T01:53:15
+---
+
+<p>
+This may be nothing, but it may be something. I've noticed a strange pattern I think. Lately, when I post a new item to my blog, I get a new spam in my Hotmail inbox. I wonder if there are some wiseacre spammers out there scanning RSS feeds and sending email when the post is probably online. I know I'm more likely to check new emails when I've just posted something.
+</p>
+<p>
+Of course, if no one is doing that, and it's just chance, then damn me for even thinking of the idea for them.
+</p>
+
+

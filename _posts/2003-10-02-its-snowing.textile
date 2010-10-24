@@ -1,0 +1,14 @@
+---
+layout: post
+title: "It's Snowing"
+category: WTF
+published:
+  epoch: 1065097969
+  utc: 2003-10-02T12:32:49
+---
+
+<p>
+It's snowing. Right now. 8:33AM, <strong>October 2, 2003</strong>! So much for Fall.
+</p>
+
+

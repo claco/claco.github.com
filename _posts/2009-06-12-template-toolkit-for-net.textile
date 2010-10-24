@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Template Toolkit for .NET
+wordpress_id: 231
+wordpress_url: http://chrislaco.com/?p=231
+published:
+  epoch: 1244844660
+  utc: 2009-06-12T22:11:00
+---
+A while back I got the urge the waste time on yet another project. This time, it's a version of  <a href="http://template-toolkit.org/">Template Toolkit</a> for .NET. As usual, you can find the project on <a href="http://github.com/claco/tt.net/">GitHub</a>.
+
+Not knowing anything about what it takes to convert a template language to .NET I started from ground up learning how to use ANTLR to create a lexer/parser automatically from a grammar definition. As if that wasn't enough, my parser output is an Abstract Syntax Tree, which I then use another grammar to template it into C# code using StringTemplate templates, which ANTLR supports natively.
+
+It's slow going, but I'm learning a lot along the way. At some point I'm going to output VB.NET and it still needs a lot of work for compilation, dll caching and such. The code is in a pre beta state, but it does support basic GET/SET/DEFAULT/IF statements and I'm slowly adding more as I get more comfortable with ANTLR.

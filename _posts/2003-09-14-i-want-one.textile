@@ -1,0 +1,18 @@
+---
+layout: post
+title: "I Want One"
+category: Hardware
+published:
+  epoch: 1063588538
+  utc: 2003-09-15T01:15:38
+---
+
+<p>
+OK, you caught me. <a href="http://www.apple.com/powermac/">I want one</a>.
+Unix underneath. Refined GUI on top. Sure, it looks like a huge grey shoebox. But it's Unix. :-)
+</p>
+<p class="image">
+<img src="/blog/images/hardware/pmg5.jpg" alt="" />
+</p>
+
+

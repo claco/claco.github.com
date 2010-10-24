@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Joel On Unicode"
+category: WWW
+published:
+  epoch: 1065904450
+  utc: 2003-10-11T20:34:10
+---
+
+<p>
+Joel Spolsky has <a href="http://www.joelonsoftware.com/articles/Unicode.html">this great overview of Unicode</a> for the uninitiated. Nice resource! Give it a read.
+</p>
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "I Told You So"
+category: Humor
+published:
+  epoch: 1060037180
+  utc: 2003-08-04T22:46:20
+---
+
+<p>I caught this link over at <a href="http://j-walk.com/blog/archives/030804.htm#04-09">J-Walk</a>, and I've <a href="/blog/archives/entries/000028/">mentioned it before</a>.
+I've been saying it all along, but no one at work will believe me. <a href="http://uberkinder.5u.com/paul/">That's not the real Paul McCartney</a>. :-)
+</p>
+
+

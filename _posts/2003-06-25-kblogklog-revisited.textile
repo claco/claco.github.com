@@ -1,0 +1,17 @@
+---
+layout: post
+title: "KBLog/Klog Revisited"
+category: OffTopic
+published:
+  epoch: 1056592022
+  utc: 2003-06-26T01:47:02
+---
+
+<p>
+I've been thinking about <a href="/blog/archives/entries/000208/">making that knowledge base blog</a> again, and it comes down to this. Do I create an entirely new blog, new config, new files, new templates, yada, yada, or do I just add new categories to this blog? Seperate and unteathered would be nice, but I'm not sure I want to deal with all the seperate files, mergin the searches, etc. What do you think?
+</p>
+<p>
+While I'm at it, I've been thinking about adding another RSS feed with full posts. Partial post feeds are starting to annoy me.
+</p>
+
+

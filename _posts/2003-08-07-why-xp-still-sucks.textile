@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Why XP Still Sucks"
+category: MicroShaft
+published:
+  epoch: 1060261107
+  utc: 2003-08-07T12:58:27
+---
+
+<p>
+While I think XP is a good improvement over Win2K and NT4, they all suffer from one (maybe two) really annoying 'features'.
+</p>
+<p>Whenever I have a mapped drive to a network share, or My Documents mapped to a network share, or network share history in the address toobar of IE....erm..I mean Windows Exploder, and the network or that network share becomes unavailable, the OS comes to a screeching halt.
+</p>
+<p>
+Pulling down the address bar in IE takes minutes to time out before showing me internet addresses. Using windows explorer to navigate other shares and folder takes a minute to time out. Basically, a 'modern'  'multi-tasking' OS delays everything under the sun just because a network share goes away for a few minutes. Damn annoying.
+</p>
+
+<p>
+Of course, the problem is magnified by the fact that windows eplorer is IE, and that fact that it is set to a single instance and thread. Sure, I can TweakUI it so each windows explorer instance is a new thread, but I shouldn't have to.
+</p>
+
+

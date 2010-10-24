@@ -1,0 +1,67 @@
+---
+layout: post
+title: "Copious Linkage"
+category: Static
+published:
+  epoch: 1073446572
+  utc: 2004-01-07T03:36:12
+---
+
+<h2>Copious Linkage</h2>
+
+At some point I'll try and categorize these. Until then, it's a free for all!
+
+<ul>
+	<li><a href="http://www.alistapart.com/" title="Visit the A List Apart website">A List Apart</a></li>
+	<li><a href="http://www.asusboards.com/" title="ABXZone">ABXZone</a></li>
+	<li><a href="http://www.antipixel.com/" title="Visit www.antipixel.com">Antipixel</a></li>
+	<li><a href="http://www.arstechnica.com/" title="Visit www.arstechnica.com">Ars Technica</a></li>
+	<li><a href="http://www.bigjim.org/" title="Bigjim Tongue Untied">Bigjim Tongue Untied</a></li>
+	<li><a href="http://www.bluecoat93.org/" title="Visit www.bluecoat93.org">Bluecoat93.org</a></li>
+	<li><a href="http://www.brewedfreshdaily.com/" title="Brewed Fresh Daily">Brewed Fresh Daily</a></li>
+	<li><a href="http://www.bsdtoday.com/" title="Visit www.bsdtoday.com">BSD Today</a></li>
+	<li><a href="http://www.news.com/" title="CNet News.com">CNet News.com</a></li>
+	<li><a href="http://www.diveintomark.org/" title="Visit diveintomark.org">Dive Into Mark</a></li>
+	<li><a href="http://doc.weblogs.com/" title="Visit doc.weblogs.com">Doc Searls Weblog</a></li>
+	<li><a href="http://www.extremeoverclocking.com/" title="Extreme Overclocking">Extreme Overclocking</a></li>
+	<li><a href="http://www.freebsddiary.org/" title="Visit www.freebsddiary.org">FreeBSD Diary</a></li>
+	<li><a href="http://www.gessaman.com/" title="Visit gessaman.com">Gessaman.com</a></li>
+	<li><a href="http://www.greygotee.com/" title="Grey Gotee">Grey Gotee</a></li>
+	<li><a href="http://jeremy.zawodny.com/blog/" title="Jeremy Zawodny's Blog">Jeremy Zawodny's Blog</a></li>
+	<li><a href="http://www.joelonsoftware.com/" title="Joel on Software">Joel on Software</a></li>
+	<li><a href="http://jogin.com/blog/" title="Visit jogin.com">Jogin.com</a></li>
+	<li><a href="http://www.keithdevens.com/weblog/" title="Keith Devens .com">Keith Devens .com</a></li>
+	<li><a href="http://www.alpha-geek.com/left/" title="Left Half">Left Half</a></li>
+	<li><a href="http://www.linuxtoday.com/" title="Visit www.linuxtoday.com">Linux Today</a></li>
+	<li><a href="http://www.meyerweb.com/" title="meyerweb.com">Meyerweb.com</a></li>
+	<li><a href="http://www.noeljackson.com/" title="Visit noeljackson.com">NoelJackson.com</a></li>
+	<li><a href="http://www.osnews.com/" title="Visit www.osnews.com">OS News</a></li>
+	<li><a href="http://www.perl.com/" title="Visit www.perl.com">Perl.com</a></li>
+	<li><a href="http://www.perlmonks.com/" title="Visit www.perlmonks.com">Perl Monks</a></li>
+	<li><a href="http://www.peterprovost.org/" title="Peter Provost's Geek Noise">Peter Provost's Geek Noise</a></li>
+	<li><a href="http://radio.weblogs.com/0001011/" title="Visit the scobleizer weblog">Scobleizer Weblog</a></li>
+	<li><a href="http://www.scottandrew.com/" title="Visit scottandrew.com">ScottAndrew.com</a></li>
+	<li><a href="http://www.scripting.com/" title="Visit www.scripting.com">Scripting News</a></li>
+	<li><a href="http://www.securityfocus.com/" title="Visit www.securityfocus.com">Security Focus</a></li>
+	<li><a href="http://simon.incutio.com/" title="Simon Wilson's Weblog">Simon Wilson's Weblog</a></li>
+	<li><a href="http://www.simplebits.com/" title="SimpleBits">SimpleBits</a></li>
+	<li><a href="http://www.slashdot.org/" title="Visit www.scripting.com">Slashdot</a></li>
+	<li><a href="http://www.slashnot.com/" title="Visit slashNot.com">SlashNOT</a></li>
+	<li><a href="http://www.splorp.com/" title="Slorp">Slorp</a></li>
+	<li><a href="http://blog.davidcarr.org/" title="Visit blog.davidcarr.org">Solitude In Motion</a></li>
+	<li><a href="http://www.stopdesign.com/log/" title="Visit www.stopdesign.com">StopDesign</a></li>
+	<li><a href="http://www.textism.com/" title="Visit textism.com">Textism</a></li>
+	<li><a href="http://www.fuzzyblog.com/" title="The FuzzyBlog">The FuzzyBlog</a></li>
+	<li><a href="http://j-walkblog.com/blog/" title="The J-Walk Weblog">The J-Walk Weblog</a></li>
+	<li><a href="http://www.thememoryhole.org/" title="The Memory Hole">The Memory Hole</a></li>
+	<li><a href="http://dotnetguy.techieswithcats.com/" title="The .NET Guy">The .NET Guy</a></li>
+	<li><a href="http://www.obscurestore.com/" title="The Obscure Store and Reading Room">The Obscure Store</a></li>
+	<li><a href="http://www.theserverside.com/">The ServerSide.com</a></li>
+	<li><a href="http://www.thinkgeek.com/" title="Visit www.thinkgeek.com">Think Geek</a></li>
+	<li><a href="http://www.tbray.org/ongoing/" title="Tim Bray - Ongoing">Tim Bray</a></li>
+	<li><a href="http://www.useperl.org/" title="Visit www.useperl.org">use Perl;</a></li>
+	<li><a href="http://www.wired.com/" title="Wired News">Wired News</a></li>
+	<li><a href="http://www.zeldman.com/" title="Visit www.zeldman.com">Zeldman</a></li>
+</ul>
+
+

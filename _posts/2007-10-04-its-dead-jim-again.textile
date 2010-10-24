@@ -1,0 +1,14 @@
+---
+layout: post
+title: "It's Dead Jim. Again."
+category: Hardware
+published:
+  epoch: 1191544228
+  utc: 2007-10-05T00:30:28
+---
+
+Well, mostly. I've always wanted a MacBook Pro, but the price is a serious guilt trip and my 5 year old lappy was still going string...until tonight. When I went to open the lid, the hinges basicly exploded along with the case plastics around them. It literally won't survive another lid close/open.
+
+It's a sign a tell ya. Without too much guilt, I ordered a reburbished 17" 1920x1200 7200rmp MBP from the Apple Store. It was $450 cheaper than a new one and has the same warranty. That price difference is just enough to pay for AppleCare, save $100 and feel just a little bit less guilty about the whole ordeal. :-)
+
+

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Not Dead Yet"
+category: OffTopic
+published:
+  epoch: 1157322671
+  utc: 2006-09-03T22:31:11
+---
+
+Yes, I'm still alive. Still working. Still coding <a href="http://handelframework.com/blog/">Handel</a>. Still waiting to get started on <a href="http://handelframework.com/blog/announcements/tpf_grant_proposal_approved_mango/">Mango</a>.
+
+And if that isn't bad enough, I managed to distract myself with a MovableType 3.32 upgrade. Damn those new Widgets! :-)
+
+Ok. Back to Handel. Maybe I can squeeze out another version today.
+
+

@@ -1,0 +1,55 @@
+---
+layout: post
+title: "AxKit 1.6.1 Released"
+category: Perl
+published:
+  epoch: 1044724751
+  utc: 2003-02-08T17:19:11
+---
+
+<p>
+I've been waiting for this bug fix release so I could finally get pipe characters to show up properly. Congrats and thanks to everyone who made this release happen.
+</p>
+<blockquote>
+<p>
+The AxKit development team are proud to announce the release of AxKit 
+1.6.1.
+</p>
+
+<p>
+   http://axkit.org/download/AxKit-1.6.1.tar.gz
+   or your local CPAN mirror (may take 24 hours to propogate)
+</p>
+
+<p>
+This is a bug fix and minor feature release. Highlights of this release 
+are:
+</p>
+
+<ul>
+<li>A new AxExternalEncoding option which allows you to have filesystems and other external resources that aren't stored as UTF-8.</li>
+<li>A finalized AxHandleDirs option that allows Apache's directory handlers to return XML representing the directory to AxKit for further processing.</li>
+ <li>A re-architecture of the internals of AxKit's XSP engine, including:
+     <ul>
+         <li>All node building is done in separate functions rather than direct DOM calls to reduce the size of XSP code</li>
+         <li>Major memory and reduction of XSP generated perl code</li>
+         <li>XSP pages can inherit from a different base class and implement wrapper code easily</li>
+      </ul>
+  </li>
+  <li>Major fixes to "axkit:" URIs (i.e. they actually work now for most cases)</li>
+  <li>Fixed caching when AxGzipOutput is off</li>
+  <li>Slightly improved demo site code</li>
+   <li>Added AxDebugTidy option to use Perl::Tidy on XSP debug dumps</li>
+   <li>Many bug fixes, debug log improvements, and code cleanups</li>
+   <li>An updated axkit.org web site - http://axkit.org/</li>
+</ul>
+<p>
+We hope you enjoy this release, and do keep the bug reports flowing.
+</p>
+<p>
+Matt.
+</p>
+</blockquote>
+
+
+

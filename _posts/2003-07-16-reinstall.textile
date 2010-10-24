@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Reinstall"
+category: Hardware
+published:
+  epoch: 1058412709
+  utc: 2003-07-17T03:31:49
+---
+
+<p>
+At some point during the last two weeks, I think I accidentally left realtime NAV turned off, and somehow WeatherBug and the MySearch toolbar got installed.
+</p>
+<p>
+Nothing serious, but just for shits and grins I decided to reinstall XP.
+</p>
+
+

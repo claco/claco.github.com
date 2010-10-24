@@ -1,0 +1,26 @@
+---
+layout: post
+title: "So Long Ti-4400, I Hardly Knew Yee"
+category: Hardware
+published:
+  epoch: 1048554741
+  utc: 2003-03-25T01:12:21
+---
+
+<p>
+Apparently this is bad hardware month. My parents old HP Pavilion started rebooting on it's own. The culprit: shitty OEM 100W power supply. I gutted it and put the inards into an Antec minitower case with a 350W power supply. Problem solved.
+</p>
+<p>
+Then last week when Margeaux turned on my desktop machine (Also a Pavilion), the video was squirrely. The video card in that machine is..<em>was</em> a PNY GeForce Ti440. A pretty sweet gaming card until that day. Figuring that maybe the power supply was also going bad (which makes the power hungry Ti card go crazy), I went out and snagged another Antec case; the <a href="http://www.antec-inc.com/pro_details_enclosure.php?ProdID=91082" title="Antec Case Specs">PLUS1080AMG</a>. This one is a full tower soho file server case with 6 fans, loads of bays and a 440W power supply.
+</p>
+<p class="center">
+<img src="/blog/images/hardware/plus1080amg.jpg" alt="Antec 1080 AMG Plus Performance SOHO Server Case" />
+</p>
+<p>
+Well, wouldn't you know it. That didn't solve the video problem. So I called PNY and it's getting replaced under their lifetime replacement warranty. And now I have and awesome case for the next time I build a machine. I must say , with 6 fans, this case is <strong>really</strong> quiet. But then again, I also have 4 servers in a rack sitting beside me.
+</p>
+<p>
+I went out tonight to snag a couple of CD -> sound card cables before I closed up the case. I was really temped to snag an ATI Radeo 9700 Pro.
+</p>
+
+

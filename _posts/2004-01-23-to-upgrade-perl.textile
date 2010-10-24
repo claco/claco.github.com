@@ -1,0 +1,17 @@
+---
+layout: post
+title: "To Upgrade Perl"
+category: Perl
+published:
+  epoch: 1074890930
+  utc: 2004-01-23T20:48:50
+---
+
+<p>
+I'm thinking about upgrading Perl on the web server. It's currently the base FreeBSD install of 5.005_3 and I want to move to 5.6.1.  Part of me says if it ain't broke, don't fix it. However, two important modules [to me] now require Perl 5.6.0 or above: <a href="http://search.cpan.org/search?query=Class::DBI&amp;mode=module">Class::DBI 0.95+</a> and  <a href="http://search.cpan.org/search?query=DBI&amp;mode=module">DBI 1.38+</a>.
+</p>
+<p>
+I think the crappy part is going to be reinstalling all the Perl modules from ports  into the new Perl distrib. What fun.
+</p>
+
+

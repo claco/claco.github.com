@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Gzipped Page Delivery"
+category: WWW
+published:
+  epoch: 1042922348
+  utc: 2003-01-18T20:39:08
+---
+
+<p>
+A sort of Heads Up! if you will. I've turned on the <code>AxGzipOutput</code> option on in <a href="http://www.axkit.org/" title="AxKit Home Page">AxKit</a> for this site. That means page should be smaller, assuming your browser supports receiving compressed pages. Let me know if any strangeness you may encounter.
+</p>
+
+

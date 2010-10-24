@@ -1,0 +1,127 @@
+---
+layout: post
+title: "Space Shuttle Columbia Is No More"
+category: WTF
+published:
+  epoch: 1044113699
+  utc: 2003-02-01T15:34:59
+---
+
+<p>
+Holy shitballs batman. Apparently the <a href="http://www.cnn.com/2003/TECH/space/02/01/shuttle.columbia/index.html">space shuttle Columbia has been lost</a>. Tragic.
+My guess it that they lost to many protecting ceramic tiles and flamed out during re-entry. So sad. At least the crew probably did quickly without suffering.
+</p>
+<ins>
+<p>
+<del>Someone on CNN</del> The news ticker on CNN Headline news just said that something hit a wing on lift off and knocked a good portion of tiles off. Oh dear. If that's true, maybe they knew they may not make it back before they even started re-entry. Bad bad bad.
+</p>
+<p>
+To <a href="http://www.cnn.com/interactive/space/0301/gallery.mission.guide/content.1.1.html">the crew lost in Columbia today</a>, we solute you for your bravery and may God watch over you.
+</p>
+<p>
+Found via <a href="http://www.scriptingnews.com/">Scripting News</a>
+</p>
+
+<blockquote>
+<p>
+Andrew Juby: "My roommate has access to Goddard Space Flight Center's Orbital Information group server. He can pull up data on just about any non-classified orbiting object. We checked it this morning and pulled up some data on Columbia, and ran it by the aerospace major across the hall. It appears that at about 2 or 3AM, as Columbia was into its descent, it pulled up." 
+</p>
+</blockquote>
+
+<p>
+I'm not sure what that means, but I bet there is a lot more to this story.
+</p>
+<p>
+Also from <a href="http://www.scriptingnews.com/">Scripting News</a> via <a href="http://www.instapundit.com/archives/007196.php#007196">Glenn Reynolds</a>, here is a link to <a href="http://spaceflightnow.com/shuttle/sts107/status.html">SpaceFlight Now</a>, a mission status page with some interesting entries.
+</p>
+
+<p>
+More from <a href="http://www.scriptingnews.com/">Scripting News</a> via  <a href="http://www.rds.com/doug/weblogs/2003/02/01.html#a783">Doug Kaye</a> about the following <a href="http://lists.kjsl.com/pipermail/beech-owners/2003-February/018449.html">mail list post</a> by
+a former NASA flight controller:
+</p>
+
+
+<blockquote>
+<p>
+A sad day indeed....I and one of my co-owners, Jeff Bertsch, work at the
+Space Center and are both former flight controllers (Ascent/Entry Guidance &amp;
+Procedures Officers). I worked with Wille McCool on the Shuttle Cockpit
+Upgrade, which is supposed to fly in 2006.
+</p>
+<p>
+The deorbit burn is targeted with excess energy, so the Shuttle flies about
+a 45 deg bank during Entry and does a couple of roll reversals (S-Turns) to
+manage the energy. The video shows a large object separating, then a flash
+and puff in the contrail and then the breakup. I believe the large object
+was the left wing and it was probably during a roll reversal. The left wing
+was struck by External Tank debris during Ascent. The wing leading edge
+temperature is approx. 3000 deg during Entry.
+</p>
+<p>
+Dennis Bentley<br />
+P-35<br />
+249EA
+</p>
+</blockquote>
+
+</ins>
+
+<h2><a id="STS1071">Rick D Husband (Col., USAF)</a>: Commandar</h2>
+<p class="entrydate">July 12, 1957 - February 1, 2003</p>
+<p>
+Married, two children. As of last August, he had over 3800 hours of flight time in various aircraft, including F-4, F-4E, and all models of the F-15. Selected as an astronaut candidate in 1994, he has worked for NASA on Space Shuttle Upgrades, CRV, Moon and Mars studies, and as Chief of Safety for the Astronaut Office. Has flown in space only once before, on STS-96 from May 27 to June 6 of 1999, logging 235 hours and 13 minutes in space. That mission was the first ISS docking.
+</p>
+
+
+<h2><a id="STS1072">William C McCool (Cdr., USN)</a>: Pilot</h2>
+<p class="entrydate">September 23, 1961 - February 1, 2003</p>
+<p>
+Married. Has over 2800 flight hours in many aircraft and over 400 landings on aircraft carriers. Has served aboard USS Coral Sea and USS Enterprise. Selected as an astronaut in 1996 and serving for some time in the Computer Support Branch, this is his first spaceflight.
+</p>
+
+
+<h2><a id="STS1073">Michael P Anderson (Lt. Col., USAF)</a>: Payload Commandar</h2>
+<p class="entrydate">December 25, 1959 - February 1, 2003</p>
+<p>
+Married. Holds several awards from the USAF and has over 3000 hours of flight time, mostly in KC-135 and T-38A aircraft. Selected by NASA in 1994. He has flown in space once before, January 22-31, 1998, on STS-89. That was the eighth Shuttle-Mir docking mission, delivering Andy Thomas to Mir and returning David Wolf to Earth. Anderson helped to transfer 9,000 pounds of scientific equipment, and logged 8 days, 19 hours, and 47 seconds in space.
+</p>
+
+
+<h2><a id="STS1074">Kalpana Chawla (PhD)</a>: Mission Specialist</h2>
+<p class="entrydate">(Karnal, India.) ? - February 1, 2003</p>
+<p>
+Chawla received her BS in aeronautical engineering from Punjab Engineering College in 1982, MS in aerospace engineering from University of Texas in 1984, and PhD in aerospace engineering from University of Colorado in 1988. She worked with Ames Research Center on the phenomenon of "ground-effect", the mapping of flow solving on parallel computers, and powered lift computations. She was selected by NASA in 1995 and was assigned to robotics issues for the Astronaut Office EVA/Robotics and Computer Branches, where she helped to develop the Robotic Situational Awareness Displays. She made her first spaceflight on STS-87 (Nov 19 - Dec 5, 1997), the mission which featured the dramatic hand-capture of the Spartan satellite. She logged 376 hours and 34 minutes in space.
+</p>
+
+
+<h2><a id="STS1075">David M Brown (Capt., USN)</a>: Mission Specialist</h2>
+<p class="entrydate">April 16, 1956 - February 1, 2003</p>
+<p>
+Performed in the Circus Kingdom as an acrobat, 7 foot unicyclist, and stilt walker; also competed in varsity gymnastics in college. Holds BS in biology and an MD and served in the USN as a flight surgeon. He also became a pilot, serving from the USS Independence and qualifying in many aircraft. He has 2700 hours of flight time, 1700 of that in high performance aircraft. Selected as an astronaut in 1996, this will be his first spaceflight.
+</p>
+
+
+<h2><a id="STS1076">Laurel Blair Salton Clark, MD (Cdr., USN)</a>: Mission Specialist</h2>
+<p class="entrydate">? - February 1, 2003</p>
+<p>
+Trained in diving medicine with the USN while completing her medical schooling, later trained in pediatrics and undersea medicine. She was assigned to a submarine squadron medical department, dove with US Navy divers, and performed medical evacuations from US submarines. Received aeromedical training and became a flight surgeon. She was selected as an astronaut in 1996 and has worked in the Astronaut Office Payload/Habitability Branch. This will be her first spaceflight.
+</p>
+
+
+<h2><a id="STS1077">Ilan Ramon (Col., Israeli Air Force)</a>: Payload Specialist</h2>
+<p class="entrydate">June 20, 1954, Tel Aviv, Israel - February 1, 2003</p>
+<p>
+Representing Israeli Space Agency<br />
+Married, four children. He received a BS in electronics and computer engineering from University of Tel Aviv in 1987. Served in Yom Kippur War and Operation Peace for Galilee. He has logged over 3,000 flight hours in the A-4, Mirage III-C, and F-4, and also logged over 1,000 flight hours on the F-16. He was selected by ISA and NASA as a Payload Specialist to attend an Israeli payload (a multispectral camera for recording desert aerosol) in 1997. This will be his first spaceflight, and the first spaceflight for any Israeli.
+</p>
+
+
+<p>
+I found the bios information over on the 
+<a href="http://uplink.space.com/showflat.php?Cat=&amp;Board=missions&amp;Number=372876&amp;page0&amp;view=collapsed&amp;sb=5&amp;o=0&amp;fpart=all">Space.com forums, slightly edited when I find the other birth dates of the astronauts.</a>. A better set of BIO information can be <a href="http://www.space.com/missionlaunches/sts107_bios.html" title="STS-107 Crew Biographies">found here</a>.
+</p>
+
+
+
+
+

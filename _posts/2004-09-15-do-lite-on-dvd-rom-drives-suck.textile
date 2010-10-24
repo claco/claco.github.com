@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Do Lite-On DVD-ROM Drives Suck?"
+category: Hardware
+published:
+  epoch: 1095299274
+  utc: 2004-09-16T01:47:54
+---
+
+When I built my game rig, I put in a Lite-On 16x/48x DVD/CD-ROM. It worked fine thus far with CDs and a few DVD discs. Now that I've got this new ACD, I wanted to try out some widescreen DVD movies.
+
+It seems to work fine, but shortly thereafter, it started getting jittery and finally hung. Restarts yielded no disc/no drive errors in WinDVD.
+
+I took out the DVD and sure enough, the frigging drive borked my disc! I now has rings around the outside diameter of the disc. Like a dumbass, I tried another DVD thinking that one was already scratched and it did the same damn thing.
+
+At this point, it's obvious that this drive is a dead piece of junk. It still reads CDs fine. There's no way I'm putting in my UT2K4 DVD to load the game.
+
+Luckily, I've got a DiscDr I can use to de-scratch the DVDs.
+
+

@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Because I Can...
+wordpress_id: 283
+wordpress_url: http://chrislaco.com/uncategorized/because-i-can/
+published:
+  epoch: 1287256980
+  utc: 2010-10-16T19:23:00
+---
+It seems that when I learn new things, it's a situation of in for a penny in for a pound. Go big or go home DRY says. Apparently that's how I feel about learning vim. :-)
+
+I haven't started using it at work because [lame excuse] I'm still barely getting along with using the Das Keyboard sans keycap labels while standing (aka, home row keeps moving and my typeing skilz suck). On the MacBook Pro however, I have no excuse. Removed TextMate. Removed pico. Removed TextEdit. All vim. All the time, at least for coding.
+
+Today was an exersize in Don't Leave the Editor. I installed Gist.vim so I can access GitHub Gists. I installed TwitVim so I could post to Twitter from within Vim. This post comes to you from Blogit, a Vim plugin to allow me to manage my blog via XmlRpc in Vim. Game on. Nerds Ahoy.

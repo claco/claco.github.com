@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Three Rings Of Programmers Hell"
+category: Humor
+published:
+  epoch: 1113011459
+  utc: 2005-04-09T01:50:59
+---
+
+"Two rings of programmers hell. The two rings of programmer hell are UTC time conversion and text encodings/codepages and low level encryption. Three! Our three rings of programmer hell..."
+
+Apparently it wasn't just enough to figure out how to create a .NET encoding for HPROMAN8. Today I spent time figuring out how to do dynamic encryption in COM of the cart data being posted to PayPal.
+
+Most of their examples had nothing to do with .NET, ASP.NET, ASP, COM, or even VB/VBScript with the exception of a ButtonEncryptionLib in [apparently] managed C in .NET.
+
+After a day of tinkering, I finally got OpenSSL compiled and the ButtonEncryptionLib compiled against it producing a .NET assembly. From there I just had to create a CCW [Com Callable Wrapper] and whola! Dynamic button encryption within ASP. :-)
+
+Tomorrow it's back to hacking perl and trying to stop playing damn games all the time on the new vid card.
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "And The Power Is..."
+category: WTF
+published:
+  epoch: 1060915029
+  utc: 2003-08-15T02:37:09
+---
+
+<p>
+On.<br />
+Off<br />
+On<br />
+Off<br />
+</p>
+<p>
+Fuck. Thank St. Murphy for surge strips and UPS.
+</p>
+
+

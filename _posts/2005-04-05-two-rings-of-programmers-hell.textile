@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Two Rings Of Programmers Hell"
+category: Software
+published:
+  epoch: 1112729563
+  utc: 2005-04-05T19:32:43
+---
+
+There are two things in the programming world which I despise; things that no programmer should ever have to do with modern tools; things that would surely qualify as levels of hell in Dantes Inferno.
+
+<strong>UTC/Local Time Conversions</strong>. Even in some modern databases, getting native local dates out the door into UTC in a proper format is pain in the ass. Understanding it is even worse. On top of that, when you go through the hassle and a friggin external entity chokes because it thinks the Z in the date string for Zulu time is invalid; which it's not according to the RFC.
+
+<strong>Unicode/Encoding/CodePage Conversions</strong>. God please smite the person at HP who thought creating their own ANSI codepage was a good idea (HP Roman8). Then smite Microsoft for not including it on windows even after the include every flipping codepage from EBCDIC to all of the IBM variations. Nice job guys. Now I have to write my own Encoding class.
+
+

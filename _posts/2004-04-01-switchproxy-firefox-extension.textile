@@ -1,0 +1,17 @@
+---
+layout: post
+title: "SwitchProxy Firefox Extension"
+category: Software
+published:
+  epoch: 1080863405
+  utc: 2004-04-01T23:50:05
+---
+
+<p>
+Now that I've got Firefox running on my <a href="/blog/archives/entries/000471/">Iomega USB thumbdrive</a>, I stumbled across an awesome extension called <a href="http://jgillick.nettripper.com/switchproxy/">SwitchProxy</a> by Jeremy Gillick. 
+</p>
+<p>
+It allows you to switch between multiple sets of proxy settings which is awesome since I use a proxy at home, and a proxy at work with different sets of exceptions and ports.
+</p>
+
+

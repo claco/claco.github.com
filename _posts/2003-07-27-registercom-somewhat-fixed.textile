@@ -1,0 +1,22 @@
+---
+layout: post
+title: "Register.com Somewhat Fixed"
+category: WWW
+published:
+  epoch: 1059324157
+  utc: 2003-07-27T16:42:37
+---
+
+<p>
+Well, after a bazillion phone calls and worthless emails, someone at Register/PartnerEU finally gave me the answer they should've given me to begin with. Here it is.
+</p>
+
+<p>
+Register.com is slowly moving their web based domain administration to a new domain name and setup. The domain name in question was moved first, before my others were, and the contact information was errornously matched to someone else. All Register.com domains will be slowly moving to the new administration.
+</p>
+<p>
+To put it another way, the domain name is still mine. Not only that, but I got a free year of service for my troubles. The part that scares me is how many times is this going to happen for my other personal domains? Hell, I've got about 200+ domains under register.com at work. This should be fun to watch.
+</p>
+
+
+

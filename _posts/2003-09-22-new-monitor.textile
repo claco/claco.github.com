@@ -1,0 +1,17 @@
+---
+layout: post
+title: "New Monitor?"
+category: Hardware
+published:
+  epoch: 1064271164
+  utc: 2003-09-22T22:52:44
+---
+
+<p>
+Time for a <a href="http://www.go-l.com/monitors/">new monitor</a>?
+</p>
+<p class="image">
+<img src="/blog/images/hardware/grandcanyon.jpg" alt="" />
+</p>
+
+

@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: So Long Parallels. Hello VirtualBox.
+wordpress_id: 152
+wordpress_url: http://chrislaco.com/?p=152
+published:
+  epoch: 1236396120
+  utc: 2009-03-07T03:22:00
+---
+Back when my XP laptop died and I finally bought a MacBook Pro, Parallels was one of my first purchases so I could run multiple VMs to do Perl software testing. At the time, that was Parallels version 3. Everything was snappy and life was good.
+
+Then came the upgrade to Parallels 4. From day 1, I've had nothing but problems. It was most definitely much slower just to boot XP. Even a fresh install of the software and even an new XP VM fixed nothing. It was still slow. Even more entertaining was that when running XP in VGA mode, Safe Mode, or at the boot options screen, Parallels took up 100% of 1 or both host CPUs. After KB articles, months of patches and support, Parallels tells me that eating up all that CPU is normal. Parallels 3 didn't have that problem. No, I won't disable all the options that worked in version 3, and yes, 4GB ram was just fine in version 3.
+
+Well, I'm getting off this train now. Clearly, Parallels 4 has issues, and I'm not the only one having it. VirtualBox is free, installed and running a fresh new install of XP and Studio 2008 and what do you know, it even runs XP in Safe Mode without eating 100% of the host CPU. Go figure.

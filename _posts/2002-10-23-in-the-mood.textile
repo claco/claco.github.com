@@ -1,0 +1,15 @@
+---
+layout: post
+title: "In The Mood"
+category: WWW
+published:
+  epoch: 1035415798
+  utc: 2002-10-23T23:29:58
+---
+
+<p>
+The more I look are Wired News, the more I'm getting the itch to start from scratch on thi site; again. Sure, it validates now, but it's still a bit of a pain in the ass to easily post in MovableType without breaking something, and I suck at typing.
+Plus, this layout is a good start, but I want something just a little more skinnable underneath.
+</p>
+
+

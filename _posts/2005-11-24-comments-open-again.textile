@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Comments Open Again"
+category: WWW
+published:
+  epoch: 1132850409
+  utc: 2005-11-24T16:40:09
+---
+
+My blog is in a state of disrepair like usual, while I spend more time on Catalyst and Handel. I just realized that my hack to make the MT cgi path relative completely breaks TypeKey logins, which were required to place comments. Doh!
+
+I'm opened comments up to anyone, although they're still moderated.
+
+

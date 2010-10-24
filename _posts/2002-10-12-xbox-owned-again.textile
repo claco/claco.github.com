@@ -1,0 +1,23 @@
+---
+layout: post
+title: "XBox Owned. Again."
+category: Humor
+published:
+  epoch: 1034457262
+  utc: 2002-10-12T21:14:22
+---
+
+<p>
+I bet someone at MicroShaft is just fuming over this one, again.  If you'll recall, A while back, a lot of people over at the <a href="http://xbox-linux.sourceforge.net/"><cite>XBox Linux Project</cite></a> were putting effort on turning the XBox into a commodity desktop/server appliance. Once someone figure out the encryption junk used, they finally make linux run on an XBox. There's even a <a href="http://news.com.com/2100-1040-942139.html">Mandrake 9 release for XBox</a>!
+</p>
+<p>
+So what does MicroShaft do? Use their financial clout to <a href="http://news.com.com/2100-1040-961498.html" title="Article about the shutdown of the mod chips">shut down the foreign makers of the XBox mod chip</a> that makes this possible. On top of that, they released a <a href="http://news.com.com/2100-1040-959084.html" title="Article about the updated XBOX">new modified version of the XBox</a> that was more secure and 'unmodable'.
+</p>
+<p>
+Well,  it <a href="http://www.xboxhacker.net/cgi-bin/ikonboard/ikonboard.cgi?s=3da7ede1778bffff;act=ST;f=7;t=7264" title="Post about XBOX being cracked">looks like MicroShaft/XBox are someone's bitch</a> once again. :-)
+</p>
+<p>
+Catch the <a href="http://slashdot.org/article.pl?sid=02/10/12/1742226&amp;mode=flat&amp;tid=137" title="Slashdot article about XBOX cracks">thread on <cite>Slashdot</cite></a> for some more goodness.
+</p>
+
+

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Eating Your Own Dog Food: Part 2"
+category: Perl
+published:
+  epoch: 1041646314
+  utc: 2003-01-04T02:11:54
+---
+
+<p>
+Well, I decided to eat my own dog food, and install the <a href="http://today.icantfocus.com/downloads/MTPingProxy/2.51/" title="Download link for MTPingProxy patches">
+<strong>MTPingProxy</strong></a> patches on the live server. The install went without a hitch. 
+Once I opened up the firewall however, only the first of all pings made it out the door. Easy fix for once.
+</p>
+<pre>
+<samp>
+@LWP::Protocol::http::EXTRA_SOCK_OPTS = 
+   Addr  => $localaddr,
+   Reuse => 1
+);
+</samp>
+</pre>
+
+<p>
+The <code>Reuse => 1</code> part was the key. The <code>ip:port</code> socket from the first ping wasn't released for 
+the second ping could bind to that same IP:PORT I suspect this is a scope issue with each 
+<code>LWP::UserAgent</code>. This problem would've only effected people who used <code>PingInterface IP:PORT</code> 
+instead of the recommnded <code>PingInterface IP</code>
+</p>
+<p>
+Now it's time to fix my Trackback links. :-)
+</p>
+
+

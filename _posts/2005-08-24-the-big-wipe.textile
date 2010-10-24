@@ -1,0 +1,26 @@
+---
+layout: post
+title: "The Big Wipe"
+category: FreeBSD
+published:
+  epoch: 1124913928
+  utc: 2005-08-24T20:05:28
+---
+
+Thing are moving along quite nicely on the <a href="http://search.cpan.org/dist/Handel/">Handel</a> front. Version 0.18 is out and considered feature complete in terms of tests, checkout, order, and carts in Perl, on AxKit and within Template Toolkit. I need to start on a Catalyst demo site as well.
+
+There is a nice crisp new <a href="http://lists.rawmode.org/cgi-bin/mailman/listinfo/handel/">mailing list</a>. I need to setup a wiki and the subversion repo on the new <a href="http://handelframework.com">domain name</a>. This means I need Apache2 installed, which means I want to install mod_perl2 which means I need a newer version of perl. Oh yea, I need to upgrade MySql to version 4.
+
+Considering all of that work, I've decided that it's best to give this web server The Big Wipe and start from a scratch FreeBSD 5.4-RELEASE install. Then I can let Apache1/MP1 and Apache2/MP2 fight it out. After that, maybe PHP4/PHP5, or at least PHP4 under both apache installs. You get the idea.
+
+I've long wanted to convert everything from 3 1U servers back into one to make life [and my electric bill] much happier. If I start from scratch on this machine, eventually it will become the one and only.
+
+If it weren't for AxKit, and me wanting to run the Handel AxKit demo online, I'd ditch Apache/MP1 all together. Hell, I might as well upgrade MovableType, or maybe even ditch it for WordPress?
+
+So, after some quick and dirty backups of SQL data, DNS files, config files, and websites, we will be off the air for a while.
+
+Hopefully I can can this all done by the end of the weekend. Famous last word right?
+
+Keep your stick on the ice and out of your friends face. We're all in  this together.
+
+

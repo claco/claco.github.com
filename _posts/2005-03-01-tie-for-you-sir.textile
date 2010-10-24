@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Tie For You Sir"
+category: Perl
+published:
+  epoch: 1109708085
+  utc: 2005-03-01T20:14:45
+---
+
+I know this is old school for hardcore Perlheads, but I just learned how to use <samp>tie</samp> in perl.
+
+While adding a generic config reader to <a href="http://search.cpan.org/search/?mode=dist&amp;query=Handel">Handel</a>, I thought it would be nice to have the native config instance work just like using <samp>Apache::ModuleConfig</samp> does when using custom directives.
+
+<pre>my $cfg = Apache::ModuleConfig->get($r);
+my $setting = $cfg->{'Setting'};</pre>
+
+The old config reader looks in two places for configuration. When running under mod_perl, it used <samp>$r->dir_config</samp> to get things set using <samp>PerlSetVar</samp>, otherwise it looks in the regular old <samp>%ENV</samp>.
+
+With a little <samp>tie</samp> magic and an overridden <samp>FETCH</samp> method, I now have:
+
+<pre>my $cfg = Handel::ConfigReader->new();
+my $setting = $cfg->{'Setting'};</pre>
+
+And since it's a tied into Handel::ConfigReader, I can still use the previous method:
+
+<pre>my $cfg = Handel::ConfigReader->new();
+my $setting = $cfg->get('Setting', 'DefaultValue');</pre>
+
+Not bad for a music guy.
+
+

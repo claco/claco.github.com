@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Google is a Fickle Mistress"
+category: WWW
+published:
+  epoch: 1089078178
+  utc: 2004-07-06T01:42:58
+---
+
+While this is still unconfirmed by results, I believe I learned a valuable lesson today about Google indexing, pagerank and doctypes.
+
+After some hefty development last week, a group of pages went out with the doctype on the <em>second</em> line of the file, leaving the first line blank.
+
+These new pages failed to be indexed by Google with any sense of earnest, and the ones that were indexed appeared low in the results compared to the previous set of pages [with different names]. However, new pages here on this site get indexed pretty quickly and searching for their entry titles yield high results.
+
+After digging around on Google, I found a few obscure references from others with the same rare problem. Time will tell, but I have a hunch that things will miraculously work themselves out.
+
+

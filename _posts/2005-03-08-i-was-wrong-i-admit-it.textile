@@ -1,0 +1,24 @@
+---
+layout: post
+title: "I Was Wrong. I Admit It."
+category: Games
+published:
+  epoch: 1110324769
+  utc: 2005-03-08T23:32:49
+---
+
+I was wrong. I'll admit that.
+
+<img src="/blog/images/games/hl2.gif" alt=""/>
+
+Even though <a href="/blog/archives/entries/new_gaming_rig.icf">my current gaming rig</a> is going on two years old, it still kicks ass. A 2.4 overclocked to 3.3 on air cooling doesn't suck, and the memory throughput with the OCZ dual channel kicks ass, even by most of todays benchmarks.
+
+From the day I installed Half-Life<sup>2</sup> I've gotting memory errors of some sort. What pissed me off even more about that was the fact that Memtest86 shows the memory is clean as a whistle.
+
+Last night I had the urge to play HL2 again and once again, the random crash pissed me off. Admitting my wrongness and leaving behind "but it shouldn't happen" thoughts, I dropped my FSB down 15 points. I'm still overclocked to a respectable 3.18.
+
+No more crashes [yet]. Sigh.
+
+With that said, playing HL2 is just as much fin, and just as scary the second time around. That dan game is very immersive.
+
+

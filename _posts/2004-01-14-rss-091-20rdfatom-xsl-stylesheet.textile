@@ -1,0 +1,24 @@
+---
+layout: post
+title: "RSS 0.91-2.0/RDF/Atom XSL Stylesheet"
+category: WWW
+published:
+  epoch: 1074134466
+  utc: 2004-01-15T02:41:06
+---
+
+<p>
+OK, so I got the itch to do something with my feeds, so I created a single <a href="/style/xsl/feeds.xsl">XSLT stylesheet</a>  to transform all of me feeds to something a little more friendly. My only beef with the stylsheet is that I have to specify <code>xsl:output method="html"</code> instead of <code>xsl:output method="xml"</code> because Mozilla Firebird would not render it as HTML. No big deal since I don't use and open HTML4 style tags. 
+</p>
+<p>Another nice Mozilla feature is that they don't serialize the final output, so <code>disable-output-escaping="yes"</code> doesn't work. This means all embeded HTML in the feed descriptions would be displayed, not rendered.
+</p>
+<p>
+According to <a href="http://www.feedvalidator.com/">feedvalidator.com</a>, all of my feeds are valid. Who knows if they're "funky" though. Lord knows how well this stylesheet will work with other peoples feeds. Give it a whirl. May the force be with you. YMMV.
+</p>
+<ins>
+<p>
+<strong>Yes, I think this breaks RSS readers. Sorry folks. I've seen it done before. I guess it should use CSS stylesheets instead of XSL stylesheets. I'll fix it tomorrow night. I promise. :-)</strong>
+</p>
+</ins>
+
+

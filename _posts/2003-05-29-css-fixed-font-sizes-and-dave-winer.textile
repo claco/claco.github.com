@@ -1,0 +1,38 @@
+---
+layout: post
+title: "CSS, Fixed Font Sizes and Dave Winer"
+category: WWW
+published:
+  epoch: 1054214032
+  utc: 2003-05-29T13:13:52
+---
+
+<p>
+I found <a href="http://scriptingnews.userland.com/2003/05/29#When:12:25:16AM">this snippet</a> over at Scripting News, which points to <a href="http://www.tbray.org/ongoing/When/200x/2003/05/28/CSS-IE">Tim Bray</a> and his opinions on fixed font sizes and CSS and IE.
+</p>
+
+<blockquote>
+<p>
+I've given Tim Bray his share of grief, but in this piece about the state of CSS, he nails it. <em>I esp like the bit about rocket science. Right on.</em>
+</p>
+</blockquote>
+
+<p>
+Also from Tim's page
+</p>
+<blockquote>
+<p>
+So I determined to Do The Right Thing Dammit, and I have now invested several hours trying to figure out how to have nicely-resizeable fonts <em>and still have it look decent in at least the popular browsers</em>.
+</p>
+</blockquote>
+<p>
+Personally, I don't see what the big deal is with using the font size keywords in CSS. Hell, this site uses them just fine. Sure, some browsers display things in different font sizes than I would like. Sure, sometimes this means some browsers get smaller fonts than we would like by default. But so what. Deal with it. Cope. Accept it. The web is dynamic, not static. It's about displaying and <strong>reusing</strong> information. Even if that small definition of reuse is a print vs. screen stylesheet.
+</p>
+<p>
+Repeat after me 1000 times: <cite>The web medium is not a print publication.</cite>
+</p>
+<p>
+While I am no one compred to Tim, or even Dave, I think they (Dave esp., and anyone else using CSS) needs to just let go of the baggage of trying to hold a death grasp on how different browsers display different fonts and font size keywords, hell, even positioning to and extend ("but in xxx browser it's 2 pixels off") . I also think using pixel sizes and font tags, irrespective of if it is more consistant across browsers, is more of a disservice to your web users and web standards as a whole since it doesn't promote reusability of your content.
+</p>
+
+

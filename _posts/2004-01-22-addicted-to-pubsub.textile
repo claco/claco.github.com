@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Addicted To PubSub"
+category: WWW
+published:
+  epoch: 1074820180
+  utc: 2004-01-23T01:09:40
+---
+
+<p>
+<a href="http://weblogs.pubsub.com/">PubSub</a> is awesome. Punch in a keyword, subscribe to it via RSS, and watch the entries roll in.
+</p>
+<ins>
+<p>
+Just got an email reply from Bob Wyman about PubSub feedback. Don't forget to check out <a href="http://bobwyman.pubsub.com/">his blog</a> for PubSub news.
+</p>
+</ins>
+
+

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "The 'Switch' Saga Continues"
+category: MicroShaft
+published:
+  epoch: 1034717579
+  utc: 2002-10-15T21:32:59
+---
+
+<p>
+The hubub surrounding the Microsoft 'switch' fiasko is turning into a soap opera.
+This <a href="http://daringfireball.net/2002/10/microsoft_makeup.html" title="Article about the Miscrosoft switch campaigne">article</a> over at <cite>Daring Fireball</cite>  has a pretty good run down from start to finish, along with some footwork of their own.
+Check out last nights <a href="http://news.yahoo.com/news?tmpl=story2&amp;cid=528&amp;ncid=528&amp;e=15&amp;u=%2Fap%2F20021014%2Fap_on_hi_te%2Fmicrosoft_ad">story from AP</a> about the matter. <cite>Dave Winer</cite> at <cite>Scripting News</cite> has put up a <a href="http://www.scripting.com/misc/msSwitchAd/ad/windowsxp_setup.asp.html" title="Mirror of original page">full mirror</a> of the original page.
+</p>
+
+

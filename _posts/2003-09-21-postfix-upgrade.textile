@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Postfix Upgrade"
+category: FreeBSD
+published:
+  epoch: 1064175074
+  utc: 2003-09-21T20:11:14
+---
+
+<p>
+Wow. I just upgraded from Postfix 1.x to Postfix 2.x via <kbd><a href="http://www.freebsd.org/cgi/url.cgi?ports/sysutils/portupgrade/pkg-descr">portupgrade</a></kbd> and the ports tree with SASL, TLS/SSL  and PCRE all rolled in. Thank god for the ports tree. Doing all that source config by hand would suck some serious ass.
+</p>
+
+

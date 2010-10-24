@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Search In The House"
+category: WWW
+published:
+  epoch: 1042776812
+  utc: 2003-01-17T04:13:32
+---
+
+<p>
+Well it took some patching to get working, but <a href="/search/" title="Search this site">search is now installed</a> into the pageflow and enabled. I've added "Search" to the navigational link tags, but I'm not quite sure where to put the real search stuff yet. Probably in the top menu for sure, but maybe also in the sidebar once I see how the layout goes.
+</p>
+<p>
+Be forewarned though. In a continuing effort to keep content and code separate, the onclick events for the checkboxes and select lists are contained within the search.js file, not in the xhtml button code. I've tested it in both Mozilla 1.X and in Internet Explorer 6. After that, you're on your own. Since it's not terribly important to the function of this site, I'll save and corrections for a rainy day. <a href="/search/" title="Search this site">Give it a spin.</a>
+</p>
+<p>
+Next victim:  mt-comments.cgi ->  MT::App::Comments -> Apache::Filter
+</p>
+
+
+

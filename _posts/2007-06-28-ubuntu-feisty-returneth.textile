@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Ubuntu Feisty Returneth"
+category: Linux
+published:
+  epoch: 1183071267
+  utc: 2007-06-28T22:54:27
+---
+
+After a drive crash torched my XP/Ubuntu install about 5 months ago, I haven't spent much time looking at Ubuntu Feisty. I just finished installing Feisty back on the laptop. I must say, it's much better than Badger.
+
+The fonts render better. The wireless card worked out of the gate, which is a first. The network and other admin panels are much better. What an improvement. Way to go Ubuntu.
+
+

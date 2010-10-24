@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Memory Stick Firefox Install Tips"
+category: Software
+published:
+  epoch: 1079655561
+  utc: 2004-03-19T00:19:21
+---
+
+<p>
+First, follow the directions <a href="http://forums.mozillazine.org/viewtopic.php?t=48597&amp;highlight=usb">here</a>.
+</p>
+<p>
+Now, if you're running XP as a user without administrator (and probably power user) privs, <strong>make sure you format the removable stick/usb drive using NTFS</strong>. I failed to do so the first time, and firefox complained about the drive being read only, even thought it wasn't. Rumor this is an XP/FAT32 issue.
+</p>
+
+

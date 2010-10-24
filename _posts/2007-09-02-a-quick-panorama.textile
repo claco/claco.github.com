@@ -1,0 +1,14 @@
+---
+layout: post
+title: "A Quick Panorama"
+category: OffTopic
+published:
+  epoch: 1188786740
+  utc: 2007-09-03T02:32:20
+---
+
+I forgot I took 4 pics in panorama mode. I quit run through AutoStitch yields a pretty decent result.
+
+<a href="http://www.flickr.com/photos/claco/1308426244/" title="Photo Sharing"><img src="http://farm2.static.flickr.com/1421/1308426244_bd2a0f7c3c.jpg" width="500" height="150" alt="Stadium Panorama" /></a>
+
+

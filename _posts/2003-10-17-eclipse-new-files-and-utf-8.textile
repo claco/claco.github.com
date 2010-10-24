@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Eclipse, New Files, and UTF-8"
+category: Perl
+published:
+  epoch: 1066437377
+  utc: 2003-10-18T00:36:17
+---
+
+<p>
+Anyone out there using the Eclipse IDE know how to tell it what encoding to save a file as? I almost always write my perl files and xml in UTF-8, but saving new files sometimes yields me a file saved in ANSI. Ick. It almost seems like a plug-in specific thing. I sure wish I could tell it to always create UTF-8. Kinda sucks having to create the files in something else first.
+</p>
+
+

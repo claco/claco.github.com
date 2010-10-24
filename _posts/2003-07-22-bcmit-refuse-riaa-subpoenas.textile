@@ -1,0 +1,55 @@
+---
+layout: post
+title: "BC/MIT Refuse RIAA Subpoenas"
+category: WTF
+published:
+  epoch: 1058916983
+  utc: 2003-07-22T23:36:23
+---
+
+<p>
+I've said it before, and I'll say it again. The RIAA is getting out of hand.
+Apparently MIT and Boston College are <a href="http://www.boston.com/dailyglobe2/203/nation/BC_MIT_decline_to_name_students_in_music_use_case+.shtml">refusing some RIAA subpoenas</a>. Good for them. Now for the disturbing part. Read the next paragraph carefully:
+</p>
+
+<blockquote>
+<p>
+In a subpoena addressed to MIT, the association is demanding the name, address, and phone number of a student who used the nickname ''crazyface''<strong><em> to download at least five songs</em></strong>, including Radiohead's ''Idioteque'' and Dave Matthews Band's ''Ants Marching.''
+</p>
+</blockquote>
+
+<p>
+Now read that excerpt again. A student is going to be sued for <strong>downloading</strong> songs from Kazaa, not for sharing songs with others.  I would pay a heavy some of money to be there in the court if this student had proof of purchase of these songs/CDs before he/she downloaded them.
+</p>
+<p>
+If I had bigger balz and time to spare, I would sit around Kazaa for weeks on end downloading nothing but MP3s of songs on CDs I already own. Fsck the RIAA.
+</p>
+<p>
+Who's to say I don't own what  I'm downloading? Maybe my CD is borked and I need to download a track that is scratched? As always, the <a href="http://yro.slashdot.org/article.pl?sid=03/07/22/2221223">Slashdot thread</a> is interesting.
+</p>
+
+<p>
+Try this question on for size. I posted it to Slashdot.
+</p>
+<p>
+What's the difference between:
+</p>
+<ul>
+<li>I own a CD</li>
+<li>I put the CD in my CD player</li>
+<li>Someone else accesses that CD via Cat5 cable (assuming only 1 person at a time can dowload/listen)</li>
+</ul>
+<p>
+and
+</p>
+<ul>
+<li>I own a CD</li>
+<li>I put the CD in my CD player</li>
+<li>Someone else accesses that CD via 1/8" headphone cable</li>
+</ul>
+<p>
+They're both sharing. Will the RIAA come hunt me down because everyone I work with can listen to my CDs using headphones? Will they also hunt down the person using the headphones?
+</p>
+
+
+

@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Dear 66.106.1.117:"
+category: WTF
+published:
+  epoch: 1035587078
+  utc: 2002-10-25T23:04:38
+---
+
+<p>
+	Dear 66.106.1.117:
+</p>
+<p>
+	If this is you, you are a fucking moron. Please buy virus software and patch your god damn servers.
+	Take your friends with you. It's been well over a year since these viri hit the streets, so get with the fucking program already. That is all.
+</p>
+<p>
+	From yee ole log files:
+</p>
+<p>
+<textarea rows="15" cols="45">
+[client 66.106.1.117] File does not exist: /scripts/root.exe
+[client 66.106.1.117] File does not exist: /MSADC/root.exe
+[client 66.106.1.117] File does not exist: /c/winnt/system32/cmd.exe
+[client 66.106.1.117] File does not exist: /d/winnt/system32/cmd.exe
+[client 66.106.1.117] File does not exist: /scripts/..%5c../winnt/system32/cmd.exe
+[client 66.106.1.117] File does not exist: /_vti_bin/..%5c../..%5c../..%5c../winnt/system32/cmd.exe
+[client 66.106.1.117] File does not exist: /_mem_bin/..%5c../..%5c../..%5c../winnt/system32/cmd.exe
+</textarea>
+</p>
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Pierre Denis Rules"
+category: Perl
+published:
+  epoch: 1111447215
+  utc: 2005-03-21T23:20:15
+---
+
+Pierre created Test::Strict to test that perl files impliment <samp>use strict</samp>.
+
+I've been firing off suggestions to Pierre and he's been firing off modules updates to CPAN. Kick Ass!
+
+

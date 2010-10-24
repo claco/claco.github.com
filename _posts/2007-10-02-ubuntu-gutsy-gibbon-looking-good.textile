@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Ubuntu Gutsy Gibbon Looking Good"
+category: Linux
+published:
+  epoch: 1191374792
+  utc: 2007-10-03T01:26:32
+---
+
+I stopped using Feisty for a while because the network just wouldn't transfer large bits of data without just aborting connections, even across different wireless routers. Finally, that problem appears to be fixed in the updates to Gutsy Beta this week.
+
+So, with a fresh install going, I setup svk and minicpan so I have most of CPAN with me while I'm on the train. Just for giggles, I installed Squid, Privoxy and Tor.
+
+Time to reinstall Komodo Edit 4.2 and see what else I'm missing for the long train trip worth of development.
+
+

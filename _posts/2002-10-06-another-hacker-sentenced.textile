@@ -1,0 +1,32 @@
+---
+layout: post
+title: "Another Hacker Sentenced"
+category: WTF
+published:
+  epoch: 1033885814
+  utc: 2002-10-06T06:30:14
+---
+
+<p>
+From <a href="http://news.com.com/2100-1001-960933.html?tag=fd_top" title="Article about the arrest of a hacker"><cite>News.com</cite></a> : 
+</p>
+
+<blockquote>
+<p>
+A Russian hacker lured to the United States by the FBI under the ruse of a job interview is sentenced to three years in prison for computer crime ... The computers they used had software on them that logged every keystroke and FBI agents were able to <strong>later grab the men's passwords and download evidence off their computer network in Russia ... The FBI countered, and the judge agreed, that Russian law does not apply to the agents' actions. </strong>.
+</p>
+</blockquote>
+
+<p>
+So let me get this shit straight,  someone from Russia can break an American law while in Russia, and we can nab him, but Americans can break Russian laws while in America and we're somehow not guilty of anything?
+</p>
+<p>
+This is what really pisses me off about this country; the whole do as I say not as I do mentality with our government and Hollywood.
+</p>
+<p>
+This is just as bad as the <a href="http://www.freesklyarov.org/">Dmitry Sklyarov</a> case where be nabbed him in the US for breaking some Abobe eBook encryption while in Russia, where it's NOT illegal to do so.
+</p>
+<p>
+Any bets on <a href="http://www.onlinereporter.com/#audiobooksforfree.com%20Director%20Breaks%20Microsoft%20Reader" title="Article about cracking Microsoft eReader">who's going to be next</a>?
+</p>
+

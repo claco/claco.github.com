@@ -1,0 +1,25 @@
+---
+layout: post
+title: "I Know I Shouldn't"
+category: WWW
+published:
+  epoch: 1060444794
+  utc: 2003-08-09T15:59:54
+---
+
+<p>
+I'm working on a not so new project at home. The goal is to use an existing RDBMS in an OODBMS way. I know, it's a project doomed to failure, but that won't stop me from trying. :-)
+</p>
+<p>
+Essentially, I need to convert an old ASP driven site to something MySQL/Perl/XML driven. It's just your average run of the mill commerce site. But here's the kicker. Rather than just move the database from MSSQL to MySQL, I wan to revamp the schema completely.
+</p>
+<p>
+If you've ever tinkered under the hood of MS Commerce Server, one of the things that stands out is how it stores part/product information. Rather than trying to make all parts fit into the same mold, part are grouped by type, and each type has it's own set of attributes. A CD and a wrench are the same, so why shove them into the same mold?
+</p>
+<p>
+In a nutshell, you have tables thatg store the part definitions and other tables that store the part attributes. Instead of a part geing a single row with its attributes being the columns, each row is a different attribute name/value for a given part.
+</p>
+<p>
+Luckily, the site I'm workin on has about 500 parts or so most of which are semi related. I've read the various Google newsgroup postings. The OODBMS vs. RDBMS seems like a religous topic at best. Worst case; it's a learning experience.
+</p>
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "MediaWiki"
+category: Software
+published:
+  epoch: 1118459742
+  utc: 2005-06-11T03:15:42
+---
+
+While rebuilding a tinker/blog box at work, I decided to install MediaWiki. THat's the same wiki software that runs Wikipedia. I'm hooked.
+
+I'm definately going to install it for <a href="http://search.cpan.org/search?query=Handel">Handel</a>. I'm giving serious thought to ditching the "blog" and going with a wiki instead.
+
+

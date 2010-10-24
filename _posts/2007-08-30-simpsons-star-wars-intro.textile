@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Simpsons Star Wars Intro"
+category: Humor
+published:
+  epoch: 1188521214
+  utc: 2007-08-31T00:46:54
+---
+
+Funny. Well done.
+
+<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/V_38vPCjB0Q"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/V_38vPCjB0Q" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>
+
+

@@ -1,0 +1,21 @@
+---
+layout: post
+title: "WMP9 Followup"
+category: Music
+published:
+  epoch: 1059951919
+  utc: 2003-08-03T23:05:19
+---
+
+<p>
+Ok, now I finally remember why I turned away from using Windows Media Player and WMA/MP3 files: <strong>insane amounts of skipping</strong>. :-(
+</p>
+<p>
+I've turned off SRS Wow effects. Turned off visualizations. Turned off the equalizer. Yet WMP skips like crazy  during playback if I try to do anything else. This is on a 3.4Ghz 1Gb Ram machine. Same goes for my dual 733Ghz at work. Then there's this insane 25%-40% CPU usage. #$%$#
+</p>
+
+<p>
+The even stranger thing was that WMP rarely skipped when play Ogg Vorbis files. Wonder if WinAmp plays WMA files? Maybe I'll give that a try. I really don't want to take the longer time to rip everything to Ogg when WMP is much faster at that task.
+</p>
+
+

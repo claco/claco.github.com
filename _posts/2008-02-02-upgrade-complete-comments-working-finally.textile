@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Upgrade Complete. Comments Working Finally."
+category: Apache
+tags:
+  - apache
+  - fastcgi
+  - lighttpd
+  - movable type
+  - upgrade
+published:
+  epoch: 1202006215
+  utc: 2008-02-03T02:36:55
+---
+
+It's bad enough I never blog, but its even worse that comments have been broken for so long. I like MovableType, but it's FastCGI support is spotty at best. Enough srewing around with Lighttpd, it's back to good old Apache for me.
+
+

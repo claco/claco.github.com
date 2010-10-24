@@ -1,0 +1,18 @@
+---
+layout: post
+title: "What Anti-Virus Software Do You Use?"
+category: Security
+published:
+  epoch: 1091385185
+  utc: 2004-08-01T18:33:05
+---
+
+It to the point now that a few of my Norton AntiVirus 2002/2003 installs subscriptions' are set to expire. I've heard bad things about NAV 2004; things like it has MS like activation, and that is sucks up more resource than the older versions.
+
+So, I figure it's time to snag some new AV software. I've had bad experiences in the past with McAfee, but I hear version 7/8 is pretty good.
+
+There's also TrendMicro and Panda. I want something that works and paying $49 for Norton AV is a retarded price anymore.
+
+What do you use on Windows?
+
+

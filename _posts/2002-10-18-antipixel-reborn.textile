@@ -1,0 +1,24 @@
+---
+layout: post
+title: "AntiPixel Reborn"
+category: WWW
+published:
+  epoch: 1034953468
+  utc: 2002-10-18T15:04:28
+---
+
+<p>
+	Congrats out to <cite>Jeremy Hedley</cite> on the 
+	<a href="http://www.antipixel.com/blog/archives/2002/10/18/antipixel_2_are_we_there_yet.html" title="Post abour Antipixel's Redesign">new design</a> 
+	at <a href="http://www.antipixel.com/" title="Visit antipixel.com"><cite>AntiPixel</cite></a>!
+	I like it. And he went and got all <acronym title="eXtensible HyperText Markup Language">XHTML</acronym> Strict on us too. Far braver than I. I will continue to cower under
+	the umbrella of XHTML 1.0 Transitional for a while. As you may never notice, Jeremy was kinda enough to 
+	let me use his XHTML/<acronym title="Cascading Style Sheets">CSS </acronym> <cite><acronym title="World Wide Web Consortium">W3C</acronym></cite> badges on this site.
+</p>
+<p>
+	I didn't know that <a href="http://inessential.com/?comments=1&amp;postid=2225" title="Post about TigerLaunch">he did the app icon and some menubar icons</a> for 
+	<cite>Brent Simmons</cite>' <a href="http://ranchero.com/software/tigerlaunch/" title="TigerLaunch home page"><cite>TigerLaunch</cite></a> app. Cool! I really wish 
+	there was a PC port of <a href="http://ranchero.com/software/netnewswire/" title="NEtNewsWire home page">this application</a> of his though. :-(
+</p>
+
+

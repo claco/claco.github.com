@@ -1,0 +1,14 @@
+---
+layout: post
+title: "BeatBox TV"
+category: Music
+published:
+  epoch: 1064973441
+  utc: 2003-10-01T01:57:21
+---
+
+<p>
+Via the <a href="http://j-walk.com/blog/archives/030929.htm#30-13">J-Walk Blog</a>, who needs a drum machine when you have lips? <a href="http://www.beatbox.tv/">BeatBox TV</a> is awesome! As a long time drummer, this is truly impressive.
+</p>
+
+

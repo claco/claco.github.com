@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Diseased Programmer Mind"
+category: OffTopic
+published:
+  epoch: 1083622689
+  utc: 2004-05-03T22:18:09
+---
+
+<p>
+Sometimes, being a literal thinker, a programmer causes these stupid thoughts to manifest themselves:
+</p>
+<blockquote>
+<p>
+Pizza "delivery"? It's not really delivery is it? It's still "pick-up". I'm picking it up at my door. If it were delivery, the pizza guy would come on in, put the boxes on the counter, put the pizza slices on a plate and hand it to my with my drink. That's delivery.
+</p>
+</blockquote>
+
+

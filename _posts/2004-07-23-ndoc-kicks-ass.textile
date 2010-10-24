@@ -1,0 +1,16 @@
+---
+layout: post
+title: "NDoc Kicks Ass"
+category: Software
+published:
+  epoch: 1090618882
+  utc: 2004-07-23T21:41:22
+---
+
+I don't know why it took me so long to try it, but in an effort to make something useful out of the .NET inline XML documentation I downloaded <a href="http://ndoc.sourceforge.net/">NDoc</a> and turned it loose on the assmembly I've been workng on.
+
+Holy cow! 30 seconds later I've damn nice compiled /chm help file. That's awesome. I'll have to spend some time cleaning it up and filling in the missing parts, but I don't think API documentation could be much easier.
+
+IT can generate any number of different documentation formats too. Check out their <a href="http://ndoc.sourceforge.net/reference/">online docs</a> built using their own tool. Nice.
+
+

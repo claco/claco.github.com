@@ -1,0 +1,30 @@
+---
+layout: post
+title: "MT 2.51 Patch Redux"
+category: Perl
+published:
+  epoch: 1041576235
+  utc: 2003-01-03T06:43:55
+---
+
+<p>
+After some email conversation with Ben, he pointed out that the <strong>MTPingInterface</strong> hack would be better
+served as options in the <code>mt.cfg</code> file
+instead of mucking about in the database/admin <acronym title="Graphical User Interface">GUI</acronym>. So that's what I set out to do this evening.
+</p>
+<p>
+Without further a-mountaindew, here it is: 
+</p>
+
+<h4>MTPingInterface</h4>
+<p>
+	<a href="http://today.icantfocus.com/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
+	I also went that extra mile or so and added <strong>MTPingProxy</strong> and <strong>MTPingNoProxy</strong> to mix. 
+	This extra options allow pings to be routed through a proxy server and certain domains to bypass the proxy respectively.
+</p>
+<p>
+On a lighter note, this is why I really like Ben and Mena and MT: They're Easy Going. Ben has been 
+very helpful so far with my barrage of code questions about how parts or MT work. Kudos.
+</p>
+
+

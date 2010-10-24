@@ -1,0 +1,19 @@
+---
+layout: post
+title: "MacBook Time"
+category: Hardware
+tags:
+  - apple
+  - laptop
+  - macbook
+  - parallels
+published:
+  epoch: 1157823387
+  utc: 2006-09-09T17:36:27
+---
+
+Now that I have a grant coming my way [assuming I get my ass moving on the project], I plan on getting a MacBook. THe main goal is to use Parallels so I can run XP, OSX, Ubuntu, and FeeeBSD and do lots of testing on all the different platforms without rebooting.
+
+I'm holding out for MacBooks with the new Core 2 Duo chips, and I hope that happens next week. The day it does, I'll drop the dime on a new order. If they're putting them in the low end iMacs, they almost have to put them in all of the low end computers, especially laptops. Everyone else in the industry is at this point.
+
+

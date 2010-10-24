@@ -1,0 +1,5 @@
+{% include header.textile %}
+
+{{ content }}
+
+{% include footer.textile %}

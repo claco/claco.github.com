@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Wired Redesign Interview"
+category: WWW
+published:
+  epoch: 1034439939
+  utc: 2002-10-12T16:25:39
+---
+
+<p>
+There is an interview with Douglas Bowman over at DevEdge concerning the new <a href="/blog/archives/entries/000010/" title="Doubglass Bowan Interview">Wired News site redesign</a>. The interview is conducted by none other than
+<a href="http://www.meyerweb.com/eric/"><cite>Eric A. Meyer</cite></a>, a well known web standards evangelist and author of the book <a href="http://www.meyerweb.com/eric/books/css-tdg/">Cascading Style Sheets: The Definitive Guide</a>. I haven't manadge to pick up this book yet, but I really should. Interested read.
+</p>
+<p>
+On a side note, I had no idea he was from Cleveland. Wow. Small world. My first web gig was in Cleveland. Ah, those were the days. Quake <acronym title="Capture The Flag">CTF</acronym> on the LAN after 5:00pm.  :-)
+</p>
+
+

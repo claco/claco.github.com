@@ -1,0 +1,14 @@
+---
+layout: post
+title: "X10, Perl, FreeBSD: Home Automation"
+category: FreeBSD
+published:
+  epoch: 1073096748
+  utc: 2004-01-03T02:25:48
+---
+
+<p>
+I know I have too much crap to do and a house to get rid of, but I really want to start tinkering with something like <a href="http://misterhouse.sourceforge.net/">Mister House</a> or <a href="http://search.cpan.org/search?query=ControlX10&amp;mode=module">these CPAN modules</a>. Home automation with a little bit of perl and a few modules. Now that I've got a new house with known good wiring, this could get to be fun.
+</p>
+
+

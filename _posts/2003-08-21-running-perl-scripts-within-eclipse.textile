@@ -1,0 +1,164 @@
+---
+layout: post
+title: "Running Perl Scripts Within Eclipse"
+category: Perl
+published:
+  epoch: 1061519812
+  utc: 2003-08-22T02:36:52
+---
+
+<p><em>
+Since I've had to tinker myself to death twice to figure this out, trying every variation under the sun to avoid various path, @INC and working directory issues, I might as well post it here so I can find it again later after the next OS reinstall. :-)
+</em></p>
+
+<p>
+<strong>
+It appears that sometime around 3.0 M6 to M8, Eclipse changes the way it interacts with the Working Directory. What used to work, now doesn't. It appears now that I have to make the Working Directory ${project_loc} to get things to wkr as they should. Anyone got any more info on the changes?
+</strong>
+</p>
+
+
+<h2><a id="introduction">Introduction</a></h2>
+<p>
+If you're running the <strong><a href="http://www.eclipse.org/">Eclipse IDE</a></strong> and <strong><a href="http://e-p-i-c.sourceforge.net/">EPIC</a></strong>, the perl editing plugin for Eclipse, at some point you are going to want to run a script you're writing. At that point, you have two options: <strong>a)</strong> run it in a seperate command window, constantly switching back and forth between that and the IDE , or  <strong>b)</strong> try and convince Eclipse to run it behind the scenes and display the results in the <strong>Console</strong> view.
+</p>
+<p>
+I'm lazy, so I chose the latter of the two. :-)
+</p>
+<p>
+Unfortunately, setting up the <strong>External Tools</strong> configuration to run my scripts within the IDE turned out to be harder than it should have been.
+I'm sure part of that was due to <acronym title="I-D-10-T error between the chair and keyboard.">Pilot Error(TM)</acronym>. After some RTFMing and a quick scan of the Windows Command  Shell, I stumbled upon the solution below.
+</p>
+
+<h2><a id="setupsteps">Get On With It!</a></h2>
+
+<ol>
+	<li>
+		<p>
+			First, open the <strong>External Tools</strong> configuration window (<strong><a href="#figure2">Figure 2</a></strong>)  by
+			choosing <strong>Run -> External Tools -> External Tools...</strong> from the menubar as
+			shown in <strong><a href="#figure1">Figure 1</a></strong> below.
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure1.png" id="figure1">
+				<img src="/blog/images/perl/eclipse-runperl-figure1-thumb.png" alt="Figure 1: Opening External Tools configuration window" />
+			</a>
+			<br />
+			<strong>Figure 1:</strong> Opening External Tools configuration window
+		</p>
+	</li>
+	<li>
+		<p>
+			Next, highlight the <strong>Program</strong> entry in the <strong>Configurations</strong> box on the left (<strong><a href="#figure2">Figure 2</a></strong>) and click <strong>New</strong> button below
+			to create a new configuration as shown in <strong><a href="#figure3">Figure 3</a></strong>.
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure2.png" id="figure2">
+				<img src="/blog/images/perl/eclipse-runperl-figure2-thumb.png" alt="Figure 2: External Tools configuration window" />
+			</a>
+			<br />
+			<strong>Figure 1:</strong> External Tools configuration window
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure3.png" id="figure3">
+				<img src="/blog/images/perl/eclipse-runperl-figure3-thumb.png" alt="Figure 3: Creating a new configuration" />
+			</a>
+			<br />
+			<strong>Figure 3:</strong> Creating a new configuration
+		</p>
+	</li>
+	<li>
+		<p>
+			In the <strong>Name</strong> field. type in the display name for this configuration. We're going to be creating a simple configuration to run Perl with warnings enable, so enter <kbd>perl -w</kbd>
+		</p>
+		<p>
+			In the <strong>Location</strong> field, we will point Eclipse to use the command shell.
+			By using the command shell instead of the perl executable, we can change directories and run anything we need to prior to actually
+			running the perl script in question. The location of <kbd>cmd.exe</kbd> will vary depending on which MS OS you're using.
+			I'm running XP Pro, so I entered <kbd>C:\WINDOWS\system32\cmd.exe</kbd>.
+		</p>
+		<p>
+			In the <strong>Working Directory</strong> box, I pointed it to <kbd>C:\WINDOWS\system32</kbd>, the same location as <kbd>cmd.exe</kbd>.
+			There is probably no reason to do so, but what the hell. It can't hurt right?
+		</p>
+		<p>
+			Now for the magic. In the <strong>Arguments</strong> box I entered the following
+		</p>
+		<p style="text-align:left;">
+			<kbd>/C "cd ${container_loc} &amp;&amp; perl -w ${resource_name}"</kbd>
+		</p>
+		<p>
+			What is all that junk anyhow? Here's a breakdown.
+		</p>
+		<dl>
+			<dt><strong>[cmd.exe] /C</strong></dt>
+			<dd>Carries out the command specified by string and then terminates</dd>
+
+			<dt><strong>cd ${container_loc}</strong></dt>
+			<dd>Change directory to the directory containing the currently selected perl script in the IDE</dd>
+
+			<dt><strong>perl -w ${resource_name}</strong></dt>
+			<dd>Run the selected perl script using perl.exe with warnings turned on</dd>
+		</dl>
+
+
+<p><em>
+<strong>Note:</strong> I used <kbd>perl</kbd> instead of <kbd>wperl</kbd> because I'm running the 1.4.x runtime. If I use <kbd>wperl</kbd> instead, I actually get the quick DOS popup window even though <kbd>wperl</kbd> is modeless , <strong>Run in background</strong> is checked, and the 1.4.x runtime supposedly fixed this issue (<a href="http://e-p-i-c.sourceforge.net/faq.html#A_DOS_box_flashes_on_the_screen_can_it">EPIC FAQ Entry</a>). I suspect the opposite would happen if I were using the 1.3.x runtime.</em></p>
+
+		<p>
+			After entering the data above, click <strong>Apply</strong>. You should end up with something looking like <strong><a href="#figure4">Figure 4</a></strong>.
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure4.png" id="figure4">
+				<img src="/blog/images/perl/eclipse-runperl-figure4-thumb.png" alt="Figure 4: Enter configuration values" />
+			</a>
+			<br />
+			<strong>Figure 4:</strong> Enter Main configuration values
+		</p>
+	</li>
+	<li>
+		<p>
+			Next, click on the <strong>Common</strong> tab in the configuration you just created and click the <strong>External Tools</strong> checkbox in
+			the <strong>Display in favorites menu</strong> (<strong><a href="#figure5">Figure 5</a></strong>) settings group
+			and click <strong>Apply</strong>. Then hit <strong>OK</strong> to close the External Tools window.
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure5.png" id="figure5">
+				<img src="/blog/images/perl/eclipse-runperl-figure5-thumb.png" alt="Figure 5: Add configuration to External Tools menu" />
+			</a>
+			<br />
+			<strong>Figure 5:</strong> Add configuration to External Tools menu
+		</p>
+	</li>
+	<li>
+		<p>
+			If all goes well, your new external tool configuration should be listed in the <strong>Run -> External Tools</strong> as shown in <strong><a href="#figure6">Figure 6</a></strong>. If not, then don't kill the messenger. :-)
+		</p>
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure6.png" id="figure6">
+				<img src="/blog/images/perl/eclipse-runperl-figure6-thumb.png" alt="Figure 6: New configuration in Run -> External Tools menu" />
+			</a>
+			<br />
+			<strong>Figure 6:</strong> New configuration in Run -> External Tools menu
+		</p>
+	</li>
+	<li>
+		Highlight a perl script of your choosing in the <strong>Navigator</strong> view and pick your configuration from the <strong>Run -> External Tools</strong> menu.
+		If all goes well, the results of your Perl script should now appear in the <strong>Console</strong> view similiar to <strong><a href="#figure7">Figure 7</a></strong>.
+		<p class="image">
+			<a href="/blog/images/perl/eclipse-runperl-figure7.png" id="figure7">
+				<img src="/blog/images/perl/eclipse-runperl-figure7-thumb.png" alt="Figure 7: Perl script outputs into Console view" />
+			</a>
+			<br />
+			<strong>Figure 7:</strong> Perl script outputs into Console view
+		</p>
+	</li>
+</ol>
+
+
+<p>
+There, that wasn't to so bad. If you're feeling creative you can create additional configurations for running <kbd>make</kbd>, <kbd>make test</kbd> and <kbd>make clean</kbd> on CPAN-like packages created using <a href="http://search.cpan.org/search?query=ExtUtils%3A%3AMakeMaker&amp;mode=module">ExtUtils::MakeMaker</a>.
+</p>
+
+
+

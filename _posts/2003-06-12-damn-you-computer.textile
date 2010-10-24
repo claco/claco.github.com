@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Damn You Computer@!#$%"
+category: WTF
+published:
+  epoch: 1055469494
+  utc: 2003-06-13T01:58:14
+---
+
+<p>
+For something based on 1's and 0's, computers really suck serious monkey nut sometimes.
+</p>
+<p>
+So I put together my new game machine, and everything appears to work fine. Boots on the first try w/o error after assembly. Memtest86 runs overnight without issue. 3DMark01/03 run looped without issue. XP Pro install goes fine.
+All in all, and easy time.
+</p>
+<p>
+But at some point, the mouse starts going herky jerky (yes, that's a technical term) on me. I searched Google, and found everything from IRQ conflicts, to drivers; bad MS Hotfixes to AGP port speed; disk contention to CPU issues. You name it. I tried it. 
+I even tried 3 different mice. Nothing helped.
+</p>
+<p>
+Then the light bulb went on. Mouse X/Y movement jittered, but the buttons, scroll wheel, and the keyboard all worked fine. Hmmm. Then I remembered that all 3 of the mice I tried were some sort of optical mice. So I dug up an old crusty ball mouse (he he, he said ball) and sure as shit...it worked!
+</p>
+<p>
+Now, that solution by itself would make sense to me if it weren't work the fact that I have been using that very [problemed] optical mouse on my old computer, on the same OS, using the same drivers, <strong>on the same desk surface</strong> without any issues. WTF? I then plugged the problem mouse back in. The jitters reappeared. I put a sheet of white paper underneath and the jitters went away? <em>Again, What The Hell?</em>
+</p>
+<p>
+Why these optical mice worked on my old system on this desk surface, yet those same mice jittered on my new computer on the same desk is a mystery to me beyond fathom.
+</p>
+
+

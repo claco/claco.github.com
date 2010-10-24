@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Back On The Planet"
+category: OffTopic
+published:
+  epoch: 1171229517
+  utc: 2007-02-11T21:31:57
+---
+
+Long time no blog. Just the usual stuff really. More work on Handel including a new RDBO storage layer. Mango work is progressing nicely, and I just made Data::Currency and InflateColumn::Currency for DBIC. Same old same old.
+
+
+
+

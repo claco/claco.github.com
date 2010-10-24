@@ -1,0 +1,22 @@
+---
+layout: post
+title: "We're Not All Administrator"
+category: Software
+published:
+  epoch: 1086912313
+  utc: 2004-06-11T00:05:13
+---
+
+Dear Software Vendors,
+
+Please, for the love of all that is holy, get a friggin clue and make sure your software runs for users that don't have Administrator privileges!
+
+Here's two software companies on my shit list for this inability.
+
+First, Macromedia HomeSite 5.5 completely bombs when run as a normal user. Even after installing the program when logged in as an Administrator interactively (not using <kbd>runas</kbd>). No, I won't be trying your product anytime soon.
+
+Offender number two is Jasc's Paintshop Pro 8. While it installs fine, it refuses to run as a normal user requesting that it be run with an account that has Administrator privileges. While the message mentions this is a restriction for the Trial version, I'd never buy the full version just to find out that it doesn't work there either.
+
+Now I understand why people run their crap as accounts in the Administrators group on Windows. Because most Windows application developers are lazy, incompetent, or both.
+
+

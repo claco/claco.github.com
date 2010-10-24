@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Progress: Slow But Broad Strokes"
+category: WWW
+published:
+  epoch: 1042518327
+  utc: 2003-01-14T04:25:27
+---
+
+<p>
+Progress in groves. Most of this site is compliant (for lack of a better term) with the suggestions at <a href="http://diveintoaccessibility.org/">diveintoaccessibility.org</a>. I'm still weeding my way through the Movable Type database double checking the title attributes for the anchor tags, adding acronym tags where appropriate, and adding image width and height. What a night.
+</p>
+<p>
+Among the changes we have:
+</p>
+<ul>
+
+<li>Better page titles</li>
+<li>Global navigation access keys</li>
+<li>Link tag relational navigation</li>
+<li>Help page and accessibility statement</li>
+<li>Better anchor tag title attributes</li>
+<li>Acronyms where appropriate</li>
+
+</ul>
+
+<p>
+We're getting there. And I'm up to post #105. How the hell did that happen?
+</p>
+
+

@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Photo Collection"
+category: Static
+published:
+  epoch: 1059970962
+  utc: 2003-08-04T04:22:42
+---
+
+<h2>I swear it wasn't me.</h2>
+
+This is what we call evidence. Proof positive. Proof of what I have no idea.
+
+<h3><a id="photos2003">2003</a></h3>
+<dl>
+<dt><a href="/photos/2003/sixflags/">Six Flags</a> (Sea World/Geauge Lake)</dt>
+<dd>A Saturday out with Margeaux and the neicelets</dd>
+<dt><a href="/photos/2003/newhouse/">New House Interior</a></dt>
+<dd>Some quick photos of the interior of the new house!</dd>
+</dl>
+
+
+

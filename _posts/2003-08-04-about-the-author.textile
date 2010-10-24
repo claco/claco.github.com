@@ -1,0 +1,62 @@
+---
+layout: post
+title: "About The Author"
+category: Static
+published:
+  epoch: 1059971516
+  utc: 2003-08-04T04:31:56
+---
+
+<h2>Who's on first?</h2>
+
+What's on second. Third base. I don't give a darn.
+
+<h3><a id="who">Who?</a></h3>
+
+Just the fax ma'm:
+
+<ul>
+	<li>my bills come addressed to Christopher H. Laco</li>
+	<li>30ish years of age and counting</li>
+	<li>there's no place more exciting than Akron, Ohio</li>
+	<li>at work, they claim I am the Jack of all trades, Webmaster of none</li>
+</ul>
+
+<h3><a id="what">What?</a></h3>
+
+This sites construction is a huge departure from where I was a year ago. Not to mention that it probably is way more complicated than it has to be for 90% of it's content, but that is on purpose. :-)
+
+Stop back later. I plan up creating a section under <a href="/projects/">Projects</a> that goes into great detail of how I built this site.
+
+<h3><a id="when">When?</a></h3>
+
+While you are reading this, I am furiously not working on this site. That's what the trained shaved monkeys are for.
+
+<h3><a id="where">Where?</a></h3>
+
+Good ole' Tallmadge, Ohio.  Yes, that's right. The excitement capital of northeast Ohio. NOT.
+
+<h3><a id="why">Why?</a></h3>
+
+This site is my attempt to get back into the website creation groove.
+
+It's been far too long since I've had a personal website, and I need to scratch that itch. Plus, I have way to many opinions about various topics to keep under wraps any more. I've spent the last year or so maintaining existing websites @work and @home, and now it's time to get back on the wagon.
+
+The other reasons I built this website:
+
+<ol>
+	<li>Because I can damnit, because I can!</li>
+	<li>Force myself to get my new <a title="Toyz!!!!" href="/about/servers/">servers</a> operational.</li>
+	<li>Get converted away from Windblows web development</li>
+	<li>Learn more <a href="http://www.freebsd.org/">FreeBSD</a> stuffs</li>
+	<li>The monkeys made me do it!@#$%</li>
+	<li>Learn more <a href="http://www.perlmonks.com/">Perl</a> stuffs</li>
+	<li>To much free time on my hands</li>
+	<li>Learn more <a href="http://www.axkit.org/">AxKit</a> stuffs</li>
+	<li>Taunt others from afar</li>
+	<li>Learn more <a href="http://httpd.apache.org/">Apache</a>stuffs</li>
+	<li>And get converted away from Windblows webdevelopment!</li>
+</ol>
+
+
+

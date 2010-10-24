@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Thank You Sir, May I Have Another?"
+category: Humor
+published:
+  epoch: 1044720033
+  utc: 2003-02-08T16:00:33
+---
+
+<p>
+According to <a href="http://www.pcworld.com/news/article/0,aid,109269,00.asp">this article</a> over at <a href="http://www.pcworld.com/">PCWorld</a>, the RIAA's website was yet again under attack yesterday. This seems to be a weekly event for them. So <em>that's</em> what happens when you piss off a bunch of file traders, computer geeks, and song lovers and treat them like criminals. :-)
+</p>
+<p>
+According to <a href="http://uptime.netcraft.com/up/graph/?mode_u=off&amp;mode_w=on&amp;site=http%3A%2F%2Fwww.riaa.org%2F&amp;submit=Examine">Netcraft</a>, they're running <strong> Microsoft-IIS/5.0</strong>. How nice.
+</p>
+
+

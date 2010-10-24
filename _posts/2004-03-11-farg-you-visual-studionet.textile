@@ -1,0 +1,58 @@
+---
+layout: post
+title: "Farg You Visual Studio.NET"
+category: WTF
+published:
+  epoch: 1079015258
+  utc: 2004-03-11T14:27:38
+---
+
+<p>
+<strong>@#$%$#@</strong> So, Scoble has has asked before what they can do to get people to use .NET. First and foremost,  get VS.NET to leave my gosh darned source code formatting alone. I really want to convert. But the fact that no matter how hard I try I still can't get VS.NET and Web Matrix to leave my source code alone still infuriates me within the first 5 minutes of ".netting'".
+</p>
+<p>
+Case in point. This went into a new file.
+</p>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /&gt;
+		&lt;title&gt;Redesign Layout Maneuvers&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+
+	&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>
+And a code view, html view, design view and a save later, this is what I have left:
+</p>
+<pre><code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;HTML lang="en"&gt;
+	&lt;HEAD&gt;
+		&lt;title&gt;Redesign Layout Maneuvers&lt;/title&gt;
+&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+		&lt;meta http-equiv="Content-Type" content="text/html; charset=UTF-8"&gt;
+	&lt;/HEAD&gt;
+	&lt;body&gt;
+
+	&lt;/body&gt;
+&lt;/HTML&gt;</code></pre>
+<p>
+Take note of what happened to my XML declaration. Nice. Are there hidden options somewhere to curb this behaviour? Probably. But I shouldn't have to find them. Could I just not ever touch Design view? That's not practical with code gen for objects, and other developers who know less and can't just write the code.
+</p>
+<p>
+Don't even get me started on the non-compliant, or even not-even-remotely-close compliancy of the HTML this stuff pukes out.
+</p>
+<p>
+No thank you. I'll go back to mod_perl and a text editor (Textpad). Maybe when Longhorn and 2.0 .NET hits I'll try again. :-/
+</p>
+<ins>
+<p><em>
+Since Robert has linked to this post, I've toned it down a bit out of respect for his readers.</em>
+</p>
+</ins>
+
+

@@ -1,0 +1,77 @@
+---
+layout: post
+title: "MT Entry Redirect CGI"
+category: Perl
+published:
+  epoch: 1086567365
+  utc: 2004-06-07T00:16:05
+---
+
+<p>
+I used to spit out individual entry archives into files named after each entries id.
+</p>
+<p>
+For example, entry 300 was located at <samp>/blog/archives/entries/0003000/</samp>. I've since moved to using the entry title as the file name, so I have to figure out how to redirect the old links to the new locations. The easiest way to do this seems to be a quick and dirty <samp>mod_rewrite</samp> and a CGI script.
+</p>
+<p>
+Here's the RedirectMatch directive:
+</p>
+
+<pre><code>
+RewriteEngine   on
+RewriteRule     ^/blog/archives/entries/([0-9]{1,6})(/|\.xsp)$  /cgi-bin/mt-byid.cgi?entry_id=$1 [R=301,L]
+</code></pre>
+
+<p>
+And here's the CGI itself:
+</p>
+
+<pre><code>
+#!/usr/bin/perl -wT
+use strict;
+
+my($MT_DIR);
+BEGIN {
+    if ($0 =~ m!(.*[/\\])!) {
+        $MT_DIR = $1;
+    } else {
+        $MT_DIR = './';
+    };
+    unshift @INC, $MT_DIR . 'lib';
+    unshift @INC, $MT_DIR . 'extlib';
+    push @INC, $MT_DIR . 'plugins';
+};
+
+eval {
+        use CGI;
+        use MT;
+        use MT::Entry;
+
+        my $permalink;
+        my $query = CGI->new;
+        my $entry_id = $query->param('entry_id');
+
+        if ($entry_id !~ /^\d{1,6}$/) {
+                $entry_id = 0;
+        };
+
+        my $mt = MT-&gt;new;
+        my $entry = MT::Entry-&gt;load({id =&gt; $entry_id});
+        if ($entry) {
+                $permalink = $entry-&gt;permalink('Individual');
+        } else {
+                $permalink = '/404.icf';
+        };
+
+        print $query-&gt;redirect( -uri=&gt;$permalink,
+                                -status=&gt;'301 Moved Permanently'
+        );
+};
+
+if ($@) {
+    print "Content-Type: text/html\n\n";
+    print "Got an error: $@";
+};
+</code></pre>
+
+

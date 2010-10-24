@@ -1,0 +1,24 @@
+---
+layout: post
+title: "http://www.clownpenis.fart"
+category: Humor
+published:
+  epoch: 1044210632
+  utc: 2003-02-02T18:30:32
+---
+
+<p>
+Yet another entry from the you-know-you're-a-geek-when department. So I'm watching Saturday Night Live reruns on Comedy Central and they had this skit about some firm named Dillion &amp; Edwards with the web address of <strong>http://www.clownpenis.fart</strong>.
+</p>
+<p>
+Funny. So what's the first thing that pops into my head?
+</p>
+<p>
+<em>Trailing slash! You forgot the damn trailing slash! That's gonna cost you a double request to the server.</em>
+</p>
+<p>
+Guess I've been reading to many <a href="http://www.alistapart.com/stories/slashforward/" title="A List Apart article on trailing slashes">A List Apart articles</a>.
+God I'm a loser. :-)
+</p>
+
+

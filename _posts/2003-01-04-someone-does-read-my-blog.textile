@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Someone Does Read My Blog"
+category: Hardware
+published:
+  epoch: 1041719574
+  utc: 2003-01-04T22:32:54
+---
+
+<p>
+While surfing the referer logs, I noticed that someone over at <a href="http://zzz.com.ru/" title="Visit zzz.com.ru"><cite>ZZZOnline</cite></a> has <a href="http://zzz.com.ru/155.html" title="Post including a link to my Sager laptop review">linked to</a> my <a href="/blog/archives/entries/000039/" title="My review of the Sager NP5660 laptop">Sager NP5660 Review</a>. Cool! Glad it was of help to someone. Congrats on the Sager NP5660 purchase from PowerNotebooks.com. I'm sure you will be as happy as I am with it. It will be the last brand of laptop I ever buy.
+</p>
+
+

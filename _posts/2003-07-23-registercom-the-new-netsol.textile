@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Register.com: The New NetSol"
+category: WTF
+published:
+  epoch: 1058932960
+  utc: 2003-07-23T04:02:40
+---
+
+<p>
+"Meet the new boss. Same as the old boss."
+</p>
+<p>
+Register.com is turning out to be just as bad as Network Solutions.
+There's one domain name I have [mjmcpherson.com] that was paid in full for 3 years, AND on auto-renew.
+Yet, one of Register.com's resellers keeps selling the domain name away from me.
+The whois contact information is someone else, but the DNS information is still me.
+</p>
+<p>
+The last time this happened, they clearly found my invoice where I was paid in full for years, yet couldn't explain the snafu. After a phone call it got corrected.
+</p>
+<p>
+Now of course, it's gone missing again. More waste of my time on the phone tomorrow.
+</p>
+<p>
+To make matters more fun, here's the dates in whois:
+</p>
+<blockquote>
+<p>
+      Created on............: Wed, Sep 20, 2000<br />
+      Expires on............: Mon, Sep 20, 2004<br />
+      Record last updated on: Wed, Sep 20, 2000<br />
+</p>
+</blockquote>
+
+<p>
+That's right. The record hasn't been changed since Sept 20, 2000. Yet it disappeared sometime this year again. #$%$#
+</p>
+
+

@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Why I Still Hate ASP.NET [2.0]"
+category: MicroShaft
+published:
+  epoch: 1112034793
+  utc: 2005-03-28T18:33:13
+---
+
+This is why I still hate ASP.NET:
+
+<blockquote>
+
+A page can have only one server-side Form tag.
+
+Description: An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+Exception Details: System.Web.HttpException: A page can have only one server-side Form tag.
+
+</blockquote>
+
+This is such a bullshit requirement. There are plenty of times where you need two forms on one page. This is especially true if the forms are seperate but some content/layout and considering that XHTML 1.0 Strict/1.1 are pissy about what can and can't be put in forms, and where form tags can happen.
+
+With that said, ASP.NET 2.0 and the new VS.NET Web Developer Express are pretty damn cool compared to the past versions.
+
+

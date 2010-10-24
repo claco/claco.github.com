@@ -1,0 +1,18 @@
+---
+layout: post
+title: "It's not as it appears"
+category: WTF
+published:
+  epoch: 1105325438
+  utc: 2005-01-10T02:50:38
+---
+
+Yes, I'm still alive. I've been spending a lot of time working on <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> in between the holidays.
+
+Just a few notes this evening about things that bug me today. First, the fucking Blockbuster "No More Late Fees" commercials. They're bullshit. The fees haven't went away, they've just increased. Now after a week you pay for the whole damn movie replacement cost. Of course, all the idiot comsumers won't realise it.
+
+Second, I bought the extra large bottles of RealLemon lemon juice at Sams Club. They're a complete fraud. They are watered down. When I make lemonaide, it takes two cups of the lemon juice from the smaller bottles. When using the bigger bottles, it take three. That means these bastards ate watering it down and charging more money. Fraud if you ask me.
+
+That is all.
+
+

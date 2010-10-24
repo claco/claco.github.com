@@ -1,0 +1,15 @@
+---
+layout: post
+title: "P4C800-D<sup>2</sup>"
+category: Hardware
+published:
+  epoch: 1174954868
+  utc: 2007-03-27T00:21:08
+---
+
+<em>Twin Powers Activate. Form Of A P4C800-D Motherboard.</em>
+
+The motherboard I purchased on eBay arrived today. The seller was quick and packaged the item extremely well. I'm quite happy with that since it was my first eBay purchase. The monitor should arrive Wednesday along with the DVD drive. Time to start putting the secondary game machine together. If I have enough working hard drives from the file server, I'll probably toss the latest Ubuntu beta on it just to see how it performs.
+
+
+

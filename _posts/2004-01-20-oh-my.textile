@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Oh My"
+category: OffTopic
+published:
+  epoch: 1074645873
+  utc: 2004-01-21T00:44:33
+---
+
+<p>
+<a href="http://us.news1.yimg.com/us.yimg.com/p/rids/20040118/i/r998312888.jpg">Most Popular Yahoo News Photo Today</a>
+</p>
+
+

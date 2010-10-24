@@ -1,0 +1,51 @@
+---
+layout: post
+title: "Opera 7 Release: CSS Bug?"
+category: WWW
+published:
+  epoch: 1043766855
+  utc: 2003-01-28T15:14:15
+---
+
+<p>
+Well at long last, <a href="http://www.opera.com/pressreleases/en/2003/01/28/" title="Opera 7 Press Release">Opera 7 has been released</a>; and it's bitten me in the ass already.
+Opera 6 rendered this site pretty much ok, except for the lack of <code>&lt;fieldset&gt;</code> and <code>&lt;label&gt;</code>. So I downloaded Opera 7 in hopes that everything would be peachy.
+Much to my dismay, it appears that Opera 7 will <strong>not load external stylsheets</strong> in <code>&lt;link&gt;</code> tags where the <code>&lt;href&gt;</code> is a relative path. Fsck.
+</p>
+<p>
+With this in place:
+</p>
+<pre>
+<code>
+&lt;link
+     rel="Stylesheet"
+     href="/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+</code>
+</pre>
+<p>
+I get jack squat, nada, nuttin, zilch.Change it to this:
+</p>
+<pre>
+<code>
+&lt;link
+     rel="Stylesheet"
+     href="http://today.icantfocus.com/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+</code>
+</pre>
+<p>
+and everyone is rendered happy. Fsck. Same goes for any <code>@import url();</code> entries in the external CSS code. Damn it. This is frustrating.
+Can any one else confirm or deny this behaviour?
+</p>
+<ins>
+<p>
+Yeah, I know, my CSS files have a few typoes in them. To me, that still wouldn't fully explain why it works/failes with a full/relative url.
+</p>
+</ins>
+
+

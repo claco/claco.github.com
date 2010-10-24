@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Google Desktop Search Is Crippled"
+category: WWW
+published:
+  epoch: 1097773619
+  utc: 2004-10-14T17:06:59
+---
+
+I have to agree with <a href="http://www.geekfun.com/archives/000409.html">Eric</a> on this one. It doesn't touch my Firefox history or bookmarks. It doesn't touch my Thunderbird files.
+
+Hell, I can't even get it to index anything other than my C:\ drive.
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Rain == Ohio"
+category: WTF
+published:
+  epoch: 1060458091
+  utc: 2003-08-09T19:41:31
+---
+
+<p>
+It's raining again, still, more, forever here in Akron again. At least I don't have to worry about the power going out now that the secondary backup sump pump is in.
+</p>
+
+

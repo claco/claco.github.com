@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Firefox 1.0PR Sucks...Less"
+category: Software
+published:
+  epoch: 1096375094
+  utc: 2004-09-28T12:38:14
+---
+
+My initial reaction to Firefox 10.PR was that it sucks serious ass compared to 0.9.3. I'd like to ammend those sentiments.
+
+My bigest complaint was the bookmarks that wouldn't work, and that disappeared every time I restarted Firefox. That problem has been resolved.
+
+I run Firefox from a USB thumb drive using the <samp>-Profile</samp> argument; installed from the .zip version, not the .exe installer.
+
+It appears that in this configuration, the import wizard never runs, and as such, never creates a <samp>bookmarks.html</samp> and <samp>bookmarks.bak</samp> file. If I manually added <samp>bookmarks.html</samp> to the profile directory, Firefox would delete it every time I quit Firefox.
+
+The secret seemed to be to let Firefox run normally and create a local profile. Then copy it's <samp>boomkmarks.*</samp> files into my portable profile. Problem solved.
+
+I guess Firefox looks for a <samp>bookmarks.bak</samp> and assume the if it isn't there, the import wizard never ran, wipe the file and start fresh.
+
+Who knows.
+
+

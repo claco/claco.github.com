@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Why I Love Perl"
+category: Perl
+published:
+  epoch: 1113338291
+  utc: 2005-04-12T20:38:11
+---
+
+I love Perl because it gets the hell out of my way. If I had a dollar for every language that made this more difficult than it had to be:
+
+<pre>my $var = somethingelse() || 'default';</pre>
+
+I'd be a friggin millionare. Strongly typed or not (.NET), other languages just suck at something simple like that, or even things like this:
+
+<pre>if ($anyobjectorvariableortype) { };</pre>
+
+Geez, I love Perl.
+
+

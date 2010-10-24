@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Antec Case Update"
+category: Hardware
+published:
+  epoch: 1049419039
+  utc: 2003-04-04T01:17:19
+---
+
+<p>
+For anyone paying attention, I snagged a <a href="/blog/archives/entries/000164/" title="Antec Case Purchase">new Antec case</a> a few weeks ago. My one complaint was that the case has a Firewire connector on the front with 6 individual pins on the other end to connect to a motherboard. Sounds good, except that that are hardly any mobos with onboard firewire, and most people probably have a PCI Firewire card with one internal 6 pin connector; making that case port useless. Or so I thought.
+</p>
+<p>
+After searching the net with little results, I decided to send Antec a mini-nastygram, and yesterday I got a response. For ~$5 and shipping, Antec will send you a replacement cable that has a 6 pin male connector on the end (to connect to a PCI Firewire card internal port). So I ordered and it's on the way.  It sure would be nice if they'd put that part on their website. It sounds like it doesn't even have a real part number. I can only imagine how many people need this part. From the looks of the usenet postings, not many people know about it. Go figure.
+</p>
+
+

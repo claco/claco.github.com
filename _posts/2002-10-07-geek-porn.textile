@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Geek Porn"
+category: Hardware
+published:
+  epoch: 1034036015
+  utc: 2002-10-08T00:13:35
+---
+
+<p>
+If there were such a thing as 'geek' porn, <a href="http://www.powernotebooks.com/5620_Pics.php3" title="Sager 5660 details page">this page</a> and <a href="http://www.powernotebooks.com/5660specs.php3" title="Sager 5560 details page">this page</a> surely would be part of it IMHO. Look at all those geeky specs and definitions! :-)
+</p>
+<p>
+About 2 months ago, my Compaq Presario 18XL380 kicked the bucket. Apparently, the power jack felt the need to liberate itself from the motherboard. At the time, this turned out to be a blessing in disguise: Until Today.
+</p>
+<p class="image">
+	<img src="/blog/images/hardware/np5660.jpg" width="247" height="227" alt="Sager NP5660 Picture" /><br />2.8GHz P4, 1GB Ram, ATI Mobility Radeon 9000. Wow.
+</p>
+
+<h4>Update</h4>
+<p>
+One NP5660 on it's way!. Ships Monday, should arrive on Wednesday. Review forthcoming after arrival.
+</p>
+<p>
+Like all true geeks, I have more than one computer; 9 to be precise. Yes, <b>nine</b> computers about the office, 10 if you count the laptop the woman has which techically is mine. :-)
+</p>
+
+<ul>
+<li>three(3) 1U FreeBSD servers</li>
+<li>one(1) 4U FreeBSD server</li>
+<li>one(1) HP Pavillion771n running XP (for games ok!)</li>
+<li>one(1) built-like-a-tank Gateway NT4 server</li>
+<li>one(1) HP Vectra Xm FreeBSD mail hub</li>
+<li>one(1) Apple Power MAcintosh G3 (Beige)</li>
+<li>one(1) Compaq Presario 18XL380 (Deceased)</li>
+</ul>
+
+<p>
+Still not convinced?
+</p>
+
+<p class="image">
+	<img src="/blog/images/hardware/server_rack.jpg" width="321" height="612" alt="Server Rack Photo" />
+</p>
+<p>
+Now here is where the reasoning starts to fall apart after a truely sad chain of geek events.
+</p>
+<p>
+First I bought the 1U rack servers in the hopes of converting away from the Gateway NT4 server towards Unix. The more I see MicroShaft in action, the less pleased I am about seeing a WinHozed box in my presence.
+</p>
+<p>
+Then I converted my old desktop (Dual P3 450) into a 4U file server. Gotta have a place for <del>the porn and MP3 files right?...umm...I mean</del> the server backups and important files. :-) 
+</p>
+<p>
+After that started, I spent a lot of time in the living room in front of the television with the notebook on my lap. Surfin. Hackin. Codin. Surfin. Flipping channels.  Watchin Alton Brown. You know the routine. Unfortunately, that also means I was getting no real work done.
+</p>
+<p>
+Then the laptop croaked. The warranty had expired a year ago, and the only recourse was to pay Compaq for a new motherboard. NOT. So back to the Pavilion in the office I go. By now I'm finally getting work done. Converting to Unix. Surfin.  Codin. Playin <a href="http://www.lucasarts.com/products/outcast/" title="JKII home page">Jedi Knight II: Jedi Outcast</a>. But I digress.
+</p>
+<p>
+But then today I ran across the specs for the new <a href="http://www.powernotebooks.com/5660specs.php3">Sager NP5660</a> and about dropped a load in me shorties. For the a lot less than what IBM, Dell, or Alien Ware wanted for the same (usually slower) specs, I'm getting one bitching machine that blows most desktops out of the water.
+</p>
+<p>
+I'll do a full write up and review when she get's here, which should be around Monday of next week.
+</p>
+

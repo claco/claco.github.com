@@ -1,0 +1,45 @@
+---
+layout: post
+title: "SSL Out The Wazoo"
+category: Security
+published:
+  epoch: 1034556309
+  utc: 2002-10-14T00:45:09
+---
+
+<p>
+	My brain hurts. No really. Being a true paranoid about all things security related, I decided to
+	lock down the email server for the outside people who will be sending mail through it. Why? Well. In order to prevent
+	being an <a href="http://whatis.techtarget.com/definition/0,,sid9_gci782509,00.html" title="Definition fo an Open Relay">Open Relay</a>, we want to require passwords 
+	from people who want to send out email from our email server. These people will also be logging in 
+	using <a href="http://searchwebservices.techtarget.com/sDefinition/0,,sid26_gci212805,00.html" title="Definition of POP3">POP3</a>
+ 	or <a href="http://searchwebservices.techtarget.com/sDefinition/0,,sid26_gci214022,00.html" title="Definition of IMAP">IMAP</a> to fetch their email.
+</p>
+<p>
+	So what's the problem? Well, everytime you log in to a POP3 or IMAP server to fetch your email, or log in to an SMTP server to 
+	send mail (assuming that SMTP server requires a password to send mail), 
+	you are sending your password in <strong>plain text</strong>, <strong>unencrypted</strong> for the whole world to see!  Not good.
+</p>
+<p>
+	What's the solution? Why 
+	<a href="http://searchsecurity.techtarget.com/sDefinition/0,,sid14_gci343029,00.html" title="Definition of SSL/TLS">SSL/TLS</a> of course!
+	And the nice part is, you don't have to fork cash over to Verisign just to get SSL certificates. 
+	Become <a href="http://www.modssl.org/docs/2.8/ssl_faq.html#ToC29" title="How-To become your own ceritifcate authority">your own</a> <acronym title="Certificate Authority">CA</acronym>!
+</p>
+<p>
+	Now, with the help of some HOW-TO docs on the net and a handy firewall or two, all external persons we wish to allow to send outgoing email 
+	must use IMAP over SSL (IMAPS), POP3 over SSL (SPOP3), or TLS over SMTP in addition to their usual user names and passwords. Way cool, but not exactly easy.
+</p>
+<p>
+	Here's a list of links that got me through it without killing someone or throwing a server out of the window:
+</p>
+
+	<ul>
+		<li><a href="http://www.modssl.org/docs/2.8/ssl_howto.html">Mod_SSL Docs: Chapter 5</a></li>
+		<li><a href="http://www.modssl.org/docs/2.8/ssl_faq.html">Mod_SSL Docs: Chapter 6</a></li>
+		<li><a href="http://www.aet.tu-cottbus.de/personen/jaenicke/postfix_tls/doc/">Postfix/TLS Docs by Lutz Janicke</a></li>
+		<li><a href="http://www.delouw.ch/linux/Postfix-Cyrus-Web-cyradm-HOWTO-test/html/cyrus-config.html">Configuring Cyrus IMAP</a></li>
+	</ul>
+
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Firefox Find Bar For Everyone!"
+category: Software
+published:
+  epoch: 1099178454
+  utc: 2004-10-30T23:20:54
+---
+
+I've recently found myself wishing that every application I use have the Firefox Find Bar (CTRL+F) within it. I think that find bar kicks ass when trying to find things within web pages and XML documents I'm viewing. I find myself using Textpad and hitting CTRL+F hoping for a find bar. It certainly is a lot better and less intrusive than a damn popup find box withint applications. I think Office could stand to learn the find bar trick too.
+
+The Firefox team could make the find bar even better by searching the content of the page AND the content of the text/input boxes in the page. 
+
+

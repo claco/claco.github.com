@@ -1,0 +1,30 @@
+---
+layout: post
+title: ".NET vs. W3C Standards"
+category: WWW
+published:
+  epoch: 1056212161
+  utc: 2003-06-21T16:16:01
+---
+
+<p>
+It's nice to see I'm not the only one that gets irked by .NET server controls and W3C standards. 
+<a href="http://www.splorp.com/blog/archive/2003_06_01_archive.html#105604957243094752">This Slurp post</a> about sums it up. 
+I <a href="http://today.icantfocus.com/blog/archives/entries/000204/">mentioned this problem before</a> as have many others in the <a href="http://www.asp.net/Forums/ShowPost.aspx?tabindex=1&amp;PostID=34126">ASP.NET forums</a>. 
+Even Mr. Zeldman has <a href="http://www.asp.net/Forums/ShowPost.aspx?tabindex=1&amp;PostID=34126">picked up the thread</a>.
+<ins>The <a href="http://www.yayhooray.com/thread/25122.html">YaHooray thread</a> on the issue as well from Zeldman.</ins>
+</p>
+<blockquote>
+<p>
+The frustrating part of this whole exercise is that .NET does generate some of the controls as seemingly compliant XML-ish code. But it's certainly not consistent and there is no obvious way of controlling any aspect of the tag or attribute formatting. This isn't exactly what I was hoping to hear, but I'm not giving up quite yet. If there's a way around these limitations and constraints, I'll find it.
+</p>
+</blockquote>
+<p>
+I wrote Grant and email, and he <a href="http://www.splorp.com/blog/archive/2003_06_01_archive.html#105616763534105021">posted it</a> to his site. Someone <em>does</em> read my emails! :-)
+</p>
+<p>
+For all the work that went into .NET, and ASP.NET, it's a shame that they took the shitty way out on this one.
+Hell, considering the point of ASP.NET was to seperate code from presentation, why in the hell do they have code serve up HTML?
+</p>
+
+

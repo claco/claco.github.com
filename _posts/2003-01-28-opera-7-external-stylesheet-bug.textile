@@ -1,0 +1,82 @@
+---
+layout: post
+title: "Opera 7 External Stylesheet Bug"
+category: WWW
+published:
+  epoch: 1043798365
+  utc: 2003-01-28T23:59:25
+---
+
+<p>
+More on that Opera 7 bug, at least I think it's a bug.
+It appears the Opera 7 may renger the page sooner than it should with respect to <code>&lt;link rel="Stylsheet" ... &gt;</code> and <code>&lt;link rel="Alternate Stylsheet" ... &gt;</code> usage. In my case, I had the alternate stylesheets declared <strong>before</strong> my regular stylesheets:
+</p>
+
+<pre>
+<code>
+&lt;link
+     rel="Alternate Stylesheet"
+     href="/style/css/screen-default-right.css"
+     type="text/css"
+     media="screen" 
+/&gt;
+&lt;link
+     rel="Stylesheet"
+     href="/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+</code>
+</pre>
+
+<p>
+They were in this order due to the way that this site is built. This of course meant the Opera 7 would not render the style at all. The twist to this setup was that if I specified full paths instead of relative ones:
+</p>
+
+<pre>
+<code>
+&lt;link
+     rel="Alternate Stylesheet"
+     href="http://today.icantfocus.com/style/css/screen-default-right.css"
+     type="text/css"
+     media="screen" 
+/&gt;
+&lt;link
+     rel="Stylesheet"
+     href="http://today.icantfocus.com/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+</code>
+</pre>
+
+
+<p>
+ they would get rendered. After some tinkering, I discovered that swapping their order cured the problem in Opera 7:
+</p>
+
+<pre>
+<code>
+&lt;link
+     rel="Stylesheet"
+     href="/style/css/screen-default-left.css"
+     type="text/css"
+     media="screen"
+/&gt;
+&lt;link
+     rel="Alternate Stylesheet"
+     href="/style/css/screen-default-right.css"
+     type="text/css"
+     media="screen" 
+/&gt;
+</code>
+</pre>
+
+<p>
+Go figure. Is this a real bug, or is there some unwritten rule about link tag ordering that I don't know about?
+</p>
+<p>
+I see that Dive Into Mark talks <a href="http://diveintomark.org/archives/2003/01/28/how_to_hide_css_from_opera_7.html">about hiding CSS from Opera 7</a>. Yeah it's even easier than that. Put your alternate stylesheet tags first. ;-)
+</p>
+
+

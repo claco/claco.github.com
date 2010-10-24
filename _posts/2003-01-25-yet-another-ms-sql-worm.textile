@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Yet Another MS SQL Worm"
+category: MicroShaft
+published:
+  epoch: 1043519630
+  utc: 2003-01-25T18:33:50
+---
+
+<p>
+According to <a href="http://www.eeye.com/html/Research/Flash/AL20030125.html" title="Eeye Security Notice: MS SQL Worm">this notice</a> and <a href="http://securityresponse.symantec.com/avcenter/venc/data/w32.sqlexp.worm.html" title="Symantc W32.SQLExp.Worm Notice">this notice</a>, there's a serious MS SQL Worm doing damage this morning.
+</p>
+<p>
+I've got some mixed feelings about this one.Sure M$ blows goats, but even more, why the fuck do these people have ports 1433/1434 exposed to the internet at large?
+<em>I know, some people <strong>don't</strong> had their SQL exposed, but most do. Just like most people who caught Code Red don't have a clue they have it.</em>
+There's almost never a need for that. And even if you do need that connectivity over the internet, at least change the port to a non default value, and restrict the clients who can connect to a list of know IP addresses.
+</p>
+<p>
+Hey, I'm no security guru by any means, and I've vaught exactly 1 worm in my time, but that's all it took: once. Be paranoid about your security. Take the nothing-allowed-then-exception approach to the access of your internet recourses. And for the love of god, keep up to date with your patches.
+</p>
+<p>
+With that said, I also realize that not everyone know the same things or has the same skill sets. Worms happen. Viri happen. Mistakes happen. Just try to do better tomorrow than today, m'kay? I also realize that patching your database server isn't like patching your web server. If you depend on your database for business needs, you need to be carefull about patching them.
+</p>
+
+

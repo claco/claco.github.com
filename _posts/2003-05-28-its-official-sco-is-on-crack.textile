@@ -1,0 +1,24 @@
+---
+layout: post
+title: "It's Official: SCO is on crack."
+category: Humor
+published:
+  epoch: 1054174739
+  utc: 2003-05-29T02:18:59
+---
+
+<p>
+Read the last paragraph of <a href="http://www.marketwatch.com/news/story.asp?guid=%7BC408959E-005A-4E93-9006-B32DCD1FCA22%7D">this article</a>:
+</p>
+<blockquote>
+<p>
+McBride added that unless more companies start licensing SCO's property, <em>he may also sue Linus Torvalds, who is credited with inventing the Linux operating system</em>, for patent infringement.
+</p>
+</blockquote>
+
+<p>
+Where to begin. This whole situation gets more crazy by the day. At the very least, these types of statements shows SCO's ignorance. Linux is not an operating system it's a kernel. Not to mention that Novell holds the patents on Unix, not SCO.
+Maybe RMS can send them a letter to pursuade them to call it <em>GNU/Linux</em> instead. (If you get that reference, you're a geek. If not, you're safe) :-)
+</p>
+
+

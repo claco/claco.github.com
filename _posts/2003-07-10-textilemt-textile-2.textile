@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Textile / MT-Textile 2"
+category: WWW
+published:
+  epoch: 1057880909
+  utc: 2003-07-10T23:48:29
+---
+
+<p>
+I'm just itchin to try <a href="http://www.textism.com/tools/textile/">Textile</a> / <a href="http://bradchoate.com/past/001653.php">MT-Textile 2</a> on my blog. Always having to write XML/XHTML in my entries is starting to be a real drag. It's probably why I don't post more often.
+</p>
+
+

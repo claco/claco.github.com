@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Revisions, Tags, Branches Oh My!"
+category: OffTopic
+published:
+  epoch: 1041999428
+  utc: 2003-01-08T04:17:08
+---
+
+<p>
+I'm trying to wrap my brain around <acronym title="Concurrent Versioning System">CVS</acronym> usage so I could properly prepare for a serious revision to the site. Revisions, Tags, and Branches! Oh My!
+The daily check in/out of modules is no biggie, but when it comes to branching and tagging, my brain hurts, even with the handy dandy <a href="http://www.oreilly.com/catalog/cvspr/">CVS Pocket Reference</a>.
+</p>
+<p>
+Does any one know the easiest we to convert CVS logs into Changes or Changelog files?
+</p>
+
+

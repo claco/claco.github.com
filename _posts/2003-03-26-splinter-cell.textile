@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Splinter Cell"
+category: Games
+published:
+  epoch: 1048733211
+  utc: 2003-03-27T02:46:51
+---
+
+<p>
+Well, apprently I needed a new game to go with the new video card. I saw that Splinter Cell was released for the PC so I picked it up.
+I haven't installed it yet, but from reading the mini manual, it appears to have some cool moves. I never thought I'd like battle/covert ops type games, but Soldier of Fortune II seemed to change that for me.
+</p>
+<p>
+The current list of PC games I play:
+</p>
+<ul>
+<li>Jedi Knight II: Jedi Outcast</li>
+<li>The Thing</li>
+<li>Soldier of Fortune II</li>
+<li>Splinter Cell</li>
+<li>Civilization III</li>
+<li>Quake II</li>
+<li>Quake (Capture The Flag)</li>
+</ul>
+
+<p>
+Now, if I could just <em>finish</em> on of these games without cheating. :-)
+</p>
+
+<p class="center">
+<img src="/blog/images/offtopic/splintercell.gif" alt="Splinter Cell Box Picture" />
+</p>
+
+

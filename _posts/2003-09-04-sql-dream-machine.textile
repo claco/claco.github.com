@@ -1,0 +1,31 @@
+---
+layout: post
+title: "SQL Dream Machine"
+category: Hardware
+published:
+  epoch: 1062731669
+  utc: 2003-09-05T03:14:29
+---
+
+<p>
+I'm currently in the process of creating hardware requirements for a dream machine to host both an older MSSQL's databases, be the master server in replication, and house a new database project with heavy reads and heavier writes. Having <a href="/blog/archives/entries/000199/">dealt with disk I/O issues</a> in the past, I tend not to want to have them again, especially for something that will have even more disk writes than reads. It would be nice to have the old stuff and the new stuff seperated so they wouldn't fight for disk I/O.
+</p>
+<p>
+I know this will never fly, but I'll try it anways and see how it goes. :-)
+</p>
+<ul>
+<li>Some large rack mount chassis with many PCI slots</li>
+<li>2 2.5Ghz HyperThreading Xeons (expandable to 4)</li>
+<li>4GB Ram (expandable to 12GB)</li>
+<li>Tempdb: <strong>Controller 1</strong> w/ external <strong>RAID 1E0</strong></li>
+<li>Existing User DB: <strong>Controller 2</strong> w/ external <strong>RAID 1E0</strong></li>
+<li>New User DB: <strong>Controller 3</strong> w/ external <strong>RAID 1E0</strong></li>
+<li>Existing DB Transaction Logs: <strong>Controller 4</strong> Channel 0 <strong>RAID5</strong></li>
+<li>New User DB Transaction Logs: <strong>Controller 4</strong> Channel 1 <strong>RAID5</strong></li>
+<li>44U rack</li>
+</ul>
+<p>
+I'm sure the price tag on all of that will make the hair stand up on any PHB within a mile. Rumor has it that IBM has finally released an EXP400 enclosure that uses the new Ultra320 15,000RPM SCSI drives and a new ServeRAID 6M Ultra320 RAID card to consume them. Yummy.
+</p>
+
+

@@ -1,0 +1,20 @@
+---
+layout: post
+title: "What I Want From Programming"
+category: Software
+published:
+  epoch: 1073089274
+  utc: 2004-01-03T00:21:14
+---
+
+<p>
+It's an easy list. It's what drives me. It's what makes me hate my job far to often. And it's something I'll probably never get: closure; completion; sense of accomplishment; satisfaction in a program; pride of it's quality.
+</p>
+<p>
+Seems like a simple list right? Some days I wonder. Just once in my life, I want to come up with a decent requirements list and impliment a software project complete with documentation, proper unit and group testing, clean code, including query plan and index tuning for every query and procedure written. I'm not asking the world, for the love of all that is holy, can I please finish one thing properly before I die?
+</p>
+<p>
+Program changes happen. Fine. Bugs happen. New features happen. Fine. But for the love of pete I'm so tired of skimping on documentation and proper testing because we have to many bright idea of the week projects, to many oh by the way projects and  to few people and can't prioritize long term decisions. (Our department does it fine much to the credit of my bosses. It's the rest of the company that doesn't want to play along.)
+</p>
+
+

@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Things You Shouldn't Be Able To Do"
+category: Hardware
+published:
+  epoch: 1095290979
+  utc: 2004-09-15T23:29:39
+---
+
+Full screen DVD @ 1920x1200 running as the desktop background on the 23" Apple Cinema Display while surfing and programming on the other 19" CRT.
+
+<p class="center image"><a href="/blog/images/hardware/moviescreen.jpg"><img src="/blog/images/hardware/moviescreensmall.jpg" alt="ACD Movie Screenshot" title="This is so wrong..." /></a></p>
+
+Very very evil.
+
+

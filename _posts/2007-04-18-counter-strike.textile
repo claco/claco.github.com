@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Counter Strike"
+category: Games
+published:
+  epoch: 1176900300
+  utc: 2007-04-18T12:45:00
+---
+
+I'm always late to the party...really late sometimes. I never got into Counter Strike or the original Half-Life. Last night I decided to fire up Counter Strike CS since it came with Half-Life<sup>2</sup>. Now I understand the addiction. I'll never got those 3 hours back.
+
+Of course, I still haven't installed STALKER yet, and I still have programming to do before I start playing it.
+
+

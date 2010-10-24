@@ -1,0 +1,1198 @@
+---
+layout: post
+title: "MVC Marathon Part 2: Creating a Database and Model"
+category: OffTopic
+tags:
+  - c#
+  - cakephp
+  - catalyst
+  - database
+  - django
+  - model
+  - mvc
+  - perl
+  - php
+  - python
+  - rails
+  - ruby
+  - schema
+published:
+  epoch: 1215906130
+  utc: 2008-07-12T23:42:10
+---
+
+		<p>
+			Welcome to part 2 of <a href="/blog/mvc-marathon/">MVC Marathon</a>,
+			a multipart excursion into creating an application in the major
+			MVC frameworks available today.
+		</p>
+		<p>
+			The source code for this part can be found here:
+			<a href="http://github.com/claco/mvc-marathon/tree/part2/">http://github.com/claco/mvc-marathon/tree/part2/</a>
+		</p>
+		<h2>Part 2: Creating a Database and Model</h2>
+		<p>
+			Now that we have a bunch of shiny new applications, we need to add
+			a database to store our data, and a model to get at the data. For
+			this part of the project, I'm going to try and bypass the need
+			to deal with mysql/postgres/mssql issues and go with the most
+			simple database I can: SQLite. While there is an SQLite driver
+			for .NET, it does not yet play well with LINQ, so in ASP.NET I'll
+			be using SQL Server Express, which is part of the Studio install.
+		</p>
+		<p>
+			Since BurningPlate is a website about restaurants peppery hot menu
+			items, we're going to need a table to hold restaurant records. For
+			now, the restaurants table needs only two fields: a record id and
+			the name of the restaurant. The id field will be an auto-increment
+			integer field and the name will be a 100 character field, both
+			disallowing nulls.
+		</p>
+		<p>
+			In general, there are at two distinct ways to go about creating a
+			new database its models.
+		</p>
+		<p>
+			First, all of the frameworks can simply be pointed at a database,
+			told the name of tables and the models will inspect the schema and
+			provide their own glue. In this scenario, the user is generally
+			expected to alter the database, and have the model follow along. 
+		</p>
+		<p>
+			The second method is really a reverse of the first. You create
+			a schema in a generic language, or define your models and the
+			database schema is generated and/or deployed to the database from
+			the models themselves. Some frameworks like Ruby and Catalyst
+			go one step further and allow that schema to be versioned,
+			allowing easier upgrades/downgrades of the schema itself.
+		</p>
+		<p>
+			Since the second method is more exciting and offers more insight
+			into how the various frameworks work, that will be what I do when
+			the framework supports it.
+		</p>
+		<p>
+			Today we'll explore how to create database and model in the
+			various frameworks and explore the difference between them. You
+			can jump to any specific framework using the links below.
+		</p>
+		<ul>
+			<li><a href="#aspnetmvc">ASP.NET MVC</a></li>
+			<li><a href="#cakephp">CakePHP</a></li>
+			<li><a href="#catalyst">Catalyst</a></li>
+			<li><a href="#django">Django</a></li>
+			<li><a href="#rails">Ruby on Rails</a></li>
+			<li><a href="#conclusions">Conclusions</a></li>
+		</ul>
+
+		
+		<h2><a name="aspnetmvc"></a>ASP.NET MVC</h2>
+		<p>
+			With .NET 3.0 came LINQ, a new way to model database tables to
+			strongly typed classes. This new method works much like the
+			strongly typed datasets of old from the user perspective. Pick a
+			table, map it to properties, map stored procedures for actions,
+			then code away with strongly types classes representing your
+			table data.
+		</p>
+		<p>
+			Unfortunately, ASP.NET MVC is a database-first framework. You must
+			create the database and tables first. You can't create the LINQ to
+			SQL classes first and then create the database/tables from the
+			LINQ classes. Maybe this will change with IronRuby.
+		</p>
+		<h3>Creating the Database</h3>
+		<p>
+			First, to create the database, Right-click the project file and
+			choose "Add New Item". Select "SQL Server Database". Name the new
+			database "BurningPlate.mdf" and click "Add".
+		</p>
+		<p>
+			<a href="aspnet1.png">
+				<img src='aspnet1.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			Studio gripes about the file type and asks us if we want to put it
+			it in our App_Data folder. Say "Yes" and it will. :-)
+		</p>
+		<p>
+			<a href="aspnet2.png">
+				<img src='aspnet2.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			<a href="aspnet3.png">
+				<img src='aspnet3.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			Now that we have a database, we need to create a new table.
+			Double-click the new database and a Server Explorer will open on
+			the left.
+		</p>
+		<p>
+			<a href="aspnet4.png">
+				<img src='aspnet4.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			Right-click on he Tables folder and choose "Add New Table" 
+		</p>
+		<p>
+			<a href="aspnet5.png">
+				<img src='aspnet5.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			As we'll see in other frameworks, LINQ to SQL classes have some
+			singular/pluralization ('inflection') naming magic to them. In our
+			case, a restaurants table is a collection of rows, where each row
+			is a restaurant. For now, lets name our table "Restaurants".
+		</p>
+		<p>
+			<a href="aspnet6.png">
+				<img src='aspnet6.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			Now that we have a new table, we'll add our id and name columns.
+			We'll follow the frameworks naming conventions and add an Id field,
+			setting the type to INT. We also need to set the column property
+			"Is Identity" below to make it an auto-increment field. Add the
+			Name column, setting the type to VARCHAR and change the length to
+			100 and click the Save button.
+		</p>
+		<p>
+			<a href="aspnet9.png">
+				<img src='aspnet9.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<h3>Creating the Model</h3>
+		<p>
+			Now that we have our database and table, we need to create the
+			model class to access that data. To create our new model,
+			Right-click the projects Models folder and select "Add New Item".
+			Choose "LINQ to SQL Classes" and name it "BurningPlate.dbml".
+		</p>
+		<p>
+			<a href="aspnet7.png">
+				<img src='aspnet7.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			Now all we have to do is drag the Restaurants table from the
+			Server Explorer into the new BurningPlate.dbml designer window.
+		</p>
+		<p>
+			<a href="aspnet8.png">
+				<img src='aspnet8.png' width="204" height="152" alt="rails run" />
+			</a>
+		</p>
+		<p>
+			That's it. We have a new database, table and model for use in
+			ASP.NET MVC applications. Notice how the model was given the name
+			"Restaurant". That's inflection. You can of course name your
+			model anything you want, and you can alter the name of the table
+			it points to at any time.
+		</p>
+
+
+
+
+
+
+		<h2><a name="cakephp"></a>CakePHP</h2>
+		<p>
+			Like most other frameworks and unlike the ASP.NET MVC framework,
+			CakePHP can create database tables from a schema definition
+			using it's own generic descriptive methods/properties to describe
+			tables. Before we do that, we need to continue the database
+			configuration that we skipped when we
+			<a href="/blog/mvc-marathon-part-1-creating-a-new-application/#cakephp">created</a>
+			or new CakePHP application.
+		</p>
+		<p>
+			To finish configuring our database information, just rerun
+			<kbd>cake bake</kbd> within our app directory.
+		</p>
+<pre>Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : Burningplate
+Path: /Users/claco/mvc-marathon/cakephp/Burningplate
+---------------------------------------------------------------
+Your database configuration was not found. Take a moment to create one.
+---------------------------------------------------------------
+Database Configuration:
+---------------------------------------------------------------
+Name:  
+[default] &gt; 
+Driver: (db2/firebird/mssql/mysql/mysqli/odbc/oracle/postgres/sqlite/sybase) 
+[mysql] &gt; sqlite
+Persistent Connection? (y/n) 
+[n] &gt; 
+Database Host:  
+[localhost] &gt; 
+Port?  
+[n] &gt; 
+User:  
+[root] &gt; 
+Password:  
+&gt; 
+The password you supplied was empty. Use an empty password? (y/n) 
+[n] &gt; y
+Database Name:  
+[cake] &gt; burning_plate.db        
+Table Prefix?  
+[n] &gt; 
+Table encoding?  
+[n] &gt; 
+
+---------------------------------------------------------------
+The following database configuration will be created:
+---------------------------------------------------------------
+Name:         default
+Driver:       sqlite
+Persistent:   false
+Host:         localhost
+User:         root
+Pass:         
+Database:     burning_plate.db
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] &gt; 
+Do you wish to add another database configuration?  
+[n] &gt; 
+
+Creating file /Users/claco/mvc-marathon/cakephp/Burningplate/config/database.php
+Wrote /Users/claco/mvc-marathon/cakephp/Burningplate/config/database.php</pre>
+
+			<p>
+				<strong>Note:</strong> We've given the database path as a
+				relative path. The <kbd>cake</kbd> command line utils consider
+				the root path of my app as the BurningPlate folder, but
+				CakePHP under Apache thinks the root path is
+				<kbd>BurningRiver/webroot</kbd>. This means when using a
+				relative database path, one or the other won't find the
+				database. Not very portable by default. In order to fix that,
+				I had to add the following to the database config:
+			</p>
+			<pre>class DATABASE_CONFIG {
+function __construct() {
+	$this-&gt;default[&#x27;database&#x27;] = APP . $this-&gt;default[&#x27;database&#x27;];
+}</pre>
+
+			<h3>Creating the Database</h3>
+			<p>
+				Now that we've told CakePHP where and what database we're
+				going to use, we need to create our restaurants table. Since
+				we're trying to always create the tables from the models, we'll
+				do that first.
+			</p>
+			<p>
+				CakePHP uses inflection to automagically wire up default code
+				and save the user as much time as possible <em>if</em> you
+				follow certain naming conventions. To create tables from
+				definitions, you need to create definitions in the
+				<kbd>config/sql/schema.php</kbd> file. Of course, you can also
+				point a model at any old table and it will work. Schemas aren't
+				mandatory.
+			</p>
+			<p>
+				As above, we want a table that has an id integer as the primary
+				key and a name varchar field, both not null. Unlike ASP.NET
+				where we have to tell the database that the pk field was auto
+				and let it manage the pk auto increment, CakePHP assumes that
+				any integer primary key field is an auto increment field and
+				will manage the ids automatically. It will work as expected
+				even if you happen to have an existing table where the pk is
+				defined as auto increment. You can even use UUIDs for the
+				primary key just by making that field a CHAR(36) instead. But
+				I digress...
+			</p>
+			<pre>class BurningPlateSchema extends CakeSchema {
+	public $restaurants = array(
+        &#x27;id&#x27; =&gt; array(&#x27;type&#x27; =&gt; &#x27;integer&#x27;, &#x27;null&#x27; =&gt; false, &#x27;default&#x27; =&gt; NULL, &#x27;key&#x27; =&gt; &#x27;primary&#x27;),
+        &#x27;name&#x27; =&gt; array(&#x27;type&#x27; =&gt; &#x27;string&#x27;, &#x27;null&#x27; =&gt; false, &#x27;length&#x27; =&gt; 100),
+        &#x27;indexes&#x27; =&gt; array(&#x27;PRIMARY&#x27; =&gt; array(&#x27;column&#x27; =&gt; &#x27;id&#x27;, &#x27;unique&#x27; =&gt; 1))			
+	);
+}</pre>
+			<p>
+				Now that we have a schema defined, we need to create the table
+				from the schema definition. Let's see what the command help
+				has to offer:
+			</p>
+			<pre>claco@mbp ~/mvc-marathon/cakephp/Burningplate $ cake schema
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : Burningplate
+Path: /Users/claco/mvc-marathon/cakephp/Burningplate
+---------------------------------------------------------------
+Cake Schema Shell
+---------------------------------------------------------------
+The Schema Shell generates a schema object from 
+                the database and updates the database from the schema.
+---------------------------------------------------------------
+Usage: cake schema &lt;command&gt; &lt;arg1&gt; &lt;arg2&gt;...
+---------------------------------------------------------------
+Params:
+
+        -connection &lt;config&gt;
+                set db config &lt;config&gt;. uses &#x27;default&#x27; if none is specified
+
+        -path &lt;dir&gt;
+                path &lt;dir&gt; to read and write schema.php.
+                default path: /Users/claco/mvc-marathon/cakephp/Burningplate/config/sql
+
+        -file &lt;name&gt;
+                file &lt;name&gt; to read and write.
+                default file: schema.php
+
+        -s &lt;number&gt;
+                snapshot &lt;number&gt; to use for run.
+
+        -dry
+                Perform a dry run on &#x27;run&#x27; commands.
+                Queries will be output to window instead of executed.
+
+        -f
+                force &#x27;generate&#x27; to create a new schema.
+Commands:
+
+        schema help
+                shows this help message.
+
+        schema view
+                read and output contents of schema file
+
+        schema generate
+                reads from &#x27;connection&#x27; writes to &#x27;path&#x27;
+                To force generation of all tables into the schema, use the -f param.
+
+        schema dump &lt;filename&gt;
+                dump database sql based on schema file to filename in schema path. 
+                if filename is true, default will use the app directory name.
+
+        schema run create &lt;schema&gt; &lt;table&gt;
+                drop tables and create database based on schema file
+                optional &lt;schema&gt; arg for selecting schema name
+                optional &lt;table&gt; arg for creating only one table
+                pass the -s param with a number to use a snapshot
+                To see the changes, perform a dry run with the -dry param
+
+        schema run update &lt;schema&gt; &lt;table&gt;
+                alter tables based on schema file
+                optional &lt;schema&gt; arg for selecting schema name.
+                optional &lt;table&gt; arg for altering only one table.
+                To use a snapshot, pass the -s param with the snapshot number
+                To see the changes, perform a dry run with the -dry param</pre>
+			<p>
+				Now we'll create our new table:
+			</p>
+			<pre>claco@mbp ~/mvc-marathon/cakephp/Burningplate $ cake schema run create
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : Burningplate
+Path: /Users/claco/mvc-marathon/cakephp/Burningplate
+---------------------------------------------------------------
+Cake Schema Shell
+---------------------------------------------------------------
+
+The following tables will be dropped.
+restaurants
+
+Are you sure you want to drop the tables? (y/n) 
+[n] &gt; n
+
+The following tables will be created.
+restaurants
+
+Are you sure you want to create the tables? (y/n) 
+[y] &gt; y
+Creating tables.
+restaurants updated.
+End create.</pre>
+		<h3>Creating the Model</h3>
+		<p>
+			Now that we've created our table and database, we need to create
+			a model. Once again we'll use <kbd>cake bake</kbd> to get the job
+			done.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/cakephp/Burningplate $ cake bake
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : Burningplate
+Path: /Users/claco/mvc-marathon/cakephp/Burningplate
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+&gt; M
+---------------------------------------------------------------
+Bake Model
+Path: /Users/claco/mvc-marathon/cakephp/Burningplate/models/
+---------------------------------------------------------------
+Possible Models based on your current database:
+1. Restaurant
+Enter a number from the list above, type in the name of another model, or &#x27;q&#x27; to exit  
+[q] &gt; 1
+Would you like to supply validation criteria for the fields in your model? (y/n) 
+[y] &gt; n
+Would you like to define model associations (hasMany, hasOne, belongsTo, etc.)? (y/n) 
+[y] &gt; n
+
+---------------------------------------------------------------
+The following Model will be created:
+---------------------------------------------------------------
+Name:       Restaurant
+Associations:
+---------------------------------------------------------------
+Look okay? (y/n) 
+[y] &gt; 
+
+Baking model class for Restaurant...
+
+Creating file /Users/claco/mvc-marathon/cakephp/Burningplate/models/restaurant.php
+Wrote /Users/claco/mvc-marathon/cakephp/Burningplate/models/restaurant.php
+Cake test suite not installed.  Do you want to bake unit test files anyway? (y/n) 
+[y] &gt; y
+
+You can download the Cake test suite from http://cakeforge.org/projects/testsuite/
+
+Baking test fixture for Restaurant...
+
+Creating file /Users/claco/mvc-marathon/cakephp/Burningplate/tests/fixtures/restaurant_fixture.php
+Wrote /Users/claco/mvc-marathon/cakephp/Burningplate/tests/fixtures/restaurant_fixture.php
+
+Baking unit test for Restaurant...
+
+Creating file /Users/claco/mvc-marathon/cakephp/Burningplate/tests/cases/models/restaurant.test.php
+Wrote /Users/claco/mvc-marathon/cakephp/Burningplate/tests/cases/models/restaurant.test.php
+---------------------------------------------------------------
+Interactive Bake Shell
+---------------------------------------------------------------
+[D]atabase Configuration
+[M]odel
+[V]iew
+[C]ontroller
+[P]roject
+[Q]uit
+What would you like to Bake? (D/M/V/C/P/Q) 
+&gt; Q</pre>
+			<p>
+				CakePHP simply inspected the database, asked us which table to
+				create a model for and created the necessary files, including
+				tests.
+			</p>
+			<p>
+				Again, take note of the inflection here. We created a table
+				called restaurants but the model created was Restaurant. If
+				you were to manually created a model called Post, it would
+				by default look for a table called posts. This can, of course,
+				be overridden using the <samp>$useTable</samp> variable.
+			</p>
+			<p>
+				While there is a <kbd>cake console</kbd> that we could use to
+				test out model and create a record, I couldn't get it to work.
+				It could connect to the database and find records, but it
+				would not save a new record, even though it said
+				"Saved record for Restaurant".
+			</p>
+
+
+
+		<h2><a name="catalyst"></a>Catalyst</h2>
+		<p>
+			One of the Perl mantras is TIMTOWTDI: There is more than one way
+			to do it. As such, Catalyst doesn't come with database support
+			out of the box. One reason for this is that there are more than
+			one ORM packages for Perl and different reasons for an author to
+			prefer one over the other. However, if you install the bundle
+			referenced in the official tutorial, it will install of the
+			necessary bits to do database work.
+		</p>
+		<p>
+			Much like CakePHP, you can have three distinct layers when using
+			a database in Catalyst: The models generated from the schema, the
+			schema describing the database and the database itself. You can
+			choose to statically or dynamical create the schema from the
+			database or do the reverse: create the database from the schema.
+		</p>
+		<p>
+			For this application, I'm going to use the new schema versioning
+			built into <kbd>DBIx::Class</kbd>. Like CakePHP above, we're
+			going to create our schema first, deploy it to the database and
+			then create models from our schema.
+		</p>
+		
+		<h3>Creating the Database</h3>
+		<p>
+			Unlike CakePHP, we need to get down and dirty with writing some
+			code manually to get our schema started and to maintain the
+			schema versions and upgrades. This isn't as bad as it sounds.
+			Most of the heavy lifting is already coded for us. First, we need
+			to create out schema file in <kbd>lib/BurningPlate/Scheme.pm</kbd>
+		</p>
+		<pre>package BurningPlate::Schema;
+use strict;
+use warnings;
+use base &#x27;DBIx::Class::Schema&#x27;;
+our $VERSION = 0;
+
+__PACKAGE__-&gt;load_classes;
+__PACKAGE__-&gt;load_components(&#x27;+DBIx::Class::Schema::Versioned&#x27;);
+__PACKAGE__-&gt;upgrade_directory(&#x27;sql/&#x27;);
+__PACKAGE__-&gt;backup_directory(&#x27;sql/backups/&#x27;);
+
+1;</pre>
+
+		<p>
+			In a nutshell, we're telling DBIx::Class to load all
+			BurningPlate::Schema::* child classes, load the versioning module,
+			and place the schema upgrade/backup files in the given directories.
+			Take note of the <kbd>$VERSION</kbd> variable. This is used by
+			the versioning module to determine what version the schema is
+			compared to the database versioning information table.
+		</p>
+		<p>
+			We could create our table schema and deploy the schema to the
+			database. DBIx::Class currently considers any database without
+			a versioning table to be the current version and will not upgrade
+			anything even if it difference from your schema classes. Because
+			of this, it's better to consider version 1 a blank database and
+			work up from there. We're going to deploy what we have now before
+			we add the restaurants table.
+		</p>
+		<p>
+			DBIx::Class doesn't come with console scripts to generate schema
+			versioning files or upgrade database. But because they're simple
+			method calls, they're easy enough to create. First our schema sql
+			script <kbd>script/burningplate_schema.pl</kbd>
+		</p>
+		<pre>#!/usr/bin/perl -w
+use strict;
+use warnings;
+use FindBin;
+use lib &quot;$FindBin::Bin/../lib&quot;;
+use BurningPlate::Schema;
+
+my $version = BurningPlate::Schema-&gt;schema_version;
+
+BurningPlate::Schema-&gt;connect-&gt;create_ddl_dir(
+    [&#x27;SQLite&#x27;],
+    $version &gt; 1 ? $version : undef,
+    &#x27;sql&#x27;,
+    $version ? $version-1 : $version
+);</pre>
+		<p>
+			The script basically loads the schema, finds the version, then
+			calls <kbd>create_ddl_dir</kbd> to create sql ddl files from the
+			current schema version. If the version is greater than 1, we also
+			create an sql file that contains the difference between the
+			versions. This is the heart of schema versioning. Database changes
+			can be rolled out incrementally from one version to the next. We
+			specified SQLite, but you can create multiple schemas at the same
+			time for multiple database vendors.
+		</p>
+		<p>
+			Now, we'll run the script to generate our version 1 ddl files.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*schema.pl
+Your DB is currently unversioned. Please call upgrade on your schema to sync the DB.</pre>
+		<p>
+			Now, in our sql directory, we have a new file:
+		</p>
+		<pre>-- 
+-- Created by SQL::Translator::Producer::SQLite
+-- Created on Tue Jul  8 19:44:05 2008
+-- 
+BEGIN TRANSACTION;
+
+
+COMMIT;
+</pre>
+		<p>
+			Since we have no tables yet, we have no sql to deploy but we must
+			still run an upgrade to install the versioning table and the
+			current version number. Since we have no console script to do that
+			,  we'll create one in <kbd>script/burningplate_upgrade.pl</kbd>
+		</p>
+		<pre>#!/usr/bin/perl -w
+use strict;
+use warnings;
+use FindBin;
+use lib &quot;$FindBin::Bin/../lib&quot;;
+use BurningPlate::Schema;
+
+BurningPlate::Schema-&gt;connect(@ARGV)-&gt;upgrade;</pre>
+		<p>
+			In this script, we simply connect to the specified database and
+			upgrade it to the latest version. Now we can deploy our first
+			version and the versioning tables.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*upgrade.pl dbi:SQLite:burning_plate.db
+Your DB is currently unversioned. Please call upgrade on your schema to sync the DB.</pre>
+
+		<p>
+			Now, let's define our restaurants schema and deploy it to the
+			database. First, we need to increase the schema $VERSION to 2.
+			Next, we'll create <kbd>BurningPlate/Schema/Restaurant.pm</kbd>
+		</p>
+		<pre>package BurningPlate::Schema::Restaurant;
+use strict;
+use warnings;
+use base &#x27;DBIx::Class&#x27;;
+__PACKAGE__-&gt;load_components(&#x27;Core&#x27;);
+__PACKAGE__-&gt;table(&#x27;restaurants&#x27;);
+__PACKAGE__-&gt;add_columns(
+    id =&gt; {
+        data_type =&gt; &#x27;INT&#x27;,
+        is_nullable =&gt; 0,
+        is_auto_increment =&gt; 1
+    },
+    name =&gt; {
+        data_type =&gt; &#x27;VARCHAR&#x27;,
+        size =&gt; 100,
+        is_nullable =&gt; 0
+    }
+);
+__PACKAGE__-&gt;set_primary_key(&#x27;id&#x27;);
+
+1;</pre>
+			<p>
+				Much like the CakePHP schema, we are telling the schema the
+				names and properties of the columns and a primary key. Now
+				that we have a complete schema, we need to deploy it to a
+				database. First, we'll generate the version 2 sql.
+			</p>
+			<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*schema.pl</pre>
+			<p>
+				Now, if you look in the sql folder, we have two new files.
+				First, we have <kbd>BurningPlate-Schema-2-SQLite.sql</kbd>.
+				This contains the entire schema as it exists in version 2 if
+				we were to deploy the entire schema from scratch.
+			</p>
+			<pre>-- 
+-- Created by SQL::Translator::Producer::SQLite
+-- Created on Tue Jul  8 22:52:12 2008
+-- 
+BEGIN TRANSACTION;
+--
+-- Table: restaurants
+--
+DROP TABLE restaurants;
+CREATE TABLE restaurants (
+  id INTEGER PRIMARY KEY NOT NULL,
+  name VARCHAR(100) NOT NULL
+);
+
+COMMIT;
+</pre>
+		<p>
+			We also have a second file: <kbd>BurningPlate-Schema-1-2-SQLite.sql</kbd>.
+			This file contains all the sql necessary to upgrade a database from
+			version to version 2.
+		</p>
+		<pre>-- Convert schema &#x27;sql/BurningPlate-Schema-1-SQLite.sql&#x27; to &#x27;sql/BurningPlate-Schema-2-SQLite.sql&#x27;:
+
+BEGIN;
+
+CREATE TABLE restaurants (
+  id INTEGER PRIMARY KEY NOT NULL,
+  name VARCHAR(100) NOT NULL
+);
+
+COMMIT;
+</pre>
+		<p>
+			Later on if we were to add a column to version 3, the 2->3 file
+			would contain an ALTER TABLE statement. Now, we just need to deploy
+			the new version to the database using the same command we ran before:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/*upgrade.pl dbi:SQLite:burning_plate.db
+Versions out of sync. This is 2, your database contains version 1, please call upgrade on your Schema.</pre>
+		<p>
+			The warnings are a little misleading. They're generated by the call
+			to connect() which do before calling upgrade.
+		</p>
+
+		<h3>Creating the Model</h3>
+		<p>
+			Now that we have our schema and database, we need to create a model
+			to access that data. There are many ways to do this in Catalyst.
+			One can manually create a model and load the schema directly or
+			you can bypass the schema class and write database access code
+			to use the database directly. Let's see what the create script
+			has to say:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/burningplate_create.pl
+Usage:
+    burningplate_create.pl [options] model|view|controller name [helper]
+    [options]
+
+     Options:
+       -force        don&#x27;t create a .new file where a file to be created exists
+       -mechanize    use Test::WWW::Mechanize::Catalyst for tests if available
+       -help         display this help and exits
+
+     Examples:
+       burningplate_create.pl controller My::Controller
+       burningplate_create.pl controller My::Controller BindLex
+       burningplate_create.pl -mechanize controller My::Controller
+       burningplate_create.pl view My::View
+       burningplate_create.pl view MyView TT
+       burningplate_create.pl view TT TT
+       burningplate_create.pl model My::Model
+       burningplate_create.pl model SomeDB DBIC::Schema MyApp::Schema create=dynamic\
+       dbi:SQLite:/tmp/my.db
+       burningplate_create.pl model AnotherDB DBIC::Schema MyApp::Schema create=static\
+       dbi:Pg:dbname=foo root 4321
+
+     See also:
+       perldoc Catalyst::Manual
+       perldoc Catalyst::Manual::Intro
+</pre>
+		<p>
+			The easiest way to use our schema  as a model without writing code
+			is to use <kbd>Catalyst::Model::DBIC::Schema</kbd> listed above.
+			This will automatically load a schema class and create a model for
+			each table (resultsource in DBIC speak) found. To create our
+			model, we simply call the create script, passing in the
+			appropriate options:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst/BurningPlate $ script/burningplate_create.pl model DB DBIC::Schema BurningPlate::Schema dbi:SQLite:burning_plate.db
+ exists &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/Model&quot;
+ exists &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../lib/BurningPlate/Model/DB.pm&quot;
+created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t/model_DB.t&quot;</pre>
+		<p>
+			Just like CakePHP, it generated a model file and created a test
+			file for us. If we reload the application, we now see that the
+			new model is loaded and ready for action.
+		</p>
+		<pre>[debug] Loaded components:
+.-----------------------------------------------------------------+----------.
+| Class                                                           | Type     |
++-----------------------------------------------------------------+----------+
+| BurningPlate::Controller::Root                                  | instance |
+| BurningPlate::Model::DB                                         | instance |
+| BurningPlate::Model::DB::Restaurant                             | class    |
+&#x27;-----------------------------------------------------------------+----------&#x27;
+</pre>
+	<p>
+		In contrast to CakePHP, there is no inflection magic here. Name your model
+		and your table whatever you want without worry of breaking things
+		without really knowing.
+	</p>
+	<p>
+		Unlike CakePHP and as we'll see later, Django and Rails, there is
+		no interactive console to work with your newly created models. But
+		there is a utility called <kbd>dbicadmin</kbd> that can be used to
+		perform CRUD operations with the schema. On the down side, the schema
+		doesn't hold the database connection information; the model does. So
+		using the utility isn't practical in this case without altering code.
+	</p>
+	
+
+		<h2><a name="django"></a>Django</h2>
+		<p>
+			Django takes a more compact approach than CakePHP and Catalyst w/
+			DBIx::Class. In Django, there is no separation between models and
+			the schema. In fact, all of the models are defined in one single
+			models.py class instead of putting separate classes in a models
+			directory like Catalyst/CakePHP do.
+		</p>
+		<h3>Creating the Model</h3>
+		<p>
+			Creating models in Django is just a matter of creating the
+			models.py file. You also get a modesl.py file for free when you
+			run <kbd>manage.py startapp</kbd>, which creates a new application
+			sudirectory in the project we previously created. Since we're not
+			really creating multiple apps right now, we'll just create the
+			models.py file in the project root.
+		</p>
+		<pre>from django.db import models
+
+class Restaurant(models.Model):
+    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=100)
+</pre>
+		<p>
+			In the file above, we created a new Restaurant class and defined
+			the id and name fields. AutoField implies a code managed
+			(not db managed) auto increment int field, and we've set primary
+			key and the name length.
+		</p>
+		
+		<h3>Creating the Database</h3>
+		<p>
+			Now that we have a model, we need to create a database from it.
+			First, we need to tell Django how to conect to the new database
+			by changing <kbd>settinga.py</kbd>
+		</p>
+		<pre>DATABASE_ENGINE = &#x27;sqlite3&#x27;           # &#x27;postgresql_psycopg2&#x27;, &#x27;postgresql&#x27;, &#x27;mysql&#x27;, &#x27;sqlite3&#x27; or &#x27;ado_mssql&#x27;.
+DATABASE_NAME = &#x27;burning_plate.db&#x27;    # Or path to database file if using sqlite3.</pre>
+		
+		<p>
+			While we're in here, we need to tell this Django project that it
+			also should load our new BurningPlate application, which is now
+			only a models.py file. If we wanted to use other apps in our project,
+			we could just laod them here.
+		</p>
+		<pre>INSTALLED_APPS = (
+    &#x27;django.contrib.auth&#x27;,
+    &#x27;django.contrib.contenttypes&#x27;,
+    &#x27;django.contrib.sessions&#x27;,
+    &#x27;django.contrib.sites&#x27;,
+    &#x27;BurningPlate&#x27;
+)</pre>
+
+		<p>
+			Now, to create our database, we just run the syncd command.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/django/BurningPlate $ python manage.py syncdb
+Creating table auth_permission
+Creating table auth_group
+Creating table auth_user
+Creating table auth_message
+Creating table django_content_type
+Creating table django_session
+Creating table django_site
+
+You just installed Django&#x27;s auth system, which means you don&#x27;t have any superusers defined.
+Would you like to create one now? (yes/no): no
+Installing index for auth.Permission model
+Creating table BurningPlate_restaurant</pre>
+
+		<p>
+			That's all there is to it. Django created a bunch of auth related
+			tables and then our restaurant table. Let's take a gander at the 
+			schema:
+		</p>
+		<pre>CREATE TABLE &quot;BurningPlate_restaurant&quot; (
+    &quot;id&quot; integer NOT NULL PRIMARY KEY,
+    &quot;name&quot; varchar(100) NOT NULL
+);</pre>
+		<p>
+			Django also doesn't play any inflection games. The model name
+			is the table name. However, since Django projects are assumed to
+			have multiple apps within them, the name of the app has been
+			prepended to the table name to avoid name collisions. You can
+			override the table name using the <kbd>db_table</kbd> variable.
+		</p>
+		<p>
+			Now, let's fire up the interactive console and test out our model.
+		</p>
+	<pre>claco@mbp ~/mvc-marathon/django/BurningPlate $ python manage.py shell
+Python 2.5.1 (r251:54863, Oct 17 2007, 22:46:25) 
+[GCC 4.0.1 (Apple Computer, Inc. build 5367)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+(InteractiveConsole)
+&gt;&gt;&gt; from BurningPlate .models import Restaurant
+&gt;&gt;&gt; Restaurant.objects.all()
+[]
+&gt;&gt;&gt; r = Restaurant(name=&quot;Azteca&quot;)
+&gt;&gt;&gt; r.save()
+&gt;&gt;&gt; r.id
+1
+&gt;&gt;&gt; r.name
+&#x27;Azteca&#x27;
+&gt;&gt;&gt; Restaurant.objects.all()
+[&lt;Restaurant: Restaurant object&gt;]
+&gt;&gt;&gt; quit()</pre>
+
+
+		<h2><a name="rails"></a>Ruby on Rails</h2>
+		<p>
+			Rails has migrations which is a lot like the Catalyst/DBIx::Class
+			schema versioning with a little more glue around the edges to make
+			thing go quicker. Like CakePHP and Catalyst, the model, schema (or
+			migrations) and the database are three separate layers. Unlike
+			Django models, Rails (ActiveRecord based) models don't describe
+			the schema. Instead, they operate by dynamically inspecting the
+			table they're working on.
+		</p>
+		<h3>Creating the Model</h3>
+		<p>
+			Like Catalyst and CakePHP, we can use the console scripts to create
+			a new model and do all sorts of other things. First, let's see what
+			generate tells us.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ script/generate
+Usage: script/generate generator [options] [args]
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+
+
+Installed Generators
+  Builtin: controller, integration_test, mailer, migration, model, observer, plugin, resource, scaffold, session_migration
+
+More are available at http://rubyonrails.org/show/Generators
+  1. Download, for example, login_generator.zip
+  2. Unzip to directory /Users/claco/.rails/generators/login
+     to use the generator with all your Rails apps
+     or to /Users/claco/mvc-marathon/rails/BurningPlate/lib/generators/login
+     to use with this app only.
+  3. Run generate with no arguments for usage information
+       script/generate login
+
+Generator gems are also available:
+  1. gem search -r generator
+  2. gem install login_generator
+  3. script/generate login
+</pre>
+
+		<p>
+			Now, let's check out the model option.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ script/generate model
+Usage: script/generate model ModelName [field:type, field:type]
+
+Options:
+        --skip-timestamps            Don&#x27;t add timestamps to the migration file for this model
+        --skip-migration             Don&#x27;t generate a migration file for this model
+        --skip-fixture               Don&#x27;t generation a fixture file for this model
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+    -f, --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+
+Description:
+    Stubs out a new model. Pass the model name, either CamelCased or
+    under_scored, and an optional list of attribute pairs as arguments.
+
+    Attribute pairs are column_name:sql_type arguments specifying the
+    model&#x27;s attributes. Timestamps are added by default, so you don&#x27;t have to
+    specify them by hand as &#x27;created_at:datetime updated_at:datetime&#x27;.
+
+    You don&#x27;t have to think up every attribute up front, but it helps to
+    sketch out a few so you can start working with the model immediately.
+
+    This generates a model class in app/models, a unit test in test/unit,
+    a test fixture in test/fixtures/singular_name.yml, and a migration in
+    db/migrate.
+
+Examples:
+    `./script/generate model account`
+
+        creates an Account model, test, fixture, and migration:
+            Model:      app/models/account.rb
+            Test:       test/unit/account_test.rb
+            Fixtures:   test/fixtures/accounts.yml
+            Migration:  db/migrate/XXX_add_accounts.rb
+
+    `./script/generate model post title:string body:text published:boolean`
+
+        creates a Post model with a string title, text body, and published flag.
+</pre>
+		<p>
+			We could pass in our column definitions in one shot, but where's the
+			fun in that? Let's create a new model.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ script/generate model Restaurant
+      exists  app/models/
+      exists  test/unit/
+      exists  test/fixtures/
+      create  app/models/restaurant.rb
+      create  test/unit/restaurant_test.rb
+      create  test/fixtures/restaurants.yml
+      create  db/migrate
+      create  db/migrate/001_create_restaurants.rb</pre>
+		<p>
+			Just like CakePHP and Catalyst, the script was kind enough to create
+			some test files for the new model. It also generated a migration
+			file for us. Let's have a look:
+		</p>
+		<pre>class CreateRestaurants &lt; ActiveRecord::Migration
+  def self.up
+    create_table :restaurants do |t|
+      t.column :name, :string, :limit=&gt;100, :null=&gt;false
+      t.timestamps
+    end
+  end
+
+  def self.down
+    drop_table :restaurants
+  end
+end
+</pre>
+		<p>
+			Unlike DBIx::Class schema version files which are sql based, 
+			Rails migrations are based on code. Up describes what to do when
+			migrating from an older version to the current version. Down
+			describes what to do when migrating form the current version to the
+			previous version. For version 1 [from 0].
+		</p>
+		<h3>Creating the Database</h3>
+		<p>
+			Now that we have our model, let's create our database from it.
+			We need to use rake, Rubys make, to migrate the database.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ rake db:migrate
+(in /Users/claco/mvc-marathon/rails/BurningPlate)
+== 1 CreateRestaurants: migrating =============================================
+-- create_table(:restaurants)
+   -&gt; 0.0025s
+== 1 CreateRestaurants: migrated (0.0027s) ====================================
+</pre>
+		<p>
+			Notice the table name: restaurants. Our old friend inflection is
+			back. We also didn't have to setup our database connection information.
+			The default database.yml config already has a development
+			database setup in <kbd>bd/development.sqlite3</kbd>.
+		</p>
+		<p>
+			Another item of interest. If we take a look at the table that was
+			create, you'll notice something that wasn't in our model:
+		</p>
+		<pre>CREATE TABLE restaurants (&quot;id&quot; INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+&quot;name&quot; varchar(100) NOT NULL,
+&quot;created_at&quot; datetime DEFAULT NULL,
+&quot;updated_at&quot; datetime DEFAULT NULL);</pre>
+
+		<p>
+			When Rails creates a table from a model, it always adds the id,
+			create_at and updated_at fields for automatically set create and
+			updated dates when each record is created/modified. CakePHP will
+			also maintain create/updated fields but it will not declare them
+			for you when you create the tables.
+		</p>
+		<p>
+			Like most of the other frameworks, you can use an interactive
+			console to try out your new models.
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/rails/BurningPlate $ script/console
+Loading development environment (Rails 2.0.2)
+&gt;&gt; Restaurant.create(:name =&gt; &#x27;Azteca&#x27;)
+=&gt; #&lt;Restaurant id: 1, name: &quot;Azteca&quot;, created_at: &quot;2008-07-08 22:29:32&quot;, updated_at: &quot;2008-07-08 22:29:32&quot;&gt;
+&gt;&gt; r = Restaurant.find_by_id(1)
+=&gt; #&lt;Restaurant id: 1, name: &quot;Azteca&quot;, created_at: &quot;2008-07-08 22:29:32&quot;, updated_at: &quot;2008-07-08 22:29:32&quot;&gt;
+&gt;&gt; r.name
+=&gt; &quot;Azteca&quot;
+&gt;&gt; quit()
+</pre>
+		
+		<h2><a name="conclusions"></a>Conclusions</h2>
+
+		<ul>
+			<li>
+				<p>
+					Catalyst is my alma mater. Perl is my favorite language, and
+					I appreciate that there are many ways to do the same thing
+					and nothing is forced upon me. However, as DBIx::Class
+					is pushed in the tutorials, it is really the defacto ORM
+					for Catalyst. As such, there really needs to be some glue to
+					round off the sharp edges.
+				</p>
+				<p>
+					If DBIC is installed or there is a command line option to request it,
+					<kbd>catalyst</kbd> should generate a Schema class,
+					directories for the sql versioning and a helper script or
+					two to help generate schema versioning files and update/deploy
+					them. This would go a long way to improving the new user
+					experience.
+				</p>
+			</li>
+			<li>
+				<p>
+					The CakePHP interactive console seems to be a bit immature.
+					It doesn't appear to add items, or at least my install
+					wasn't very happy. The other thing I'm not sure I can
+					accept is that models return data, not objects.
+				</p>
+				<p>
+					The schema management only deploys new tables. It doesn't
+					deploy changes. It would be nice to see some sort of
+					versioning or migrations like Catalyst/Rails.
+				</p>
+				<p>
+					The fact that the console utilities and webroot look in
+					two different places for a database path is a drag. It
+					makes things less portable, esp if you have to put in a
+					full path.
+				</p>
+			</li>
+			<li>
+				<p>
+					Compared to Rails migrations and DBIC versioning, Django feels week
+					like CakePHP when it comes to syncing the model to the
+					database.
+				</p>
+				<p>
+					I love that apps have been given consideration as movable
+					reusable parts within many projects. This is something
+					that is a little more obtuse in other frameworks.
+				</p>
+			</li>
+			<li>
+				<p>
+					I dig Rails migrations. While I can also have custom code
+					when upgrading schema versions in Catalyst, migrations feel more
+					natural to me. I like that upgrades and downgrades feel
+					like they get equal attention and you can migrate to
+					any version by number.
+				</p>
+				<p>
+					The magic adding of the id column and the created/updated
+					columns scares me a little. If I already have a created
+					column instead of a created_At column, well, that could
+					lead to issues.
+				</p>
+			</li>
+			<li>
+				<p>
+					Inflections seem unnecessary to me, esp if you don't speak
+					Engrish as the primary language. But, to their credit, at
+					least Rails and CakePHP give you control over the inflections
+					if you need. Good Magic is magic that can be customized.
+				</p>
+			</li>
+			<li>
+				<p>
+					ASP.NET/ADO/SQL aren't really build for versioning or for
+					deploying a database schema from the models. To me, this
+					makes deploying new versions a little more painful if you
+					are stuck writing your alter scripts and such.
+				</p>
+			</li>
+			<li>
+				<p>
+					One of the things I like about CakePHP is that by default,
+					new models and controllers inherit from an app local model
+					and controller base class. Rails controllers also do this. This is easy to do in Catalyst,
+					but it's not forced upon you by default. Maybe it should be
+					since I hear a lot of "use a base class" responses when
+					people ask about creating plugins.
+				</p>
+				<p>
+					Ruby has more of a mixin model rather than multiple inheritance.
+					Personally, I'd prefer that Rails models also inherited from an
+					app local base class, then mixin-ed ActiveRecord on top of that.
+				</p>
+			</li>
+		</ul>
+

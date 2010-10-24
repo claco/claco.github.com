@@ -1,0 +1,18 @@
+---
+layout: post
+title: "D-Link DNS-323 NAS"
+category: Hardware
+published:
+  epoch: 1173207627
+  utc: 2007-03-06T19:00:27
+---
+
+I'm playing a game with St. Murphy. The file server at home is an old dual P2666 Tyan 4U server with a 4 disk RAID5 running an ancient version of FreeBSD. "Morpheus" has served us well, but it's had a degraded RAID5 for about 2 years. Yes. Two (2) years, with faithful backups of the important directories.
+
+To make matters more entertaining, it has started rebooting at random, which always leads to the need for human intervention and a good ole run of fsck. So, it's time. Luck is running out. While you can buy single drive NAS boxes just about anywhere, not many have on that supports drive mirroring for under $1000. Then this came along:
+
+<a title="2-Bay Network Storage Enclosure - DNS-323 by D-Link" href="http://www.dlink.com/products/?pid=509">2-Bay Network Storage Enclosure - DNS-323 by D-Link</a>
+
+I have that and two 200GB Seagate SATA drives on order. This weekend should be entertaining.
+
+

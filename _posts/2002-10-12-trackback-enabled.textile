@@ -1,0 +1,74 @@
+---
+layout: post
+title: "TrackBack Enabled"
+category: OffTopic
+published:
+  epoch: 1034397100
+  utc: 2002-10-12T04:31:40
+---
+
+<p>
+My brain hurts. TrackBack is now enabled. My only complaint so far is that I can't [easily] modify the URL that get's sent in the TrackBack ping. What would you need to? Well, for starters, the <code>$MTCGIPath$</code> doesn't work to well for this site. I do all of my blogging under an SSL Client Certificate secured URL, but you are viewing this blog at a different URL. With a little work, that's not so bad.
+</p>
+<p>
+One of my goals with this site was to start eating my own dog food so to speak. Make sure the pages validate. Make sure I'm seperating style from content.  Make sure font sizes are resizable instead of fixed pixil heights (still have to do that yet). And make sure that the URLS are human readable and don't change if I decide to switch server languages/platforms. <a href="http://www.alistapart.com/">A List Apart</a> has a good article called <a href="http://www.alistapart.com/stories/succeed/">How to Succed With URLs</a> that I think every CMS vendor needs to read. :-)
+</p>
+
+<p>
+For example, let's say I have an individual entry archive page you want to link to. The URL could be
+</p>
+
+<pre>
+<code>
+http://today.icantfocus.com/blog/archives/entries/000001/
+</code>
+</pre>
+
+while the <em>real</em> page may be located at
+
+<pre>
+<code>
+http://today.icantfocus.com/blog/archives/entries/000001.xsp
+</code>
+</pre>
+
+<p>
+So what happens if next year I want to move from using eXtensible Server Pages on Apache to using PHP on [shudder] Windows IIS?
+Now the URL for the actual page above would change from
+</p>
+
+<pre>
+<code>
+http://today.icantfocus.com/blog/archives/entries/000001.xsp
+</code>
+</pre>
+
+to
+
+<pre>
+<code>
+http://today.icantfocus.com/blog/archives/entries/000001.php
+</code>
+</pre>
+
+but the the URL used on my website and others links to that entry would still be
+
+<pre>
+<code>
+http://today.icantfocus.com/blog/archives/entries/000001/
+</code>
+</pre>
+
+<p>
+Without the URL mapping, we would have a lot of broken links everywhere.
+</p>
+<p>
+So what was my point again? Ah yes, TrackBacks.
+</p>
+<p>
+TrackBack pings send the URL of the <em>real</em> page (i.e. <code>/000001.xsp</code>) instead of what we would really like people to use ( <code>/000001/</code> ). Ouch!
+</p>
+<p>
+Time to start writing up a patch I guess. :-)
+</p>
+

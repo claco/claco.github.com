@@ -1,0 +1,91 @@
+---
+layout: post
+title: "Feeds: Description CDATA Standard?"
+category: WWW
+published:
+  epoch: 1074565637
+  utc: 2004-01-20T02:27:17
+---
+
+<p>
+Yes, I haven't RTFM. Sue me. Now that I use the RSS Reader in Firebird, I've noticed at least three camps of feeds.
+</p>
+<p>
+<strong>Camp One</strong>: The Description node for each feed item is pure XHTML.  
+</p>
+<pre>
+<code>&lt;description&gt;
+     &lt;p&gt;
+          This is a &lt;strong&gt;para&lt;/strong&gt;.
+     &lt;/p&gt;
+&lt;/description&gt;</code>
+</pre>
+<p>
+<strong>Camp Two</strong>: The Description node for each feed item is XHTML in a CDATA node.
+</p>
+<pre>
+<code>&lt;description&gt;
+     &lt;![CDATA[
+          &lt;p&gt;
+               This is a &lt;strong&gt;para&lt;/strong&gt;.
+          &lt;/p&gt;
+     ]]&gt;
+&lt;/description&gt;</code>
+</pre>
+<p>
+<strong>Camp Three</strong>: The Description node for each feed item is completely HTML encoded:
+</p>
+<pre>
+<code>&lt;description&gt;
+     &amp;lt;p&amp;gt;
+          This is a &amp;lt;strong&amp;gt;para&amp;lt;/strong&amp;gt;.
+     &amp;lt;/p&amp;gt;
+&lt;/description&gt;</code>
+</pre>
+<p>
+So, the question is thus: Which method is correct? Is the Description contents a payload to be delivered and not rendered as part of the feeds DOM, or simply part of the original XML feed document DOM?
+</p>
+<p>
+The results across feed readers seems to be somewhat inconsistant. Some appear to play smart and sniff out the content. Some simply display the the HTML serialized into the DOM. Some display the HTML as is. What's the consensus?
+</p>
+
+
+<ins>
+<p>
+OK, so I'll do a little RTFMing.
+</p>
+<p>
+According to the <a href="http://www.mnot.net/drafts/draft-nottingham-atom-format-02.html#rfc.section.3.1">Atom 0.3 Draft Spec</a>, the <samp>atom:content</samp> element has a <samp>mode</samp> attribute:
+</p>
+<blockquote>
+<dl>
+	<dt>"xml":</dt>
+	<dd>A mode attribute with the value
+	"xml" indicates that the element's content is inline
+	xml (for example, namespace-qualified XHTML).
+	</dd>
+	<dt>"escaped":</dt>
+	<dd>A mode attribute with the
+	value "escaped" indicates that the element's content
+	is an escaped string. Processors MUST unescape the
+	element's content before considering it as content of
+	the indicated media type.
+	</dd>
+	<dt>"base64":</dt>
+	<dd>A mode attribute with the
+	value "base64" indicates that the element's content is
+	base64-encoded <a href="#RFC2045" title="Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies">[RFC2045]</a>. Processors
+	MUST decode the element's content before considering
+	it as content of the the indicated media type.
+	</dd>
+</dl>
+</blockquote>
+<p>
+So, is data within a <code>&lt;![CDATA[ ]]&gt;</code> block considered "escaped"? I would think so, but hey. Who knows. Nice to see the Atom spec took this problem into account.
+</p>
+<p>
+Now, what about RSS/RDF? If I have to pick a reason to like Atom feeds more, that little touch would probably be it.
+</p>
+</ins>
+
+

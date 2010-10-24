@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Dear AT&amp;T User (12.160.193.229):"
+category: WTF
+published:
+  epoch: 1079578518
+  utc: 2004-03-18T02:55:18
+---
+
+<p>
+Stop leaching off of my bandwidth. I'm flattered you're using my RSS XSLT stylesheet to read MSDN, but for the love of Pete, save it locally lest I be forced to block you.
+</p>
+<p><samp>
+12.160.193.229 - - [17/Mar/2004:12:25:33 -0500] "GET /style/xsl/feeds.xsl HTTP/1.1" 200 1840 "http://localhost/Scripts/cmd.exe?/A%20/C%20FormatRss.bat%20http://msdn.microsoft.com/rss.xml" "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; .NET CLR 1.0.3705; .NET CLR 1.1.4322)"
+</samp></p>
+<pre><samp>
+AT&amp;T WorldNet Services ATT (NET-12-0-0-0-1)
+                                  12.0.0.0 - 12.255.255.255
+AUTODESK, INC. AUTODESK-I837-193-224 (NET-12-160-193-224-1)
+                                  12.160.193.224 - 12.160.193.239
+
+# ARIN WHOIS database, last updated 2004-03-16 19:15
+# Enter ? for additional hints on searching ARIN's WHOIS database.
+</samp></pre>
+
+

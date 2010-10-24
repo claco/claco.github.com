@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Anti Progress"
+category: OffTopic
+published:
+  epoch: 1063157922
+  utc: 2003-09-10T01:38:42
+---
+
+<p>
+For some reason I'm managing to get things done, but not the ones I need to.
+I managed to clean the garage out Sunday. It <a href="/blog/archives/entries/000317/">looked much like the office did before I cleaned</a> that too.
+</p>
+<p>
+Yet with all that energy (not), I can't seem to get anything done with the second half of <a href="/projects/">this yet</a>. I think part of it is that I need to write my tests first (<a href="http://c2.com/cgi/wiki?TestDrivenDevelopment">TDD</a>) before I even get around to writing the code. THe tests alone for all the methods in one module is more work the the code itself. I know it'll pay off later, but damn it it takes too long! Sniff sniff. Whine, bitch, moan.
+</p>
+
+

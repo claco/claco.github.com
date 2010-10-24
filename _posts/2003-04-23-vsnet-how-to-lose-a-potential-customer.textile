@@ -1,0 +1,26 @@
+---
+layout: post
+title: "VS.NET: How To Lose A Potential Customer"
+category: MicroShaft
+published:
+  epoch: 1051139710
+  utc: 2003-04-23T23:15:10
+---
+
+<p>
+You know, just when I decide to research Visual Studio.NET, MickeySoft manages to piss me off, again, still, more.
+</p>
+<p>
+So here I have one 60 day Trial Copy of VS.NET. I would like to spend some time tinkering with it, learning its quirks before I weigh in on whether I think it's appropriate for our development group.
+So, after I get my hands on a DVD drive at work, I install it and proceed to tinker for about 20 minute. Since I live behind a computer at home, I also wanted to install the trial there and continue my tinkering.
+</p>
+<p>
+<strong><em>After</em></strong> waiting 40 fucking minutes to install 1.5GB worth of shit, then it decides that it won't activate because I've already nstalled it elsewhere.
+That would be all well and good if I were using a retail copy, <strong>but it's a fucking trial version@#$%$#</strong>. The whole point of a "trial version" is to get me and as many others as possible to try it, then buy it. 
+I can't do that when the piece of shit software activation stops me from doing so. To make matters worse, now I have to wait for it to deinstall itself.
+</p>
+<p>
+Fuck you Bill. I will find another IDE.
+</p>
+
+

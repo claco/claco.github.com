@@ -1,0 +1,20 @@
+---
+layout: post
+title: "WMA Is Cool. WMP/DirectOutput Sucks"
+category: Music
+published:
+  epoch: 1062164993
+  utc: 2003-08-29T13:49:53
+---
+
+<p>
+A while back I <a href="/blog/archives/entries/000259/">praised Windows Media Player</a> for being so good at ripping CDs quickly. Then I also ranted about the WMA format sucking ass because it's <a href="/blog/archives/entries/000263/">skipping randomly</a> on every computer I owned, where my old Ogg Vorbis files did not skip.
+</p>
+<p>
+Well after some more tinkering I've narrowed the problem down to DirectShow and the DirectOutput crap in DirectX. The minute I turned off DirectOutput in WinAmp, the skipping went away. Unfortunately, there doesn't appear to be a way to turn of DirectOutput in WMP, so that player is out of the loop.
+</p>
+<p>
+At this point, I'm starting from scratch, and need to decide to rip WMA or Ogg Vorbis again. WMA is definately faster but since I'm not going to be using WMP for playback and it's library functions, what's the point? Chances are I'm not going to get a portable devies anytime soon, and by them some of them wil already have Ogg Vorbis support.
+</p>
+
+

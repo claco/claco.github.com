@@ -1,0 +1,33 @@
+---
+layout: post
+title: "FreeBSD 4.7-RELEASE"
+category: FreeBSD
+published:
+  epoch: 1034380805
+  utc: 2002-10-12T00:00:05
+---
+
+<p>
+Woohoo! Another FreeBSD <a href="http://www.freebsd.org/releases/4.7R/announce.html" title="FreeBSD 4.7 release announcement">release</a> hits the pavement running.This can only mean one thing here at the ranch: another geek filled weekend of compiling and pizza for all!
+</p>
+<p>
+This is how <em>real</em> geeks have fun on the weekends:
+</p>
+
+<pre>
+<kbd>
+$ cvsup stable-supfile
+$ cd /usr/src
+$ make buildworld
+$ make installworld
+$ make buildkernel
+$ make installkernel
+$ mergemaster
+</kbd>
+</pre>
+
+<p>
+Now doesn't that look like fun? Who needs bars and loud music when you can have this kind of excitement!
+</p>
+
+

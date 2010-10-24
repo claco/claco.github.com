@@ -1,0 +1,14 @@
+---
+layout: post
+title: "WPA + XP + DHCP Issues Revisited"
+category: WTF
+published:
+  epoch: 1087608483
+  utc: 2004-06-19T01:28:03
+---
+
+A while back I <a href="/blog/archives/entries/i_declare_wpa_broken.icf">ranted</a> about how XP using WPA and DHCP seemed to be a retarded combination with random locks and hags with seemily working connectivity.
+
+Well, <a href="http://www.dslreports.com/forum/remark,8652639">apparently I'm not alone</a> with those problems. That thread makes for an interesting read. So far it looks like the registry hack worked for me as well. Go figure.
+
+

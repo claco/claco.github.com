@@ -1,0 +1,27 @@
+---
+layout: post
+title: "NetGear FS108 Power Supplies Blow Goats"
+category: Hardware
+published:
+  epoch: 1048952564
+  utc: 2003-03-29T15:42:44
+---
+
+<p>
+So here I am, surfin this morning and all of a sudden no connection. Look over at the server rack and all I see it one of the little Netgear FS108 10/100 switches with all of its lights flashing on and off rapidly. Luckily for me, I had a spare. It appears that I have toated yet another power supply dongle for these switches.
+</p>
+<p>
+I've been through this before (I've got 3 of them). And my first guess is that the original ones that came with the units are junk. The replacement supply I bought last year looks different <strong>and still works</strong>. :-) To make matters more confusing, 2 of my FS108 switches use a 5V power supply and have dip switches, and the 3rd FS108 uses a 12V power supply and has no dip witches. Go figure.
+</p>
+<p>
+I know, I know. I really should buy a rack mount switch., but they're expensive, and why should I pay for a 16-24 port switch when I only need about 6 ports? For that matter, I need two seperate switches for my setup anyways. Such is the technical life.
+</p>
+<p>
+On the upshot, now I remember why I opted to never get the switches with the power supplies built in. :-)
+</p>
+<p class="center">
+<img src="/blog/images/hardware/fs108.jpg" alt="Netgear FS108 10/100 Switch" />
+</p>
+
+
+

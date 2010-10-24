@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: ConfigurationElementCollection Gotcha
+wordpress_id: 58
+wordpress_url: http://chrislaco.com/?p=58
+published:
+  epoch: 1225594980
+  utc: 2008-11-02T03:03:00
+---
+Here's a fun way to waste 2 hours of your life. I was writing a custom config section, and trying to figure out why this wasn't throwing a duplicate key error:
+<!--more-->
+<pre class="brush:xml">&lt;monitors&gt;
+  &lt;monitor name="File" /&gt;
+  &lt;monitor name="File" /&gt;
+&lt;/monitors&gt;</pre>
+After surfing Google endlessly, I finally found this on MSDN:
+<blockquote>Note that elements with identical keys and values are not considered duplicates, and are accepted silently. Only elements with identical keys but different values are considered duplicates.</blockquote>
+That was fun. :-/

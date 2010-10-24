@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Simple Look. Unlocked Comments."
+category: OffTopic
+published:
+  epoch: 1088548904
+  utc: 2004-06-29T22:41:44
+---
+
+I think I like the new simple style on this site right now. No loads of sidebar links and unneed information overload. Since most people seem to be comsuming my rantage via RSS, I guess it really matters not one bit.
+
+On that note, I've re-enabled comments for regular old non-TypeKey users. I'm sure this means I'll have to spend time every other day deleting 100+ unapproved spam robot comments. How fun.
+
+

@@ -1,0 +1,27 @@
+---
+layout: post
+title: "MovableType Help Wanted"
+category: WWW
+published:
+  epoch: 1073788168
+  utc: 2004-01-11T02:29:28
+---
+
+<p>
+Anyone out there using MovableType to serve up XML?
+I need to output all user comments as sanitized XML w/converted line breaks.
+</p>
+<p>
+So far, I can specify <code>encode_xml="1"</code>, but MT  wraps the content in a <code>&lt;![CDATA[ ]]&gt;</code>. block, which I don't want. I can also use <code>encode_html="1"</code> with <code>NoHTMLEntities=1</code> in the <code>mt.cfg</code>. No matter which I pick, if I also use <code>convert_breaks="1"</code>, the encoding options also encode the <code>p</code> and <code>br</code> tags put in by the <code>convert_breaks</code> tag. Grrrr.
+</p>
+<p>
+All I really need is a convert breaks w/ an ampersand encoder.
+</p>
+
+<ins>
+<p>
+Rather than waste more time on the issue, I used <a href="http://mt-plugins.org/archives/entry/regex.php">Brad Choate's Regex plugin</a> to do the deed. Comments should now be formatted.
+</p>
+</ins>
+
+

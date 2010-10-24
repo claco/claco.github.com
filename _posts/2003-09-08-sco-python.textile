@@ -1,0 +1,19 @@
+---
+layout: post
+title: "SCO Python"
+category: Humor
+published:
+  epoch: 1063067595
+  utc: 2003-09-09T00:33:15
+---
+
+<p>
+Leave it to Slashdot readers to bring <a href="http://yro.slashdot.org/comments.pl?sid=77714&amp;cid=6905081">two unrelated topics together</a> unto humor: Monty Python and SCO. That's why I like reading the comments!
+</p>
+<blockquote>
+<p>
+NOBODY expects the SCO License Audit! Our chief weapon is suprise... surprise and fear... fear and surprise.... Our two weapons are fear and surprise... and a littany of grandiose claims in press releases.... Our *three* weapons are fear, surprise, and grandiose claims... and an almost fanatical devotion to the UNIX license.... Our *four*... no... *Amongst* our weapons.... Amongst our weaponry... are such diverse elements as fear, surprise.... I'll come in again. (Exit and exeunt)
+</p>
+</blockquote>
+
+

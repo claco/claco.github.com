@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Awesome Redesign"
+category: WWW
+published:
+  epoch: 1058641826
+  utc: 2003-07-19T19:10:26
+---
+
+<p>
+The visual appeal and use of CSS on <a href="http://www.etherfarm.com/">Etherf@rm</a> makes me cry with envy.
+My kindom for the creative power behind this sites look and design. I'm just a programmer. :-(
+</p>
+
+

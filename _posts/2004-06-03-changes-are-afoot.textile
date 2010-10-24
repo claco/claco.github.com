@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Changes Are Afoot"
+category: WTF
+published:
+  epoch: 1086314061
+  utc: 2004-06-04T01:54:21
+---
+
+Changes are afoot at ICF. MovableType 3.0 is installed. I'm also ditching AxKit for my blog and sticking with just plain olde XHTML.
+
+I think I stop posting as often because is was just to damn complicated when something needed fixed.
+
+I'm also changing the individual entry archive file names, so I'll have to do some mod_rewrite magic later one. All the old stuff should still be running available at this point. There's that "S" word again. :-)
+
+

@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Non Geeky Hardware Day"
+category: Hardware
+published:
+  epoch: 1049674147
+  utc: 2003-04-07T00:09:07
+---
+
+<p>
+Just another day looking at or buying new hardware. This time they're non-computer related. First I had to stop by the local Home Despot for a new toilet seat and to take a look at backup sump pumps for the basement.
+Then it was on to Advanced Auto parts for an inline fuse wire and a new battery for the truck. What fun.
+</p>
+
+

@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Email Disclaimers, Lawyers, and Irony"
+category: Humor
+published:
+  epoch: 1054768867
+  utc: 2003-06-04T23:21:07
+---
+
+<p>
+While the details must remain slim, I have witnessed something that, as a Sys Admin,  angers me, and makes me cry with laughter at the same time. We've all probably seen emails from people who have a 12 mile paragraph of legal-mumbo-jumbo-confidental-private-such-and-such-law disclaimers at the end?
+I hate those. It's stupid, unenforceable, a waste ob bandwidth, and just plain bad netiquete, esp when you're on things email lists that get archived.
+</p>
+<p>
+Well, I know someone who's place of daily entertainment decided to append such a disclaimer to the end of every outgoing email, <em>at the advice of their legal council</em> of course. Needless to say. those types of disclaimers only serve to point out how paranoid or ignorant a place really is IMHO.
+</p>
+<p>
+Well, sure enough, the irony kicks in. Weeks later, that <em>same</em> legal coucil sends a confidental email with attached confidential document to an incorrect email address that gets routed to a bunch of regular joes instead of the indended higher up recipient. To top that off, the aformentioned legal council <strong><em>had no legal confidental disclaimer</em></strong> at the bottom of their emails, as they tell other people to do. Forget the whole fact that if the email is so damn confidental, encrypt the fucking emails!
+</p>
+<p>
+Fitting I think.
+</p>
+
+

@@ -1,0 +1,27 @@
+---
+layout: post
+title: "New Lawn Mower"
+category: Hardware
+published:
+  epoch: 1084111246
+  utc: 2004-05-09T14:00:46
+---
+
+<p>
+I bought a new push mower yesterday. 
+We've got 1 acre, but we only mow about 2/3 of it. The front yard is easy, but the back yard is wet, sloped and the grass is mega thick and high (since it's been to wet to mow yet). I have a 5 year old 4HP push mower that could do the job, but it's going to struggle with it and I don't really want to spend $2000+ for a good riding lawn mower just yet.
+</p>
+<p>
+We were at Sam's Club and she was getting a new cell phone. Right behind us was an MTD Pro Self-Propelled 21" 6.5HP Swivel Wheel push mower  for $377. Interesting price I thought.
+</p>
+<p>
+Later that day, we stopped at Sears and Lowes. Lowes sells the Cub Cadet (the one in the picture) version that is <strong>exactly</strong> the same; literally. Same features, made by the same company, sold under different name with a different paint job (MTD Pro is red) for $478.
+</p>
+<p class="image">
+<a href="/blog/images/hardware/mower.jpg"><img src="/blog/images/hardware/mower_small.jpg" alt="MTD Pro SR621" /></a>
+</p>
+<p>
+So, back to Sam's Club we we for the same mower $100 cheaper. Good deal I think.
+</p>
+
+

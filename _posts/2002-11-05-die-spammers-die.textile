@@ -1,0 +1,54 @@
+---
+layout: post
+title: "Die Spammers Die"
+category: WTF
+published:
+  epoch: 1036546136
+  utc: 2002-11-06T01:28:56
+---
+
+<p>
+Dear 67.34.248.175:
+</p>
+<p>
+Fuck you for being a spammer, not just any spammer, but one who has such little ballsack girth that you must resort to forgeing headers so bounces 
+of your shit goes back to innocent people who never sent the email.
+</p>
+<p>
+Dear mailsrv.macmillan-india.co.in:
+</p>
+<p>
+Close your fucking server. It is an open relay. Get with the program. That is all.
+</p>
+
+<p>
+<textarea rows="15" cols="45">
+X-Rocket-Spam: 203.200.192.100
+X-YahooFilteredBulk: 203.200.192.100
+X-Track: 201: 20
+X-Rocket-Server: 216.136.130.101
+Return-Path: chris.laco@threetech.com
+Received: from 203.200.192.100  (EHLO mailsrv.macmillan-india.co.in) (203.200.192.100)
+  by mta526.mail.yahoo.com with SMTP; 05 Nov 2002 11:26:33 -0800 (PST)
+Received: from 192.168.1.1 ([67.34.248.175]) by mailsrv.macmillan-india.co.in with
+Microsoft SMTPSVC(5.0.2195.5329);
+         Wed, 6 Nov 2002 00:56:06 +0530
+Message-ID: &lt;000009260faf$00000a86$00003f8d@&gt;
+To: &lt;new members&gt;
+From: chris.laco@threetech.com
+Subject: your login                 NMH
+Date: Tue, 05 Nov 2002 14:25:44 -1700
+MIME-Version: 1.0
+Content-Type: text/plain;
+        charset="Windows-1252"
+Content-Transfer-Encoding: 7bit
+X-CRUNCHERS: X
+X-CORONNA: X-PLATTER
+X-PLATTER: X-CRUNCHERS
+X-IONK: X-ERRORST
+Return-Path: chris.laco@threetech.com
+X-OriginalArrivalTime: 05 Nov 2002 19:26:08.0343 (UTC) FILETIME=[31015E70:01C28501]
+</textarea>
+</p>
+
+

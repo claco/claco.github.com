@@ -1,0 +1,730 @@
+---
+layout: post
+title: "MVC Marathon Part 1: Creating a New Application"
+category: OffTopic
+tags:
+  - c#
+  - cakephp
+  - catalyst
+  - django
+  - mvc
+  - perl
+  - php
+  - python
+  - rails
+  - ruby
+published:
+  epoch: 1214789059
+  utc: 2008-06-30T01:24:19
+---
+
+		<p>
+			Welcome to part 1 of <a href="/blog/mvc-marathon/">MVC Marathon</a>,
+			a multipart excursion into creating an application in the major
+			MVC frameworks available today.
+		</p>
+		<p>
+			The source code for this part can be found here:
+			<a href="http://github.com/claco/mvc-marathon/tree/part1-creating-a-new-application/">http://github.com/claco/mvc-marathon/tree/part1-creating-a-new-application/</a>
+		</p>
+		<h2>Part 1: Creating a New Application</h2>
+		<p>
+			The first step in any new application is creating a directory
+			structure and any necessary configuration files. Fortunately, most
+			of the frameworks now a days provide ready made templates or
+			scripts to make getting started as easy as possible.
+		</p>
+		<p>
+			Today we'll explore how to create and run a new application in the
+			various frameworks and explore the difference between them. You
+			can jump to any specific framework using the links below. For this
+			series of articles, I'm going to assume that you already have the
+			basic frameworks installed.
+		</p>
+		<ul>
+			<li><a href="#aspnetmvc">ASP.NET MVC</a></li>
+			<li><a href="#cakephp">CakePHP</a></li>
+			<li><a href="#catalyst">Catalyst</a></li>
+			<li><a href="#django">Django</a></li>
+			<li><a href="#rails">Ruby on Rails</a></li>
+			<li><a href="#conclusions">Conclusions</a></li>
+		</ul>
+
+		
+		<h2><a name="aspnetmvc"></a>ASP.NET MVC</h2>
+		<h3>Creating the Application</h3>
+		<p>
+			The easiest way to create a new ASP.NET MVC application is using
+			the application templates in Visual Studio. To do that, simply
+			select <kbd>File -> New -> Project</kbd>:
+		</p>
+		<p>
+			<a href="aspnetmvc-create.png">
+				<img src='aspnetmvc-create.png' width="204" height="152" alt="aspnetmvc create" />
+			</a>
+		</p>
+		<p>
+			In the New Project window, select Visual C# as the
+			language. Select the ASP.NET MVC Web Application, type in the name
+			of the new application, in our case, BurningPlate and click OK.
+			Visual Studio will create a new mvc application looking something
+			like this:
+		</p>
+		<p>
+			<a href="aspnetmvc-create2.png">
+				<img src='aspnetmvc-create2.png' width="204" height="152"  alt="aspnetmvc create" />
+			</a>
+		</p>
+		<p>
+			Like nearly all MVC applications, we have the usual Controllers,
+			Models and Views folders along with some other .NET specific
+			folders.
+		</p>
+		<h3>Running the Application</h3>
+		<p>
+			To run your new application, simply hit <kbd>F5</kbd>, which will
+			start the application in Visual Studios local web server. This
+			means no messing with IIS until you have to. If all goes well, you
+			should end up with the default home page:
+		</p>
+		<p>
+			<a href="aspnetmvc.png">
+				<img src='aspnetmvc.png' width="204" height="152" alt="aspnetmvc run" />
+			</a>
+		</p>
+
+
+		<h2><a name="cakephp"></a>CakePHP</h2>
+		<p>
+			There seems to be at least two ways to create a new CakePHP
+			application. The blog example on the CakePHP website say to just
+			download and extract the latest version and start creating your
+			application in the <kbd>app</kbd> subfolder. This seems like a
+			good approach if you're creating app to put on a server where you
+			don't know or control the version or even if CakePHP is installed.
+		</p>
+		<p>
+			If you're running your own server, you can setup your env to point
+			to a centralized install of CakePHP and use <kbd>cake</kbd> to
+			create apps that reference the installed software. We'll do the
+			latter as it closely follows how the other frameworks work.
+		</p>
+		<h3>Creating the Application</h3>
+		<p>
+			First, let's see what <kbd>cake</kbd> tells us when we run it:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon $ cake
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+Current Paths:
+ -app: mvc-marathon
+ -working: /Users/claco/mvc-marathon
+ -root: /Users/claco
+ -core: /sw/cakephp/
+
+Changing Paths:
+your working path should be the same as your application path
+to change your path use the &#x27;-app&#x27; param.
+Example: -app relative/path/to/myapp or -app /absolute/path/to/myapp
+
+Available Shells:
+
+ vendors/shells/:
+         - none
+
+ cake/console/libs/:
+         acl
+         api
+         bake
+         console
+         i18n
+         schema
+         testsuite
+
+To run a command, type &#x27;cake shell_name [args]&#x27;
+To get help on a specific command, type &#x27;cake shell_name help&#x27;</pre>
+
+	<p>
+		Next, let's run <kbd>cake bake help</kbd> to see what our options are:
+	</p>
+	<pre>claco@mbp ~/mvc-marathon $ cake bake help
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : mvc-marathon
+Path: /Users/claco/mvc-marathon
+---------------------------------------------------------------
+CakePHP Bake:
+---------------------------------------------------------------
+The Bake script generates controllers, views and models for your application.
+If run with no command line arguments, Bake guides the user through the class
+creation process. You can customize the generation process by telling Bake
+where different parts of your application are using command line arguments.
+---------------------------------------------------------------
+Usage: cake bake &lt;command&gt; &lt;arg1&gt; &lt;arg2&gt;...
+---------------------------------------------------------------
+Params:
+        -app &lt;path&gt; Absolute/Relative path to your app folder.
+
+Commands:
+
+        bake help
+                shows this help message.
+
+        bake all &lt;name&gt;
+                bakes complete MVC. optional &lt;name&gt; of a Model
+
+        bake project &lt;path&gt;
+                bakes a new app folder in the path supplied
+                or in current directory if no path is specified
+
+        bake plugin &lt;name&gt;
+                bakes a new plugin folder in the path supplied
+                or in current directory if no path is specified.
+
+        bake db_config
+                bakes a database.php file in config directory.
+
+        bake model
+                bakes a model. run &#x27;bake model help&#x27; for more info
+
+        bake view
+                bakes views. run &#x27;bake view help&#x27; for more info
+
+        bake controller
+                bakes a controller. run &#x27;bake controller help&#x27; for more info</pre>
+			<p>
+				Since we're starting from scratch, let's give <kbd>project</kbd>
+				a whirl:
+			</p>
+			<pre>claco@mbp ~/mvc-marathon/cakephp $ cake bake BurningPlate
+Welcome to CakePHP v1.2.0.7296 RC2 Console
+---------------------------------------------------------------
+App : cakephp
+Path: /Users/claco/mvc-marathon/cakephp
+---------------------------------------------------------------
+Bake Project
+Skel Directory: /sw/cakephp/cake/console/libs/templates/skel
+Will be copied to: /Users/claco/mvc-marathon/cakephp/BurningPlate
+---------------------------------------------------------------
+Look okay? (y/n/q) 
+[y] &gt;  
+Do you want verbose output? (y/n) 
+[n] &gt;  
+---------------------------------------------------------------
+Created: BurningPlate in /Users/claco/mvc-marathon/cakephp/BurningPlate
+---------------------------------------------------------------
+
+Creating file /Users/claco/mvc-marathon/cakephp/BurningPlate/views/pages/home.ctp
+Wrote /Users/claco/mvc-marathon/cakephp/BurningPlate/views/pages/home.ctp
+Welcome page created
+Random hash key created for &#x27;Security.salt&#x27;
+CAKE_CORE_INCLUDE_PATH set to /sw/cakephp in webroot/index.php
+CAKE_CORE_INCLUDE_PATH set to /sw/cakephp in webroot/test.php
+Remember to check these value after moving to production server
+Your database configuration was not found. Take a moment to create one.
+---------------------------------------------------------------
+Database Configuration:
+---------------------------------------------------------------
+Name:  
+[default] &gt; ^C
+		</pre>
+		<h3>Running the Application</h3>
+		<p>
+			At first glance, there appears to be no development server for
+			CakePHP applications. There is a script called
+			<a href="http://bakery.cakephp.org/articles/view/the-cakephp-instaweb-webserver">cakephp-instaweb</a>
+			available on the CakePHP website geared for this purpose.
+			Ironically, the script relies on Python to get the job done. When
+			I ran it, it appeared to work, but all I ever got when trying to
+			hit it with the browser was a CGI SCript Error carping about
+			headers.
+		</p>
+		<p>
+			The second option is to run this application under Apache. Since
+			I'm on a MacBook Pro and OSX includes a running version of Apache
+			and PHP, all I needed to do was place the BurningPlate directory
+			in my Sites folder. After hitting
+			<kbd>http://localhost/~claco/BurningPlate/</kbd> with my browser
+			we get:
+		</p>
+		<p>
+			<a href="cakephp.png">
+				<img src='cakephp.png' width="204" height="152" alt="cakephp run" />
+			</a>
+		</p>
+
+
+
+		<h2><a name="catalyst"></a>Catalyst</h2>
+		<h3>Creating the Application</h3>
+		<p>
+			Just like CakePHP, Catalyst also has a command line utility for
+			creating a new application. Let's see what what it has to say:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst $ catalyst.pl
+Usage:
+    catalyst.pl [options] application-name
+
+    &#x27;catalyst.pl&#x27; creates a skeleton for a new application, and allows you
+    to upgrade the skeleton of your old application.
+
+     Options:
+       -force      don&#x27;t create a .new file where a file to be created exists
+       -help       display this help and exit
+       -makefile   only update Makefile.PL
+       -scripts    only update helper scripts
+       -short      use short names, M/V/C instead of Model/View/Controller.
+
+     application-name must be a valid Perl module name and can include &quot;::&quot;, 
+     which will be converted to &#x27;-&#x27; in the project name.
+
+
+     Examples:
+        catalyst.pl My::App
+        catalyst.pl MyApp
+
+     To upgrade your app to a new version of Catalyst:
+        catalyst.pl -force -scripts MyApp</pre>
+		<p>
+			Looks like we just need an application name:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst $ catalyst.pl BurningPlate
+created &quot;BurningPlate&quot;
+created &quot;BurningPlate/script&quot;
+created &quot;BurningPlate/lib&quot;
+created &quot;BurningPlate/root&quot;
+created &quot;BurningPlate/root/static&quot;
+created &quot;BurningPlate/root/static/images&quot;
+created &quot;BurningPlate/t&quot;
+created &quot;BurningPlate/lib/BurningPlate&quot;
+created &quot;BurningPlate/lib/BurningPlate/Model&quot;
+created &quot;BurningPlate/lib/BurningPlate/View&quot;
+created &quot;BurningPlate/lib/BurningPlate/Controller&quot;
+created &quot;BurningPlate/burningplate.conf&quot;
+created &quot;BurningPlate/lib/BurningPlate.pm&quot;
+created &quot;BurningPlate/lib/BurningPlate/Controller/Root.pm&quot;
+created &quot;BurningPlate/README&quot;
+created &quot;BurningPlate/Changes&quot;
+created &quot;BurningPlate/t/01app.t&quot;
+created &quot;BurningPlate/t/02pod.t&quot;
+created &quot;BurningPlate/t/03podcoverage.t&quot;
+created &quot;BurningPlate/root/static/images/catalyst_logo.png&quot;
+created &quot;BurningPlate/root/static/images/btn_120x50_built.png&quot;
+created &quot;BurningPlate/root/static/images/btn_120x50_built_shadow.png&quot;
+created &quot;BurningPlate/root/static/images/btn_120x50_powered.png&quot;
+created &quot;BurningPlate/root/static/images/btn_120x50_powered_shadow.png&quot;
+created &quot;BurningPlate/root/static/images/btn_88x31_built.png&quot;
+created &quot;BurningPlate/root/static/images/btn_88x31_built_shadow.png&quot;
+created &quot;BurningPlate/root/static/images/btn_88x31_powered.png&quot;
+created &quot;BurningPlate/root/static/images/btn_88x31_powered_shadow.png&quot;
+created &quot;BurningPlate/root/favicon.ico&quot;
+created &quot;BurningPlate/Makefile.PL&quot;
+created &quot;BurningPlate/script/burningplate_cgi.pl&quot;
+created &quot;BurningPlate/script/burningplate_fastcgi.pl&quot;
+created &quot;BurningPlate/script/burningplate_server.pl&quot;
+created &quot;BurningPlate/script/burningplate_test.pl&quot;
+created &quot;BurningPlate/script/burningplate_create.pl&quot;</pre>
+		<h3>Running the application</h3>
+		<p>
+			Unlike CakePHP, Catalyst includes a development server to get you
+			started. No need to futz with Apache:
+		</p>
+		<pre>claco@mbp ~/mvc-marathon/catalyst $ BurningPlate/script/burningplate_server.pl
+[debug] Debug messages enabled
+[debug] Statistics enabled
+[debug] Loaded plugins:
+.----------------------------------------------------------------------------.
+| Catalyst::Plugin::ConfigLoader  0.20                                       |
+| Catalyst::Plugin::Static::Simple  0.20                                     |
+&#x27;----------------------------------------------------------------------------&#x27;
+
+[debug] Loaded dispatcher &quot;Catalyst::Dispatcher&quot;
+[debug] Loaded engine &quot;Catalyst::Engine::HTTP&quot;
+[debug] Found home &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate&quot;
+[debug] Loaded Config &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/burningplate.conf&quot;
+[debug] Loaded components:
+.-----------------------------------------------------------------+----------.
+| Class                                                           | Type     |
++-----------------------------------------------------------------+----------+
+| BurningPlate::Controller::Root                                  | instance |
+&#x27;-----------------------------------------------------------------+----------&#x27;
+
+[debug] Loaded Private actions:
+.----------------------+--------------------------------------+--------------.
+| Private              | Class                                | Method       |
++----------------------+--------------------------------------+--------------+
+| /default             | BurningPlate::Controller::Root       | default      |
+| /end                 | BurningPlate::Controller::Root       | end          |
+| /index               | BurningPlate::Controller::Root       | index        |
+&#x27;----------------------+--------------------------------------+--------------&#x27;
+
+[debug] Loaded Path actions:
+.-------------------------------------+--------------------------------------.
+| Path                                | Private                              |
++-------------------------------------+--------------------------------------+
+| /                                   | /default                             |
+| /                                   | /index                               |
+&#x27;-------------------------------------+--------------------------------------&#x27;
+
+[info] BurningPlate powered by Catalyst 5.7014
+You can connect to your server at http://localhost:3000
+[info] *** Request 1 (0.125/s) [1941] [Sat Jun 28 19:24:35 2008] ***
+[debug] &quot;GET&quot; request for &quot;/&quot; from &quot;127.0.0.1&quot;
+[info] Request took 0.017728s (56.408/s)
+.----------------------------------------------------------------+-----------.
+| Action                                                         | Time      |
++----------------------------------------------------------------+-----------+
+| /index                                                         | 0.000507s |
+| /end                                                           | 0.000745s |
+&#x27;----------------------------------------------------------------+-----------&#x27;</pre>
+	<p>
+		The development server was nice enough to tell us where to go. Hitting
+	<kbd>http://localhost:3000</kbd> in our browser yields:
+	</p>
+	<p>
+		<a href="catalyst.png">
+			<img src='catalyst.png' width="204" height="152" alt="catalyst run" />
+		</a>
+	</p>
+
+
+
+	<h2><a name="django"></a>Django</h2>
+	<h3>Creating the application</h3>
+	<p>
+		Rinse. Lather. Repeat. As with the previous two frameworks, we just
+		need to run a command line script to create a new application.
+	</p>
+	<pre>claco@mbp ~/mvc-marathon/django $ django-admin.py
+Usage: django-admin.py action [options]
+actions:
+ adminindex [appname ...]
+   Prints the admin-index template snippet for the given app name(s).
+
+ createcachetable [tablename]
+   Creates the table needed to use the SQL cache backend
+
+ dbshell 
+   Runs the command-line client for the current DATABASE_ENGINE.
+
+ diffsettings 
+   Displays differences between the current settings.py and Django&#x27;s
+   default settings. Settings that don&#x27;t appear in the defaults are
+   followed by &quot;###&quot;.
+
+ dumpdata [--format][appname ...]
+   Output the contents of the database as a fixture of the given
+   format
+
+ flush [--verbosity] [--interactive]
+   Executes ``sqlflush`` on the current database.
+
+ inspectdb 
+   Introspects the database tables in the given database and outputs
+   a Django model module.
+
+ loaddata [--verbosity] fixture, fixture, ...
+   Installs the named fixture(s) in the database
+
+ reset [--interactive][appname ...]
+   Executes ``sqlreset`` for the given app(s) in the current
+   database.
+
+ runfcgi [various KEY=val options, use `runfcgi help` for help]
+   Runs this project as a FastCGI application. Requires flup.
+
+ runserver [--noreload] [--adminmedia=ADMIN_MEDIA_PATH] [optional port number, or ipaddr:port]
+   Starts a lightweight Web server for development.
+
+ shell [--plain]
+   Runs a Python interactive interpreter. Tries to use IPython, if
+   it&#x27;s available.
+
+ sql [appname ...]
+   Prints the CREATE TABLE SQL statements for the given app name(s).
+
+ sqlall [appname ...]
+   Prints the CREATE TABLE, initial-data and CREATE INDEX SQL
+   statements for the given model module name(s).
+
+ sqlclear [appname ...]
+   Prints the DROP TABLE SQL statements for the given app name(s).
+
+ sqlcustom [appname ...]
+   Prints the custom table modifying SQL statements for the given app
+   name(s).
+
+ sqlflush 
+   Returns a list of the SQL statements required to return all tables
+   in the database to the state they were in just after they were
+   installed.
+
+ sqlindexes [appname ...]
+   Prints the CREATE INDEX SQL statements for the given model module
+   name(s).
+
+ sqlinitialdata 
+   RENAMED: see &#x27;sqlcustom&#x27;
+
+ sqlreset [appname ...]
+   Prints the DROP TABLE SQL, then the CREATE TABLE SQL, for the
+   given app name(s).
+
+ sqlsequencereset [appname ...]
+   Prints the SQL statements for resetting PostgreSQL sequences for
+   the given app name(s).
+
+ startapp [appname]
+   Creates a Django app directory structure for the given app name in
+   the current directory.
+
+ startproject [projectname]
+   Creates a Django project directory structure for the given project
+   name in the current directory.
+
+ syncdb [--verbosity] [--interactive]
+   Create the database tables for all apps in INSTALLED_APPS whose
+   tables haven&#x27;t already been created.
+
+ test [--verbosity] [appname ...]
+   Runs the test suite for the specified applications, or the entire
+   site if no apps are specified
+
+ validate 
+   Validates all installed models.
+
+Options:
+ --version             show program&#x27;s version number and exit
+ -h, --help            show this help message and exit
+ --settings=SETTINGS   Python path to settings module, e.g.
+                       &quot;myproject.settings.main&quot;. If this isn&#x27;t provided, the
+                       DJANGO_SETTINGS_MODULE environment variable will be
+                       used.
+ --pythonpath=PYTHONPATH
+                       Lets you manually add a directory the Python path,
+                       e.g. &quot;/home/djangoprojects/myproject&quot;.
+ --plain               Tells Django to use plain Python, not IPython, for
+                       &quot;shell&quot; command.
+ --noinput             Tells Django to NOT prompt the user for input of any
+                       kind.
+ --noreload            Tells Django to NOT use the auto-reloader when running
+                       the development server.
+ --format=FORMAT       Specifies the output serialization format for fixtures
+ --indent=INDENT       Specifies the indent level to use when pretty-printing
+                       output
+ --verbosity=VERBOSITY
+                       Verbosity level; 0=minimal output, 1=normal output,
+                       2=all output
+ --adminmedia=ADMIN_MEDIA_PATH
+                       Specifies the directory from which to serve admin
+                       media for runserver.
+	</pre>
+	<p>
+		To create a new app, we'll run the <kbd>startproject</kbd> command:
+	</p>
+	<pre>claco@mbp ~/mvc-marathon/django $ django-admin.py startproject BurningPlate</pre>
+	<p>
+		Unfortunately, no matter what --verbosity level I set, this is the
+		only output I get.
+	</p>
+	<h3>Running the Application</h3>
+	<pre>claco@mbp ~/mvc-marathon/django $ python BurningPlate/manage.py runserver
+Validating models...
+0 errors found.
+
+Django version 0.96.2, using settings &#x27;BurningPlate.settings&#x27;
+Development server is running at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+[28/Jun/2008 18:40:25] &quot;GET / HTTP/1.1&quot; 404 2065
+	</pre>
+	<p>
+		Lets hit <kbd>http://127.0.0.1:8000/</kbd> and see what we have:
+	</p>
+	<p>
+		<a href="django.png">
+		<img src='django.png' width="204" height="152" alt="django run" />
+		</a>
+	</p>
+
+
+
+	<h2><a name="rails"></a>Ruby on Rails</h2>
+	<h3>Creating the Application</h3>
+	<p>Another framework; another script.</p>
+	<pre>claco@mbp ~/mvc-marathon/rails $ rails
+Usage: /sw/bin/rails /path/to/your/app [options]
+
+Options:
+    -r, --ruby=path                  Path to the Ruby binary of your choice (otherwise scripts use env, dispatchers current path).
+                                     Default: /sw/bin/ruby1.8
+    -d, --database=name              Preconfigure for selected database (options: mysql/oracle/postgresql/sqlite2/sqlite3).
+                                     Default: mysql
+    -f, --freeze                     Freeze Rails in vendor/rails from the gems generating the skeleton
+                                     Default: false
+
+Rails Info:
+    -v, --version                    Show the Rails version number and quit.
+    -h, --help                       Show this help message and quit.
+
+General Options:
+    -p, --pretend                    Run but do not make any changes.
+        --force                      Overwrite files that already exist.
+    -s, --skip                       Skip files that already exist.
+    -q, --quiet                      Suppress normal output.
+    -t, --backtrace                  Debugging: show backtrace on errors.
+    -c, --svn                        Modify files with subversion. (Note: svn must be in path)
+
+Description:
+    The &#x27;rails&#x27; command creates a new Rails application with a default
+    directory structure and configuration at the path you specify.
+
+Example:
+    rails ~/Code/Ruby/weblog
+
+    This generates a skeletal Rails installation in ~/Code/Ruby/weblog.
+    See the README in the newly created application to get going.
+	</pre>
+	<p>
+		Looks like Catalyst. Give it an app name and go:
+	</p>
+	<pre>claco@mbp ~/mvc-marathon/rails $ rails BurningPlate
+create  
+create  app/controllers
+create  app/helpers
+create  app/models
+create  app/views/layouts
+create  config/environments
+create  config/initializers
+create  db
+create  doc
+create  lib
+create  lib/tasks
+create  log
+create  public/images
+create  public/javascripts
+create  public/stylesheets
+create  script/performance
+create  script/process
+create  test/fixtures
+create  test/functional
+create  test/integration
+create  test/mocks/development
+create  test/mocks/test
+create  test/unit
+create  vendor
+create  vendor/plugins
+create  tmp/sessions
+create  tmp/sockets
+create  tmp/cache
+create  tmp/pids
+create  Rakefile
+create  README
+create  app/controllers/application.rb
+create  app/helpers/application_helper.rb
+create  test/test_helper.rb
+create  config/database.yml
+create  config/routes.rb
+create  public/.htaccess
+create  config/initializers/inflections.rb
+create  config/initializers/mime_types.rb
+create  config/boot.rb
+create  config/environment.rb
+create  config/environments/production.rb
+create  config/environments/development.rb
+create  config/environments/test.rb
+create  script/about
+create  script/console
+create  script/destroy
+create  script/generate
+create  script/performance/benchmarker
+create  script/performance/profiler
+create  script/performance/request
+create  script/process/reaper
+create  script/process/spawner
+create  script/process/inspector
+create  script/runner
+create  script/server
+create  script/plugin
+create  public/dispatch.rb
+create  public/dispatch.cgi
+create  public/dispatch.fcgi
+create  public/404.html
+create  public/422.html
+create  public/500.html
+create  public/index.html
+create  public/favicon.ico
+create  public/robots.txt
+create  public/images/rails.png
+create  public/javascripts/prototype.js
+create  public/javascripts/effects.js
+create  public/javascripts/dragdrop.js
+create  public/javascripts/controls.js
+create  public/javascripts/application.js
+create  doc/README_FOR_APP
+create  log/server.log
+create  log/production.log
+create  log/development.log
+create  log/test.log
+	</pre>
+	<h3>Running the Application</h3>
+	<pre>claco@mbp ~/mvc-marathon/rails $ BurningPlate/script/server
+=&gt; Booting WEBrick...
+=&gt; Rails application started on http://0.0.0.0:3000
+=&gt; Ctrl-C to shutdown server; call with --help for options
+[2008-06-28 19:20:36] INFO  WEBrick 1.3.1
+[2008-06-28 19:20:36] INFO  ruby 1.8.6 (2008-03-03) [i686-darwin]
+[2008-06-28 19:20:36] INFO  WEBrick::HTTPServer#start: pid=1929 port=3000
+127.0.0.1 - - [28/Jun/2008:19:20:41 EDT] &quot;GET / HTTP/1.1&quot; 200 7557
+- -&gt; /
+127.0.0.1 - - [28/Jun/2008:19:20:41 EDT] &quot;GET /javascripts/prototype.js HTTP/1.1&quot; 200 125605
+http://localhost:3000/ -&gt; /javascripts/prototype.js
+127.0.0.1 - - [28/Jun/2008:19:20:41 EDT] &quot;GET /javascripts/effects.js HTTP/1.1&quot; 200 38916
+http://localhost:3000/ -&gt; /javascripts/effects.js
+127.0.0.1 - - [28/Jun/2008:19:20:41 EDT] &quot;GET /images/rails.png HTTP/1.1&quot; 200 1787
+http://localhost:3000/ -&gt; /images/rails.png
+	</pre>
+	<p>
+		Loading <kbd>http://0.0.0.0:3000</kbd> in our browser, we see:
+	</p>
+	<p>
+		<a href="rails.png">
+			<img src='rails.png' width="204" height="152" alt="rails run" />
+		</a>
+	</p>
+
+
+
+
+
+	<h2><a name="conclusions"></a>Conclusions</h2>
+	<p>
+		There weren't too many shockers here. For the most part, it's just a
+		matter of running a command to get an application structure up and
+		running. There are some areas that could use a few tweaks to help out
+		the people new to their respective frameworks:
+	</p>
+	<ul>
+		<li>
+			CakePHP really could use a development server. For development,
+			it's nice to not have to mess with Apache configs.
+		</li>
+		<li>
+			Django needs to output something when it's successfully created
+			a new application. No output equates to thinking nothing happened
+			or that something is broken.
+		</li>
+		<li>
+			Catalyst, Django and Rails would be a touch better if after they
+			created the new applications would tell the user how to run them.
+			i.e. "App created. please run xxx xxxx/xxxxx ro start your new
+			app".
+		</li>
+		<li>
+			All of the frameworks except for ASP.NET MVC tell the user where
+			to go next and/or what files to start to configure. It would be
+			nice if ASP.NET MVC did the ame thing rather than just display
+			the "Home" page.
+		</li>
+	</ul>
+
+

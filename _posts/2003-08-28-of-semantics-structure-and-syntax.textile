@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Of Semantics, Structure, And Syntax"
+category: WWW
+published:
+  epoch: 1062108256
+  utc: 2003-08-28T22:04:16
+---
+
+<p>
+An <a href="http://simon.incutio.com/archive/2003/08/28/structuralVsSemantic">interesting trail</a> found over at <a href="http://simon.incutio.com/">Simon Wilson's site</a> and leading back to <a href="http://www.kottke.org/03/08/030826standards_do.html">kottke.org</a>  about semantic and structural markup and content.
+</p>
+<p>
+The discussion of semantics vs. structure vs. syntax and validation in *ML took a different turn for me today.  I usually understand the argument of semantical markup vs. structural markup. I must admit though that I've always approached it from the side of layout <em>first</em>, then content second. In other words, if I used &lt;ul&gt; and &lt;li&gt; for menus, it was simply because I <em>should</em> use it instead of a gaggle of &lt;div&gt; tags.
+</p>
+<p>
+That's ok I thought. It's certainly a step ahead of where I used to be. But I still find myself constantly misusing other tags like &lt;kbd&gt; and &lt;samp&gt;. Why is that? I could be a simple case of lack of practice.  But I also think it's a matter of tagname-&gt;semantics translation.
+</p>
+<p>
+I'm in the proecess of wiriting some API documentation for various projects and just started looking at <a href="http:/www.docbook.org/">DocBook</a>.
+Now that I'm focused on writing content first and layering markup on top of it, instead of writing the markup in mind first, it makes me think that part of what causes poor semantic HTML is the tagnames themselves.
+</p>
+<p>
+In HTML I need to highlight the name of a file. Should it be &lt;tt&gt;, &lt;samp&gt;, or &lt;kbd&gt;?  Sometimes it's clear. Sometimes it's not. But in DocBook, it doesn't get more clear than &lt;filename&gt;.
+</p>
+<p>
+I'm now even considering converting the contents of this site into DocBook format.  Rather than struggle with which tag to use, it may turn out to be easier to use tags that are already a little more clear. But that's just me.
+</p>
+

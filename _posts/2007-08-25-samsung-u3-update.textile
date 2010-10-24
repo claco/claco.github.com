@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Samsung U3 Update"
+category: Hardware
+published:
+  epoch: 1188090253
+  utc: 2007-08-26T01:04:13
+---
+
+Once I decided on a bitrate vs. size that I could tolerate on this player, I've started ripping CDs and filling this little monster. Once of the cool features this player has is that I can alter the play speed, so I can play drums along with songs at half speed if I have to. Kinda cool. I've got about 10 CDs or so @ 96kbps, which works out to about 35MB per CD.
+
+That bit rate sounds low compared to the VBR/320/nothing less than 128 mantra, but honestly, for most types of music, you just don't hear the difference on this kind of player. With a 2GB limit, it's all about how many songs I can cram on it before I regret not getting the 4GB version. :-)
+
+

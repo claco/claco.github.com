@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Netscape 4: Please Die Now."
+category: WWW
+published:
+  epoch: 1041824411
+  utc: 2003-01-06T03:40:11
+---
+
+<p>
+More surfing goodness. I found <a href="http://jogin.com/blog/archives/000183.php" title="Post about proper html markup">this post</a> over at <a href="http://jogin.com/blog/">jogin.com</a>. I feel our pain brother.
+I've made it part of my mission at work to get our pages to be standards compliant. When a fair amount of your designers are GoLive users, this isn't such an easy task. Don't get me wrong. I think they are talanted people. But I also think it's time to cast off tools that don't make compliant code. It is also time to give Netscape 4 the big Fuck Off.
+</p>
+<p>
+When I started this site, my main goal was to eat my own dog food. If my site wasn't standards compliant, at least in <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>/<acronym title="Cascading Style Sheets">CSS</acronym> terms, then I couldn't quite convince people at work now could I? There still isn't a day that goes by that I hear the worst queston ever:
+</p>
+
+<blockquote>
+	<p>"What about Netscape 4?"</p>
+</blockquote>
+
+<p>
+Time to move on people. 
+</p>
+<blockquote>
+	<p>
+		"But the usage stats show a high percentage of Mozilla 4!. We can't piss off any customers."
+	</p>
+</blockquote>
+<p>
+No. The usage logs show assloads of Internet Explorer 5-6 browsers that still put <strong>"<em>Mozilla/4.0 (compatible</em>; MSIE 6.0; Windows NT 5.1)"</strong> as their user agent? What the hell is up with that shit still in 2003? As far as customers. Yeah, it sucks to piss off customers. But the logs don't lie. And as the Zeldman camp says, we need to develop for future compatibility, not past compatibility. Of course, Nutscrape for and the HTML hacks aren't even backwards compliant, so what's your point.
+</p>
+<p>
+Don't even get me started on pixel-based layouts and spacer gifs.
+Time for a 12 step program.
+</p>
+<p>
+<cite>Hi. My name is $DeveloperName$ and I'm a Netscape 4-o-holic.</cite>
+</p>
+<p>
+P.S. Love the site Tomas. Clean, appealing, and easy to use. Right on.
+</p>
+
+

@@ -1,0 +1,110 @@
+--- 
+layout: post
+title: Writing ReSharper 4.5.x Macros
+wordpress_id: 212
+wordpress_url: http://chrislaco.com/?p=212
+published:
+  epoch: 1240184880
+  utc: 2009-04-19T23:48:00
+---
+While working on the MVC Marathon, I decided to try out ReSharper and write some good templates to make my time unit testing in ASP.NET MVC a little quicker. I soon realized that I needed a macro that would turn the unit test class name (HomeControllerTests) into the name of the controller being tested (HomeController).
+
+<!--more-->Since ReSharper only has a few macros that will make copies of other template variables, I started scouring the internet for clues and found <a href="http://mindstudies.psy.soton.ac.uk/dmitri/blog/index.php/archives/202">this post</a>. It's a little outdate for ReSharper for 4.5, so here's what I had to do to make my custom macro.
+
+You can download the source or fork your own on <a href="http://github.com/claco/resharpermacros/">GitHub</a>.
+
+<!--more-->
+<h2>Creating the Macro</h2>
+<ol>
+	<li>Create a new C# class library project.</li>
+	<li>Add references to the following dlls:
+<pre class="brush:csharp">JetBrains.Platform.ReSharper.UI.dll
+JetBrains.ReSharper.Feature.Services.dll</pre>
+</li>
+	<li>Add a new class to your project and mark it with the Macro attribute and implement the IMacro interface:
+<pre class="brush:csharp">using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
+using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
+
+namespace ChrisLaco.ReSharper.Macros
+{
+    // {#0:pattern}, etc are arguments that are passed to EvaluateQuickResult arguments[]
+    [Macro("applyRegex", ShortDescription = "Replace string matching {#0:pattern} with {#1:string} in {#2:variable}", LongDescription = "Applies regex to replace value in another template variable.")]
+    class ApplyRegexMacro : IMacro
+    {
+        #region IMacro Members
+
+        public string EvaluateQuickResult(IHotspotContext context, IList&lt;string&gt; arguments)
+        {
+            if (arguments.Count != 3)
+            {
+                return null;
+            }
+            else
+            {
+                try
+                {
+                    // Using the regex argument, replate the value of the specified template variable with the specified string
+                    var result = Regex.Replace(arguments[2], arguments[0], arguments[1], RegexOptions.IgnoreCase);
+
+                    return result;
+                }
+                catch (Exception e)
+                {
+                    return "&lt;" + e.Message + "&gt;";
+                }
+            }
+        }
+
+        public HotspotItems GetLookupItems(IHotspotContext context, IList&lt;string&gt; arguments)
+        {
+            return null;
+        }
+
+        public string GetPlaceholder()
+        {
+            return "a";
+        }
+
+        public bool HandleExpansion(IHotspotContext context, IList&lt;string&gt; arguments)
+        {
+            return false;
+        }
+
+        // Must return the same # of parameters declared in the Macro
+        public ParameterInfo[] Parameters
+        {
+            get
+            {
+                return new[] { new ParameterInfo(ParameterType.String), new ParameterInfo(ParameterType.String), new ParameterInfo(ParameterType.VariableReference) };
+            }
+        }
+
+        #endregion
+    }
+}</pre>
+</li>
+	<li>In AssemblyInfo.cs, apply assembly attributes for the ReSharper plugin manager:
+<pre class="brush:csharp">using System.Reflection;
+using System.Runtime.InteropServices;
+using JetBrains.UI.Application.PluginSupport;
+
+[assembly: PluginTitle("ChrisLaco.ReSharper.Macros")]
+[assembly: PluginDescription("Provides additional template macros: ApplyRegexMacro.")]
+[assembly: PluginVendor("Christopher H. Laco")]</pre>
+This information will be displayed in the ReSharper -&gt; Plugins dialag:
+
+<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-1.png"><img class="aligncenter size-medium wp-image-216" title="ReSharper Plugin Manager" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-1-300x176.png" alt="ReSharper Plugin Manager" width="300" height="176" /></a></li>
+	<li>To install plugin, simply copy the compiled dll into one of the follow directories:
+<pre class="brush::csharp">C:\Documents and Settings\username\Application Data\JetBrains\ReSharper\v4.5\vs9.0\Plugins
+C:\Program Files\JetBrains\ReSharper\v4.5\Bin\Plugins</pre>
+</li>
+</ol>
+<h2>Using the Macro</h2>
+<ol>
+	<li>Select the macro from the list of available macros:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-2.png"><img class="aligncenter size-medium wp-image-217" title="Choose Macro" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-2-279x300.png" alt="Choose Macro" width="279" height="300" /></a></li>
+	<li>Click on the macro variables to set them:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-3.png"><img class="aligncenter size-medium wp-image-218" title="Set Macro Variables" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-3-300x235.png" alt="Set Macro Variables" width="300" height="235" /></a></li>
+	<li>Finish up the template text and savr your changes:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-4.png"><img class="aligncenter size-medium wp-image-219" title="Apply Macro to Template" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-4-300x125.png" alt="Apply Macro to Template" width="300" height="125" /></a></li>
+</ol>

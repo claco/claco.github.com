@@ -1,0 +1,29 @@
+---
+layout: post
+title: "Comments Problem"
+category: OffTopic
+published:
+  epoch: 1041733019
+  utc: 2003-01-05T02:16:59
+---
+
+<p>
+I've broken something in my patching frenzy. When you click on comments under each post, you go to the comments form. The form posts correctly and the comment is stored, but the page tries to go somewhere else. I think this is related to my <code>CGIPath --> AdminCGIPath</code> change in <code>mt.cfg</code>. Sorry about that. Looking into it now.
+</p>
+
+<h4>Update</h4>
+<p>
+It is indeed because of my changes to <code>mt.cfg</code>. If I leave <code>CGIPath</code> set to the absolute admin gui url, all is fine. If I set <code>AdminCGIPath</code> to the full path of the admin gui, and set <code>CGIPath</code> to the relative patch to <code>/cgi-bin/</code>, the comment template chokes. Actually, it redirects to <code>/mt-comments.cgi</code> instead of <code>/cgi-bin/mt-comments.cgi</code>. I'm willing to bet this is an issue with the <code>CGIRelativeURL</code> handler in <code>lib/MT/Template/Context.pm</code>. We shall patch an see.
+</p>
+<p>
+I'm sure I could just fix this by making <code>CGIPath</code> a full url incliding http://, but something feels wrong about hardcoding a domain name in there.
+I think patching the handler to return the entire entry if it doesn't start with http/https is what the method is really after anyways.
+</p>
+
+<h4>Update Redux</h4>
+<p>
+It looks as if this problem is just a little more in depth than I first thought. Changing the <code>CGIRelativeURL</code> handler had no effect. Why?
+Some things seem to use <code>CGPath</code> instead for no good reason that I know of. Awaiting an email response from Ben about how he would like to handle it, then I'll get to work.
+</p>
+
+

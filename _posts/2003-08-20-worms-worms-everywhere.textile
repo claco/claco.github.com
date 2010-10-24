@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Worms Worms Everywhere"
+category: WTF
+published:
+  epoch: 1061380974
+  utc: 2003-08-20T12:02:54
+---
+
+<p>
+And not a drop to eat. First, the details. This latest round of email worms is just plain nasty. I woke up this morning to 120+ emails (marked correctly as spam by SpamAssassin) that are from infected machines on the net being sent to an old webmaster account that hasn't been used on the web in years. Not only that, but I've also received about 30+ MAILER-DAEMON responses to emails sent out by infected machines using that same webmaster emails address as the From: address.
+</p>
+<p>
+Yes, I've checked the headers to make sure none of them actually came from my IP block. Thanks Postfix!.
+</p>
+<p>
+So let me proclaim and jump on the bandwagon: <strong>SMTP Email Is Dead</strong>. Any internet protocol that can be brought to it's knees by simply falsifying the From: header simply needs to be shot dead and put to rest.
+</p>
+<p>
+Time to go disable that old account now.
+</p>
+
+

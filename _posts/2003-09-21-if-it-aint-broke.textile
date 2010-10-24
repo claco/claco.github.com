@@ -1,0 +1,14 @@
+---
+layout: post
+title: "If It Ain't Broke..."
+category: FreeBSD
+published:
+  epoch: 1064184372
+  utc: 2003-09-21T22:46:12
+---
+
+<p>
+Don't fix it right? So sue me. :-) An attempted libxml / libxslt / XML::LibXML / XML::LibXSLT upgrade went somewhat wrong. All is well though after a few recompiles and a lot of finger crossing.
+</p>
+
+

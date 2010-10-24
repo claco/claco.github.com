@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Email Reply To MT Comments"
+category: WWW
+published:
+  epoch: 1060120381
+  utc: 2003-08-05T21:53:01
+---
+
+<p>
+I've been thinking about another project I'll never get finished, or started.
+</p>
+<p>
+When someone comments to a post on an MT blog, an email containing the comment goes to me. I think it would be cool if when I replied to that email, that a copy of the reply also went into a queue where a cron job could pick up the email, find the entry id, and add my reply to the blog comments.
+</p>
+
+

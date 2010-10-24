@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Programmer vs. Musician"
+category: OffTopic
+published:
+  epoch: 1057880697
+  utc: 2003-07-10T23:44:57
+---
+
+<p>
+As my two reader may already know, I graduated college with a B.A. in Music Education K-12, and a B.S. Music Performance: Percussion. At one point, I even had a real teaching certificate for the State of Ohio.
+Given all of that, my first job was as a web programmer at an ad agency in Cleveland. Go figure. But every time I think about it, it makes sense (to me).
+</p>
+<p>
+For me, they both hold some of the same qualities. I get to learn new things all the time. I get to memorize things like crazy. I get to create things from scratch. What really turned me on to programming was that it felt like a success from the standpoint that I, a musician, could program, and learn programming without going to all those stuffy college classes. :-)
+</p>
+<p>
+Not to mention the fact that after 5.5 years of college @ 20-23 credit hours a semester, I really didn't want anything to do with teaching music.
+Part of that is the fact that I don't think kids today can get the two things they need in school without it becoming a supreme court case: 1) their ass beat, and 2) hugs and understanding.
+</p>
+<p>
+As time goes on, I realize that for my personality, programming is simply a better choice. In college, is was the type of musician that could memorize a piece of music in no time flat, but I was a great music reader [realtime], and improvising wasn't to hot for me. When it came to improvising I couldn't let go of the details. Everything had to work in my head, which is a great thing in programming.
+</p>
+<p>
+I'm sure I'm not the only one. It seems to be that a lot of computer type people were/are musicians. Must be that right-brain/left-brain thing. Of course, I'm a lefty, and we're the only people in our right minds. :-)
+</p>
+
+

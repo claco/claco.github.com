@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Tabula Rasa"
+category: Hardware
+published:
+  epoch: 1095811808
+  utc: 2004-09-22T00:10:08
+---
+
+I just installed my new <a href="http://www.newegg.com/app/viewproductdesc.asp?description=27-152-032">DVD Writer</a> (it does dual layer discs!) and it's time to put my recently created custom XP install CD to the final test.
+
+Reboot. Reformat. [Custom] Reinstall.
+
+After that, some UT2K4 via DVD install.
+
+

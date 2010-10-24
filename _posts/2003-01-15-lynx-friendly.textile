@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Lynx Friendly"
+category: WWW
+published:
+  epoch: 1042607326
+  utc: 2003-01-15T05:08:46
+---
+
+<p>
+I got curious and installed the Lynx text based browser on one of the FreeBSD boxes to take a look at this site.
+It looks good as it gets with text, and it's still usable. Something not a lot of the big name site can say about themselves.
+I also took a look at <a href="http://www.bradchoate.com/">Brad Choate's site</a> since he just got done doing a major redesign. Same deal, looks clean and usable. Right on for standards and <a href="http://diveintoaccessibility.org/" title="Guide to making your site more accessible to text/braile/phone readers">30 days to a more accessible web site</a>.
+</p>
+<p>
+Congrats to Brad on the efforts. It appears there is standards compliance redesing mojo in the air this year.
+</p>
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Perl 5.8.3 On Win32"
+category: Perl
+published:
+  epoch: 1078458688
+  utc: 2004-03-05T03:51:28
+---
+
+<p>
+Now that I've wiped my laptop, and forcing my self to use RunAs a little more religously, I've decided to install Perl 5.8.3 this time around.
+</p>
+<p>
+Much to my surprise, the ppm in 5.8.3 works much better than in 5.6.1 and I was able to install Class::DBI in a snap. Under 5.6.1, Class::Iterators and Accessor / IMDB junk threw up fits everywhere requireing manual installs via CPAN with loads of tinkering.
+</p>
+
+

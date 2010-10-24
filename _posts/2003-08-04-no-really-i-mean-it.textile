@@ -1,0 +1,14 @@
+---
+layout: post
+title: "No Really, I Mean It"
+category: OffTopic
+published:
+  epoch: 1060052433
+  utc: 2003-08-05T03:00:33
+---
+
+<p>
+OK, I'm done moving static pages into the blog. All you RSS consumers can stop ignoring my posts now. :-)
+</p>
+
+

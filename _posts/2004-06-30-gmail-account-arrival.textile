@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Gmail Account Arrival"
+category: WWW
+published:
+  epoch: 1088607042
+  utc: 2004-06-30T14:50:42
+---
+
+Hey great, I now have a Gmail account. Now what? Just when Google announced it's Gmail 1GB feature, Yahoo paid customers (of which I am via SBC DSL) got an upgrade to 2GB.
+
+I don't used that account either. Ever. Not once. Maybe I'll get some Gmail invites to spread around.
+
+Let's see how well their spam filtering is: <a href="mailto:mendlefarg@gmail.com">mendlefarg@gmail.com</a>
+
+

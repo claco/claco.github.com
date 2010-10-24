@@ -1,0 +1,29 @@
+---
+layout: post
+title: "XML 1.1 Draft Breaks 1.0 Compatibility"
+category: WWW
+published:
+  epoch: 1034951903
+  utc: 2002-10-18T14:38:23
+---
+
+<p>
+	From <a href="http://news.com.com/2100-1001-962392.html" title="Article about IBM and XML 1.1"><cite>News.com</cite></a> :
+</p>
+<p>
+	I find this news to be moderately aggrivating. Apparently, <cite>IBM</cite> wants to change the 
+	<a href="http://www.w3.org/TR/2002/CR-xml11-20021015/#sec2.11" title="XML 1.0 Specs">newline character</a> used in XML 1.0 for the 
+	<a href="http://www.w3.org/TR/2002/CR-xml11-20021015/" title="XML 1.1 Specs">XML 1.1 Spec</a> just so they don't have to fix their own mainframe crap, um, 
+	I mean 'to benifit its customers'. This change would of course break XML 1.0 compatability. 
+	As if all the XML/XSL/XSLT/XFORMS/XSchema/XPATH shit wasn't already more complicated than 
+	it has to be.
+</p>
+<p>
+	Hey, while we're at it, let's just change the xml declaration from 
+	<code>&lt;?xml version="1.0"?&gt;</code> to  <code>&lt;?ibm version="1.1"?&gt;</code>.
+</p>
+<p>
+	Be sure to check out the <a href="http://slashdot.org/article.pl?sid=02/10/18/137256&amp;mode=flat&amp;tid=99" title="Slashdot post about XML 1.1 changes"><cite>Slashdot</cite> thread</a> on the matter.
+</p>
+
+

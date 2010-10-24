@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Dear 66.162.23.13"
+category: WTF
+published:
+  epoch: 1061389393
+  utc: 2003-08-20T14:23:13
+---
+
+<p>
+Also known as 66-162-23-13.gen.twtelecom.net [66.162.23.13].
+</p>
+<p>
+You are a fucking moron. Patch your fucking machine. Install a fucking firewall. For the last 12 hours, you have been littering my inbox with constant <em>Win32.Sobig.F</em> infected messages. You are also sending out infected messages to other servers with my email address in a forged <samp>From:</samp> header.
+</p>
+<p>
+There. I feel better. Time to block this S.O.B. when I get home.
+</p>
+
+
+

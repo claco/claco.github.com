@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Quicken Makes VSS Look Recent"
+category: WTF
+published:
+  epoch: 1088121623
+  utc: 2004-06-25T00:00:23
+---
+
+So we picked up a copy of Quicken 2004 for the woman, and I snagged a copy as well since it was nearing a reasonable price (~$25). I tried pupdating the software from release version 1 to release verion 5. Every attempt at updating yielded the terribly helpful "Path engines failed bla bla bla".
+
+After trying unsuccessfully many times to update Quick either online, or manually using the update files, I figured out the problem: spaces in paths and long file names! WTF?
+
+This is from the <samp>update.log</samp>:
+
+<pre><code>Extracting Quicken Dir update data to: C:\PROGRA~1\Quicken 2004\inet\common\patch\H130103R.RTP
+Calling RTPatchApply: -i -not -sub "C:\WINDOWS" C:\PROGRA~1\Quicken 2004\inet\common\patch\H130103R.RTP</code></pre>
+
+There's the culprit. The dipshit update doesn't quote the path to the RTP file. Not only that, but shouldn't it also be in a ~ short file name style?
+
+Of course, this is only a problem if you install quicken into a directory other than "/Quicken". Good thing changing the install directory isn't an option during the install. :-/ Idiots.
+
+

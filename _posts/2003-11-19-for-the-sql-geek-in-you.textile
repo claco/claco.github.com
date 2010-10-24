@@ -1,0 +1,24 @@
+---
+layout: post
+title: "For The SQL Geek In You"
+category: Humor
+published:
+  epoch: 1069282997
+  utc: 2003-11-19T23:03:17
+---
+
+<ol>
+<li>
+<code>
+SELECT F.ID, SUM(B.BAZ) FROM FOO AS F INNER JOIN BAR AS B ON B.FOO = F.ID GROUP BY F.ID ORDER BY F.STUFF ASC
+</code>
+</li>
+<li>????</li>
+<li><strong>Profit!</strong></li>
+</ol>
+
+<p>
+Laugh damnit. Don't analyse it.
+</p>
+
+

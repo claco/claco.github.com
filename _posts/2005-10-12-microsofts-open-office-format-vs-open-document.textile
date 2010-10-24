@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Microsofts Open Office Format vs. Open Document"
+category: OffTopic
+published:
+  epoch: 1129135386
+  utc: 2005-10-12T16:43:06
+---
+
+Dave Winer posted <a href="http://archive.scripting.com/2005/10/12#When:12:00:54PM">this output</a> about how OpenDocument:
+
+<blockquote>
+After years of maintaining absolute control over user's data in Microsoft Office, the new version promises to give total control to the user, and creates a path for developers to siphon users from Microsoft to new or specialized products. One would think that this would spawn an explosion of new products designed to please Office users but that's not what's happening. A group of large technology companies is proposing a competing set of formats, and has formed an alliance to confuse the market, and at least double the work of any developer who might want to support their products (with almost no installed base) alongside Microsoft's (with a monopolistic dominant installed base).
+</blockquote>
+
+Hold on there Dave. Last time I checked, the OpenDocument format specs used by OpenOffice/StartOffice/KOffice, etc were around long before Microsoft tried being 'open' and opening the office formats unto XML. It is Microsoft who chose to create a second standard for office document formats, not the OpenDocument people.
+
+

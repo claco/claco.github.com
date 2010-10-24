@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Just a Language?"
+category: Perl
+published:
+  epoch: 1034398665
+  utc: 2002-10-12T04:57:45
+---
+
+<p>
+From <a href="http://jeremy.zawodny.com/blog/archives/000218.html#000218" title="Post about the Perl language"><cite>Jeremy Zawodny's blog</cite></a> :
+</p>
+
+<blockquote>
+<p>
+Anymore, I'm really seeing Perl as just another language/tool/whatever.
+</p>
+</blockquote>
+
+<p>
+That's down right <a href="http://www.dictionary.com/search?q=blasphemy" title="Definition of blasphemy">blasphemy</a>! J/K
+I know what you mean though, although for me it's on a difference scale of sorts.
+</p>
+<p>
+Believe it or not, I started out (after 14 years) in music. I graduated college with a BA in Music Education K-12, and a BA in Music Performance. I haven't taught a day since graduation. :-/ I immediately went into programming and never looked back. I guess I like programming because it was just like music believe it or not; all about creating something from nothing and solving problems along the way.
+</p>
+<p>
+I find myself going in large cycles of interest. First is was music, then *cough* Windows programming, then on to Unix sysadminning and Perl programming. I imagine it's only a matter of time before I get bored enough to take up basket weaving or something. :-) Maybe it's just us Ohio boyz.
+</p>
+
+

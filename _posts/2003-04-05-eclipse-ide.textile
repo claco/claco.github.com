@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Eclipse IDE"
+category: Perl
+published:
+  epoch: 1049574624
+  utc: 2003-04-05T20:30:24
+---
+
+<p>
+So I've heard people rave about the <a href="http://www.eclipse.org/">Eclipse IDE</a> before, but I never tried it for a few reasons. First, the site has no screenshots. I'm picky like that. I can usually tell right away but looking at a tool whether or not I'll like it. It has to be visually pleasing AND functional. On top of that, whenever I see the word Java in the descriptions and reviews of some new program, I tend to shy away. Java is ALWAYS slow IMHO.
+</p>
+<p>
+Then yesterday on <a href="http://use.perl.org/articles/03/04/03/0723205.shtml?tid=9">use Perl;</a>, I saw a post about a new Perl language plugin for Eclipse. So I decided to give the whole Eclipse thing a try.
+I'm very impressed. With Perl plugins as well ass XML/XSLT plugins and it's CVS plugin, this may be the IDE for me for a while.
+</p>
+
+

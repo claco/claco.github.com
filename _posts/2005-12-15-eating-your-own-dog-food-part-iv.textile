@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Eating Your Own Dog Food: Part IV"
+category: WWW
+published:
+  epoch: 1134704725
+  utc: 2005-12-16T03:45:25
+---
+
+I've spent the last couple of weeks tinkering on a photo gallery app for Catalyst. I like Flickr, but I don't want to pay for it. I have a buttload of photos to get online, epse. wedding photos if you ask the wife. :-)
+
+So, now that I've hit critical mass, I'm <a href="http://photos.icantfocus.com/galleries/">eating my own dog foo</a>, aka using my own software. :-)
+
+

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Bind9 + Views + Slave = Headache"
+category: Software
+published:
+  epoch: 1083728770
+  utc: 2004-05-05T03:46:10
+---
+
+<p>
+It's always the stupid little things. I needed to finish an upgrade to Bind9 that I started a long time ago. I had stopped at the point that I needed to add an additional IP to the Slave DNS server so I could get "internal" and "external" views' zone files.
+</p>
+<p>
+I spent about 2 hours banging my head against the wall trying to figure out why zones weren't transferring. See if you can spot my stupidity:
+</p>
+
+
+
+<pre>
+named_enable="YES"
+named_flags="-u bind -t /home/bind -c /etc/namedb/named.conf"
+named_program="/home/bind9/usr/named"
+</pre>
+
+
+
+<p>
+For the curious, I found the easiest direct approach to doing viewed zone transfers in <a href="http://sysadmin.oreilly.com/news/views_0501.html">Perl.com: Views in BIND 9</a>.
+</p>
+<p>
+Good fight. Good night.
+</p>
+
+

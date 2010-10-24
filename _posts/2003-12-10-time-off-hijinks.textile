@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Time Off Hijinks"
+category: OffTopic
+published:
+  epoch: 1071114052
+  utc: 2003-12-11T03:40:52
+---
+
+<p>
+So, it's December already, and I have to cram in my unused vacation. I'll have a 4 day weekend this week, a 4 day weekend next week, a 5 day weekend the week after, and another 4 day weekend after that.
+</p>
+<p>
+Now the real question is, what do I want to do with that time?
+I've still got a huose to paint and get rid of. I've got a website to convert. And I've got a whole lot of games I haven't played in a while. Care to place any bets?
+</p>
+<p>
+<ins>
+I wouldn't mind tossing a weblog redesign in there as well, althoug that means getting kozy with DocBook first.
+</ins>
+</p>
+
+

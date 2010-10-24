@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Large Cycles"
+category: OffTopic
+published:
+  epoch: 1060312577
+  utc: 2003-08-08T03:16:17
+---
+
+<p>
+I've been thinking a lot lately about work, my enjoyment and distaste for it, and the seemingly large cycle that my work and home computing habits go through.
+</p>
+<p>
+When I started my curent job 5 and a half years ago, I didn't know 1/4356th of what I know now. Some of my first projects were big ones that meant I spent weeks and months coding the same project. Back then there was just myself and one other doing programing and pages. After programing all day on the same project, I'd come home and do the same at home for another 5-6 hours. I was a true code monkey.
+</p>
+<p>
+Over the years, I've had more meeting, more people, more projects, and the fun has left the building with Elvis somewhat. It seems the day to day modis operandi is to get projects done quickly instead of correctly. And as a programmer, correctly means the RIght Way using the propery tools and methods. We have so many options at our disposal; .NET, Web Services, Security Roles, XML Schemas; yet we never use them to their potential  because of time. I never get to code 8 hours straight for weeks on end because of the project of the week.
+</p>
+<p>
+Don't get me wrong. I couldn't work with better people, and our group gets along like no other I've ever seen. I just can't seem to catch my learning/programming groove like I used to. Hell, I learned all the Unix junk at home just to keep myself amused. I've even got a website to convert from ASP to Unix that could keep me busy, but I can't seem to get into it.
+</p>
+
+<p>
+Music was the same way. After about 5.5 years of music in college, I jumped ship to computers. Maybe it's time to jump top a new topic again.
+</p>
+

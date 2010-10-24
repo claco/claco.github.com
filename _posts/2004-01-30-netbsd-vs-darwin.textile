@@ -1,0 +1,21 @@
+---
+layout: post
+title: "NetBSD vs. Darwin"
+category: Perl
+published:
+  epoch: 1075485718
+  utc: 2004-01-30T18:01:58
+---
+
+<p>
+I'm in the middle of converting an old ASP site to Perl/ModPerl, Apache and MySQL.
+Nothing to amazing there. But now that I'm writing a lot of tests for the modules, I have this overwhelming urge to try them on a different platform.
+</p>
+<p>
+While I'd really like to do this testing on a new dual G5, I don't think the woman will go for it before she gets her new couch for the new house. :-) However, I do have this old beige "OldWorld" G3 sitting around that hasn't been fired up in at least a year. I know it will run <a href="http://www.netbsd.org/Ports/macppc/">NetBSD</a>. And I'm <a href="http://www.opensource.apple.com/projects/darwin/6.0/install.ppc.txt">pretty sure</a> it would run <a href="http://developer.apple.com/darwin/">Darwin</a>.
+</p>
+<p>
+So, the real question is, which one should I pick? Both are going to be quite similiar to what I'm used to [FreeBSD].
+</p>
+
+

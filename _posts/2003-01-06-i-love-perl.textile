@@ -1,0 +1,21 @@
+---
+layout: post
+title: "I Love Perl"
+category: Perl
+published:
+  epoch: 1041876478
+  utc: 2003-01-06T18:07:58
+---
+
+<p>
+Have I mentioned lately than I love <acronym title="Practical Extraction and Reporting Language">Perl</acronym>? I do. I used to think it would be hard to learn. It it eay to learn but hard to master. Once I started my gravitation towards FreeBSD and Apache, I have no reason not to start building my site in something like Perl or <acronym title="PHP: Hypertext Preprocessor">PHP</acronym>. PHP never stuck with me because it suffers from the same problem as <acronym title="Active Server Pages">ASP</acronym> imho. That is that it's harder to seperate content from code in ASP, PHP, and even Perl when doing run of the mill <acronym title="Common Gateway Interface">CGI</acronym>. That's why I started using <a href="http://www.axkit.org/" title="XML Application Server Framework">AxKit</a>, but that's another set of articles entirely. But I digress.
+</p>
+<p>
+After using perl for a while, converting sites. Creating modules. Creating patches. I find Perl completely and utterly liberating as a language compared to where I start with <acronym title="Visual Basic">VB</acronym> and VBScript (Stop Laughing). The simple task of assigning a string from a set of strings to a variable using <code>||</code> is just awesome. Try that in VB without at least one hoop somwhere beit an if statement or a function. Even more great of the other things: dynamic functions add into the namespace, assigning strings to an array in one statement, etc, etc.
+</p>
+<p>
+I'm simply mad about Perl and I wish my partners in crime at work would give it s try. <acronym title="Perl-ism: There Is More Than One Way To Do It">TIMTOWTDI</acronym>. Indeed.
+</p>
+
+
+

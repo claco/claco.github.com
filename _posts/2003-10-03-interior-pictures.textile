@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Interior Pictures"
+category: OffTopic
+published:
+  epoch: 1065226541
+  utc: 2003-10-04T00:15:41
+---
+
+<p>
+Nothing terribly exciting, but here are some quick and dirty <a href="/photos/2003/newhouse/">pictures of the interior</a> of the new house.
+</p>
+
+

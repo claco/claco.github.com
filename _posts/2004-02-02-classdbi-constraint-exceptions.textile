@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Class::DBI: Constraint Exceptions"
+category: Perl
+published:
+  epoch: 1075782946
+  utc: 2004-02-03T04:35:46
+---
+
+<p>
+This feels like such a hack, but it works. I simply want to weed out constraint errors from other errors within Class::DBI.
+</p>
+<pre><code>try {
+    $cart = $self-&gt;create($data);
+} catch Error with {
+    my $E = shift;
+    if ($E-&gt;text =~ /^validate_column_values error:\s+(.*)?\s+Commerce/i) {
+        throw Commerce::Exception::Constraint(-field =&gt; $1, -text =&gt; $E-&gt;text);
+    } else {
+        throw Commerce::Exception(%{$E});
+    };
+};</code></pre>
+<p>
+I'm sure there is some <code>$SIG{__DIE__}</code> or <code>Carp::croak</code> symbol table magic I could work. But that's assuming I know what the hell I'm doing in the first place.
+</p>
+
+<ins>
+<p>
+Assuming I can get to it at the right time, there is the <samp>HandleError</samp> attribute of DBI clases. That might do it.
+</p>
+
+<p>
+<em>
+For the love of all that is holy, how in the hell <a href="http://search.cpan.org/~tmtm/Class-DBI-0.95/lib/Class/DBI.pm#EXCEPTIONS">did I miss this section on Exceptions</a>? #$@#$%!  Of course, the question still remains, is it appropriate to makje Exceptions decisions based on the message test, or do the hooks need to be deeper?
+</em>
+</p>
+</ins>
+
+
+

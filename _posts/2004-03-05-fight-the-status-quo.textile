@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Fight The Status Quo"
+category: WTF
+published:
+  epoch: 1078512328
+  utc: 2004-03-05T18:45:28
+---
+
+<p>
+Today has been a hard day. I'm definately coming to a crossroads here. Do I accept the status quo and let things continue as is at work, or do I fight the machine and make things happen? That's a tough decision.
+</p>
+<p>
+I understand the realities or business, money, priorities and practicalities. I'm ok with those things in general. But it's getting harder and harder to go along with sacrificing quality for priority and quantity.
+</p>
+<p>
+Is it wrong for me to want to do the right thing; to want to do technical documentation; to do unit testing; to do page validation? I don't think it is. But when you're faced with getting things done quickly, try explaining your programming integrity to your boss' boss. I know he understands. But the business never understands that these things help in the long run, even if the can't be quantified and given time in the interim.
+</p>
+<p>
+When it's all said and done, it still comes down to one reality; one choice: be a cog in the machine, or brave the harsh currents to make change happen without more support? 
+</p>
+<p>
+Sigh.
+</p>
+
+

@@ -1,0 +1,17 @@
+---
+layout: post
+title: "$happy-&gt;new( year =&gt; 2003 );"
+category: OffTopic
+published:
+  epoch: 1041401663
+  utc: 2003-01-01T06:14:23
+---
+
+<p>
+Happy New Year MoFos. Here's to another month of writing the wrong date on checks, another year of higher taxes with less raises, and 25 more ways the government will spy on you.
+</p>
+<p>
+That is all.
+</p>
+
+

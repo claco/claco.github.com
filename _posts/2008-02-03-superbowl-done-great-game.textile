@@ -1,0 +1,17 @@
+---
+layout: post
+title: "SuperBowl Done. Great Game."
+category: TV
+tags:
+  - football
+  - superbowl
+published:
+  epoch: 1202095985
+  utc: 2008-02-04T03:33:05
+---
+
+I am disappointed that the Patriots lost the perfect record, but this was a good game. and I don't even really care about football. Low Scores. Close spread. Touch defense on both sides.
+
+This was a nail biter right up to the end. Even some of the very last hail mary passes in the last 60 seconds had a really good chance at putting the Patriots back on top. That's a good game in any book.
+
+

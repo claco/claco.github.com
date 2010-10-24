@@ -1,0 +1,17 @@
+---
+layout: post
+title: "CPU Issues Resolved"
+category: Hardware
+published:
+  epoch: 1062948142
+  utc: 2003-09-07T15:22:22
+---
+
+<p>
+In a case of Pilot Error(TM) vs. horrible BIOS upgrade defaults, I now have my <a href="/blog/archives/entries/000322/">CPU upgrade speed issues</a> resolved.
+</p>
+<p>
+After the BIOS upgrade, the "external cache" (L2) option was set to "Disabled". How stupid. Resetting it to "Write-Back" solved my problems and now everything is zipping along nicely.
+</p>
+
+

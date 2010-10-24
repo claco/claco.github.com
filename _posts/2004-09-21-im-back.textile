@@ -1,0 +1,16 @@
+---
+layout: post
+title: "I'm Back"
+category: Hardware
+published:
+  epoch: 1095815069
+  utc: 2004-09-22T01:04:29
+---
+
+Not bad. An hour flat for a clean XP install the is 100% up to date. No service pack install. No hot fixes. No audio or video drivers. No browser/email install. Kick ass.
+
+No for my complaints. What is up with Microsoft and hardware drivers? It's Service Pack 2. It's late 2004. Many motherboards are shipping with built in 3Com Gigabit ports. Many many motherboards are shipping with onboard Promise FastTrak RAID/SATA controllers.
+
+For god sake, at least include drivers for your own stinking wireless network cards. Geez.
+
+

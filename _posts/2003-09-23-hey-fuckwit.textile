@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Hey Fuckwit!"
+category: Humor
+published:
+  epoch: 1064367089
+  utc: 2003-09-24T01:31:29
+---
+
+<p>
+I have no idea what <a href="http://www.haloscan.com/comments.php?user=scoble&amp;comment=4747">this mess</a> or <a href="http://www.haloscan.com/comments.php?user=scoble&amp;comment=4759">this</a> is really about, but I think it's funny in a bystander sort of way. I never knew Russell hated Robert, but it sure is entertaining sometimes finding out who hates who in the weblog world.
+</p>
+<p>
+I guess I'm not trying hard enough. I have had anyone really flame me like that in a while. :-)
+</p>
+
+

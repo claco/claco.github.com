@@ -1,0 +1,83 @@
+---
+layout: post
+title: "St. Murphys' Weekly Visit"
+category: WTF
+published:
+  epoch: 1054078527
+  utc: 2003-05-27T23:35:27
+---
+
+<p>
+In an apparent effort to <a href="/blog/archives/entries/000197/#comments">not dissapoint Damelon</a>, I am today in what I could best describe as SQL Server / Hardware hell. Sit back children, and I shall spew forth a tale of woe and misery on this otherwise crappier Tuesday.
+</p>
+<blockquote>
+<p>
+Note: I am a jack of all trades, webmaster of none. I know a lot about a lot of things programming, server, and admin related, but I am no means a full time DBA.
+</p>
+</blockquote>
+
+
+
+
+<p>
+It all started simple enough. I wanted to import a 200MB text file into SQL, do some sanity checking on its contents, then put that data in another table. I had no more completed doing this on to similiar SQL2K servers when I moved forth to server #1 (aka, the bane of my existance). Upon runing the job to import the file, SQL Server spat upon me, and issued me error messages including this nugget of joy:
+</p>
+
+<p>
+<samp>fcb::ZeroFile():  GetOverLappedResult()
+Error: 1105, Severity: 17, State: 2
+Could not allocate space for object 'TABLE_NAME' in database 'DB_NAME'
+because the 'PRIMARY' filegroup is full.
+</samp>
+</p>
+
+<p>
+Oh dear. Now, taking this error at face value, the drive this database resides on has 53GB+ of free space. Even the database file itself has 600MB of free space inside of itself. :-( On top of that, every <kbd>DBCC CHECKDB</kbd> and <kbd>DBCC CHECKALLOC</kbd> I run comes up clean. And of course, <kbd>chkdsk</kbd> on all volumes during the reboot came up clear.
+</p>
+<p>
+OK, I'll play your game. I open SQL Enterprise Manager, and right-click Properties of the afflicted server. Auto-grow is set to 10%. Not trusting that, I decide to manually increase the data file size for the <kbd>PRIMARY</kbd> filegroup. On I did so , and hit <strong>OK</strong>, the server was anything but.The file size increased in windows explorer, then immediately shrunk down to its original size <strong>minus</strong> and unused spacing. In english, that means the server had no room to write new rows. Errors everywhere. Grrrr. Of course, our newly found friend <samp>fcb::ZeroFile():  GetOverLappedResult()
+</samp> has returned.
+</p>
+<p>
+So, after moving all client to the old db server, I reboot this bastard machine. Once rebooted, and with <strong>no server load</strong>, it resisde the files the first time, without errors, and also ran the import job completely fine. <strong>#$%^@#%$</strong>. While I was adding flames to the fire, I also updated the raid controller firmware and drivers so I could rule that out. After some monitoring, I moved the clients back to this bastard SQl server.
+</p>
+<p>
+Sure as shit, the import job now fails while the server is under load. Damnit. Now to make things easy, I'm now getting different errors:
+</p>
+
+<p><samp>
+Time-out occurred while waiting for buffer latch type 3 for page (1:213424), database ID 5.
+I/O error 2(The system cannot find the file specified.) detected during write at offset 0x0000004eeb0000 in file 'd:\MSSQL\Data\************.mdf'.
+</samp></p>
+
+<p>
+Funny part is, the last error happens <strong>AFTER</strong> the server read, analyzed, and repaired the file it can't now seem to find. OK, now I have disk I/O issues AND a currupted database marked as <samp>SUSPECT</samp> in Enterprise Manager. Time to move clients back to the old SQL server and phone home to MickeySoft
+</p>
+<p>
+I must say at this point, the MS support is one of the best supports I've ever used; even given the fct that I have to pay for it. After about two hours on the phone, we discovered that I couldn't even copy the file to another drive/controller. At least that time, the event log spit up some disk error messages. Support and myself decided to rebuild the file from scratch. No problem. The database itself is 1 of 3 nodes in merge replication, and it's not the master of the data in question.
+</p>
+<p>
+Not wanting to leave well enough alone, I decided to shut off SQL, and run <kbd>chkdsk /F <em>/R</em></kbd>. The <samp>/R</samp> option is to recover bad sectors. Sure as shit, there was a bad sector smack dab in the middle of the data file. once checkdisk finished, I restarted SQL, the database recovered on we were on our mary way; again, still, more. Run the import job again. Runs fine. No errors. Move clients back to the new SQL server. Run import job. Job failes. Same errors. Database marked as suspect. More back sectors. Rinse, lather, repeat.
+</p>
+<p>
+Well, at least now I have a pattern to follow and trouble shoot. Disk I/O shits itself under load. So, with that in mind, I copied all of the data drive to another controller/drive. Guess what? That's right, while copying those files to a seperate controller, <em>that</em> controller shit out a hard drive. Just to be clear. The raid5 volume on the controller with the volume that <strong>wasn't</strong> having problems blew out a hard drive. Now I had to find a spare, put that in the controller, and wait for it to resynce the raid5 volume. <strong>#$%^%$#</strong>
+</p>
+<p>Once that was done 50 minutes later, I totally removed the problemed logical drive within the raid controller config. As I sit here writing, I am still waiting on the recreated logical drive to syncronize in the hardware. After that, I still need to wait for the OS to low leve format the new volume. If that doesn't work, I will then participate in a killing spree at a location of my choosing using a weapon to be named at a later date.
+</p>
+
+<p>
+Of course, all situations like these need peoms:
+</p>
+<blockquote>
+<p>
+<cite>
+Here I sit all broken hearted,<br />
+tried to import, and barely started.<br />
+I'll try again. It's not my fault<br />
+All I see is fcb::ZeroFile():  GetOverLappedResult()
+</cite>
+</p>
+</blockquote>
+
+
+

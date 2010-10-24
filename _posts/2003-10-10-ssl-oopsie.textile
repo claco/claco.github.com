@@ -1,0 +1,17 @@
+---
+layout: post
+title: "SSL Oopsie"
+category: Apache
+published:
+  epoch: 1065841690
+  utc: 2003-10-11T03:08:10
+---
+
+<p>
+I hate when that happens. I forgot that my client SSL certificates expired this month; tonight. Doh! Nothing some quick signing and installing didn't cure.
+</p>
+<p>
+No matter how many times I do the whole CA/Server/Client SSL montra, it still confuses the shit out of me.
+</p>
+
+

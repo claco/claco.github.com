@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Beer, Food, and People. Oh My."
+category: OffTopic
+published:
+  epoch: 1050110243
+  utc: 2003-04-12T01:17:23
+---
+
+<p>
+Finally, a relaxing Friday at home. The woman is home. Her friend from Europe is here. Good food. Beer in hand. I'll drink to that. :-)
+</p>
+<p>
+Tomorrow our new furniture gets delivered. We snagged two tall bookshelves with a middle armour/entertainment center. Good stuff. We even went to Pier 1 to get some small fake plantage, lamps ans such for decoraiton.
+That place is pure evil.
+</p>
+<p>
+We also bought a Floor Mate and went on a cleaning spree. I still have to finish cleaning the office, and Sunday I have to build a new FreeBSD server for work. It's gonna be a long weekend me thinks.
+</p>
+
+

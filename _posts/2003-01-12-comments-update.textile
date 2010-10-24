@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Comments Update"
+category: WWW
+published:
+  epoch: 1042411140
+  utc: 2003-01-12T22:39:00
+---
+
+<p>
+The comments 'remember me' javascript should be working now. Be forewarned though. In a continuing effort to keep content and code separate, the <code>onclick</code> events for the radio buttons are contained <em>within</em> the <code>comments.js</code> file, <em>not</em> in the xhtml radio button code. I've tested it in both Mozilla 1.X and in Internet Explorer 6. After that, you're on your own. Since it's not terribly important to the function of this site, I'll save and corrections for a rainy day.
+</p>
+<p>
+Now, on to <code>link</code> tags and navigation. Check <a href="http://www.w3.org/TR/html401/struct/links.html#h-12.3" title="HTML specification talking about the different types of link tags">this W3C page</a> and <a href="http://www.diveintomark.org/accessibility_statement.html" title="Dive Into Mark site accessibility statement">this <cite>Dive Into Mark</cite> page</a> on accessibility for more information on that part of the project.
+</p>
+
+

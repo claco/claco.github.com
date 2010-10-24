@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Amazon, How I Loathe Thee"
+category: WTF
+published:
+  epoch: 1053122826
+  utc: 2003-05-16T22:07:06
+---
+
+<p>
+I think it's time to stop buying books and such from Amazon.
+</p>
+<p>
+First, I ordered the <strong>Designing With Web Standards</strong> book by Jeffrey Zeldman back on March 31st. The book started shipping on <del>Wednesday, May 14th</del> <ins>Thursday, May 15th [so I'm impatient :-)]</ins>, yet their product page still says:
+</p>
+<blockquote>
+<p>
+This item has not yet been released. You may order it now and we will ship it to you when it arrives.
+</p>
+</blockquote>
+<p>
+Wha? Real nice. Not only hasn't their page been updated, but it hasn't shipped. :-(
+Here's what I got from Amazon about the matter:
+</p>
+
+<blockquote>
+<p>
+Concerning "Designing with Web Standards", I apologize for the lack 
+of an estimated delivery date for this order in Your Account.  This 
+appears to be due to a technical error.  Rest assured that we are 
+processing your order.
+</p>
+<p>
+I have asked our order specialists to investigate your order further.
+We will contact you again via e-mail if we discover there is a
+problem obtaining the item.
+</p>
+</blockquote>
+<p>
+Nice and non descript. Where's my book.
+</p>
+<p>
+To make mattrers more fun, I also ordered <strong>Enter The Matrix</strong> back on April 15th. I ordered it then because the page said if I pre-ordered it now, I would have it when it is released. I paid for 1 day shipping.
+Here it is, May 16th, a day after the game was available in every store on the planet. Same story. No game in the mail. This is what I got from Amazon:
+</p>
+<blockquote>
+<p>
+I've checked your order and can confirm that <strong>we are currently
+preparing it for shipment.</strong>  
+</p>
+<p>
+We still expect to ship it <strong>in time for delivery by the date listed
+in Your Account: May 16, 2003.</strong>
+</p>
+</blockquote>
+<p>
+That doesn't make a whole lot of sense to me. You're preparing it for shipment and you still expect it to ship in time to be delivered <strong>today</strong>?
+</p>
+<p>
+Yeah right.
+</p>
+<ins>
+<p>
+Amazon is gonna give me $11.98 off of my bill since the game is gonna be late. I think I'll snag a local copy and return the Amazon item instead. Better yet, I'll just not sign for it and let them eat the shipping.
+</p>
+</ins>
+
+

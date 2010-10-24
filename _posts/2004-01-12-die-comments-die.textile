@@ -1,0 +1,47 @@
+---
+layout: post
+title: "Die Comments Die"
+category: WTF
+published:
+  epoch: 1073958327
+  utc: 2004-01-13T01:45:27
+---
+
+<p>
+Boy am I really tired fighting MT on comments content.
+Even after I disable ALL plugins, and turn off encoding, convertings, etc. MT STILL strips out a less than-text-greater than content even though it's NOT HTML tags:
+</p>
+<p>
+This:
+</p>
+<pre>
+<code>This is &lt; this and &gt; that.</code>
+</pre>
+<p>
+becomes this:
+</p>
+<pre>
+<code>This is that.</code>
+</pre>
+<p>
+Yet another prime example of why to never use RegEx to filter out HTML.
+I suspect this is the reason:
+</p>
+<pre>
+<code>sub remove_html {
+    my($text) = @_;
+    $text =~ s!&lt;[^&gt;]+&gt;!!gs;
+    $text =~ s!&lt;!&amp;lt;!gs;
+    $text;
+}</code>
+</pre>
+
+
+<p>
+All I want it to take a submitted comment, xml encode the CONTENT, not the tags, then add P and BR tags where appropriate. Apparently this is a tall order for multiple plugins.
+</p>
+<p>
+Maybe it's time to roll my own using <samp>HTML::Tidy</samp> and some quick newline replacements.
+</p>
+
+

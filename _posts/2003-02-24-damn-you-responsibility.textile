@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Damn You Responsibility !#$%"
+category: OffTopic
+published:
+  epoch: 1046067837
+  utc: 2003-02-24T06:23:57
+---
+
+<p>
+You know, sometimes having a really good job means answering phone calls about the servers at *grumble* ~12:30am (or worse). Such is life. Suck it up, and step up to the plate.
+</p>
+<p>
+On the upshot, most of the time I can trouble shoot it from home instead of driving in. Praise Murphy.
+</p>
+
+

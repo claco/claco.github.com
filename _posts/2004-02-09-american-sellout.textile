@@ -1,0 +1,40 @@
+---
+layout: post
+title: "American Sellout"
+category: OffTopic
+published:
+  epoch: 1076375849
+  utc: 2004-02-10T01:17:29
+---
+
+<p>
+Anyone else disappointed that the Teutuls from <a href="http://dsc.discovery.com/fansites/amchopper/amchopper.html">American Chopper</a> sold out and did some AOL commercials?
+</p>
+<p>
+P.S. Who's the dillhole at Discovery that decided this URL was good:
+</p>
+<pre><samp>http://dsc.discovery.com/fansites/amchopper/amchopper.html</samp></pre>
+
+<p>
+While this one yields a 404:
+</p>
+
+<pre><samp>http://dsc.discovery.com/fansites/amchopper/</samp></pre>
+
+<p>
+Nice.  Here's another.
+</p>
+
+<pre><samp>http://dsc.discovery.com/fansites/amchopper/meet/meet.html</samp></pre>
+
+<p>
+vs.
+</p>
+
+<pre><samp>http://dsc.discovery.com/fansites/amchopper/meet/</samp></pre>
+
+<p>
+The mind boggles.
+</p>
+
+

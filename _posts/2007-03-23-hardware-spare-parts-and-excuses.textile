@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Hardware, Spare Parts, and Excuses"
+category: Hardware
+tags:
+  - hardware
+  - lcd
+  - upgrade
+published:
+  epoch: 1174706880
+  utc: 2007-03-24T03:28:00
+---
+
+Like most things, once I get an idea in my head, it quickly spirals out of control; or my wallet does. As my wife likes to say "Go for it. We have jobs". Margo is going to be in DC for the latter half of next week, so it seemed like a good time to make chili and have a good old fashioned game night. My laptop is getting old and won't play UT2K without overheating and rebooting any more. While I've got that kick ass 23" Apple Cinema Display and a NDivia 7800GT up stairs, hauling it and my tower downstairs and having to put the office back together afterwords is a pain in the ass. Then the downfall of ideas start.
+
+Now that the old file server is powered off and we're running off the new NAS, I have a spare, albeit it large, 4U 19" rack mount chassis with a heap of 40GB IDE drives in it. I have a P4 3.0C proc, 1GB OZX PC3700 DDR Ram, and an ATI Radeon XT800PE all gathering dust after upgrading the desktop upstairs a few times. So all I need is a motherboard to put it all together. A few trips around eBay, and I manage to snag another Asus P4C800 Deluxe; exactly what's in the desktop upstairs. Since I made a slipstream XP install disk with the RAID and other drivers pre installed, This should be easy.
+
+<em>Wait, I only have an old CD-ROM drive and I'm going to have to disk with DVD. Wonder how much those are.</em> <a title=" NEC Black 18X DVD+R 8X DVD+RW 8X DVD+R DL 18X DVD-R 6X DVD-RW 12X DVD-RAM 16X DVD-ROM 48X CD-R 32X CD-RW 48X CD-ROM 2M Cache E-IDE / ATAPI DVD Burner - OEM" href="http://www.newegg.com/Product/Product.asp?Item=N82E16827152076">$29.00</a> for a DVD that reads/writes most things. That's harmless I thought.
+
+<em>I don't want to have to move the ACD and I have no spare speakers. Wonder how much a cheap LCD with speakers is.</em> <a title="Newegg.com - HannsｷG JW-199DPB Black 19&quot; 5ms DVI Widescreen LCD Monitor 300 cd/m2 700:1 Built in Speakers - Retail" href="http://www.newegg.com/Product/Product.asp?Item=N82E16824254001">$174.99</a>. I could always use a cheap LCD to tote to game night. That's harmless I though.
+
+<strong>Sigh</strong>. One NewEgg order later, I'll bet putting together the portable, not so small gamebox next week. Damn technology. I imagine at some point that my desktop will reverse merge itself into the 4U case and I'll eBay the spare parts. Go figure. The 4U chassis has a boatload of room in it as it housed 6 IDE drives, a CD Rom, Zip, etc. It's probably easier to work in than the tall Antec case I have is. I just hope I don't need to put in a bigger power supply.
+
+Hardware creep at its finest. MAybe I'll toss on the new Ubuntu Feisty Fawn Beta if I have the time.
+
+

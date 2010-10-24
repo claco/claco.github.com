@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Crossroads: .NET / LAMP"
+category: WWW
+published:
+  epoch: 1045183247
+  utc: 2003-02-14T00:40:47
+---
+
+<p>
+For the last year, I swore off <acronym title="Applicaiton Server Pages">ASP</acronym> (MicroShaft) and took up the LAMP (Linux/Apache/ModPerl) and swore I'd never look back. Never say never I guess.
+</p>
+<p>
+Well, the time has finally arrived to try and make an informed educated unbiased decision about the future if the ecommerce site I maintain as part of my day job.
+The site is currently built using ASP/<acronym title="Visual Basic">VB</acronym>/<acronym title="Microsoft Transaction Server">MTS</acronym>/<acronym title="Microsoft SQL Server">MSSQL</acronym>. So far, it's served us well if I do say so myself. 
+However, the time has come to look towards the future and start planning for a major overhaul.
+</p>
+<p>
+So with all fairness in mind, here are some of the design requirements that come to mind:
+</p>
+
+<h3>Model-View-Controller (MVC)</h3>
+<p>
+True separation of code, logic, and content. Allow the page creators to create pages without having to touch a line of code.
+Allow the programmers to work on new functionality without touching the pages, or the look and feel. Allow the artists to develop new page layouts and styles 
+without touching any code.
+</p>
+
+<h3>Flexible Output Mechanism</h3>
+<p>
+Ability to repurpose page into many forms (<acronym title="HyperText Markup Language - Version 4.x">HTML4</acronym>, Text, <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>, <acronym title="Portable Document Format">PDF</acronym>, <acronym title="Wireless Application Protocol">WAP</acronym>) without altering any page logic or module code.
+</p>
+
+<h3>WYSIWYG Friendly Design Workflow</h3>
+<p>
+The ability to edit the Model or View stages in non-text editors without them munging the format of the page.
+</p>
+
+<h3>Pre/Post Request Chain Processing</h3>
+<p>
+Ability to tap into the request chain to create custom pre and post page processors for custom url or session munging or custom output caching.
+</p>
+
+
+
+<p>
+Personally, I would love to move to Unix/Apache/ModPerl/AxKit. But I also need to find the right tool for the right job. Even though it is old this article on <a href="http://www.perl.com/pub/a/2001/10/17/etoys.html">Building a Large-scale E-commerce Site with Apache and mod_perl</a> still intrigues me. The performance stats alone on that setup make my mind boggle compared to <acronym title="Internet Information Server">IIS</acronym>/<acronym title="Applicaiton Server Pages">ASP</acronym>.
+Reverse Proxy Caching will almost certainly be part of a major redesign, but that still leaves the language/platform open to quandary. If both Apache/ModPerl/AxKit and IIS/ASP.NET can do the same things close to the same way, then it's going to come down to performance, price and development time.
+</p>
+<p>
+Price is a no brainer. I'm willing to bet on performance, but proper side by side tests will tell the tail. As for development time, I could knock out an AxKit based site, <acronym title="eXtensible Markup Language">XML</acronym>/<acronym title="eXtensible Stylesheet Language Transformation">XSLT</acronym>/<acronym title="eXtensible Stylesheet Language Transformation">Perl</acronym> and all pretty quickly. Dot 
+NET is going to take some serious learning. Nothing impossible, but I'm definitely out of the loop.
+</p>
+
+

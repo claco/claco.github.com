@@ -1,0 +1,18 @@
+---
+layout: post
+title: "The Associated Press: Microsoft Makes $42B Bid for Yahoo"
+category: MicroShaft
+published:
+  epoch: 1201920563
+  utc: 2008-02-02T02:49:23
+---
+
+<a href="http://ap.google.com/article/ALeqM5g9cE_gI-aemyNxZQb7YOBC3rsNlQD8UHSE300">Microsoft Makes $42B Bid for Yahoo</a>
+
+<blockquote>By MICHAEL LIEDTKE - 1 hour ago
+
+SAN FRANCISCO (AP) -- Unable to topple Google Inc. on its own, Microsoft Corp. is trying to force crippled rival Yahoo Inc. into a shotgun marriage, with a wager worth nearly $42 billion that the two companies together will have a better chance of tackling the Internet search leader.</blockquote>
+
+So long Flickr. We hardly knew ye. I have full confidence that Microsoft will run good things like YUI and Flickr right into the ground.
+
+

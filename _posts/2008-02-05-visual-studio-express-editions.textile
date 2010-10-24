@@ -1,0 +1,26 @@
+---
+layout: post
+title: "Visual Studio Express Editions"
+category: MicroShaft
+tags:
+  - asp.net
+  - vb.net
+  - visual studio express
+published:
+  epoch: 1202255791
+  utc: 2008-02-05T23:56:31
+---
+
+I make no attempt to hide the fact that I do .NET by day and Perl by night. I'll probably never do home projects in .NET, and I'll probably never do Perl projects at $work. Life is good like that.
+
+At home, I use Catalyst, the best MVC framework for Perl. At work, I loathe ASP.NET and all of the hacking one has to do with its page lifecycle just to get some good combination if events, dynamic controls and control reuse. It's a slow form of torture in my book.
+
+Much to my joy, The new ASP.NET 3.5 Extensions coming out have a nice shiny new ASP.NET MVC Framework, and it actually doesn't suck too bad. As such, I need to tinker with it and the code from work to see if it fits into our plan, breaking m lost fast rule about never working on $work code @ $home.
+
+But I digress. One of the biggest problems Microsoft had in the past was that the development tools were too damn expensive for the home programmer. Lucky for us, they got wise and started release the "Express" editions of VB.NET and ASP.NET IDEs.
+
+Sure, I have to do my core stuff in VB.NET Express, and then switch to ASP/NET Express to work on pages, and testing/source control isn't integrated.
+
+Oh well, Thanks MS either way. Nice free powerful tools. Now you're starting to get it. :-)
+
+

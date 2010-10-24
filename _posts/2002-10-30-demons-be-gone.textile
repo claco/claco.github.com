@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Demons Be Gone"
+category: Hardware
+published:
+  epoch: 1036028713
+  utc: 2002-10-31T01:45:13
+---
+
+<p>
+Finally, I think we can pronounce the router issues fixed, St. Murphy willing.
+After one final kernel update, I've had no problems. Tha god. I'm pretty sure the last router was possessed by the devil himself.
+</p>
+
+

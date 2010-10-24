@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Toshiba e750 Arrives!"
+category: Hardware
+published:
+  epoch: 1067647567
+  utc: 2003-11-01T00:46:07
+---
+
+<p>
+Wow! I ordered that Toshiba e750 yesterday, and it was delivered today, even on 3-7 business day shipping!
+</p>
+
+

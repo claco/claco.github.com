@@ -1,0 +1,16 @@
+---
+layout: post
+title: "Firefox 1.0PR Sucks"
+category: WTF
+published:
+  epoch: 1095273761
+  utc: 2004-09-15T18:42:41
+---
+
+Don't give me the "Preview Release" excuse either. They've ALL been preview releases. I did a clean install of 1.0PR and it has assloads of problems; most of them related to bookmarks.  Specifically, mine disappear every time I reload the browser.
+
+The extensions updates code or site appears to be retarded as well. I tried installing BugMeNot 0.6 and it failed the install saying it would only work on 0.7-0.9, even though it was listed as working under 0.10. I went to the BugMeNot site and installed it from their just fine.
+
+I really wish this 1.0PR didn't get so much publicity. Everyone is going to think Firefox sucks, when in reality it's been pretty darn good up until now.
+
+

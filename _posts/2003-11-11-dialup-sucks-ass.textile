@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Dialup Sucks Ass"
+category: OffTopic
+published:
+  epoch: 1068599096
+  utc: 2003-11-12T01:04:56
+---
+
+<p>
+I have had a (many) dedicated internet connection since 1995. Now I'm at the new digs with no DSL until the 17th. Ouch.
+</p>
+
+

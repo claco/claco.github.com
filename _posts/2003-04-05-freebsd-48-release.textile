@@ -1,0 +1,15 @@
+---
+layout: post
+title: "FreeBSD 4.8-RELEASE"
+category: FreeBSD
+published:
+  epoch: 1049574133
+  utc: 2003-04-05T20:22:13
+---
+
+<p>
+Just in time for the weekend updater in all of us geeks, <a href="http://www.freebsd.org/releases/4.8R/relnotes-i386.html">FreeBSD 4.8 has been released</a>.
+LEt the compiling begin.
+</p>
+
+

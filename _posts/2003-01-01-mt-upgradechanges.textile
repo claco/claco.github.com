@@ -1,0 +1,86 @@
+---
+layout: post
+title: "MT Upgrade / Changes"
+category: Perl
+published:
+  epoch: 1041441306
+  utc: 2003-01-01T17:15:06
+---
+
+<p>
+	Day 1 of 365. Place your bets and sit down for the show. In no certain order I set forth the following degree of intents for the day:
+</p>
+
+<ul>
+<li><strong>Upgrade <acronym title="Movable Type">MT</acronym> from 2.5 to 2.51 - Done.</strong></li>
+<li><strong>Reapply / Recreate MT patches.</strong>
+<p>There are two things that bug me about MT in my situation.</p>
+
+	<ol>
+		<li>
+			<strong>Trackback URLs.</strong>
+			<p>
+				I rewrite the <acronym title="Uniform Resource Locators">URLs</acronym> on this site to avoid page/language specific file names, make them easy to remember, and
+				make them more durable even if the page names change.
+				See <a href="http://www.alistapart.com/stories/succeed/" title="Article about better use of URLs">"How to succeed with URLs"</a> and
+				<a href="http://www.alistapart.com/stories/slashforward/" title="Article about better use of URLS">Slash Forward</a> over at
+				<a href="http://www.alistapart.com/" title="Visit www.alistapart.com">A List Apart</a> for more info.
+			</p>
+			<p>
+				So, <code>/blog/perl/</code> is really <code>/blog/perl.xsp</code>. While all of the links on my site use the
+				<code>/blog/perl/</code> method, Trackback pings still send <code>/blog/perl.xsp</code> which means that if I ever change the file name
+				, all external Trackbacked links will be broken while all the others will work. I know. I know. I can add another rewrite to remap
+				<code>.xsp</code> to <code>.chl</code>. But I'd prefer to just have control over the Trackback URL format to begin with.
+			</p>
+			<p>
+				So, it's time to get all proper and patch the admin interface to allow me to change the Trackback URL before it get's sent. Easier said than done.
+			</p>
+			<p>
+				I think the least intrusive way to do this is to add hooks into the <code>$MTEntryLink$</code>  tag handler to call or use plugins.
+			</p>
+			<p>
+				<strong>Ouch.</strong>. I just realized after all this time that my Trackback urls are completely bogus because an Entry's 
+				Trackback Id <strong>IS NOT</strong> the same as the Entry Id. To make matters worse, there is no 
+				<code>$MTEntryTrackbackID$</code> tag. The only way to get the Trackback ID is via the <code>$MTTrackbackURL$</code>, 
+				which uses <code>$MTCGIPath$</code>. Even worse. If your CGIPath/Admin GUI is on a secure site, THAT is the url 
+				used, not the url of the local site blog url. :-(
+			</p>
+		</li>
+
+		<li>
+			<strong>Outgoing HTTP Traffic</strong>
+			<p>
+				I love having MT send out pings to the "Recently Updated" list on the <a href="http://www.movabletype.org/">MovableType homepage</a>.
+				I would also love to have MT send out pings to other sites in both Trackback and Updated form. However, this is where paranoia kicks in.
+			</p>
+			<p>
+				I'm a big proponent of <a href="http://dictionary.reference.com/search?q=Egress" title="Dictionary.com definition of Egress">Egress</a> filtering on the firewall/servers.
+				In the unfortunate event that a server gets hacked or catches the viri of the week, the server will still not be allowed to initiate a
+				connection to an external server on it's own; <b>especially</b> to common ports like port 80 to further spread the love. This cause a problem becuase
+				MT Trackback/Updated pings need to be allowed out from the server to anywhere using port 80. Bummer.
+			</p>
+			<p>
+				The solution? Well, in theory, the outgoing ping
+				code using the <code>LWP</code> module could be told to bind itself to a different non-default ip/port on the server. The we can filter on the firewall/server to allow
+				port 80 from this special address out to the internet port 80. This would allow pings out from MT, but all normal outgoing port 80 traffic on the machine to still be blockedd.
+			</p>
+			<p>
+				We shall see.
+			</p>
+			<strong>Update</strong>
+			<p>	
+				Well, the good news is that I patched the docs and modules to add a new blog preference: <code>ping_interface</code>. 
+				Now I can specifiy an alternate ip:port to bind to when sending out pings. Once I get my Trackback URLs fixed, 
+				I'll work up some patches and submit them to the MT crew. Hey, why not right?
+			</p>
+		</li>
+	</ol>
+
+</li>
+</ul>
+
+<p>
+If I get those two things done. I'll be happy.
+</p>
+
+

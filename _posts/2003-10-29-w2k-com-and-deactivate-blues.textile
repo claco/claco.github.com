@@ -1,0 +1,43 @@
+---
+layout: post
+title: "W2K, COM+ and Deactivate Blues"
+category: MicroShaft
+published:
+  epoch: 1067473334
+  utc: 2003-10-30T00:22:14
+---
+
+<p>
+Well, Murphy bit my ass hard today. I upgraded a server from NT4 to W2K and all hell broke loose. In a nutshell, all my COM+ components STOPPED firing their <samp>ObjectControl_Deactivate</samp> events completely. No deactivate events = no object cleanup. No object cleanup = shit breaks.
+</p>
+<p>
+After a day of debugging this shit, come to find out that having this in your ASP page:
+</p>
+<p>
+<code>
+&lt;@ Language=VbScript Transaction=Not_Supported&gt;
+</code>
+</p>
+<p>
+causes the <samp>ObjectControl_Deactivate</samp> event to be completely shit canned.
+To make matters worse, <samp>Transaction</samp> has for possibilities: <samp>Required</samp>, <samp>Requires_New</samp>, <samp>Supported</samp>, and <samp>Not_Supported</samp>. Using ANY of them in your ASP page on W2K/IIS5 causes <samp>Deactivate</samp> to never fire. Now, remove the <samp>Transaction</samp> attribute entirely:
+</p>
+<p>
+<code>
+&lt;@ Language=VbScript&gt;
+</code>
+</p>
+<p>
+brings the <samp>Deactivate</samp> event back to life. This is the case even if the page AND the component are set to the same thing.
+</p>
+<p>
+How fucking retarded is that? What could the default of <samp>Transaction</samp> be if it's not <samp>Required</samp>, <samp>Requires_New</samp>, <samp>Supported</samp>, and <samp>Not_Supported</samp>? Funking retards.
+</p>
+<p>
+With that informaiton, reflect on the fact that <samp>ObjectControl_Deactivate</samp> fires 100% of the time under NT4/IIS4. Grrrr.
+</p>
+<p>
+I'm sure .NET and one degree of separation would fix this. :-/
+</p>
+
+

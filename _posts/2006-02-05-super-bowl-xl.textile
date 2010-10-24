@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Super Bowl XL"
+category: OffTopic
+published:
+  epoch: 1139178528
+  utc: 2006-02-05T22:28:48
+---
+
+Being a computer gook at heart, I don't normally give a rat poop about things like the Super Bowl. But, in the spirit if eating way too much kraut and dogs, I figured I should give it a shot. Here's to sruving the food and staying away from the internet long enough to watch the game.
+
+

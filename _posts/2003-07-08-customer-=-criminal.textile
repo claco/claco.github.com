@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Customer != Criminal"
+category: WTF
+published:
+  epoch: 1057713246
+  utc: 2003-07-09T01:14:06
+---
+
+<p>
+&lt;rant&gt;
+</p>
+
+<p>
+Ok, repeat after me: <strong>the customer is not a criminal</strong>. Something small that pisses me off to no end: CD Copy Protection.
+</p>
+<p>
+When I spend $40+ dollars for a game, I damn well should be able to make a backup of that game and stick it in safe place, or better yet, use the copy and leave the original alone. I'm so sick of being treated like a criminal after spending some hard earned green on some computer entertainment.
+</p>
+<p>
+I try to be a responsible computer user. As such, having an offsite backup of important data is a given.
+Everytime I purchase a new piece of software, it get's backed up and stuffed in my drawer at work all safe and sound from any mishaps at home. Yet these game companies seem to think I'm a criminal and put fscking copy protection on their CDs.
+</p>
+<p>
+What mystifies me further is that some games like Splinter Cell have it, and other games like Jedi Knight II don't. Not only that, but it's ass easy get altered .EXE files that don't look for the CDs when starting the game. There are also a few programs out there that can zap these fuckored weak ass sectors and produce a working normal CD. So why do they bother? The hardcore pirates already use the more complicated methods to pirate their warez, and the only ones punished are Joe Six Pack Home User.
+</p>
+
+<p>
+Back when I purchased Civ3 by Infrogrames/Firaxis, it couldn't be copied. I sent them a nastygram letting them know how unhappy I was that I couldn't even make a backup copy. Their response was pretty much to the effect that "You aren't allowed to make backups, read the EULA". Hey, fuck you. According to most legal cases here in the US, esp. ones about unbundling software and reselling the parts says it all: if it acts like a sale, then it's a sale, and what the customer does with it afterwords (shy of duplicating and selling copie) is fair use like reselling a book. My copy. Bite my ass. I shall crack all your CD protections to protect my investment and there isn't jack nut you can do about it.
+</p>
+
+<p>
+&lt;/rant&gt;
+</p>
+
+

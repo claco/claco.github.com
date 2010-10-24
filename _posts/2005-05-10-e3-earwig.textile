@@ -1,0 +1,16 @@
+---
+layout: post
+title: "E3 Earwig"
+category: Humor
+published:
+  epoch: 1115730441
+  utc: 2005-05-10T13:07:21
+---
+
+So all damn morning, I've had the theme song from the early '80s series <a href="http://www.tvtome.com/tvtome/servlet/ShowMainServlet/showid-586/">The Greatest American Hero</a> running around in my head. Over, and over, and over, and over.
+
+Then I finally realized why. The new E3 commercial has a Jack Balck like dude singing about E3 to the tune from that theme song. Oddly enough, the actually singing voice is Jack Black.
+
+Long live Tenacious D.
+
+

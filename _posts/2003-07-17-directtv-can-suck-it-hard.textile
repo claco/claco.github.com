@@ -1,0 +1,28 @@
+---
+layout: post
+title: "DirectTV Can Suck It Hard"
+category: WTF
+published:
+  epoch: 1058471459
+  utc: 2003-07-17T19:50:59
+---
+
+<p>
+If <a href="http://www.theregister.co.uk/content/6/31793.html">this story</a> is true, then DirectTV is a bunch of money loving cock gobblers.
+</p>
+<blockquote>
+<p>
+In recent months the satellite TV giant has filed nearly 9,000 federal lawsuits against people who've purchased <strong>signal piracy devices</strong>. But some of those devices have legitimate uses, and innocent computer geeks are getting caught in the crackdown, writes 
+</p>
+</blockquote>
+
+<p>
+I'm all for them nailing people who steal their programming. But these "<em>signal piracy devices</em>" are <strong>Smart Card Readers</strong>. That's right, the same thing you and I and any smart card programmer would have to read and write/program smart cards. This is fucking out of hand.
+</p>
+
+<p>
+If I was a DirectTV cusotmer, I'd drop their ass in a heart beat this very evening. Next thing you know, these RIAA asswipes will be suing you and me for purchasing a CD-R and having a copy of CDEX on our computers.
+</p>
+
+
+

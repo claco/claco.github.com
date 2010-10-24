@@ -1,0 +1,12 @@
+---
+layout: post
+title: "Be Afraid"
+category: Perl
+published:
+  epoch: 1092853690
+  utc: 2004-08-18T18:28:10
+---
+
+Be very afraid. I now have a CPAN author id. Now if I could just get those AxKit commerce components done for the site conversion I'm working on, maybe I'd have something to share.
+
+

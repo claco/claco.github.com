@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Comments Are Apache::Filter-ized"
+category: Perl
+published:
+  epoch: 1042861700
+  utc: 2003-01-18T03:48:20
+---
+
+<p>
+After <a href="/blog/archives/entries/000111/" title="More MT Hacks: Apache::Filter">all</a> the <a href="/blog/archives/entries/000112/" title="MT Search vs. XHTML Snafu">work</a> going on <a href="/blog/archives/entries/000112/" title="Search In The House">last night</a> in getting <a href="http://search.cpan.org/search?query=Apache%3A%3AFilter&amp;mode=module" title="CPAN page for Apache::Filter">Apache::Filter</a> worked into MT, doing the same for the comments forms was pretty easy if I do say so myself.  Check them out. Pick an entry, and go through the preview process, or enter junk in the email box to get to the error page.
+</p>
+<p>
+Time to start going through <a href="http://www.bradchoate.com/past/reboot2003.php">Brad Choate's redesign list</a> and see what I'm forgetting. Thanks for the list Brad!
+</p>
+
+
+
+
+
+
+
+
+
+

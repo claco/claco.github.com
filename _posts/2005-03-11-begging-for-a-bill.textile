@@ -1,0 +1,24 @@
+---
+layout: post
+title: "Begging For A Bill"
+category: Humor
+published:
+  epoch: 1110570825
+  utc: 2005-03-11T19:53:45
+---
+
+I'm filing this under humor because that's the only explanation I can come up with thus far.
+
+Long story longer. When we moved into our new house in November 2003, I signed up for the Deluxe-S DSL package from SBC. After a slight installation schedule snafu everything was up and running. Packets went out; SBC bills came in.
+
+In November 2004, my 1 year long DSL contract was up for renewal. On top of that, the Deluxe-S packaged had been replaced by a faster and cheaper Pro-S package. So, I called in on November 4th, and signed up for another year along with the upgrade into the Pro-S package.
+
+Like all things SBC DSL, they managed to accidentally make a duplicate PPPoE profile for my account which promply gave me a new static IP block. Needless to say that screwed things up for a weekend. After a phone call, it was fixed and my upgrade was completed.
+
+Now for the fun part. :-) Since November 4th, 2004, I have yet to receive any billing for DSL. It's up. It's running. It's in their system. No one seems to be able to figure out why I'm not getting billed. Here it is, month 5 of free DSL. Every month I call in. Every month I here 'Should be getting a bill next month'.
+
+I did find out that if they fix it and back bill me, their max back bill interval is 3 months.
+
+<strong>Hey SBC, take as long as you need to fix the problem</strong>. :-)
+
+

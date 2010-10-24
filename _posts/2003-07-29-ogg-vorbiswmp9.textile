@@ -1,0 +1,28 @@
+---
+layout: post
+title: "Ogg Vorbis / WMP9"
+category: Music
+published:
+  epoch: 1059537015
+  utc: 2003-07-30T03:50:15
+---
+
+<p>
+So, why do we hate Windows Media Player 9 again? I'm not sure anymore.
+</p>
+<p>
+I'm all for the daily MicroShaft bashing. At one point in the past, I got sick of Windows Media Player, and decided to rip and convert my CDs to Ogg Vorbis. Even with a fast machine, and a fast CD drives, this takes time.
+</p>
+<p>
+I recently did a reinstall on my new computer, and just did a restore of my old one; which also included the WMP9 upgrade on both. The ease of use from a "Copy From CD" standpoint, especially when you can just pop in a couple of CDs, let it rip them, then swap in a couple more,  seems a lot quicker than using CDEX and some of the other "open" formats and rippers.
+</p>
+
+<p>
+Maybe it was the DRM crap? Or was the substandard MP3 quailty crap? Who knows. I can rip .WMA files with the copy protection turned off, and play them on my other Windblows boxes. So what's the downside again?
+</p>
+
+<p>
+Maybe it's just faster ripping to WMA because it has better hooks into Direct*, and my Audigy2 card drivers. Either way. I think I might start [and finally finish] ripping my CDs to WMA format and be done with it.
+</p>
+
+

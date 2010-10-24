@@ -1,0 +1,66 @@
+---
+layout: post
+title: "Just Tinkering"
+category: WWW
+published:
+  epoch: 1073524092
+  utc: 2004-01-08T01:08:12
+---
+
+<p>
+Just tinkering with some layout issues. Move along. Nothing to see here.
+</p>
+<h3>Cite-ing</h3>
+<p>
+As <cite>Harry S. Truman</cite> said,
+<q lang="en-us">The buck stops here.</q>
+</p>
+<p>
+More information can be found in <cite>[ISO-0000]</cite>.
+</p>
+<h3>Code-ing</h3>
+<p>
+Full code block:
+</p>
+<pre>
+<code>&lt;?php
+   $req = $_SERVER['REQUEST_URI'];
+   // Remove rubbish.
+   $newReq = ereg_replace ('index.php[^?]*', 'index.php', $req);
+   if (strlen($newReq) &lt; strlen($req)) {
+     header ('Location: '.$newReq);
+     header ('HTTP/1.0 301 Moved Permanently');
+     die;  // Don't send any more output.
+   }
+   unset($req); unset($newReq);
+
+   ... (rest of the script) ...
+?&gt;</code>
+</pre>
+<p>
+Inline code: <code>my $foo = Net::SMTP->new();</code>
+</p>
+
+<h3>Samp-ing</h3>
+<p>Full sample output:</p>
+<pre>
+<samp>Filesystem        Size   Used  Avail Capacity  Mounted on
+/dev/ad0s1a       496M    46M   410M    10%    /
+/dev/vinum/data   4.8G    71M   4.4G     2%    /data
+/dev/ad1s1a       496M    57M   400M    12%    /rootback
+/dev/vinum/usr    2.9G   1.9G   781M    71%    /usr
+/dev/vinum/var    3.9G   206M   3.4G     6%    /var
+/dev/vinum/www     14G   108M    13G     1%    /www
+procfs            4.0K   4.0K     0B   100%    /proc
+[claco@cypher ~] $</samp>
+</pre>
+<p>
+Inline sample output: <samp>8:21PM  up 40 days,  9:27, 1 user, load averages: 0.01, 0.02, 0.00</samp>
+</p>
+
+<h3>KBD-ing</h3>
+<p>
+<kbd>grep -i foo /var/log/messages</kbd>
+</p>
+
+

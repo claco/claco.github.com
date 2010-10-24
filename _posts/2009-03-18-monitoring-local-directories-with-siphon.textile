@@ -1,0 +1,144 @@
+--- 
+layout: post
+title: Monitoring Local Directories with Siphon
+wordpress_id: 183
+wordpress_url: http://chrislaco.com/?p=183
+published:
+  epoch: 1237424400
+  utc: 2009-03-19T01:00:00
+---
+This is the third in a series of posts about Siphon, a set of data monitoring utilities for .NET under the MIT license. The source code can be found on <a title="Siphon on GitHub" href="http://github.com/claco/siphon/">GitHub</a>.
+<h2><!--more-->Introduction</h2>
+In this article, I'll show you how to monitor a local directory using Siphon and go over some of the different options that are available.
+<h2>The Scenerio</h2>
+Your mission, should you chose to accept it, is to check a local file system directory for new CSV files twice a day at 8am and 3pm. Upon completion, or failure of processing each file, we will rename then move them to separate directories for a human to review. In order to achieve this, we will need to:
+<ol>
+	<li>Create a custom processor class to process our csv files</li>
+	<li>Configure a new monitor in app.config</li>
+	<li>Run the monitor</li>
+</ol>
+<h2>Creating a Processor</h2>
+In order to have Siphon process data, we must create a custom processor class. More often than not, this will probably just be an adapter  between the Siphon API and your other existing software. The only requirements for a processor in Siphon is that the class:
+<ol>
+	<li>The class must have a constructor that takes no parameters (private, protected or public)</li>
+	<li>The class must implement the IDataProcessor interface</li>
+</ol>
+For the sake of me getting my C# skills up to par, we'll use C# for this example. I'm going to assume that you have a basic understanding of starting new projects, classes, and adding references to other assemblies. Once you've created a new class and added a reference to System.Configuration and Siphon.dll, we want to implement the IDataProcessor interface. This consists of 3 methods: Initialize, Process and Dispose:
+<pre class="brush:csharp">using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using ChrisLaco.Siphon;
+
+namespace CustomProcessor
+{
+    public class CustomProcessor : IDataProcessor
+    {
+        public void Initialize(ProcessorElement config)
+        {
+        }
+
+        public bool Process(IDataItem item)
+        {
+        }
+
+        public void Dispose()
+        {
+        }
+    }
+}</pre>
+A data processor has three basic actions:
+<ol>
+	<li>Initialize the process using the configuration supplied from the service or console where this monitor is running</li>
+	<li>Process the new data item, returning True if it was processed successfully or False if processing failed</li>
+	<li>Cleanup any resources</li>
+</ol>
+<h3>First, a word from our sponsor about IDataItem and IDataItem&lt;T&gt;</h3>
+When a monitor finds new items to process, it wraps them in any number of classes that implement the IDataItem&lt;T&gt; interface. This interface exposes three properties:
+<ol>
+	<li><strong>Name</strong>: A friendly name for the data item</li>
+	<li><strong>GetString</strong>: The contents of the data item</li>
+	<li><strong>Data</strong>: The underlying data item in it's native format</li>
+</ol>
+What gets returned from the Data property depends on what type of data each specific monitor understands. The LocalDirectoryProcessor returns FileInfo objects, as does the FtpMonitor. The DatabaseMonitor returns TableRow objects. Some monitors, like Imap and Pop3 monitors, return simple string that also has a reference to the temp file where it's stored. It is assumed, wisely or otherwise that the monitor and the processor have to both understand and work with the same Data types. It wouldn't make much sense for the DatabaseMonitor to send an IDataItem&lt;TableRow&gt; to a processor that assumed it was getting IDataItem&lt;FileInfo&gt;. Of course, there's nothing stopping you from having an uber Process() method that looks to see what types it's getting understand multiple item types. The Process method on the IDataProcessor interface is actually set to receive IDataItem [without a specific type] for just this reason and GetString will suffice it you're only inspecting contents.
+<h3>Back to implementing IDataProcessor</h3>
+For the sake of simplicity, let's simply inspect the name of the new files and return True if the file has one name, and False for any other file:
+<pre class="brush:csharp">public bool Process(IDataItem item)
+{
+    IDataItem&lt;FileInfo&gt; fileItem = (IDataItem&lt;FileInfo&gt;)item;
+
+    if (fileItem.Data.Name == "success.csv")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}</pre>
+First, we cast the item to an instance of IDataItem&lt;FileInfo&gt;. Next, we check the file name using the Name property of Data, which is a FileInfo object of course. If it is success.csv, return True. Otherwise, return False.
+<h2>Configuration</h2>
+Now that we our simple processor,  we need to configure a monitor in our app.config:
+<pre class="brush:xml">&lt;siphon&gt;
+  &lt;monitors&gt;
+    &lt;monitor name="CsvMonitor" type="ChrisLaco.Siphon.LocalDirectoryMonitor, Siphon"&gt;
+      &lt;settings&gt;
+        &lt;add name="Path" value="C:\" /&gt;
+        &lt;add name="Filter" value="*.csv" /&gt;
+        &lt;add name="ProcessCompleteActions" value="Rename, Move" /&gt;
+        &lt;add name="ProcessFailureActions" value="Rename, Move" /&gt;
+        &lt;add name="CompletePath" value="Completed" /&gt;
+        &lt;add name="FailurePath" value="Failed" /&gt;
+        &lt;add name="CreateMissingFolders" value="True" /&gt;
+      &lt;/settings&gt;
+      &lt;schedule type="ChrisLaco.Siphon.DailySchedule, Siphon"&gt;
+        &lt;daily&gt;
+          &lt;time value="8:00" /&gt;
+          &lt;time value="15:00" /&gt;
+        &lt;/daily&gt;
+      &lt;/schedule&gt;
+      &lt;processor type="CustomProcessor, CustomProcessor" /&gt;
+    &lt;/monitor&gt;
+  &lt;/monitors&gt;
+&lt;/siphon&gt;</pre>
+First we give the monitor a name and tell Siphon what class to use:
+<pre class="brush:xml">&lt;monitor name="CsvMonitor" type="ChrisLaco.Siphon.LocalDirectoryMonitor, Siphon"&gt;</pre>
+Next, we need to configure the monitor using the settings group:
+<ul>
+	<li><strong>Path</strong>: The full path where to scan for new files.</li>
+	<li><strong>Filter</strong>: The file name filter to use; only returning files that match the filter.</li>
+	<li><strong>ProcessCompleteActions</strong>:<strong> </strong>The actions to perform on the files when processing is successful.</li>
+	<li><strong>ProcessFailureActions</strong>: The actions to perform on the files when processing fails.</li>
+	<li><strong>CompletePath</strong>: The relative or full path to the folder to move files into when processing succeeds if the Move action is set.</li>
+	<li><strong>FailurePath</strong>: The relative or full path to the folder to move files into when processing fails if the Move action is set.</li>
+	<li><strong>CreateMissingFolders</strong>: Create the Path, CompletePath and FailurePath folders if they do not already exist.</li>
+</ul>
+In Siphon, whenever possible, the Path, FailurePath and CompletePath options accept and convert to use Uri objects internally. C:\ is converted to file:///C:/. This is because the same code is used for remote folders as well in FtpMonitor, where Path could be ftp://example.com/ instead. Just like internet uris, the CompletePath and FailurePath settings can be absolute (ftp://example.com/failure/), root relative (/failure/) or relative to the path directory (../failure). This allows you to easily nest directories if necessary.
+
+Now that we have our monitor configured, we need to give it a schedule:
+<pre class="brush:xml">&lt;schedule type="ChrisLaco.Siphon.DailySchedule, Siphon"&gt;
+  &lt;daily&gt;
+    &lt;time value="8:00" /&gt;
+    &lt;time value="15:00" /&gt;
+  &lt;/daily&gt;
+&lt;/schedule&gt;</pre>
+Here we've selected the DailySchedule class and set two times of day to schan for new files: 8:00 and 15:00. The times are in the local server time zone and based on 24 hour notation. The only thing left to do is send the data to our custom processor above:
+<pre class="brush:xml">&lt;processor type="CustomProcessor, CustomProcessor" /&gt;</pre>
+<h2>Running Your Monitor</h2>
+We have a custom processor and a fresh config. Now we need to run it. There are two ways to make use of your monitors in Siphon:
+<ol>
+	<li><strong>SiphonService</strong>: Windows Service that loads monitors from app.config at startup and runs the monitors based on their schedules.</li>
+	<li><strong>SiphonConsole</strong>: Command line utility that loads monitors from app.config and runs the monitors manually.</li>
+	<li><strong>Both</strong>: Use the command line utility to run a monitor immediately that is hosted on a local/remote SiphonService.</li>
+</ol>
+If you want to run your monitor automatically, simply add it to SiphonService.exe.config whever SiphonService is installed and restart the service. If you want to run your monitor manually fomr the command line, add it to SiphonConsole.exe.config.
+
+The run a monitor, or all monitors from the command line, simple do:
+<pre class="brush:xml">C:\Siphon&gt;SiphonConsole.exe CsvMonitor
+C:\Siphon&gt;SiphonConsole.exe *</pre>
+To run a monitor hosted by SiphonService, simply supply the location of the service, then the monitor name:
+<pre class="brush:xml">C:\Siphon&gt;SiphonConsole.exe http://localhost/ServiceAdminPath CsvMonitor
+C:\Siphon&gt;SiphonConsole.exe http://myotherserver/ServiceAdminPath *</pre>
+If you want to run monitors on hosted under SiphonService, you must enable the remote administration in the config:
+<pre class="brush:xml">&lt;siphon enableRemoteAdministration="True"&gt;</pre>
+We'll cover how to control the administration url/port from config as wel as using endpoint configurations instead of the http url i the console in a future post. Happy monitoring!

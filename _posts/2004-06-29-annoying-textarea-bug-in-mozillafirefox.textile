@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Annoying Textarea Bug In Mozilla/Firefox"
+category: WWW
+published:
+  epoch: 1088560660
+  utc: 2004-06-30T01:57:40
+---
+
+Apparently the Gecko rendering endinge isn't to happy with the <code>white-space</code> CSS rules applied to <code>textarea</code> elements. It's pretty much ignored if you specify <code>rows</code> or <code>cols</code>, or specify any CSS <code>width</code>. The text absolutely won't honor the preformatted text and wraps wherever it wants.
+
+Of course, there's one way to make it work: use the <code>wrap="off"</code> attribute. Of course this doesn't validate in XHTML 1.0/1.1 Strict. I'll live with that guilt for now. :-)
+
+

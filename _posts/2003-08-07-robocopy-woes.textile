@@ -1,0 +1,18 @@
+---
+layout: post
+title: "Robocopy Woes"
+category: MicroShaft
+published:
+  epoch: 1060262108
+  utc: 2003-08-07T13:15:08
+---
+
+<p>
+While I'm in a Microsoft bashing mood, why is Robocopy/Scopy so damn slow?
+On Unix, I can rsync 4Gb of data across two servers in ~3 minutes. On Windows, that task takes forever, even using robocopy and the command line. :-(
+</p>
+<p>
+Time to try <a href="http://www.cis.upenn.edu/~bcpierce/unison/">Unison</a> again.
+</p>
+
+

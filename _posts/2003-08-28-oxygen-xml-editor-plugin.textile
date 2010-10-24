@@ -1,0 +1,20 @@
+---
+layout: post
+title: "oXygen XML Editor Plugin"
+category: WWW
+published:
+  epoch: 1062111835
+  utc: 2003-08-28T23:03:55
+---
+
+<p>
+Since I'm thinking about <a href="/blog/archives/entries/000312/">converting parts of this site to use DocBook</a>, it would be nice to have a decent XML editor for Eclipse.  The Inprise XSLT plugin is OK, but it crashes at lot editing files on server shares for some reason, Maybe that's an Eclipse or Java problem.
+</p>
+<p>
+Either way, I stumbled across the <a href="http://www.oxygenxml.com/">oXygen XML Editor</a> that comes in both standalone and Eclipse plugin versions. IT even comes with DocBook support which si real handy when you're just learning the Docook schema and the plugin does content asist and tag completion based on any DTD.
+</p>
+<p>
+There are also two other qualitiedsI really like in software. First, the price is reasonable. At $79 for the professional version I won't think twice about paying for it. And second, the license allows for me to use it anywhere I'm sitting. That means I can use it at home and at work. I wish MickeyShaft would learn that feature.
+</p>
+
+

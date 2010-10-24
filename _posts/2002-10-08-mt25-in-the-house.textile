@@ -1,0 +1,25 @@
+---
+layout: post
+title: "MT 2.5 In The House"
+category: OffTopic
+published:
+  epoch: 1034129038
+  utc: 2002-10-09T02:03:58
+---
+
+<p>
+<a href="http://www.movabletype.org/25/">MoveableType 2.5</a> has hit the streets! Check out the <a href="http://www.movabletype.org/25/#about25">What's New</a> and <a href="http://www.movabletype.org/docs/mtchanges.html">Changelog</a> pages for more info. Remember boys and girls, <strong>ALWAYS</strong> backup your data before attempting a software upgrade! By the grace of <a title="*  If anything can go wrong, it will" href="http://www.murphys-laws.com/murphy/murphy-laws.html" >St. Murphy</a>, both the development server and the live server upgrades were quick and painless. <acronym title="Read The Fucking Manual">RTFM</acronym>!
+</p>
+<p>
+Congrats to Ben Trott and Mena Trott on another release, and for the love of Pete, please <a href="http://www.movabletype.org/donate.shtml" title="Donat to Movable Type">donate</a>!
+</p>
+<h4>I spoke to soon. :-)</h4>
+<p>
+When my blog does ping to moveabletype.org, my title displays the encoded apostrophe instead of just the apostrophe. My bet is a plain old fashioned case of Pilot Error(TM).
+</p>
+<h4>Update</h4>
+<p>
+Wow. Ben is one fast cookie. Email reply and problem fixed in less than 30 minutes. Sweet. We're still not ruling out Pilot Error(TM) though.  :-)
+</p>
+
+

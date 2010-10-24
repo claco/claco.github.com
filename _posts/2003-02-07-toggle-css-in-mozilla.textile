@@ -1,0 +1,77 @@
+---
+layout: post
+title: "Toggle CSS In Mozilla"
+category: OffTopic
+published:
+  epoch: 1044633844
+  utc: 2003-02-07T16:04:04
+---
+
+<ins>
+<h4>Updated!</h4>
+<p>
+I've tweaked the code below to also toggle the <code>&lt;style&gt;</code> tags .
+</p>
+<p>
+<strong>Warning: the XSLT processor I use to serve this site currently mistakenly escapes the pipe and double-pipe (logical or) operator in the javascript code. Make sure to change these back before you try using the code below. Hopefully I can get the XSLT stuff upgraded this weekend.</strong>
+</p>
+</ins>
+<p>
+So I went to a <a href="http://www.meyerweb.com/eric/thoughts/2003a.html#t20030203">CSS presentation</a> given by <a href="http://www.meyerweb.com/">Eric Meyer</a>
+last night ad Tri-C West. Great presentation Eric! One thing he did a lot was switch between styled and unstyled pages, but he did this
+in IE because IE has a preference for enabling/disabling stylesheets. Mozilla/Netscape doesn't appear to have one. :-(
+</p>
+<p>
+So, after some tinkering, with the help of the <a href="http://www.xulplanet.com/downloads/prefbar/">Preferences Toolbar</a>, you can now have a "Toggle CSS" button.
+</p>
+
+<ol>
+<li>Once you've <a href="http://www.xulplanet.com/downloads/prefbar/">installed the PrefBar</a>, click the "Customize" button on the right side of the PrefBar.</li>
+<li>Click the "New Item" button.</li>
+<li>In the New Item dialog box, under the Item Type dropdown menu, select "Button"</li>
+<li>In the Id text box, type "toggleCSS"</li>
+<li>In the Label text box, type "Toggle CSS"</li>
+<li>In the onclick text box, enter the following javascript:
+<textarea rows="5" cols="40">
+var links = window.content.document.getElementsByTagName("link");var styles = window.content.document.getElementsByTagName("style");var regex_rel = /^stylesheet/i;var regex_media	= /^(all|screen)/i;for (var l=0;l&lt;links.length;l++) {var link = links[l];if (regex_rel.test(link.rel) &amp;&amp; (regex_media.test(link.media) || !link.media)) {link.disabled=!link.disabled;};};for (var s=0;s&lt;styles.length;s++) {var style = styles[s];style.disabled=!style.disabled;};
+</textarea>
+
+</li>
+<li>Hit "OK" to close all remaind dialog boxes.</li>
+</ol>
+
+<p>
+Whala! You should now be able to toggle on/off the stylesheets in the link tags of each site.
+</p>
+
+<p>
+A couple items to note. The code will only toggle link tags with rel="Stylsheet" and media="screen", media="all", or no media specified.
+I use Mozilla, so I've not tried the PrefBar in Netscape, but it should work. (Famous Last Words).
+</p>
+
+<p>
+Here is the tabulated code for the curious:
+</p>
+<p>
+<textarea rows="15" cols="60">
+var links = window.content.document.getElementsByTagName("link");
+var styles = window.content.document.getElementsByTagName("style");
+var regex_rel = /^stylesheet/i;
+var regex_media	= /^(all|screen)/i;
+
+for (var l=0;l&lt;links.length;l++) {
+	var link = links[l];
+	if (regex_rel.test(link.rel) &amp;&amp; (regex_media.test(link.media) || !link.media)) {
+		alert(link.media);
+		link.disabled=!link.disabled;
+	};
+};
+
+for (var s=0;s&lt;styles.length;s++) {
+	var style = styles[s];
+	style.disabled=!style.disabled;
+};</textarea>
+</p>
+
+
+

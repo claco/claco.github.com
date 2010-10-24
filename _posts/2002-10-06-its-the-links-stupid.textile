@@ -1,0 +1,20 @@
+---
+layout: post
+title: "It's the Links Stupid!"
+category: OffTopic
+published:
+  epoch: 1033952740
+  utc: 2002-10-07T01:05:40
+---
+
+<p>
+From <a href="http://www.usatoday.com/usatonline/20021003/4503669s.htm"><cite>USA Today</cite></a> :
+</p>
+<p>
+No, it's not the story that I find interesting. Well, I <em>do</em> find the story interesting, but it's what I always don't find at the end of these stories on news sites: No friggin links related to the topic of the story. Bastards.
+</p>
+<p>
+So I read an article an article about some homeless guys blog. Wouldn't it be nice to read it? Sure, if I could find it from reading the story. Of course, the marvels of <a href="http://www.google.com/search?q=Homeless+Guy+Weblog" title="Google search for the homeless blogger"><cite>Google</cite></a> will get me there quickly, but for the love of god, it's the internet. It's all about the links. So <a href="http://thehomelessguy.blogspot.com/" title="The homeless guy's blog">here ya go</a>, this one's on me. :-/
+</p>
+
+

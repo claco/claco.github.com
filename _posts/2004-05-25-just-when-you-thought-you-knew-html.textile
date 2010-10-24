@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Just When You Thought You Knew HTML"
+category: WWW
+published:
+  epoch: 1085517277
+  utc: 2004-05-25T20:34:37
+---
+
+<p>
+Ya learn something new every day. Although I didn't think so, and it plays hell with some HTML WYSIWYGs and link checkers, the following is a valid <code>src</code> and also works with <code>href</code>:
+</p>
+<pre><samp>
+&lt;img src="//www.example.com/logo.gif" /&gt;
+</samp></pre>
+
+<p>
+When on a non-https site, it loads the image from <code>http://www.example.com/logo.gif</code>. On an https secure site, it loads the image from <code>https://www.example.com/logo.gif</code>. Essentially, <code>//</code> means use the scheme part of the URI that is currently in use.
+</p>
+
+

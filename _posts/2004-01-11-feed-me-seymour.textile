@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Feed Me Seymour"
+category: OffTopic
+published:
+  epoch: 1073859263
+  utc: 2004-01-11T22:14:23
+---
+
+<p>
+Well that's enough tinkering for one day. The feeds with icons are back on the top of the page. MovableType has been upgraded to 2.65. Sean Willson's <a href="http://www.seanwillson.com/archives/2003/04/27/000501/">rebuild mod</a> has been reapplied. Comments formatting has been tweaked. Time to grub out and watch some tv.
+</p>
+
+

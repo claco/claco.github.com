@@ -1,0 +1,39 @@
+---
+layout: post
+title: "The Web Development Commandments"
+category: Software
+published:
+  epoch: 1077645560
+  utc: 2004-02-24T17:59:20
+---
+
+<p>
+OK, I think it's complete enough to get the point across. Now here's to making my supervisors life more complicated because of it. :-)
+</p>
+<ol>
+
+<li>Thou shalt not deploy/change/alter any queries without running a query plan upon them and removing all table scans and adding indexes.</li>
+
+<li>Thou shalt not deploy web pages that do not validate - aka "crap HTML".</li>
+
+<li>Thou shalt not deploy uncommented, hackish, un-Dimmed, retarded-logic ASP code.</li>
+
+<li>Thou shalt not use raw SQL queries in ASP when Stored Procs make more sense.</li>
+
+<li>Thou shalt not use raw querystring name/value pair names when thou should be using declared constants or Application variables.</li>
+
+<li>Thou shalt not use string comparisons in logic statements when constants should be created instead.</li>
+
+<li>Thou shalt not create browser specific code without also coding for its alternative situations.</li>
+
+<li>Thou shalt always use fixed width font, tabs converted to space, and a tab length of 4.</li>
+
+<li>Thou shalt not honor false quantity over quality. Compromise on functionality, not quality.</li>
+
+<li>Thou shalt not waver in thine coding integrity. No person, project or priority is more important than your integrity.</li>
+
+
+
+</ol>
+
+

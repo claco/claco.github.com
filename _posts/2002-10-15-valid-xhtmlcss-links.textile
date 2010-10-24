@@ -1,0 +1,74 @@
+---
+layout: post
+title: "Valid XHTML/CSS Links"
+category: WWW
+published:
+  epoch: 1034655283
+  utc: 2002-10-15T04:14:43
+---
+
+<p>
+Apparently the Valid <acronym title="eXtensible HyperText Markup Language">XHTML</acronym>/<acronym title="Cascading Style Sheets">CSS</acronym> buttons and links on this site are broken. I only noticed when checking out the site from behind a proxy. But here's the strange part. I works from behind the <a href="http://www.squid-cache.org/" title="Squid proxy home page">Squid proxy</a> I'm running here internally, but chokes when behind an MicroShaft Proxy 2.0 server elsewhere. Maybe it heard it's ears burning. :-)
+</p>
+<p>
+Anyway, it looks like a problem with the AxKit stuff, and I've found a patch. I'm not sure I should be patching software at this hour though. :-P
+</p>
+<p>
+For other seekers of the problem:
+</p>
+<p>
+<textarea rows="15" cols="45">
+-------------------------------------------------------------------
+Subject: WebUtils taglib
+From: xxx@xxxxxxxxx.xxx (Mark A. Hershberger)
+Date: Fri, 04 Oct 2002 10:35:46 -0500
+
+Is there a reason that the WebUtils taglib looks at the "VIA:"
+header rather than $r->hostname first?  When the request is
+coming from a proxy, it yields incorrect results.
+
+This patch fixes the problem (this against 1.3_90 instead of 1.4):
+
+-- WebUtils.pm 8 Jun 2001 15:50:39 -0000       1.1.1.1
++++ WebUtils.pm 4 Oct 2002 15:29:12 -0000
+@@ -60,9 +65,7 @@
+ }
+ 
+ sub request_host () {
+-    my $hostname = Apache->header_in('Via');
+-    $hostname =~ s/^[0-9.]+ //g;
+-    $hostname =~ s/ .*//g;
++    my $hostname = Apache->request->hostname;
+     $hostname ||= $ENV{HTTP_HOST};
+     $hostname ||= Apache->header_in('Host');
+     return $hostname;
+
+Mark.
+
+
+-- 
+Find inner peace and ten thousand around you shall be saved.
+		     -- St. Seraphim of Sarov
+-------------------------------------------------------------------
+</textarea>
+</p>
+
+<p>
+Looks like it works here because I'm zapping/anonmizing proxy headers via the following line in squid.conf:
+</p>
+<pre>
+<code>
+anonymize_headers deny Referer Via X-Forwarded-For
+</code>
+</pre>
+
+<p>
+Well, that would explain it!
+</p>
+<h4>Updated</h4>
+<p>
+All fixed - in theory. At least no crashy crash on pagey load.
+Looks like the patch fixes the problem.
+</p>
+
+

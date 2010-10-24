@@ -1,0 +1,15 @@
+---
+layout: post
+title: "Fuck Yeah! 18750 3DMark Score"
+category: Hardware
+published:
+  epoch: 1055551659
+  utc: 2003-06-14T00:47:39
+---
+
+<p>
+Now <a href="http://service.futuremark.com/compare?2k1=6625788">this</a> is what I'm talkin about. :-) Bring on some Half-Life<sup>2</sup> and Jedi Knight III baby.
+At least the new game rig is living up to it's desired potential. :-)
+</p>
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "We Are Blog"
+category: Humor
+published:
+  epoch: 1035252687
+  utc: 2002-10-22T02:11:27
+---
+
+<p>
+A little <a href="http://www.reflectivesurface.com/weblog/archives/000124.php" title="Start Trek Reference">Web to <cite>Star Trek</cite></a> humor. That is all.
+</p>
+
+

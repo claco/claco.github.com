@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Microsoft Suing Kent State Student"
+category: MicroShaft
+published:
+  epoch: 1110288700
+  utc: 2005-03-08T13:31:40
+---
+
+I heard this on the local readio this morning. Apparently Microsoft is suing a Kent State student for buying the "student discounted" software and reselling it on Ebay.
+
+Now, if he did this with hundreds of copies (I'm pretty sure he can only get one), that's one thing. However, if he did this with one copy, this is bullshit. I don't care what and damn EULA says. The doctrine of first sale applies. It's his copy. He bought it. He can resell it.
+
+Hell, if I get an OEM version with a new harddrive, can I sell it on Ebay, along with that hard drive? You bet your ass I can.
+
+Here's where the monoply tax kicks in. Even if this guy was 100% within his rights and everyone knew that, he'll still lose. Microsoft can afford 4 layers. He as an average person cannot.
+
+<strong>Update:</strong> Here's the <a href="http://www.ohio.com/mld/ohio/news/11079238.htm">story</a> at Ohio.com.  Free registration is required. BugMeNot is your friend.
+
+

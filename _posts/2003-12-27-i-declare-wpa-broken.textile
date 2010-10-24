@@ -1,0 +1,38 @@
+---
+layout: post
+title: "I Declare WPA Broken"
+category: Hardware
+published:
+  epoch: 1072569827
+  utc: 2003-12-28T00:03:47
+---
+
+<p>
+After my <a href="/blog/archives/entries/000406/">Wireless saga</a> I decided to snag a Linksys WAP54G for X-mas.
+</p>
+<p class="image">
+<img src="/blog/images/hardware/wap54g.jpg" alt="Linksys WAP54G" />
+</p>
+<p>
+After a setting up the access point and repointing part of the computers to use it, I started getting the following errors in the event logs about 5 minutes after the machines boots. once the error hits, no IP traffic goes through.
+</p>
+<p>
+<cite>
+Your computer was not able to renew its address from the network (from the DHCP Server) for the Network Card with network address 000D3A22383D. The following error occurred:
+The semaphore timeout period has expired. . Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.
+</cite>
+</p>
+<p>
+After a Disable and re Enable of the wireless card, everything works fine. Go figure. After searching the newsgroups and Broadband Reports, I've come to the conclusion that Windows XP, Zero Wireless Config, WPA (or WEP w/801.2x auth) and SHCP are simply and completely broken. 
+</p>
+<p>
+My MN-700 router also failed DHCP unser WPA. If almost all XP users have the 801.2x box checked inder WEP, that too failes with DHCP/connection strangeness. 
+</p>
+<p>
+Sure enough, if I set the WAP54G back to use WEP 128 and make sure the 801.2x auth box is unchecked, everything moves along with now problems.
+</p>
+<p>
+Sure, I have not the time to come up with something scientific, but do a Google search for wireless, 801.2x, dropped connections, XP, and you'll see what I mean. Here's hoping that this crap gets fixed in XPSP2.
+</p>
+
+

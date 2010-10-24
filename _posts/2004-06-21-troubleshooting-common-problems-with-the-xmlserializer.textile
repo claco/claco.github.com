@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Troubleshooting Common Problems with the XmlSerializer"
+category: MicroShaft
+published:
+  epoch: 1087865083
+  utc: 2004-06-22T00:44:43
+---
+
+There's a n <a href="http://msdn.microsoft.com/XML/BuildingXML/XMLinNETFramework/default.aspx?pull=/library/en-us/dnxmlnet/html/trblshtxsd.asp">new article</a> on MSDN about troubleshooting common XMLSerializer problems.
+
+There's one thing with the StreamWriter/XMLSerializer/XMLTextWriter that really aggrivates me. I've torn my hair out the first time trying to figure out the problem only to be mystified at why the problem even exists.
+
+At one point, every XML saved in UTF-8 unicode had three extra bytes (0xEFBBBF) at the beginning before <code>&lt;?xml version="1.0"&gt;</code> started. This freaked ASP out, as well as certain versions of the Expat parser and many editors.
+
+Once I remembered that it was the BOM (Byte Order Marker), I set about to find out how to turn it off. At first glance, there is no property anywhere to simply turn it off.
+
+During the creation, you can pass in an encoding. There are two <em>extremely similiar</em> options that yield two completely different results.
+
+The first is <code>System.Text.Encoding.UTF8</code>. With this option, the BOM is always written. There is no obvious way to turn it off.
+
+<pre><code>wr = New XmlTextWriter("file.xml", New System.Text.Encoding.UTF8)</code></pre>
+
+The second option is <code>System.Text.UTF8Encoding</code> which doesn't write the BOM.
+
+<pre><code>wr = New XmlTextWriter("file.xml", New System.Text.UTF8Encoding())</code></pre>
+
+Christ, those are really different aren't they. :-/
+THat namespace/class nameing could have been just a little better.
+
+

@@ -1,0 +1,19 @@
+---
+layout: post
+title: "RSS In The House"
+category: WWW
+published:
+  epoch: 1041900396
+  utc: 2003-01-07T00:46:36
+---
+
+<p>
+Believe it not, someone asked, so here they are. Link can always be found to the side.
+</p>
+<ul>
+<li><a href="/blog/rss.xml" title="Subscribe to RSS 0.91 Feed">RSS 0.91 XML Feed</a></li>
+<li><a href="/blog/rdf.xml" title="Subscribe to RSS 1.0 Feed">RSS 1.0 RDF Feed</a></li>
+</ul>
+
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "The Man Who Knew Too Little"
+category: Movies
+published:
+  epoch: 1065367880
+  utc: 2003-10-05T15:31:20
+---
+
+<p>
+I love <a href="http://us.imdb.com/title/tt0120483/">this</a> movie. Classic Bill Murray.
+</p>
+
+

@@ -1,0 +1,14 @@
+---
+layout: post
+title: "My First Published Article"
+category: Perl
+published:
+  epoch: 1132334972
+  utc: 2005-11-18T17:29:32
+---
+
+After some encouragement from online folk and with the support of the Catalyst community, I managed to write an article about the software I've been working on and it got <a href="http://www.perl.com/pub/a/2005/11/17/handel.html">published on O'Reillys Perl.com</a>!
+
+Hopefully I'll get to do a few more of those.
+
+

@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Day Two With St. Murphy"
+category: Hardware
+published:
+  epoch: 1054179019
+  utc: 2003-05-29T03:30:19
+---
+
+<p>
+Yesterday <a href="/blog/archives/entries/000199/">wasn't such a great day hardware/server wise</a>. Today, St. Murphy turned around, reminded me I'm not a DBA, and then gave me the finger.
+</p>
+
+<p>
+Day 2. The server still chucks up sector errors during disk load while importing a text file. This is after completely destroying and recreating that drive volume at the BIOS and OS levels. On a whim, another searched IBMs website wasn't found the following article: <a href="http://www-1.ibm.com/support/docview.wss?uid=psg1MIGR-50419"><strong>ServeRAID - RAID-5 potential for data loss with ServeRAID under stress</strong></a>. Great! That sounds like our problem. Update the firmware. Update the drivers. The errors persist. Damn.
+</p>
+<p>
+So, off we go, calling both Microsoft <em>and</em> IBM. Neither had any useful information or suggestions. Keep in mind, at this point, no one at Microsoft asked very few questions about the hardware or disk setup, nor did they suggest running <kbd>chkdsk</kbd> using the <kbd>/R</kbd> option to check for bad sectors.
+</p>
+
+<p>
+After some thinking, and grasping for straws, we tried an experiment (one of many). Boot into the BIOS and turn off Hypertheading for the two XEON procs. Reboot with 2 CPUs instead of 4. Put server under load. Run the import job. Whola! No more disk errors. Then someone pointed out; if the CPUs are bottlenecked, the disks never get a chance to be bottlenecked. No shit! Obvious, but simple.
+</p>
+<p>
+So, with that in mind, we enabled Hyperthreading again, added a new 15,000RPM Ultra320 disk, and moved the tempdb to another disk. Put load on server. Run import job. Errors are still gone!
+</p>
+
+<p>
+So, it appears that our problem is with the disk configuration we chose for this server. For that matter, we have 2 other servers that never displayed this problem (with more restrictive disk configurations than this new one), reinforcing that theory that their older (only 2 instead of 4) CPUs never became less of a bottleneck to raise and disk I/O problems. Like I said, I'm not a DBA, just a programming/server jockey. Live and learn. I guarantee that we'll never make that mistake again.
+</p>
+
+<p>
+The only thing that disturbs me is no matter what type of disk I/O load we have, no decept controller/driver/sql should ever spit out sector errors and corrupt the database.
+</p>
+
+

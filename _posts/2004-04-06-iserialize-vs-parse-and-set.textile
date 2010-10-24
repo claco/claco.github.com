@@ -1,0 +1,21 @@
+---
+layout: post
+title: "ISerialize vs. Parse And Set"
+category: Software
+published:
+  epoch: 1081269216
+  utc: 2004-04-06T16:33:36
+---
+
+<p>
+I have an opinion question for anyone who actually reads this blog.
+I need to take an incoming data stream and turn it into a set of objects. At the basic level, this is just a form of serialization. 
+</p>
+<p>
+The incoming text is currently just ASCII over the network and I was entertaining the through of using a StreamReader/StreamWriter to abstract that point. Once I get the text, I currently just parse it and load those properties into a newly created object. This seems like a hack at the conceptual level.
+</p>
+<p>
+Is there a more appropriate way to do this, like create a custom serializer to transform the text into objects, or am I just spinning my wheels?
+</p>
+
+

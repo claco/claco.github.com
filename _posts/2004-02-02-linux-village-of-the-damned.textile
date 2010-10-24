@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Linux: Village Of The Damned"
+category: OffTopic
+published:
+  epoch: 1075767876
+  utc: 2004-02-03T00:24:36
+---
+
+<p>
+Anyone else think of the children in John Carpenters <a href="http://www.imdb.com/title/tt0114852/">Village of the Damned</a> when they see albino boy in those IBM Linux commercials?
+</p>
+
+
