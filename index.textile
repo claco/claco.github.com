@@ -9,7 +9,11 @@ Conversion in process. Please stand by.
 
 <div class="posts">
   {% for post in site.posts %}
-  <div class="post">{{ post.published.utc}} - <a href="{{ post.url}}">{{ post.title }}</a></div>
+  <div class="post">
+    <span class="published" data-epoch="{{ post.published.epoch }}" data-format="MM/dd/yyyy">
+      {{ post.published.utc }}
+    </span> -
+    <a class="permalink" href="{{ post.url}}">{{ post.title }}</a>
+  </div>
   {% endfor %}
-</div>
 

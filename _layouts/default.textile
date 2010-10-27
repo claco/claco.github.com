@@ -1,5 +1,7 @@
 {% include header.textile %}
 
+h1. Default Template
+
 {{ content }}
 
 {% include footer.textile %}

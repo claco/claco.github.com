@@ -1,10 +1,20 @@
 {% include header.textile %}
 
-{% if user %}
-  Tags: {{ page.tags | array_to_sentence_string }} <br />
-{% endif %}
-Created: {{ page.published.utc }}
+h2. {{ page.title }}
 
-{{ content }}
+<div class="post">
+
+h2. {{ page.title }}
+
+  <div class="published" data-epoch="{{ page.published.epoch }}">{{ page.published.utc }}</div>
+
+  {% if page.tags != empty %}
+  <div class="tags">{{ page.tags | array_to_sentence_string }}</div>
+  {% endif %}
+
+  <div class="body">
+    {{ content }}
+  </div>
+</div>
 
 {% include footer.textile %}
