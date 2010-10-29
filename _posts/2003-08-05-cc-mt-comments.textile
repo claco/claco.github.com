@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CC: MT Comments"
+slug: cc-mt-comments
 category: WWW
 published:
   epoch: 1060136557

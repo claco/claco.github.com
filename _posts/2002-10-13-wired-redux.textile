@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wired Redux"
+slug: wired-redux
 category: WWW
 published:
   epoch: 1034487514

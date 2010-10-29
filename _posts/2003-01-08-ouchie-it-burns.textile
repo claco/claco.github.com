@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ouchie. It Burns!"
+slug: ouchie-it-burns
 category: Humor
 published:
   epoch: 1042069741

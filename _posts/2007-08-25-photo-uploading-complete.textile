@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Photo Uploading: Complete"
+slug: photo-uploading-complete
 category: OffTopic
 published:
   epoch: 1188089574

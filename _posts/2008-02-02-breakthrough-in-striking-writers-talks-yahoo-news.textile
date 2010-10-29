@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Breakthrough in striking writers talks - Yahoo! News"
+slug: breakthrough-in-striking-writers-talks-yahoo-news
 category: TV
 tags:
   - strike

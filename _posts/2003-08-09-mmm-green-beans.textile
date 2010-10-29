@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mmm. Green Beans"
+slug: mmm-green-beans
 category: OffTopic
 published:
   epoch: 1060441392

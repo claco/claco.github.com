@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Be Afraid"
+slug: be-afraid
 category: Perl
 published:
   epoch: 1092853690

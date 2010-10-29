@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "In love with w.bloggar"
+slug: in-love-with-wbloggar
 category: WWW
 published:
   epoch: 1041550960

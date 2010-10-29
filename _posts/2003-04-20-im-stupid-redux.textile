@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm Stupid Redux"
+slug: im-stupid-redux
 category: WTF
 published:
   epoch: 1050822039

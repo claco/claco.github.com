@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Best Buy Comments Are Fun"
+slug: best-buy-comments-are-fun
 category: Humor
 published:
   epoch: 1047424009

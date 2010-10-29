@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "C# By Hand"
+slug: c#-by-hand
 category: Software
 published:
   epoch: 1080263314

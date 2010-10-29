@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Proprietary Hardware Sucks Ass"
+slug: proprietary-hardware-sucks-ass
 category: Hardware
 published:
   epoch: 1042602929

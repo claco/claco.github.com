@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sager NP5660: The First Casualty"
+slug: sager-np5660-the-first-casualty
 category: Hardware
 published:
   epoch: 1045410980

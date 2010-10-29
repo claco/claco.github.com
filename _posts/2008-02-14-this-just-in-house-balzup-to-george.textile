@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "This Just In: House BalzUp to George"
+slug: this-just-in-house-balzup-to-george
 category: Politics
 tags:
   - contempt

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Senate Filibusters Showdown"
+slug: senate-filibusters-showdown
 category: WTF
 published:
   epoch: 1116893069

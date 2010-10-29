@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What's With The Cows?"
+slug: whats-with-the-cows
 category: Humor
 published:
   epoch: 1034378045

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MT 3.0 PE On Tap"
+slug: mt-30-pe-on-tap
 category: Software
 published:
   epoch: 1086200920

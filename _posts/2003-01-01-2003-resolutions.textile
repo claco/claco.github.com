@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "2003 Resolutions"
+slug: 2003-resolutions
 category: Humor
 published:
   epoch: 1041403604

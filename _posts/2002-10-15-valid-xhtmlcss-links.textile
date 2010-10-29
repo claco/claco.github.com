@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Valid XHTML/CSS Links"
+slug: valid-xhtmlcss-links
 category: WWW
 published:
   epoch: 1034655283

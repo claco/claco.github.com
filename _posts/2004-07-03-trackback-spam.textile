@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Trackback Spam"
+slug: trackback-spam
 category: WTF
 published:
   epoch: 1088859445

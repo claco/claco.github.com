@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Howard Dean Scream"
+slug: howard-dean-scream
 category: Humor
 published:
   epoch: 1074823768

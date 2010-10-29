@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Do Lite-On DVD-ROM Drives Suck?"
+slug: do-lite-on-dvd-rom-drives-suck
 category: Hardware
 published:
   epoch: 1095299274

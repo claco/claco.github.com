@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wired Redesign Interview"
+slug: wired-redesign-interview
 category: WWW
 published:
   epoch: 1034439939

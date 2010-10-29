@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Geek Porn"
+slug: geek-porn
 category: Hardware
 published:
   epoch: 1034036015
@@ -14,7 +15,7 @@ If there were such a thing as 'geek' porn, <a href="http://www.powernotebooks.co
 About 2 months ago, my Compaq Presario 18XL380 kicked the bucket. Apparently, the power jack felt the need to liberate itself from the motherboard. At the time, this turned out to be a blessing in disguise: Until Today.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/np5660.jpg" width="247" height="227" alt="Sager NP5660 Picture" /><br />2.8GHz P4, 1GB Ram, ATI Mobility Radeon 9000. Wow.
+	<img src="/images/hardware/np5660.jpg" width="247" height="227" alt="Sager NP5660 Picture" /><br />2.8GHz P4, 1GB Ram, ATI Mobility Radeon 9000. Wow.
 </p>
 
 <h4>Update</h4>
@@ -40,7 +41,7 @@ Still not convinced?
 </p>
 
 <p class="image">
-	<img src="/blog/images/hardware/server_rack.jpg" width="321" height="612" alt="Server Rack Photo" />
+	<img src="/images/hardware/server_rack.jpg" width="321" height="612" alt="Server Rack Photo" />
 </p>
 <p>
 Now here is where the reasoning starts to fall apart after a truely sad chain of geek events.

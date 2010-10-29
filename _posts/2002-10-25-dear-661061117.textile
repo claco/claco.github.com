@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dear 66.106.1.117:"
+slug: dear-661061117
 category: WTF
 published:
   epoch: 1035587078

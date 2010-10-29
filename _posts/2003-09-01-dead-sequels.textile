@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dead Sequels"
+slug: dead-sequels
 category: Movies
 published:
   epoch: 1062474211

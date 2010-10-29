@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Router Flu"
+slug: the-router-flu
 category: Hardware
 published:
   epoch: 1035324859

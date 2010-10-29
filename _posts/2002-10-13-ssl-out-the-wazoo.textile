@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SSL Out The Wazoo"
+slug: ssl-out-the-wazoo
 category: Security
 published:
   epoch: 1034556309

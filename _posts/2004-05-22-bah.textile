@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bah!"
+slug: bah
 category: WTF
 published:
   epoch: 1085206369

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Canon PowerShot A80"
+slug: new-canon-powershot-a80
 category: OffTopic
 published:
   epoch: 1090341662
@@ -18,6 +19,6 @@ Ok, I pulled the trigger on this problem and placed an order on Amazon for:
 I wanted to go for the wide angle lens as well, but hey, I'll manage.
 With the price I saved at Amazon vs. retail, I opted for Next Day shipping as well. What the hell.
 
-<p class="image"><img src="/blog/images/hardware/a80.jpg" alt="Canon PowerShot A80" /></p>
+<p class="image"><img src="/images/hardware/a80.jpg" alt="Canon PowerShot A80" /></p>
 
 

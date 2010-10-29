@@ -96,7 +96,7 @@ using JetBrains.UI.Application.PluginSupport;
 [assembly: PluginVendor("Christopher H. Laco")]</pre>
 This information will be displayed in the ReSharper -&gt; Plugins dialag:
 
-<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-1.png"><img class="aligncenter size-medium wp-image-216" title="ReSharper Plugin Manager" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-1-300x176.png" alt="ReSharper Plugin Manager" width="300" height="176" /></a></li>
+<a href="/images/uploads/2009/04/picture-1.png"><img class="aligncenter size-medium wp-image-216" title="ReSharper Plugin Manager" src="/images/uploads/2009/04/picture-1-300x176.png" alt="ReSharper Plugin Manager" width="300" height="176" /></a></li>
 	<li>To install plugin, simply copy the compiled dll into one of the follow directories:
 <pre class="brush::csharp">C:\Documents and Settings\username\Application Data\JetBrains\ReSharper\v4.5\vs9.0\Plugins
 C:\Program Files\JetBrains\ReSharper\v4.5\Bin\Plugins</pre>
@@ -104,7 +104,7 @@ C:\Program Files\JetBrains\ReSharper\v4.5\Bin\Plugins</pre>
 </ol>
 <h2>Using the Macro</h2>
 <ol>
-	<li>Select the macro from the list of available macros:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-2.png"><img class="aligncenter size-medium wp-image-217" title="Choose Macro" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-2-279x300.png" alt="Choose Macro" width="279" height="300" /></a></li>
-	<li>Click on the macro variables to set them:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-3.png"><img class="aligncenter size-medium wp-image-218" title="Set Macro Variables" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-3-300x235.png" alt="Set Macro Variables" width="300" height="235" /></a></li>
-	<li>Finish up the template text and savr your changes:<a href="http://chrislaco.com/wp-content/uploads/2009/04/picture-4.png"><img class="aligncenter size-medium wp-image-219" title="Apply Macro to Template" src="http://chrislaco.com/wp-content/uploads/2009/04/picture-4-300x125.png" alt="Apply Macro to Template" width="300" height="125" /></a></li>
+	<li>Select the macro from the list of available macros:<a href="/images/uploads/2009/04/picture-2.png"><img class="aligncenter size-medium wp-image-217" title="Choose Macro" src="/images/uploads/2009/04/picture-2-279x300.png" alt="Choose Macro" width="279" height="300" /></a></li>
+	<li>Click on the macro variables to set them:<a href="/images/uploads/2009/04/picture-3.png"><img class="aligncenter size-medium wp-image-218" title="Set Macro Variables" src="/images/uploads/2009/04/picture-3-300x235.png" alt="Set Macro Variables" width="300" height="235" /></a></li>
+	<li>Finish up the template text and savr your changes:<a href="/images/uploads/2009/04/picture-4.png"><img class="aligncenter size-medium wp-image-219" title="Apply Macro to Template" src="/images/uploads/2009/04/picture-4-300x125.png" alt="Apply Macro to Template" width="300" height="125" /></a></li>
 </ol>

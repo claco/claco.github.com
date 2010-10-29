@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Home Office: Tornado Alley"
+slug: the-home-office-tornado-alley
 category: OffTopic
 published:
   epoch: 1188783729

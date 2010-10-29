@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MCI Billing On Crack"
+slug: mci-billing-on-crack
 category: WTF
 published:
   epoch: 1063331290

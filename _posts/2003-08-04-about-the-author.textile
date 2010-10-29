@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "About The Author"
+slug: about-the-author
 category: Static
 published:
   epoch: 1059971516

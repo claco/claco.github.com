@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Tunes. New Attitude?"
+slug: new-tunes-new-attitude
 category: Music
 published:
   epoch: 1070665514

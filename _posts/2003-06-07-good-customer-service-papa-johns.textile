@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Good Customer Service: Papa Johns"
+slug: good-customer-service-papa-johns
 category: OffTopic
 published:
   epoch: 1055039618

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SCO Python"
+slug: sco-python
 category: Humor
 published:
   epoch: 1063067595

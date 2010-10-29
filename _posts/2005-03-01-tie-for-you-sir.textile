@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tie For You Sir"
+slug: tie-for-you-sir
 category: Perl
 published:
   epoch: 1109708085

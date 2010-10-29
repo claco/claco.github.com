@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "$happy-&gt;new( year =&gt; 2003 );"
+slug: happy-new-year-2003
 category: OffTopic
 published:
   epoch: 1041401663

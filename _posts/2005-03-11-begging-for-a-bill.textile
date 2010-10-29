@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Begging For A Bill"
+slug: begging-for-a-bill
 category: Humor
 published:
   epoch: 1110570825

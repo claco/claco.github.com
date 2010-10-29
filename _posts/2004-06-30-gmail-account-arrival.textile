@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gmail Account Arrival"
+slug: gmail-account-arrival
 category: WWW
 published:
   epoch: 1088607042

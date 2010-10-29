@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "KBLog/Klog Revisited"
+slug: kblogklog-revisited
 category: OffTopic
 published:
   epoch: 1056592022

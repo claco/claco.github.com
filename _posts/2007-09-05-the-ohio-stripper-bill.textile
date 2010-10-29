@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Ohio \"Stripper Bill\""
+slug: the-ohio-stripper-bill
 category: WTF
 published:
   epoch: 1189005659

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Nice Day Of Test::More"
+slug: a-nice-day-of-testmore
 category: Perl
 published:
   epoch: 1074990393

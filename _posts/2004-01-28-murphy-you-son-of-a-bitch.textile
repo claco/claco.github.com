@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Murphy You Son Of A Bitch"
+slug: murphy-you-son-of-a-bitch
 category: WTF
 published:
   epoch: 1075351575

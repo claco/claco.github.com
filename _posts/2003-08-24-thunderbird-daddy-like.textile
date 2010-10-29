@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thunderbird: Daddy Like"
+slug: thunderbird-daddy-like
 category: WWW
 published:
   epoch: 1061704023
@@ -12,7 +13,7 @@ The more I use <a href="http://www.mozilla.org/projects/thunderbird/">Mozilla Th
 </p>
 
 <p class="image">
-<img src="/blog/images/www/thunderbird.gif" alt="Thunderbird Icon" />
+<img src="/images/www/thunderbird.gif" alt="Thunderbird Icon" />
 </p>
 
 

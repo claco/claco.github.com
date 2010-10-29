@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "NRCC Telemarketing Whois Data"
+slug: nrcc-telemarketing-whois-data
 category: Humor
 published:
   epoch: 1114625060

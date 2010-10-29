@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Handel 0.15 Released"
+slug: handel-015-released
 category: Perl
 published:
   epoch: 1111113163

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Cheesecake Factory Sucks"
+slug: the-cheesecake-factory-sucks
 category: WTF
 published:
   epoch: 1089077607

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CPU Issues Resolved"
+slug: cpu-issues-resolved
 category: Hardware
 published:
   epoch: 1062948142

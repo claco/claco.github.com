@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Poor Condoleeza...Not!"
+slug: poor-condoleezanot
 category: OffTopic
 published:
   epoch: 1121940484

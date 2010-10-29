@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Local School Bond Issue"
+slug: local-school-bond-issue
 category: OffTopic
 published:
   epoch: 1097716509

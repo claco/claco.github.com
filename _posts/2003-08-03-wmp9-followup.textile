@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "WMP9 Followup"
+slug: wmp9-followup
 category: Music
 published:
   epoch: 1059951919

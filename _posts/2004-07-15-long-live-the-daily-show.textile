@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Long Live The Daily Show"
+slug: long-live-the-daily-show
 category: Humor
 published:
   epoch: 1089933392

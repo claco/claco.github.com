@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Changing The Default XML Document CSS Style In Firefox"
+slug: changing-the-default-xml-document-css-style-in-firefox
 category: WWW
 published:
   epoch: 1089741848

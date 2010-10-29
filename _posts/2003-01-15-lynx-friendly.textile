@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lynx Friendly"
+slug: lynx-friendly
 category: WWW
 published:
   epoch: 1042607326

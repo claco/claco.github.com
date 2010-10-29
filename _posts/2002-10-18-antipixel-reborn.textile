@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AntiPixel Reborn"
+slug: antipixel-reborn
 category: WWW
 published:
   epoch: 1034953468

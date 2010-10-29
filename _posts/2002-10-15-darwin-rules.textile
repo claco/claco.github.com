@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Darwin Rules!"
+slug: darwin-rules
 category: WTF
 published:
   epoch: 1034719122

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "And The Power Is..."
+slug: and-the-power-is
 category: WTF
 published:
   epoch: 1060915029

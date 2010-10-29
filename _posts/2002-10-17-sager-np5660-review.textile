@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sager NP5660 Review"
+slug: sager-np5660-review
 category: Hardware
 published:
   epoch: 1034836675
@@ -12,7 +13,7 @@ published:
 	As promised, this is the start of my review of this beast.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/np5660.jpg" alt="Photo of Sager NP5660 laptop" width="246" height="227" />
+	<img src="/images/hardware/np5660.jpg" alt="Photo of Sager NP5660 laptop" width="246" height="227" />
 </p>
 <p>
 It was getting a little late by the time I finished this, so be gentle. :-)
@@ -131,7 +132,7 @@ They apologized for the inconvenience and said that they've started a new On Hol
 Much to my surprise, the box was in mint condition. Expecting to receive a squished package, it was still in fact a square item! Bonus.
 </p>
 <p class="image">
-	<a href="/blog/images/np5660/unopened_large.png"><img src="/blog/images/np5660/unopened_small.png" width="100" height="100" alt="Photo of Unopened Package" /></a>
+	<a href="/images/np5660/unopened_large.png"><img src="/images/np5660/unopened_small.png" width="100" height="100" alt="Photo of Unopened Package" /></a>
 	<br /><span class="caption">Click for larger image</span>
 </p>
 <p>
@@ -139,28 +140,28 @@ I noticed a warning type label on the top about the condition of the package whe
 I wish more shipper would put this on the packages.
 </p>
 <p class="image">
-	<a href="/blog/images/np5660/notice_large.png"><img src="/blog/images/np5660/notice_small.png" width="100" height="100" alt="Photo of Package Notice" /></a>
+	<a href="/images/np5660/notice_large.png"><img src="/images/np5660/notice_small.png" width="100" height="100" alt="Photo of Package Notice" /></a>
 	<br /><span class="caption">Click for larger image</span>
 </p>
 <p>
 Once I cracked open the boxed, I found that they double boxed the shipment. ANother nice touch.
 </p>
 <p class="image">
-	<a href="/blog/images/np5660/doublebox_large.png"><img src="/blog/images/np5660/doublebox_small.png" width="100" height="100" alt="Photo of Double Boxed Package" /></a>
+	<a href="/images/np5660/doublebox_large.png"><img src="/images/np5660/doublebox_small.png" width="100" height="100" alt="Photo of Double Boxed Package" /></a>
 	<br /><span class="caption">Click for larger image</span>
 </p>
 <p>
 I like how the contents were packaged inside. Box of accessories on one side, and the carrying case on the other. The more protection the better.
 </p>
 <p class="image">
-	<a href="/blog/images/np5660/theprize_large.png"><img src="/blog/images/np5660/theprize_small.png" width="100" height="100" alt="Photo of The Prize Inside" /></a>
+	<a href="/images/np5660/theprize_large.png"><img src="/images/np5660/theprize_small.png" width="100" height="100" alt="Photo of The Prize Inside" /></a>
 	<br /><span class="caption">Click for larger image</span>
 </p>
 <p>
 And just for completeness, the box o stuff; power brick, manual (Great manual!), Drivers disc, extra CD-ROM module, etc.
 </p>
 <p class="image">
-	<a href="/blog/images/np5660/contents_large.png"><img src="/blog/images/np5660/contents_small.png" width="100" height="100" alt="Photo of Contents" /></a>
+	<a href="/images/np5660/contents_large.png"><img src="/images/np5660/contents_small.png" width="100" height="100" alt="Photo of Contents" /></a>
 	<br /><span class="caption">Click for larger image</span>
 </p>
 <p>
@@ -218,9 +219,9 @@ tests, I left all driver settings and 3DMArk settings as is with the exception o
 </p>
 
 <ul>
-<li><a href="/blog/images/np5660/sandra_cpu_math.png">CPU Math Benchmark</a></li>
-<li><a href="/blog/images/np5660/sandra_cpu_mmedia.png">CPU MultiMedia Benchmark</a></li>
-<li><a href="/blog/images/np5660/sandra_cpu_memband.png">MEmory Bandwidth Benchmark</a></li>
+<li><a href="/images/np5660/sandra_cpu_math.png">CPU Math Benchmark</a></li>
+<li><a href="/images/np5660/sandra_cpu_mmedia.png">CPU MultiMedia Benchmark</a></li>
+<li><a href="/images/np5660/sandra_cpu_memband.png">MEmory Bandwidth Benchmark</a></li>
 </ul>
 
 

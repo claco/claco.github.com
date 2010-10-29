@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Remember, Most Accidents..."
+slug: remember-most-accidents
 category: WTF
 published:
   epoch: 1119148806

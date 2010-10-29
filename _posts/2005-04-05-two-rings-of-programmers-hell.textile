@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Two Rings Of Programmers Hell"
+slug: two-rings-of-programmers-hell
 category: Software
 published:
   epoch: 1112729563

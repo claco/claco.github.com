@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Auto Insurance Companies Can Suck It Hard"
+slug: auto-insurance-companies-can-suck-it-hard
 category: WTF
 published:
   epoch: 1074820869

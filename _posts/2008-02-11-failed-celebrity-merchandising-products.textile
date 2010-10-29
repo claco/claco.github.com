@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Failed Celebrity Merchandising Products"
+slug: failed-celebrity-merchandising-products
 category: Humor
 published:
   epoch: 1202790996

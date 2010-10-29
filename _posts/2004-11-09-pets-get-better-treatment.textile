@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pets Get Better Treatment"
+slug: pets-get-better-treatment
 category: WTF
 published:
   epoch: 1100056346

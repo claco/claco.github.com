@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's not as it appears"
+slug: its-not-as-it-appears
 category: WTF
 published:
   epoch: 1105325438

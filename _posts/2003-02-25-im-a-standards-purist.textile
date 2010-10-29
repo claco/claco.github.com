@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm a Standards Purist"
+slug: im-a-standards-purist
 category: WWW
 published:
   epoch: 1046218326

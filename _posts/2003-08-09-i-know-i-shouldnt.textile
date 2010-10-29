@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Know I Shouldn't"
+slug: i-know-i-shouldnt
 category: WWW
 published:
   epoch: 1060444794

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bolt Gallery: Way Cool Sculptures"
+slug: bolt-gallery-way-cool-sculptures
 category: Hardware
 published:
   epoch: 1050549191
@@ -23,7 +24,7 @@ Whoopsie.
 </p>
 
 <p class="center">
-<a href="http://www.boltgallery.com/sculptures/Scorpion.html" title="View Larger Image"><img src="/blog/images/hardware/scorpion.jpg" alt="Bolt Gallery: Scorpion Scultpure" /></a>
+<a href="http://www.boltgallery.com/sculptures/Scorpion.html" title="View Larger Image"><img src="/images/hardware/scorpion.jpg" alt="Bolt Gallery: Scorpion Scultpure" /></a>
 </p>
 
 

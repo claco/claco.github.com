@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Lawn Mower"
+slug: new-lawn-mower
 category: Hardware
 published:
   epoch: 1084111246
@@ -18,7 +19,7 @@ We were at Sam's Club and she was getting a new cell phone. Right behind us was 
 Later that day, we stopped at Sears and Lowes. Lowes sells the Cub Cadet (the one in the picture) version that is <strong>exactly</strong> the same; literally. Same features, made by the same company, sold under different name with a different paint job (MTD Pro is red) for $478.
 </p>
 <p class="image">
-<a href="/blog/images/hardware/mower.jpg"><img src="/blog/images/hardware/mower_small.jpg" alt="MTD Pro SR621" /></a>
+<a href="/images/hardware/mower.jpg"><img src="/images/hardware/mower_small.jpg" alt="MTD Pro SR621" /></a>
 </p>
 <p>
 So, back to Sam's Club we we for the same mower $100 cheaper. Good deal I think.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lost Ohio Votes?"
+slug: lost-ohio-votes
 category: WTF
 published:
   epoch: 1099530620

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RSS As A Spam Trigger?"
+slug: rss-as-a-spam-trigger
 category: WTF
 published:
   epoch: 1055209995

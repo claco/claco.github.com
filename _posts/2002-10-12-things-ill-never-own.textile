@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Things I'll Never Own"
+slug: things-ill-never-own
 category: OffTopic
 published:
   epoch: 1034455791

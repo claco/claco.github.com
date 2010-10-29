@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Firefox Gripe: Toolbar Search Box"
+slug: firefox-gripe-toolbar-search-box
 category: WWW
 published:
   epoch: 1088810284

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Trained (Un)Shaved Monkeys"
+slug: trained-unshaved-monkeys
 category: Humor
 published:
   epoch: 1034558568
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-I've been telling people that trained shaved monkeys were building these pages, but no one would listen. Now <a href="/blog/images/humor/trained_shaved_monkeys_large.png" title="View monkeys building this site">I have proof</a>. :-)
+I've been telling people that trained shaved monkeys were building these pages, but no one would listen. Now <a href="/images/humor/trained_shaved_monkeys_large.png" title="View monkeys building this site">I have proof</a>. :-)
 </p>
 <p>
 Check out <a href="http://www.sciam.com/article.cfm?articleID=0008F8E1-DEAB-1D80-90FB809EC5880000" title="Article about monkeys hooked up to wires">this article</a> for more information.

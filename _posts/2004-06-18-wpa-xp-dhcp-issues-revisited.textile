@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "WPA + XP + DHCP Issues Revisited"
+slug: wpa-xp-dhcp-issues-revisited
 category: WTF
 published:
   epoch: 1087608483

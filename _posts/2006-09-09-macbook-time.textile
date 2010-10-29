@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MacBook Time"
+slug: macbook-time
 category: Hardware
 tags:
   - apple

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Service Interuptice"
+slug: service-interuptice
 category: OffTopic
 published:
   epoch: 1069871054

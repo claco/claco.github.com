@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Firefox Find Bar For Everyone!"
+slug: firefox-find-bar-for-everyone
 category: Software
 published:
   epoch: 1099178454

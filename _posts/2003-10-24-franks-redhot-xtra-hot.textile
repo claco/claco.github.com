@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FRANK'S REDHOT XTRA Hot"
+slug: franks-redhot-xtra-hot
 category: OffTopic
 published:
   epoch: 1067035462

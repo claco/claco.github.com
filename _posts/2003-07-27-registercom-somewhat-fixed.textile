@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Register.com Somewhat Fixed"
+slug: registercom-somewhat-fixed
 category: WWW
 published:
   epoch: 1059324157

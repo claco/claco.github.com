@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SQL Dream Machine"
+slug: sql-dream-machine
 category: Hardware
 published:
   epoch: 1062731669

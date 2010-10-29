@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Giving The Bank The Boot"
+slug: giving-the-bank-the-boot
 category: OffTopic
 published:
   epoch: 1086392880

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CSS MeetUp"
+slug: css-meetup
 category: WWW
 published:
   epoch: 1043885717

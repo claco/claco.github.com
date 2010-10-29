@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Loss of Common Sense"
+slug: loss-of-common-sense
 category: WTF
 published:
   epoch: 1202083057

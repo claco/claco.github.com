@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why Do You Read This Site?"
+slug: why-do-you-read-this-site
 category: OffTopic
 published:
   epoch: 1063646088

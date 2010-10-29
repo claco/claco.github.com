@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Episode III Thoughts"
+slug: episode-iii-thoughts
 category: Movies
 published:
   epoch: 1116805080

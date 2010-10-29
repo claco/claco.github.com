@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Today's Agenda"
+slug: todays-agenda
 category: OffTopic
 published:
   epoch: 1041783623

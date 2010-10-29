@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MT Search vs. XHTML Snafu"
+slug: mt-search-vs-xhtml-snafu
 category: Perl
 published:
   epoch: 1042773308

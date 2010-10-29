@@ -100,12 +100,24 @@ sub writePost() {
   my $filename = '../_posts/' . $post->{filename};
   my $file = FileHandle->new("> $filename");
   my @tags = @{$post->{tags}};
+
   my $title = $post->{title};
   $title =~ s/"/\\"/g;
+
+  my $body = $post->{body};
+  $body =~ s/blog\/images/images/g;
+  $body =~ s/http\:\/\/today\.icantfocus\.com\/blog//g;
+  $body =~ s/http\:\/\/today\.icantfocus\.com//g;
+  
+  my $extended = $post->{extended};
+  $extended =~ s/blog\/images/images/g;
+  $extended =~ s/http\:\/\/today\.icantfocus\.com\/blog//g;
+  $extended =~ s/http\:\/\/today\.icantfocus\.com//g;
 
   $file->print("---", "\n");
   $file->print("layout: post", "\n");
   $file->print("title: \"", $title, "\"\n");
+  $file->print("slug: ", $post->{slug}, "\n");
   $file->print("category: ", $post->{category}, "\n");
   if (scalar @tags) {
     $file->print("tags:\n  - ", join('  - ', map{$_ . "\n"} @tags));
@@ -114,8 +126,8 @@ sub writePost() {
   $file->print("  epoch: ", $post->{date}->epoch, "\n");
   $file->print("  utc: ", $post->{date}->set_time_zone('UTC')->datetime, "\n");
   $file->print("---", "\n\n");
-  $file->print($post->{body});
-  $file->print($post->{extended}, "\n");
+  $file->print($body);
+  $file->print($extended, "\n");
 
   $file->close;
   utime $post->{date}->epoch, $post->{date}->epoch, $filename;

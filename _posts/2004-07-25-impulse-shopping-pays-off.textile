@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Impulse Shopping Pays Off"
+slug: impulse-shopping-pays-off
 category: OffTopic
 published:
   epoch: 1090805411

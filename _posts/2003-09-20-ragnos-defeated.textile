@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ragnos Defeated"
+slug: ragnos-defeated
 category: Games
 published:
   epoch: 1064089971

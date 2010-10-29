@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stereotypical"
+slug: stereotypical
 category: WTF
 published:
   epoch: 1049420833

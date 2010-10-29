@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stargate SG-1-A-Thon"
+slug: stargate-sg-1-a-thon
 category: OffTopic
 published:
   epoch: 1079655069

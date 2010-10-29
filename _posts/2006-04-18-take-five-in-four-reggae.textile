@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Take Five: In Four: Reggae"
+slug: take-five-in-four-reggae
 category: Music
 tags:
   - jazz

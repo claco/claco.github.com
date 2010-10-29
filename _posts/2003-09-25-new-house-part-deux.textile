@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New House: Part Deux"
+slug: new-house-part-deux
 category: OffTopic
 published:
   epoch: 1064539285

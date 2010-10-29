@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Brain Freeze Familiar Face"
+slug: brain-freeze-familiar-face
 category: OffTopic
 published:
   epoch: 1060492292

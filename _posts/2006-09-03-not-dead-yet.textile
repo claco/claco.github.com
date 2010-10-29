@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Not Dead Yet"
+slug: not-dead-yet
 category: OffTopic
 published:
   epoch: 1157322671

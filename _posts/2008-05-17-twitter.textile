@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Twitter"
+slug: twitter
 category: WWW
 tags:
   - twitter

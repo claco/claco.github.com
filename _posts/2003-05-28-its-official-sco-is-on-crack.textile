@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Official: SCO is on crack."
+slug: its-official-sco-is-on-crack
 category: Humor
 published:
   epoch: 1054174739

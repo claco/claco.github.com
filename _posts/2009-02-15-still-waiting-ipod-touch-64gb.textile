@@ -9,6 +9,6 @@ published:
 ---
 Now that iTunes has gone DRM free, I've been adding more albums to my collection. I'm only about two thirds of the way done ripping my CDs to the network share. Even at relatively low quality, I have well over 30GB or music. This means an iPod Touch is out of the question for me. 32GB just isn't enough.
 
-<a href="http://chrislaco.com/wp-content/uploads/2009/02/ipod_touch_20.png"><img src="http://chrislaco.com/wp-content/uploads/2009/02/ipod_touch_20-150x150.png" alt="iPod Touch" title="iPod Touch" width="150" height="150" class="aligncenter size-thumbnail wp-image-135" /></a>
+<a href="/images/uploads/2009/02/ipod_touch_20.png"><img src="/images/uploads/2009/02/ipod_touch_20-150x150.png" alt="iPod Touch" title="iPod Touch" width="150" height="150" class="aligncenter size-thumbnail wp-image-135" /></a>
 
 On the other hand, we have the iPod Classic, which has tons of room, but well, it's worthless compared to an iPod touch. Dear Apple, add me to the list of thousands that would gladly buy an iPod Touch if you would just bump it up to 64GB already. 128GB would also rock.

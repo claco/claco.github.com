@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I'll Vote For Kerry"
+slug: why-ill-vote-for-kerry
 category: OffTopic
 published:
   epoch: 1097719108

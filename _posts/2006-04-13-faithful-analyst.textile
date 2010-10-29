@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Faithful Analyst"
+slug: faithful-analyst
 category: OffTopic
 published:
   epoch: 1144973884

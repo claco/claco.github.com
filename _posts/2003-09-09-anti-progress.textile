@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Anti Progress"
+slug: anti-progress
 category: OffTopic
 published:
   epoch: 1063157922

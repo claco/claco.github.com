@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "Neues Firmenzeichen Über Ron"
+title: "Neues Firmenzeichen uber Ron"
+slug: neues-firmenzeichen-uber-ron
 category: WWW
 published:
   epoch: 1088652491

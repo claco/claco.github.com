@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DOOM<sup>3</sup>"
+slug: doom3
 category: OffTopic
 published:
   epoch: 1092534220

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Spiderman 2 Was Pretty Darn Good"
+slug: spiderman-2-was-pretty-darn-good
 category: Movies
 published:
   epoch: 1088647535

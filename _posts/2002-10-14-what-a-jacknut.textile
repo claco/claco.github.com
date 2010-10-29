@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What a JackNut"
+slug: what-a-jacknut
 category: MicroShaft
 published:
   epoch: 1034623292

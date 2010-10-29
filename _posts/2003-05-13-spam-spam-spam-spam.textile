@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Spam Spam Spam Spam"
+slug: spam-spam-spam-spam
 category: Humor
 published:
   epoch: 1052880392

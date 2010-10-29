@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rain == Ohio"
+slug: rain-ohio
 category: WTF
 published:
   epoch: 1060458091

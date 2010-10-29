@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Die Comments Die"
+slug: die-comments-die
 category: WTF
 published:
   epoch: 1073958327

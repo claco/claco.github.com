@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Time Off Hijinks"
+slug: time-off-hijinks
 category: OffTopic
 published:
   epoch: 1071114052

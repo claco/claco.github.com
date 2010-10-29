@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ubuntu Breezy Desktop"
+slug: ubuntu-breezy-desktop
 category: Linux
 published:
   epoch: 1129254527
@@ -11,6 +12,6 @@ Since Ubuntu 5.10 Breezy Badger came out today, I decided to wipe my tinkered-up
 
 Here's screenshot of my desktop after I got a not-so-brown wallpaper and tweaked the window style:
 
-<a title="Click image to view the full size image." href="/blog/images/screenshots/ubuntu.gif"><img src="/blog/images/screenshots/ubuntu_thumb.gif" alt="Ubuntu Screenshot"/></a>
+<a title="Click image to view the full size image." href="/images/screenshots/ubuntu.gif"><img src="/images/screenshots/ubuntu_thumb.gif" alt="Ubuntu Screenshot"/></a>
 
 

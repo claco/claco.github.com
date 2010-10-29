@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Food Addiction: Evil Items Part I"
+slug: food-addiction-evil-items-part-i
 category: OffTopic
 published:
   epoch: 1083525571

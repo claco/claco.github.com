@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sue All The World"
+slug: sue-all-the-world
 category: Humor
 published:
   epoch: 1057881449

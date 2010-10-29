@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Red Wet Heart"
+slug: red-wet-heart
 category: WWW
 published:
   epoch: 1041744776

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sage Rules"
+slug: sage-rules
 category: Software
 published:
   epoch: 1096597070

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Powernotebooks.com Rocks Still"
+slug: powernotebookscom-rocks-still
 category: OffTopic
 published:
   epoch: 1072739763
@@ -15,7 +16,7 @@ I stumbled upon Alienware laptops, which have tons more horsepower than standard
 Well, they've done it again. Today, albeit a little late, I receive the 2004 calander/photo/holiday card from the staff at PowereNotebooks.
 </p>
 <p class="image">
-<img src="/blog/images/offtopic/pnstaff.jpg" alt="PowerNotebooks Staff 2004" /><br />(Left to right: Jane, David, Donald (my rep), Charlote (sp?), Joel, and CJ)
+<img src="/images/offtopic/pnstaff.jpg" alt="PowerNotebooks Staff 2004" /><br />(Left to right: Jane, David, Donald (my rep), Charlote (sp?), Joel, and CJ)
 </p>
 <p>
 Many other hardware AND SOFTWARE companies could learn a lot from this practice: make me fell like a known customer, not a customer number.

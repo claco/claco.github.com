@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "4,491 Photos and Growing"
+slug: 4491-photos-and-growing
 category: OffTopic
 tags:
   - photos flickr

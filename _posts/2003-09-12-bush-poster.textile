@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bush Poster"
+slug: bush-poster
 category: Humor
 published:
   epoch: 1063416446

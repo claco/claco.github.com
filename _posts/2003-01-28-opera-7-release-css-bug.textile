@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Opera 7 Release: CSS Bug?"
+slug: opera-7-release-css-bug
 category: WWW
 published:
   epoch: 1043766855
@@ -32,7 +33,7 @@ I get jack squat, nada, nuttin, zilch.Change it to this:
 <code>
 &lt;link
      rel="Stylesheet"
-     href="http://today.icantfocus.com/style/css/screen-default-left.css"
+     href="/style/css/screen-default-left.css"
      type="text/css"
      media="screen"
 /&gt;

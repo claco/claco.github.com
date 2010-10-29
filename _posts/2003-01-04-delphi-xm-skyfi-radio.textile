@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Delphi XM SKYFi Radio"
+slug: delphi-xm-skyfi-radio
 category: Hardware
 published:
   epoch: 1041738267

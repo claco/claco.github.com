@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Changes On Tap"
+slug: changes-on-tap
 category: OffTopic
 published:
   epoch: 1073707176

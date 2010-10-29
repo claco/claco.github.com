@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Damn You Computer@!#$%"
+slug: damn-you-computer
 category: WTF
 published:
   epoch: 1055469494

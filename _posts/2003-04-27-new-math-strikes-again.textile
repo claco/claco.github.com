@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Math Strikes Again"
+slug: new-math-strikes-again
 category: WTF
 published:
   epoch: 1051484362

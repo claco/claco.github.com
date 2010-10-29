@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Damn School Bond Issue"
+slug: damn-school-bond-issue
 category: WTF
 published:
   epoch: 1099455177

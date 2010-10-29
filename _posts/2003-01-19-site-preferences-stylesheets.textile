@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Site Preferences: Stylesheets"
+slug: site-preferences-stylesheets
 category: WWW
 published:
   epoch: 1043022680

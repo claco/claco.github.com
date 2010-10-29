@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "PS3 + Killzone = Holy Shit!"
+slug: ps3-killzone-holy-shit
 category: Games
 published:
   epoch: 1116373573

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OpenSSH 2.5 Released"
+slug: openssh-25-released
 category: Security
 published:
   epoch: 1034737136

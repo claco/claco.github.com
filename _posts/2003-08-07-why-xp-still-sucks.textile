@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why XP Still Sucks"
+slug: why-xp-still-sucks
 category: MicroShaft
 published:
   epoch: 1060261107

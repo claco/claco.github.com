@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rent My Chest. Please."
+slug: rent-my-chest-please
 category: Humor
 published:
   epoch: 1043899912

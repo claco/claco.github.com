@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gmail Invite Diarrhea Continues"
+slug: gmail-invite-diarrhea-continues
 category: WTF
 published:
   epoch: 1093612286

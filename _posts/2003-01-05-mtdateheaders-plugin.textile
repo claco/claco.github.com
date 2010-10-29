@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MTDateHeaders Plugin"
+slug: mtdateheaders-plugin
 category: Perl
 published:
   epoch: 1041826589

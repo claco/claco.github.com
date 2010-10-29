@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hello St. Murphy. Where Ya Been?"
+slug: hello-st-murphy-where-ya-been
 category: Humor
 published:
   epoch: 1090973960

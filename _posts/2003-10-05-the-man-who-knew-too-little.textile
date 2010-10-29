@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Man Who Knew Too Little"
+slug: the-man-who-knew-too-little
 category: Movies
 published:
   epoch: 1065367880

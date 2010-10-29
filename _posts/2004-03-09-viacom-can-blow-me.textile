@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Viacom Can Blow Me"
+slug: viacom-can-blow-me
 category: WTF
 published:
   epoch: 1078839556

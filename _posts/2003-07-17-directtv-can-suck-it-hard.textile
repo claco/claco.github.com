@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DirectTV Can Suck It Hard"
+slug: directtv-can-suck-it-hard
 category: WTF
 published:
   epoch: 1058471459

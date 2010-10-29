@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Things Illegal In Massachusetts"
+slug: things-illegal-in-massachusetts
 category: OffTopic
 published:
   epoch: 1044818047

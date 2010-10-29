@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Netscape: R.I.P. Finally."
+slug: netscape-rip-finally
 category: WWW
 published:
   epoch: 1058316853

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Terrorists Only Like Unpopular USPS Dropoffs"
+slug: terrorists-only-like-unpopular-usps-dropoffs
 category: WTF
 published:
   epoch: 1046823825
@@ -19,7 +20,7 @@ Now if the USPS wants to save a few pennies and remove a few boxes so drivers ca
 So, let me get this straight. Terrorists must prefer to use only the least popular boxes, but leave the most popular ones alone? Unfucking believable.
 </p>
 <p class="center">
-<img src="/blog/images/wtf/usps.gif" alt="USPS Box" />
+<img src="/images/wtf/usps.gif" alt="USPS Box" />
 </p>
 
 

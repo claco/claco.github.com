@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "NDoc Kicks Ass"
+slug: ndoc-kicks-ass
 category: Software
 published:
   epoch: 1090618882

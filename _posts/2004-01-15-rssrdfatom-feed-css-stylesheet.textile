@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RSS/RDF/Atom Feed CSS Stylesheet"
+slug: rssrdfatom-feed-css-stylesheet
 category: WWW
 published:
   epoch: 1074227234

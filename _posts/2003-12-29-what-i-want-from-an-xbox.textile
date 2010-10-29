@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What I Want From An XBox"
+slug: what-i-want-from-an-xbox
 category: Games
 published:
   epoch: 1072708091

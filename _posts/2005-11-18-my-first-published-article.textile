@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My First Published Article"
+slug: my-first-published-article
 category: Perl
 published:
   epoch: 1132334972

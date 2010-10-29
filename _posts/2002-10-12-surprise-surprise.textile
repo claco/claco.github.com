@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Surprise Surprise."
+slug: surprise-surprise
 category: MicroShaft
 published:
   epoch: 1034459081

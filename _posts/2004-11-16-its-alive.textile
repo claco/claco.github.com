@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Alive!"
+slug: its-alive
 category: Humor
 published:
   epoch: 1100645750

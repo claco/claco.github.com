@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Resizable Font Hope"
+slug: resizable-font-hope
 category: WWW
 published:
   epoch: 1073699574

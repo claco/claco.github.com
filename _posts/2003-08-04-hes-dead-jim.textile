@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "He's Dead Jim"
+slug: hes-dead-jim
 category: WWW
 published:
   epoch: 1060045494

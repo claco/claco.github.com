@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "And on a stranger note..."
+slug: and-on-a-stranger-note
 category: Hardware
 published:
   epoch: 1053716087

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FreeBSD 4.9 Released"
+slug: freebsd-49-released
 category: FreeBSD
 published:
   epoch: 1067475538

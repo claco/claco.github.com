@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Enter The Matrix Thoughts"
+slug: enter-the-matrix-thoughts
 category: Games
 published:
   epoch: 1057892800

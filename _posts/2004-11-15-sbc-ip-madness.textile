@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SBC IP Madness"
+slug: sbc-ip-madness
 category: WTF
 published:
   epoch: 1100532719

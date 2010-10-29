@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Orchestra Night: Carmina Burana"
+slug: orchestra-night-carmina-burana
 category: OffTopic
 published:
   epoch: 1057507029

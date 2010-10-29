@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Layout"
+slug: new-layout
 category: WWW
 published:
   epoch: 1057978427

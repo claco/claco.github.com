@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Damn Squirrels"
+slug: damn-squirrels
 category: Hardware
 published:
   epoch: 1035336012

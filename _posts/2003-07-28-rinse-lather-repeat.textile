@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Rinse. Lather. Repeat."
+slug: rinse-lather-repeat
 category: OffTopic
 published:
   epoch: 1059441594

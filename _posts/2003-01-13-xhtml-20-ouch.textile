@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "XHTML 2.0. Ouch."
+slug: xhtml-20-ouch
 category: WTF
 published:
   epoch: 1042493519

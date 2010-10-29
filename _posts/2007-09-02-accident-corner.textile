@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Accident Corner"
+slug: accident-corner
 category: OffTopic
 published:
   epoch: 1188784142

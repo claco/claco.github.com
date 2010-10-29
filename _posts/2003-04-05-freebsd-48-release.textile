@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FreeBSD 4.8-RELEASE"
+slug: freebsd-48-release
 category: FreeBSD
 published:
   epoch: 1049574133

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jekyll"
+slug: jekyll
 category: TV
 published:
   epoch: 1188089931

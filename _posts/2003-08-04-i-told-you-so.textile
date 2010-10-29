@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Told You So"
+slug: i-told-you-so
 category: Humor
 published:
   epoch: 1060037180

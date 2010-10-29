@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Quicken Makes VSS Look Recent"
+slug: quicken-makes-vss-look-recent
 category: WTF
 published:
   epoch: 1088121623

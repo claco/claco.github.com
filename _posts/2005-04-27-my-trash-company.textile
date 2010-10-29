@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Trash Company"
+slug: my-trash-company
 category: Humor
 published:
   epoch: 1114605459

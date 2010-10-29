@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Welcome to 1984"
+slug: welcome-to-1984
 category: WTF
 published:
   epoch: 1049565449

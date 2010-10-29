@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Are Enabled Again"
+slug: comments-are-enabled-again
 category: OffTopic
 published:
   epoch: 1110685371

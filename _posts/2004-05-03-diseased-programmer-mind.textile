@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Diseased Programmer Mind"
+slug: diseased-programmer-mind
 category: OffTopic
 published:
   epoch: 1083622689

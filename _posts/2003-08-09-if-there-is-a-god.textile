@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "If There Is A God"
+slug: if-there-is-a-god
 category: WTF
 published:
   epoch: 1060446988

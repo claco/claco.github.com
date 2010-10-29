@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Yield"
+slug: i-yield
 category: OffTopic
 published:
   epoch: 1071880556

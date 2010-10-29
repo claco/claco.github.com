@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Miss Drumming"
+slug: i-miss-drumming
 category: Music
 tags:
   - drums

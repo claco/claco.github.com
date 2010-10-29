@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "White and Nerdy"
+slug: white-and-nerdy
 category: Humor
 published:
   epoch: 1158608410

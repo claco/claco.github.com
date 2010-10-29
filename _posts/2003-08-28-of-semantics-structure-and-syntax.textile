@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Of Semantics, Structure, And Syntax"
+slug: of-semantics-structure-and-syntax
 category: WWW
 published:
   epoch: 1062108256

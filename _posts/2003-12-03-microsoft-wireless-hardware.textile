@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Microsoft Wireless Hardware"
+slug: microsoft-wireless-hardware
 category: MicroShaft
 published:
   epoch: 1070506928

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hell Yeah!"
+slug: hell-yeah
 category: Music
 published:
   epoch: 1080430788

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Marry A SysAdmin?"
+slug: marry-a-sysadmin
 category: Humor
 published:
   epoch: 1033860093

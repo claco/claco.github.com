@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Programmer vs. Musician"
+slug: programmer-vs-musician
 category: OffTopic
 published:
   epoch: 1057880697

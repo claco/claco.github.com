@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New MT 2.51 Patches"
+slug: new-mt-251-patches
 category: Perl
 published:
   epoch: 1041488567
@@ -17,14 +18,14 @@ make it into the core MT program. If not, then a plugin it will become.
 </p>
 <h4>MTPingInterface</h4>
 <p>
-	<a href="http://today.icantfocus.com/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
+	<a href="/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
 	As mentioned earlier, this set of patches allows me to specify what local ip or ip:port the server should
 	bind to before sending out recently-updated or trackback pings.
 </p>
 
 <h4>MTEntryTrackbackID</h4>
 <p>
-	<a href="http://today.icantfocus.com/downloads/MTEntryTrackbackID/2.51/" title="Download MTEntryTrackbackID patches">Download Files</a><br />
+	<a href="/downloads/MTEntryTrackbackID/2.51/" title="Download MTEntryTrackbackID patches">Download Files</a><br />
 	When circumstances decided that I needed to manually build my trackback urls, I quickly found out that
 	the was no <code>&lt;$MTEntryTrackbackID$&gt;</code> tag to be found. There is now. :-)
 </p>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dot.Mil For Your Thoughts?"
+slug: dotmil-for-your-thoughts
 category: Humor
 published:
   epoch: 1043597416

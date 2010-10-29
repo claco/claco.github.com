@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Time Has Come"
+slug: the-time-has-come
 category: OffTopic
 published:
   epoch: 1078843653
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-I think the time has come to sell <a href="/blog/images/offtopic/truck.png">the big red fun toy</a>. I'll be sad to see her go, but I believe now is the proper time to set her free.
+I think the time has come to sell <a href="/images/offtopic/truck.png">the big red fun toy</a>. I'll be sad to see her go, but I believe now is the proper time to set her free.
 </p>
 <p>
 She has really low mileage (&lt;30,000) and the body is is almost great shape.
@@ -18,7 +19,7 @@ The problem is, the paint needs to be reworked on both doors. There's a tad of s
 On top of that, she's completely paid for. I could buy a new vehicle with the proceeds and still be loan free. That doesn't suck at all.
 </p>
 <p class="image">
-<img src="/blog/images/offtopic/truck.png" alt="Ram" />
+<img src="/images/offtopic/truck.png" alt="Ram" />
 </p>
 <p>
 However, we still want to be able to haul things when necessary, so a minivan is a must. We drove a 2004 Ford Freestar to St. Louis and it was nice. The bummer is that those only have a 3 year warranty?!@# What the hell is that about. At least the Kias have a 10/100,000 warranty in place.

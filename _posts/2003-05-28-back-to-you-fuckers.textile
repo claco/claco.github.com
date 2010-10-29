@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Back to you, fuckers."
+slug: back-to-you-fuckers
 category: Humor
 published:
   epoch: 1054177216

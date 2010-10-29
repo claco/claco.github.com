@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tori Nirvana"
+slug: tori-nirvana
 category: Movies
 published:
   epoch: 1071701633

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gone Fishing."
+slug: gone-fishing
 category: OffTopic
 published:
   epoch: 1118368347

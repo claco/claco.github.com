@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Escaped Trained Shaved Monkeys"
+slug: escaped-trained-shaved-monkeys
 category: Humor
 published:
   epoch: 1041744120
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-I wonder if <a href="http://www.milbertus.com/archives/001521.php" title="Website entitled Ramblings of a Code Monkey">this person</a> is one of our escaped <a href="http://today.icantfocus.com/blog/archives/entries/000028/" title="Post about Trained Shaved Monkeys">Trained Shaved Monkeys</a>?
+I wonder if <a href="http://www.milbertus.com/archives/001521.php" title="Website entitled Ramblings of a Code Monkey">this person</a> is one of our escaped <a href="/archives/entries/000028/" title="Post about Trained Shaved Monkeys">Trained Shaved Monkeys</a>?
 </p>
 <p>
 <em>Oopsie. Wrong link. All fixed.</em>

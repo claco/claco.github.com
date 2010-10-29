@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New House Fix List"
+slug: new-house-fix-list
 category: OffTopic
 published:
   epoch: 1082938740

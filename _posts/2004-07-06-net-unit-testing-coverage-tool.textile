@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ".NET Unit Testing Coverage Tool"
+slug: net-unit-testing-coverage-tool
 category: OffTopic
 published:
   epoch: 1089161760

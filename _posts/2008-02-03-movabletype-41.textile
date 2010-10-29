@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MovableType 4.1"
+slug: movabletype-41
 category: Apache
 tags:
   - apache2

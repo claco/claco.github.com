@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hey Fuckwit!"
+slug: hey-fuckwit
 category: Humor
 published:
   epoch: 1064367089

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Space Shuttle Columbia Is No More"
+slug: space-shuttle-columbia-is-no-more
 category: WTF
 published:
   epoch: 1044113699

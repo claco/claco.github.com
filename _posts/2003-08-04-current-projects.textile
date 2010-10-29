@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Current Projects"
+slug: current-projects
 category: Static
 published:
   epoch: 1059969802
@@ -12,7 +13,7 @@ published:
 Contained within is a list of projects I'm doomed to never start, never work on and never complete. Come to think of it, it's more like a wishlist.
 
 <h3><a id="icantfocus">icantfocus.com</a></h3>
-Location: <a href="http://today.icantfocus.com/">http://today.icantfocus.com/</a>
+Location: <a href="/">/</a>
 
 You're looking at it. This is project #1. I haven't had a 'personal' website in ages. So, not only is my attempt to rehash one, but I'm also learning a lot of new stuff when building it.
 

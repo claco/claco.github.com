@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "95% Of All Albums A Failure"
+slug: 95%-of-all-albums-a-failure
 category: Music
 published:
   epoch: 1059525613

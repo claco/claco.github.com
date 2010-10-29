@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Innocent People Get The Raw Deal"
+slug: innocent-people-get-the-raw-deal
 category: WTF
 published:
   epoch: 1087740899

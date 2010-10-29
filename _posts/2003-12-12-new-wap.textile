@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New WAP"
+slug: new-wap
 category: Hardware
 published:
   epoch: 1071290338

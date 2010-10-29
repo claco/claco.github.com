@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Technology Dictator"
+slug: technology-dictator
 category: Humor
 published:
   epoch: 1130363323

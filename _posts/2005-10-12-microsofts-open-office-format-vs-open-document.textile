@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Microsofts Open Office Format vs. Open Document"
+slug: microsofts-open-office-format-vs-open-document
 category: OffTopic
 published:
   epoch: 1129135386

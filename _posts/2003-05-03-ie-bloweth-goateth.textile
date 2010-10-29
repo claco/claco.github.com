@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "IE Bloweth Goateth"
+slug: ie-bloweth-goateth
 category: Security
 published:
   epoch: 1051955714

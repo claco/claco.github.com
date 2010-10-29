@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A'hoy Me Land Lovin Dogs"
+slug: ahoy-me-land-lovin-dogs
 category: Humor
 published:
   epoch: 1158669464

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stand Up: Me: 1, RIAA: 0"
+slug: stand-up-me-1-riaa-0
 category: Music
 published:
   epoch: 1116023911

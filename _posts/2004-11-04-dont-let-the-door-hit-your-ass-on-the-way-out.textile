@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Don't Let The Door Hit Your Ass On The Way Out"
+slug: dont-let-the-door-hit-your-ass-on-the-way-out
 category: OffTopic
 published:
   epoch: 1099609358

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Senate Sellout"
+slug: the-senate-sellout
 category: WTF
 published:
   epoch: 1202867929

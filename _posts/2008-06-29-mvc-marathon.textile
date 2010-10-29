@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MVC Marathon"
+slug: mvc-marathon
 category: OffTopic
 tags:
   - c#

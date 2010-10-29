@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Demons Be Gone"
+slug: demons-be-gone
 category: Hardware
 published:
   epoch: 1036028713

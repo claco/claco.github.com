@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Laptops And S.T.A.L.K.E.R."
+slug: laptops-and-stalker
 category: Games
 published:
   epoch: 1176820512

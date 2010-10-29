@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Caffine Is A MoFo"
+slug: caffine-is-a-mofo
 category: WTF
 published:
   epoch: 1059951447

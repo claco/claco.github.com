@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ISerialize vs. Parse And Set"
+slug: iserialize-vs-parse-and-set
 category: Software
 published:
   epoch: 1081269216

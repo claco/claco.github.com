@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Friday Five Book"
+slug: friday-five-book
 category: OffTopic
 published:
   epoch: 1109338640

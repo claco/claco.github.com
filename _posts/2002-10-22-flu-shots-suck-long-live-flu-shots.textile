@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Flu Shots Suck. Long Live Flu Shots"
+slug: flu-shots-suck-long-live-flu-shots
 category: OffTopic
 published:
   epoch: 1035333812

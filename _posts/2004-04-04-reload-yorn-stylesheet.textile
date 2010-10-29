@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reload Yorn Stylesheet"
+slug: reload-yorn-stylesheet
 category: WWW
 published:
   epoch: 1081059880

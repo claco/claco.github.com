@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Service Movis Completis"
+slug: service-movis-completis
 category: OffTopic
 published:
   epoch: 1069956659

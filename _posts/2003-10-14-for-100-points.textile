@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "For 100 points..."
+slug: for-100-points
 category: Perl
 published:
   epoch: 1066189362
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-...and the game, what in the hell am I doing with <a href="http://today.icantfocus.com/downloads/AcceptLanguage.pm">this module</a>?
+...and the game, what in the hell am I doing with <a href="/downloads/AcceptLanguage.pm">this module</a>?
 
 </p>
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MSDN .NET API Shortcuts"
+slug: msdn-net-api-shortcuts
 category: MicroShaft
 published:
   epoch: 1081281026

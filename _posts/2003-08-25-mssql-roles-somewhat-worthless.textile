@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MSSQL Roles Somewhat Worthless"
+slug: mssql-roles-somewhat-worthless
 category: MicroShaft
 published:
   epoch: 1061851367

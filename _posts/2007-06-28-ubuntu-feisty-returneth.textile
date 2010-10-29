@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ubuntu Feisty Returneth"
+slug: ubuntu-feisty-returneth
 category: Linux
 published:
   epoch: 1183071267

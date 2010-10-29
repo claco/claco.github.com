@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Turkey Day '05: Electric Boogaloo"
+slug: turkey-day-05-electric-boogaloo
 category: OffTopic
 published:
   epoch: 1132850106

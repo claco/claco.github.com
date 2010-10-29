@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Opera 7 External Stylesheet Bug"
+slug: opera-7-external-stylesheet-bug
 category: WWW
 published:
   epoch: 1043798365
@@ -37,13 +38,13 @@ They were in this order due to the way that this site is built. This of course m
 <code>
 &lt;link
      rel="Alternate Stylesheet"
-     href="http://today.icantfocus.com/style/css/screen-default-right.css"
+     href="/style/css/screen-default-right.css"
      type="text/css"
      media="screen" 
 /&gt;
 &lt;link
      rel="Stylesheet"
-     href="http://today.icantfocus.com/style/css/screen-default-left.css"
+     href="/style/css/screen-default-left.css"
      type="text/css"
      media="screen"
 /&gt;

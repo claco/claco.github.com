@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Blog?"
+slug: new-blog
 category: WWW
 published:
   epoch: 1054415690

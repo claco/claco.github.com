@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Annoying Textarea Bug In Mozilla/Firefox"
+slug: annoying-textarea-bug-in-mozillafirefox
 category: WWW
 published:
   epoch: 1088560660

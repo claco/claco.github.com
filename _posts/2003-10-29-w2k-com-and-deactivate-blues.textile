@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "W2K, COM+ and Deactivate Blues"
+slug: w2k-com-and-deactivate-blues
 category: MicroShaft
 published:
   epoch: 1067473334

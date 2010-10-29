@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Three Rings Of Programmers Hell"
+slug: three-rings-of-programmers-hell
 category: Humor
 published:
   epoch: 1113011459

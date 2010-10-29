@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shrek 2 Knows Lewis Black"
+slug: shrek-2-knows-lewis-black
 category: Humor
 published:
   epoch: 1085887406

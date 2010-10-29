@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AxKit Badge"
+slug: axkit-badge
 category: WWW
 published:
   epoch: 1034540385

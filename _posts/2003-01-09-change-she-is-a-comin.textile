@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Change: She is a `comin."
+slug: change-she-is-a-comin
 category: WWW
 published:
   epoch: 1042161955

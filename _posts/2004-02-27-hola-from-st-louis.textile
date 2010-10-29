@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hola From St. Louis"
+slug: hola-from-st-louis
 category: OffTopic
 published:
   epoch: 1077939897

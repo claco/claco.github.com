@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Windows Update Can Suck My Ass"
+slug: windows-update-can-suck-my-ass
 category: MicroShaft
 published:
   epoch: 1043876227

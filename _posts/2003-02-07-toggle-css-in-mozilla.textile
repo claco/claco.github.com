@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Toggle CSS In Mozilla"
+slug: toggle-css-in-mozilla
 category: OffTopic
 published:
   epoch: 1044633844

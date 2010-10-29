@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Multiple IE Versions On One PC"
+slug: multiple-ie-versions-on-one-pc
 category: WWW
 published:
   epoch: 1068177898

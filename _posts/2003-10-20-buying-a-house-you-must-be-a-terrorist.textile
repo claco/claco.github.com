@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Buying A House? You Must Be A Terrorist."
+slug: buying-a-house-you-must-be-a-terrorist
 category: WTF
 published:
   epoch: 1066686200

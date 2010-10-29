@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pierre Denis Rules"
+slug: pierre-denis-rules
 category: Perl
 published:
   epoch: 1111447215

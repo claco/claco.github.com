@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Phase 1.5: Complete"
+slug: phase-15-complete
 category: OffTopic
 published:
   epoch: 1064972260

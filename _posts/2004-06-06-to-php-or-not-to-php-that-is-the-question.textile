@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "To PHP Or Not To PHP; That Is The Question"
+slug: to-php-or-not-to-php-that-is-the-question
 category: WWW
 published:
   epoch: 1086574067

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Quoted In The Washington Times"
+slug: quoted-in-the-washington-times
 category: Humor
 published:
   epoch: 1077644529

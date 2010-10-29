@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Relative Font Sizes"
+slug: relative-font-sizes
 category: WWW
 published:
   epoch: 1034550261

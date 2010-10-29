@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "For The SQL Geek In You"
+slug: for-the-sql-geek-in-you
 category: Humor
 published:
   epoch: 1069282997

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eating Your Own Dog Food: Part 2"
+slug: eating-your-own-dog-food-part-2
 category: Perl
 published:
   epoch: 1041646314
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-Well, I decided to eat my own dog food, and install the <a href="http://today.icantfocus.com/downloads/MTPingProxy/2.51/" title="Download link for MTPingProxy patches">
+Well, I decided to eat my own dog food, and install the <a href="/downloads/MTPingProxy/2.51/" title="Download link for MTPingProxy patches">
 <strong>MTPingProxy</strong></a> patches on the live server. The install went without a hitch. 
 Once I opened up the firewall however, only the first of all pings made it out the door. Easy fix for once.
 </p>

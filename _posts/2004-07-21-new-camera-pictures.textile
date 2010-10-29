@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Camera Pictures"
+slug: new-camera-pictures
 category: OffTopic
 published:
   epoch: 1090464293
@@ -13,12 +14,12 @@ Lord knows how long it's going to take me to figure out all the settings on this
 
 The classic Isis stare. She always thinks that if you're not holding her, there is definately something wrong with you.
 
-<p class="image"><img src="/blog/images/offtopic/isis2.jpg" alt="Isis" /></p>
+<p class="image"><img src="/images/offtopic/isis2.jpg" alt="Isis" /></p>
 
 <h3>Ye Olde Pot Rack</h3>
 
 Here's the pot rack I put in for Margeaux a while back. And hanging from it are the new copper/stainless pots and pans we just got for it.
 
-<p class="image"><a href="/blog/images/offtopic/potrack.jpg"><img src="/blog/images/offtopic/potrack_small.jpg" alt="Ye Olde Pot Rack" /></a></p>
+<p class="image"><a href="/images/offtopic/potrack.jpg"><img src="/images/offtopic/potrack_small.jpg" alt="Ye Olde Pot Rack" /></a></p>
 
 

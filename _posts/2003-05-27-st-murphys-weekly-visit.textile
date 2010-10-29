@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "St. Murphys' Weekly Visit"
+slug: st-murphys-weekly-visit
 category: WTF
 published:
   epoch: 1054078527

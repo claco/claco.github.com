@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MTDateHeaders Update"
+slug: mtdateheaders-update
 category: Perl
 published:
   epoch: 1041917930

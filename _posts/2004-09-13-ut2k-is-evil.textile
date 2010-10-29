@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "UT2K* Is Evil"
+slug: ut2k-is-evil
 category: Games
 published:
   epoch: 1095124931

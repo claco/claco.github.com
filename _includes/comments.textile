@@ -1,0 +1,12 @@
+<div id="disqus_thread" class="comments"></div>
+<script type="text/javascript">
+  var disqus_identifier = "{{ page.slug}}";
+  
+  (function() {
+   var dsq = document.createElement('script');
+   dsq.type = 'text/javascript';
+   dsq.async = true;
+   dsq.src = 'http://chrislaco.disqus.com/embed.js';
+   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>

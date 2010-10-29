@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Module Groove"
+slug: module-groove
 category: Perl
 published:
   epoch: 1101930508

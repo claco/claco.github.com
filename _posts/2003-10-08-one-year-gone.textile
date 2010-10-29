@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "One Year Gone"
+slug: one-year-gone
 category: WTF
 published:
   epoch: 1065657064

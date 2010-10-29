@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Anti-Safety Photos"
+slug: anti-safety-photos
 category: Humor
 published:
   epoch: 1053965705

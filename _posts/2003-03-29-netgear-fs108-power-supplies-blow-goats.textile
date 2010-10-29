@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "NetGear FS108 Power Supplies Blow Goats"
+slug: netgear-fs108-power-supplies-blow-goats
 category: Hardware
 published:
   epoch: 1048952564
@@ -20,7 +21,7 @@ I know, I know. I really should buy a rack mount switch., but they're expensive,
 On the upshot, now I remember why I opted to never get the switches with the power supplies built in. :-)
 </p>
 <p class="center">
-<img src="/blog/images/hardware/fs108.jpg" alt="Netgear FS108 10/100 Switch" />
+<img src="/images/hardware/fs108.jpg" alt="Netgear FS108 10/100 Switch" />
 </p>
 
 

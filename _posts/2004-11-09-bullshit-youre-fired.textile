@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bullshit. You're Fired."
+slug: bullshit-youre-fired
 category: WTF
 published:
   epoch: 1100055737

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Microsoft Suing Kent State Student"
+slug: microsoft-suing-kent-state-student
 category: MicroShaft
 published:
   epoch: 1110288700

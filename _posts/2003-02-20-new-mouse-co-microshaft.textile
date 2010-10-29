@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Mouse c/o MicroShaft"
+slug: new-mouse-co-microshaft
 category: Hardware
 published:
   epoch: 1045794327
@@ -18,8 +19,8 @@ To make matters worse, ever cordless mouse that I've seen still has a 6' long do
 Now I'm not really interested in the Bluetooth part. I'm sure there's something cool about it. What sold me on this cordless mouse was the notebook adapter included in the kit. Finally, someone who makes a small (well, smaller than a long corded wireless antenna) wireless dongle for notebook usage.
 </p>
 <p class="center">
-<img src="/blog/images/hardware/bluetooth_wireless_adapter.jpg" alt="Wireless IntelliMouse Bluetooth Adapters" />
-<img src="/blog/images/hardware/bluetooth_wireless_mouse.jpg" alt="Wireless IntelliMouse Explorer for Bluetooth" />
+<img src="/images/hardware/bluetooth_wireless_adapter.jpg" alt="Wireless IntelliMouse Bluetooth Adapters" />
+<img src="/images/hardware/bluetooth_wireless_mouse.jpg" alt="Wireless IntelliMouse Explorer for Bluetooth" />
 </p>
 
 

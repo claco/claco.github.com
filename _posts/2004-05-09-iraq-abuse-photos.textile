@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "IRAQ Abuse Photos"
+slug: iraq-abuse-photos
 category: WTF
 published:
   epoch: 1084119283

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RubberCity Perl Mongers"
+slug: rubbercity-perl-mongers
 category: Perl
 tags:
   - mongers

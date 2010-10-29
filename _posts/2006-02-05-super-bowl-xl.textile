@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Super Bowl XL"
+slug: super-bowl-xl
 category: OffTopic
 published:
   epoch: 1139178528

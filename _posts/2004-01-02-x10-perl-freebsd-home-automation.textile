@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "X10, Perl, FreeBSD: Home Automation"
+slug: x10-perl-freebsd-home-automation
 category: FreeBSD
 published:
   epoch: 1073096748

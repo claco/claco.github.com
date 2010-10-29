@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Textile / MT-Textile 2"
+slug: textilemt-textile-2
 category: WWW
 published:
   epoch: 1057880909

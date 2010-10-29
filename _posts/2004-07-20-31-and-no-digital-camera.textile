@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "31 And No Digital Camera"
+slug: 31-and-no-digital-camera
 category: OffTopic
 published:
   epoch: 1090333818

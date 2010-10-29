@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's the Links Stupid!"
+slug: its-the-links-stupid
 category: OffTopic
 published:
   epoch: 1033952740

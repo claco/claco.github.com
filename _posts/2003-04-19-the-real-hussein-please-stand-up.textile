@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Real Hussein, Please Stand Up"
+slug: the-real-hussein-please-stand-up
 category: Humor
 published:
   epoch: 1050758778

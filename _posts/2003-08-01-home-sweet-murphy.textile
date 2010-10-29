@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Home Sweet Murphy"
+slug: home-sweet-murphy
 category: WTF
 published:
   epoch: 1059763856

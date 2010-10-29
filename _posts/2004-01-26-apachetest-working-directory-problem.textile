@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Apache::Test Working Directory Problem"
+slug: apachetest-working-directory-problem
 category: Perl
 published:
   epoch: 1075175015

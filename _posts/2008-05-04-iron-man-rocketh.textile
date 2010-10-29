@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Iron Man Rocketh"
+slug: iron-man-rocketh
 category: Movies
 tags:
   - iron man

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "VSS Getting Upgraded?"
+slug: vss-getting-upgraded
 category: MicroShaft
 published:
   epoch: 1060310232

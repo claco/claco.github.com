@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Linux Is Viral Right?"
+slug: linux-is-viral-right
 category: MicroShaft
 published:
   epoch: 1075055682

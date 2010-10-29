@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "We Don't Go To Ravenholm"
+slug: we-dont-go-to-ravenholm
 category: Games
 published:
   epoch: 1111459661

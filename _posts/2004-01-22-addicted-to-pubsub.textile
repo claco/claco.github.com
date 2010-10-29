@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Addicted To PubSub"
+slug: addicted-to-pubsub
 category: WWW
 published:
   epoch: 1074820180

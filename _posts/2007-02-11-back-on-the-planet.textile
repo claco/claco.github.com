@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Back On The Planet"
+slug: back-on-the-planet
 category: OffTopic
 published:
   epoch: 1171229517

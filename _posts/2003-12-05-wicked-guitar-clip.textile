@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wicked Guitar Clip"
+slug: wicked-guitar-clip
 category: Music
 published:
   epoch: 1070667458

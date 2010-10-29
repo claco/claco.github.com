@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MVC Marathon Part 1: Creating a New Application"
+slug: mvc-marathon-part-1-creating-a-new-application
 category: OffTopic
 tags:
   - c#

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What's A Little Atomic Waste Between Friends?"
+slug: whats-a-little-atomic-waste-between-friends
 category: WTF
 published:
   epoch: 1089557239

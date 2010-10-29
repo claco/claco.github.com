@@ -1,13 +1,14 @@
 ---
 layout: post
 title: "Splinter Cell 3"
+slug: splinter-cell-3
 category: Games
 published:
   epoch: 1112560073
   utc: 2005-04-03T20:27:53
 ---
 
-<img src="/blog/images/games/sc3banner.gif" alt="SC3 Banner" />
+<img src="/images/games/sc3banner.gif" alt="SC3 Banner" />
 
 I must say, after all the crap with the last version of Splinter Cell; the crappy patches, the crashes, the corrupt profile issues; this new version is actually great.
 

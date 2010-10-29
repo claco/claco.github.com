@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Taglibs make my brain hurt"
+slug: taglibs-make-my-brain-hurt
 category: Perl
 published:
   epoch: 1106058075

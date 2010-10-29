@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Farg You Visual Studio.NET"
+slug: farg-you-visual-studionet
 category: WTF
 published:
   epoch: 1079015258

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CSS, Fixed Font Sizes and Dave Winer"
+slug: css-fixed-font-sizes-and-dave-winer
 category: WWW
 published:
   epoch: 1054214032

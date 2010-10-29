@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wireless Fixed...I Hope"
+slug: wireless-fixedi-hope
 category: WTF
 published:
   epoch: 1070334450

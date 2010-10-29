@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Damn You Worldcom/MCI"
+slug: damn-you-worldcommci
 category: WTF
 published:
   epoch: 1066952003

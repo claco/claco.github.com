@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "TopStyle Pro 3"
+slug: topstyle-pro-3
 category: WWW
 published:
   epoch: 1058572470

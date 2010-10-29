@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Splinter Cell"
+slug: splinter-cell
 category: Games
 published:
   epoch: 1048733211
@@ -29,7 +30,7 @@ Now, if I could just <em>finish</em> on of these games without cheating. :-)
 </p>
 
 <p class="center">
-<img src="/blog/images/offtopic/splintercell.gif" alt="Splinter Cell Box Picture" />
+<img src="/images/offtopic/splintercell.gif" alt="Splinter Cell Box Picture" />
 </p>
 
 

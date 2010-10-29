@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shows I Watch(ed)"
+slug: shows-i-watched
 category: OffTopic
 published:
   epoch: 1060454945

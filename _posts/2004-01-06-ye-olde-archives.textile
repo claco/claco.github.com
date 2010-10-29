@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ye Olde Archives"
+slug: ye-olde-archives
 category: Static
 published:
   epoch: 1073446668

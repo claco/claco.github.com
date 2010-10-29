@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Geek Confessional"
+slug: geek-confessional
 category: Hardware
 published:
   epoch: 1048645598

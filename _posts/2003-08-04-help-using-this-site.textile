@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Help Using This Site"
+slug: help-using-this-site
 category: Static
 published:
   epoch: 1060049307

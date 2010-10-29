@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Snowing"
+slug: its-snowing
 category: WTF
 published:
   epoch: 1065097969

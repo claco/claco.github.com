@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blog Gone Simple"
+slug: blog-gone-simple
 category: WWW
 published:
   epoch: 1073447723

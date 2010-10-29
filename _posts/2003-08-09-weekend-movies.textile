@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Weekend Movies"
+slug: weekend-movies
 category: Movies
 published:
   epoch: 1060443558

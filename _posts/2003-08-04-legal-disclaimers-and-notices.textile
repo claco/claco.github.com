@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Legal Disclaimers and Notices"
+slug: legal-disclaimers-and-notices
 category: Static
 published:
   epoch: 1060050162

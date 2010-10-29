@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Beer, Food, and People. Oh My."
+slug: beer-food-and-people-oh-my
 category: OffTopic
 published:
   epoch: 1050110243

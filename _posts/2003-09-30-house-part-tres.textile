@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "House: Part Tres"
+slug: house-part-tres
 category: OffTopic
 published:
   epoch: 1064895850

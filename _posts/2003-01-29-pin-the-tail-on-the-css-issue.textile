@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Pin The Tail On The CSS Issue"
+slug: pin-the-tail-on-the-css-issue
 category: WWW
 published:
   epoch: 1043884261
@@ -9,7 +10,7 @@ published:
 
 <p>
 I've done some more tinkering with Opera 7 trying to pinpoint the CSS problems with styleshets vs. alternate stylesheets.
-Here's a <a href="http://today.icantfocus.com/downloads/tests/opera7/index.htm" title="CSS selection in Opera 7 test pages">test page</a> for the curious. Here's what I found.
+Here's a <a href="/downloads/tests/opera7/index.htm" title="CSS selection in Opera 7 test pages">test page</a> for the curious. Here's what I found.
 </p>
 
 <pre>

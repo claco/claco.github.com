@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "In The Mood"
+slug: in-the-mood
 category: WWW
 published:
   epoch: 1035415798

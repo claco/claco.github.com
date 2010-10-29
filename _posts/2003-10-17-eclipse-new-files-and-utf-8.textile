@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eclipse, New Files, and UTF-8"
+slug: eclipse-new-files-and-utf-8
 category: Perl
 published:
   epoch: 1066437377

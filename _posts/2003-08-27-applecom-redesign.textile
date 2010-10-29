@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Apple.com Redesign"
+slug: applecom-redesign
 category: WWW
 published:
   epoch: 1062029861

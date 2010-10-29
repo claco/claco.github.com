@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "TrackBack Enabled"
+slug: trackback-enabled
 category: OffTopic
 published:
   epoch: 1034397100
@@ -20,7 +21,7 @@ For example, let's say I have an individual entry archive page you want to link 
 
 <pre>
 <code>
-http://today.icantfocus.com/blog/archives/entries/000001/
+/archives/entries/000001/
 </code>
 </pre>
 
@@ -28,7 +29,7 @@ while the <em>real</em> page may be located at
 
 <pre>
 <code>
-http://today.icantfocus.com/blog/archives/entries/000001.xsp
+/archives/entries/000001.xsp
 </code>
 </pre>
 
@@ -39,7 +40,7 @@ Now the URL for the actual page above would change from
 
 <pre>
 <code>
-http://today.icantfocus.com/blog/archives/entries/000001.xsp
+/archives/entries/000001.xsp
 </code>
 </pre>
 
@@ -47,7 +48,7 @@ to
 
 <pre>
 <code>
-http://today.icantfocus.com/blog/archives/entries/000001.php
+/archives/entries/000001.php
 </code>
 </pre>
 
@@ -55,7 +56,7 @@ but the the URL used on my website and others links to that entry would still be
 
 <pre>
 <code>
-http://today.icantfocus.com/blog/archives/entries/000001/
+/archives/entries/000001/
 </code>
 </pre>
 

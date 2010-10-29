@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "EYODF: Part 3"
+slug: eyodf-part-3
 category: Humor
 published:
   epoch: 1042067330

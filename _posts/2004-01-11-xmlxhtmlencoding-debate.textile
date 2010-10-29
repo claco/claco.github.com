@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "XML/XHTML/Encoding Debate"
+slug: xmlxhtmlencoding-debate
 category: WWW
 published:
   epoch: 1073869351

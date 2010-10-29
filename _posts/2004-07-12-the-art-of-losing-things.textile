@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Art of Losing Things"
+slug: the-art-of-losing-things
 category: Humor
 published:
   epoch: 1089679286

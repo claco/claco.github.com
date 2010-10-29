@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Someone Does Read My Blog"
+slug: someone-does-read-my-blog
 category: Hardware
 published:
   epoch: 1041719574

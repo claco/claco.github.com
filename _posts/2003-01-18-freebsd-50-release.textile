@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FreeBSD 5.0-RELEASE"
+slug: freebsd-50-release
 category: FreeBSD
 published:
   epoch: 1042950597

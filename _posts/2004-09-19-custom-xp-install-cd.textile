@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Custom XP Install CD"
+slug: custom-xp-install-cd
 category: MicroShaft
 published:
   epoch: 1095634604
@@ -9,7 +10,7 @@ published:
 
 Apparantly I felt the need to waste my weekend creating a custom XP installaton CD.
 
-<img src="/blog/images/microshaft/freshinstall.png" alt="RunOnceEx Window" title="THis will make Reboot, Reformat, Reinstall a lot quicker!" />
+<img src="/images/microshaft/freshinstall.png" alt="RunOnceEx Window" title="THis will make Reboot, Reformat, Reinstall a lot quicker!" />
 
 While it's not perfect, it at least installs ATI, Audigy2 and wireless drivers along with .NET 1.1, .NET SP1, Firefix, Thunderbird, WMP10, Textpad and NUnit 2.2.
 

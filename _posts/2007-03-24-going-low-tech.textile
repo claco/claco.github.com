@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Going Low Tech"
+slug: going-low-tech
 category: OffTopic
 published:
   epoch: 1174715457

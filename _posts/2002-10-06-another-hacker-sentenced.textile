@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Another Hacker Sentenced"
+slug: another-hacker-sentenced
 category: WTF
 published:
   epoch: 1033885814

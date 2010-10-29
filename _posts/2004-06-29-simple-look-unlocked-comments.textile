@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Simple Look. Unlocked Comments."
+slug: simple-look-unlocked-comments
 category: OffTopic
 published:
   epoch: 1088548904

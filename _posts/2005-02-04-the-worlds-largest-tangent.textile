@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Worlds Largest Tangent"
+slug: the-worlds-largest-tangent
 category: FreeBSD
 published:
   epoch: 1107572782

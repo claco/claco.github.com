@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Murphy, Murphy, Murphy"
+slug: murphy-murphy-murphy
 category: WTF
 published:
   epoch: 1085188910

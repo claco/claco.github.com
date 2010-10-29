@@ -11,7 +11,7 @@ Last year, I bought the wife a new Dell Studio 17" laptop to replace her dead la
 <!--more-->
 Rather than spending money on trying to get a USB to Parallel adapter to work or trying to dig up an ethernet print server, I opted to purchase a new printer. A co worker invested in a Brother MFC-490CW and loved it. He hates everything, but loved this printer. Good enough for him; good enought for me.
 
-<a href="http://chrislaco.com/wp-content/uploads/2009/02/mfc-490cw.png"><img src="http://chrislaco.com/wp-content/uploads/2009/02/mfc-490cw-150x92.png" alt="MFC-490CW" title="MFC-490CW" width="150" height="92" class="aligncenter size-thumbnail wp-image-148" /></a>
+<a href="/images/uploads/2009/02/mfc-490cw.png"><img src="/images/uploads/2009/02/mfc-490cw-150x92.png" alt="MFC-490CW" title="MFC-490CW" width="150" height="92" class="aligncenter size-thumbnail wp-image-148" /></a>
 
 It's wireless. I can put it anywhere. Any computer in the house can print to it. Any computer can send faxes through it. It can also scan/copy documents and images and send the results to any computer that is online.
 

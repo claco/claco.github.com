@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Gaming Rig"
+slug: new-gaming-rig
 category: Hardware
 published:
   epoch: 1054843081

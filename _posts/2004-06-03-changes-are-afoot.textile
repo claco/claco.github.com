@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Changes Are Afoot"
+slug: changes-are-afoot
 category: WTF
 published:
   epoch: 1086314061

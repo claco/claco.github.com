@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "When The Same SQL Statement...Isn't."
+slug: when-the-same-sql-statementisnt
 category: MicroShaft
 published:
   epoch: 1095447429

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Proving Once Again"
+slug: proving-once-again
 category: WTF
 published:
   epoch: 1035504065

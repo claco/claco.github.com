@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "VALVe, Half Life 2, and Steam"
+slug: valve-half-life-2-and-steam
 category: Games
 published:
   epoch: 1100718441

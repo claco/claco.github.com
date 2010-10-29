@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Joel On Unicode"
+slug: joel-on-unicode
 category: WWW
 published:
   epoch: 1065904450

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Email Reply To MT Comments"
+slug: email-reply-to-mt-comments
 category: WWW
 published:
   epoch: 1060120381

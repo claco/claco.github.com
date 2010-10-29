@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Search In The House"
+slug: search-in-the-house
 category: WWW
 published:
   epoch: 1042776812

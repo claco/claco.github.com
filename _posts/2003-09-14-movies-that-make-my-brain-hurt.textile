@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Movies That Make My Brain Hurt"
+slug: movies-that-make-my-brain-hurt
 category: Movies
 published:
   epoch: 1063586928

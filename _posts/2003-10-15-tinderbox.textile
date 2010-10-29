@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tinderbox"
+slug: tinderbox
 category: WWW
 published:
   epoch: 1066267809
@@ -11,7 +12,7 @@ published:
 I'm working on a multi-lingual site problem for a friend of sorts. The basic problem was how to get Apache MultiViews to remember your language preference regardless of what your browsers Accept-Language header is set to without having to alter any browser configurations. Of course you could hack some scripts and links to do the same using a redirector page, but this way the href links remain clean and simple.
 </p>
 <p>
-With a little bit of <a href="http://today.icantfocus.com/downloads/AcceptLanguage.pm">PerlInitHandler goodness</a> and some javascript, all is well.
+With a little bit of <a href="/downloads/AcceptLanguage.pm">PerlInitHandler goodness</a> and some javascript, all is well.
 </p>
 <p>
 Take a tinker with <a href="http://tinderbox.icantfocus.com/">the mock site</a>.

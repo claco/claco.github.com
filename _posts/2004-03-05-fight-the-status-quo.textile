@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fight The Status Quo"
+slug: fight-the-status-quo
 category: WTF
 published:
   epoch: 1078512328

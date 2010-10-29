@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Random Acts of Kindness"
+slug: random-acts-of-kindness
 category: OffTopic
 published:
   epoch: 1041732484

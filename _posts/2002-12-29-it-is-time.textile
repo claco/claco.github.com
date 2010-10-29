@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It Is Time"
+slug: it-is-time
 category: WTF
 published:
   epoch: 1041208205

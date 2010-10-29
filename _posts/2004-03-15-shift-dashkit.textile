@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SHIFT_dashkit?"
+slug: shift-dashkit
 category: OffTopic
 published:
   epoch: 1079404471
@@ -11,7 +12,7 @@ published:
 This may have to be my first mod.
 </p>
 <p class="image">
-<img src="/blog/images/offtopic/woodkit.jpg" alt="Woodgrain Dash Kit" />
+<img src="/images/offtopic/woodkit.jpg" alt="Woodgrain Dash Kit" />
 </p>
 
 

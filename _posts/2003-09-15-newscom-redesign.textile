@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "News.com Redesign"
+slug: newscom-redesign
 category: WWW
 published:
   epoch: 1063630726

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why My Wife Is A Better Person Than I Am: Part 274"
+slug: why-my-wife-is-a-better-person-than-i-am-part-274
 category: OffTopic
 published:
   epoch: 1139928344

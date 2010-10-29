@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MT 2.5 In The House"
+slug: mt25-in-the-house
 category: OffTopic
 published:
   epoch: 1034129038

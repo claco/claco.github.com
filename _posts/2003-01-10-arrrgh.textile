@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Arrrgh."
+slug: arrrgh
 category: WWW
 published:
   epoch: 1042179360

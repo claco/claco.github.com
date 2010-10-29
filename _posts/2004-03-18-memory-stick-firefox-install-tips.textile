@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Memory Stick Firefox Install Tips"
+slug: memory-stick-firefox-install-tips
 category: Software
 published:
   epoch: 1079655561

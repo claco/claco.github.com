@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Place Your Bets"
+slug: place-your-bets
 category: OffTopic
 published:
   epoch: 1046996905

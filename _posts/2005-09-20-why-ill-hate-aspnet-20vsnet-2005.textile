@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I'll Hate ASP.NET 2.0/VS.NET 2005"
+slug: why-ill-hate-aspnet-20vsnet-2005
 category: MicroShaft
 published:
   epoch: 1127242377

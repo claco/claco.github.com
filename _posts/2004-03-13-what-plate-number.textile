@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What Plate Number?"
+slug: what-plate-number
 category: OffTopic
 published:
   epoch: 1079232620

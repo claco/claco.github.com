@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Del.icio.us For Tags Broken"
+slug: delicious-for-tags-broken
 category: WTF
 published:
   epoch: 1136645943

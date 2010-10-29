@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MT Entry Redirect CGI"
+slug: mt-entry-redirect-cgi
 category: Perl
 published:
   epoch: 1086567365

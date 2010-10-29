@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Plea For Grammar Mercy"
+slug: plea-for-grammar-mercy
 category: OffTopic
 published:
   epoch: 1042500228

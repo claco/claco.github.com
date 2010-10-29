@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lowes Rules!"
+slug: lowes-rules
 category: OffTopic
 published:
   epoch: 1067648105

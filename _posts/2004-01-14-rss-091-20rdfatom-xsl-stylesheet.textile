@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RSS 0.91-2.0/RDF/Atom XSL Stylesheet"
+slug: rss-091-20rdfatom-xsl-stylesheet
 category: WWW
 published:
   epoch: 1074134466

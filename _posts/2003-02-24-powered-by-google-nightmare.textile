@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Powered By Google Nightmare"
+slug: powered-by-google-nightmare
 category: WWW
 published:
   epoch: 1046104438

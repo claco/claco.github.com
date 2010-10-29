@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "E3 Earwig"
+slug: e3-earwig
 category: Humor
 published:
   epoch: 1115730441

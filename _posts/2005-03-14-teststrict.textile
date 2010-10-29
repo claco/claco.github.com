@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Test::Strict"
+slug: teststrict
 category: Perl
 published:
   epoch: 1110855669

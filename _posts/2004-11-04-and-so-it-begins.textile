@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "And So It Begins"
+slug: and-so-it-begins
 category: WTF
 published:
   epoch: 1099609032

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm Back"
+slug: im-back
 category: Hardware
 published:
   epoch: 1095815069

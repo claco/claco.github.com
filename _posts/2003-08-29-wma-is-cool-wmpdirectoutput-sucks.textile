@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "WMA Is Cool. WMP/DirectOutput Sucks"
+slug: wma-is-cool-wmpdirectoutput-sucks
 category: Music
 published:
   epoch: 1062164993

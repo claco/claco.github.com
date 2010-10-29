@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Best Buy, Worst Repair"
+slug: best-buy-worst-repair
 category: Hardware
 published:
   epoch: 1042939936

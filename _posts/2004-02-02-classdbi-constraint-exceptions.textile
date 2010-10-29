@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Class::DBI: Constraint Exceptions"
+slug: classdbi-constraint-exceptions
 category: Perl
 published:
   epoch: 1075782946

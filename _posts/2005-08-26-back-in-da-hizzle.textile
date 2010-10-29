@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Back In Da Hizzle"
+slug: back-in-da-hizzle
 category: OffTopic
 published:
   epoch: 1125106114

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New UPS Installed"
+slug: new-ups-installed
 category: Hardware
 published:
   epoch: 1041782689

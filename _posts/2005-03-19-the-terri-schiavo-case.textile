@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Terri Schiavo Case"
+slug: the-terri-schiavo-case
 category: WTF
 published:
   epoch: 1111273375

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "If It Ain't Broke..."
+slug: if-it-aint-broke
 category: FreeBSD
 published:
   epoch: 1064184372

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Snafu"
+slug: comments-snafu
 category: OffTopic
 published:
   epoch: 1033888134

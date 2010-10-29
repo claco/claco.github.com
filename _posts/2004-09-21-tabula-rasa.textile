@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tabula Rasa"
+slug: tabula-rasa
 category: Hardware
 published:
   epoch: 1095811808

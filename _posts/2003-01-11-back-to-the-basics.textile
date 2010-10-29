@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Back To The Basics"
+slug: back-to-the-basics
 category: WTF
 published:
   epoch: 1042333308

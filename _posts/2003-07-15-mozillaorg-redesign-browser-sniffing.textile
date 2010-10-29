@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mozilla.org Redesign: Browser Sniffing"
+slug: mozillaorg-redesign-browser-sniffing
 category: WWW
 published:
   epoch: 1058298242

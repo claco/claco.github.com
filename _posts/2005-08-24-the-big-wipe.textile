@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Big Wipe"
+slug: the-big-wipe
 category: FreeBSD
 published:
   epoch: 1124913928

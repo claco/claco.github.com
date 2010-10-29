@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Diverse Day. Good Customer Service."
+slug: diverse-day-good-customer-service
 category: OffTopic
 published:
   epoch: 1053715841

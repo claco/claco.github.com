@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Robocopy Woes"
+slug: robocopy-woes
 category: MicroShaft
 published:
   epoch: 1060262108

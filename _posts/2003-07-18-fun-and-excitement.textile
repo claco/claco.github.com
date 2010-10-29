@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Fun And Excitement"
+slug: fun-and-excitement
 category: OffTopic
 published:
   epoch: 1058570614

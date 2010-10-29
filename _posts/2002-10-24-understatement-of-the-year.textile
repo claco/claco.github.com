@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Understatement of The Year"
+slug: understatement-of-the-year
 category: Humor
 published:
   epoch: 1035504389

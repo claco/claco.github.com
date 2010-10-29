@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CsvDataReader"
+slug: csvdatareader
 category: Software
 tags:
   - 2008

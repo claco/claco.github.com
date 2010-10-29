@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Web Standards MeetUp"
+slug: web-standards-meetup
 category: WWW
 published:
   epoch: 1043893315

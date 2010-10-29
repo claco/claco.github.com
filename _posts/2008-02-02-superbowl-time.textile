@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SuperBowl Time"
+slug: superbowl-time
 category: OffTopic
 tags:
   - superbowl

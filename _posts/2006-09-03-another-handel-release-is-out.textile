@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Another Handel Release Is Out"
+slug: another-handel-release-is-out
 category: Software
 tags:
   - handel

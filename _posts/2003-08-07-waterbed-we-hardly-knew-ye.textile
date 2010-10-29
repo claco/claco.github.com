@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Waterbed, We Hardly Knew Ye"
+slug: waterbed-we-hardly-knew-ye
 category: OffTopic
 published:
   epoch: 1060308269

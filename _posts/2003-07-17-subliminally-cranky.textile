@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Subliminally Cranky"
+slug: subliminally-cranky
 category: OffTopic
 published:
   epoch: 1058497570

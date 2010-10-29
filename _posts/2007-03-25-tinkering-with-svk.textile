@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tinkering With SVK"
+slug: tinkering-with-svk
 category: OffTopic
 tags:
   - source control

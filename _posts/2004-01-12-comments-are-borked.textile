@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Are Borked..."
+slug: comments-are-borked
 category: WTF
 published:
   epoch: 1073933397

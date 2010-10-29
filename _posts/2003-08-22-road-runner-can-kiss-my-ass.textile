@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Road Runner Can Kiss My Ass"
+slug: road-runner-can-kiss-my-ass
 category: WTF
 published:
   epoch: 1061601552

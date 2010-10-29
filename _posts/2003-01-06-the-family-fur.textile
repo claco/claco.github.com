@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Family Fur"
+slug: the-family-fur
 category: OffTopic
 published:
   epoch: 1041832788
@@ -22,7 +23,7 @@ published:
 	Sophia passed away towards the end od 2002. She will be missed.
 </p>
 <p>
-<img src="/blog/images/offtopic/sophia.jpg" alt="Photo of Sophia" width="175" height="175" />
+<img src="/images/offtopic/sophia.jpg" alt="Photo of Sophia" width="175" height="175" />
 </p>
 <h3>Neiko. AKA "Raspy"</h3>
 <p>
@@ -31,7 +32,7 @@ published:
 	They aren't mean however, at least mine aren't.
 </p>
 <p>
-<img src="/blog/images/offtopic/neiko.jpg" alt="Photo of Neiko" width="175" height="175" />
+<img src="/images/offtopic/neiko.jpg" alt="Photo of Neiko" width="175" height="175" />
 </p>
 <h3>Isis. AKA "Ice"</h3>
 <p>
@@ -39,7 +40,7 @@ published:
 	What I wouldn't give to have her speak english for 5 minutes.
 </p>
 <p>
-<img src="/blog/images/offtopic/isis.jpg" alt="Photo of Isis" width="175" height="175" />
+<img src="/images/offtopic/isis.jpg" alt="Photo of Isis" width="175" height="175" />
 </p>
 <h3>Babs. AKA "Babsie Boo" / "Boo"</h3>
 <p>
@@ -48,7 +49,7 @@ published:
 	She's a little to nice/shy for her own good aorund the Siamese, but somehow we manage.
 </p>
 <p>
-<img src="/blog/images/offtopic/babs.jpg" alt="Photo of Babs" width="175" height="175" />
+<img src="/images/offtopic/babs.jpg" alt="Photo of Babs" width="175" height="175" />
 </p>
 <h3>Buttons. AKA "BillyCat" / "RoboKitty"</h3>
 <p>
@@ -57,7 +58,7 @@ published:
 	We love ya girl.
 </p>
 <p>
-<img src="/blog/images/offtopic/buttons.jpg" alt="Photo of Buttons" width="175" height="175" />
+<img src="/images/offtopic/buttons.jpg" alt="Photo of Buttons" width="175" height="175" />
 </p>
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MySQL-Front Lives!"
+slug: mysql-front-lives
 category: Software
 published:
   epoch: 1072806032

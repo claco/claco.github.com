@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Half Way There"
+slug: half-way-there
 category: OffTopic
 tags:
   - flickr

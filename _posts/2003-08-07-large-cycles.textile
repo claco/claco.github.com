@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Large Cycles"
+slug: large-cycles
 category: OffTopic
 published:
   epoch: 1060312577

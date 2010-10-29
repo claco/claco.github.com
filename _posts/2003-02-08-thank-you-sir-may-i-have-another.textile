@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thank You Sir, May I Have Another?"
+slug: thank-you-sir-may-i-have-another
 category: Humor
 published:
   epoch: 1044720033

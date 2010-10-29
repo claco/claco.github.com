@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "American Sellout"
+slug: american-sellout
 category: OffTopic
 published:
   epoch: 1076375849

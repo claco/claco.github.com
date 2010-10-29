@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "JK3 Announced"
+slug: jk3-announced
 category: Games
 published:
   epoch: 1050464356

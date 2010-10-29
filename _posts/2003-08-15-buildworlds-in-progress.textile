@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Buildworld(s) In Progress"
+slug: buildworlds-in-progress
 category: FreeBSD
 published:
   epoch: 1060995579

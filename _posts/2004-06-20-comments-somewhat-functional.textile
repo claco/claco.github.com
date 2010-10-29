@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Somewhat Functional"
+slug: comments-somewhat-functional
 category: WWW
 published:
   epoch: 1087780675

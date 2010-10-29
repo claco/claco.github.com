@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Was Wrong. I Admit It."
+slug: i-was-wrong-i-admit-it
 category: Games
 published:
   epoch: 1110324769
@@ -9,7 +10,7 @@ published:
 
 I was wrong. I'll admit that.
 
-<img src="/blog/images/games/hl2.gif" alt=""/>
+<img src="/images/games/hl2.gif" alt=""/>
 
 Even though <a href="/blog/archives/entries/new_gaming_rig.icf">my current gaming rig</a> is going on two years old, it still kicks ass. A 2.4 overclocked to 3.3 on air cooling doesn't suck, and the memory throughput with the OCZ dual channel kicks ass, even by most of todays benchmarks.
 

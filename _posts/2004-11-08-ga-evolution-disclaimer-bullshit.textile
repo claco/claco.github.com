@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ga. Evolution Disclaimer Bullshit"
+slug: ga-evolution-disclaimer-bullshit
 category: WTF
 published:
   epoch: 1099969714

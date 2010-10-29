@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Email Disclaimers, Lawyers, and Irony"
+slug: email-disclaimers-lawyers-and-irony
 category: Humor
 published:
   epoch: 1054768867

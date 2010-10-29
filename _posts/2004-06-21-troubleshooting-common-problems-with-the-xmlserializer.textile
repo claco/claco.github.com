@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Troubleshooting Common Problems with the XmlSerializer"
+slug: troubleshooting-common-problems-with-the-xmlserializer
 category: MicroShaft
 published:
   epoch: 1087865083

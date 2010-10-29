@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Former Reservist To Sue Army"
+slug: former-reservist-to-sue-army
 category: WTF
 published:
   epoch: 1089250138

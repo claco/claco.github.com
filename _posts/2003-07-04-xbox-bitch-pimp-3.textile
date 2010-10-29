@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Xbox: Bitch Pimp #3"
+slug: xbox-bitch-pimp-3
 category: MicroShaft
 published:
   epoch: 1057326451

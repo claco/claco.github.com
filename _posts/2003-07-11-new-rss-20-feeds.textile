@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New RSS 2.0 Feeds"
+slug: new-rss-20-feeds
 category: WWW
 published:
   epoch: 1057950715

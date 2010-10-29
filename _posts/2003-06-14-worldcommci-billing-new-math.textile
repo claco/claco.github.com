@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Worldcom/MCI Billing New Math"
+slug: worldcommci-billing-new-math
 category: WTF
 published:
   epoch: 1055629348

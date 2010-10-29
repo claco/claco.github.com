@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Accessible Navigational Links"
+slug: accessible-navigational-links
 category: WWW
 published:
   epoch: 1042426209

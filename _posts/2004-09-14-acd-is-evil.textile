@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "ACD Is Evil"
+slug: acd-is-evil
 category: Hardware
 published:
   epoch: 1095211392
@@ -9,6 +10,6 @@ published:
 
 Boy did I sin this evening. :-)
 
-<img src="/blog/images/hardware/acd23.jpg" alt="Apple Cinema Display 23&quot;" title="Apple Cinema Display 23&quot; - My New Toy" />
+<img src="/images/hardware/acd23.jpg" alt="Apple Cinema Display 23&quot;" title="Apple Cinema Display 23&quot; - My New Toy" />
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Worse Than HTML Forms"
+slug: worse-than-html-forms
 category: WWW
 published:
   epoch: 1094676761

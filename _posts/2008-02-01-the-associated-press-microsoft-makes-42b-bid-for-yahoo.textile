@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Associated Press: Microsoft Makes $42B Bid for Yahoo"
+slug: the-associated-press-microsoft-makes-42b-bid-for-yahoo
 category: MicroShaft
 published:
   epoch: 1201920563

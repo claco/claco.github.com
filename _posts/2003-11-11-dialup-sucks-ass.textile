@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dialup Sucks Ass"
+slug: dialup-sucks-ass
 category: OffTopic
 published:
   epoch: 1068599096

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jedi Academy Reserved"
+slug: jedi-academy-reserved
 category: Games
 published:
   epoch: 1063752607

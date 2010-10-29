@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "XBox Owned. Again."
+slug: xbox-owned-again
 category: Humor
 published:
   epoch: 1034457262

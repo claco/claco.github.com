@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Laptop Is Back!"
+slug: the-laptop-is-back
 category: Hardware
 published:
   epoch: 1115431636

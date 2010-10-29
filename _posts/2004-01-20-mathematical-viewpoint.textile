@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mathematical Viewpoint"
+slug: mathematical-viewpoint
 category: Humor
 published:
   epoch: 1074612158

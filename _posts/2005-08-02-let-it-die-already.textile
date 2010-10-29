@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Let It Die Already"
+slug: let-it-die-already
 category: Movies
 published:
   epoch: 1123030551

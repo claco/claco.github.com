@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CSS Font Sizing Scuffle"
+slug: css-font-sizing-scuffle
 category: WWW
 published:
   epoch: 1043127722

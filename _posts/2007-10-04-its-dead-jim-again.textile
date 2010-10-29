@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Dead Jim. Again."
+slug: its-dead-jim-again
 category: Hardware
 published:
   epoch: 1191544228

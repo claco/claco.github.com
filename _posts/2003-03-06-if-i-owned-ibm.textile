@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "If I Owned IBM..."
+slug: if-i-owned-ibm
 category: WTF
 published:
   epoch: 1047006885

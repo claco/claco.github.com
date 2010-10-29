@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm Stupid"
+slug: im-stupid
 category: WWW
 published:
   epoch: 1050632630

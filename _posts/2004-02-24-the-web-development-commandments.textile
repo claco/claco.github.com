@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Web Development Commandments"
+slug: the-web-development-commandments
 category: Software
 published:
   epoch: 1077645560

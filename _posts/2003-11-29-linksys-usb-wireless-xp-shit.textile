@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Linksys USB Wireless + XP = Shit"
+slug: linksys-usb-wireless-xp-shit
 category: WTF
 published:
   epoch: 1070148374

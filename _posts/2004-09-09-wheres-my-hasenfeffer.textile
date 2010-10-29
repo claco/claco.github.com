@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Where's My Hasenfeffer?"
+slug: wheres-my-hasenfeffer
 category: Games
 published:
   epoch: 1094774132

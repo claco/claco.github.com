@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Makefile.PL Trick"
+slug: new-makefilepl-trick
 category: Perl
 published:
   epoch: 1111115212

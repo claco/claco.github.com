@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Things I Hate More Than DLL Hell"
+slug: things-i-hate-more-than-dll-hell
 category: MicroShaft
 published:
   epoch: 1106314116

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Feeds: Description CDATA Standard?"
+slug: feeds-description-cdata-standard
 category: WWW
 published:
   epoch: 1074565637

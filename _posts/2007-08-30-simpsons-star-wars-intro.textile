@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Simpsons Star Wars Intro"
+slug: simpsons-star-wars-intro
 category: Humor
 published:
   epoch: 1188521214

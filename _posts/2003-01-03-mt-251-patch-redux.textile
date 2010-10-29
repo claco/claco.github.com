@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MT 2.51 Patch Redux"
+slug: mt-251-patch-redux
 category: Perl
 published:
   epoch: 1041576235
@@ -18,7 +19,7 @@ Without further a-mountaindew, here it is:
 
 <h4>MTPingInterface</h4>
 <p>
-	<a href="http://today.icantfocus.com/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
+	<a href="/downloads/MTPingInterface/2.51/" title="Download MTPingInterface patches">Download Files</a><br />
 	I also went that extra mile or so and added <strong>MTPingProxy</strong> and <strong>MTPingNoProxy</strong> to mix. 
 	This extra options allow pings to be routed through a proxy server and certain domains to bypass the proxy respectively.
 </p>

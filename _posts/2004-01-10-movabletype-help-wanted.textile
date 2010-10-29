@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MovableType Help Wanted"
+slug: movabletype-help-wanted
 category: WWW
 published:
   epoch: 1073788168

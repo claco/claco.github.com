@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I've Been GeoURLed!"
+slug: ive-been-geourled
 category: OffTopic
 published:
   epoch: 1042942096

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Memory Hole"
+slug: the-memory-hole
 category: OffTopic
 published:
   epoch: 1051958420

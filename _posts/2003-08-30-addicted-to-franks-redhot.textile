@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Addicted To Frank's RedHot"
+slug: addicted-to-franks-redhot
 category: OffTopic
 published:
   epoch: 1062250574

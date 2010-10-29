@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wedding Reception"
+slug: wedding-reception
 category: Humor
 published:
   epoch: 1122903887

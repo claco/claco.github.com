@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "DMCA: More Stupid By The Minute"
+slug: dmca-more-stupid-by-the-minute
 category: WTF
 published:
   epoch: 1042729842

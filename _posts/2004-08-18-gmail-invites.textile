@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gmail Invites"
+slug: gmail-invites
 category: WWW
 published:
   epoch: 1092850382

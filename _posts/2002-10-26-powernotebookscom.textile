@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Powernotebooks.com"
+slug: powernotebookscom
 category: Hardware
 published:
   epoch: 1035647209

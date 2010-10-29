@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Raise Taxes: No Thanks"
+slug: raise-taxes-no-thanks
 category: WTF
 published:
   epoch: 1045971143

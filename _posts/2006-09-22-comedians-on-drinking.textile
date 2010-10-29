@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comedians on Drinking"
+slug: comedians-on-drinking
 category: Humor
 published:
   epoch: 1158959614

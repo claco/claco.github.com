@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Feed Me Seymour"
+slug: feed-me-seymour
 category: OffTopic
 published:
   epoch: 1073859263

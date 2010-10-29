@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Running Perl Scripts Within Eclipse"
+slug: running-perl-scripts-within-eclipse
 category: Perl
 published:
   epoch: 1061519812
@@ -40,8 +41,8 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 			shown in <strong><a href="#figure1">Figure 1</a></strong> below.
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure1.png" id="figure1">
-				<img src="/blog/images/perl/eclipse-runperl-figure1-thumb.png" alt="Figure 1: Opening External Tools configuration window" />
+			<a href="/images/perl/eclipse-runperl-figure1.png" id="figure1">
+				<img src="/images/perl/eclipse-runperl-figure1-thumb.png" alt="Figure 1: Opening External Tools configuration window" />
 			</a>
 			<br />
 			<strong>Figure 1:</strong> Opening External Tools configuration window
@@ -53,15 +54,15 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 			to create a new configuration as shown in <strong><a href="#figure3">Figure 3</a></strong>.
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure2.png" id="figure2">
-				<img src="/blog/images/perl/eclipse-runperl-figure2-thumb.png" alt="Figure 2: External Tools configuration window" />
+			<a href="/images/perl/eclipse-runperl-figure2.png" id="figure2">
+				<img src="/images/perl/eclipse-runperl-figure2-thumb.png" alt="Figure 2: External Tools configuration window" />
 			</a>
 			<br />
 			<strong>Figure 1:</strong> External Tools configuration window
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure3.png" id="figure3">
-				<img src="/blog/images/perl/eclipse-runperl-figure3-thumb.png" alt="Figure 3: Creating a new configuration" />
+			<a href="/images/perl/eclipse-runperl-figure3.png" id="figure3">
+				<img src="/images/perl/eclipse-runperl-figure3-thumb.png" alt="Figure 3: Creating a new configuration" />
 			</a>
 			<br />
 			<strong>Figure 3:</strong> Creating a new configuration
@@ -109,8 +110,8 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 			After entering the data above, click <strong>Apply</strong>. You should end up with something looking like <strong><a href="#figure4">Figure 4</a></strong>.
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure4.png" id="figure4">
-				<img src="/blog/images/perl/eclipse-runperl-figure4-thumb.png" alt="Figure 4: Enter configuration values" />
+			<a href="/images/perl/eclipse-runperl-figure4.png" id="figure4">
+				<img src="/images/perl/eclipse-runperl-figure4-thumb.png" alt="Figure 4: Enter configuration values" />
 			</a>
 			<br />
 			<strong>Figure 4:</strong> Enter Main configuration values
@@ -123,8 +124,8 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 			and click <strong>Apply</strong>. Then hit <strong>OK</strong> to close the External Tools window.
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure5.png" id="figure5">
-				<img src="/blog/images/perl/eclipse-runperl-figure5-thumb.png" alt="Figure 5: Add configuration to External Tools menu" />
+			<a href="/images/perl/eclipse-runperl-figure5.png" id="figure5">
+				<img src="/images/perl/eclipse-runperl-figure5-thumb.png" alt="Figure 5: Add configuration to External Tools menu" />
 			</a>
 			<br />
 			<strong>Figure 5:</strong> Add configuration to External Tools menu
@@ -135,8 +136,8 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 			If all goes well, your new external tool configuration should be listed in the <strong>Run -> External Tools</strong> as shown in <strong><a href="#figure6">Figure 6</a></strong>. If not, then don't kill the messenger. :-)
 		</p>
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure6.png" id="figure6">
-				<img src="/blog/images/perl/eclipse-runperl-figure6-thumb.png" alt="Figure 6: New configuration in Run -> External Tools menu" />
+			<a href="/images/perl/eclipse-runperl-figure6.png" id="figure6">
+				<img src="/images/perl/eclipse-runperl-figure6-thumb.png" alt="Figure 6: New configuration in Run -> External Tools menu" />
 			</a>
 			<br />
 			<strong>Figure 6:</strong> New configuration in Run -> External Tools menu
@@ -146,8 +147,8 @@ I'm sure part of that was due to <acronym title="I-D-10-T error between the chai
 		Highlight a perl script of your choosing in the <strong>Navigator</strong> view and pick your configuration from the <strong>Run -> External Tools</strong> menu.
 		If all goes well, the results of your Perl script should now appear in the <strong>Console</strong> view similiar to <strong><a href="#figure7">Figure 7</a></strong>.
 		<p class="image">
-			<a href="/blog/images/perl/eclipse-runperl-figure7.png" id="figure7">
-				<img src="/blog/images/perl/eclipse-runperl-figure7-thumb.png" alt="Figure 7: Perl script outputs into Console view" />
+			<a href="/images/perl/eclipse-runperl-figure7.png" id="figure7">
+				<img src="/images/perl/eclipse-runperl-figure7-thumb.png" alt="Figure 7: Perl script outputs into Console view" />
 			</a>
 			<br />
 			<strong>Figure 7:</strong> Perl script outputs into Console view

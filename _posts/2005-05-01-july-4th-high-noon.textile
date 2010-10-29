@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "July 4th. High Noon."
+slug: july-4th-high-noon
 category: OffTopic
 published:
   epoch: 1114972032

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Taxing (L|W)ANS"
+slug: taxing-lwans
 category: WTF
 published:
   epoch: 1061857229

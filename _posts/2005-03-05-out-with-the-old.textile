@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Out With The Old"
+slug: out-with-the-old
 category: WWW
 published:
   epoch: 1110081175

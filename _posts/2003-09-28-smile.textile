@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Smile!"
+slug: smile
 category: Humor
 published:
   epoch: 1064754277
@@ -11,7 +12,7 @@ published:
 Even mother nature has a sense of humor. And <a href="http://news.yahoo.com/news?tmpl=story2&amp;u=/030927/481/tok80309271230&amp;e=1&amp;ncid=1756">according to this</a>, the crabs markings in photo below is not a fake. That's the old molted shell on the left.
 </p>
 <p class="image">
-<img src="/blog/images/humor/crabsmile.jpg" alt="" />
+<img src="/images/humor/crabsmile.jpg" alt="" />
 </p>
 
 

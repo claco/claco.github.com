@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Furniture!"
+slug: new-furniture
 category: OffTopic
 published:
   epoch: 1095811537
@@ -9,11 +10,11 @@ published:
 
 Our new furniture finally arrived!
 
-<a href="/blog/images/offtopic/furniture01.jpg"><img src="/blog/images/offtopic/furniture01_small.jpg" alt="The New Furniture" /></a>
+<a href="/images/offtopic/furniture01.jpg"><img src="/images/offtopic/furniture01_small.jpg" alt="The New Furniture" /></a>
 
-<a href="/blog/images/offtopic/furniture02.jpg"><img src="/blog/images/offtopic/furniture02_small.jpg" alt="The New Furniture" /></a>
+<a href="/images/offtopic/furniture02.jpg"><img src="/images/offtopic/furniture02_small.jpg" alt="The New Furniture" /></a>
 
-<a href="/blog/images/offtopic/furniture03.jpg"><img src="/blog/images/offtopic/furniture03_small.jpg" alt="The New Furniture" /></a>
+<a href="/images/offtopic/furniture03.jpg"><img src="/images/offtopic/furniture03_small.jpg" alt="The New Furniture" /></a>
 
 The rocking chair had a crack in it so it went back to repairs. Good solid furniture otherwise.
 

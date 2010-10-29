@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Make It Stop"
+slug: make-it-stop
 category: Movies
 published:
   epoch: 1083529267

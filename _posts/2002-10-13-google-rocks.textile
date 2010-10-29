@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Google Rocks"
+slug: google-rocks
 category: WWW
 published:
   epoch: 1034542578
@@ -15,7 +16,7 @@ So that fact that Google found the time to spider my site, and that I show close
 Now granted, that 'something' is that stupid <a href="http://members.iinet.net.au/~afleay/cow/" title="I'm a Cow flash movie">I'm a Cow</a> song I <a href="/blog/archives/entries/000011/" title="Post about cows">mentioned earlier</a>, but hey, I'll take it. :-)
 </p>
 <p class="image">
-<a href="/blog/images/www/google_screenshot_large.png"><img src="/blog/images/www/google_screenshot_small.png" alt="Google.com Screenshot" width="350" height="250" /></a><br />
+<a href="/images/www/google_screenshot_large.png"><img src="/images/www/google_screenshot_small.png" alt="Google.com Screenshot" width="350" height="250" /></a><br />
 <span class="caption">Click for larger image.</span>
 </p>
 <p>

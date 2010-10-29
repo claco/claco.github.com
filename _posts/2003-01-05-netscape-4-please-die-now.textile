@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Netscape 4: Please Die Now."
+slug: netscape-4-please-die-now
 category: WWW
 published:
   epoch: 1041824411

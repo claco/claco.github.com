@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What Matrix character are you?"
+slug: what-matrix-character-are-you
 category: OffTopic
 published:
   epoch: 1054263573

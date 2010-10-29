@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SharpDevelop 1.0 Released"
+slug: sharpdevelop-10-released
 category: Software
 published:
   epoch: 1095087206

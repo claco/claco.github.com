@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Identity Theft  Sentencing Law Is Worthless"
+slug: new-identity-theftsentencing-law-is-worthless
 category: OffTopic
 published:
   epoch: 1089932323

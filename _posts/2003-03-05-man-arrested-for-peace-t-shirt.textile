@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Man Arrested For Peace T-Shirt"
+slug: man-arrested-for-peace-t-shirt
 category: WTF
 published:
   epoch: 1046911780

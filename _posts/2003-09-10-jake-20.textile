@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Jake 2.0"
+slug: jake-20
 category: OffTopic
 published:
   epoch: 1063244243

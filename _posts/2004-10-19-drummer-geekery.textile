@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Drummer Geekery"
+slug: drummer-geekery
 category: Humor
 published:
   epoch: 1098234704

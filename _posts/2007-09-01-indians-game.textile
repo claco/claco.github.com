@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Indians Game"
+slug: indians-game
 category: OffTopic
 published:
   epoch: 1188678431

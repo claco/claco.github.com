@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Just Tinkering"
+slug: just-tinkering
 category: WWW
 published:
   epoch: 1073524092

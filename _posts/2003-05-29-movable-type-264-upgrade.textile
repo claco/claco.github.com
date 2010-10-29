@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Movable Type 2.64 Upgrade"
+slug: movable-type-264-upgrade
 category: OffTopic
 published:
   epoch: 1054259220

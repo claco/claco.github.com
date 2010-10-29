@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Perplexing Slow DNS Issues Expanded"
+slug: perplexing-slow-dns-issues-expanded
 category: WWW
 published:
   epoch: 1100140378

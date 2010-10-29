@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "...there is no such thing as a spare embryo..."
+slug: there-is-no-such-thing-as-a-spare-embryo
 category: WTF
 published:
   epoch: 1117020701

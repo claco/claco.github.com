@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Yet Another Which Character R U"
+slug: yet-another-which-character-r-u
 category: OffTopic
 published:
   epoch: 1060818084

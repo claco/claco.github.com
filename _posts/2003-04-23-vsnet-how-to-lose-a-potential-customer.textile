@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "VS.NET: How To Lose A Potential Customer"
+slug: vsnet-how-to-lose-a-potential-customer
 category: MicroShaft
 published:
   epoch: 1051139710

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SSL Oopsie"
+slug: ssl-oopsie
 category: Apache
 published:
   epoch: 1065841690

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "jUploadr to the Rescue"
+slug: juploadr-to-the-rescue
 category: WWW
 tags:
   - flickr

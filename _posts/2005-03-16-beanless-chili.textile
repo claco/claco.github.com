@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Beanless Chili"
+slug: beanless-chili
 category: Cooking
 published:
   epoch: 1111020058

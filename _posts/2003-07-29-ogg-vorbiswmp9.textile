@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ogg Vorbis / WMP9"
+slug: ogg-vorbiswmp9
 category: Music
 published:
   epoch: 1059537015

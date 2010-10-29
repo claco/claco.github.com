@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm Having Bad Thoughts"
+slug: im-having-bad-thoughts
 category: OffTopic
 published:
   epoch: 1064451302
@@ -11,7 +12,7 @@ published:
 And <a href="http://crismls.rapmls.com/scripts/mgrqispi.dll?APPNAME=Crisoh&amp;PRGNAME=MLSPropertyDetail&amp;ARGUMENTS=-N1259827,-N0,-N623910936,-AS,-N1">here it is</a>. It's <strong>really</strong> close to work. I've always wanted a colonial. And should either one of us be disabled, each other's salary can handle the payments. Oh yeah, and I'm almost on my last truck loan payment, so that plus my crrent house payment works out about the same.
 </p>
 <p class="image">
-<img src="/blog/images/offtopic/1259827.jpg" alt="" />
+<img src="/images/offtopic/1259827.jpg" alt="" />
 </p>
 <p>
 Keep your fingers crossed. I'm curious to see how all the paperwork would work out and trying to sell the current place of residence; and how to get that equity into the new loan.

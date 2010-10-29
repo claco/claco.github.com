@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "First Post!"
+slug: first-post
 category: OffTopic
 published:
   epoch: 1033856263
@@ -8,26 +9,26 @@ published:
 ---
 
 <p>
-  In true <a href="http://www.slashdot.org/" title="Visit slashdot.org">Slashdot</a> fashion:
+In true <a href="http://www.slashdot.org/" title="Visit slashdot.org">Slashdot</a> fashion:
 </p>
 
 <ul>
-  <li>First Post!</li>
-  <li>Goatse!</li>
-  <li>Imagine a Beowolf cluster of these!</li>
-  <li>1. Make website.<br />
-    2. ???<br />
-    3. Profit!<br /><br />
-  </li>
-  <li>FreeBSD is dead. Long live FreeBSD!</li>
+<li>First Post!</li>
+<li>Goatse!</li>
+<li>Imagine a Beowolf cluster of these!</li>
+<li>1. Make website.<br />
+2. ???<br />
+3. Profit!<br /><br />
+</li>
+<li>FreeBSD is dead. Long live FreeBSD!</li>
 </ul>
 
 
 <p>
-  There's plenty left to do around here. I'm in the process of moving from old WindBlows servers on ISDN to some almost-fresh *nix boxen on a nice speedy new ADSL connection, so beer, um bear with me on this one.
+There's plenty left to do around here. I'm in the process of moving from old WindBlows servers on ISDN to some almost-fresh *nix boxen on a nice speedy new ADSL connection, so beer, um bear with me on this one.
 </p>
 <p>
-  I've still got to get this stuff validated and cram some more friendly non-fixed font size CSS style sheets into this layout. :-)
+I've still got to get this stuff validated and cram some more friendly non-fixed font size CSS style sheets into this layout. :-)
 </p>
 
 <h4>Update</h4>
@@ -35,7 +36,7 @@ published:
 </p>
 <h4>Update</h4>
 <p>
-  Also, for any comment posters (not), the spam_protect option of MT is getting eaten by my server side xml transformations. In english: they are no spam protected until I get the templates changed.
+Also, for any comment posters (not), the spam_protect option of MT is getting eaten by my server side xml transformations. In english: they are no spam protected until I get the templates changed.
 </p>
 
 

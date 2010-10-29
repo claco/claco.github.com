@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Firefox 1.0PR Sucks...Less"
+slug: firefox-10pr-sucksless
 category: Software
 published:
   epoch: 1096375094

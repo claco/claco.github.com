@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Credit Card Prank"
+slug: the-credit-card-prank
 category: Humor
 published:
   epoch: 1054863127

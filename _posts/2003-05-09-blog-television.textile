@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Blog Television"
+slug: blog-television
 category: WTF
 published:
   epoch: 1052523036

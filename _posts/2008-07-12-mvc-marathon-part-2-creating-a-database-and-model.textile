@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MVC Marathon Part 2: Creating a Database and Model"
+slug: mvc-marathon-part-2-creating-a-database-and-model
 category: OffTopic
 tags:
   - c#

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MediaWiki"
+slug: mediawiki
 category: Software
 published:
   epoch: 1118459742

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Amazon, How I Loathe Thee"
+slug: amazon-how-i-loathe-thee
 category: WTF
 published:
   epoch: 1053122826

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Schaivo Part 3"
+slug: schaivo-part-3
 category: WTF
 published:
   epoch: 1111414471

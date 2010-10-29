@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Geek Confessional II"
+slug: geek-confessional-ii
 category: Games
 published:
   epoch: 1112566316

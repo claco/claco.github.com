@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Just a Language?"
+slug: just-a-language
 category: Perl
 published:
   epoch: 1034398665

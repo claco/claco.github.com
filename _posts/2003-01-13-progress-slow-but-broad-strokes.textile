@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Progress: Slow But Broad Strokes"
+slug: progress-slow-but-broad-strokes
 category: WWW
 published:
   epoch: 1042518327

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Furniture Salesman"
+slug: furniture-salesman
 category: OffTopic
 published:
   epoch: 1087157245
@@ -13,7 +14,7 @@ We're in the market for new furniture in the livingroom. The cats have schredded
 
 We're looking for something that's mostly wood with the exception of the cushions. It's easier to have cushions reclothed than have an antire couch redone.
 
-<img src="/blog/images/offtopic/mission.jpg" alt="Mission Style Couch" />
+<img src="/images/offtopic/mission.jpg" alt="Mission Style Couch" />
 
 We found a great custom made Amish mission style sectional at one of the local furniture stores, but man it was horribly expensive. It was about $2800 for each piece (3 seat) of the sectional. Ouchie! Now greanted it was solid as a rock, and made of Hickory, but the last thing I want is another large debt just for furniture.
 

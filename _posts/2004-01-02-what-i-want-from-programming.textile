@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What I Want From Programming"
+slug: what-i-want-from-programming
 category: Software
 published:
   epoch: 1073089274

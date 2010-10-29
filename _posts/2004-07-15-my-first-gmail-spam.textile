@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My First Gmail Spam"
+slug: my-first-gmail-spam
 category: Humor
 published:
   epoch: 1089917112

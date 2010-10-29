@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Test Post"
+slug: test-post
 category: WTF
 published:
   epoch: 1041653533

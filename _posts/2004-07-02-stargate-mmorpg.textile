@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stargate MMORPG"
+slug: stargate-mmorpg
 category: Games
 published:
   epoch: 1088812812

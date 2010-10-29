@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sweet Completion"
+slug: sweet-completion
 category: Software
 published:
   epoch: 1091219877

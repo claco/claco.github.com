@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Open Again"
+slug: comments-open-again
 category: WWW
 published:
   epoch: 1132850409

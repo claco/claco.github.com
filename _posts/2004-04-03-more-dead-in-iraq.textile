@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "More Dead In Iraq"
+slug: more-dead-in-iraq
 category: WTF
 published:
   epoch: 1081035446

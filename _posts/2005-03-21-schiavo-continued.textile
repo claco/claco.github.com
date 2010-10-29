@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Schiavo Continued"
+slug: schiavo-continued
 category: WTF
 published:
   epoch: 1111412903

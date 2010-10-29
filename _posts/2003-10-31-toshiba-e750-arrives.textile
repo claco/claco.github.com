@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Toshiba e750 Arrives!"
+slug: toshiba-e750-arrives
 category: Hardware
 published:
   epoch: 1067647567

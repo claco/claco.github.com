@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "http://www.clownpenis.fart"
+slug: httpwwwclownpenisfart
 category: Humor
 published:
   epoch: 1044210632

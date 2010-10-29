@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ubuntu Gutsy Gibbon Looking Good"
+slug: ubuntu-gutsy-gibbon-looking-good
 category: Linux
 published:
   epoch: 1191374792

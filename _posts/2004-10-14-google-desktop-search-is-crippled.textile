@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Google Desktop Search Is Crippled"
+slug: google-desktop-search-is-crippled
 category: WWW
 published:
   epoch: 1097773619

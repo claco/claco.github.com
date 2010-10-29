@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "shitdango.com"
+slug: shitdangocom
 category: WTF
 published:
   epoch: 1051915649

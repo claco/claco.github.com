@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Holy Blackout Batman"
+slug: holy-blackout-batman
 category: WTF
 published:
   epoch: 1060914420

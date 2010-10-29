@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "T.D.D. Your P.O.D."
+slug: tdd-your-pod
 category: Perl
 published:
   epoch: 1075156479

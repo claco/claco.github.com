@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "A Valid Debate"
+slug: a-valid-debate
 category: WWW
 published:
   epoch: 1074115039

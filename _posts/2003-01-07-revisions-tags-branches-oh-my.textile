@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Revisions, Tags, Branches Oh My!"
+slug: revisions-tags-branches-oh-my
 category: OffTopic
 published:
   epoch: 1041999428

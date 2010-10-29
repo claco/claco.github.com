@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Situational Upgrade"
+slug: situational-upgrade
 category: Hardware
 published:
   epoch: 1062861546
@@ -17,7 +18,7 @@ So now the web server has been upgraded to a P3 1.4Ghz. :-) Bonus.
 I think I need to recompile the kernel though.  It actually seems a tad slower although it's running at the same bus speeds. MRTG seems to confirm this a little. Either that, or a reboot has reset something I didn't finish somewhere.
 </p>
 <p class="image">
-<img src="/blog/images/hardware/newcpu-mrtg.png" alt="MRTG CPU Usage" width="400" /><br />Chart grows to the right. After 11pm, the same processes take more CPU time.
+<img src="/images/hardware/newcpu-mrtg.png" alt="MRTG CPU Usage" width="400" /><br />Chart grows to the right. After 11pm, the same processes take more CPU time.
 </p>
 
 

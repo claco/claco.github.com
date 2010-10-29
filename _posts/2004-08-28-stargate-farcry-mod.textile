@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stargate FarCry Mod"
+slug: stargate-farcry-mod
 category: Games
 published:
   epoch: 1093735272

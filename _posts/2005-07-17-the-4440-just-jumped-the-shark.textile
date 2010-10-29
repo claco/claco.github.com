@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The 4440 Just Jumped The Shark"
+slug: the-4440-just-jumped-the-shark
 category: WTF
 published:
   epoch: 1121648710

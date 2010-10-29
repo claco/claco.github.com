@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "System.Net.Sockets.TcpClient Connect Timeout"
+slug: systemnetsocketstcpclient-connect-timeout
 category: MicroShaft
 published:
   epoch: 1080961919

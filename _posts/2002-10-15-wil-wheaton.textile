@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wil Wheaton"
+slug: wil-wheaton
 category: OffTopic
 published:
   epoch: 1034720960

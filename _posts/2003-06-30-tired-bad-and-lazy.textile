@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Tired, Bad, And Lazy"
+slug: tired-bad-and-lazy
 category: OffTopic
 published:
   epoch: 1057016688

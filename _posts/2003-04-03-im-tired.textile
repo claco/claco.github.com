@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm Tired"
+slug: im-tired
 category: WTF
 published:
   epoch: 1049419996

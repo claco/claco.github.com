@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Things I'll Never Own: Part Deux"
+slug: things-ill-never-own-part-deux
 category: Hardware
 published:
   epoch: 1055209322

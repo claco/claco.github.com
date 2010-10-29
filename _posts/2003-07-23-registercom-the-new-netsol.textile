@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Register.com: The New NetSol"
+slug: registercom-the-new-netsol
 category: WTF
 published:
   epoch: 1058932960

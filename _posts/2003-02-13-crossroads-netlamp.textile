@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Crossroads: .NET / LAMP"
+slug: crossroads-netlamp
 category: WWW
 published:
   epoch: 1045183247

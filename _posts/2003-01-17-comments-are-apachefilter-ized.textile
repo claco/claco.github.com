@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Are Apache::Filter-ized"
+slug: comments-are-apachefilter-ized
 category: Perl
 published:
   epoch: 1042861700

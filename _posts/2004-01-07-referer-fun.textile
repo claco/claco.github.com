@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Referer Fun"
+slug: referer-fun
 category: Music
 published:
   epoch: 1073502561

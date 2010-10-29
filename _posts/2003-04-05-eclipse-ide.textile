@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eclipse IDE"
+slug: eclipse-ide
 category: Perl
 published:
   epoch: 1049574624

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Castle Conquered. Sickness Surprise."
+slug: castle-conquered-sickness-surprise
 category: OffTopic
 published:
   epoch: 1203471364

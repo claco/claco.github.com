@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Bind9 + Views + Slave = Headache"
+slug: bind9-views-slave-headache
 category: Software
 published:
   epoch: 1083728770

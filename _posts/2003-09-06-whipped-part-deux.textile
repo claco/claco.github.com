@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Whipped: Part Deux"
+slug: whipped-part-deux
 category: OffTopic
 published:
   epoch: 1062902264

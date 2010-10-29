@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Eating Your Own Dog Food: Part IV"
+slug: eating-your-own-dog-food-part-iv
 category: WWW
 published:
   epoch: 1134704725

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "That's it. I'm done."
+slug: thats-it-im-done
 category: WTF
 published:
   epoch: 1192730578

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MVC Marathon Part 3: Creating a Restaurants Controller and View"
+slug: mvc-marathon-part-3-creating-a-restaurants-controller-and-view
 category: OffTopic
 tags:
   - c#
@@ -68,7 +69,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet1.png">
-				<img src='aspnet1.png' width="204" height="152" alt="create data" />
+				<img src='/images/mvc1/aspnet1.png' width="204" height="152" alt="create data" />
 			</a>
 		</p>
 		<p>
@@ -83,7 +84,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet2.png">
-				<img src='aspnet2.png' width="204" height="152" alt="create controller" />
+				<img src='/images/mvc1/aspnet2.png' width="204" height="152" alt="create controller" />
 			</a>
 		</p>
 		<p>
@@ -107,7 +108,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet3.png">
-				<img src='aspnet3.png' width="204" height="152" alt="new controller" />
+				<img src='/images/mvc1/aspnet3.png' width="204" height="152" alt="new controller" />
 			</a>
 		</p>
 		<p>
@@ -117,7 +118,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet4.png">
-				<img src='aspnet4.png' width="204" height="152" alt="new controller code" />
+				<img src='/images/mvc1/aspnet4.png' width="204" height="152" alt="new controller code" />
 			</a>
 		</p>
 		<pre>public ActionResult Index()
@@ -163,7 +164,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet5.png">
-				<img src='aspnet5.png' width="204" height="152" alt="new view" />
+				<img src='/images/mvc1/aspnet5.png' width="204" height="152" alt="new view" />
 			</a>
 		</p>
 		<p>
@@ -175,7 +176,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet6.png">
-				<img src='aspnet6.png' width="204" height="152" alt="new view master select" />
+				<img src='/images/mvc1/aspnet6.png' width="204" height="152" alt="new view master select" />
 			</a>
 		</p>
 		<p>
@@ -186,7 +187,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet7.png">
-				<img src='aspnet7.png' width="204" height="152" alt="new view model type" />
+				<img src='/images/mvc1/aspnet7.png' width="204" height="152" alt="new view model type" />
 			</a>
 		</p>
 		<pre>public partial class Index : ViewPage&lt;List&lt;Restaurant&gt;&gt;</pre>
@@ -204,7 +205,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet8.png">
-				<img src='aspnet8.png' width="204" height="152" alt="new view model loop" />
+				<img src='/images/mvc1/aspnet8.png' width="204" height="152" alt="new view model loop" />
 			</a>
 		</p>
 		<pre>&lt;ul&gt;
@@ -222,7 +223,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet11.png">
-				<img src='aspnet11.png' width="204" height="152" alt="new view model browser" />
+				<img src='/images/mvc1/aspnet11.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 		<p>
@@ -233,7 +234,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet9.png">
-				<img src='aspnet9.png' width="204" height="152" alt="new view model browser" />
+				<img src='/images/mvc1/aspnet9.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 		<pre>&lt;li&gt;
@@ -251,7 +252,7 @@ published:
 		</p>
 		<p>
 			<a href="aspnet10.png">
-				<img src='aspnet10.png' width="204" height="152" alt="new view model browser" />
+				<img src='/images/mvc1/aspnet10.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 
@@ -363,13 +364,13 @@ class RestaurantsController extends AppController {
 		</p>
 		<p>
 			<a href="cake1.png">
-				<img src='cake1.png' width="204" height="152" alt="cake list" />
+				<img src='/images/mvc1/cake1.png' width="204" height="152" alt="cake list" />
 			</a>
 			<a href="cake2.png">
-				<img src='cake2.png' width="204" height="152" alt="cake new" />
+				<img src='/images/mvc1/cake2.png' width="204" height="152" alt="cake new" />
 			</a>
 			<a href="cake3.png">
-				<img src='cake3.png' width="204" height="152" alt="cake list" />
+				<img src='/images/mvc1/cake3.png' width="204" height="152" alt="cake list" />
 			</a>
 		</p>
 		<p>
@@ -390,7 +391,7 @@ class RestaurantsController extends AppController {
 		</p>
 		<p>
 			<a href="cake4.png">
-				<img src='cake4.png' width="204" height="152" alt="new view model browser" />
+				<img src='/images/mvc1/cake4.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 
@@ -561,7 +562,7 @@ created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t/view_T
 		</p>
 		<p>
 			<a href="catalyst1.png">
-				<img src='catalyst1.png' width="204" height="152" alt="catalyst browser" />
+				<img src='/images/mvc1/catalyst1.png' width="204" height="152" alt="catalyst browser" />
 			</a>
 		</p>
 
@@ -653,16 +654,16 @@ Installing index for admin.LogEntry model</pre>
 		</p>
 		<p>
 			<a href="django1.png">
-				<img src='django1.png' width="204" height="152" alt="django list" />
+				<img src='/images/mvc1/django1.png' width="204" height="152" alt="django list" />
 			</a>
 			<a href="django2.png">
-				<img src='django2.png' width="204" height="152" alt="django new" />
+				<img src='/images/mvc1/django2.png' width="204" height="152" alt="django new" />
 			</a>
 			<a href="django3.png">
-				<img src='django3.png' width="204" height="152" alt="django list" />
+				<img src='/images/mvc1/django3.png' width="204" height="152" alt="django list" />
 			</a>
 			<a href="django4.png">
-				<img src='django4.png' width="204" height="152" alt="django list" />
+				<img src='/images/mvc1/django4.png' width="204" height="152" alt="django list" />
 			</a>
 		</p>
 
@@ -728,7 +729,7 @@ def index(request):
 		</p>
 		<p>
 			<a href="django5.png">
-				<img src='django5.png' width="204" height="152" alt="django browser" />
+				<img src='/images/mvc1/django5.png' width="204" height="152" alt="django browser" />
 			</a>
 		</p>
 
@@ -794,16 +795,16 @@ dependency  model
 		</p>
 		<p>
 			<a href="rails1.png">
-				<img src='rails1.png' width="204" height="152" alt="rails list" />
+				<img src='/images/mvc1/rails1.png' width="204" height="152" alt="rails list" />
 			</a>
 			<a href="rails2.png">
-				<img src='rails2.png' width="204" height="152" alt="rails new" />
+				<img src='/images/mvc1/rails2.png' width="204" height="152" alt="rails new" />
 			</a>
 			<a href="rails3.png">
-				<img src='rails3.png' width="204" height="152" alt="rails list" />
+				<img src='/images/mvc1/rails3.png' width="204" height="152" alt="rails list" />
 			</a>
 			<a href="rails3.png">
-				<img src='rails3.png' width="204" height="152" alt="rails list" />
+				<img src='/images/mvc1/rails3.png' width="204" height="152" alt="rails list" />
 			</a>
 		</p>
 

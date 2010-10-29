@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Orleans Bound"
+slug: new-orleans-bound
 category: OffTopic
 published:
   epoch: 1190773663

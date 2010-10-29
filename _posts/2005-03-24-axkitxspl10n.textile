@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AxKit:::XSP::L10N"
+slug: axkitxspl10n
 category: Perl
 published:
   epoch: 1111724207

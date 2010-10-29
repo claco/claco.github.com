@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "You Know You're Whipped When"
+slug: you-know-youre-whipped-when
 category: Humor
 published:
   epoch: 1060534452

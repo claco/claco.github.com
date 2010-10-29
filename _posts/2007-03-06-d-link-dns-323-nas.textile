@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "D-Link DNS-323 NAS"
+slug: d-link-dns-323-nas
 category: Hardware
 published:
   epoch: 1173207627

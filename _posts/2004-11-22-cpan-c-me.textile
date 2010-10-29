@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CPAN C ME"
+slug: cpan-c-me
 category: Perl
 published:
   epoch: 1101133205

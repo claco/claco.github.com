@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "All Hail Model M"
+slug: all-hail-model-m
 category: Hardware
 published:
   epoch: 1096939617

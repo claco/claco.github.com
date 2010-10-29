@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Is Ohio That Stupid?"
+slug: is-ohio-that-stupid
 category: OffTopic
 tags:
   - laws

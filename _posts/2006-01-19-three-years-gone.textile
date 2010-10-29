@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Three Years Gone"
+slug: three-years-gone
 category: OffTopic
 published:
   epoch: 1137702747

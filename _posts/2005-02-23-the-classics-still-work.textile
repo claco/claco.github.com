@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Classics Still Work"
+slug: the-classics-still-work
 category: Games
 published:
   epoch: 1109215359

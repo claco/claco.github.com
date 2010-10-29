@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Declare WPA Broken"
+slug: i-declare-wpa-broken
 category: Hardware
 published:
   epoch: 1072569827
@@ -11,7 +12,7 @@ published:
 After my <a href="/blog/archives/entries/000406/">Wireless saga</a> I decided to snag a Linksys WAP54G for X-mas.
 </p>
 <p class="image">
-<img src="/blog/images/hardware/wap54g.jpg" alt="Linksys WAP54G" />
+<img src="/images/hardware/wap54g.jpg" alt="Linksys WAP54G" />
 </p>
 <p>
 After a setting up the access point and repointing part of the computers to use it, I started getting the following errors in the event logs about 5 minutes after the machines boots. once the error hits, no IP traffic goes through.

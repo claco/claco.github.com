@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Visual Studio Express Editions"
+slug: visual-studio-express-editions
 category: MicroShaft
 tags:
   - asp.net

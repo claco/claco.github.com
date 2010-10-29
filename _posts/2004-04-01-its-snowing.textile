@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Snowing"
+slug: its-snowing
 category: Humor
 published:
   epoch: 1080862649
@@ -11,7 +12,7 @@ published:
 It's Spring. It's Ohio. It's Snowing. No April Fools on this one.
 </p>
 <p class="image">
-<img src="/blog/images/humor/snow.gif" />
+<img src="/images/humor/snow.gif" />
 </p>
 
 

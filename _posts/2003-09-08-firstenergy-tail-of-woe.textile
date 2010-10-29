@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "FirstEnergy Tail Of Woe"
+slug: firstenergy-tail-of-woe
 category: WTF
 published:
   epoch: 1063071779

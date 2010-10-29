@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Must...Clean..."
+slug: mustclean
 category: Humor
 published:
   epoch: 1048953566

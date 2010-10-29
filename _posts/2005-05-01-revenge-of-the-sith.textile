@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Revenge Of The Sith"
+slug: revenge-of-the-sith
 category: Games
 published:
   epoch: 1114989725

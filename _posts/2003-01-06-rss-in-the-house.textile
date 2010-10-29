@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RSS In The House"
+slug: rss-in-the-house
 category: WWW
 published:
   epoch: 1041900396

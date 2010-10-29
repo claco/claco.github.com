@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Die Spammers Die"
+slug: die-spammers-die
 category: WTF
 published:
   epoch: 1036546136

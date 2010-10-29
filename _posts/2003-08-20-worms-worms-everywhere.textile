@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Worms Worms Everywhere"
+slug: worms-worms-everywhere
 category: WTF
 published:
   epoch: 1061380974

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Upgrade Complete. Comments Working Finally."
+slug: upgrade-complete-comments-working-finally
 category: Apache
 tags:
   - apache

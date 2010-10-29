@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Nice Design: Wired.com"
+slug: nice-design-wiredcom
 category: WWW
 published:
   epoch: 1034372290
@@ -17,7 +18,7 @@ Wired News has a different appearance, but the new design isn't just about look 
 </blockquote>
 
 <p class="image">
-<a href="/blog/images/www/wired_screenshot_large.png"><img src="/blog/images/www/wired_screenshot_small.png" width="350" height="250"  alt="Wired.com Screenshot" /></a><br />
+<a href="/images/www/wired_screenshot_large.png"><img src="/images/www/wired_screenshot_small.png" width="350" height="250"  alt="Wired.com Screenshot" /></a><br />
 <span class="caption">Click for larger image.</span>
 </p>
 <p>

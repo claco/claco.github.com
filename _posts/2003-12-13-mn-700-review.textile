@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MN-700 Review"
+slug: mn-700-review
 category: Hardware
 published:
   epoch: 1071367272

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "As Bad As Spammers"
+slug: as-bad-as-spammers
 category: WTF
 published:
   epoch: 1093106715
@@ -17,6 +18,6 @@ One chiropractor went so far as to leave a message on our answering machine, ass
 
 If it were me, I would send a very nasty reponse to all of those people and along with a copy to the Better Business Bureau and maybe the State's Attourney General letting them know what I think of their ambulance chasing ways.
 
-As for the "circle", Tallmadge has the most <a href="/blog/images/wtf/tallmadgecircle.gif">retarded center of town</a>, it's no wonder there are accidents there all the time.
+As for the "circle", Tallmadge has the most <a href="/images/wtf/tallmadgecircle.gif">retarded center of town</a>, it's no wonder there are accidents there all the time.
 
 

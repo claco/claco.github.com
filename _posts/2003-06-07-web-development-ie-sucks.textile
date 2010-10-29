@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Web Development: IE Sucks"
+slug: web-development-ie-sucks
 category: WWW
 published:
   epoch: 1055038229

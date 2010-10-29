@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Search Foo"
+slug: search-foo
 category: WWW
 published:
   epoch: 1058314213

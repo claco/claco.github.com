@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Lies, Damns Lies, Statistics, and Tests"
+slug: lies-damns-lies-statistics-and-tests
 category: OffTopic
 published:
   epoch: 1137726013

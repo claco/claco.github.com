@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "We're Not All Administrator"
+slug: were-not-all-administrator
 category: Software
 published:
   epoch: 1086912313

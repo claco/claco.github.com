@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Link-A-Thon"
+slug: link-a-thon
 category: OffTopic
 published:
   epoch: 1041729197

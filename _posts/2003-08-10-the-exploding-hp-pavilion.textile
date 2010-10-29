@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Exploding HP Pavilion"
+slug: the-exploding-hp-pavilion
 category: Hardware
 published:
   epoch: 1060535506

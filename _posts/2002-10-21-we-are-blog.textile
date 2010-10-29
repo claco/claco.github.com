@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "We Are Blog"
+slug: we-are-blog
 category: Humor
 published:
   epoch: 1035252687

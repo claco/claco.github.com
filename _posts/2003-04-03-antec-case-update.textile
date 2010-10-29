@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Antec Case Update"
+slug: antec-case-update
 category: Hardware
 published:
   epoch: 1049419039

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mine."
+slug: mine
 category: OffTopic
 published:
   epoch: 1079222721
@@ -11,7 +12,7 @@ published:
 She just came home with me. 2003 Maxima SE Auto 3.5L Leather. 30k miles.
 </p>
 <p class="image">
-<img src="/blog/images/offtopic/maxima.jpg" alt="Maxima" />
+<img src="/images/offtopic/maxima.jpg" alt="Maxima" />
 </p>
 
 

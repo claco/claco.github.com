@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "D-Link DNS-323 NAS Revisited"
+slug: d-link-dns-323-nas-revisited
 category: Hardware
 tags:
   - dlink

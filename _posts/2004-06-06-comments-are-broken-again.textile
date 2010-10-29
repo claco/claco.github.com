@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Are Broken Again"
+slug: comments-are-broken-again
 category: OffTopic
 published:
   epoch: 1086572365

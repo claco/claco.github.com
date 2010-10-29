@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Here it comes..."
+slug: here-it-comes
 category: WTF
 published:
   epoch: 1071708669

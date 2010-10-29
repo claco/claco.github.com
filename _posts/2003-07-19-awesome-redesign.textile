@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Awesome Redesign"
+slug: awesome-redesign
 category: WWW
 published:
   epoch: 1058641826

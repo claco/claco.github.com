@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "We Have Floorage"
+slug: we-have-floorage
 category: Humor
 published:
   epoch: 1050546812

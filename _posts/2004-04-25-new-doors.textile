@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Doors!"
+slug: new-doors
 category: OffTopic
 published:
   epoch: 1082939428

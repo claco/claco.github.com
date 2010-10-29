@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "House Of Cards"
+slug: house-of-cards
 category: Software
 published:
   epoch: 1077584395

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Router Materializes"
+slug: new-router-materializes
 category: Hardware
 published:
   epoch: 1035584398

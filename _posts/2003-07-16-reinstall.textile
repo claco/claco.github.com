@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reinstall"
+slug: reinstall
 category: Hardware
 published:
   epoch: 1058412709

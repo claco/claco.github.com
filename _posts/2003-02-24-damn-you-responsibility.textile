@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Damn You Responsibility !#$%"
+slug: damn-you-responsibility
 category: OffTopic
 published:
   epoch: 1046067837

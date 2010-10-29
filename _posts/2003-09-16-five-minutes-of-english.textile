@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Five Minutes Of English"
+slug: five-minutes-of-english
 category: OffTopic
 published:
   epoch: 1063751532
@@ -11,7 +12,7 @@ published:
 If I had one wish today, it would be that my cats could speak 5 minutes of English and tell me what the hell is going on around the house.
 </p>
 <p>
-Ever since <a href="/blog/images/offtopic/buttons.jpg">Buttons</a> broke her leg, the Siamese sisters (<a href="/blog/images/offtopic/neiko.jpg">Neiko</a> &amp; <a href="/blog/images/offtopic/isis.jpg">Isis</a>) attack her sister <a href="/blog/images/offtopic/babs.jpg">Babs</a>. Babs of course is to nice to fight, and runs away which encourages them even more. Babs is a 14 pounder. The Siamese are 4 pounds each.
+Ever since <a href="/images/offtopic/buttons.jpg">Buttons</a> broke her leg, the Siamese sisters (<a href="/images/offtopic/neiko.jpg">Neiko</a> &amp; <a href="/images/offtopic/isis.jpg">Isis</a>) attack her sister <a href="/images/offtopic/babs.jpg">Babs</a>. Babs of course is to nice to fight, and runs away which encourages them even more. Babs is a 14 pounder. The Siamese are 4 pounds each.
 In the past, Babs would not go to the litter box which caused a bladder/urinary infection which manifested itself as her peeing on me in bed. That's certainly one way to tell your owner something is wrong. Since then we've kept the Siamese and the black sisters on separate floors,  rotating them to the opposite floor every night.
 </p>
 <p>

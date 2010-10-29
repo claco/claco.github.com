@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Disizzle In The Hizouse"
+slug: new-disizzle-in-the-hizouse
 category: WWW
 published:
   epoch: 1069778690

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Customer != Criminal"
+slug: customer-=-criminal
 category: WTF
 published:
   epoch: 1057713246

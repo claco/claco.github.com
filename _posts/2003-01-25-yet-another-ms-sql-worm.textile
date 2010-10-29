@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Yet Another MS SQL Worm"
+slug: yet-another-ms-sql-worm
 category: MicroShaft
 published:
   epoch: 1043519630

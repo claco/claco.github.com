@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Low Tech Matrix  Slo Mo"
+slug: low-tech-matrixslo-mo
 category: Humor
 published:
   epoch: 1058747948

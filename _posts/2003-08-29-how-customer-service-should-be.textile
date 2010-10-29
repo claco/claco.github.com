@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How Customer Service Should Be"
+slug: how-customer-service-should-be
 category: OffTopic
 published:
   epoch: 1062184104
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-A while ago <a href="/blog/archives/entries/000196/">I mentioned</a> that my new paint job on the <a href="/blog/images/offtopic/truck.png">big red fun toy</a> was a little sub par in on spot and a rust bubble started. I also mentioned that the place wasted not a second thought on fixing it free of charge.
+A while ago <a href="/blog/archives/entries/000196/">I mentioned</a> that my new paint job on the <a href="/images/offtopic/truck.png">big red fun toy</a> was a little sub par in on spot and a rust bubble started. I also mentioned that the place wasted not a second thought on fixing it free of charge.
 </p>
 <p>
 Well, this week I dropped her off and picked her up this afternoon. It only cost me $130 for a new tailgate applicae.  Looks good, and it's fixed.

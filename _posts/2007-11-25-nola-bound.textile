@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "NOLA Bound"
+slug: nola-bound
 category: OffTopic
 published:
   epoch: 1196036814

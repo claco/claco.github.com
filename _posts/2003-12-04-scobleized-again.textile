@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Scobleized Again"
+slug: scobleized-again
 category: Humor
 published:
   epoch: 1070578984

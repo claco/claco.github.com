@@ -1,6 +1,7 @@
 ---
 layout: post
 title: ".NET C# Tinkerage"
+slug: net-c#-tinkerage
 category: MicroShaft
 published:
   epoch: 1052167640

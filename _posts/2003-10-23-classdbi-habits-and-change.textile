@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Class::DBI, Habits and Change"
+slug: classdbi-habits-and-change
 category: Perl
 published:
   epoch: 1066950350

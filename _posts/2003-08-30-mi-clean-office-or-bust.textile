@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "MI: Clean Office Or Bust"
+slug: mi-clean-office-or-bust
 category: OffTopic
 published:
   epoch: 1062288848
@@ -11,16 +12,16 @@ published:
 My mission, should I choose to accept, is to clean this damn office today if it kills me. What you see below is what happens when you spend more time tinkering and building a new pc than cleaning. Be afraid. Be very afraid. :-)
 </p>
 <p class="image">
-<a href="/blog/images/offtopic/preclean1.jpg">
-<img src="/blog/images/offtopic/preclean1-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 1" />
+<a href="/images/offtopic/preclean1.jpg">
+<img src="/images/offtopic/preclean1-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 1" />
 </a>
 
-<a href="/blog/images/offtopic/preclean2.jpg">
-<img src="/blog/images/offtopic/preclean2-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 2" />
+<a href="/images/offtopic/preclean2.jpg">
+<img src="/images/offtopic/preclean2-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 2" />
 </a>
 
-<a href="/blog/images/offtopic/preclean3.jpg">
-<img src="/blog/images/offtopic/preclean3-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 3" />
+<a href="/images/offtopic/preclean3.jpg">
+<img src="/images/offtopic/preclean3-thumb.jpg" alt="Pre Cleaning Frenzy: Picture 3" />
 </a>
 </p>
 
@@ -31,23 +32,23 @@ God willing, post-cleaning pictures to follow. :-P
 
 
 <p class="image">
-<a href="/blog/images/offtopic/postclean1.jpg">
-<img src="/blog/images/offtopic/postclean1-thumb.jpg" alt="Post Cleaning Frenzy: Picture 1" />
+<a href="/images/offtopic/postclean1.jpg">
+<img src="/images/offtopic/postclean1-thumb.jpg" alt="Post Cleaning Frenzy: Picture 1" />
 </a>
 
-<a href="/blog/images/offtopic/postclean2.jpg">
-<img src="/blog/images/offtopic/postclean2-thumb.jpg" alt="Post Cleaning Frenzy: Picture 2" />
+<a href="/images/offtopic/postclean2.jpg">
+<img src="/images/offtopic/postclean2-thumb.jpg" alt="Post Cleaning Frenzy: Picture 2" />
 </a>
 </p>
 
 
 <p class="image">
-<a href="/blog/images/offtopic/postclean3.jpg">
-<img src="/blog/images/offtopic/postclean3-thumb.jpg" alt="Post Cleaning Frenzy: Picture 3" />
+<a href="/images/offtopic/postclean3.jpg">
+<img src="/images/offtopic/postclean3-thumb.jpg" alt="Post Cleaning Frenzy: Picture 3" />
 </a>
 
-<a href="/blog/images/offtopic/postclean4.jpg">
-<img src="/blog/images/offtopic/postclean4-thumb.jpg" alt="Post Cleaning Frenzy: Picture 4" />
+<a href="/images/offtopic/postclean4.jpg">
+<img src="/images/offtopic/postclean4-thumb.jpg" alt="Post Cleaning Frenzy: Picture 4" />
 </a>
 </p>
 

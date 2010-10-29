@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Laptop Withdrawl"
+slug: laptop-withdrawl
 category: Hardware
 published:
   epoch: 1114968402

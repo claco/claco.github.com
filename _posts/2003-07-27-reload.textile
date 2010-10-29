@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Reload"
+slug: reload
 category: OffTopic
 published:
   epoch: 1059323254

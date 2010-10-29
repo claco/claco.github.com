@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "COM Callable Wrappers: Public Method Problems"
+slug: com-callable-wrappers-public-method-problems
 category: MicroShaft
 published:
   epoch: 1090545491

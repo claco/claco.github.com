@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Permissions Frenzy"
+slug: permissions-frenzy
 category: WWW
 published:
   epoch: 1059965123

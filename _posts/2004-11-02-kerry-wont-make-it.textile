@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Kerry Won't Make It"
+slug: kerry-wont-make-it
 category: OffTopic
 published:
   epoch: 1099451973

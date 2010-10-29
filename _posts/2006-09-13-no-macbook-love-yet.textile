@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "No MacBook Love Yet"
+slug: no-macbook-love-yet
 category: Hardware
 tags:
   - apple

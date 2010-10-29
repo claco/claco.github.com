@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Congratulations"
+slug: congratulations
 category: Static
 published:
   epoch: 1059967310

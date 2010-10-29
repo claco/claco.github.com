@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "When 100% Isn't Conclusive"
+slug: when-100-isnt-conclusive
 category: WTF
 published:
   epoch: 1048906665

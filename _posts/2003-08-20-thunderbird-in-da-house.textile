@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thunderbird In Da House"
+slug: thunderbird-in-da-house
 category: OffTopic
 published:
   epoch: 1061426400

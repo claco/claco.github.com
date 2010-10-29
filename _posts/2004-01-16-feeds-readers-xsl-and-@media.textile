@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Feeds, Readers, XSL And @media"
+slug: feeds-readers-xsl-and-@media
 category: WWW
 published:
   epoch: 1074263284

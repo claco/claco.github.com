@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "From The What A Crock Department"
+slug: from-the-what-a-crock-department
 category: WTF
 published:
   epoch: 1098232641

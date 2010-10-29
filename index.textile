@@ -3,7 +3,7 @@ layout: default
 title: Christopher H. Laco
 ---
 
-h2. Christopher H. Laco
+<h2>Christopher H. Laco</h2>
 
 Conversion in process. Please stand by.
 
@@ -13,7 +13,7 @@ Conversion in process. Please stand by.
     <span class="published" data-epoch="{{ post.published.epoch }}" data-format="MM/dd/yyyy">
       {{ post.published.utc }}
     </span> -
-    <a class="permalink" href="{{ post.url}}">{{ post.title }}</a>
+    <a class="permalink" href="{{ post.url}}/">{{ post.title }}</a>
   </div>
   {% endfor %}
 

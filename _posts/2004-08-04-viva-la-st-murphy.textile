@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Viva La St. Murphy!"
+slug: viva-la-st-murphy
 category: OffTopic
 published:
   epoch: 1091655138
@@ -9,6 +10,6 @@ published:
 
 On the last week of July St. Murphy gave to me:
 
-<a href="/blog/images/offtopic/ultra1_large.gif"><img src="/blog/images/offtopic/ultra1_small.gif" alt="Ultra Sound 1"/></a>
+<a href="/images/offtopic/ultra1_large.gif"><img src="/images/offtopic/ultra1_small.gif" alt="Ultra Sound 1"/></a>
 
 

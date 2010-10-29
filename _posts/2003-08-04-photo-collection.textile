@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Photo Collection"
+slug: photo-collection
 category: Static
 published:
   epoch: 1059970962

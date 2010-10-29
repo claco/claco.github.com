@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sun Says Java Sucks"
+slug: sun-says-java-sucks
 category: Humor
 published:
   epoch: 1044806334

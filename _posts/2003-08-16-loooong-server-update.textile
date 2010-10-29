@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Loooong Server Update"
+slug: loooong-server-update
 category: Hardware
 published:
   epoch: 1061085029

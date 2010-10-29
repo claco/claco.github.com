@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Monitor?"
+slug: new-monitor
 category: Hardware
 published:
   epoch: 1064271164
@@ -11,7 +12,7 @@ published:
 Time for a <a href="http://www.go-l.com/monitors/">new monitor</a>?
 </p>
 <p class="image">
-<img src="/blog/images/hardware/grandcanyon.jpg" alt="" />
+<img src="/images/hardware/grandcanyon.jpg" alt="" />
 </p>
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Third Times A Charm"
+slug: third-times-a-charm
 category: WWW
 published:
   epoch: 1058736235

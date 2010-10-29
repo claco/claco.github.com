@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dairy Queen: Void In TX?"
+slug: dairy-queen-void-in-tx
 category: WTF
 published:
   epoch: 1057879702

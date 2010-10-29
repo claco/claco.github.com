@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RIAA Sues Radio Stations"
+slug: riaa-sues-radio-stations
 category: Humor
 published:
   epoch: 1033954738

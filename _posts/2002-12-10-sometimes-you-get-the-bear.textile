@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sometimes you get the bear..."
+slug: sometimes-you-get-the-bear
 category: FreeBSD
 published:
   epoch: 1039576427

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Someone Trackback Me"
+slug: someone-trackback-me
 category: OffTopic
 published:
   epoch: 1061759199

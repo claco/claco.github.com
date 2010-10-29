@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Hate Losing Things"
+slug: i-hate-losing-things
 category: WTF
 published:
   epoch: 1056081407

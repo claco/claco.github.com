@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Stargate SG-1: The Alliance"
+slug: stargate-sg-1-the-alliance
 category: Games
 published:
   epoch: 1110152970
@@ -9,6 +10,6 @@ published:
 
 Wishes do come true. I'm all over <a href="http://www.stargate-thealliance.com/">this game</a> when it arrives. Take a look at the trailer. Even if the graphics and interaction aren't as good as HL2, this could still be a darn good game.
 
-<img src="/blog/images/games/stargate_banner.jpg" alt="SG-1 Game Banner"/>
+<img src="/images/games/stargate_banner.jpg" alt="SG-1 Game Banner"/>
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "To Upgrade Perl"
+slug: to-upgrade-perl
 category: Perl
 published:
   epoch: 1074890930

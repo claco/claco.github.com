@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "SuperBowl Done. Great Game."
+slug: superbowl-done-great-game
 category: TV
 tags:
   - football

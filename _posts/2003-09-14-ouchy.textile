@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Ouchy"
+slug: ouchy
 category: OffTopic
 published:
   epoch: 1063549505

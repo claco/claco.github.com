@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "It's Raining Assault Weapons!"
+slug: its-raining-assault-weapons
 category: WTF
 published:
   epoch: 1098327199

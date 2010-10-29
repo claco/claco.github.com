@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Evil Evil Dinner"
+slug: evil-evil-dinner
 category: OffTopic
 published:
   epoch: 1063249758

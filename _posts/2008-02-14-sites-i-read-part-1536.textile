@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sites I Read: Part 1536"
+slug: sites-i-read-part-1536
 category: WWW
 tags:
   - links

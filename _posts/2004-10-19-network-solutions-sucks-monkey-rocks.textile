@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Network Solutions Sucks Monkey Rocks"
+slug: network-solutions-sucks-monkey-rocks
 category: WTF
 published:
   epoch: 1098225823

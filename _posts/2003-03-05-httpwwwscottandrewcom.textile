@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "http://www.scottandrew.com/"
+slug: httpwwwscottandrewcom
 category: WWW
 published:
   epoch: 1046912777

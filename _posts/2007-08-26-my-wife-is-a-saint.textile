@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My Wife is a Saint"
+slug: my-wife-is-a-saint
 category: OffTopic
 published:
   epoch: 1188150943

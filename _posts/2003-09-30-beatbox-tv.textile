@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "BeatBox TV"
+slug: beatbox-tv
 category: Music
 published:
   epoch: 1064973441

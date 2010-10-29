@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Our Medical System Is Retarded"
+slug: our-medical-system-is-retarded
 category: WTF
 published:
   epoch: 1088646762

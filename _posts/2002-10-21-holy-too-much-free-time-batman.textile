@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Holy Too Much Free Time Batman!"
+slug: holy-too-much-free-time-batman
 category: Humor
 published:
   epoch: 1035255865

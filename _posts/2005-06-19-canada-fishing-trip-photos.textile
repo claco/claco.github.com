@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Canada Fishing Trip Photos"
+slug: canada-fishing-trip-photos
 category: OffTopic
 published:
   epoch: 1119223757
   utc: 2005-06-19T23:29:17
 ---
 
-And here are the Canada fishing trip <a href="http://today.icantfocus.com/photos/2005/canada/">photos</a>.
+And here are the Canada fishing trip <a href="/photos/2005/canada/">photos</a>.
 
 

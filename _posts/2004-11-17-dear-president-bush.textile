@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dear President Bush"
+slug: dear-president-bush
 category: Humor
 published:
   epoch: 1100714612

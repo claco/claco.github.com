@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Network In a VM, In a Network, In a VM"
+slug: network-in-a-vm-in-a-network-in-a-vm
 category: Networking
 published:
   epoch: 1202580499

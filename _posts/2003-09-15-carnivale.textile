@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Carnivale"
+slug: carnivale
 category: OffTopic
 published:
   epoch: 1063678209

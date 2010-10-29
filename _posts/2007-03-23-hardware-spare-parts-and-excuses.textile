@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Hardware, Spare Parts, and Excuses"
+slug: hardware-spare-parts-and-excuses
 category: Hardware
 tags:
   - hardware

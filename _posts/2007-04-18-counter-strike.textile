@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Counter Strike"
+slug: counter-strike
 category: Games
 published:
   epoch: 1176900300

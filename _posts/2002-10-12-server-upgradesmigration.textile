@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Server Upgrades / Migration"
+slug: server-upgradesmigration
 category: OffTopic
 published:
   epoch: 1034399497

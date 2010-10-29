@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Finance::Currency:Convert::WebserviceX"
+slug: financecurrencyconvertwebservicex
 category: Perl
 published:
   epoch: 1110425709

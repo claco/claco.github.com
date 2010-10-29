@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I Love Slashdot Humor"
+slug: i-love-slashdot-humor
 category: Humor
 published:
   epoch: 1075230669

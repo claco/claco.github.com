@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "IQ Test"
+slug: iq-test
 category: OffTopic
 published:
   epoch: 1063424461

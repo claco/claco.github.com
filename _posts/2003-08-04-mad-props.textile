@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mad Props"
+slug: mad-props
 category: Static
 published:
   epoch: 1060052240

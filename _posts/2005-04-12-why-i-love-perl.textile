@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why I Love Perl"
+slug: why-i-love-perl
 category: Perl
 published:
   epoch: 1113338291

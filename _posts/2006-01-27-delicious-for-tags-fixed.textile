@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Del.icio.us For Tags Fixed"
+slug: delicious-for-tags-fixed
 category: WWW
 published:
   epoch: 1138398061

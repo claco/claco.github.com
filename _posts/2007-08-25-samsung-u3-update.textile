@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Samsung U3 Update"
+slug: samsung-u3-update
 category: Hardware
 published:
   epoch: 1188090253

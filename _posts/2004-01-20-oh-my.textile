@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Oh My"
+slug: oh-my
 category: OffTopic
 published:
   epoch: 1074645873

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Return Of Even Stevens"
+slug: return-of-even-stevens
 category: Humor
 published:
   epoch: 1111624074

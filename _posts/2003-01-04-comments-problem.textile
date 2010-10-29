@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Comments Problem"
+slug: comments-problem
 category: OffTopic
 published:
   epoch: 1041733019

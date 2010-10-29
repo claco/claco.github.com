@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "WE HAVE KEYS!"
+slug: we-have-keys
 category: OffTopic
 published:
   epoch: 1067799912

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Legend of 1900"
+slug: the-legend-of-1900
 category: Movies
 published:
   epoch: 1088962308

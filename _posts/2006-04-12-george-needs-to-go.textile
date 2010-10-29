@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "George Needs To Go"
+slug: george-needs-to-go
 category: OffTopic
 published:
   epoch: 1144858980

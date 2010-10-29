@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Nice Design: Gateway.com"
+slug: nice-design-gatewaycom
 category: WWW
 published:
   epoch: 1034379041
@@ -11,7 +12,7 @@ published:
 Occasionally I'll stumble across websites that I really enjoy visually. In my effort to find some Gateway cow commercials, I noticed that they have redesigned their website since the last time I was there.
 </p>
 <p class="image">
-<a href="/blog/images/www/gateway_screenshot_large.png"><img src="/blog/images/www/gateway_screenshot_small.png" width="350" height="250" alt="Gateway.com Screenshot" /></a><br />
+<a href="/images/www/gateway_screenshot_large.png"><img src="/images/www/gateway_screenshot_small.png" width="350" height="250" alt="Gateway.com Screenshot" /></a><br />
 <span class="caption">Click for larger image.</span>
 </p>
 <p>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "IE? Not In My House."
+slug: ie-not-in-my-house
 category: MicroShaft
 published:
   epoch: 1041741295

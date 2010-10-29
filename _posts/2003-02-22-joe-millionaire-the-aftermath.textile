@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Joe Millionaire: The Aftermath"
+slug: joe-millionaire-the-aftermath
 category: WTF
 published:
   epoch: 1045970531

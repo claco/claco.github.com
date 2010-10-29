@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Waxing The Big Red Fun Toy"
+slug: waxing-the-big-red-fun-toy
 category: OffTopic
 published:
   epoch: 1034637266
@@ -12,7 +13,7 @@ No, not that silly. That was earlier. :-)<br />
 The other big red fun toy:
 </p>
 <p class="image">
-   <img src="/blog/images/offtopic/truck.png" width="320" height="240" alt="Big Red Fun Toy Photo" />
+   <img src="/images/offtopic/truck.png" width="320" height="240" alt="Big Red Fun Toy Photo" />
 </p>
 <p>
 A while back she got a new paint job to ward off any further rust spots that were just starting. Afterall, she is 4 years old here in snow and salt territory.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Gzipped Page Delivery"
+slug: gzipped-page-delivery
 category: WWW
 published:
   epoch: 1042922348

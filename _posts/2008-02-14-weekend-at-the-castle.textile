@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Weekend at the Castle"
+slug: weekend-at-the-castle
 category: OffTopic
 tags:
   - castle
@@ -12,7 +13,7 @@ published:
 
 Margeaux and I are headed to <a href="http://www.ravenwoodcastle.com/">Ravenwood Castle</a> tomorrow for the weekend.
 
-<img src="/blog/castle-dining.jpg" alt="castle-dining.jpg" border="0" width="452" height="301" />
+<img src="/images/castle-dining.jpg" alt="castle-dining.jpg" border="0" width="452" height="301" />
 
 Great place for a getaway weekend. Castle rooms. Cottages. Out in the middle of nowhere. Great food without being too cheesy. :-)
 

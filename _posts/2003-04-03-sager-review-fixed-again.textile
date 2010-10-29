@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sager Review Fixed. Again."
+slug: sager-review-fixed-again
 category: WTF
 published:
   epoch: 1049426502

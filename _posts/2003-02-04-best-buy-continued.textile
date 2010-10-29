@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Best Buy Continued"
+slug: best-buy-continued
 category: WTF
 published:
   epoch: 1044394865

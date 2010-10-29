@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Nice Design: SBC/Yahoo Portal"
+slug: nice-design-sbcyahoo-portal
 category: WWW
 published:
   epoch: 1034449829
@@ -11,7 +12,7 @@ published:
 I recently got SBC/Yahoo (A)DSL  service. Part of the package came with oodles of free Yahoo hoopla: Photo space, Briefcase, Web Mail, yadda, yadda. Stuff that I'll never use since I host my own. (Eating my own dog food again). But just for giggles, I went to the portal page for SBC/Yahoo customers and got a pleasent surprise. It looked a lot better to me than the normal Yahoo stuffs.
 </p>
 <p class="image">
-<a href="/blog/images/www/sbcyahoo_screenshot_large.png"><img src="/blog/images/www/sbcyahoo_screenshot_small.png" width="350" height="250" alt="SBC/Yahoo Portal Screenshot" /></a><br />
+<a href="/images/www/sbcyahoo_screenshot_large.png"><img src="/images/www/sbcyahoo_screenshot_small.png" width="350" height="250" alt="SBC/Yahoo Portal Screenshot" /></a><br />
 <span class="caption">Click for larger image.</span>
 </p>
 <p>

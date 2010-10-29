@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Dear AT&amp;T User (12.160.193.229):"
+slug: dear-att-user-12160193229
 category: WTF
 published:
   epoch: 1079578518

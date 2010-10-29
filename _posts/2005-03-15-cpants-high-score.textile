@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CPANTS High Score!"
+slug: cpants-high-score
 category: Perl
 published:
   epoch: 1110903289

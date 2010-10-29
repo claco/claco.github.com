@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Thanks"
+slug: thanks
 category: OffTopic
 published:
   epoch: 1101484733

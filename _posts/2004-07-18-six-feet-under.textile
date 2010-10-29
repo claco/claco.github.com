@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Six Feet Under"
+slug: six-feet-under
 category: OffTopic
 published:
   epoch: 1090170655

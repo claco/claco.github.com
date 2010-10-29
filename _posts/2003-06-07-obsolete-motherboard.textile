@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Obsolete Motherboard"
+slug: obsolete-motherboard
 category: Hardware
 published:
   epoch: 1055038995
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-I no more than order my <a href="http://today.icantfocus.com/blog/archives/entries/000210/">new game rig</a>, and <a href="http://www.asus.com/prog/spec.asp?m=P4C800%20Deluxe">the motherboard</a> becomes obsolete to an <a href="http://www.newegg.com/app/viewproduct.asp?description=P4C800-E">updated model</a>. Figures.
+I no more than order my <a href="/archives/entries/000210/">new game rig</a>, and <a href="http://www.asus.com/prog/spec.asp?m=P4C800%20Deluxe">the motherboard</a> becomes obsolete to an <a href="http://www.newegg.com/app/viewproduct.asp?description=P4C800-E">updated model</a>. Figures.
 </p>
 
 

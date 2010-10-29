@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Shore Leave"
+slug: shore-leave
 category: OffTopic
 published:
   epoch: 1068404953

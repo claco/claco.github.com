@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Doom On Your Phone!"
+slug: doom-on-your-phone
 category: OffTopic
 published:
   epoch: 1043598105

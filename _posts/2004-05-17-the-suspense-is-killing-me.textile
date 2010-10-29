@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Suspense Is Killing Me"
+slug: the-suspense-is-killing-me
 category: Humor
 published:
   epoch: 1084834508

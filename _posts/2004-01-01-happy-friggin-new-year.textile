@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Happy Friggin New Year"
+slug: happy-friggin-new-year
 category: OffTopic
 published:
   epoch: 1072933200

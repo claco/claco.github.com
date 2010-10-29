@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Sup From Boston"
+slug: sup-from-boston
 category: OffTopic
 published:
   epoch: 1077067016

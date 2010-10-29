@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Linux Is For Bitches"
+slug: linux-is-for-bitches
 category: Humor
 published:
   epoch: 1061760705
@@ -18,7 +19,7 @@ Don't forget to check out the <a href="http://www.linuxisforbitches.com/aol.php"
 </ins>
 
 <p class="image">
-<img src="/blog/images/humor/lifb.jpg" alt="Linux Is For Bitches" /><br />
+<img src="/images/humor/lifb.jpg" alt="Linux Is For Bitches" /><br />
 <a href="http://www.thinkgeek.com/">Think Geek</a> should start selling this logo on T-shirts.
 </p>
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CyberPower 1500AVR UPS"
+slug: cyberpower-1500avr-ups
 category: Hardware
 published:
   epoch: 1041720333
@@ -8,7 +9,7 @@ published:
 ---
 
 <p>
-I decided it was time to get a new more powerful UPS for the <a href="/blog/images/hardware/server_rack.jpg" title="Picture of my server rack">server rack</a> here in the office.
+I decided it was time to get a new more powerful UPS for the <a href="/images/hardware/server_rack.jpg" title="Picture of my server rack">server rack</a> here in the office.
 The currently has (3) 1U <acronym title="Pentium III">PIII</acronym> servers (<acronym title="World Wide Web">WWW</acronym>, <acronym title="Domain Name Service">DNS</acronym>, Firewall), (1) 4U dual PIII file server, and a small assortment of switches and nicknacks. So far, I went cheap on the UPS in the rack. It's a simple floor model <a href="http://www.conextproducts.com/ups/product.cfm?sku=CNB900" title="Conext 900AVR product details page">Conext 900AVR UPS</a>. Conext appears to be a rebranded APC UPS. It even came with APC PowerChute and APC labeled cables. OF course, it was nearly half the price of something comparable from APC. Go figure. But I digress.
 </p>
 <p>

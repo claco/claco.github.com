@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How CD Prices Should Be"
+slug: how-cd-prices-should-be
 category: Music
 published:
   epoch: 1064446904

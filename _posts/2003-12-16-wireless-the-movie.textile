@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Wireless: The Movie"
+slug: wireless-the-movie
 category: Hardware
 published:
   epoch: 1071629690
@@ -24,9 +25,9 @@ published:
 	it's signal strength and signal quality were both close to 100%.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/wap11.jpg" alt="Linksys WAP11" />
-	<img src="/blog/images/hardware/wpc11.jpg" alt="Linksys WPC11" />
-	<img src="/blog/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
+	<img src="/images/hardware/wap11.jpg" alt="Linksys WAP11" />
+	<img src="/images/hardware/wpc11.jpg" alt="Linksys WPC11" />
+	<img src="/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
 </p>
 <p>
 	After that, my only real problems 
@@ -45,7 +46,7 @@ published:
 	On installed, everything appeared to be somewhat fine. Then the headaches started.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
+	<img src="/images/hardware/wusb11.jpg" alt="Linksys WUSB11" />
 </p>
 <p>
 	After about a day or so of actual usage, the connection started dropping at random. Sometimes the signal would be 
@@ -58,7 +59,7 @@ published:
 	So, of to the evil Best Buy I went to snag a Linksys (now referred to as Limpsys) WMP11 PCI Wireless-B adapter.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/wmp11.jpg" alt="Linksys WMP11" />
+	<img src="/images/hardware/wmp11.jpg" alt="Linksys WMP11" />
 </p>
 <p>
 	I installed the WMP11. This meant yet another round of fighting the install, the drivers, and Wireless Zero Config.
@@ -71,7 +72,7 @@ published:
 	the basement and computers on the second floor.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/wsb24.jpg" alt="Linksys WSB24 Signal Booster" />
+	<img src="/images/hardware/wsb24.jpg" alt="Linksys WSB24 Signal Booster" />
 </p>
 <p>
 	While this helped strengthen my signal and made it more consistent from a signal strength standpoint, the random disconnects 
@@ -88,7 +89,7 @@ published:
 	So once again we head towards the evil Best Buy. I returned the Limpsys WMP11 PCI card and picked up the Microsoft MN-730.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/mn730.jpg" alt="Microsoft MN-730" />
+	<img src="/images/hardware/mn730.jpg" alt="Microsoft MN-730" />
 </p>
 <p>
 	I installed the software and then the card. The first problem I had was with the software "wizard" that tried to
@@ -118,7 +119,7 @@ published:
 	above the cost of the PCMCIA card alone.
 </p>
 <p class="image">
-	<img src="/blog/images/hardware/mn820.jpg" alt="Microsoft MN-820 Wireless Kit" />
+	<img src="/images/hardware/mn820.jpg" alt="Microsoft MN-820 Wireless Kit" />
 </p>
 <p>
 	First I installed the MN-700 base station. Nothing too special. It has an Access Point mode in which the routing is turned off, the WAN port is disabled, and

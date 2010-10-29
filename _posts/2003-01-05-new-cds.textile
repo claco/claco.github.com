@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New CDs"
+slug: new-cds
 category: Music
 published:
   epoch: 1041814868

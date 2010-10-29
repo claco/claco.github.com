@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Google is a Fickle Mistress"
+slug: google-is-a-fickle-mistress
 category: WWW
 published:
   epoch: 1089078178

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "I'm a Loser"
+slug: im-a-loser
 category: OffTopic
 published:
   epoch: 1034456615

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Interior Pictures"
+slug: interior-pictures
 category: OffTopic
 published:
   epoch: 1065226541

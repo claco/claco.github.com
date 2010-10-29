@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "BitDefender 8.0"
+slug: bitdefender-80
 category: Software
 published:
   epoch: 1099176562

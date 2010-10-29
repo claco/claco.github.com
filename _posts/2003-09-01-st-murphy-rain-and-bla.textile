@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "St. Murphy, Rain, And Bla"
+slug: st-murphy-rain-and-bla
 category: OffTopic
 published:
   epoch: 1062426366

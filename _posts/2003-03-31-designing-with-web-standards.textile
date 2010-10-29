@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Designing With Web Standards"
+slug: designing-with-web-standards
 category: WWW
 published:
   epoch: 1049165036
@@ -12,7 +13,7 @@ I can't wait to get my paws on <a href="http://www.amazon.com/exec/obidos/ASIN/0
 </p>
 
 <p class="center">
-<img src="/blog/images/www/absolutebsd.jpg" alt="Absolute BSD Book Cover" />
+<img src="/images/www/absolutebsd.jpg" alt="Absolute BSD Book Cover" />
 </p>
 
 

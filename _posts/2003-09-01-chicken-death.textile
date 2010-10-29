@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Chicken Death"
+slug: chicken-death
 category: OffTopic
 published:
   epoch: 1062468834

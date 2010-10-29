@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "New Handheld"
+slug: new-handheld
 category: Hardware
 published:
   epoch: 1067557391
@@ -14,7 +15,7 @@ Well, someone at work showed me one. Margeaux needs one for school. And I like p
 It's a <a href="http://www.amazon.com/exec/obidos/ASIN/B0000A1EEF/">Toshiba x750 PocketPC</a> running Windows Mobile 2003.
 </p>
 <p class="image">
-<img src="/blog/images/hardware/toshiba_e750.jpg" alt="Toshiba e750 PocketPC" />
+<img src="/images/hardware/toshiba_e750.jpg" alt="Toshiba e750 PocketPC" />
 </p>
 <p>
 The price wasn't too bad all things considered. 
