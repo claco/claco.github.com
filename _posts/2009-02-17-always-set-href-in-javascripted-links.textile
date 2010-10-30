@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Always Set Href In Javascripted Links
+slug: always-set-href-in-javascripted-links
 wordpress_id: 143
 wordpress_url: http://chrislaco.com/?p=143
 published:

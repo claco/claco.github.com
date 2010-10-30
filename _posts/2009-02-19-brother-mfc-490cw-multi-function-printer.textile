@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Brother MFC-490CW Multi Function Printer
+slug: brother-mfc-490cw-multi-function-printer
 wordpress_id: 149
 wordpress_url: http://chrislaco.com/?p=149
 published:

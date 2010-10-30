@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: The Laptop Mafia
+slug: the-laptop-mafia
 wordpress_id: 29
 wordpress_url: http://chrislaco.com/?p=29
 published:

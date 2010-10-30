@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Macbook Pro Go Boom
+slug: macbook-pro-go-boom
 wordpress_id: 203
 wordpress_url: http://chrislaco.com/?p=203
 published:

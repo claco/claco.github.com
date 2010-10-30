@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Because I Can...
+slug: because-i-can
 wordpress_id: 283
 wordpress_url: http://chrislaco.com/uncategorized/because-i-can/
 published:

@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Always Set Application Name In SqlClient Connection Strings
+slug: always-set-application-name-in-sqlclient-connection-strings
 wordpress_id: 79
 wordpress_url: http://chrislaco.com/?p=79
 published:

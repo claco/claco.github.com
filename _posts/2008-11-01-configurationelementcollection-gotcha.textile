@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: ConfigurationElementCollection Gotcha
+slug: configurationelementcollection-gotcha
 wordpress_id: 58
 wordpress_url: http://chrislaco.com/?p=58
 published:

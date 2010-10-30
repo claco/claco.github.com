@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: So Long Parallels. Hello VirtualBox.
+slug: so-long-parallels-hello-virtualbox
 wordpress_id: 152
 wordpress_url: http://chrislaco.com/?p=152
 published:

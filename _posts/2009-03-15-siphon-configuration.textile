@@ -1,6 +1,7 @@
 --- 
 layout: post
-title: Siphon Configuration
+title: Siphon 
+slug: siphon-configuration
 wordpress_id: 166
 wordpress_url: http://chrislaco.com/?p=166
 published:

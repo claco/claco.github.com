@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Book Review: Catalyst 5.8: The Perl MVC Framework"
+slug: catalyst-5-8-the-perl-mvc-framework
 wordpress_id: 256
 wordpress_url: http://chrislaco.com/?p=256
 published:

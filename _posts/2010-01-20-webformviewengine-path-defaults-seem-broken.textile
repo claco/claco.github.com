@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: WebFormViewEngine Path Defaults Seem Broken
+slug: webformviewengine-path-defaults-seem-broken
 wordpress_id: 239
 wordpress_url: http://chrislaco.com/?p=239
 published:

@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Template Toolkit for .NET
+slug: template-toolkit-for-net
 wordpress_id: 231
 wordpress_url: http://chrislaco.com/?p=231
 published:

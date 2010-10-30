@@ -8,11 +8,16 @@ use DateTime::Format::Strptime;
 no strict 'refs';
 
 my $file = FileHandle->new('< export.txt');
+my $format = DateTime::Format::Strptime->new(
+  pattern => '%m/%d/%Y %l:%M:%S %p',
+  time_zone => "America/New_York"
+);
 
 if (defined $file) {
   my $defaults = {
     category => 'OffTopic', 
-    tags => []
+    tags => [],
+    comments => []
   };
   my $post = {%{$defaults}};
 
@@ -46,16 +51,39 @@ if (defined $file) {
     };
 
     if ($line =~/^COMMENT:$/) {
-      $post->{incomments} = 1;    
+      $post->{incomments} = 1;
+
+      my $comment = {};
+      my $content = '';
+
+      my $cline = $file->getline;
+      until ($cline =~ /^-----$/) {
+        if ($cline =~ /^AUTHOR: (.*)$/) {
+          $comment->{author} = $1; 
+        } elsif ($cline =~ /^EMAIL: (.*)$/) {
+          $comment->{email} = $1; 
+        } elsif ($cline =~ /^IP: (.*)$/) {
+          $comment->{ip} = $1; 
+        } elsif ($cline =~ /^URL: (.*)$/) {
+          $comment->{url} = $1; 
+        } elsif ($cline =~ /^DATE: (.*)$/) {
+          $comment->{date} = $format->parse_datetime($1); 
+        } else {
+          $content .= $1 . "\n"; 
+        };
+
+        $cline = $file->getline; 
+      };
+
+      if (scalar keys %{$comment}) {
+        $comment->{content} = $content;
+        push @{$post->{comments}}, $comment; 
+      };
     };
 
     if ($line =~ /^DATE: (.*)$/) {
       if (! $post->{incomments}) {
       
-        my $format = DateTime::Format::Strptime->new(
-          pattern => '%m/%d/%Y %l:%M:%S %p',
-          time_zone => "America/New_York"
-        );
         my $date = $format->parse_datetime($1);
         my $day = $date->ymd;
         my $slug = $post->{slug};
@@ -90,6 +118,7 @@ if (defined $file) {
       writePost($post);
       $post = {};
       $post = {%{$defaults}};
+      $post->{comments} = [];
     }
   };
   $file->close;

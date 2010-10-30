@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Monitoring Local Directories with Siphon
+slug: monitoring-local-directories-with-siphon
 wordpress_id: 183
 wordpress_url: http://chrislaco.com/?p=183
 published:

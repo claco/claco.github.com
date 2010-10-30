@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Windows 7: What Vista Should Have Been"
+slug: windows-7-what-vista-should-have-been
 wordpress_id: 65
 wordpress_url: http://chrislaco.com/?p=65
 published:

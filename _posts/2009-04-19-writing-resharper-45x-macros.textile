@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Writing ReSharper 4.5.x Macros
+slug: writing-resharper-45x-macros
 wordpress_id: 212
 wordpress_url: http://chrislaco.com/?p=212
 published:

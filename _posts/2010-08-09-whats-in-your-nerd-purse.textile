@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: What's In Your Nerd Purse?
+slug: whats-in-your-nerd-purse
 wordpress_id: 269
 wordpress_url: http://chrislaco.com/?p=269
 published:

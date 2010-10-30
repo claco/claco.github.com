@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: An Introduction To Siphon
+slug: an-introduction-to-siphon
 wordpress_id: 157
 wordpress_url: http://chrislaco.com/?p=157
 published:

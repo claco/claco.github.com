@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: Clerbtime & Moving Forward
+slug: clerbtime-moving-forward
 wordpress_id: 254
 wordpress_url: http://chrislaco.com/?p=254
 published:

@@ -1,6 +1,7 @@
 --- 
 layout: post
 title: "Still Waiting: iPod Touch 64GB"
+slug: still-waiting-ipod-touch-64gb
 wordpress_id: 136
 wordpress_url: http://chrislaco.com/?p=136
 published:
