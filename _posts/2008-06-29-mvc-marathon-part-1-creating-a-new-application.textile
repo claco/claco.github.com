@@ -60,8 +60,8 @@ published:
 			select <kbd>File -> New -> Project</kbd>:
 		</p>
 		<p>
-			<a href="aspnetmvc-create.png">
-				<img src='aspnetmvc-create.png' width="204" height="152" alt="aspnetmvc create" />
+			<a href="/images/mvc1/aspnetmvc-create.png">
+				<img src='/images/mvc1/aspnetmvc-create.png' width="204" height="152" alt="aspnetmvc create" />
 			</a>
 		</p>
 		<p>
@@ -72,8 +72,8 @@ published:
 			like this:
 		</p>
 		<p>
-			<a href="aspnetmvc-create2.png">
-				<img src='aspnetmvc-create2.png' width="204" height="152"  alt="aspnetmvc create" />
+			<a href="/images/mvc1/aspnetmvc-create2.png">
+				<img src='/images/mvc1/aspnetmvc-create2.png' width="204" height="152"  alt="aspnetmvc create" />
 			</a>
 		</p>
 		<p>
@@ -89,8 +89,8 @@ published:
 			should end up with the default home page:
 		</p>
 		<p>
-			<a href="aspnetmvc.png">
-				<img src='aspnetmvc.png' width="204" height="152" alt="aspnetmvc run" />
+			<a href="/images/mvc1/aspnetmvc.png">
+				<img src='/images/mvc1/aspnetmvc.png' width="204" height="152" alt="aspnetmvc run" />
 			</a>
 		</p>
 
@@ -249,8 +249,8 @@ Name:
 			we get:
 		</p>
 		<p>
-			<a href="cakephp.png">
-				<img src='cakephp.png' width="204" height="152" alt="cakephp run" />
+			<a href="/images/mvc1/cakephp.png">
+				<img src='/images/mvc1/cakephp.png' width="204" height="152" alt="cakephp run" />
 			</a>
 		</p>
 
@@ -383,8 +383,8 @@ You can connect to your server at http://localhost:3000
 	<kbd>http://localhost:3000</kbd> in our browser yields:
 	</p>
 	<p>
-		<a href="catalyst.png">
-			<img src='catalyst.png' width="204" height="152" alt="catalyst run" />
+		<a href="/images/mvc1/catalyst.png">
+			<img src='/images/mvc1/catalyst.png' width="204" height="152" alt="catalyst run" />
 		</a>
 	</p>
 
@@ -542,8 +542,8 @@ Quit the server with CONTROL-C.
 		Lets hit <kbd>http://127.0.0.1:8000/</kbd> and see what we have:
 	</p>
 	<p>
-		<a href="django.png">
-		<img src='django.png' width="204" height="152" alt="django run" />
+		<a href="/images/mvc1/django.png">
+		<img src='/images/mvc1/django.png' width="204" height="152" alt="django run" />
 		</a>
 	</p>
 
@@ -688,8 +688,8 @@ http://localhost:3000/ -&gt; /images/rails.png
 		Loading <kbd>http://0.0.0.0:3000</kbd> in our browser, we see:
 	</p>
 	<p>
-		<a href="rails.png">
-			<img src='rails.png' width="204" height="152" alt="rails run" />
+		<a href="/images/mvc1/rails.png">
+			<img src='/images/mvc1/rails.png' width="204" height="152" alt="rails run" />
 		</a>
 	</p>
 

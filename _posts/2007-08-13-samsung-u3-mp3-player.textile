@@ -10,7 +10,7 @@ published:
 
 Long story longer. My good friend Ron from $work came over yesterday to help me setup the drumset. He, and my wife always prod me that I should start playing again, and honestly it's a good form of exercise; something I need but will never do.
 
-<span class="mt-enclosure mt-enclosure-image"><a href="/images/Drums%20003.icf" onclick="window.open('/images/Drums%20003.icf','popup','width=2272,height=1704,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="/images/Drums 003-thumb-250x187.jpg" width="250" height="187" alt="Drums 003.jpg" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></span>
+<span class="mt-enclosure mt-enclosure-image"><a href="/images/Drums%20003.jpg" onclick="window.open('/images/Drums%20003.jpg','popup','width=2272,height=1704,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="/images/Drums 003-thumb-250x187.jpg" width="250" height="187" alt="Drums 003.jpg" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></span>
 
 Well, the drums are setup but for the life of me I couldn't find the the power cord for the CD player for play-along sessions. Well, hey, it's the 21st century. Time to get something that I vowed to never get: an MP3 player. I'm not a big fan of the iPods, mostly because I'm just not into iTunes. I just want to drag my files over and have a go at it.
 

@@ -68,8 +68,8 @@ published:
 			Restaurants table and select "Show Table Data".
 		</p>
 		<p>
-			<a href="aspnet1.png">
-				<img src='/images/mvc1/aspnet1.png' width="204" height="152" alt="create data" />
+			<a href="/images/mvc3/aspnet1.png">
+				<img src='/images/mvc3/aspnet1.png' width="204" height="152" alt="create data" />
 			</a>
 		</p>
 		<p>
@@ -83,8 +83,8 @@ published:
 			"Add New Item".
 		</p>
 		<p>
-			<a href="aspnet2.png">
-				<img src='/images/mvc1/aspnet2.png' width="204" height="152" alt="create controller" />
+			<a href="/images/mvc3/aspnet2.png">
+				<img src='/images/mvc3/aspnet2.png' width="204" height="152" alt="create controller" />
 			</a>
 		</p>
 		<p>
@@ -107,8 +107,8 @@ published:
 			<em>Update: The file name in the add item dialog above is wrong. :-)</em>
 		</p>
 		<p>
-			<a href="aspnet3.png">
-				<img src='/images/mvc1/aspnet3.png' width="204" height="152" alt="new controller" />
+			<a href="/images/mvc3/aspnet3.png">
+				<img src='/images/mvc3/aspnet3.png' width="204" height="152" alt="new controller" />
 			</a>
 		</p>
 		<p>
@@ -117,8 +117,8 @@ published:
 			of restaurants and feed that to a view.
 		</p>
 		<p>
-			<a href="aspnet4.png">
-				<img src='/images/mvc1/aspnet4.png' width="204" height="152" alt="new controller code" />
+			<a href="/images/mvc3/aspnet4.png">
+				<img src='/images/mvc3/aspnet4.png' width="204" height="152" alt="new controller code" />
 			</a>
 		</p>
 		<pre>public ActionResult Index()
@@ -163,8 +163,8 @@ published:
 			"Add Item".
 		</p>
 		<p>
-			<a href="aspnet5.png">
-				<img src='/images/mvc1/aspnet5.png' width="204" height="152" alt="new view" />
+			<a href="/images/mvc3/aspnet5.png">
+				<img src='/images/mvc3/aspnet5.png' width="204" height="152" alt="new view" />
 			</a>
 		</p>
 		<p>
@@ -175,8 +175,8 @@ published:
 			page in the Shared folder and click "OK".
 		</p>
 		<p>
-			<a href="aspnet6.png">
-				<img src='/images/mvc1/aspnet6.png' width="204" height="152" alt="new view master select" />
+			<a href="/images/mvc3/aspnet6.png">
+				<img src='/images/mvc3/aspnet6.png' width="204" height="152" alt="new view master select" />
 			</a>
 		</p>
 		<p>
@@ -186,8 +186,8 @@ published:
 			Right-Click on your new Index.aspx page and select "View Code".
 		</p>
 		<p>
-			<a href="aspnet7.png">
-				<img src='/images/mvc1/aspnet7.png' width="204" height="152" alt="new view model type" />
+			<a href="/images/mvc3/aspnet7.png">
+				<img src='/images/mvc3/aspnet7.png' width="204" height="152" alt="new view model type" />
 			</a>
 		</p>
 		<pre>public partial class Index : ViewPage&lt;List&lt;Restaurant&gt;&gt;</pre>
@@ -204,8 +204,8 @@ published:
 			Double-Click your Index.aspx file to open the page view.
 		</p>
 		<p>
-			<a href="aspnet8.png">
-				<img src='/images/mvc1/aspnet8.png' width="204" height="152" alt="new view model loop" />
+			<a href="/images/mvc3/aspnet8.png">
+				<img src='/images/mvc3/aspnet8.png' width="204" height="152" alt="new view model loop" />
 			</a>
 		</p>
 		<pre>&lt;ul&gt;
@@ -222,8 +222,8 @@ published:
 			work by going to /restaurants/.
 		</p>
 		<p>
-			<a href="aspnet11.png">
-				<img src='/images/mvc1/aspnet11.png' width="204" height="152" alt="new view model browser" />
+			<a href="/images/mvc3/aspnet11.png">
+				<img src='/images/mvc3/aspnet11.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 		<p>
@@ -233,8 +233,8 @@ published:
 			Html.ActionLink to build our link.
 		</p>
 		<p>
-			<a href="aspnet9.png">
-				<img src='/images/mvc1/aspnet9.png' width="204" height="152" alt="new view model browser" />
+			<a href="/images/mvc3/aspnet9.png">
+				<img src='/images/mvc3/aspnet9.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 		<pre>&lt;li&gt;
@@ -251,8 +251,8 @@ published:
 			Let's check out our link to make sure it works.
 		</p>
 		<p>
-			<a href="aspnet10.png">
-				<img src='/images/mvc1/aspnet10.png' width="204" height="152" alt="new view model browser" />
+			<a href="/images/mvc3/aspnet10.png">
+				<img src='/images/mvc3/aspnet10.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 
@@ -363,14 +363,14 @@ class RestaurantsController extends AppController {
 			taken care of. Let's take a look at what it provides:
 		</p>
 		<p>
-			<a href="cake1.png">
-				<img src='/images/mvc1/cake1.png' width="204" height="152" alt="cake list" />
+			<a href="/images/mvc3/cake1.png">
+				<img src='/images/mvc3/cake1.png' width="204" height="152" alt="cake list" />
 			</a>
-			<a href="cake2.png">
-				<img src='/images/mvc1/cake2.png' width="204" height="152" alt="cake new" />
+			<a href="/images/mvc3/cake2.png">
+				<img src='/images/mvc3/cake2.png' width="204" height="152" alt="cake new" />
 			</a>
-			<a href="cake3.png">
-				<img src='/images/mvc1/cake3.png' width="204" height="152" alt="cake list" />
+			<a href="/images/mvc3/cake3.png">
+				<img src='/images/mvc3/cake3.png' width="204" height="152" alt="cake list" />
 			</a>
 		</p>
 		<p>
@@ -390,8 +390,8 @@ class RestaurantsController extends AppController {
 			appear on the default home page.
 		</p>
 		<p>
-			<a href="cake4.png">
-				<img src='/images/mvc1/cake4.png' width="204" height="152" alt="new view model browser" />
+			<a href="/images/mvc3/cake4.png">
+				<img src='/images/mvc3/cake4.png' width="204" height="152" alt="new view model browser" />
 			</a>
 		</p>
 
@@ -470,17 +470,17 @@ The latest versions of LFB automatically detect any models that use DBIC::Schema
 
 
 <p>
-			<a href="catalyst2.png">
-				<img src="catalyst2.png" alt="catalyst list" height="152" width="204">
+			<a href="/images/mvc3/catalyst2.png">
+				<img src="/images/mvc3/catalyst2.png" alt="catalyst list" height="152" width="204">
 			</a>
-			<a href="catalyst3.png">
-				<img src="catalyst3.png" alt="catalyst add" height="152" width="204">
+			<a href="/images/mvc3/catalyst3.png">
+				<img src="/images/mvc3/catalyst3.png" alt="catalyst add" height="152" width="204">
 			</a>
-			<a href="catalyst4.png">
-				<img src="catalyst4.png" alt="catalyst add" height="152" width="204">
+			<a href="/images/mvc3/catalyst4.png">
+				<img src="/images/mvc3/catalyst4.png" alt="catalyst add" height="152" width="204">
 			</a>
-			<a href="catalyst5.png">
-				<img src="catalyst5.png" alt="catalyst list" height="152" width="204">
+			<a href="/images/mvc3/catalyst5.png">
+				<img src="/images/mvc3/catalyst5.png" alt="catalyst list" height="152" width="204">
 			</a>
 		</p>
 
@@ -561,8 +561,8 @@ created &quot;/Users/claco/mvc-marathon/catalyst/BurningPlate/script/../t/view_T
 			so I guess there technically is a central routing table. :-)
 		</p>
 		<p>
-			<a href="catalyst1.png">
-				<img src='/images/mvc1/catalyst1.png' width="204" height="152" alt="catalyst browser" />
+			<a href="/images/mvc3/catalyst1.png">
+				<img src='/images/mvc3/catalyst1.png' width="204" height="152" alt="catalyst browser" />
 			</a>
 		</p>
 
@@ -653,17 +653,17 @@ Installing index for admin.LogEntry model</pre>
 			interface. and add our data.
 		</p>
 		<p>
-			<a href="django1.png">
-				<img src='/images/mvc1/django1.png' width="204" height="152" alt="django list" />
+			<a href="/images/mvc3/django1.png">
+				<img src='/images/mvc3/django1.png' width="204" height="152" alt="django list" />
 			</a>
-			<a href="django2.png">
-				<img src='/images/mvc1/django2.png' width="204" height="152" alt="django new" />
+			<a href="/images/mvc3/django2.png">
+				<img src='/images/mvc3/django2.png' width="204" height="152" alt="django new" />
 			</a>
-			<a href="django3.png">
-				<img src='/images/mvc1/django3.png' width="204" height="152" alt="django list" />
+			<a href="/images/mvc3/django3.png">
+				<img src='/images/mvc3/django3.png' width="204" height="152" alt="django list" />
 			</a>
-			<a href="django4.png">
-				<img src='/images/mvc1/django4.png' width="204" height="152" alt="django list" />
+			<a href="/images/mvc3/django4.png">
+				<img src='/images/mvc3/django4.png' width="204" height="152" alt="django list" />
 			</a>
 		</p>
 
@@ -728,8 +728,8 @@ def index(request):
 			Looks familiar doesn't it? Let's check it out in our browser.
 		</p>
 		<p>
-			<a href="django5.png">
-				<img src='/images/mvc1/django5.png' width="204" height="152" alt="django browser" />
+			<a href="/images/mvc3/django5.png">
+				<img src='/images/mvc3/django5.png' width="204" height="152" alt="django browser" />
 			</a>
 		</p>
 
@@ -794,17 +794,17 @@ dependency  model
 			Let's check out what we have in the browser.
 		</p>
 		<p>
-			<a href="rails1.png">
-				<img src='/images/mvc1/rails1.png' width="204" height="152" alt="rails list" />
+			<a href="/images/mvc3/rails1.png">
+				<img src='/images/mvc3/rails1.png' width="204" height="152" alt="rails list" />
 			</a>
-			<a href="rails2.png">
-				<img src='/images/mvc1/rails2.png' width="204" height="152" alt="rails new" />
+			<a href="/images/mvc3/rails2.png">
+				<img src='/images/mvc3/rails2.png' width="204" height="152" alt="rails new" />
 			</a>
-			<a href="rails3.png">
-				<img src='/images/mvc1/rails3.png' width="204" height="152" alt="rails list" />
+			<a href="/images/mvc3/rails3.png">
+				<img src='/images/mvc3/rails3.png' width="204" height="152" alt="rails list" />
 			</a>
-			<a href="rails3.png">
-				<img src='/images/mvc1/rails3.png' width="204" height="152" alt="rails list" />
+			<a href="/images/mvc3/rails3.png">
+				<img src='/images/mvc3/rails3.png' width="204" height="152" alt="rails list" />
 			</a>
 		</p>
 

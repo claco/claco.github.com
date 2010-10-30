@@ -109,8 +109,8 @@ published:
 			database "BurningPlate.mdf" and click "Add".
 		</p>
 		<p>
-			<a href="aspnet1.png">
-				<img src='aspnet1.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet1.png">
+				<img src='/images/mvc2/aspnet1.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
@@ -118,13 +118,13 @@ published:
 			it in our App_Data folder. Say "Yes" and it will. :-)
 		</p>
 		<p>
-			<a href="aspnet2.png">
-				<img src='aspnet2.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet2.png">
+				<img src='/images/mvc2/aspnet2.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
-			<a href="aspnet3.png">
-				<img src='aspnet3.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet3.png">
+				<img src='/images/mvc2/aspnet3.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
@@ -133,16 +133,16 @@ published:
 			the left.
 		</p>
 		<p>
-			<a href="aspnet4.png">
-				<img src='aspnet4.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet4.png">
+				<img src='/images/mvc2/aspnet4.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
 			Right-click on he Tables folder and choose "Add New Table" 
 		</p>
 		<p>
-			<a href="aspnet5.png">
-				<img src='aspnet5.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet5.png">
+				<img src='/images/mvc2/aspnet5.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
@@ -152,8 +152,8 @@ published:
 			is a restaurant. For now, lets name our table "Restaurants".
 		</p>
 		<p>
-			<a href="aspnet6.png">
-				<img src='aspnet6.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet6.png">
+				<img src='/images/mvc2/aspnet6.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
@@ -165,8 +165,8 @@ published:
 			100 and click the Save button.
 		</p>
 		<p>
-			<a href="aspnet9.png">
-				<img src='aspnet9.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet9.png">
+				<img src='/images/mvc2/aspnet9.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<h3>Creating the Model</h3>
@@ -177,8 +177,8 @@ published:
 			Choose "LINQ to SQL Classes" and name it "BurningPlate.dbml".
 		</p>
 		<p>
-			<a href="aspnet7.png">
-				<img src='aspnet7.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet7.png">
+				<img src='/images/mvc2/aspnet7.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>
@@ -186,8 +186,8 @@ published:
 			Server Explorer into the new BurningPlate.dbml designer window.
 		</p>
 		<p>
-			<a href="aspnet8.png">
-				<img src='aspnet8.png' width="204" height="152" alt="rails run" />
+			<a href="/images/mvc2/aspnet8.png">
+				<img src='/images/mvc2/aspnet8.png' width="204" height="152" alt="rails run" />
 			</a>
 		</p>
 		<p>

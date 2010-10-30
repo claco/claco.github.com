@@ -14,6 +14,6 @@ Of course, comments are broken. The one thing that MT gets wrong during upgrades
 
 Still working on Mango. Well, barely. I managed to waste a few weeks on Call of Duty, Call of Duty: United Offensive and Call of Duty 2. I usually like sci-fi games more than 'army' games, but CoD was pretty damn fun.
 
-<span class="mt-enclosure mt-enclosure-image"><a href="/archives/Photo%20178.icf" onclick="window.open('/archives/Photo%20178.icf','popup','width=2272,height=1704,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false;"><img src="/assets_c/2007/07/Photo%20178-thumb-250x187.jpg" width="250" height="187" alt="Photo 178.jpg" class="mt-image-left" style="float: left; margin: 0 20px 20px 0;" /></a></span>
+<span class="mt-enclosure mt-enclosure-image"><a href="/archives/Photo%20178.icf" onclick="window.open('/archives/Photo%20178.icf','popup','width=2272,height=1704,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false;"><img src="/images/assets_c/2007/07/Photo%20178-thumb-250x187.jpg" width="250" height="187" alt="Photo 178.jpg" class="mt-image-left" style="float: left; margin: 0 20px 20px 0;" /></a></span>
 
 

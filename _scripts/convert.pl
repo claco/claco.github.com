@@ -108,11 +108,13 @@ sub writePost() {
   $body =~ s/blog\/images/images/g;
   $body =~ s/http\:\/\/today\.icantfocus\.com\/blog//g;
   $body =~ s/http\:\/\/today\.icantfocus\.com//g;
+  $body =~ s/\/assets_c/\/images\/assets_c/g;
   
   my $extended = $post->{extended};
   $extended =~ s/blog\/images/images/g;
   $extended =~ s/http\:\/\/today\.icantfocus\.com\/blog//g;
   $extended =~ s/http\:\/\/today\.icantfocus\.com//g;
+  $extended =~ s/\/assets_c/\/images\/assets_c/g;
 
   $file->print("---", "\n");
   $file->print("layout: post", "\n");
