@@ -4,22 +4,22 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Claco.github.com</title>
- <link href="http://.github.com/claco.github.com/atom.xml" rel="self"/>
- <link href="http://.github.com/claco.github.com/"/>
+ <title>Christopher H. Laco</title>
+ <link href="{{ site.base }}/atom.xml" rel="self"/>
+ <link href="{{ site.base }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://.github.com/claco.github.com/</id>
+ <id>{{ site.base }}/</id>
  <author>
-   <name>Dr Nic Williams</name>
-   <email>williams@gmail.com</email>
+   <name>Christopher H. Laco</name>
+   <email>claco@chrislaco.com</email>
  </author>
 
  {% for post in site.posts %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="http://.github.com/claco.github.com{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://.github.com/claco.github.com{{ post.id }}</id>
+   <link href="{{ site.base }}{{ post.url }}/"/>
+   <updated>{{ post.published.utc }}-00:00</updated>
+   <id>{{ site.base }}{{ post.url }}/</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}
