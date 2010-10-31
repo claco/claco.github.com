@@ -16,7 +16,7 @@ layout: nil
 
  {% for post in site.posts %}
  <entry>
-   <title>{{ post.title }}</title>
+   <title>{{ post.title | xml_escape }}</title>
    <link href="{{ site.base }}{{ post.url }}/"/>
    <updated>{{ post.published.utc }}-00:00</updated>
    <id>{{ site.base }}{{ post.url }}/</id>
