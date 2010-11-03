@@ -4,6 +4,16 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
     <title>{{ page.title }}</title> 
     <meta name="author" content="Christopher H. Laco" /> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" /> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/default.css" />
+    <!--[if !IE]>-->
+    <style type="text/css">
+    body {
+        font-size:16px;
+    }
+    </style>
+    <!--<[endif]-->
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/scripts/jquery.glob.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="/scripts/globinfo/jquery.glob.en-US.min.js" type="text/javascript" charset="utf-8"></script>
@@ -24,4 +34,10 @@
     </script>
   </head> 
   <body> 
-    <p><a href="/">Home</a></p>
+    <div id="wrapper">
+      <div id="header">
+        <h1 class="title">{{ page.title }}</h1>
+        <div class="published" data-epoch="{{ page.published.epoch }}">{{ page.published.utc }}</div>
+        <div class="author"><a href="/">Christopher H. Laco</a></div>
+      </div>
+      <div id="content">

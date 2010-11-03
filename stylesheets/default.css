@@ -1,0 +1,42 @@
+body, html {
+  color: #333333;
+  font-family: "Tahoma", "Corbel", "Arial", "Helvetica", sans-serif;
+  font-size: 100%;
+  line-height: 1.125em;
+}
+p {
+  font-size: 0.95em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+#wrapper {
+  margin: 40px auto 0 auto;
+  width: 800px;
+}
+#header {
+  margin-bottom: 45px;
+  text-align: center;
+}
+#header .published {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+.comments {
+  margin-top: 65px;
+}
+#header .author, #header .author a {
+  color: black;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+h1, h2, h3, .title {
+  color: black;
+  font-family: "American Typewriter", "Courier New", "Courier", serif;
+  font-size: 2.40em;
+  font-weight: normal;
+  letter-spacing: -.05em;
+}
+h2 {
+  font-size: 1.6em;
+}

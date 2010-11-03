@@ -1,10 +1,6 @@
 {% include header.textile %}
 
 <div class="post">
-  <h2 class="title">{{ page.title }}</h2>
-
-  <div class="published" data-epoch="{{ page.published.epoch }}">{{ page.published.utc }}</div>
-
   {% if page.tags != empty %}
     <div class="tags">
       Tags: {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
