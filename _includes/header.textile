@@ -6,6 +6,7 @@
     <meta name="author" content="Christopher H. Laco" /> 
     <link rel="stylesheet" type="text/css" href="/stylesheets/reset.css" /> 
     <link rel="stylesheet" type="text/css" href="/stylesheets/default.css" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/syntax.css" />
     <!--[if !IE]>-->
     <style type="text/css">
     body {

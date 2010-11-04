@@ -4,10 +4,30 @@ body, html {
   font-size: 100%;
   line-height: 1.125em;
 }
-p {
+ul {
+  list-style-position: outside;
+  margin-left: 15px;
+}
+ul li:before {
+  content: "\00BB \0020";
+}
+p, li {
   font-size: 0.95em;
   letter-spacing: 1px;
   line-height: 1.5em;
+}
+.highlight {
+  border: 1px solid #dddddd;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 0.90em;
+}
+.highlight pre {
+  line-height: 1.2em;
+}
+.lineno {
+  padding: 3px;
 }
 #wrapper {
   margin: 40px auto 0 auto;
