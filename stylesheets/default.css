@@ -60,3 +60,39 @@ h1, h2, h3, .title {
 h2 {
   font-size: 1.6em;
 }
+.index .post .title {
+  font-size: 1.1em;
+  letter-spacing: .05em;
+}
+.index .post .title a {
+  color: black;
+  text-decoration: none;
+}
+.index .post {
+  margin-bottom: 10px;
+}
+.index .post .published {
+  font-weight: bold;
+}
+/* Disqus */
+#dsq-comments-title, .dsq-options {
+  display: none !important;
+}
+.dsq-missing-permissions {
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+}
+#dsq-form-area {
+  margin-bottom: 25px !important;
+}
+#dsq-new-post h3 {
+  font-family: "Tahoma", "Corbel", "Arial", "Helvetica", sans-serif !important;
+  font-size: 1.6em !important;
+  font-weight: normal !important;
+  letter-spacing: -.1em !important;
+  margin-bottom: 15px !important;
+}
+.dsq-comment-message {
+  font-size: 1.1em !important;
+  line-height: 1.25em;
+}

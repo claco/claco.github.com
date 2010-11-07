@@ -3,17 +3,15 @@ layout: default
 title: Christopher H. Laco
 ---
 
-<h2>Christopher H. Laco</h2>
-
-Conversion in process. Please stand by.
-
-<div class="posts">
+<div class="index posts">
   {% for post in site.posts %}
   <div class="post">
     <span class="published" data-epoch="{{ post.published.epoch }}" data-format="MM/dd/yyyy">
       {{ post.published.utc }}
-    </span> -
-    <a class="permalink" href="{{ post.url}}/">{{ post.title }}</a>
+    </span> &raquo;  
+    <span class="title">
+      <a class="permalink" href="{{ post.url}}/">{{ post.title }}</a>
+    </span>
   </div>
   {% endfor %}
-
+</div>

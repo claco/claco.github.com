@@ -25,7 +25,7 @@
           $.preferCulture("en-US");
 
           $('.published').each(function() {
-            var epoch = $(this).attr("data-epoch");
+            var epoch = $(this).attr("data-epoch") || (new Date().getTime()/1000); 
             var format = $(this).attr('data-format') || 'f';
 
             $(this).html( $.format( new Date(epoch*1000), format ) );
