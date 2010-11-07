@@ -3,9 +3,7 @@ layout: post
 title: "Reload"
 slug: reload
 category: OffTopic
-published:
-  epoch: 1059323254
-  utc: 2003-07-27T16:27:34
+created: 1059323254
 ---
 
 <p>

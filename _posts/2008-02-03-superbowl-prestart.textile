@@ -7,9 +7,7 @@ tags:
   - fox
   - superbowl
   - tv
-published:
-  epoch: 1202082658
-  utc: 2008-02-03T23:50:58
+created: 1202082658
 ---
 
 Fox and the SuperBowl decided to read the Declaration of Independence in the pre start coverage. I find that somewhat funny given Foxs' less than stellar record of reporting the news accurately on anything that involves war/government/right losses while watching someone read bout the peoples rights to abolish a broken government, which is what we have now.

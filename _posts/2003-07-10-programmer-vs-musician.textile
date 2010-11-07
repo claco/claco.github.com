@@ -3,9 +3,7 @@ layout: post
 title: "Programmer vs. Musician"
 slug: programmer-vs-musician
 category: OffTopic
-published:
-  epoch: 1057880697
-  utc: 2003-07-10T23:44:57
+created: 1057880697
 ---
 
 <p>

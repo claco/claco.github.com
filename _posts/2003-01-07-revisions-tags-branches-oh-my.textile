@@ -3,9 +3,7 @@ layout: post
 title: "Revisions, Tags, Branches Oh My!"
 slug: revisions-tags-branches-oh-my
 category: OffTopic
-published:
-  epoch: 1041999428
-  utc: 2003-01-08T04:17:08
+created: 1041999428
 ---
 
 <p>

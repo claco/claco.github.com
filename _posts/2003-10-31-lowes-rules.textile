@@ -3,9 +3,7 @@ layout: post
 title: "Lowes Rules!"
 slug: lowes-rules
 category: OffTopic
-published:
-  epoch: 1067648105
-  utc: 2003-11-01T00:55:05
+created: 1067648105
 ---
 
 <p>

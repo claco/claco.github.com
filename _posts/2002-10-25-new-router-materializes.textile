@@ -3,9 +3,7 @@ layout: post
 title: "New Router Materializes"
 slug: new-router-materializes
 category: Hardware
-published:
-  epoch: 1035584398
-  utc: 2002-10-25T22:19:58
+created: 1035584398
 ---
 
 <p>

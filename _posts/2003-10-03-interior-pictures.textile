@@ -3,9 +3,7 @@ layout: post
 title: "Interior Pictures"
 slug: interior-pictures
 category: OffTopic
-published:
-  epoch: 1065226541
-  utc: 2003-10-04T00:15:41
+created: 1065226541
 ---
 
 <p>

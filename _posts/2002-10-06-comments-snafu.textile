@@ -3,9 +3,7 @@ layout: post
 title: "Comments Snafu"
 slug: comments-snafu
 category: OffTopic
-published:
-  epoch: 1033888134
-  utc: 2002-10-06T07:08:54
+created: 1033888134
 ---
 
 <p>

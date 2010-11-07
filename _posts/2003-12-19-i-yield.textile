@@ -3,9 +3,7 @@ layout: post
 title: "I Yield"
 slug: i-yield
 category: OffTopic
-published:
-  epoch: 1071880556
-  utc: 2003-12-20T00:35:56
+created: 1071880556
 ---
 
 <p>

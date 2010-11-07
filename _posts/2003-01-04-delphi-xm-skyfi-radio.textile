@@ -3,9 +3,7 @@ layout: post
 title: "Delphi XM SKYFi Radio"
 slug: delphi-xm-skyfi-radio
 category: Hardware
-published:
-  epoch: 1041738267
-  utc: 2003-01-05T03:44:27
+created: 1041738267
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Hello St. Murphy. Where Ya Been?"
 slug: hello-st-murphy-where-ya-been
 category: Humor
-published:
-  epoch: 1090973960
-  utc: 2004-07-28T00:19:20
+created: 1090973960
 ---
 
 Hello St. Murphy. Where Ya Been? Thanks for stopping by.

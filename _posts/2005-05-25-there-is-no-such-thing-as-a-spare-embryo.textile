@@ -3,9 +3,7 @@ layout: post
 title: "...there is no such thing as a spare embryo..."
 slug: there-is-no-such-thing-as-a-spare-embryo
 category: WTF
-published:
-  epoch: 1117020701
-  utc: 2005-05-25T11:31:41
+created: 1117020701
 ---
 
 I've said it before, and I'll say it again. The man is an idiot. GW quoth yesterday on tv "and the children here today remind us that there is no such thing as a spare embryo".

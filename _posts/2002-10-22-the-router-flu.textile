@@ -3,9 +3,7 @@ layout: post
 title: "The Router Flu"
 slug: the-router-flu
 category: Hardware
-published:
-  epoch: 1035324859
-  utc: 2002-10-22T22:14:19
+created: 1035324859
 ---
 
 <p>

@@ -2,11 +2,7 @@
 layout: post
 title: Macbook Pro Go Boom
 slug: macbook-pro-go-boom
-wordpress_id: 203
-wordpress_url: http://chrislaco.com/?p=203
-published:
-  epoch: 1238627940
-  utc: 2009-04-01T23:19:00
+created: 1238627940
 ---
 Slowly over the last couple of weeks, my Macbook Pro started going downhill. It started with a big bad pixel in the top middle of the screen. Nothing worth pursuing since there was only one. Then Saturday while doing some full screen editing in Textmate I noticed a rash of speckles on the right side. I thought it was dirt. Of course, it didn't come off when I cleaned the screen.<!--more-->
 

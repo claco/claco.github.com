@@ -3,9 +3,7 @@ layout: post
 title: "Amazon, How I Loathe Thee"
 slug: amazon-how-i-loathe-thee
 category: WTF
-published:
-  epoch: 1053122826
-  utc: 2003-05-16T22:07:06
+created: 1053122826
 ---
 
 <p>

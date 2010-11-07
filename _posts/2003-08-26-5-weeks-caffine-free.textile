@@ -3,9 +3,7 @@ layout: post
 title: "~5 Weeks Caffine Free"
 slug: 5-weeks-caffine-free
 category: OffTopic
-published:
-  epoch: 1061940265
-  utc: 2003-08-26T23:24:25
+created: 1061940265
 ---
 
 <p>

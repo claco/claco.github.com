@@ -3,9 +3,7 @@ layout: post
 title: "Accident Corner"
 slug: accident-corner
 category: OffTopic
-published:
-  epoch: 1188784142
-  utc: 2007-09-03T01:49:02
+created: 1188784142
 ---
 
 We live across the road from an intersection. So far, I've seen at least two accidents here, and I'm surprised every winter that someone doesn't slide off the hill and into our front yard. So far, everyone has walked away. Just the usual rear end fender benders between people turning and people behind them not paying attention.

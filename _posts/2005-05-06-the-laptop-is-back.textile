@@ -3,9 +3,7 @@ layout: post
 title: "The Laptop Is Back!"
 slug: the-laptop-is-back
 category: Hardware
-published:
-  epoch: 1115431636
-  utc: 2005-05-07T02:07:16
+created: 1115431636
 ---
 
 All hail the laptop for it has returned. The keyboard is fixed. The screen case has been replaced. Now I can get back to hacking perl in front of the idiot box.

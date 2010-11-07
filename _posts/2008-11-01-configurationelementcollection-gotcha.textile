@@ -2,11 +2,7 @@
 layout: post
 title: ConfigurationElementCollection Gotcha
 slug: configurationelementcollection-gotcha
-wordpress_id: 58
-wordpress_url: http://chrislaco.com/?p=58
-published:
-  epoch: 1225594980
-  utc: 2008-11-02T03:03:00
+created: 1225594980
 ---
 Here's a fun way to waste 2 hours of your life. I was writing a custom config section, and trying to figure out why this wasn't throwing a duplicate key error:
 <!--more-->

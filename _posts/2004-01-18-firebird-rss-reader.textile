@@ -3,9 +3,7 @@ layout: post
 title: "Firebird RSS Reader"
 slug: firebird-rss-reader
 category: Software
-published:
-  epoch: 1074486236
-  utc: 2004-01-19T04:23:56
+created: 1074486236
 ---
 
 <p>

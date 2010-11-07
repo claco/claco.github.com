@@ -3,9 +3,7 @@ layout: post
 title: "XML 1.1 Draft Breaks 1.0 Compatibility"
 slug: xml-11-draft-breaks-10-compatibility
 category: WWW
-published:
-  epoch: 1034951903
-  utc: 2002-10-18T14:38:23
+created: 1034951903
 ---
 
 <p>

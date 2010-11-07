@@ -3,9 +3,7 @@ layout: post
 title: "All Hail Model M"
 slug: all-hail-model-m
 category: Hardware
-published:
-  epoch: 1096939617
-  utc: 2004-10-05T01:26:57
+created: 1096939617
 ---
 
 I've got one of those loud clickity clackity lead lined 50lb. IBM Model M keyboards at work. I love them. Best most reliable long lasting keyboard ever made in my opinion.

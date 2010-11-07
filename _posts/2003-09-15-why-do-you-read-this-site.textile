@@ -3,9 +3,7 @@ layout: post
 title: "Why Do You Read This Site?"
 slug: why-do-you-read-this-site
 category: OffTopic
-published:
-  epoch: 1063646088
-  utc: 2003-09-15T17:14:48
+created: 1063646088
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "It's not as it appears"
 slug: its-not-as-it-appears
 category: WTF
-published:
-  epoch: 1105325438
-  utc: 2005-01-10T02:50:38
+created: 1105325438
 ---
 
 Yes, I'm still alive. I've been spending a lot of time working on <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> in between the holidays.

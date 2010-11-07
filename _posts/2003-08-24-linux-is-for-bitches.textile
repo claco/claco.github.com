@@ -3,9 +3,7 @@ layout: post
 title: "Linux Is For Bitches"
 slug: linux-is-for-bitches
 category: Humor
-published:
-  epoch: 1061760705
-  utc: 2003-08-24T21:31:45
+created: 1061760705
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Worms Worms Everywhere"
 slug: worms-worms-everywhere
 category: WTF
-published:
-  epoch: 1061380974
-  utc: 2003-08-20T12:02:54
+created: 1061380974
 ---
 
 <p>

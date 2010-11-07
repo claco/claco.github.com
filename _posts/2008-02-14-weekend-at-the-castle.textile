@@ -6,9 +6,7 @@ category: OffTopic
 tags:
   - castle
   - ravenwood
-published:
-  epoch: 1203039836
-  utc: 2008-02-15T01:43:56
+created: 1203039836
 ---
 
 Margeaux and I are headed to <a href="http://www.ravenwoodcastle.com/">Ravenwood Castle</a> tomorrow for the weekend.

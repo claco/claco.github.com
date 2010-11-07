@@ -3,9 +3,7 @@ layout: post
 title: "MN-700 Review"
 slug: mn-700-review
 category: Hardware
-published:
-  epoch: 1071367272
-  utc: 2003-12-14T02:01:12
+created: 1071367272
 ---
 
 <p>

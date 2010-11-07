@@ -8,9 +8,7 @@ tags:
   - perl
   - tdd
   - testing
-published:
-  epoch: 1159025748
-  utc: 2006-09-23T15:35:48
+created: 1159025748
 ---
 
 Well, after a loooong downtime, it looks like the <a href="http://www.markymoon.com/rubbercity/">RubberCity Perl Mongers</a> group may be getting back together.

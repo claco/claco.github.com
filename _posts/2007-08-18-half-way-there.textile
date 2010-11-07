@@ -7,9 +7,7 @@ tags:
   - flickr
   - photos
   - slides
-published:
-  epoch: 1187493851
-  utc: 2007-08-19T03:24:11
+created: 1187493851
 ---
 
 Just a few sets of photos left. I have about half of the wedding photos uploaded...half to go. The parents are bringing the remaining CDs full of the old 35mm slides. After I get all of those uploaded, I think I'm done.

@@ -3,9 +3,7 @@ layout: post
 title: "Tinderbox"
 slug: tinderbox
 category: WWW
-published:
-  epoch: 1066267809
-  utc: 2003-10-16T01:30:09
+created: 1066267809
 ---
 
 <p>

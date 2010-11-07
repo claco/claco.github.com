@@ -3,9 +3,7 @@ layout: post
 title: "Test Post"
 slug: test-post
 category: WTF
-published:
-  epoch: 1041653533
-  utc: 2003-01-04T04:12:13
+created: 1041653533
 ---
 
 <p>

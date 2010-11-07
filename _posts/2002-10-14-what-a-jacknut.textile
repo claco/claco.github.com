@@ -3,9 +3,7 @@ layout: post
 title: "What a JackNut"
 slug: what-a-jacknut
 category: MicroShaft
-published:
-  epoch: 1034623292
-  utc: 2002-10-14T19:21:32
+created: 1034623292
 ---
 
 <p>

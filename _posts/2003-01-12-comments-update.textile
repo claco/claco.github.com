@@ -3,9 +3,7 @@ layout: post
 title: "Comments Update"
 slug: comments-update
 category: WWW
-published:
-  epoch: 1042411140
-  utc: 2003-01-12T22:39:00
+created: 1042411140
 ---
 
 <p>

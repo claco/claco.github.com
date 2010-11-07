@@ -3,9 +3,7 @@ layout: post
 title: "Beanless Chili"
 slug: beanless-chili
 category: Cooking
-published:
-  epoch: 1111020058
-  utc: 2005-03-17T00:40:58
+created: 1111020058
 ---
 
 I hate beans. I love hot sauce. Enter beanless chili.

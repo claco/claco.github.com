@@ -3,9 +3,7 @@ layout: post
 title: "Changes On Tap"
 slug: changes-on-tap
 category: OffTopic
-published:
-  epoch: 1073707176
-  utc: 2004-01-10T03:59:36
+created: 1073707176
 ---
 
 <p>

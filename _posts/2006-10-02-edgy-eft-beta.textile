@@ -7,9 +7,7 @@ tags:
   - edgy
   - linux
   - ubuntu
-published:
-  epoch: 1159762835
-  utc: 2006-10-02T04:20:35
+created: 1159762835
 ---
 
 Just for the sake of doing it, I upgraded my Ubuntu Dapper install on my laptop to Edgy Eft Beta 1. No problems really so far, and my wireless D-Link DWL-G650 card finally works. I found out that the trick to getting NetworkManager to work was to clean out the /etc/network/interfaces file complete (except for <code>lo</code> stuffs.

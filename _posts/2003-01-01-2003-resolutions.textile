@@ -3,9 +3,7 @@ layout: post
 title: "2003 Resolutions"
 slug: 2003-resolutions
 category: Humor
-published:
-  epoch: 1041403604
-  utc: 2003-01-01T06:46:44
+created: 1041403604
 ---
 
 <ol>

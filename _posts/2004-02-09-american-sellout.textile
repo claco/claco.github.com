@@ -3,9 +3,7 @@ layout: post
 title: "American Sellout"
 slug: american-sellout
 category: OffTopic
-published:
-  epoch: 1076375849
-  utc: 2004-02-10T01:17:29
+created: 1076375849
 ---
 
 <p>

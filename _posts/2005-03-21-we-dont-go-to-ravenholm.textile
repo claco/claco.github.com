@@ -3,9 +3,7 @@ layout: post
 title: "We Don't Go To Ravenholm"
 slug: we-dont-go-to-ravenholm
 category: Games
-published:
-  epoch: 1111459661
-  utc: 2005-03-22T02:47:41
+created: 1111459661
 ---
 
 Man, the Ravenholm level in Half-Life<sup>2</sup> is by far one of the scariest game levels I've ever played, even the second time around it still gives me the heeby jeebies.

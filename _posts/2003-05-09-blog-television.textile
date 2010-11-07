@@ -3,9 +3,7 @@ layout: post
 title: "Blog Television"
 slug: blog-television
 category: WTF
-published:
-  epoch: 1052523036
-  utc: 2003-05-09T23:30:36
+created: 1052523036
 ---
 
 <p>

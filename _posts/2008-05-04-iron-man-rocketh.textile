@@ -5,9 +5,7 @@ slug: iron-man-rocketh
 category: Movies
 tags:
   - iron man
-published:
-  epoch: 1209918247
-  utc: 2008-05-04T16:24:07
+created: 1209918247
 ---
 
 A co-worker and I went to see Iron Man Friday. It totally kicked ass. I would put it on the same level as Batman Begins. I would definitely pay to see that again.

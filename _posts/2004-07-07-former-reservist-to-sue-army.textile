@@ -3,9 +3,7 @@ layout: post
 title: "Former Reservist To Sue Army"
 slug: former-reservist-to-sue-army
 category: WTF
-published:
-  epoch: 1089250138
-  utc: 2004-07-08T01:28:58
+created: 1089250138
 ---
 
 Todd Parish, a former reservist who completed his duty a year ago, is probably going to <a href="http://www.wral.com/news/3503822/detail.html">sue the Army</a> for being called to duty and will not go.

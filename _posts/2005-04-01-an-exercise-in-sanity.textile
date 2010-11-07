@@ -3,9 +3,7 @@ layout: post
 title: "An Exercise In Sanity"
 slug: an-exercise-in-sanity
 category: Humor
-published:
-  epoch: 1112403945
-  utc: 2005-04-02T01:05:45
+created: 1112403945
 ---
 
 Things like this try my sanity. Not that I get all worked up about it, but because I just was so unfocused in routine to truly decypher the events unfolding.

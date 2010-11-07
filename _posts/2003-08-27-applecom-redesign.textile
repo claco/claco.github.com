@@ -3,9 +3,7 @@ layout: post
 title: "Apple.com Redesign"
 slug: applecom-redesign
 category: WWW
-published:
-  epoch: 1062029861
-  utc: 2003-08-28T00:17:41
+created: 1062029861
 ---
 
 <p>

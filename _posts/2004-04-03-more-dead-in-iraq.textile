@@ -3,9 +3,7 @@ layout: post
 title: "More Dead In Iraq"
 slug: more-dead-in-iraq
 category: WTF
-published:
-  epoch: 1081035446
-  utc: 2004-04-03T23:37:26
+created: 1081035446
 ---
 
 <p>

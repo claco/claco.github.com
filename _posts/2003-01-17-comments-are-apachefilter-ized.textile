@@ -3,9 +3,7 @@ layout: post
 title: "Comments Are Apache::Filter-ized"
 slug: comments-are-apachefilter-ized
 category: Perl
-published:
-  epoch: 1042861700
-  utc: 2003-01-18T03:48:20
+created: 1042861700
 ---
 
 <p>

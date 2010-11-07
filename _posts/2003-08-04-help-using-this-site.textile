@@ -3,9 +3,7 @@ layout: post
 title: "Help Using This Site"
 slug: help-using-this-site
 category: Static
-published:
-  epoch: 1060049307
-  utc: 2003-08-05T02:08:27
+created: 1060049307
 ---
 
 <h2>It's the help, stupid!</h2>

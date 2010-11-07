@@ -7,9 +7,7 @@ tags:
   - jazz
   - music
   - take five
-published:
-  epoch: 1145365991
-  utc: 2006-04-18T13:13:11
+created: 1145365991
 ---
 
 Tijm Bray over at ongoing <a href="http://www.tbray.org/ongoing/When/200x/2006/04/17/Take-Five">mentioned</a> the old classic Dave Brubeck tune Take Five. I never heard that he didn't write it, or even play the solo. Guess I was asleep that day in college. :-)

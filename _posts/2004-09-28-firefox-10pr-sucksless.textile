@@ -3,9 +3,7 @@ layout: post
 title: "Firefox 1.0PR Sucks...Less"
 slug: firefox-10pr-sucksless
 category: Software
-published:
-  epoch: 1096375094
-  utc: 2004-09-28T12:38:14
+created: 1096375094
 ---
 
 My initial reaction to Firefox 10.PR was that it sucks serious ass compared to 0.9.3. I'd like to ammend those sentiments.

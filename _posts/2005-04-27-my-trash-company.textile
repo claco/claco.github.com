@@ -3,9 +3,7 @@ layout: post
 title: "My Trash Company"
 slug: my-trash-company
 category: Humor
-published:
-  epoch: 1114605459
-  utc: 2005-04-27T12:37:39
+created: 1114605459
 ---
 
 My trash company is funny. If I don't put trash out, they call me while they're holding up traffic in front of my house.

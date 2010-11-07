@@ -3,9 +3,7 @@ layout: post
 title: "Senate Filibusters Showdown"
 slug: senate-filibusters-showdown
 category: WTF
-published:
-  epoch: 1116893069
-  utc: 2005-05-24T00:04:29
+created: 1116893069
 ---
 
 Are these people really that short sighted? Here's a hot tip you idiots. If you outlaw it now while you have the majority, you can't use it later when you're the minority.

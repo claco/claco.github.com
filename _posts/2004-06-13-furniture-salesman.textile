@@ -3,9 +3,7 @@ layout: post
 title: "Furniture Salesman"
 slug: furniture-salesman
 category: OffTopic
-published:
-  epoch: 1087157245
-  utc: 2004-06-13T20:07:25
+created: 1087157245
 ---
 
 I think the only thing I trust less than most car salesmen are furniture salesmen.

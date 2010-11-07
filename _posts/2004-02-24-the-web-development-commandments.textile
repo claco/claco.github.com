@@ -3,9 +3,7 @@ layout: post
 title: "The Web Development Commandments"
 slug: the-web-development-commandments
 category: Software
-published:
-  epoch: 1077645560
-  utc: 2004-02-24T17:59:20
+created: 1077645560
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Don't Let The Door Hit Your Ass On The Way Out"
 slug: dont-let-the-door-hit-your-ass-on-the-way-out
 category: OffTopic
-published:
-  epoch: 1099609358
-  utc: 2004-11-04T23:02:38
+created: 1099609358
 ---
 
 <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=542&amp;e=8&amp;u=/ap/ashcroft_future">Good fucking riddance</a>!

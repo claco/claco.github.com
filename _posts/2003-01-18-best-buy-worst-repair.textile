@@ -3,9 +3,7 @@ layout: post
 title: "Best Buy, Worst Repair"
 slug: best-buy-worst-repair
 category: Hardware
-published:
-  epoch: 1042939936
-  utc: 2003-01-19T01:32:16
+created: 1042939936
 ---
 
 <p>

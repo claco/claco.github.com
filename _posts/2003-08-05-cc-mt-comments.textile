@@ -3,9 +3,7 @@ layout: post
 title: "CC: MT Comments"
 slug: cc-mt-comments
 category: WWW
-published:
-  epoch: 1060136557
-  utc: 2003-08-06T02:22:37
+created: 1060136557
 ---
 
 <p>

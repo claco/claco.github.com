@@ -3,9 +3,7 @@ layout: post
 title: "Comments Are Broken Again"
 slug: comments-are-broken-again
 category: OffTopic
-published:
-  epoch: 1086572365
-  utc: 2004-06-07T01:39:25
+created: 1086572365
 ---
 
 Comments are broken for a bit. I've converted most of the pages to XHTML 1.1 Strict, which means all the javascript on the entry pages is a little fubar after name -> id attribute changes.

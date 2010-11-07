@@ -3,9 +3,7 @@ layout: post
 title: "Server Upgrades / Migration"
 slug: server-upgradesmigration
 category: OffTopic
-published:
-  epoch: 1034399497
-  utc: 2002-10-12T05:11:37
+created: 1034399497
 ---
 
 <p>

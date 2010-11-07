@@ -3,9 +3,7 @@ layout: post
 title: "It's the Links Stupid!"
 slug: its-the-links-stupid
 category: OffTopic
-published:
-  epoch: 1033952740
-  utc: 2002-10-07T01:05:40
+created: 1033952740
 ---
 
 <p>

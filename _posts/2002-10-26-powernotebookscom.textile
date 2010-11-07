@@ -3,9 +3,7 @@ layout: post
 title: "Powernotebooks.com"
 slug: powernotebookscom
 category: Hardware
-published:
-  epoch: 1035647209
-  utc: 2002-10-26T15:46:49
+created: 1035647209
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Class::DBI, Habits and Change"
 slug: classdbi-habits-and-change
 category: Perl
-published:
-  epoch: 1066950350
-  utc: 2003-10-23T23:05:50
+created: 1066950350
 ---
 
 <p>

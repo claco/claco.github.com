@@ -3,9 +3,7 @@ layout: post
 title: "Running Perl Scripts Within Eclipse"
 slug: running-perl-scripts-within-eclipse
 category: Perl
-published:
-  epoch: 1061519812
-  utc: 2003-08-22T02:36:52
+created: 1061519812
 ---
 
 <p><em>

@@ -3,9 +3,7 @@ layout: post
 title: "July 4th. High Noon."
 slug: july-4th-high-noon
 category: OffTopic
-published:
-  epoch: 1114972032
-  utc: 2005-05-01T18:27:12
+created: 1114972032
 ---
 
 Now that I've told my parents, I'll post it here. Only July 4th 12:00PM Margeaux and I will be getting <a href="http://www.celticgiftshop.com/shopping_admin/product_details/product.cgi?product=WED183">these</a>. We're going to be in D.C. that week with some friends and Margreaux is presenting at a nurses conference. While we're there, we decided to go ahead and get hitched. 

@@ -3,9 +3,7 @@ layout: post
 title: "KBLog/Klog Revisited"
 slug: kblogklog-revisited
 category: OffTopic
-published:
-  epoch: 1056592022
-  utc: 2003-06-26T01:47:02
+created: 1056592022
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "I'm So Proud. #1 Google Results"
 slug: im-so-proud-1-google-results
 category: Humor
-published:
-  epoch: 1056514841
-  utc: 2003-06-25T04:20:41
+created: 1056514841
 ---
 
 <p>

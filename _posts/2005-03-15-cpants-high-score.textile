@@ -3,9 +3,7 @@ layout: post
 title: "CPANTS High Score!"
 slug: cpants-high-score
 category: Perl
-published:
-  epoch: 1110903289
-  utc: 2005-03-15T16:14:49
+created: 1110903289
 ---
 
 I such a loser that this kind of things makes me happy. After the last round of CPANTS, I'm in the <a href="http://cpants.dev.zsi.at/highscores.html">high score tables</a> with a flat 16 for all 5 modules.

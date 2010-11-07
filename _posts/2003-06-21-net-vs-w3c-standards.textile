@@ -3,9 +3,7 @@ layout: post
 title: ".NET vs. W3C Standards"
 slug: net-vs-w3c-standards
 category: WWW
-published:
-  epoch: 1056212161
-  utc: 2003-06-21T16:16:01
+created: 1056212161
 ---
 
 <p>

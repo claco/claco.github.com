@@ -3,9 +3,7 @@ layout: post
 title: "Dead Man Blogging"
 slug: dead-man-blogging
 category: WWW
-published:
-  epoch: 1041609782
-  utc: 2003-01-03T16:03:02
+created: 1041609782
 ---
 
 <p>

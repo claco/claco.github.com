@@ -3,9 +3,7 @@ layout: post
 title: "Gone Fishing."
 slug: gone-fishing
 category: OffTopic
-published:
-  epoch: 1118368347
-  utc: 2005-06-10T01:52:27
+created: 1118368347
 ---
 
 No phone, not [electric] lights, not a single luxury. No cell phone. No internet. No work. Saturday I'm headed to Canada with Dad for fishing. Nothing else. See ya all on the 19th. Leave your message at the tone.

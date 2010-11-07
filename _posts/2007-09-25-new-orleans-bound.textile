@@ -3,9 +3,7 @@ layout: post
 title: "New Orleans Bound"
 slug: new-orleans-bound
 category: OffTopic
-published:
-  epoch: 1190773663
-  utc: 2007-09-26T02:27:43
+created: 1190773663
 ---
 
 Well, we finally planned it out and got our tickets ready for New Orleans the last week of December. Margo has to go for a nurses conference type thingy (technical term), so I decided to tag along. She won't step on a place without serious medication (fear of heights) and I just hate the airline industry in general. So, we're taking the train.

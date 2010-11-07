@@ -3,9 +3,7 @@ layout: post
 title: "Quicken Makes VSS Look Recent"
 slug: quicken-makes-vss-look-recent
 category: WTF
-published:
-  epoch: 1088121623
-  utc: 2004-06-25T00:00:23
+created: 1088121623
 ---
 
 So we picked up a copy of Quicken 2004 for the woman, and I snagged a copy as well since it was nearing a reasonable price (~$25). I tried pupdating the software from release version 1 to release verion 5. Every attempt at updating yielded the terribly helpful "Path engines failed bla bla bla".

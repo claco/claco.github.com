@@ -3,9 +3,7 @@ layout: post
 title: "Anti Progress"
 slug: anti-progress
 category: OffTopic
-published:
-  epoch: 1063157922
-  utc: 2003-09-10T01:38:42
+created: 1063157922
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Welcome To The Police State"
 slug: welcome-to-the-police-state
 category: WTF
-published:
-  epoch: 1058635455
-  utc: 2003-07-19T17:24:15
+created: 1058635455
 ---
 
 <p>

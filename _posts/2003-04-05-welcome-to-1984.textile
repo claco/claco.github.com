@@ -3,9 +3,7 @@ layout: post
 title: "Welcome to 1984"
 slug: welcome-to-1984
 category: WTF
-published:
-  epoch: 1049565449
-  utc: 2003-04-05T17:57:29
+created: 1049565449
 ---
 
 <p>

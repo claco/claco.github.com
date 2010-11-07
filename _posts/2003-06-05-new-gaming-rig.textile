@@ -3,9 +3,7 @@ layout: post
 title: "New Gaming Rig"
 slug: new-gaming-rig
 category: Hardware
-published:
-  epoch: 1054843081
-  utc: 2003-06-05T19:58:01
+created: 1054843081
 ---
 
 <p>

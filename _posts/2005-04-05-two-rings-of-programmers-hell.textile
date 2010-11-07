@@ -3,9 +3,7 @@ layout: post
 title: "Two Rings Of Programmers Hell"
 slug: two-rings-of-programmers-hell
 category: Software
-published:
-  epoch: 1112729563
-  utc: 2005-04-05T19:32:43
+created: 1112729563
 ---
 
 There are two things in the programming world which I despise; things that no programmer should ever have to do with modern tools; things that would surely qualify as levels of hell in Dantes Inferno.

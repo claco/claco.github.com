@@ -3,9 +3,7 @@ layout: post
 title: "Ogg Vorbis / WMP9"
 slug: ogg-vorbiswmp9
 category: Music
-published:
-  epoch: 1059537015
-  utc: 2003-07-30T03:50:15
+created: 1059537015
 ---
 
 <p>

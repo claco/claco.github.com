@@ -3,9 +3,7 @@ layout: post
 title: "Fuck Yeah! 18750 3DMark Score"
 slug: fuck-yeah-18750-3dmark-score
 category: Hardware
-published:
-  epoch: 1055551659
-  utc: 2003-06-14T00:47:39
+created: 1055551659
 ---
 
 <p>

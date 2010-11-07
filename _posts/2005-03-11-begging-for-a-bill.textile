@@ -3,9 +3,7 @@ layout: post
 title: "Begging For A Bill"
 slug: begging-for-a-bill
 category: Humor
-published:
-  epoch: 1110570825
-  utc: 2005-03-11T19:53:45
+created: 1110570825
 ---
 
 I'm filing this under humor because that's the only explanation I can come up with thus far.

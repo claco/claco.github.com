@@ -3,9 +3,7 @@ layout: post
 title: "When The Same SQL Statement...Isn't."
 slug: when-the-same-sql-statementisnt
 category: MicroShaft
-published:
-  epoch: 1095447429
-  utc: 2004-09-17T18:57:09
+created: 1095447429
 ---
 
 This is always a fun problem to track down. Part of a DTS package I worked on had this problem where it converted 'New York' to 'NE' instead of 'NY' using a table full of state abbreviations. Once I found out where this problem was, I'm even more mystified at what the problem really is.

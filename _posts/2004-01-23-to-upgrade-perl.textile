@@ -3,9 +3,7 @@ layout: post
 title: "To Upgrade Perl"
 slug: to-upgrade-perl
 category: Perl
-published:
-  epoch: 1074890930
-  utc: 2004-01-23T20:48:50
+created: 1074890930
 ---
 
 <p>

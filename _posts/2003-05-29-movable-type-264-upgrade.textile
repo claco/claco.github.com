@@ -3,9 +3,7 @@ layout: post
 title: "Movable Type 2.64 Upgrade"
 slug: movable-type-264-upgrade
 category: OffTopic
-published:
-  epoch: 1054259220
-  utc: 2003-05-30T01:47:00
+created: 1054259220
 ---
 
 <p>

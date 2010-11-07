@@ -3,9 +3,7 @@ layout: post
 title: "New WAP"
 slug: new-wap
 category: Hardware
-published:
-  epoch: 1071290338
-  utc: 2003-12-13T04:38:58
+created: 1071290338
 ---
 
 <p>

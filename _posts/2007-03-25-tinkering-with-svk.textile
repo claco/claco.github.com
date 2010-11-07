@@ -7,9 +7,7 @@ tags:
   - source control
   - subversion
   - svk
-published:
-  epoch: 1174803069
-  utc: 2007-03-25T06:11:09
+created: 1174803069
 ---
 
 Just out of curiosity, I installed <a href="http://svk.bestpractical.com/view/HomePage">SVK</a> on my laptop and started tinkering with it. For those not aware of it:

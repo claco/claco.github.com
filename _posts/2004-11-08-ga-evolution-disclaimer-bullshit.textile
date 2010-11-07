@@ -3,9 +3,7 @@ layout: post
 title: "Ga. Evolution Disclaimer Bullshit"
 slug: ga-evolution-disclaimer-bullshit
 category: WTF
-published:
-  epoch: 1099969714
-  utc: 2004-11-09T03:08:34
+created: 1099969714
 ---
 
 <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=519&amp;e=3&amp;u=/ap/evolution_debate">This book disclaimer</a> is a complete piece of bullshit.

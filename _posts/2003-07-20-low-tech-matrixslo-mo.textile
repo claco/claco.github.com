@@ -3,9 +3,7 @@ layout: post
 title: "Low Tech Matrix  Slo Mo"
 slug: low-tech-matrixslo-mo
 category: Humor
-published:
-  epoch: 1058747948
-  utc: 2003-07-21T00:39:08
+created: 1058747948
 ---
 
 <p>

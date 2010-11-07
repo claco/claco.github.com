@@ -3,9 +3,7 @@ layout: post
 title: "SCO Python"
 slug: sco-python
 category: Humor
-published:
-  epoch: 1063067595
-  utc: 2003-09-09T00:33:15
+created: 1063067595
 ---
 
 <p>

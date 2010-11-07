@@ -3,9 +3,7 @@ layout: post
 title: "31 And No Digital Camera"
 slug: 31-and-no-digital-camera
 category: OffTopic
-published:
-  epoch: 1090333818
-  utc: 2004-07-20T14:30:18
+created: 1090333818
 ---
 
 I forgot to mention it before, and I was gone all day yesterday with Margeaux and my parents. I'm 31. [And there was much rejoicing....yeeeaaahhh].

@@ -3,9 +3,7 @@ layout: post
 title: "Email Disclaimers, Lawyers, and Irony"
 slug: email-disclaimers-lawyers-and-irony
 category: Humor
-published:
-  epoch: 1054768867
-  utc: 2003-06-04T23:21:07
+created: 1054768867
 ---
 
 <p>

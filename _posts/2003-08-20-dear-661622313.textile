@@ -3,9 +3,7 @@ layout: post
 title: "Dear 66.162.23.13"
 slug: dear-661622313
 category: WTF
-published:
-  epoch: 1061389393
-  utc: 2003-08-20T14:23:13
+created: 1061389393
 ---
 
 <p>

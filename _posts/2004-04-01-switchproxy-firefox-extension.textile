@@ -3,9 +3,7 @@ layout: post
 title: "SwitchProxy Firefox Extension"
 slug: switchproxy-firefox-extension
 category: Software
-published:
-  epoch: 1080863405
-  utc: 2004-04-01T23:50:05
+created: 1080863405
 ---
 
 <p>

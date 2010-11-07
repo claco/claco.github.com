@@ -3,9 +3,7 @@ layout: post
 title: "Not Dead Yet"
 slug: not-dead-yet
 category: OffTopic
-published:
-  epoch: 1157322671
-  utc: 2006-09-03T22:31:11
+created: 1157322671
 ---
 
 Yes, I'm still alive. Still working. Still coding <a href="http://handelframework.com/blog/">Handel</a>. Still waiting to get started on <a href="http://handelframework.com/blog/announcements/tpf_grant_proposal_approved_mango/">Mango</a>.

@@ -3,9 +3,7 @@ layout: post
 title: "Yet Another MS SQL Worm"
 slug: yet-another-ms-sql-worm
 category: MicroShaft
-published:
-  epoch: 1043519630
-  utc: 2003-01-25T18:33:50
+created: 1043519630
 ---
 
 <p>

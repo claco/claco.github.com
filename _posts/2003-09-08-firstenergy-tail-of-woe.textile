@@ -3,9 +3,7 @@ layout: post
 title: "FirstEnergy Tail Of Woe"
 slug: firstenergy-tail-of-woe
 category: WTF
-published:
-  epoch: 1063071779
-  utc: 2003-09-09T01:42:59
+created: 1063071779
 ---
 
 <p>

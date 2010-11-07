@@ -3,9 +3,7 @@ layout: post
 title: "Long Live The Daily Show"
 slug: long-live-the-daily-show
 category: Humor
-published:
-  epoch: 1089933392
-  utc: 2004-07-15T23:16:32
+created: 1089933392
 ---
 
 How I do love The Daily Show with Jon Stewart. Lest night he played a clip of V.P. Dick Cheney basically saying how he didn't believe the government should play a role in who can marry who. Whoops.

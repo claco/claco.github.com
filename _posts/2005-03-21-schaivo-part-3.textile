@@ -3,9 +3,7 @@ layout: post
 title: "Schaivo Part 3"
 slug: schaivo-part-3
 category: WTF
-published:
-  epoch: 1111414471
-  utc: 2005-03-21T14:14:31
+created: 1111414471
 ---
 
 This is going around the blogs, and it's way to damn ironic.

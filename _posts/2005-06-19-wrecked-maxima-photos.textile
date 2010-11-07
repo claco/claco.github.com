@@ -3,9 +3,7 @@ layout: post
 title: "Wrecked Maxima Photos"
 slug: wrecked-maxima-photos
 category: WTF
-published:
-  epoch: 1119222802
-  utc: 2005-06-19T23:13:22
+created: 1119222802
 ---
 
 As promised, here are the <a href="/photos/2005/maxima/deer/">wrecked Maxima photos</a>. It could have been worse.

@@ -3,9 +3,7 @@ layout: post
 title: "Hola From St. Louis"
 slug: hola-from-st-louis
 category: OffTopic
-published:
-  epoch: 1077939897
-  utc: 2004-02-28T03:44:57
+created: 1077939897
 ---
 
 <p>

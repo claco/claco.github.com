@@ -3,9 +3,7 @@ layout: post
 title: "Dear AT&amp;T User (12.160.193.229):"
 slug: dear-att-user-12160193229
 category: WTF
-published:
-  epoch: 1079578518
-  utc: 2004-03-18T02:55:18
+created: 1079578518
 ---
 
 <p>

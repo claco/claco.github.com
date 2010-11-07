@@ -3,9 +3,7 @@ layout: post
 title: "Wedding Reception"
 slug: wedding-reception
 category: Humor
-published:
-  epoch: 1122903887
-  utc: 2005-08-01T13:44:47
+created: 1122903887
 ---
 
 I chi wah wah. What a party. Plenty of friends and family abound. And the alcohol...ouch. For the record, Yukon Jack (100 proof) in place of tequilla in Margaritas is a very very evil thing. :-)

@@ -3,9 +3,7 @@ layout: post
 title: "I've Been GeoURLed!"
 slug: ive-been-geourled
 category: OffTopic
-published:
-  epoch: 1042942096
-  utc: 2003-01-19T02:08:16
+created: 1042942096
 ---
 
 <p>

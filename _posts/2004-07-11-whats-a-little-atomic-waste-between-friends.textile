@@ -3,9 +3,7 @@ layout: post
 title: "What's A Little Atomic Waste Between Friends?"
 slug: whats-a-little-atomic-waste-between-friends
 category: WTF
-published:
-  epoch: 1089557239
-  utc: 2004-07-11T14:47:19
+created: 1089557239
 ---
 
 Recently, <a href="http://hosted.ap.org/dynamic/stories/Y/YUCCA_MOUNTAIN?SITE=OHCOD&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT">Nevada list it's appeal</a> to the block the new nuclear waste dump..ummm "site" at Yukka mountain.

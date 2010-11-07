@@ -3,9 +3,7 @@ layout: post
 title: "I Love Slashdot Humor"
 slug: i-love-slashdot-humor
 category: Humor
-published:
-  epoch: 1075230669
-  utc: 2004-01-27T19:11:09
+created: 1075230669
 ---
 
 <p>

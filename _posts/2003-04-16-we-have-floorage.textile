@@ -3,9 +3,7 @@ layout: post
 title: "We Have Floorage"
 slug: we-have-floorage
 category: Humor
-published:
-  epoch: 1050546812
-  utc: 2003-04-17T02:33:32
+created: 1050546812
 ---
 
 <p>

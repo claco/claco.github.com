@@ -3,9 +3,7 @@ layout: post
 title: "Google Rocks"
 slug: google-rocks
 category: WWW
-published:
-  epoch: 1034542578
-  utc: 2002-10-13T20:56:18
+created: 1034542578
 ---
 
 <p>

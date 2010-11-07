@@ -3,9 +3,7 @@ layout: post
 title: "Still Tinkering"
 slug: still-tinkering
 category: OffTopic
-published:
-  epoch: 1034223155
-  utc: 2002-10-10T04:12:35
+created: 1034223155
 ---
 
 <p>

@@ -161,9 +161,7 @@ sub writePost() {
   if (scalar @tags) {
     $file->print("tags:\n  - ", join('  - ', map{$_ . "\n"} @tags));
   };
-  $file->print("published:\n");
-  $file->print("  epoch: ", $post->{date}->epoch, "\n");
-  $file->print("  utc: ", $post->{date}->set_time_zone('UTC')->datetime, "\n");
+  $file->print("created: ", $post->{date}->epoch, "\n");
   $file->print("---", "\n\n");
   $file->print($body);
   $file->print($extended, "\n");

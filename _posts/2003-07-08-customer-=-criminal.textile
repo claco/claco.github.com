@@ -3,9 +3,7 @@ layout: post
 title: "Customer != Criminal"
 slug: customer-=-criminal
 category: WTF
-published:
-  epoch: 1057713246
-  utc: 2003-07-09T01:14:06
+created: 1057713246
 ---
 
 <p>

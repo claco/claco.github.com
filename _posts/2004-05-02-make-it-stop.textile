@@ -3,9 +3,7 @@ layout: post
 title: "Make It Stop"
 slug: make-it-stop
 category: Movies
-published:
-  epoch: 1083529267
-  utc: 2004-05-02T20:21:07
+created: 1083529267
 ---
 
 <p>

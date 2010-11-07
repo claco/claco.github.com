@@ -3,9 +3,7 @@ layout: post
 title: "Referer Fun"
 slug: referer-fun
 category: Music
-published:
-  epoch: 1073502561
-  utc: 2004-01-07T19:09:21
+created: 1073502561
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Toshiba e750 Arrives!"
 slug: toshiba-e750-arrives
 category: Hardware
-published:
-  epoch: 1067647567
-  utc: 2003-11-01T00:46:07
+created: 1067647567
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Best Buy Comments Are Fun"
 slug: best-buy-comments-are-fun
 category: Humor
-published:
-  epoch: 1047424009
-  utc: 2003-03-11T23:06:49
+created: 1047424009
 ---
 
 <p>

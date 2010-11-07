@@ -3,9 +3,7 @@ layout: post
 title: "Hello From Hoary Hedgehog"
 slug: hello-from-hoary-hedgehog
 category: Software
-published:
-  epoch: 1128729606
-  utc: 2005-10-08T00:00:06
+created: 1128729606
 ---
 
 After two days of tinkering, I finally got one of my many wireless cards working under the Ubuntu 5.2 Hoary Hedgehog Live CD.

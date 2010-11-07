@@ -3,9 +3,7 @@ layout: post
 title: "Sun Says Java Sucks"
 slug: sun-says-java-sucks
 category: Humor
-published:
-  epoch: 1044806334
-  utc: 2003-02-09T15:58:54
+created: 1044806334
 ---
 
 <p>

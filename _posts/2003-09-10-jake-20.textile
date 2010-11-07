@@ -3,9 +3,7 @@ layout: post
 title: "Jake 2.0"
 slug: jake-20
 category: OffTopic
-published:
-  epoch: 1063244243
-  utc: 2003-09-11T01:37:23
+created: 1063244243
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Best Leg Forward"
 slug: best-leg-forward
 category: OffTopic
-published:
-  epoch: 1064366668
-  utc: 2003-09-24T01:24:28
+created: 1064366668
 ---
 
 <p>

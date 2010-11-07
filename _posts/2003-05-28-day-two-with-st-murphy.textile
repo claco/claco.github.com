@@ -3,9 +3,7 @@ layout: post
 title: "Day Two With St. Murphy"
 slug: day-two-with-st-murphy
 category: Hardware
-published:
-  epoch: 1054179019
-  utc: 2003-05-29T03:30:19
+created: 1054179019
 ---
 
 <p>

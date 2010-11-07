@@ -3,9 +3,7 @@ layout: post
 title: "SharpDevelop 1.0 Released"
 slug: sharpdevelop-10-released
 category: Software
-published:
-  epoch: 1095087206
-  utc: 2004-09-13T14:53:26
+created: 1095087206
 ---
 
 SharpDevelop 1.0 has been <a href="http://www.icsharpcode.net/OpenSource/SD/">released</a> into the wild.

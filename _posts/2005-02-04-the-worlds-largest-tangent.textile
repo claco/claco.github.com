@@ -3,9 +3,7 @@ layout: post
 title: "The Worlds Largest Tangent"
 slug: the-worlds-largest-tangent
 category: FreeBSD
-published:
-  epoch: 1107572782
-  utc: 2005-02-05T03:06:22
+created: 1107572782
 ---
 
 The last 3 weeks have been like that show "Connections" where the British dude relates the length of toothpicks to the building of the first atomic bomb; seemingly unrelated.

@@ -3,9 +3,7 @@ layout: post
 title: "The Big Wipe"
 slug: the-big-wipe
 category: FreeBSD
-published:
-  epoch: 1124913928
-  utc: 2005-08-24T20:05:28
+created: 1124913928
 ---
 
 Thing are moving along quite nicely on the <a href="http://search.cpan.org/dist/Handel/">Handel</a> front. Version 0.18 is out and considered feature complete in terms of tests, checkout, order, and carts in Perl, on AxKit and within Template Toolkit. I need to start on a Catalyst demo site as well.

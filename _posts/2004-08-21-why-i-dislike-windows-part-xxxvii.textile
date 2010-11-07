@@ -3,9 +3,7 @@ layout: post
 title: "Why I Dislike Windows: Part XXXVII"
 slug: why-i-dislike-windows-part-xxxvii
 category: MicroShaft
-published:
-  epoch: 1093118158
-  utc: 2004-08-21T19:55:58
+created: 1093118158
 ---
 
 Ok, this is such a small thing, but it underscores why I really wislike windows sometimes.

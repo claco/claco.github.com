@@ -3,9 +3,7 @@ layout: post
 title: "Stop. Hammer Time."
 slug: stop-hammer-time
 category: Humor
-published:
-  epoch: 1202528982
-  utc: 2008-02-09T03:49:42
+created: 1202528982
 ---
 
 <div style="text-align:center;"><img src="/images/hammerzeit.jpg" alt="hammerzeit.jpg" border="0" width="480" height="387" /></div>

@@ -3,9 +3,7 @@ layout: post
 title: "Phase 2: Complete"
 slug: phase-2-complete
 category: OffTopic
-published:
-  epoch: 1065205983
-  utc: 2003-10-03T18:33:03
+created: 1065205983
 ---
 
 <p>

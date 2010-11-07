@@ -3,9 +3,7 @@ layout: post
 title: "Simpsons Star Wars Intro"
 slug: simpsons-star-wars-intro
 category: Humor
-published:
-  epoch: 1188521214
-  utc: 2007-08-31T00:46:54
+created: 1188521214
 ---
 
 Funny. Well done.

@@ -3,9 +3,7 @@ layout: post
 title: "Taglibs make my brain hurt"
 slug: taglibs-make-my-brain-hurt
 category: Perl
-published:
-  epoch: 1106058075
-  utc: 2005-01-18T14:21:15
+created: 1106058075
 ---
 
 Writing <a href="http://www.axkit.org/wiki/view/AxKit/Apache::AxKit::Language::XSP">taglibs</a> makes my brain hurt. I'm still chugging through Yet Another Rewrite of the <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> XSP taglib; still trying to solidify the stinking <a href="http://search.cpan.org/~claco/Handel-0.01_07/lib/AxKit/XSP/Handel/Cart.pm#TAG_HIERARCHY">tag API</a>.

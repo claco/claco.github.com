@@ -3,9 +3,7 @@ layout: post
 title: "Scobleized Again"
 slug: scobleized-again
 category: Humor
-published:
-  epoch: 1070578984
-  utc: 2003-12-04T23:03:04
+created: 1070578984
 ---
 
 <p>

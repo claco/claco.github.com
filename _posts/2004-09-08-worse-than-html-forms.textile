@@ -3,9 +3,7 @@ layout: post
 title: "Worse Than HTML Forms"
 slug: worse-than-html-forms
 category: WWW
-published:
-  epoch: 1094676761
-  utc: 2004-09-08T20:52:41
+created: 1094676761
 ---
 
 There's really only one thing I despise doing more than coding HTML forms, even more than writing my TDD tests first: <strong>writing TCP/Sockets programs</strong>. I love a good game of name-that-TCP-flag and find-the-FIN. Especially fun is the but-there-it-is-on-the-NIC-why-isn't-it-in-the-buffer?

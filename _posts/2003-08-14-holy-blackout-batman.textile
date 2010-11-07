@@ -3,9 +3,7 @@ layout: post
 title: "Holy Blackout Batman"
 slug: holy-blackout-batman
 category: WTF
-published:
-  epoch: 1060914420
-  utc: 2003-08-15T02:27:00
+created: 1060914420
 ---
 
 <p>

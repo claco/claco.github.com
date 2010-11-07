@@ -3,9 +3,7 @@ layout: post
 title: "What Anti-Virus Software Do You Use?"
 slug: what-anti-virus-software-do-you-use
 category: Security
-published:
-  epoch: 1091385185
-  utc: 2004-08-01T18:33:05
+created: 1091385185
 ---
 
 It to the point now that a few of my Norton AntiVirus 2002/2003 installs subscriptions' are set to expire. I've heard bad things about NAV 2004; things like it has MS like activation, and that is sucks up more resource than the older versions.

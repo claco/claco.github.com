@@ -3,9 +3,7 @@ layout: post
 title: "Resizable Font Hope"
 slug: resizable-font-hope
 category: WWW
-published:
-  epoch: 1073699574
-  utc: 2004-01-10T01:52:54
+created: 1073699574
 ---
 
 <p>

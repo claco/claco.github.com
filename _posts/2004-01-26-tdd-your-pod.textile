@@ -3,9 +3,7 @@ layout: post
 title: "T.D.D. Your P.O.D."
 slug: tdd-your-pod
 category: Perl
-published:
-  epoch: 1075156479
-  utc: 2004-01-26T22:34:39
+created: 1075156479
 ---
 
 <p>

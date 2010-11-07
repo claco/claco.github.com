@@ -3,9 +3,7 @@ layout: post
 title: "Reinstall"
 slug: reinstall
 category: Hardware
-published:
-  epoch: 1058412709
-  utc: 2003-07-17T03:31:49
+created: 1058412709
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "BeatBox TV"
 slug: beatbox-tv
 category: Music
-published:
-  epoch: 1064973441
-  utc: 2003-10-01T01:57:21
+created: 1064973441
 ---
 
 <p>

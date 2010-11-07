@@ -7,9 +7,7 @@ tags:
   - contempt
   - fisa
   - house
-published:
-  epoch: 1203037730
-  utc: 2008-02-15T01:08:50
+created: 1203037730
 ---
 
 From <a href="http://www.speaker.gov/blog/?p=1138">The Gavel</a>

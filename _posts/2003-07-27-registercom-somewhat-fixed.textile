@@ -3,9 +3,7 @@ layout: post
 title: "Register.com Somewhat Fixed"
 slug: registercom-somewhat-fixed
 category: WWW
-published:
-  epoch: 1059324157
-  utc: 2003-07-27T16:42:37
+created: 1059324157
 ---
 
 <p>

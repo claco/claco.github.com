@@ -3,9 +3,7 @@ layout: post
 title: "SSL Oopsie"
 slug: ssl-oopsie
 category: Apache
-published:
-  epoch: 1065841690
-  utc: 2003-10-11T03:08:10
+created: 1065841690
 ---
 
 <p>

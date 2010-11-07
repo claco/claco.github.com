@@ -2,11 +2,7 @@
 layout: post
 title: "Still Waiting: iPod Touch 64GB"
 slug: still-waiting-ipod-touch-64gb
-wordpress_id: 136
-wordpress_url: http://chrislaco.com/?p=136
-published:
-  epoch: 1234737600
-  utc: 2009-02-15T22:40:00
+created: 1234737600
 ---
 Now that iTunes has gone DRM free, I've been adding more albums to my collection. I'm only about two thirds of the way done ripping my CDs to the network share. Even at relatively low quality, I have well over 30GB or music. This means an iPod Touch is out of the question for me. 32GB just isn't enough.
 

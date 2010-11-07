@@ -3,9 +3,7 @@ layout: post
 title: "More MT Hacks: Apache::Filter"
 slug: more-mt-hacks-apachefilter
 category: Perl
-published:
-  epoch: 1042766634
-  utc: 2003-01-17T01:23:54
+created: 1042766634
 ---
 
 <p>

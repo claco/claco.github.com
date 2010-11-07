@@ -2,11 +2,7 @@
 layout: post
 title: Advance2030 Weekend
 slug: advance2030-weekend
-wordpress_id: 246
-wordpress_url: http://chrislaco.com/?p=246
-published:
-  epoch: 1267497840
-  utc: 2010-03-02T02:44:00
+created: 1267497840
 ---
 This last weekend, I was fortunate enough to attend the <a href="http://advance2030.wordpress.com/">Advance2030 Web Development Weekend</a> held on the LeanDog boat and spend some time with a great bunch of web folk from the area. This included sitting next to Joe Fiorini and Nate Klaiber and getting schooled in Rails on a nonstop basis. While the weekend was a great experience, I wanted to get some thoughts up about it while they're still fresh.
 

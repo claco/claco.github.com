@@ -3,9 +3,7 @@ layout: post
 title: "TopStyle Pro 3"
 slug: topstyle-pro-3
 category: WWW
-published:
-  epoch: 1058572470
-  utc: 2003-07-18T23:54:30
+created: 1058572470
 ---
 
 <p>

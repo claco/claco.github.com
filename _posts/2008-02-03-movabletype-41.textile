@@ -9,9 +9,7 @@ tags:
   - mod_perl
   - movable type
   - wordpress
-published:
-  epoch: 1202084063
-  utc: 2008-02-04T00:14:23
+created: 1202084063
 ---
 
 I like MovableType. It's Perl. That's a plus for me. It keep getting better, and now there's MTOS. That's where my love stops.

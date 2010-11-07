@@ -3,9 +3,7 @@ layout: post
 title: "I'm a Loser"
 slug: im-a-loser
 category: OffTopic
-published:
-  epoch: 1034456615
-  utc: 2002-10-12T21:03:35
+created: 1034456615
 ---
 
 <p>

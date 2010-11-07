@@ -2,11 +2,7 @@
 layout: post
 title: Template Toolkit for .NET
 slug: template-toolkit-for-net
-wordpress_id: 231
-wordpress_url: http://chrislaco.com/?p=231
-published:
-  epoch: 1244844660
-  utc: 2009-06-12T22:11:00
+created: 1244844660
 ---
 A while back I got the urge the waste time on yet another project. This time, it's a version of  <a href="http://template-toolkit.org/">Template Toolkit</a> for .NET. As usual, you can find the project on <a href="http://github.com/claco/tt.net/">GitHub</a>.
 

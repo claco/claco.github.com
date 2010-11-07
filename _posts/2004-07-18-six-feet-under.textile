@@ -3,9 +3,7 @@ layout: post
 title: "Six Feet Under"
 slug: six-feet-under
 category: OffTopic
-published:
-  epoch: 1090170655
-  utc: 2004-07-18T17:10:55
+created: 1090170655
 ---
 
 We went over to a friends house yesterday for some dinner and a baseball game. The baseball game turned into a movie [I, Robot], and we ended up watching the pilot of Six Feet Under.

@@ -2,11 +2,7 @@
 layout: post
 title: So Long Parallels. Hello VirtualBox.
 slug: so-long-parallels-hello-virtualbox
-wordpress_id: 152
-wordpress_url: http://chrislaco.com/?p=152
-published:
-  epoch: 1236396120
-  utc: 2009-03-07T03:22:00
+created: 1236396120
 ---
 Back when my XP laptop died and I finally bought a MacBook Pro, Parallels was one of my first purchases so I could run multiple VMs to do Perl software testing. At the time, that was Parallels version 3. Everything was snappy and life was good.
 

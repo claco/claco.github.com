@@ -3,9 +3,7 @@ layout: post
 title: "Designing With Web Standards: Part Deaux"
 slug: designing-with-web-standards-part-deaux
 category: WWW
-published:
-  epoch: 1052881911
-  utc: 2003-05-14T03:11:51
+created: 1052881911
 ---
 
 <p>

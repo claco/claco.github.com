@@ -3,9 +3,7 @@ layout: post
 title: "Howard Dean Scream"
 slug: howard-dean-scream
 category: Humor
-published:
-  epoch: 1074823768
-  utc: 2004-01-23T02:09:28
+created: 1074823768
 ---
 
 <p>

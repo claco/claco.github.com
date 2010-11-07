@@ -5,9 +5,7 @@ slug: superbowl-time
 category: OffTopic
 tags:
   - superbowl
-published:
-  epoch: 1202011976
-  utc: 2008-02-03T04:12:56
+created: 1202011976
 ---
 
 Normally, I don't care, but love or hate the Patriots, it's a damn impressive record and I hope they seal the deal. Aside form that, it's a good excuse to fire up the kraut, dogs, burgers and booze for the day. :-)

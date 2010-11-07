@@ -3,9 +3,7 @@ layout: post
 title: "Eating Your Own Dog Food: Part 2"
 slug: eating-your-own-dog-food-part-2
 category: Perl
-published:
-  epoch: 1041646314
-  utc: 2003-01-04T02:11:54
+created: 1041646314
 ---
 
 <p>

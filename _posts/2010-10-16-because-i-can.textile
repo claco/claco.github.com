@@ -2,11 +2,7 @@
 layout: post
 title: Because I Can...
 slug: because-i-can
-wordpress_id: 283
-wordpress_url: http://chrislaco.com/uncategorized/because-i-can/
-published:
-  epoch: 1287256980
-  utc: 2010-10-16T19:23:00
+created: 1287256980
 ---
 It seems that when I learn new things, it's a situation of in for a penny in for a pound. Go big or go home DRY says. Apparently that's how I feel about learning vim. :-)
 

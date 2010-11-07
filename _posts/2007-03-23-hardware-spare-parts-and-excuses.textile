@@ -7,9 +7,7 @@ tags:
   - hardware
   - lcd
   - upgrade
-published:
-  epoch: 1174706880
-  utc: 2007-03-24T03:28:00
+created: 1174706880
 ---
 
 Like most things, once I get an idea in my head, it quickly spirals out of control; or my wallet does. As my wife likes to say "Go for it. We have jobs". Margo is going to be in DC for the latter half of next week, so it seemed like a good time to make chili and have a good old fashioned game night. My laptop is getting old and won't play UT2K without overheating and rebooting any more. While I've got that kick ass 23" Apple Cinema Display and a NDivia 7800GT up stairs, hauling it and my tower downstairs and having to put the office back together afterwords is a pain in the ass. Then the downfall of ideas start.

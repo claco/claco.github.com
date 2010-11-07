@@ -3,9 +3,7 @@ layout: post
 title: "Sup From Boston"
 slug: sup-from-boston
 category: OffTopic
-published:
-  epoch: 1077067016
-  utc: 2004-02-18T01:16:56
+created: 1077067016
 ---
 
 <p>

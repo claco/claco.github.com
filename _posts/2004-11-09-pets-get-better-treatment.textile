@@ -3,9 +3,7 @@ layout: post
 title: "Pets Get Better Treatment"
 slug: pets-get-better-treatment
 category: WTF
-published:
-  epoch: 1100056346
-  utc: 2004-11-10T03:12:26
+created: 1100056346
 ---
 
 While I'm on a roll, here's <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=558&amp;e=14&amp;u=/ap/scotus_assisted_suicide">another one</a> for the bullshit meter.

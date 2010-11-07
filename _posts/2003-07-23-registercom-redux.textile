@@ -3,9 +3,7 @@ layout: post
 title: "Register.com Redux"
 slug: registercom-redux
 category: WTF
-published:
-  epoch: 1058974886
-  utc: 2003-07-23T15:41:26
+created: 1058974886
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Anti-Safety Photos"
 slug: anti-safety-photos
 category: Humor
-published:
-  epoch: 1053965705
-  utc: 2003-05-26T16:15:05
+created: 1053965705
 ---
 
 <p>

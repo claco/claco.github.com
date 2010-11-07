@@ -2,11 +2,7 @@
 layout: post
 title: What's In Your Nerd Purse?
 slug: whats-in-your-nerd-purse
-wordpress_id: 269
-wordpress_url: http://chrislaco.com/?p=269
-published:
-  epoch: 1281397740
-  utc: 2010-08-09T23:49:00
+created: 1281397740
 ---
 We've all got one. The computer bag. The geek sack. The nerd purse. Full of mysterious wonders and trinkets. Mine got a few new additions today adde to the list of things that I almost always need at a meetup or weekend nerd camp.
 <h2>Rosewill SATA/IDE 2.5/3.5 to USB Adapter</h2>

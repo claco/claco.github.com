@@ -3,9 +3,7 @@ layout: post
 title: "MCI Billing On Crack"
 slug: mci-billing-on-crack
 category: WTF
-published:
-  epoch: 1063331290
-  utc: 2003-09-12T01:48:10
+created: 1063331290
 ---
 
 <p>

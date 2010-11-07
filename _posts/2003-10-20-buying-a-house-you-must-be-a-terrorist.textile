@@ -3,9 +3,7 @@ layout: post
 title: "Buying A House? You Must Be A Terrorist."
 slug: buying-a-house-you-must-be-a-terrorist
 category: WTF
-published:
-  epoch: 1066686200
-  utc: 2003-10-20T21:43:20
+created: 1066686200
 ---
 
 <p>

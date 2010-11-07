@@ -3,9 +3,7 @@ layout: post
 title: "Big Bro Still Wants a Key"
 slug: big-bro-still-wants-a-key
 category: Security
-published:
-  epoch: 1034627455
-  utc: 2002-10-14T20:30:55
+created: 1034627455
 ---
 
 <p>

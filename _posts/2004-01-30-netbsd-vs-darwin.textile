@@ -3,9 +3,7 @@ layout: post
 title: "NetBSD vs. Darwin"
 slug: netbsd-vs-darwin
 category: Perl
-published:
-  epoch: 1075485718
-  utc: 2004-01-30T18:01:58
+created: 1075485718
 ---
 
 <p>

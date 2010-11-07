@@ -3,9 +3,7 @@ layout: post
 title: "Network Solutions Sucks Monkey Rocks"
 slug: network-solutions-sucks-monkey-rocks
 category: WTF
-published:
-  epoch: 1098225823
-  utc: 2004-10-19T22:43:43
+created: 1098225823
 ---
 
 Bullshit marketing tactics like this really piss me off.

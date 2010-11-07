@@ -3,9 +3,7 @@ layout: post
 title: "Viva La St. Murphy!"
 slug: viva-la-st-murphy
 category: OffTopic
-published:
-  epoch: 1091655138
-  utc: 2004-08-04T21:32:18
+created: 1091655138
 ---
 
 On the last week of July St. Murphy gave to me:

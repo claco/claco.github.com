@@ -3,9 +3,7 @@ layout: post
 title: "Sue All The World"
 slug: sue-all-the-world
 category: Humor
-published:
-  epoch: 1057881449
-  utc: 2003-07-10T23:57:29
+created: 1057881449
 ---
 
 <p>

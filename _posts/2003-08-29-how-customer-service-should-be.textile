@@ -3,9 +3,7 @@ layout: post
 title: "How Customer Service Should Be"
 slug: how-customer-service-should-be
 category: OffTopic
-published:
-  epoch: 1062184104
-  utc: 2003-08-29T19:08:24
+created: 1062184104
 ---
 
 <p>

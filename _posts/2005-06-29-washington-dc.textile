@@ -3,9 +3,7 @@ layout: post
 title: "Washington D.C."
 slug: washington-dc
 category: OffTopic
-published:
-  epoch: 1120075627
-  utc: 2005-06-29T20:07:07
+created: 1120075627
 ---
 
 Hola from our nations capitol, Washington D.C. We're in town for a nurses conference, our wedding and the 4th of July! What a week. 

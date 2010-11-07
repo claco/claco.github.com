@@ -3,9 +3,7 @@ layout: post
 title: "Safari GZip Bug"
 slug: safari-gzip-bug
 category: WWW
-published:
-  epoch: 1074215987
-  utc: 2004-01-16T01:19:47
+created: 1074215987
 ---
 
 <p>

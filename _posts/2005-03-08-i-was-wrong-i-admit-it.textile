@@ -3,9 +3,7 @@ layout: post
 title: "I Was Wrong. I Admit It."
 slug: i-was-wrong-i-admit-it
 category: Games
-published:
-  epoch: 1110324769
-  utc: 2005-03-08T23:32:49
+created: 1110324769
 ---
 
 I was wrong. I'll admit that.

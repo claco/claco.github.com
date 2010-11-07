@@ -3,9 +3,7 @@ layout: post
 title: "Gmail Invites"
 slug: gmail-invites
 category: WWW
-published:
-  epoch: 1092850382
-  utc: 2004-08-18T17:33:02
+created: 1092850382
 ---
 
 <del>I have 3 Gmail invites up for grabs to the first three peope to answer this question correctly:</del>

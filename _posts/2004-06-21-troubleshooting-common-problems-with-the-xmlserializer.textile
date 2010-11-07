@@ -3,9 +3,7 @@ layout: post
 title: "Troubleshooting Common Problems with the XmlSerializer"
 slug: troubleshooting-common-problems-with-the-xmlserializer
 category: MicroShaft
-published:
-  epoch: 1087865083
-  utc: 2004-06-22T00:44:43
+created: 1087865083
 ---
 
 There's a n <a href="http://msdn.microsoft.com/XML/BuildingXML/XMLinNETFramework/default.aspx?pull=/library/en-us/dnxmlnet/html/trblshtxsd.asp">new article</a> on MSDN about troubleshooting common XMLSerializer problems.

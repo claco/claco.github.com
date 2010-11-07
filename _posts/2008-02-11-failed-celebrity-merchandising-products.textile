@@ -3,9 +3,7 @@ layout: post
 title: "Failed Celebrity Merchandising Products"
 slug: failed-celebrity-merchandising-products
 category: Humor
-published:
-  epoch: 1202790996
-  utc: 2008-02-12T04:36:36
+created: 1202790996
 ---
 
 * Keith Ledger Alarm Clock

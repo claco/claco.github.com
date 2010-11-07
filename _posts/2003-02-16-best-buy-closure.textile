@@ -3,9 +3,7 @@ layout: post
 title: "Best Buy Closure"
 slug: best-buy-closure
 category: Hardware
-published:
-  epoch: 1045409767
-  utc: 2003-02-16T15:36:07
+created: 1045409767
 ---
 
 <p>

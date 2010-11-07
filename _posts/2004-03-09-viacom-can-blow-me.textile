@@ -3,9 +3,7 @@ layout: post
 title: "Viacom Can Blow Me"
 slug: viacom-can-blow-me
 category: WTF
-published:
-  epoch: 1078839556
-  utc: 2004-03-09T13:39:16
+created: 1078839556
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Wicked Guitar Clip"
 slug: wicked-guitar-clip
 category: Music
-published:
-  epoch: 1070667458
-  utc: 2003-12-05T23:37:38
+created: 1070667458
 ---
 
 <p>

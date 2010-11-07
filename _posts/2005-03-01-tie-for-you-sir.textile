@@ -3,9 +3,7 @@ layout: post
 title: "Tie For You Sir"
 slug: tie-for-you-sir
 category: Perl
-published:
-  epoch: 1109708085
-  utc: 2005-03-01T20:14:45
+created: 1109708085
 ---
 
 I know this is old school for hardcore Perlheads, but I just learned how to use <samp>tie</samp> in perl.

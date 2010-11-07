@@ -3,9 +3,7 @@ layout: post
 title: "Gmail Account Arrival"
 slug: gmail-account-arrival
 category: WWW
-published:
-  epoch: 1088607042
-  utc: 2004-06-30T14:50:42
+created: 1088607042
 ---
 
 Hey great, I now have a Gmail account. Now what? Just when Google announced it's Gmail 1GB feature, Yahoo paid customers (of which I am via SBC DSL) got an upgrade to 2GB.

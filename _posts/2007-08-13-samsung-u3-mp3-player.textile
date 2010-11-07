@@ -3,9 +3,7 @@ layout: post
 title: "Samsung U3 MP3 Player"
 slug: samsung-u3-mp3-player
 category: Hardware
-published:
-  epoch: 1187050265
-  utc: 2007-08-14T00:11:05
+created: 1187050265
 ---
 
 Long story longer. My good friend Ron from $work came over yesterday to help me setup the drumset. He, and my wife always prod me that I should start playing again, and honestly it's a good form of exercise; something I need but will never do.

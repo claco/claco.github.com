@@ -3,9 +3,7 @@ layout: post
 title: "Pin The Tail On The CSS Issue"
 slug: pin-the-tail-on-the-css-issue
 category: WWW
-published:
-  epoch: 1043884261
-  utc: 2003-01-29T23:51:01
+created: 1043884261
 ---
 
 <p>

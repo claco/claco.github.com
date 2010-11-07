@@ -3,9 +3,7 @@ layout: post
 title: "MSDN .NET API Shortcuts"
 slug: msdn-net-api-shortcuts
 category: MicroShaft
-published:
-  epoch: 1081281026
-  utc: 2004-04-06T19:50:26
+created: 1081281026
 ---
 
 <p>

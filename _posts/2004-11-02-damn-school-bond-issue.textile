@@ -3,9 +3,7 @@ layout: post
 title: "Damn School Bond Issue"
 slug: damn-school-bond-issue
 category: WTF
-published:
-  epoch: 1099455177
-  utc: 2004-11-03T04:12:57
+created: 1099455177
 ---
 
 Who in their right fucking mind is voting for this god damn bond issue? <strong>28 years! Are you crazy?</strong>

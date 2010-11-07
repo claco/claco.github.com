@@ -24,8 +24,8 @@
         $(function() {
           $.preferCulture("en-US");
 
-          $('.published').each(function() {
-            var epoch = $(this).attr("data-epoch") || (new Date().getTime()/1000); 
+          $('.created').each(function() {
+            var epoch = $(this).attr("data-created") || (new Date().getTime()/1000); 
             var format = $(this).attr('data-format') || 'f';
 
             $(this).html( $.format( new Date(epoch*1000), format ) );
@@ -38,7 +38,7 @@
     <div id="wrapper">
       <div id="header">
         <h1 class="title">{{ page.title }}</h1>
-        <div class="published" data-epoch="{{ page.published.epoch }}">{{ page.published.utc }}</div>
+        <div class="created" data-created="{{ page.created }}">{{ page.created }}</div>
         <div class="author"><a href="/">Christopher H. Laco</a></div>
       </div>
       <div id="content">

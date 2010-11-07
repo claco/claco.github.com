@@ -3,9 +3,7 @@ layout: post
 title: "IE Bloweth Goateth"
 slug: ie-bloweth-goateth
 category: Security
-published:
-  epoch: 1051955714
-  utc: 2003-05-03T09:55:14
+created: 1051955714
 ---
 
 <p>

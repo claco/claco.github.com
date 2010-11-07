@@ -3,9 +3,7 @@ layout: post
 title: "Laptop Withdrawl"
 slug: laptop-withdrawl
 category: Hardware
-published:
-  epoch: 1114968402
-  utc: 2005-05-01T17:26:42
+created: 1114968402
 ---
 
 Last week I sent my Sager 5660 in for repairs. It's almost 3 years old which isn't a bad life for a laptop. And with a 2.8 P4 and 1GB of ram, it's still pretty hip for a laptop. She needs a new keyboard, and the lid case replaced.

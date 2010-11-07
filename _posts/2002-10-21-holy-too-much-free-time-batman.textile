@@ -3,9 +3,7 @@ layout: post
 title: "Holy Too Much Free Time Batman!"
 slug: holy-too-much-free-time-batman
 category: Humor
-published:
-  epoch: 1035255865
-  utc: 2002-10-22T03:04:25
+created: 1035255865
 ---
 
 <p>

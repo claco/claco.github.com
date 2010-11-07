@@ -3,9 +3,7 @@ layout: post
 title: "CyberPower 1500AVR UPS"
 slug: cyberpower-1500avr-ups
 category: Hardware
-published:
-  epoch: 1041720333
-  utc: 2003-01-04T22:45:33
+created: 1041720333
 ---
 
 <p>

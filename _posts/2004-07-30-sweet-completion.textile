@@ -3,9 +3,7 @@ layout: post
 title: "Sweet Completion"
 slug: sweet-completion
 category: Software
-published:
-  epoch: 1091219877
-  utc: 2004-07-30T20:37:57
+created: 1091219877
 ---
 
 I've <em>finally</em> "finshed" a project. By finished I mean the NUnit tests were written, the C# code completed, and the compiled HTML help documentation is done.

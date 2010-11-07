@@ -3,9 +3,7 @@ layout: post
 title: "He's Dead Jim"
 slug: hes-dead-jim
 category: WWW
-published:
-  epoch: 1060045494
-  utc: 2003-08-05T01:04:54
+created: 1060045494
 ---
 
 <p>

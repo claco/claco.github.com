@@ -3,9 +3,7 @@ layout: post
 title: "Murphy You Son Of A Bitch"
 slug: murphy-you-son-of-a-bitch
 category: WTF
-published:
-  epoch: 1075351575
-  utc: 2004-01-29T04:46:15
+created: 1075351575
 ---
 
 <p>

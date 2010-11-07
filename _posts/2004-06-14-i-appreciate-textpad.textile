@@ -3,9 +3,7 @@ layout: post
 title: "I Appreciate Textpad"
 slug: i-appreciate-textpad
 category: Software
-published:
-  epoch: 1087242047
-  utc: 2004-06-14T19:40:47
+created: 1087242047
 ---
 
 The more I try other "editors", the more I appreciated <a href="http://www.textpad.com/">Textpad</a>. I was always in love with the fact that I could pick my line endings and encodings and it would Do The Right Thing. Even better, I loved that I could save Unicode/UTF-16/UTF-8 files and choose whether or not to write the <acronym title="Byte Order Marker">BOM</acronym>. Writing the BOM usually plays hell with things like ASP/.NET, so any program that <em>always</em> writes the BOM causes problems.

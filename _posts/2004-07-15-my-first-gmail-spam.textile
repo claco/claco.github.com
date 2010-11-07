@@ -3,9 +3,7 @@ layout: post
 title: "My First Gmail Spam"
 slug: my-first-gmail-spam
 category: Humor
-published:
-  epoch: 1089917112
-  utc: 2004-07-15T18:45:12
+created: 1089917112
 ---
 
 I finally got my first Gmail spam after posting my new Gmail address on June 30th. It took 16 days to get my first spam. I figured it would be a whole lot sooner. It probably would've been longer, but I recently changed the email in the footer to my Gmail account.

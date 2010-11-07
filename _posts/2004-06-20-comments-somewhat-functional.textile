@@ -3,9 +3,7 @@ layout: post
 title: "Comments Somewhat Functional"
 slug: comments-somewhat-functional
 category: WWW
-published:
-  epoch: 1087780675
-  utc: 2004-06-21T01:17:55
+created: 1087780675
 ---
 
 I believe comments are now functioning. I took the easy way out. The comments form is now using the stock MT comments templates in popup mode.

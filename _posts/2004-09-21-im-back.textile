@@ -3,9 +3,7 @@ layout: post
 title: "I'm Back"
 slug: im-back
 category: Hardware
-published:
-  epoch: 1095815069
-  utc: 2004-09-22T01:04:29
+created: 1095815069
 ---
 
 Not bad. An hour flat for a clean XP install the is 100% up to date. No service pack install. No hot fixes. No audio or video drivers. No browser/email install. Kick ass.

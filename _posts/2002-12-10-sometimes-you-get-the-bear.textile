@@ -3,9 +3,7 @@ layout: post
 title: "Sometimes you get the bear..."
 slug: sometimes-you-get-the-bear
 category: FreeBSD
-published:
-  epoch: 1039576427
-  utc: 2002-12-11T03:13:47
+created: 1039576427
 ---
 
 <p>

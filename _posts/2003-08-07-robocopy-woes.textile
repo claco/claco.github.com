@@ -3,9 +3,7 @@ layout: post
 title: "Robocopy Woes"
 slug: robocopy-woes
 category: MicroShaft
-published:
-  epoch: 1060262108
-  utc: 2003-08-07T13:15:08
+created: 1060262108
 ---
 
 <p>

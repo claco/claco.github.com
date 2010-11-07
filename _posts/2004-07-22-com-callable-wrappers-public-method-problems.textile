@@ -3,9 +3,7 @@ layout: post
 title: "COM Callable Wrappers: Public Method Problems"
 slug: com-callable-wrappers-public-method-problems
 category: MicroShaft
-published:
-  epoch: 1090545491
-  utc: 2004-07-23T01:18:11
+created: 1090545491
 ---
 
 Anyone out there have any experience with <kbd>regasm</kbd> and creating COM Callable Wrappers for .NET assemblies?

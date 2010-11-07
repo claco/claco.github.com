@@ -3,9 +3,7 @@ layout: post
 title: "Just A Jump To The Left"
 slug: just-a-jump-to-the-left
 category: Humor
-published:
-  epoch: 1043278399
-  utc: 2003-01-22T23:33:19
+created: 1043278399
 ---
 
 <p>

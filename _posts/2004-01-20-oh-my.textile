@@ -3,9 +3,7 @@ layout: post
 title: "Oh My"
 slug: oh-my
 category: OffTopic
-published:
-  epoch: 1074645873
-  utc: 2004-01-21T00:44:33
+created: 1074645873
 ---
 
 <p>

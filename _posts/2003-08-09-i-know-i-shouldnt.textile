@@ -3,9 +3,7 @@ layout: post
 title: "I Know I Shouldn't"
 slug: i-know-i-shouldnt
 category: WWW
-published:
-  epoch: 1060444794
-  utc: 2003-08-09T15:59:54
+created: 1060444794
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "The Art of Losing Things"
 slug: the-art-of-losing-things
 category: Humor
-published:
-  epoch: 1089679286
-  utc: 2004-07-13T00:41:26
+created: 1089679286
 ---
 
 Margeaux and I have now officially mastered the art of losing things in the quickest time possible.

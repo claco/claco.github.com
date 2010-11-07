@@ -3,9 +3,7 @@ layout: post
 title: "MTDateHeaders Plugin"
 slug: mtdateheaders-plugin
 category: Perl
-published:
-  epoch: 1041826589
-  utc: 2003-01-06T04:16:29
+created: 1041826589
 ---
 
 <p>

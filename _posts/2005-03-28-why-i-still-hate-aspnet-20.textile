@@ -3,9 +3,7 @@ layout: post
 title: "Why I Still Hate ASP.NET [2.0]"
 slug: why-i-still-hate-aspnet-20
 category: MicroShaft
-published:
-  epoch: 1112034793
-  utc: 2005-03-28T18:33:13
+created: 1112034793
 ---
 
 This is why I still hate ASP.NET:

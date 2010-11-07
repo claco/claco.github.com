@@ -3,9 +3,7 @@ layout: post
 title: "House: Part Tres"
 slug: house-part-tres
 category: OffTopic
-published:
-  epoch: 1064895850
-  utc: 2003-09-30T04:24:10
+created: 1064895850
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "And on a stranger note..."
 slug: and-on-a-stranger-note
 category: Hardware
-published:
-  epoch: 1053716087
-  utc: 2003-05-23T18:54:47
+created: 1053716087
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Obsolete Motherboard"
 slug: obsolete-motherboard
 category: Hardware
-published:
-  epoch: 1055038995
-  utc: 2003-06-08T02:23:15
+created: 1055038995
 ---
 
 <p>

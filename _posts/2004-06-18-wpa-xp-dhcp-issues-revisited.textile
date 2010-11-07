@@ -3,9 +3,7 @@ layout: post
 title: "WPA + XP + DHCP Issues Revisited"
 slug: wpa-xp-dhcp-issues-revisited
 category: WTF
-published:
-  epoch: 1087608483
-  utc: 2004-06-19T01:28:03
+created: 1087608483
 ---
 
 A while back I <a href="/blog/archives/entries/i_declare_wpa_broken.icf">ranted</a> about how XP using WPA and DHCP seemed to be a retarded combination with random locks and hags with seemily working connectivity.

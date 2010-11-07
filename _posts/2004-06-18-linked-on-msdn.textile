@@ -3,9 +3,7 @@ layout: post
 title: "Linked On MSDN"
 slug: linked-on-msdn
 category: MicroShaft
-published:
-  epoch: 1087612708
-  utc: 2004-06-19T02:38:28
+created: 1087612708
 ---
 
 I'm not sure how I missed <a href="http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dnaspp/html/aspnetwhidbey_caching.asp">this incoming linkage</a> to my post about <a href="/blog/archives/entries/rss_09120rdfatom_xsl_stylesheet.icf">a RSS/RDF/Atom XSLT Stylesheet</a> from an MSDN article.

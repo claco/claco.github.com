@@ -3,9 +3,7 @@ layout: post
 title: "Nice Design: Gateway.com"
 slug: nice-design-gatewaycom
 category: WWW
-published:
-  epoch: 1034379041
-  utc: 2002-10-11T23:30:41
+created: 1034379041
 ---
 
 <p>

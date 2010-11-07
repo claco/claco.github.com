@@ -3,9 +3,7 @@ layout: post
 title: "I Hate Losing Things"
 slug: i-hate-losing-things
 category: WTF
-published:
-  epoch: 1056081407
-  utc: 2003-06-20T03:56:47
+created: 1056081407
 ---
 
 <p>

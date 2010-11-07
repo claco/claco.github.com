@@ -3,9 +3,7 @@ layout: post
 title: "Loss of Common Sense"
 slug: loss-of-common-sense
 category: WTF
-published:
-  epoch: 1202083057
-  utc: 2008-02-03T23:57:37
+created: 1202083057
 ---
 
 This is what happens when we start making laws but lose our ability to use common sense.  I'm not saying this guy is a top notch citizen, but life for technically getting the 3rd strike...for doughnuts? That's just silly.

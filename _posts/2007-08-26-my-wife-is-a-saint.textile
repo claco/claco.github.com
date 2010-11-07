@@ -3,9 +3,7 @@ layout: post
 title: "My Wife is a Saint"
 slug: my-wife-is-a-saint
 category: OffTopic
-published:
-  epoch: 1188150943
-  utc: 2007-08-26T17:55:43
+created: 1188150943
 ---
 
 Aside from the fact that she puts up with me, my wife is a saint in my book, and so are all the people she works with. You see, my wife works in pediatric palliative care.

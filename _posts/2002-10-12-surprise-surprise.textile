@@ -3,9 +3,7 @@ layout: post
 title: "Surprise Surprise."
 slug: surprise-surprise
 category: MicroShaft
-published:
-  epoch: 1034459081
-  utc: 2002-10-12T21:44:41
+created: 1034459081
 ---
 
 <p>

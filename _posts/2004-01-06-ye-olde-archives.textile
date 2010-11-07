@@ -3,9 +3,7 @@ layout: post
 title: "Ye Olde Archives"
 slug: ye-olde-archives
 category: Static
-published:
-  epoch: 1073446668
-  utc: 2004-01-07T03:37:48
+created: 1073446668
 ---
 
 <h2>Ye Olde Archives</h2>

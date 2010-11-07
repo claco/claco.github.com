@@ -3,9 +3,7 @@ layout: post
 title: "You Know You're Whipped When"
 slug: you-know-youre-whipped-when
 category: Humor
-published:
-  epoch: 1060534452
-  utc: 2003-08-10T16:54:12
+created: 1060534452
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "NOLA Bound"
 slug: nola-bound
 category: OffTopic
-published:
-  epoch: 1196036814
-  utc: 2007-11-26T00:26:54
+created: 1196036814
 ---
 
 Well, vacation time is finally here. We're off to New Orleans tomorrow night: by train. Yes, train is slower, and a tad more expensive, but it's relaxing. No need to stress out at the airport to and fro. Just a picture window, a camera, and a long trip.

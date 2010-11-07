@@ -3,9 +3,7 @@ layout: post
 title: "Wired Redesign Interview"
 slug: wired-redesign-interview
 category: WWW
-published:
-  epoch: 1034439939
-  utc: 2002-10-12T16:25:39
+created: 1034439939
 ---
 
 <p>

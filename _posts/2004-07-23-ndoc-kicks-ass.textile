@@ -3,9 +3,7 @@ layout: post
 title: "NDoc Kicks Ass"
 slug: ndoc-kicks-ass
 category: Software
-published:
-  epoch: 1090618882
-  utc: 2004-07-23T21:41:22
+created: 1090618882
 ---
 
 I don't know why it took me so long to try it, but in an effort to make something useful out of the .NET inline XML documentation I downloaded <a href="http://ndoc.sourceforge.net/">NDoc</a> and turned it loose on the assmembly I've been workng on.

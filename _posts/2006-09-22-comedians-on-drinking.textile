@@ -3,9 +3,7 @@ layout: post
 title: "Comedians on Drinking"
 slug: comedians-on-drinking
 category: Humor
-published:
-  epoch: 1158959614
-  utc: 2006-09-22T21:13:34
+created: 1158959614
 ---
 
 Two of my favorite drinking clips of all time.

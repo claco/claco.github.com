@@ -3,9 +3,7 @@ layout: post
 title: "Eating Your Own Dog Food"
 slug: eating-your-own-dog-food
 category: Humor
-published:
-  epoch: 1041316600
-  utc: 2002-12-31T06:36:40
+created: 1041316600
 ---
 
 <p>

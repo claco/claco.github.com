@@ -3,9 +3,7 @@ layout: post
 title: "Stargate MMORPG"
 slug: stargate-mmorpg
 category: Games
-published:
-  epoch: 1088812812
-  utc: 2004-07-03T00:00:12
+created: 1088812812
 ---
 
 I like Star Wars games, but only the First Person Shooter kind.I hear Galaxies is addictive as hell, but I'm not really interested in trying it.

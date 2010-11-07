@@ -3,9 +3,7 @@ layout: post
 title: "Firebird: Import SSL Certificates?"
 slug: firebird-import-ssl-certificates
 category: Security
-published:
-  epoch: 1056339401
-  utc: 2003-06-23T03:36:41
+created: 1056339401
 ---
 
 <p>

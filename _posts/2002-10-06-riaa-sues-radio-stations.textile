@@ -3,9 +3,7 @@ layout: post
 title: "RIAA Sues Radio Stations"
 slug: riaa-sues-radio-stations
 category: Humor
-published:
-  epoch: 1033954738
-  utc: 2002-10-07T01:38:58
+created: 1033954738
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Tired, Bad, And Lazy"
 slug: tired-bad-and-lazy
 category: OffTopic
-published:
-  epoch: 1057016688
-  utc: 2003-06-30T23:44:48
+created: 1057016688
 ---
 
 <p>

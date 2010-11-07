@@ -3,9 +3,7 @@ layout: post
 title: "Faithful Analyst"
 slug: faithful-analyst
 category: OffTopic
-published:
-  epoch: 1144973884
-  utc: 2006-04-14T00:18:04
+created: 1144973884
 ---
 
 Hey, I didn't write the test, but it seems to be <a href="http://personaldna.com/report.php?k=jDGdufrGIdrrCZT-MH-AACAA-beda&u=ebdc5a600c19">accurate</a>.

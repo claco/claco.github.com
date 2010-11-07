@@ -3,9 +3,7 @@ layout: post
 title: "Iomega Micro Mini Thumb Drive"
 slug: iomega-micro-mini-thumb-drive
 category: Hardware
-published:
-  epoch: 1079321629
-  utc: 2004-03-15T03:33:49
+created: 1079321629
 ---
 
 <p>

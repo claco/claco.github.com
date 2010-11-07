@@ -3,9 +3,7 @@ layout: post
 title: "A Nice Day Of Test::More"
 slug: a-nice-day-of-testmore
 category: Perl
-published:
-  epoch: 1074990393
-  utc: 2004-01-25T00:26:33
+created: 1074990393
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "I Need XML/XSL/RSS Assistance Please"
 slug: i-need-xmlxslrss-assistance-please
 category: WWW
-published:
-  epoch: 1081045832
-  utc: 2004-04-04T02:30:32
+created: 1081045832
 ---
 
 <p>

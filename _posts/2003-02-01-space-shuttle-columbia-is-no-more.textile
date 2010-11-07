@@ -3,9 +3,7 @@ layout: post
 title: "Space Shuttle Columbia Is No More"
 slug: space-shuttle-columbia-is-no-more
 category: WTF
-published:
-  epoch: 1044113699
-  utc: 2003-02-01T15:34:59
+created: 1044113699
 ---
 
 <p>

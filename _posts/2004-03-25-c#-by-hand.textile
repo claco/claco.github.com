@@ -3,9 +3,7 @@ layout: post
 title: "C# By Hand"
 slug: c#-by-hand
 category: Software
-published:
-  epoch: 1080263314
-  utc: 2004-03-26T01:08:34
+created: 1080263314
 ---
 
 <p>

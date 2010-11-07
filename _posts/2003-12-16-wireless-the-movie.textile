@@ -3,9 +3,7 @@ layout: post
 title: "Wireless: The Movie"
 slug: wireless-the-movie
 category: Hardware
-published:
-  epoch: 1071629690
-  utc: 2003-12-17T02:54:50
+created: 1071629690
 ---
 
 <p>

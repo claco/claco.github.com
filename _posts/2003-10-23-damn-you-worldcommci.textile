@@ -3,9 +3,7 @@ layout: post
 title: "Damn You Worldcom/MCI"
 slug: damn-you-worldcommci
 category: WTF
-published:
-  epoch: 1066952003
-  utc: 2003-10-23T23:33:23
+created: 1066952003
 ---
 
 <p>

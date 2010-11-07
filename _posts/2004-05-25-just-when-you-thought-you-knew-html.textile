@@ -3,9 +3,7 @@ layout: post
 title: "Just When You Thought You Knew HTML"
 slug: just-when-you-thought-you-knew-html
 category: WWW
-published:
-  epoch: 1085517277
-  utc: 2004-05-25T20:34:37
+created: 1085517277
 ---
 
 <p>

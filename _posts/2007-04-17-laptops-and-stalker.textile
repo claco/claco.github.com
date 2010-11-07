@@ -3,9 +3,7 @@ layout: post
 title: "Laptops And S.T.A.L.K.E.R."
 slug: laptops-and-stalker
 category: Games
-published:
-  epoch: 1176820512
-  utc: 2007-04-17T14:35:12
+created: 1176820512
 ---
 
 It's been so long since STALKER was anounced, and postponed, and postponed, and postponed that I had never noticed that it actually came out. I snagged a copy at the evil Best Buy while I was out and about last night, along with a copy of Quicken 2007 since my 2004 CrippleWare won't do online crap after the 30th of the month. Sigh.

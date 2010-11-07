@@ -3,9 +3,7 @@ layout: post
 title: "Eating Your Own Dog Food: Part IV"
 slug: eating-your-own-dog-food-part-iv
 category: WWW
-published:
-  epoch: 1134704725
-  utc: 2005-12-16T03:45:25
+created: 1134704725
 ---
 
 I've spent the last couple of weeks tinkering on a photo gallery app for Catalyst. I like Flickr, but I don't want to pay for it. I have a buttload of photos to get online, epse. wedding photos if you ask the wife. :-)

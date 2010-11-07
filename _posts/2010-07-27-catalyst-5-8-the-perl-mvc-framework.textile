@@ -2,11 +2,7 @@
 layout: post
 title: "Book Review: Catalyst 5.8: The Perl MVC Framework"
 slug: catalyst-5-8-the-perl-mvc-framework
-wordpress_id: 256
-wordpress_url: http://chrislaco.com/?p=256
-published:
-  epoch: 1280272620
-  utc: 2010-07-27T23:17:00
+created: 1280272620
 ---
 <a href="/images/uploads/2010/07/Catalyst-5.8_Front-cover.jpg"><img class="alignleft size-thumbnail wp-image-257" title="Catalyst 5.8 Front Cover" src="/images/uploads/2010/07/Catalyst-5.8_Front-cover-121x150.jpg" alt="" width="121" height="150" /></a><em>Disclaimer: I was contacted by Packt Publishing about reviewing <a href="https://www.packtpub.com/catalyst-5-8-the-perl-mvc-framework/book?utm_source=chrislaco.com&amp;utm_medium=bookrev&amp;utm_content=blog&amp;utm_campaign=mdb_003900">this book</a> and was sent a free copy to do so.</em>
 <h2>Background</h2>

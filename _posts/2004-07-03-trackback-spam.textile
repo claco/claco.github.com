@@ -3,9 +3,7 @@ layout: post
 title: "Trackback Spam"
 slug: trackback-spam
 category: WTF
-published:
-  epoch: 1088859445
-  utc: 2004-07-03T12:57:25
+created: 1088859445
 ---
 
 I know there's no surprise there, but now spammers are abusing Trackback as well. What a bunch of bastards. I just cleaned out 110 or so of them. Well, comments and trackbacks were fun while they lasted.

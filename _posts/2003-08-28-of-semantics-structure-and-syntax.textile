@@ -3,9 +3,7 @@ layout: post
 title: "Of Semantics, Structure, And Syntax"
 slug: of-semantics-structure-and-syntax
 category: WWW
-published:
-  epoch: 1062108256
-  utc: 2003-08-28T22:04:16
+created: 1062108256
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "shitdango.com"
 slug: shitdangocom
 category: WTF
-published:
-  epoch: 1051915649
-  utc: 2003-05-02T22:47:29
+created: 1051915649
 ---
 
 <p>

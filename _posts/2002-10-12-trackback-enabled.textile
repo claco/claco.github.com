@@ -3,9 +3,7 @@ layout: post
 title: "TrackBack Enabled"
 slug: trackback-enabled
 category: OffTopic
-published:
-  epoch: 1034397100
-  utc: 2002-10-12T04:31:40
+created: 1034397100
 ---
 
 <p>

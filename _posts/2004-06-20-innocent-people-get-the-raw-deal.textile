@@ -3,9 +3,7 @@ layout: post
 title: "Innocent People Get The Raw Deal"
 slug: innocent-people-get-the-raw-deal
 category: WTF
-published:
-  epoch: 1087740899
-  utc: 2004-06-20T14:14:59
+created: 1087740899
 ---
 
 Anyone who knows me for more than two minutes knows that the tactics, technology and laws the MPAA/RIAA try shoving down our throats really piss me off. So do those bullshit CD copy protection schemes. All this shit for the "war on piracy" really means I can't make a backup of my $50 game in case the CD get's scratched, or rip my favorite CD and put it on an MP3 player.

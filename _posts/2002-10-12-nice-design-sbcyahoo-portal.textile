@@ -3,9 +3,7 @@ layout: post
 title: "Nice Design: SBC/Yahoo Portal"
 slug: nice-design-sbcyahoo-portal
 category: WWW
-published:
-  epoch: 1034449829
-  utc: 2002-10-12T19:10:29
+created: 1034449829
 ---
 
 <p>

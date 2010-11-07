@@ -3,9 +3,7 @@ layout: post
 title: "Dear President Bush"
 slug: dear-president-bush
 category: Humor
-published:
-  epoch: 1100714612
-  utc: 2004-11-17T18:03:32
+created: 1100714612
 ---
 
 This is going around the email channels. It gave me a chuckle. Also, take a look at <a href="http://www.fuckthesouth.com/">fuckthesouth.com</a> while you're at it.

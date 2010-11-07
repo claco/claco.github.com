@@ -3,9 +3,7 @@ layout: post
 title: "Designing With Web Standards"
 slug: designing-with-web-standards
 category: WWW
-published:
-  epoch: 1049165036
-  utc: 2003-04-01T02:43:56
+created: 1049165036
 ---
 
 <p>

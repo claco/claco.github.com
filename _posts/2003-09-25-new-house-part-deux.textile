@@ -3,9 +3,7 @@ layout: post
 title: "New House: Part Deux"
 slug: new-house-part-deux
 category: OffTopic
-published:
-  epoch: 1064539285
-  utc: 2003-09-26T01:21:25
+created: 1064539285
 ---
 
 <p>

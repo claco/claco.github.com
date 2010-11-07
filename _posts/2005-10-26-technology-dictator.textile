@@ -3,9 +3,7 @@ layout: post
 title: "Technology Dictator"
 slug: technology-dictator
 category: Humor
-published:
-  epoch: 1130363323
-  utc: 2005-10-26T21:48:43
+created: 1130363323
 ---
 
 I've been pretty much appointed the technology dictator for a huge project at work. Holy stressful batman. I know I know things, maybe more than others, but I'm just never comfortable with the thought that I'm the guy to make the decisions.

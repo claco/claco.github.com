@@ -2,11 +2,7 @@
 layout: post
 title: Brother MFC-490CW Multi Function Printer
 slug: brother-mfc-490cw-multi-function-printer
-wordpress_id: 149
-wordpress_url: http://chrislaco.com/?p=149
-published:
-  epoch: 1235021040
-  utc: 2009-02-19T05:24:00
+created: 1235021040
 ---
 Last year, I bought the wife a new Dell Studio 17" laptop to replace her dead laptop and her old crusty desktop. New laptops don't come with parallel ports any more. This makes my 13 year old faithful HP LaserJet 6P very lonely. After 13 years, I've only had to replace the toner cartridge once. It's been  workhorse.
 <!--more-->

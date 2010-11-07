@@ -3,9 +3,7 @@ layout: post
 title: "Gas Prices BS"
 slug: gas-prices-bs
 category: OffTopic
-published:
-  epoch: 1047337037
-  utc: 2003-03-10T22:57:17
+created: 1047337037
 ---
 
 <p>

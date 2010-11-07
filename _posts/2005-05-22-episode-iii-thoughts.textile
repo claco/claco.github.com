@@ -3,9 +3,7 @@ layout: post
 title: "Episode III Thoughts"
 slug: episode-iii-thoughts
 category: Movies
-published:
-  epoch: 1116805080
-  utc: 2005-05-22T23:38:00
+created: 1116805080
 ---
 
 Overrated.

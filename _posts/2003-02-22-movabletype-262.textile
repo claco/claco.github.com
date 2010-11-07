@@ -3,9 +3,7 @@ layout: post
 title: "MovableType 2.62"
 slug: movabletype-262
 category: Perl
-published:
-  epoch: 1045963381
-  utc: 2003-02-23T01:23:01
+created: 1045963381
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Must...Clean..."
 slug: mustclean
 category: Humor
-published:
-  epoch: 1048953566
-  utc: 2003-03-29T15:59:26
+created: 1048953566
 ---
 
 <p>

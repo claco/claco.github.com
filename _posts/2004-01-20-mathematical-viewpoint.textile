@@ -3,9 +3,7 @@ layout: post
 title: "Mathematical Viewpoint"
 slug: mathematical-viewpoint
 category: Humor
-published:
-  epoch: 1074612158
-  utc: 2004-01-20T15:22:38
+created: 1074612158
 ---
 
 <p>

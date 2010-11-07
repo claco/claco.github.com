@@ -3,9 +3,7 @@ layout: post
 title: "IE? Not In My House."
 slug: ie-not-in-my-house
 category: MicroShaft
-published:
-  epoch: 1041741295
-  utc: 2003-01-05T04:34:55
+created: 1041741295
 ---
 
 <p>

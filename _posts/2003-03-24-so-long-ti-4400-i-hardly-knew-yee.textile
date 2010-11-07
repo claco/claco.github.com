@@ -3,9 +3,7 @@ layout: post
 title: "So Long Ti-4400, I Hardly Knew Yee"
 slug: so-long-ti-4400-i-hardly-knew-yee
 category: Hardware
-published:
-  epoch: 1048554741
-  utc: 2003-03-25T01:12:21
+created: 1048554741
 ---
 
 <p>

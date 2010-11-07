@@ -3,9 +3,7 @@ layout: post
 title: "Firefox 1.0PR Sucks"
 slug: firefox-10pr-sucks
 category: WTF
-published:
-  epoch: 1095273761
-  utc: 2004-09-15T18:42:41
+created: 1095273761
 ---
 
 Don't give me the "Preview Release" excuse either. They've ALL been preview releases. I did a clean install of 1.0PR and it has assloads of problems; most of them related to bookmarks.  Specifically, mine disappear every time I reload the browser.

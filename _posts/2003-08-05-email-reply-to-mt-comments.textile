@@ -3,9 +3,7 @@ layout: post
 title: "Email Reply To MT Comments"
 slug: email-reply-to-mt-comments
 category: WWW
-published:
-  epoch: 1060120381
-  utc: 2003-08-05T21:53:01
+created: 1060120381
 ---
 
 <p>

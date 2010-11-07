@@ -7,9 +7,7 @@ tags:
   - apple
   - laptop
   - macbook
-published:
-  epoch: 1158197383
-  utc: 2006-09-14T01:29:43
+created: 1158197383
 ---
 
 Anyday there Steveo. Any day now you can announce that MacBooks will now ship with Intel Core 2 Duo chips. Pull the trigger. I dare you.

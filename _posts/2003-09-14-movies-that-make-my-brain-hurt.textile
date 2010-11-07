@@ -3,9 +3,7 @@ layout: post
 title: "Movies That Make My Brain Hurt"
 slug: movies-that-make-my-brain-hurt
 category: Movies
-published:
-  epoch: 1063586928
-  utc: 2003-09-15T00:48:48
+created: 1063586928
 ---
 
 <p>

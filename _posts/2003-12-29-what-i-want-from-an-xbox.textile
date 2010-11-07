@@ -3,9 +3,7 @@ layout: post
 title: "What I Want From An XBox"
 slug: what-i-want-from-an-xbox
 category: Games
-published:
-  epoch: 1072708091
-  utc: 2003-12-29T14:28:11
+created: 1072708091
 ---
 
 <p>

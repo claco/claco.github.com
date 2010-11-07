@@ -3,9 +3,7 @@ layout: post
 title: "New Makefile.PL Trick"
 slug: new-makefilepl-trick
 category: Perl
-published:
-  epoch: 1111115212
-  utc: 2005-03-18T03:06:52
+created: 1111115212
 ---
 
 I knew there had to be an easy way to keep the README file updated. ANd there was.

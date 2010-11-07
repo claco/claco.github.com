@@ -3,9 +3,7 @@ layout: post
 title: "Web Standards MeetUp"
 slug: web-standards-meetup
 category: WWW
-published:
-  epoch: 1043893315
-  utc: 2003-01-30T02:21:55
+created: 1043893315
 ---
 
 <p>

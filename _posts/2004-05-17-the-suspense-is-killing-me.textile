@@ -3,9 +3,7 @@ layout: post
 title: "The Suspense Is Killing Me"
 slug: the-suspense-is-killing-me
 category: Humor
-published:
-  epoch: 1084834508
-  utc: 2004-05-17T22:55:08
+created: 1084834508
 ---
 
 <p>

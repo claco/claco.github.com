@@ -3,9 +3,7 @@ layout: post
 title: "Handel 0.15 Released"
 slug: handel-015-released
 category: Perl
-published:
-  epoch: 1111113163
-  utc: 2005-03-18T02:32:43
+created: 1111113163
 ---
 
 Handel 0.15 is on it's way up to CPAN. Aside from the various fixes, Handel now has full currency formatting and conversion support.

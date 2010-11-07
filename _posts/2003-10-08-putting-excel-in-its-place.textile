@@ -3,9 +3,7 @@ layout: post
 title: "Putting Excel In Its Place"
 slug: putting-excel-in-its-place
 category: MicroShaft
-published:
-  epoch: 1065656389
-  utc: 2003-10-08T23:39:49
+created: 1065656389
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "What Plate Number?"
 slug: what-plate-number
 category: OffTopic
-published:
-  epoch: 1079232620
-  utc: 2004-03-14T02:50:20
+created: 1079232620
 ---
 
 <p>

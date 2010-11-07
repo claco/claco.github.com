@@ -3,9 +3,7 @@ layout: post
 title: "RSS/RDF/Atom Feed CSS Stylesheet"
 slug: rssrdfatom-feed-css-stylesheet
 category: WWW
-published:
-  epoch: 1074227234
-  utc: 2004-01-16T04:27:14
+created: 1074227234
 ---
 
 <p>

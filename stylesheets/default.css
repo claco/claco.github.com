@@ -37,7 +37,7 @@ p, li {
   margin-bottom: 45px;
   text-align: center;
 }
-#header .published {
+#header .created {
   margin-top: 15px;
   margin-bottom: 3px;
 }
@@ -71,7 +71,7 @@ h2 {
 .index .post {
   margin-bottom: 10px;
 }
-.index .post .published {
+.index .post .created {
   font-weight: bold;
 }
 /* Disqus */

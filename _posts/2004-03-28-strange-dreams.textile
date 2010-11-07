@@ -3,9 +3,7 @@ layout: post
 title: "Strange Dreams"
 slug: strange-dreams
 category: Humor
-published:
-  epoch: 1080527404
-  utc: 2004-03-29T02:30:04
+created: 1080527404
 ---
 
 <p>

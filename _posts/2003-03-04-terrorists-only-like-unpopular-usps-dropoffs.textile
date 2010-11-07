@@ -3,9 +3,7 @@ layout: post
 title: "Terrorists Only Like Unpopular USPS Dropoffs"
 slug: terrorists-only-like-unpopular-usps-dropoffs
 category: WTF
-published:
-  epoch: 1046823825
-  utc: 2003-03-05T00:23:45
+created: 1046823825
 ---
 
 <p>

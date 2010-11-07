@@ -3,9 +3,7 @@ layout: post
 title: "Sager NP5660 Review"
 slug: sager-np5660-review
 category: Hardware
-published:
-  epoch: 1034836675
-  utc: 2002-10-17T06:37:55
+created: 1034836675
 ---
 
 <p>

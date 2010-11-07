@@ -3,9 +3,7 @@ layout: post
 title: "Awesome Redesign"
 slug: awesome-redesign
 category: WWW
-published:
-  epoch: 1058641826
-  utc: 2003-07-19T19:10:26
+created: 1058641826
 ---
 
 <p>

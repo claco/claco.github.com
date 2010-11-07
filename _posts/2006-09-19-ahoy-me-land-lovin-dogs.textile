@@ -3,9 +3,7 @@ layout: post
 title: "A'hoy Me Land Lovin Dogs"
 slug: ahoy-me-land-lovin-dogs
 category: Humor
-published:
-  epoch: 1158669464
-  utc: 2006-09-19T12:37:44
+created: 1158669464
 ---
 
 It be talk like a pirate day! Most all thee hair be mine!

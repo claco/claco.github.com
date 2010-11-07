@@ -3,9 +3,7 @@ layout: post
 title: "FreeBSD 4.8-RELEASE"
 slug: freebsd-48-release
 category: FreeBSD
-published:
-  epoch: 1049574133
-  utc: 2003-04-05T20:22:13
+created: 1049574133
 ---
 
 <p>

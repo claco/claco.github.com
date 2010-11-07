@@ -3,9 +3,7 @@ layout: post
 title: "SBC Pulls An Amazon/BT"
 slug: sbc-pulls-an-amazonbt
 category: WTF
-published:
-  epoch: 1042919018
-  utc: 2003-01-18T19:43:38
+created: 1042919018
 ---
 
 <p>

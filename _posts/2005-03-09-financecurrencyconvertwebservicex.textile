@@ -3,9 +3,7 @@ layout: post
 title: "Finance::Currency:Convert::WebserviceX"
 slug: financecurrencyconvertwebservicex
 category: Perl
-published:
-  epoch: 1110425709
-  utc: 2005-03-10T03:35:09
+created: 1110425709
 ---
 
 Scratching another itch while adding currency conversion to AxKit::XSP::Currency and Handel.

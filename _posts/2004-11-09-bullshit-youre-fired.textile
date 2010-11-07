@@ -3,9 +3,7 @@ layout: post
 title: "Bullshit. You're Fired."
 slug: bullshit-youre-fired
 category: WTF
-published:
-  epoch: 1100055737
-  utc: 2004-11-10T03:02:17
+created: 1100055737
 ---
 
 <a href="http://story.news.yahoo.com/news?tmpl=story&amp;cid=710&amp;e=1&amp;u=/usatoday/druggistsrefusetogiveoutpill">Another entry</a> into the bullshit train. I understand the argument, but I still call bullshit. Do your fucking job and fill the Dr. ordered perscription. There are plenty of reasons women take these bills OTHER than just to prevent pregnancy; aka hormone regulation.

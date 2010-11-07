@@ -3,9 +3,7 @@ layout: post
 title: "SQL Dream Machine"
 slug: sql-dream-machine
 category: Hardware
-published:
-  epoch: 1062731669
-  utc: 2003-09-05T03:14:29
+created: 1062731669
 ---
 
 <p>

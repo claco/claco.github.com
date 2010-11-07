@@ -3,9 +3,7 @@ layout: post
 title: "The 'Switch' Saga Continues"
 slug: the-switch-saga-continues
 category: MicroShaft
-published:
-  epoch: 1034717579
-  utc: 2002-10-15T21:32:59
+created: 1034717579
 ---
 
 <p>

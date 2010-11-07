@@ -3,9 +3,7 @@ layout: post
 title: "We Need More Letters"
 slug: we-need-more-letters
 category: Perl
-published:
-  epoch: 1067830634
-  utc: 2003-11-03T03:37:14
+created: 1067830634
 ---
 
 <p class="image">

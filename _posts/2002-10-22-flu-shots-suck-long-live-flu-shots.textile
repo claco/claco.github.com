@@ -3,9 +3,7 @@ layout: post
 title: "Flu Shots Suck. Long Live Flu Shots"
 slug: flu-shots-suck-long-live-flu-shots
 category: OffTopic
-published:
-  epoch: 1035333812
-  utc: 2002-10-23T00:43:32
+created: 1035333812
 ---
 
 <p>

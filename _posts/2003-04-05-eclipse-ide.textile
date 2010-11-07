@@ -3,9 +3,7 @@ layout: post
 title: "Eclipse IDE"
 slug: eclipse-ide
 category: Perl
-published:
-  epoch: 1049574624
-  utc: 2003-04-05T20:30:24
+created: 1049574624
 ---
 
 <p>

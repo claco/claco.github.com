@@ -3,9 +3,7 @@ layout: post
 title: "Back to you, fuckers."
 slug: back-to-you-fuckers
 category: Humor
-published:
-  epoch: 1054177216
-  utc: 2003-05-29T03:00:16
+created: 1054177216
 ---
 
 <p>

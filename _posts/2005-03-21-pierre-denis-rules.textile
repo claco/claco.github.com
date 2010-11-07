@@ -3,9 +3,7 @@ layout: post
 title: "Pierre Denis Rules"
 slug: pierre-denis-rules
 category: Perl
-published:
-  epoch: 1111447215
-  utc: 2005-03-21T23:20:15
+created: 1111447215
 ---
 
 Pierre created Test::Strict to test that perl files impliment <samp>use strict</samp>.

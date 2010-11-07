@@ -3,9 +3,7 @@ layout: post
 title: "CSS MeetUp"
 slug: css-meetup
 category: WWW
-published:
-  epoch: 1043885717
-  utc: 2003-01-30T00:15:17
+created: 1043885717
 ---
 
 <p>

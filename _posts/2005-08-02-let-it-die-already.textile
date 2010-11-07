@@ -3,9 +3,7 @@ layout: post
 title: "Let It Die Already"
 slug: let-it-die-already
 category: Movies
-published:
-  epoch: 1123030551
-  utc: 2005-08-03T00:55:51
+created: 1123030551
 ---
 
 Oh for the love of all that is holy. Who in the hell thought it was a good idea to <a href="http://www.imdb.com/title/tt0427392/">remake</a> the 1956 movie <a href="http://www.imdb.com/title/tt0077745/">Invasion of the Body Snatchers</a>; <a href="http://www.imdb.com/title/tt0049366/">again</a>; for the <strong>fourth</strong> freaking time? Yes people, a fourth time. Like the <a href="http://www.imdb.com/title/tt0106452/">third remake</a> wasn't enough.

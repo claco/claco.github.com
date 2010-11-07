@@ -3,9 +3,7 @@ layout: post
 title: "Impulse Shopping Pays Off"
 slug: impulse-shopping-pays-off
 category: OffTopic
-published:
-  epoch: 1090805411
-  utc: 2004-07-26T01:30:11
+created: 1090805411
 ---
 
 Apparently my impulse [camera] purchase just paid off. Check this out.

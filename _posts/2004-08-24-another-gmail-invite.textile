@@ -3,9 +3,7 @@ layout: post
 title: "Another Gmail Invite"
 slug: another-gmail-invite
 category: OffTopic
-published:
-  epoch: 1093351573
-  utc: 2004-08-24T12:46:13
+created: 1093351573
 ---
 
 <del>I have another Gmail invite up for grabs to the first bidder.</del>

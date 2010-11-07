@@ -3,9 +3,7 @@ layout: post
 title: "Darwin Rules!"
 slug: darwin-rules
 category: WTF
-published:
-  epoch: 1034719122
-  utc: 2002-10-15T21:58:42
+created: 1034719122
 ---
 
 <p>

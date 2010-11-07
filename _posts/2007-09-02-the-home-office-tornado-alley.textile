@@ -3,9 +3,7 @@ layout: post
 title: "The Home Office: Tornado Alley"
 slug: the-home-office-tornado-alley
 category: OffTopic
-published:
-  epoch: 1188783729
-  utc: 2007-09-03T01:42:09
+created: 1188783729
 ---
 
 For not spending much time in this room, it sure turned into a disaster zone. I'm trying to get that fixed this weekend.

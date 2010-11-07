@@ -3,9 +3,7 @@ layout: post
 title: "MySQL-Front Lives!"
 slug: mysql-front-lives
 category: Software
-published:
-  epoch: 1072806032
-  utc: 2003-12-30T17:40:32
+created: 1072806032
 ---
 
 <p>

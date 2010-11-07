@@ -3,9 +3,7 @@ layout: post
 title: "ACD Is Evil"
 slug: acd-is-evil
 category: Hardware
-published:
-  epoch: 1095211392
-  utc: 2004-09-15T01:23:12
+created: 1095211392
 ---
 
 Boy did I sin this evening. :-)

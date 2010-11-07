@@ -3,9 +3,7 @@ layout: post
 title: "FeedDemon In The House"
 slug: feeddemon-in-the-house
 category: Software
-published:
-  epoch: 1076022599
-  utc: 2004-02-05T23:09:59
+created: 1076022599
 ---
 
 <p>

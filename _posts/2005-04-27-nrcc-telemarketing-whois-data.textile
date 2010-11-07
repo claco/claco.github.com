@@ -3,9 +3,7 @@ layout: post
 title: "NRCC Telemarketing Whois Data"
 slug: nrcc-telemarketing-whois-data
 category: Humor
-published:
-  epoch: 1114625060
-  utc: 2005-04-27T18:04:20
+created: 1114625060
 ---
 
 The <a href="http://www.nrcc.org/">National Republican Congressional Committee</a> is apparently telemarketing whois data for donations and committee victims.

@@ -3,9 +3,7 @@ layout: post
 title: "oXygen XML Editor Plugin"
 slug: oxygen-xml-editor-plugin
 category: WWW
-published:
-  epoch: 1062111835
-  utc: 2003-08-28T23:03:55
+created: 1062111835
 ---
 
 <p>

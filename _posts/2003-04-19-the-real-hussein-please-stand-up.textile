@@ -3,9 +3,7 @@ layout: post
 title: "The Real Hussein, Please Stand Up"
 slug: the-real-hussein-please-stand-up
 category: Humor
-published:
-  epoch: 1050758778
-  utc: 2003-04-19T13:26:18
+created: 1050758778
 ---
 
 <p>

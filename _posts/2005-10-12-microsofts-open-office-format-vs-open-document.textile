@@ -3,9 +3,7 @@ layout: post
 title: "Microsofts Open Office Format vs. Open Document"
 slug: microsofts-open-office-format-vs-open-document
 category: OffTopic
-published:
-  epoch: 1129135386
-  utc: 2005-10-12T16:43:06
+created: 1129135386
 ---
 
 Dave Winer posted <a href="http://archive.scripting.com/2005/10/12#When:12:00:54PM">this output</a> about how OpenDocument:

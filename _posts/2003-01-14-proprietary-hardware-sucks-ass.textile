@@ -3,9 +3,7 @@ layout: post
 title: "Proprietary Hardware Sucks Ass"
 slug: proprietary-hardware-sucks-ass
 category: Hardware
-published:
-  epoch: 1042602929
-  utc: 2003-01-15T03:55:29
+created: 1042602929
 ---
 
 <p>

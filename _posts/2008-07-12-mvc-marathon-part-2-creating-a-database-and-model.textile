@@ -17,9 +17,7 @@ tags:
   - rails
   - ruby
   - schema
-published:
-  epoch: 1215906130
-  utc: 2008-07-12T23:42:10
+created: 1215906130
 ---
 
 		<p>

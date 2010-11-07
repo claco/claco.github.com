@@ -3,9 +3,7 @@ layout: post
 title: "Life Before TDD"
 slug: life-before-tdd
 category: Software
-published:
-  epoch: 1109654221
-  utc: 2005-03-01T05:17:01
+created: 1109654221
 ---
 
 How in the hell did we ever  develop software before TDD? Handel 0.10 is hitting CPAN this evening.

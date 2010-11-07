@@ -3,9 +3,7 @@ layout: post
 title: "Is TDD Supposed Seem This Difficult?"
 slug: is-tdd-supposed-seem-this-difficult
 category: Perl
-published:
-  epoch: 1066514957
-  utc: 2003-10-18T22:09:17
+created: 1066514957
 ---
 
 <p>

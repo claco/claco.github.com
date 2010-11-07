@@ -3,9 +3,7 @@ layout: post
 title: "As Bad As Spammers"
 slug: as-bad-as-spammers
 category: WTF
-published:
-  epoch: 1093106715
-  utc: 2004-08-21T16:45:15
+created: 1093106715
 ---
 
 I usually consider spammers as the scum of the Earth, but I recently realized they have a meatspace counterpart: ambulance chasers.

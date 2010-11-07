@@ -3,9 +3,7 @@ layout: post
 title: "Xbox: Bitch Pimp #3"
 slug: xbox-bitch-pimp-3
 category: MicroShaft
-published:
-  epoch: 1057326451
-  utc: 2003-07-04T13:47:31
+created: 1057326451
 ---
 
 <p>

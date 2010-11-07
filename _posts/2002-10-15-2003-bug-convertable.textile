@@ -3,9 +3,7 @@ layout: post
 title: "2003 Bug Convertable"
 slug: 2003-bug-convertable
 category: OffTopic
-published:
-  epoch: 1034718330
-  utc: 2002-10-15T21:45:30
+created: 1034718330
 ---
 
 <p>

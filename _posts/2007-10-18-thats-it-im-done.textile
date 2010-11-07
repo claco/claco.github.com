@@ -3,9 +3,7 @@ layout: post
 title: "That's it. I'm done."
 slug: thats-it-im-done
 category: WTF
-published:
-  epoch: 1192730578
-  utc: 2007-10-18T18:02:58
+created: 1192730578
 ---
 
 <a href="http://www.dailykos.com/storyonly/2007/10/18/104136/44">From DKOS: FISA Capitulation</a><br/><br/><blockquote>Senate Democrats and Republicans reached agreement with the Bush administration yesterday on the terms of new legislation to control the federal government's domestic surveillance program, which includes a highly controversial grant of legal immunity to telecommunications companies that have assisted the program, according to congressional sources.</blockquote>

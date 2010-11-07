@@ -3,9 +3,7 @@ layout: post
 title: "For The SQL Geek In You"
 slug: for-the-sql-geek-in-you
 category: Humor
-published:
-  epoch: 1069282997
-  utc: 2003-11-19T23:03:17
+created: 1069282997
 ---
 
 <ol>

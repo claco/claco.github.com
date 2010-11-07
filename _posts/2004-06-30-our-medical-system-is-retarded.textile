@@ -3,9 +3,7 @@ layout: post
 title: "Our Medical System Is Retarded"
 slug: our-medical-system-is-retarded
 category: WTF
-published:
-  epoch: 1088646762
-  utc: 2004-07-01T01:52:42
+created: 1088646762
 ---
 
 That is the only conclusion I can make after witnessing first hand the type of "new math" they use.

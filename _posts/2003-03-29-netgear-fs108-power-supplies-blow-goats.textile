@@ -3,9 +3,7 @@ layout: post
 title: "NetGear FS108 Power Supplies Blow Goats"
 slug: netgear-fs108-power-supplies-blow-goats
 category: Hardware
-published:
-  epoch: 1048952564
-  utc: 2003-03-29T15:42:44
+created: 1048952564
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Perplexing Slow DNS Issues Expanded"
 slug: perplexing-slow-dns-issues-expanded
 category: WWW
-published:
-  epoch: 1100140378
-  utc: 2004-11-11T02:32:58
+created: 1100140378
 ---
 
 This kind of stuff makes my eyes bleed. For the last 2 week, I've been aggrivated off and on with randomly slow DNS lookups. This was really apparent when my DSL was upgrade to the 3MB package. Everything <em>should</em> be blazingly fast but it just didn't feel right. I hadn't had the time to look at it.

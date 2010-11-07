@@ -3,9 +3,7 @@ layout: post
 title: "Scobleized"
 slug: scobleized
 category: OffTopic
-published:
-  epoch: 1059951097
-  utc: 2003-08-03T22:51:37
+created: 1059951097
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Copious Linkage"
 slug: copious-linkage
 category: Static
-published:
-  epoch: 1073446572
-  utc: 2004-01-07T03:36:12
+created: 1073446572
 ---
 
 <h2>Copious Linkage</h2>

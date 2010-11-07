@@ -3,9 +3,7 @@ layout: post
 title: "Schiavo Continued"
 slug: schiavo-continued
 category: WTF
-published:
-  epoch: 1111412903
-  utc: 2005-03-21T13:48:23
+created: 1111412903
 ---
 
 I think most people on either side are missing two important facts:

@@ -2,11 +2,7 @@
 layout: post
 title: WebFormViewEngine Path Defaults Seem Broken
 slug: webformviewengine-path-defaults-seem-broken
-wordpress_id: 239
-wordpress_url: http://chrislaco.com/?p=239
-published:
-  epoch: 1264046040
-  utc: 2010-01-21T03:54:00
+created: 1264046040
 ---
 This post is about 60% fact and 40% opinion. Not a bad ratio. I've been working a lot in ASP.NET MVC lately building up a set of classes to be reused across multiple sites in the near future. A few of these legos are small view classes that inherit from <code>WebFormViewEngine</code>. They all do small things, like adding additional file search paths, loading views from resources and fetching views from remote storage. Since you can stack view engines in <code>ViewEngines.Engines</code>, you can add and number of these engines together to get the functionality you want on a site per site basis. First engine to claim it can service a view wins. Nothing special there really.
 

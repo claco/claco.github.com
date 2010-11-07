@@ -3,9 +3,7 @@ layout: post
 title: "The Exploding HP Pavilion"
 slug: the-exploding-hp-pavilion
 category: Hardware
-published:
-  epoch: 1060535506
-  utc: 2003-08-10T17:11:46
+created: 1060535506
 ---
 
 <p>

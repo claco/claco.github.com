@@ -3,9 +3,7 @@ layout: post
 title: "Rinse. Lather. Repeat."
 slug: rinse-lather-repeat
 category: OffTopic
-published:
-  epoch: 1059441594
-  utc: 2003-07-29T01:19:54
+created: 1059441594
 ---
 
 <p>

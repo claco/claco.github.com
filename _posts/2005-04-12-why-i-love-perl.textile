@@ -3,9 +3,7 @@ layout: post
 title: "Why I Love Perl"
 slug: why-i-love-perl
 category: Perl
-published:
-  epoch: 1113338291
-  utc: 2005-04-12T20:38:11
+created: 1113338291
 ---
 
 I love Perl because it gets the hell out of my way. If I had a dollar for every language that made this more difficult than it had to be:

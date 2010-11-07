@@ -16,9 +16,7 @@ tags:
   - ruby
   - templates
   - view mvc
-published:
-  epoch: 1218395723
-  utc: 2008-08-10T19:15:23
+created: 1218395723
 ---
 
 		<p>

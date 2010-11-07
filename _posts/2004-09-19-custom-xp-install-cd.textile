@@ -3,9 +3,7 @@ layout: post
 title: "Custom XP Install CD"
 slug: custom-xp-install-cd
 category: MicroShaft
-published:
-  epoch: 1095634604
-  utc: 2004-09-19T22:56:44
+created: 1095634604
 ---
 
 Apparantly I felt the need to waste my weekend creating a custom XP installaton CD.

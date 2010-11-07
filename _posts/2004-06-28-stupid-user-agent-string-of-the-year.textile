@@ -3,9 +3,7 @@ layout: post
 title: "Stupid User-Agent String of the Year"
 slug: stupid-user-agent-string-of-the-year
 category: WTF
-published:
-  epoch: 1088473160
-  utc: 2004-06-29T01:39:20
+created: 1088473160
 ---
 
 <p>This has to be the most retarded user-agent string ever devised:</p>

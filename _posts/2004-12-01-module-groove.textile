@@ -3,9 +3,7 @@ layout: post
 title: "Module Groove"
 slug: module-groove
 category: Perl
-published:
-  epoch: 1101930508
-  utc: 2004-12-01T19:48:28
+created: 1101930508
 ---
 
 I'm glad I decided to take adopt a few <a href="http://search.cpan.org/~claco/">CPAN modules</a>. It's gotten me back into a groove of using source coontrol and <a href="http://svn.apache.org/viewcvs?view=rev&amp;rev=109277">contributing to other projects</a>. More importantly, it's gotten me back in programming mode at home instead of just sit on my ass mode.

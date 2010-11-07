@@ -3,9 +3,7 @@ layout: post
 title: "Jekyll"
 slug: jekyll
 category: TV
-published:
-  epoch: 1188089931
-  utc: 2007-08-26T00:58:51
+created: 1188089931
 ---
 
 The new [to me] series Jekyll on BBC America is pretty cool. They're also going to start playing Torchwood soon as well. Personally, I think most of the BBS scifi shows are better quality, at least form a plot/suspense/action standpoint.

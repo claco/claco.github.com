@@ -3,9 +3,7 @@ layout: post
 title: "Just a Language?"
 slug: just-a-language
 category: Perl
-published:
-  epoch: 1034398665
-  utc: 2002-10-12T04:57:45
+created: 1034398665
 ---
 
 <p>

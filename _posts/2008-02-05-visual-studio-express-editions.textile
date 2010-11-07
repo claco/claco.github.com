@@ -7,9 +7,7 @@ tags:
   - asp.net
   - vb.net
   - visual studio express
-published:
-  epoch: 1202255791
-  utc: 2008-02-05T23:56:31
+created: 1202255791
 ---
 
 I make no attempt to hide the fact that I do .NET by day and Perl by night. I'll probably never do home projects in .NET, and I'll probably never do Perl projects at $work. Life is good like that.

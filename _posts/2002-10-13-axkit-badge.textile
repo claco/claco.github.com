@@ -3,9 +3,7 @@ layout: post
 title: "AxKit Badge"
 slug: axkit-badge
 category: WWW
-published:
-  epoch: 1034540385
-  utc: 2002-10-13T20:19:45
+created: 1034540385
 ---
 
 <p>

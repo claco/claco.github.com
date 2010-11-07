@@ -3,9 +3,7 @@ layout: post
 title: "In The Mood"
 slug: in-the-mood
 category: WWW
-published:
-  epoch: 1035415798
-  utc: 2002-10-23T23:29:58
+created: 1035415798
 ---
 
 <p>

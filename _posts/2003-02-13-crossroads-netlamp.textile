@@ -3,9 +3,7 @@ layout: post
 title: "Crossroads: .NET / LAMP"
 slug: crossroads-netlamp
 category: WWW
-published:
-  epoch: 1045183247
-  utc: 2003-02-14T00:40:47
+created: 1045183247
 ---
 
 <p>

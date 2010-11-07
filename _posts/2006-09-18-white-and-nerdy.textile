@@ -3,9 +3,7 @@ layout: post
 title: "White and Nerdy"
 slug: white-and-nerdy
 category: Humor
-published:
-  epoch: 1158608410
-  utc: 2006-09-18T19:40:10
+created: 1158608410
 ---
 
 <strong>Update:</strong> The YouTube video is already gone at the copyright holders request. I hope that is the record company, and not Weird Al. When will they learn that this is free advertising. Had I not seen the video, I wouldn't have bought the CD. But now that someone is being an asshat, I'm not going to.

@@ -3,9 +3,7 @@ layout: post
 title: "Remember, Most Accidents..."
 slug: remember-most-accidents
 category: WTF
-published:
-  epoch: 1119148806
-  utc: 2005-06-19T02:40:06
+created: 1119148806
 ---
 
 ...happen within 5 miles of the home. Yeah no shit. So we drive 11 hours to Canada, and 11 hours back without event. Sure as shit, we hit a deer 3 exits from home on the freeway. Son of a bitch.

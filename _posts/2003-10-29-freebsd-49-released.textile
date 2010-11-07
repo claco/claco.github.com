@@ -3,9 +3,7 @@ layout: post
 title: "FreeBSD 4.9 Released"
 slug: freebsd-49-released
 category: FreeBSD
-published:
-  epoch: 1067475538
-  utc: 2003-10-30T00:58:58
+created: 1067475538
 ---
 
 <p>

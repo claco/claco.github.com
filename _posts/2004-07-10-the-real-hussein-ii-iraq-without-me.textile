@@ -3,9 +3,7 @@ layout: post
 title: "The Real Hussein II: Iraq Without Me"
 slug: the-real-hussein-ii-iraq-without-me
 category: Humor
-published:
-  epoch: 1089479973
-  utc: 2004-07-10T17:19:33
+created: 1089479973
 ---
 
 This <a href="http://www.frontsteps.com/creations/1001/89/index.php?t=1089479694">spoof</a> on Eminem's "Without Me" is way funny. Hat tip to the reader who passed this along in the comments about the first one.

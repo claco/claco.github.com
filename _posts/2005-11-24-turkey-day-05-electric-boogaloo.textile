@@ -3,9 +3,7 @@ layout: post
 title: "Turkey Day '05: Electric Boogaloo"
 slug: turkey-day-05-electric-boogaloo
 category: OffTopic
-published:
-  epoch: 1132850106
-  utc: 2005-11-24T16:35:06
+created: 1132850106
 ---
 
 It's that time of year again. Turkey comas and dessert deaths, and so much to be thankful for.

@@ -3,9 +3,7 @@ layout: post
 title: "MediaWiki"
 slug: mediawiki
 category: Software
-published:
-  epoch: 1118459742
-  utc: 2005-06-11T03:15:42
+created: 1118459742
 ---
 
 While rebuilding a tinker/blog box at work, I decided to install MediaWiki. THat's the same wiki software that runs Wikipedia. I'm hooked.

@@ -3,9 +3,7 @@ layout: post
 title: "Best Buy Poor Service Continues"
 slug: best-buy-poor-service-continues
 category: WTF
-published:
-  epoch: 1044327919
-  utc: 2003-02-04T03:05:19
+created: 1044327919
 ---
 
 <p>

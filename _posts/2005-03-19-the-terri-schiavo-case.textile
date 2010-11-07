@@ -3,9 +3,7 @@ layout: post
 title: "The Terri Schiavo Case"
 slug: the-terri-schiavo-case
 category: WTF
-published:
-  epoch: 1111273375
-  utc: 2005-03-19T23:02:55
+created: 1111273375
 ---
 
 This case is really aggrivating me as of late. Here's exactly how I feel about it.

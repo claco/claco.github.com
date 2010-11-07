@@ -7,9 +7,7 @@ tags:
   - flickr
   - juploadr
   - photos
-published:
-  epoch: 1187406793
-  utc: 2007-08-18T03:13:13
+created: 1187406793
 ---
 
 <a href="http://juploadr.org/">jUploadr</a> is a must if you have a boatload of photos to get up into Flickr. Drag n Drop, batch apply tags, names, descriptions, assign to sets and upload in the background.

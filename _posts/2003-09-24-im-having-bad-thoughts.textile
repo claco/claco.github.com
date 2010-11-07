@@ -3,9 +3,7 @@ layout: post
 title: "I'm Having Bad Thoughts"
 slug: im-having-bad-thoughts
 category: OffTopic
-published:
-  epoch: 1064451302
-  utc: 2003-09-25T00:55:02
+created: 1064451302
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "I'm Stupid"
 slug: im-stupid
 category: WWW
-published:
-  epoch: 1050632630
-  utc: 2003-04-18T02:23:50
+created: 1050632630
 ---
 
 <p>

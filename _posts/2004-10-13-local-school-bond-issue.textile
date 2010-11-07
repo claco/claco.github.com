@@ -3,9 +3,7 @@ layout: post
 title: "Local School Bond Issue"
 slug: local-school-bond-issue
 category: OffTopic
-published:
-  epoch: 1097716509
-  utc: 2004-10-14T01:15:09
+created: 1097716509
 ---
 
 I'm sure I'll catch some shit for this if it gets published in the local rag, but what the hell. Everyone around me hears me bitch about it, so why not spread my gripe around town.

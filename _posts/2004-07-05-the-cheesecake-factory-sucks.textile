@@ -3,9 +3,7 @@ layout: post
 title: "The Cheesecake Factory Sucks"
 slug: the-cheesecake-factory-sucks
 category: WTF
-published:
-  epoch: 1089077607
-  utc: 2004-07-06T01:33:27
+created: 1089077607
 ---
 
 I'll never eat at <a href="http://www.thecheesecakefactory.com/">The Cheesecake Factory</a> again as long as I live.

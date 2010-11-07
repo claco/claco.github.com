@@ -3,9 +3,7 @@ layout: post
 title: "XHTML 2.0. Ouch."
 slug: xhtml-20-ouch
 category: WTF
-published:
-  epoch: 1042493519
-  utc: 2003-01-13T21:31:59
+created: 1042493519
 ---
 
 <p>

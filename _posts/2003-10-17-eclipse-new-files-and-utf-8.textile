@@ -3,9 +3,7 @@ layout: post
 title: "Eclipse, New Files, and UTF-8"
 slug: eclipse-new-files-and-utf-8
 category: Perl
-published:
-  epoch: 1066437377
-  utc: 2003-10-18T00:36:17
+created: 1066437377
 ---
 
 <p>

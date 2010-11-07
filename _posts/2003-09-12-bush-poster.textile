@@ -3,9 +3,7 @@ layout: post
 title: "Bush Poster"
 slug: bush-poster
 category: Humor
-published:
-  epoch: 1063416446
-  utc: 2003-09-13T01:27:26
+created: 1063416446
 ---
 
 <p>

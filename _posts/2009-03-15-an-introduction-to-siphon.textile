@@ -2,11 +2,7 @@
 layout: post
 title: An Introduction To Siphon
 slug: an-introduction-to-siphon
-wordpress_id: 157
-wordpress_url: http://chrislaco.com/?p=157
-published:
-  epoch: 1237134420
-  utc: 2009-03-15T16:27:00
+created: 1237134420
 ---
 This is the first in a series of posts about Siphon, a set of data monitoring utilities for .NET under the MIT license. The source code can be found on <a title="Siphon on GitHub" href="http://github.com/claco/siphon/">GitHub</a>.
 <h2><!--more-->Introduction</h2>

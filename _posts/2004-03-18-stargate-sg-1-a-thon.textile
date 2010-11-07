@@ -3,9 +3,7 @@ layout: post
 title: "Stargate SG-1-A-Thon"
 slug: stargate-sg-1-a-thon
 category: OffTopic
-published:
-  epoch: 1079655069
-  utc: 2004-03-19T00:11:09
+created: 1079655069
 ---
 
 <p>

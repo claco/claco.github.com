@@ -3,9 +3,7 @@ layout: post
 title: "The Big V-Day"
 slug: the-big-v-day
 category: OffTopic
-published:
-  epoch: 1045412322
-  utc: 2003-02-16T16:18:42
+created: 1045412322
 ---
 
 <p>

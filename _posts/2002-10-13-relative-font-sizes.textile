@@ -3,9 +3,7 @@ layout: post
 title: "Relative Font Sizes"
 slug: relative-font-sizes
 category: WWW
-published:
-  epoch: 1034550261
-  utc: 2002-10-13T23:04:21
+created: 1034550261
 ---
 
 <p>

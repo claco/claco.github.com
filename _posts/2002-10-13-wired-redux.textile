@@ -3,9 +3,7 @@ layout: post
 title: "Wired Redux"
 slug: wired-redux
 category: WWW
-published:
-  epoch: 1034487514
-  utc: 2002-10-13T05:38:34
+created: 1034487514
 ---
 
 <p>

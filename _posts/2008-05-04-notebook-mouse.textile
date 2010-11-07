@@ -7,9 +7,7 @@ tags:
   - logitech
   - mouse
   - v450
-published:
-  epoch: 1209917142
-  utc: 2008-05-04T16:05:42
+created: 1209917142
 ---
 
 I got tired of using a corded mouse on he MBP, so I broke down and bought a <a href="http://www.logitech.com/index.cfm/notebook_products/mice/devices/143">Logitech V450</a>. It's not a bad little mouse. Not too small. Small dongle.

@@ -3,9 +3,7 @@ layout: post
 title: "Beer, Food, and People. Oh My."
 slug: beer-food-and-people-oh-my
 category: OffTopic
-published:
-  epoch: 1050110243
-  utc: 2003-04-12T01:17:23
+created: 1050110243
 ---
 
 <p>

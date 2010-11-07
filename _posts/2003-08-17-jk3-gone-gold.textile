@@ -3,9 +3,7 @@ layout: post
 title: "JK3 Gone Gold"
 slug: jk3-gone-gold
 category: Games
-published:
-  epoch: 1061166896
-  utc: 2003-08-18T00:34:56
+created: 1061166896
 ---
 
 <p>

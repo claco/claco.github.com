@@ -3,9 +3,7 @@ layout: post
 title: "New Math Strikes Again"
 slug: new-math-strikes-again
 category: WTF
-published:
-  epoch: 1051484362
-  utc: 2003-04-27T22:59:22
+created: 1051484362
 ---
 
 <p>

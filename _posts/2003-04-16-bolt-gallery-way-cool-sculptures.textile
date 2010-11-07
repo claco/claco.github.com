@@ -3,9 +3,7 @@ layout: post
 title: "Bolt Gallery: Way Cool Sculptures"
 slug: bolt-gallery-way-cool-sculptures
 category: Hardware
-published:
-  epoch: 1050549191
-  utc: 2003-04-17T03:13:11
+created: 1050549191
 ---
 
 <p>

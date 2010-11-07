@@ -3,9 +3,7 @@ layout: post
 title: "I Love My Job"
 slug: i-love-my-job
 category: WTF
-published:
-  epoch: 1093767119
-  utc: 2004-08-29T08:11:59
+created: 1093767119
 ---
 
 No really, I do. It's damn good job. And I understand and accept that from time to time, things go wrong and I will get called at 4 in the morning. That's part of the job.

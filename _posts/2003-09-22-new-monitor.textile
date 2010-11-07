@@ -3,9 +3,7 @@ layout: post
 title: "New Monitor?"
 slug: new-monitor
 category: Hardware
-published:
-  epoch: 1064271164
-  utc: 2003-09-22T22:52:44
+created: 1064271164
 ---
 
 <p>

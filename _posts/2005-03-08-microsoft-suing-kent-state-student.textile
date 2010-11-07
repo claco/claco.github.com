@@ -3,9 +3,7 @@ layout: post
 title: "Microsoft Suing Kent State Student"
 slug: microsoft-suing-kent-state-student
 category: MicroShaft
-published:
-  epoch: 1110288700
-  utc: 2005-03-08T13:31:40
+created: 1110288700
 ---
 
 I heard this on the local readio this morning. Apparently Microsoft is suing a Kent State student for buying the "student discounted" software and reselling it on Ebay.

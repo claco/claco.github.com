@@ -3,9 +3,7 @@ layout: post
 title: "Back To Work"
 slug: back-to-work
 category: OffTopic
-published:
-  epoch: 1077582656
-  utc: 2004-02-24T00:30:56
+created: 1077582656
 ---
 
 <p>

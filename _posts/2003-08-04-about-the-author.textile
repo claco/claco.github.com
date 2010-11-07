@@ -3,9 +3,7 @@ layout: post
 title: "About The Author"
 slug: about-the-author
 category: Static
-published:
-  epoch: 1059971516
-  utc: 2003-08-04T04:31:56
+created: 1059971516
 ---
 
 <h2>Who's on first?</h2>

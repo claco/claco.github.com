@@ -3,9 +3,7 @@ layout: post
 title: "New Canon PowerShot A80"
 slug: new-canon-powershot-a80
 category: OffTopic
-published:
-  epoch: 1090341662
-  utc: 2004-07-20T16:41:02
+created: 1090341662
 ---
 
 Ok, I pulled the trigger on this problem and placed an order on Amazon for:

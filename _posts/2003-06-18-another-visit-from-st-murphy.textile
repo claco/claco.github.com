@@ -3,9 +3,7 @@ layout: post
 title: "Another Visit From St. Murphy"
 slug: another-visit-from-st-murphy
 category: WTF
-published:
-  epoch: 1055912692
-  utc: 2003-06-18T05:04:52
+created: 1055912692
 ---
 
 <p>

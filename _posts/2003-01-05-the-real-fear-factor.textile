@@ -3,9 +3,7 @@ layout: post
 title: "The Real Fear Factor"
 slug: the-real-fear-factor
 category: OffTopic
-published:
-  epoch: 1041828620
-  utc: 2003-01-06T04:50:20
+created: 1041828620
 ---
 
 <p>

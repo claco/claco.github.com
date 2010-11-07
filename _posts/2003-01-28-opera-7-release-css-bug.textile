@@ -3,9 +3,7 @@ layout: post
 title: "Opera 7 Release: CSS Bug?"
 slug: opera-7-release-css-bug
 category: WWW
-published:
-  epoch: 1043766855
-  utc: 2003-01-28T15:14:15
+created: 1043766855
 ---
 
 <p>

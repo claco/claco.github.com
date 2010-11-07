@@ -3,9 +3,7 @@ layout: post
 title: "Things Illegal In Massachusetts"
 slug: things-illegal-in-massachusetts
 category: OffTopic
-published:
-  epoch: 1044818047
-  utc: 2003-02-09T19:14:07
+created: 1044818047
 ---
 
 <p>

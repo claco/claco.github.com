@@ -3,9 +3,7 @@ layout: post
 title: "And The Winner Is"
 slug: and-the-winner-is
 category: OffTopic
-published:
-  epoch: 1081034746
-  utc: 2004-04-03T23:25:46
+created: 1081034746
 ---
 
 <p>

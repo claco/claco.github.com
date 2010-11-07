@@ -3,9 +3,7 @@ layout: post
 title: "Things Not To Do: Part I."
 slug: things-not-to-do-part-i
 category: MicroShaft
-published:
-  epoch: 1034639078
-  utc: 2002-10-14T23:44:38
+created: 1034639078
 ---
 
 <p>

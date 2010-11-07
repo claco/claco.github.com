@@ -3,9 +3,7 @@ layout: post
 title: "FreeBSD 4.7-RELEASE"
 slug: freebsd-47-release
 category: FreeBSD
-published:
-  epoch: 1034380805
-  utc: 2002-10-12T00:00:05
+created: 1034380805
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Underworld"
 slug: underworld
 category: Movies
-published:
-  epoch: 1064090718
-  utc: 2003-09-20T20:45:18
+created: 1064090718
 ---
 
 <p>

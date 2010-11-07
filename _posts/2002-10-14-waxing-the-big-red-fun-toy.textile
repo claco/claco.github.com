@@ -3,9 +3,7 @@ layout: post
 title: "Waxing The Big Red Fun Toy"
 slug: waxing-the-big-red-fun-toy
 category: OffTopic
-published:
-  epoch: 1034637266
-  utc: 2002-10-14T23:14:26
+created: 1034637266
 ---
 
 <p>

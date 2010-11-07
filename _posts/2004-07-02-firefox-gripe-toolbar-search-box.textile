@@ -3,9 +3,7 @@ layout: post
 title: "Firefox Gripe: Toolbar Search Box"
 slug: firefox-gripe-toolbar-search-box
 category: WWW
-published:
-  epoch: 1088810284
-  utc: 2004-07-02T23:18:04
+created: 1088810284
 ---
 
 This is about my only realy gripe with Firefox. I always wish I could change the size and/or position of the toolbar search box.

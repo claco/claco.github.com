@@ -3,9 +3,7 @@ layout: post
 title: "Perl 5.8.3 On Win32"
 slug: perl-583-on-win32
 category: Perl
-published:
-  epoch: 1078458688
-  utc: 2004-03-05T03:51:28
+created: 1078458688
 ---
 
 <p>

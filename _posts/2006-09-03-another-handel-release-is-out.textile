@@ -5,9 +5,7 @@ slug: another-handel-release-is-out
 category: Software
 tags:
   - handel
-published:
-  epoch: 1157332758
-  utc: 2006-09-04T01:19:18
+created: 1157332758
 ---
 
 I managed to get another Handel dev release out the door. At least the Catalyst helper code is updated and running. That should take care of a few emails every now and then about getting them to work.

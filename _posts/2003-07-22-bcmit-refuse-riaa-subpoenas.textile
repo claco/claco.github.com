@@ -3,9 +3,7 @@ layout: post
 title: "BC/MIT Refuse RIAA Subpoenas"
 slug: bcmit-refuse-riaa-subpoenas
 category: WTF
-published:
-  epoch: 1058916983
-  utc: 2003-07-22T23:36:23
+created: 1058916983
 ---
 
 <p>

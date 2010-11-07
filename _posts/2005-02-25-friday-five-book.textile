@@ -3,9 +3,7 @@ layout: post
 title: "Friday Five Book"
 slug: friday-five-book
 category: OffTopic
-published:
-  epoch: 1109338640
-  utc: 2005-02-25T13:37:20
+created: 1109338640
 ---
 
 Ever have one of those ideas that just popped into your head at 6am and you just can't shake it? I had one of those this morning. The scary part is, I think it could be done by a non-writer like me given time.

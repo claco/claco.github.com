@@ -3,9 +3,7 @@ layout: post
 title: "Today's Agenda"
 slug: todays-agenda
 category: OffTopic
-published:
-  epoch: 1041783623
-  utc: 2003-01-05T16:20:23
+created: 1041783623
 ---
 
 <p>

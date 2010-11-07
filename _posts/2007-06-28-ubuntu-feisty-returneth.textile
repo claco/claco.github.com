@@ -3,9 +3,7 @@ layout: post
 title: "Ubuntu Feisty Returneth"
 slug: ubuntu-feisty-returneth
 category: Linux
-published:
-  epoch: 1183071267
-  utc: 2007-06-28T22:54:27
+created: 1183071267
 ---
 
 After a drive crash torched my XP/Ubuntu install about 5 months ago, I haven't spent much time looking at Ubuntu Feisty. I just finished installing Feisty back on the laptop. I must say, it's much better than Badger.

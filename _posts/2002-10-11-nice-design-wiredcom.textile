@@ -3,9 +3,7 @@ layout: post
 title: "Nice Design: Wired.com"
 slug: nice-design-wiredcom
 category: WWW
-published:
-  epoch: 1034372290
-  utc: 2002-10-11T21:38:10
+created: 1034372290
 ---
 
 <p>

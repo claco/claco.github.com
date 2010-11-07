@@ -3,9 +3,7 @@ layout: post
 title: "Makefile.PL To Build.PL Problems"
 slug: makefilepl-to-buildpl-problems
 category: Perl
-published:
-  epoch: 1113531426
-  utc: 2005-04-15T02:17:06
+created: 1113531426
 ---
 
 After <a href="http://www.nntp.perl.org/group/perl.qa/3889">starting</a> a big crapstorm on the <a href="http://www.nntp.perl.org/group/perl.qa">perl-qa list</a> about <samp>META.yml</samp> generation in <samp>ExtUtils::MakeMaker</samp> vs. <samp>Module::Build</samp>, and Schwerns following <a href="http://www.nntp.perl.org/group/perl.qa/3914">rant</a> about <samp>Module::Build</samp>, I decided to eat the dog food I've created and convert to using <samp>Module::Build</samp> and <samp>Build.PL</samp>.

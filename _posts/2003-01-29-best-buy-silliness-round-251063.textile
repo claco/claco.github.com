@@ -3,9 +3,7 @@ layout: post
 title: "Best Buy Silliness: Round 2.5.1063"
 slug: best-buy-silliness-round-251063
 category: WTF
-published:
-  epoch: 1043876653
-  utc: 2003-01-29T21:44:13
+created: 1043876653
 ---
 
 <p>

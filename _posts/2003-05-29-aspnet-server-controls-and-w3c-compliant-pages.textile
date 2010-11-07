@@ -3,9 +3,7 @@ layout: post
 title: "ASP.NET, Server Controls, and W3C Compliant Pages"
 slug: aspnet-server-controls-and-w3c-compliant-pages
 category: MicroShaft
-published:
-  epoch: 1054248173
-  utc: 2003-05-29T22:42:53
+created: 1054248173
 ---
 
 <p>

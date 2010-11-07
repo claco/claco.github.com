@@ -3,9 +3,7 @@ layout: post
 title: "Hey Fuckwit!"
 slug: hey-fuckwit
 category: Humor
-published:
-  epoch: 1064367089
-  utc: 2003-09-24T01:31:29
+created: 1064367089
 ---
 
 <p>

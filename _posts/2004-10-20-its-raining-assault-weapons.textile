@@ -3,9 +3,7 @@ layout: post
 title: "It's Raining Assault Weapons!"
 slug: its-raining-assault-weapons
 category: WTF
-published:
-  epoch: 1098327199
-  utc: 2004-10-21T02:53:19
+created: 1098327199
 ---
 
 I'm not a gun owner and probably never will be, but I'm all for people having them. While talking election choices with a coworker, he educated me on how the asault weapons ban was useless and how all the hype about W letting it expire is bullshit.

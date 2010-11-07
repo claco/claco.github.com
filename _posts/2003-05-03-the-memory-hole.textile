@@ -3,9 +3,7 @@ layout: post
 title: "The Memory Hole"
 slug: the-memory-hole
 category: OffTopic
-published:
-  epoch: 1051958420
-  utc: 2003-05-03T10:40:20
+created: 1051958420
 ---
 
 <p>

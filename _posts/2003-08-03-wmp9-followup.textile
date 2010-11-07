@@ -3,9 +3,7 @@ layout: post
 title: "WMP9 Followup"
 slug: wmp9-followup
 category: Music
-published:
-  epoch: 1059951919
-  utc: 2003-08-03T23:05:19
+created: 1059951919
 ---
 
 <p>

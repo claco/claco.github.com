@@ -3,9 +3,7 @@ layout: post
 title: "I'm Stupid Redux"
 slug: im-stupid-redux
 category: WTF
-published:
-  epoch: 1050822039
-  utc: 2003-04-20T07:00:39
+created: 1050822039
 ---
 
 <p>

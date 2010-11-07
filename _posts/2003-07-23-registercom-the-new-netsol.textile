@@ -3,9 +3,7 @@ layout: post
 title: "Register.com: The New NetSol"
 slug: registercom-the-new-netsol
 category: WTF
-published:
-  epoch: 1058932960
-  utc: 2003-07-23T04:02:40
+created: 1058932960
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Another Redesign?"
 slug: another-redesign
 category: WWW
-published:
-  epoch: 1138408420
-  utc: 2006-01-28T00:33:40
+created: 1138408420
 ---
 
 Maybe. :-) After reinstalling all my crap on the thumbdrive, I decided to change the stylesheet in Sage. After tweaking the <a href="http://sage.mozdev.org/styles/">style from Jon Hicks</a>, I think I like it's minimalist way enough that I may make a redeisng using it.

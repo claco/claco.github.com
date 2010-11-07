@@ -3,9 +3,7 @@ layout: post
 title: "A Quick Panorama"
 slug: a-quick-panorama
 category: OffTopic
-published:
-  epoch: 1188786740
-  utc: 2007-09-03T02:32:20
+created: 1188786740
 ---
 
 I forgot I took 4 pics in panorama mode. I quit run through AutoStitch yields a pretty decent result.

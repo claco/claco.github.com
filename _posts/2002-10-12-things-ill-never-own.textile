@@ -3,9 +3,7 @@ layout: post
 title: "Things I'll Never Own"
 slug: things-ill-never-own
 category: OffTopic
-published:
-  epoch: 1034455791
-  utc: 2002-10-12T20:49:51
+created: 1034455791
 ---
 
 <p>

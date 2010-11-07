@@ -3,9 +3,7 @@ layout: post
 title: "Lost Ohio Votes?"
 slug: lost-ohio-votes
 category: WTF
-published:
-  epoch: 1099530620
-  utc: 2004-11-04T01:10:20
+created: 1099530620
 ---
 
 It's things like this that make people wonder. Mom just told me that the local newspaper said one of the recent tax issues was passed with xxx for and 0 against. Zero against. She said she knows at least five people who voted against it.

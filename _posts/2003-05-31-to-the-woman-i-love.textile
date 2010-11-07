@@ -3,9 +3,7 @@ layout: post
 title: "To The Woman I Love"
 slug: to-the-woman-i-love
 category: OffTopic
-published:
-  epoch: 1054399545
-  utc: 2003-05-31T16:45:45
+created: 1054399545
 ---
 
 <blockquote>

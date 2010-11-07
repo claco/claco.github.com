@@ -5,9 +5,7 @@ slug: i-miss-drumming
 category: Music
 tags:
   - drums
-published:
-  epoch: 1201916128
-  utc: 2008-02-02T01:35:28
+created: 1201916128
 ---
 
 As my co-workers can testify to, my feet and hands never stop drumming on the desk between coding sessions, especially when the MP3 player is running. I really need to get back into it, but I suck so bad now that it's depressing compared to high school. I see it in my head. I can made my hands do it. But try it on the drumset, and all hell breaks loose. :-/

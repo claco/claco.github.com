@@ -3,9 +3,7 @@ layout: post
 title: "Addicted To Frank's RedHot"
 slug: addicted-to-franks-redhot
 category: OffTopic
-published:
-  epoch: 1062250574
-  utc: 2003-08-30T13:36:14
+created: 1062250574
 ---
 
 <p>

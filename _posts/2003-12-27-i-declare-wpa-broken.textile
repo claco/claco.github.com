@@ -3,9 +3,7 @@ layout: post
 title: "I Declare WPA Broken"
 slug: i-declare-wpa-broken
 category: Hardware
-published:
-  epoch: 1072569827
-  utc: 2003-12-28T00:03:47
+created: 1072569827
 ---
 
 <p>

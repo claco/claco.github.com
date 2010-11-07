@@ -3,9 +3,7 @@ layout: post
 title: "Yet Another Which Character R U"
 slug: yet-another-which-character-r-u
 category: OffTopic
-published:
-  epoch: 1060818084
-  utc: 2003-08-13T23:41:24
+created: 1060818084
 ---
 
 <p class="center"><a href="http://www.tk421.net/character/"><img src="http://www.tk421.net/character/yoda.jpg" width="199" height="313" alt="Which Fantasy/SciFi Character Are You?" /></a></p>

@@ -3,9 +3,7 @@ layout: post
 title: "MT 2.5 In The House"
 slug: mt25-in-the-house
 category: OffTopic
-published:
-  epoch: 1034129038
-  utc: 2002-10-09T02:03:58
+created: 1034129038
 ---
 
 <p>

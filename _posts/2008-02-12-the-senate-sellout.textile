@@ -3,9 +3,7 @@ layout: post
 title: "The Senate Sellout"
 slug: the-senate-sellout
 category: WTF
-published:
-  epoch: 1202867929
-  utc: 2008-02-13T01:58:49
+created: 1202867929
 ---
 
 Today the Senate sold us out and approved a new FISA bill with immunity for the telcos. Apparently, giving the telecom industry immunity for breaking the law, at the request of the government, is more important than our rights to not be spied on. Let's be clear here. FISA worked. The President chose to ignore the law and the like of people like ATT chose to break the law. At least some people understood not breaking the law was a smart thing, like Qwest, who told the government to go pound salt. Let's not forget that the minute the government stopped paying its bills, ATT dropped their taps without nary a hint of hesitation.

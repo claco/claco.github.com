@@ -3,9 +3,7 @@ layout: post
 title: "Large Cycles"
 slug: large-cycles
 category: OffTopic
-published:
-  epoch: 1060312577
-  utc: 2003-08-08T03:16:17
+created: 1060312577
 ---
 
 <p>

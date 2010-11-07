@@ -3,9 +3,7 @@ layout: post
 title: "P4C800-D<sup>2</sup>"
 slug: p4c800-d2
 category: Hardware
-published:
-  epoch: 1174954868
-  utc: 2007-03-27T00:21:08
+created: 1174954868
 ---
 
 <em>Twin Powers Activate. Form Of A P4C800-D Motherboard.</em>

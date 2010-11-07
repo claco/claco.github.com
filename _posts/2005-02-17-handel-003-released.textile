@@ -3,9 +3,7 @@ layout: post
 title: "Handel 0.03 Released"
 slug: handel-003-released
 category: Perl
-published:
-  epoch: 1108653146
-  utc: 2005-02-17T15:12:26
+created: 1108653146
 ---
 
 I finally got a few release versions of <a href="http://search.cpan.org/search?query=Handel&amp;mode=distribution">Handel</a> out the door complete with an assload of tests including the XSP taglib tests. I also included a small cart demo in AxKit/XSP. It's not feature complete, but it's start.

@@ -3,9 +3,7 @@ layout: post
 title: "New Camera Pictures"
 slug: new-camera-pictures
 category: OffTopic
-published:
-  epoch: 1090464293
-  utc: 2004-07-22T02:44:53
+created: 1090464293
 ---
 
 Lord knows how long it's going to take me to figure out all the settings on this camera. The fact that I know jack squat about the art of photography isn't helping. :-)

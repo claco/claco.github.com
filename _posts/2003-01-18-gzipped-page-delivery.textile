@@ -3,9 +3,7 @@ layout: post
 title: "Gzipped Page Delivery"
 slug: gzipped-page-delivery
 category: WWW
-published:
-  epoch: 1042922348
-  utc: 2003-01-18T20:39:08
+created: 1042922348
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Dead Sequels"
 slug: dead-sequels
 category: Movies
-published:
-  epoch: 1062474211
-  utc: 2003-09-02T03:43:31
+created: 1062474211
 ---
 
 <p>

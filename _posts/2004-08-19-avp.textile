@@ -3,9 +3,7 @@ layout: post
 title: "AVP"
 slug: avp
 category: Movies
-published:
-  epoch: 1092966698
-  utc: 2004-08-20T01:51:38
+created: 1092966698
 ---
 
 I went and saw ALien vs. Predator this evening. It certainly could have been worse considering the 4 ALien movies and 2 Predator movies. But it wasn't all that bad.

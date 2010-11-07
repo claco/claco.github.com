@@ -3,9 +3,7 @@ layout: post
 title: "VALVe, Half Life 2, and Steam"
 slug: valve-half-life-2-and-steam
 category: Games
-published:
-  epoch: 1100718441
-  utc: 2004-11-17T19:07:21
+created: 1100718441
 ---
 
 So we all went to the mall (or Mizall) yesterday for lunch. THey just happen to have a GameStop right by the food court, so I snagged a copy of Half-Life 2: Collectors Edition; hereafter known as HL2CE. HL2CE comes on DVD and contains HL2, HL1, HL1 Counter Strike, a HL2 T-shirt, and a mini Prima strategy guide.

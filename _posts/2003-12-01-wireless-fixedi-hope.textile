@@ -3,9 +3,7 @@ layout: post
 title: "Wireless Fixed...I Hope"
 slug: wireless-fixedi-hope
 category: WTF
-published:
-  epoch: 1070334450
-  utc: 2003-12-02T03:07:30
+created: 1070334450
 ---
 
 <p>

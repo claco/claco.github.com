@@ -3,9 +3,7 @@ layout: post
 title: "Rain == Ohio"
 slug: rain-ohio
 category: WTF
-published:
-  epoch: 1060458091
-  utc: 2003-08-09T19:41:31
+created: 1060458091
 ---
 
 <p>

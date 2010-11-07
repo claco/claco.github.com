@@ -2,11 +2,7 @@
 layout: post
 title: "Windows 7: What Vista Should Have Been"
 slug: windows-7-what-vista-should-have-been
-wordpress_id: 65
-wordpress_url: http://chrislaco.com/?p=65
-published:
-  epoch: 1231723440
-  utc: 2009-01-12T01:24:00
+created: 1231723440
 ---
 Last night I downloaded Windows 7 Beta and installed it under Parallels 4 on my 17" MacBook Pro. It is without a doubt, better and faster than my Vista install and performs the same as, if not better than my XP install. Totall install took less than 15 minutes.
 <!--more-->

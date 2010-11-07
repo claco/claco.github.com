@@ -3,9 +3,7 @@ layout: post
 title: "Carnivale"
 slug: carnivale
 category: OffTopic
-published:
-  epoch: 1063678209
-  utc: 2003-09-16T02:10:09
+created: 1063678209
 ---
 
 <p>

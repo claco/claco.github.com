@@ -3,9 +3,7 @@ layout: post
 title: "Raise Taxes: No Thanks"
 slug: raise-taxes-no-thanks
 category: WTF
-published:
-  epoch: 1045971143
-  utc: 2003-02-23T03:32:23
+created: 1045971143
 ---
 
 <p>

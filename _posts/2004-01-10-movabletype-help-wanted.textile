@@ -3,9 +3,7 @@ layout: post
 title: "MovableType Help Wanted"
 slug: movabletype-help-wanted
 category: WWW
-published:
-  epoch: 1073788168
-  utc: 2004-01-11T02:29:28
+created: 1073788168
 ---
 
 <p>

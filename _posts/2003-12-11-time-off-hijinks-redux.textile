@@ -3,9 +3,7 @@ layout: post
 title: "Time Off Hijinks Redux"
 slug: time-off-hijinks-redux
 category: OffTopic
-published:
-  epoch: 1071167034
-  utc: 2003-12-11T18:23:54
+created: 1071167034
 ---
 
 <p>

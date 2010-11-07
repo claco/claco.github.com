@@ -3,9 +3,7 @@ layout: post
 title: "Valid XHTML/CSS Links"
 slug: valid-xhtmlcss-links
 category: WWW
-published:
-  epoch: 1034655283
-  utc: 2002-10-15T04:14:43
+created: 1034655283
 ---
 
 <p>

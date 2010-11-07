@@ -3,9 +3,7 @@ layout: post
 title: "New Tunes. New Attitude?"
 slug: new-tunes-new-attitude
 category: Music
-published:
-  epoch: 1070665514
-  utc: 2003-12-05T23:05:14
+created: 1070665514
 ---
 
 <p>

@@ -8,9 +8,7 @@ tags:
   - laptop
   - macbook
   - parallels
-published:
-  epoch: 1157823387
-  utc: 2006-09-09T17:36:27
+created: 1157823387
 ---
 
 Now that I have a grant coming my way [assuming I get my ass moving on the project], I plan on getting a MacBook. THe main goal is to use Parallels so I can run XP, OSX, Ubuntu, and FeeeBSD and do lots of testing on all the different platforms without rebooting.

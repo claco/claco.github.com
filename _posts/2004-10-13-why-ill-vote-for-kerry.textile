@@ -3,9 +3,7 @@ layout: post
 title: "Why I'll Vote For Kerry"
 slug: why-ill-vote-for-kerry
 category: OffTopic
-published:
-  epoch: 1097719108
-  utc: 2004-10-14T01:58:28
+created: 1097719108
 ---
 
 First, there's this [paraphrased] quote: "Why should you get worse health care than Congress? You're health care is just as important as mine." Right on.

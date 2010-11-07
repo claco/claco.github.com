@@ -3,9 +3,7 @@ layout: post
 title: "Del.icio.us For Tags Fixed"
 slug: delicious-for-tags-fixed
 category: WWW
-published:
-  epoch: 1138398061
-  utc: 2006-01-27T21:41:01
+created: 1138398061
 ---
 
 It looks like the Del.icio.us <samp>for:<samp> tags and the <samp>/for</samp> stuff is working again. People tag things for me and they show up right away.

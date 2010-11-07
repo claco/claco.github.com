@@ -3,9 +3,7 @@ layout: post
 title: "Change: She is a `comin."
 slug: change-she-is-a-comin
 category: WWW
-published:
-  epoch: 1042161955
-  utc: 2003-01-10T01:25:55
+created: 1042161955
 ---
 
 <p>

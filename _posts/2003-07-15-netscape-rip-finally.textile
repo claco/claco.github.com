@@ -3,9 +3,7 @@ layout: post
 title: "Netscape: R.I.P. Finally."
 slug: netscape-rip-finally
 category: WWW
-published:
-  epoch: 1058316853
-  utc: 2003-07-16T00:54:13
+created: 1058316853
 ---
 
 <p><a href="http://mozillazine.org/talkback.html?article=3422">"He's Dead Jim."</a>

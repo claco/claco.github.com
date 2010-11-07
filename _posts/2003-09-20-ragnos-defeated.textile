@@ -3,9 +3,7 @@ layout: post
 title: "Ragnos Defeated"
 slug: ragnos-defeated
 category: Games
-published:
-  epoch: 1064089971
-  utc: 2003-09-20T20:32:51
+created: 1064089971
 ---
 
 <p>

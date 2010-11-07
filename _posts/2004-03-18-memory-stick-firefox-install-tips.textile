@@ -3,9 +3,7 @@ layout: post
 title: "Memory Stick Firefox Install Tips"
 slug: memory-stick-firefox-install-tips
 category: Software
-published:
-  epoch: 1079655561
-  utc: 2004-03-19T00:19:21
+created: 1079655561
 ---
 
 <p>

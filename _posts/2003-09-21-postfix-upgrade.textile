@@ -3,9 +3,7 @@ layout: post
 title: "Postfix Upgrade"
 slug: postfix-upgrade
 category: FreeBSD
-published:
-  epoch: 1064175074
-  utc: 2003-09-21T20:11:14
+created: 1064175074
 ---
 
 <p>

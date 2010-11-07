@@ -3,9 +3,7 @@ layout: post
 title: "E3 Earwig"
 slug: e3-earwig
 category: Humor
-published:
-  epoch: 1115730441
-  utc: 2005-05-10T13:07:21
+created: 1115730441
 ---
 
 So all damn morning, I've had the theme song from the early '80s series <a href="http://www.tvtome.com/tvtome/servlet/ShowMainServlet/showid-586/">The Greatest American Hero</a> running around in my head. Over, and over, and over, and over.

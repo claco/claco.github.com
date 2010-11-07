@@ -3,9 +3,7 @@ layout: post
 title: "It Is Time"
 slug: it-is-time
 category: WTF
-published:
-  epoch: 1041208205
-  utc: 2002-12-30T00:30:05
+created: 1041208205
 ---
 
 <p>

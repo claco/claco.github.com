@@ -3,9 +3,7 @@ layout: post
 title: "Man Arrested For Peace T-Shirt"
 slug: man-arrested-for-peace-t-shirt
 category: WTF
-published:
-  epoch: 1046911780
-  utc: 2003-03-06T00:49:40
+created: 1046911780
 ---
 
 <p>

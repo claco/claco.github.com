@@ -3,9 +3,7 @@ layout: post
 title: "Splinter Cell 3"
 slug: splinter-cell-3
 category: Games
-published:
-  epoch: 1112560073
-  utc: 2005-04-03T20:27:53
+created: 1112560073
 ---
 
 <img src="/images/games/sc3banner.gif" alt="SC3 Banner" />

@@ -3,9 +3,7 @@ layout: post
 title: "$happy-&gt;new( year =&gt; 2003 );"
 slug: happy-new-year-2003
 category: OffTopic
-published:
-  epoch: 1041401663
-  utc: 2003-01-01T06:14:23
+created: 1041401663
 ---
 
 <p>

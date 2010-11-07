@@ -6,9 +6,7 @@ category: OffTopic
 tags:
   - laws
   - ohio
-published:
-  epoch: 1157380376
-  utc: 2006-09-04T14:32:56
+created: 1157380376
 ---
 
 I like Ohio. I really do. No volcanoes, no hurricanes. Not to many poisoness animals. But when I see things <a href="http://www.toledoblade.com/apps/pbcs.dll/article?AID=/20060829/NEWS24/608290360/-1/NEWS">like this</a>, I begin to wonder what idiots are running this place:

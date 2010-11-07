@@ -3,9 +3,7 @@ layout: post
 title: "Ubuntu Breezy Desktop"
 slug: ubuntu-breezy-desktop
 category: Linux
-published:
-  epoch: 1129254527
-  utc: 2005-10-14T01:48:47
+created: 1129254527
 ---
 
 Since Ubuntu 5.10 Breezy Badger came out today, I decided to wipe my tinkered-up (technical term) 5.02 Hoary Hedgehog install and do a fresh install of Breezy. As usual, the only thing I had to fight was the wireless pcmcia card.

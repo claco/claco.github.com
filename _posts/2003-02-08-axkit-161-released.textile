@@ -3,9 +3,7 @@ layout: post
 title: "AxKit 1.6.1 Released"
 slug: axkit-161-released
 category: Perl
-published:
-  epoch: 1044724751
-  utc: 2003-02-08T17:19:11
+created: 1044724751
 ---
 
 <p>

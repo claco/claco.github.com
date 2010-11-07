@@ -3,9 +3,7 @@ layout: post
 title: "Marry A SysAdmin?"
 slug: marry-a-sysadmin
 category: Humor
-published:
-  epoch: 1033860093
-  utc: 2002-10-05T23:21:33
+created: 1033860093
 ---
 
 <h4>Who want's to marry a sysadmin?</h4>

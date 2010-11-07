@@ -3,9 +3,7 @@ layout: post
 title: "Current Projects"
 slug: current-projects
 category: Static
-published:
-  epoch: 1059969802
-  utc: 2003-08-04T04:03:22
+created: 1059969802
 ---
 
 <h2>If I had a hammer...</h2>

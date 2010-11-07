@@ -3,9 +3,7 @@ layout: post
 title: "Comments Are Enabled Again"
 slug: comments-are-enabled-again
 category: OffTopic
-published:
-  epoch: 1110685371
-  utc: 2005-03-13T03:42:51
+created: 1110685371
 ---
 
 Comments are enabled once again now that the site is back in some sort of working order. You don't have to be a TypeKey user either.

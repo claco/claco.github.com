@@ -3,9 +3,7 @@ layout: post
 title: "New Lawn Mower"
 slug: new-lawn-mower
 category: Hardware
-published:
-  epoch: 1084111246
-  utc: 2004-05-09T14:00:46
+created: 1084111246
 ---
 
 <p>

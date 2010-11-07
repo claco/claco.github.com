@@ -3,9 +3,7 @@ layout: post
 title: "Orchestra Night: Carmina Burana"
 slug: orchestra-night-carmina-burana
 category: OffTopic
-published:
-  epoch: 1057507029
-  utc: 2003-07-06T15:57:09
+created: 1057507029
 ---
 
 <p>

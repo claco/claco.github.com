@@ -3,9 +3,7 @@ layout: post
 title: "New Furniture!"
 slug: new-furniture
 category: OffTopic
-published:
-  epoch: 1095811537
-  utc: 2004-09-22T00:05:37
+created: 1095811537
 ---
 
 Our new furniture finally arrived!

@@ -3,9 +3,7 @@ layout: post
 title: "Network In a VM, In a Network, In a VM"
 slug: network-in-a-vm-in-a-network-in-a-vm
 category: Networking
-published:
-  epoch: 1202580499
-  utc: 2008-02-09T18:08:19
+created: 1202580499
 ---
 
 Things that make my brain hurt. I can't actually believe this works.

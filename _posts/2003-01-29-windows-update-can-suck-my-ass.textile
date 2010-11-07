@@ -3,9 +3,7 @@ layout: post
 title: "Windows Update Can Suck My Ass"
 slug: windows-update-can-suck-my-ass
 category: MicroShaft
-published:
-  epoch: 1043876227
-  utc: 2003-01-29T21:37:07
+created: 1043876227
 ---
 
 <p>

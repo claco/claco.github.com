@@ -3,9 +3,7 @@ layout: post
 title: "Road Runner Can Kiss My Ass"
 slug: road-runner-can-kiss-my-ass
 category: WTF
-published:
-  epoch: 1061601552
-  utc: 2003-08-23T01:19:12
+created: 1061601552
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Moo"
 slug: moo
 category: OffTopic
-published:
-  epoch: 1041187611
-  utc: 2002-12-29T18:46:51
+created: 1041187611
 ---
 
 <p>

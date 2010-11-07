@@ -2,11 +2,7 @@
 layout: post
 title: Clerbtime & Moving Forward
 slug: clerbtime-moving-forward
-wordpress_id: 254
-wordpress_url: http://chrislaco.com/?p=254
-published:
-  epoch: 1277433540
-  utc: 2010-06-25T02:39:00
+created: 1277433540
 ---
 
 Had another great time at the Clerb "south" Meetup tonight in Akron hosted by Blue Frog Gaming. Always nice to see more locals at every new meetup. Beers and such afterwords doesn't hurt either.

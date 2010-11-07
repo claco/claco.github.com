@@ -3,9 +3,7 @@ layout: post
 title: "Geek Porn"
 slug: geek-porn
 category: Hardware
-published:
-  epoch: 1034036015
-  utc: 2002-10-08T00:13:35
+created: 1034036015
 ---
 
 <p>

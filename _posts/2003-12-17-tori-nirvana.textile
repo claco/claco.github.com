@@ -3,9 +3,7 @@ layout: post
 title: "Tori Nirvana"
 slug: tori-nirvana
 category: Movies
-published:
-  epoch: 1071701633
-  utc: 2003-12-17T22:53:53
+created: 1071701633
 ---
 
 <p>

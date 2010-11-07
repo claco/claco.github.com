@@ -3,9 +3,7 @@ layout: post
 title: "Revenge Of The Sith"
 slug: revenge-of-the-sith
 category: Games
-published:
-  epoch: 1114989725
-  utc: 2005-05-01T23:22:05
+created: 1114989725
 ---
 
 I'm kind of pissed that the Revenge Of The Sith game isn't getting a PC version. LucasArts is sadly lacking when it comes to a Jedi-based First Person Shooter. 

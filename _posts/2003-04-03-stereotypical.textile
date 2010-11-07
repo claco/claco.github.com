@@ -3,9 +3,7 @@ layout: post
 title: "Stereotypical"
 slug: stereotypical
 category: WTF
-published:
-  epoch: 1049420833
-  utc: 2003-04-04T01:47:13
+created: 1049420833
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "Things I Hate More Than DLL Hell"
 slug: things-i-hate-more-than-dll-hell
 category: MicroShaft
-published:
-  epoch: 1106314116
-  utc: 2005-01-21T13:28:36
+created: 1106314116
 ---
 
 I've found something that I despise even more than DLL Hell on Windows.

@@ -3,9 +3,7 @@ layout: post
 title: "Permissions Frenzy"
 slug: permissions-frenzy
 category: WWW
-published:
-  epoch: 1059965123
-  utc: 2003-08-04T02:45:23
+created: 1059965123
 ---
 
 <p>

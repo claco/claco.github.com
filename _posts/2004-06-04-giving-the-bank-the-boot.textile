@@ -3,9 +3,7 @@ layout: post
 title: "Giving The Bank The Boot"
 slug: giving-the-bank-the-boot
 category: OffTopic
-published:
-  epoch: 1086392880
-  utc: 2004-06-04T23:48:00
+created: 1086392880
 ---
 
 Man there is no feeling like writing a $20,000 check and paying off your two month old car loan on a 2003 vehicle.

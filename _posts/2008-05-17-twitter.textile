@@ -5,9 +5,7 @@ slug: twitter
 category: WWW
 tags:
   - twitter
-published:
-  epoch: 1211075594
-  utc: 2008-05-18T01:53:14
+created: 1211075594
 ---
 
 I've given in. I now have a <a href="https://twitter.com/claco/">Twitter account</a>.

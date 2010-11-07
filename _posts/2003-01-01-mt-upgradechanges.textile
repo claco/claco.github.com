@@ -3,9 +3,7 @@ layout: post
 title: "MT Upgrade / Changes"
 slug: mt-upgradechanges
 category: Perl
-published:
-  epoch: 1041441306
-  utc: 2003-01-01T17:15:06
+created: 1041441306
 ---
 
 <p>

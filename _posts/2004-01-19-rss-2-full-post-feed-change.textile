@@ -3,9 +3,7 @@ layout: post
 title: "RSS 2 Full Post Feed Change"
 slug: rss-2-full-post-feed-change
 category: WWW
-published:
-  epoch: 1074489538
-  utc: 2004-01-19T05:18:58
+created: 1074489538
 ---
 
 <p>

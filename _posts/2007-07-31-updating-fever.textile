@@ -3,9 +3,7 @@ layout: post
 title: "Updating Fever"
 slug: updating-fever
 category: OffTopic
-published:
-  epoch: 1185936066
-  utc: 2007-08-01T02:41:06
+created: 1185936066
 ---
 
 Just because I can. Upgrated MovableType to the new 4.0 [beta] version. Got it running under FastCGI just for giggles too. Almost had to. The 4.x version is noticeably slower than the 3.x version running under regular old cgi. FastCGI - not just a clever title. Installed memcached too just for giggles. Wonder how long it will be until the server goes boom. :-)

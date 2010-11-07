@@ -2,11 +2,7 @@
 layout: post
 title: Always Set Application Name In SqlClient Connection Strings
 slug: always-set-application-name-in-sqlclient-connection-strings
-wordpress_id: 79
-wordpress_url: http://chrislaco.com/?p=79
-published:
-  epoch: 1234584300
-  utc: 2009-02-14T04:05:00
+created: 1234584300
 ---
 If you're using connection strings on the web, set Application Name to the domain name. If you're using connection strings with an executable, set Application Name to the executable name. If you have to use SQL Profiler to diagnose performance issues, it will be easier to filter out a specific application or web site.
 <pre class="brush:xml">&lt;connectionStrings&gt;

@@ -3,9 +3,7 @@ layout: post
 title: "Dairy Queen: Void In TX?"
 slug: dairy-queen-void-in-tx
 category: WTF
-published:
-  epoch: 1057879702
-  utc: 2003-07-10T23:28:22
+created: 1057879702
 ---
 
 <p>

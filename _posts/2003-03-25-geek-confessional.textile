@@ -3,9 +3,7 @@ layout: post
 title: "Geek Confessional"
 slug: geek-confessional
 category: Hardware
-published:
-  epoch: 1048645598
-  utc: 2003-03-26T02:26:38
+created: 1048645598
 ---
 
 <p>

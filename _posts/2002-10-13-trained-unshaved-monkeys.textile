@@ -3,9 +3,7 @@ layout: post
 title: "Trained (Un)Shaved Monkeys"
 slug: trained-unshaved-monkeys
 category: Humor
-published:
-  epoch: 1034558568
-  utc: 2002-10-14T01:22:48
+created: 1034558568
 ---
 
 <p>

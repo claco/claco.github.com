@@ -6,9 +6,7 @@ category: TV
 tags:
   - strike
   - tv
-published:
-  epoch: 1202014418
-  utc: 2008-02-03T04:53:38
+created: 1202014418
 ---
 
 <a href="http://news.yahoo.com/s/ap/20080202/ap_on_en_tv/hollywood_labor;_ylt=Aj2HorKHw41AFUWVq.X8ZgsDW7oF">By LYNN ELBER, AP Entertainment Writer Sat Feb 2, 6:51 PM ET</a>

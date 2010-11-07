@@ -3,9 +3,7 @@ layout: post
 title: "What Matrix character are you?"
 slug: what-matrix-character-are-you
 category: OffTopic
-published:
-  epoch: 1054263573
-  utc: 2003-05-30T02:59:33
+created: 1054263573
 ---
 
 <p class="center">

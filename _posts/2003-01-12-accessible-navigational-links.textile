@@ -3,9 +3,7 @@ layout: post
 title: "Accessible Navigational Links"
 slug: accessible-navigational-links
 category: WWW
-published:
-  epoch: 1042426209
-  utc: 2003-01-13T02:50:09
+created: 1042426209
 ---
 
 <p>

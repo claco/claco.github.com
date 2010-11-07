@@ -3,9 +3,7 @@ layout: post
 title: "Whipped: Part Deux"
 slug: whipped-part-deux
 category: OffTopic
-published:
-  epoch: 1062902264
-  utc: 2003-09-07T02:37:44
+created: 1062902264
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "FreeBSD 5.0-RELEASE"
 slug: freebsd-50-release
 category: FreeBSD
-published:
-  epoch: 1042950597
-  utc: 2003-01-19T04:29:57
+created: 1042950597
 ---
 
 <p>

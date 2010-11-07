@@ -3,9 +3,7 @@ layout: post
 title: "Del.icio.us For Tags Broken"
 slug: delicious-for-tags-broken
 category: WTF
-published:
-  epoch: 1136645943
-  utc: 2006-01-07T14:59:03
+created: 1136645943
 ---
 
 I do hereby declare that the <samp>for:user</samp> tags, and the <samp>/for/user</samp> pages on del.icio.us are completely useless and broken.

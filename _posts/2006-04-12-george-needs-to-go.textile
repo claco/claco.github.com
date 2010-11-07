@@ -3,9 +3,7 @@ layout: post
 title: "George Needs To Go"
 slug: george-needs-to-go
 category: OffTopic
-published:
-  epoch: 1144858980
-  utc: 2006-04-12T16:23:00
+created: 1144858980
 ---
 
 The man needs to go. Period. The lies keep flowing.

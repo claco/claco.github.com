@@ -3,9 +3,7 @@ layout: post
 title: "AntiPixel Reborn"
 slug: antipixel-reborn
 category: WWW
-published:
-  epoch: 1034953468
-  utc: 2002-10-18T15:04:28
+created: 1034953468
 ---
 
 <p>

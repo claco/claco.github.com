@@ -3,9 +3,7 @@ layout: post
 title: "One Year Gone"
 slug: one-year-gone
 category: WTF
-published:
-  epoch: 1065657064
-  utc: 2003-10-08T23:51:04
+created: 1065657064
 ---
 
 <p>

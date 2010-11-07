@@ -3,9 +3,7 @@ layout: post
 title: "New House Fix List"
 slug: new-house-fix-list
 category: OffTopic
-published:
-  epoch: 1082938740
-  utc: 2004-04-26T00:19:00
+created: 1082938740
 ---
 
 <p>

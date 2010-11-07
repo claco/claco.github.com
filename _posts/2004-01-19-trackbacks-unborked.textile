@@ -3,9 +3,7 @@ layout: post
 title: "Trackbacks Unborked"
 slug: trackbacks-unborked
 category: WWW
-published:
-  epoch: 1074563469
-  utc: 2004-01-20T01:51:09
+created: 1074563469
 ---
 
 <p>

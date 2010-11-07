@@ -3,9 +3,7 @@ layout: post
 title: "Things You Shouldn't Be Able To Do"
 slug: things-you-shouldnt-be-able-to-do
 category: Hardware
-published:
-  epoch: 1095290979
-  utc: 2004-09-15T23:29:39
+created: 1095290979
 ---
 
 Full screen DVD @ 1920x1200 running as the desktop background on the 23" Apple Cinema Display while surfing and programming on the other 19" CRT.

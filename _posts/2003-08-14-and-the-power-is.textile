@@ -3,9 +3,7 @@ layout: post
 title: "And The Power Is..."
 slug: and-the-power-is
 category: WTF
-published:
-  epoch: 1060915029
-  utc: 2003-08-15T02:37:09
+created: 1060915029
 ---
 
 <p>

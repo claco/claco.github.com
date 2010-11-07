@@ -3,9 +3,7 @@ layout: post
 title: "Drummer Geekery"
 slug: drummer-geekery
 category: Humor
-published:
-  epoch: 1098234704
-  utc: 2004-10-20T01:11:44
+created: 1098234704
 ---
 
 As a drummer and a computer programmer, all I can say is that <a href="http://www.flexhosting.net/wwwpeart/">this</a> is completely sick. I want one.

@@ -3,9 +3,7 @@ layout: post
 title: "Die Comments Die"
 slug: die-comments-die
 category: WTF
-published:
-  epoch: 1073958327
-  utc: 2004-01-13T01:45:27
+created: 1073958327
 ---
 
 <p>

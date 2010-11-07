@@ -3,9 +3,7 @@ layout: post
 title: "CSS, Fixed Font Sizes and Dave Winer"
 slug: css-fixed-font-sizes-and-dave-winer
 category: WWW
-published:
-  epoch: 1054214032
-  utc: 2003-05-29T13:13:52
+created: 1054214032
 ---
 
 <p>

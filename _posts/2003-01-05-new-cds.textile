@@ -3,9 +3,7 @@ layout: post
 title: "New CDs"
 slug: new-cds
 category: Music
-published:
-  epoch: 1041814868
-  utc: 2003-01-06T01:01:08
+created: 1041814868
 ---
 
 <p>

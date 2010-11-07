@@ -3,9 +3,7 @@ layout: post
 title: "IRAQ Abuse Photos"
 slug: iraq-abuse-photos
 category: WTF
-published:
-  epoch: 1084119283
-  utc: 2004-05-09T16:14:43
+created: 1084119283
 ---
 
 <p>

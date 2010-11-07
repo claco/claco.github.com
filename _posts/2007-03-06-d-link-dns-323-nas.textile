@@ -3,9 +3,7 @@ layout: post
 title: "D-Link DNS-323 NAS"
 slug: d-link-dns-323-nas
 category: Hardware
-published:
-  epoch: 1173207627
-  utc: 2007-03-06T19:00:27
+created: 1173207627
 ---
 
 I'm playing a game with St. Murphy. The file server at home is an old dual P2666 Tyan 4U server with a 4 disk RAID5 running an ancient version of FreeBSD. "Morpheus" has served us well, but it's had a degraded RAID5 for about 2 years. Yes. Two (2) years, with faithful backups of the important directories.

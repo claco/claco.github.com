@@ -3,9 +3,7 @@ layout: post
 title: "Linux: Village Of The Damned"
 slug: linux-village-of-the-damned
 category: OffTopic
-published:
-  epoch: 1075767876
-  utc: 2004-02-03T00:24:36
+created: 1075767876
 ---
 
 <p>

@@ -2,11 +2,7 @@
 layout: post
 title: Writing ReSharper 4.5.x Macros
 slug: writing-resharper-45x-macros
-wordpress_id: 212
-wordpress_url: http://chrislaco.com/?p=212
-published:
-  epoch: 1240184880
-  utc: 2009-04-19T23:48:00
+created: 1240184880
 ---
 While working on the MVC Marathon, I decided to try out ReSharper and write some good templates to make my time unit testing in ASP.NET MVC a little quicker. I soon realized that I needed a macro that would turn the unit test class name (HomeControllerTests) into the name of the controller being tested (HomeController).
 

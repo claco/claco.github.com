@@ -14,9 +14,7 @@ tags:
   - python
   - rails
   - ruby
-published:
-  epoch: 1214789059
-  utc: 2008-06-30T01:24:19
+created: 1214789059
 ---
 
 		<p>

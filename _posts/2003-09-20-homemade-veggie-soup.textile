@@ -3,9 +3,7 @@ layout: post
 title: "Homemade Veggie Soup"
 slug: homemade-veggie-soup
 category: OffTopic
-published:
-  epoch: 1064090255
-  utc: 2003-09-20T20:37:35
+created: 1064090255
 ---
 
 <p>

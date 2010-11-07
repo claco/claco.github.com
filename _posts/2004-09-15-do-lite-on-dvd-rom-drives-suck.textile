@@ -3,9 +3,7 @@ layout: post
 title: "Do Lite-On DVD-ROM Drives Suck?"
 slug: do-lite-on-dvd-rom-drives-suck
 category: Hardware
-published:
-  epoch: 1095299274
-  utc: 2004-09-16T01:47:54
+created: 1095299274
 ---
 
 When I built my game rig, I put in a Lite-On 16x/48x DVD/CD-ROM. It worked fine thus far with CDs and a few DVD discs. Now that I've got this new ACD, I wanted to try out some widescreen DVD movies.

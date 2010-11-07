@@ -3,9 +3,7 @@ layout: post
 title: "http://www.clownpenis.fart"
 slug: httpwwwclownpenisfart
 category: Humor
-published:
-  epoch: 1044210632
-  utc: 2003-02-02T18:30:32
+created: 1044210632
 ---
 
 <p>

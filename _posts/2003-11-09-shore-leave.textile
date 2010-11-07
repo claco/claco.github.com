@@ -3,9 +3,7 @@ layout: post
 title: "Shore Leave"
 slug: shore-leave
 category: OffTopic
-published:
-  epoch: 1068404953
-  utc: 2003-11-09T19:09:13
+created: 1068404953
 ---
 
 <p>

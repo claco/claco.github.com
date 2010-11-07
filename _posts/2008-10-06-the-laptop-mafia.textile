@@ -2,11 +2,7 @@
 layout: post
 title: The Laptop Mafia
 slug: the-laptop-mafia
-wordpress_id: 29
-wordpress_url: http://chrislaco.com/?p=29
-published:
-  epoch: 1223348460
-  utc: 2008-10-07T03:01:00
+created: 1223348460
 ---
 Long story longer. A group of various friends hang out at a local coffee shop working on their mostly-Apple laptops. Someone referred to use as the 'laptop mafia'. In a cool twist of fate, <a href="http://laptopmafia.com/">laptopmafia.com</a> was available.
 <!--more-->

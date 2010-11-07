@@ -3,9 +3,7 @@ layout: post
 title: "If It Ain't Broke..."
 slug: if-it-aint-broke
 category: FreeBSD
-published:
-  epoch: 1064184372
-  utc: 2003-09-21T22:46:12
+created: 1064184372
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: ".NET Unit Testing Coverage Tool"
 slug: net-unit-testing-coverage-tool
 category: OffTopic
-published:
-  epoch: 1089161760
-  utc: 2004-07-07T00:56:00
+created: 1089161760
 ---
 
 <a href="http://www.cenqua.com/clover.net/">Clover.Net</a> looks damn cool. I wish there was a stand-alone gui exe just like NUnit since I don't do any .NET work within Studio. [Long live the text editor and command line compiler!]

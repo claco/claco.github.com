@@ -3,9 +3,7 @@ layout: post
 title: "House Stressing"
 slug: house-stressing
 category: OffTopic
-published:
-  epoch: 1064618269
-  utc: 2003-09-26T23:17:49
+created: 1064618269
 ---
 
 <p>

@@ -3,9 +3,7 @@ layout: post
 title: "This Took Way To Long"
 slug: this-took-way-to-long
 category: Perl
-published:
-  epoch: 1075262108
-  utc: 2004-01-28T03:55:08
+created: 1075262108
 ---
 
 <p>

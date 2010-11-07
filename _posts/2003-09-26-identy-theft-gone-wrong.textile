@@ -3,9 +3,7 @@ layout: post
 title: "Identy Theft Gone Wrong"
 slug: identy-theft-gone-wrong
 category: Humor
-published:
-  epoch: 1064619453
-  utc: 2003-09-26T23:37:33
+created: 1064619453
 ---
 
 <p>

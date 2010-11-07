@@ -3,9 +3,7 @@ layout: post
 title: "Sage Rules"
 slug: sage-rules
 category: Software
-published:
-  epoch: 1096597070
-  utc: 2004-10-01T02:17:50
+created: 1096597070
 ---
 
 I may have to abandon FeedDemon in favor of the <a href="http://sage.mozdev.org/">Sage</a> Firefox plugin.  It's lite and it's move around with me and my thumbdrive.

@@ -3,9 +3,7 @@ layout: post
 title: "CSS Font Sizing Scuffle"
 slug: css-font-sizing-scuffle
 category: WWW
-published:
-  epoch: 1043127722
-  utc: 2003-01-21T05:42:02
+created: 1043127722
 ---
 
 <p>

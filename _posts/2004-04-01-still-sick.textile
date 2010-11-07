@@ -3,9 +3,7 @@ layout: post
 title: "Still Sick"
 slug: still-sick
 category: WTF
-published:
-  epoch: 1080862992
-  utc: 2004-04-01T23:43:12
+created: 1080862992
 ---
 
 <p>

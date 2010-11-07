@@ -3,9 +3,7 @@ layout: post
 title: "First Post!"
 slug: first-post
 category: OffTopic
-published:
-  epoch: 1033856263
-  utc: 2002-10-05T22:17:43
+created: 1033856263
 ---
 
 <p>
