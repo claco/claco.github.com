@@ -18,7 +18,7 @@ layout: nil
  <entry>
    <title>{{ post.title | xml_escape }}</title>
    <link href="{{ site.base }}{{ post.url }}/"/>
-   <updated>{{ post.published.utc }}-00:00</updated>
+   <updated>{{ post.created | date: "%Y-%m-%dT%H:%M:%S%z" }}</updated>
    <id>{{ site.base }}{{ post.url }}/</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
