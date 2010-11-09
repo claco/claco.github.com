@@ -12,7 +12,7 @@
   </div>
 
   <div class="category">
-    See more posts in: <a href="/categories/{{ page.categories | first | downcase}}/">{{ page.categories | first }}</a> |
+    See more posts in: {% if page.categories != empty %}<a href="/categories/{{ page.categories | first | downcase}}/">{{ page.categories | first }}</a> |{% endif %}
     <a href="/categories/">All Categories</a>
   </div>
 
