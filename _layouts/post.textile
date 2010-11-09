@@ -11,6 +11,11 @@
     {{ content }}
   </div>
 
+  <div class="category">
+    See more posts in: <a href="/categories/{{ page.categories | first | downcase}}/">{{ page.categories | first }}</a> |
+    <a href="/categories/">All Categories</a>
+  </div>
+
   {% include comments.textile %}
 </div>
 

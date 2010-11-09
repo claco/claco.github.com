@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Linux"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1191374792" data-format="MM/dd/yyyy">
+            {{ 1191374792 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ubuntu-gutsy-gibbon-looking-good/">Ubuntu Gutsy Gibbon Looking Good</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1183071267" data-format="MM/dd/yyyy">
+            {{ 1183071267 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ubuntu-feisty-returneth/">Ubuntu Feisty Returneth</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1159762835" data-format="MM/dd/yyyy">
+            {{ 1159762835 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/edgy-eft-beta/">Edgy Eft Beta</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1129254527" data-format="MM/dd/yyyy">
+            {{ 1129254527 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ubuntu-breezy-desktop/">Ubuntu Breezy Desktop</a>
+          </span>
+        </div>

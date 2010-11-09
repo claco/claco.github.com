@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Apache"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            {{ 1202084063 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/movabletype-41/">MovableType 4.1</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202006215" data-format="MM/dd/yyyy">
+            {{ 1202006215 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/upgrade-complete-comments-working-finally/">Upgrade Complete. Comments Working Finally.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1065841690" data-format="MM/dd/yyyy">
+            {{ 1065841690 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ssl-oopsie/">SSL Oopsie</a>
+          </span>
+        </div>

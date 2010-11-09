@@ -60,18 +60,18 @@ h1, h2, h3, .title {
 h2 {
   font-size: 1.6em;
 }
-.index .post .title {
+.index .post .title, .index .category .title {
   font-size: 1.1em;
   letter-spacing: .05em;
 }
-.index .post .title a {
+.index .post .title a, .index .category .title a {
   color: black;
   text-decoration: none;
 }
-.index .post {
+.index .post, .index .category {
   margin-bottom: 10px;
 }
-.index .post .created {
+.index .post .created, .index .category .created {
   font-weight: bold;
 }
 /* Disqus */

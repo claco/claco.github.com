@@ -1,0 +1,134 @@
+---
+layout: default
+title: "Music"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1201916128" data-format="MM/dd/yyyy">
+            {{ 1201916128 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/i-miss-drumming/">I Miss Drumming</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1145365991" data-format="MM/dd/yyyy">
+            {{ 1145365991 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/take-five-in-four-reggae/">Take Five: In Four: Reggae</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1116023911" data-format="MM/dd/yyyy">
+            {{ 1116023911 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/stand-up-me-1-riaa-0/">Stand Up: Me: 1, RIAA: 0</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1080430788" data-format="MM/dd/yyyy">
+            {{ 1080430788 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/hell-yeah/">Hell Yeah!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1073502561" data-format="MM/dd/yyyy">
+            {{ 1073502561 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/referer-fun/">Referer Fun</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1070667458" data-format="MM/dd/yyyy">
+            {{ 1070667458 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/wicked-guitar-clip/">Wicked Guitar Clip</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1070665514" data-format="MM/dd/yyyy">
+            {{ 1070665514 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/new-tunes-new-attitude/">New Tunes. New Attitude?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064973441" data-format="MM/dd/yyyy">
+            {{ 1064973441 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/beatbox-tv/">BeatBox TV</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064446904" data-format="MM/dd/yyyy">
+            {{ 1064446904 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/how-cd-prices-should-be/">How CD Prices Should Be</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1062164993" data-format="MM/dd/yyyy">
+            {{ 1062164993 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/wma-is-cool-wmpdirectoutput-sucks/">WMA Is Cool. WMP/DirectOutput Sucks</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1059951919" data-format="MM/dd/yyyy">
+            {{ 1059951919 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/wmp9-followup/">WMP9 Followup</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1059537015" data-format="MM/dd/yyyy">
+            {{ 1059537015 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ogg-vorbiswmp9/">Ogg Vorbis / WMP9</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1059531902" data-format="MM/dd/yyyy">
+            {{ 1059531902 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ear-candy-additions/">Ear Candy Additions</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1059525613" data-format="MM/dd/yyyy">
+            {{ 1059525613 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/95%25-of-all-albums-a-failure/">95% Of All Albums A Failure</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1042160307" data-format="MM/dd/yyyy">
+            {{ 1042160307 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/more-new-cds/">More New CDs</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1041814868" data-format="MM/dd/yyyy">
+            {{ 1041814868 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/new-cds/">New CDs</a>
+          </span>
+        </div>

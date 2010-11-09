@@ -1,0 +1,94 @@
+---
+layout: default
+title: "FreeBSD"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1124913928" data-format="MM/dd/yyyy">
+            {{ 1124913928 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-big-wipe/">The Big Wipe</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1107572782" data-format="MM/dd/yyyy">
+            {{ 1107572782 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-worlds-largest-tangent/">The Worlds Largest Tangent</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1073096748" data-format="MM/dd/yyyy">
+            {{ 1073096748 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/x10-perl-freebsd-home-automation/">X10, Perl, FreeBSD: Home Automation</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1067475538" data-format="MM/dd/yyyy">
+            {{ 1067475538 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/freebsd-49-released/">FreeBSD 4.9 Released</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064175074" data-format="MM/dd/yyyy">
+            {{ 1064175074 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/postfix-upgrade/">Postfix Upgrade</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064184372" data-format="MM/dd/yyyy">
+            {{ 1064184372 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/if-it-aint-broke/">If It Ain't Broke...</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060995579" data-format="MM/dd/yyyy">
+            {{ 1060995579 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/buildworlds-in-progress/">Buildworld(s) In Progress</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1049574133" data-format="MM/dd/yyyy">
+            {{ 1049574133 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/freebsd-48-release/">FreeBSD 4.8-RELEASE</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1042950597" data-format="MM/dd/yyyy">
+            {{ 1042950597 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/freebsd-50-release/">FreeBSD 5.0-RELEASE</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1039576427" data-format="MM/dd/yyyy">
+            {{ 1039576427 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/sometimes-you-get-the-bear/">Sometimes you get the bear...</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034380805" data-format="MM/dd/yyyy">
+            {{ 1034380805 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/freebsd-47-release/">FreeBSD 4.7-RELEASE</a>
+          </span>
+        </div>

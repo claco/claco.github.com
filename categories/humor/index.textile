@@ -1,0 +1,606 @@
+---
+layout: default
+title: "Humor"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202790996" data-format="MM/dd/yyyy">
+            {{ 1202790996 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/failed-celebrity-merchandising-products/">Failed Celebrity Merchandising Products</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202528982" data-format="MM/dd/yyyy">
+            {{ 1202528982 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/stop-hammer-time/">Stop. Hammer Time.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1188521214" data-format="MM/dd/yyyy">
+            {{ 1188521214 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/simpsons-star-wars-intro/">Simpsons Star Wars Intro</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1158959614" data-format="MM/dd/yyyy">
+            {{ 1158959614 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/comedians-on-drinking/">Comedians on Drinking</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1158669464" data-format="MM/dd/yyyy">
+            {{ 1158669464 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ahoy-me-land-lovin-dogs/">A'hoy Me Land Lovin Dogs</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1158608410" data-format="MM/dd/yyyy">
+            {{ 1158608410 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/white-and-nerdy/">White and Nerdy</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1130363323" data-format="MM/dd/yyyy">
+            {{ 1130363323 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/technology-dictator/">Technology Dictator</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1122903887" data-format="MM/dd/yyyy">
+            {{ 1122903887 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/wedding-reception/">Wedding Reception</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1115730441" data-format="MM/dd/yyyy">
+            {{ 1115730441 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/e3-earwig/">E3 Earwig</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1114625060" data-format="MM/dd/yyyy">
+            {{ 1114625060 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/nrcc-telemarketing-whois-data/">NRCC Telemarketing Whois Data</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1114605459" data-format="MM/dd/yyyy">
+            {{ 1114605459 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/my-trash-company/">My Trash Company</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1113011459" data-format="MM/dd/yyyy">
+            {{ 1113011459 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/three-rings-of-programmers-hell/">Three Rings Of Programmers Hell</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1112403945" data-format="MM/dd/yyyy">
+            {{ 1112403945 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/an-exercise-in-sanity/">An Exercise In Sanity</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1111624074" data-format="MM/dd/yyyy">
+            {{ 1111624074 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/return-of-even-stevens/">Return Of Even Stevens</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1110570825" data-format="MM/dd/yyyy">
+            {{ 1110570825 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/begging-for-a-bill/">Begging For A Bill</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1100714612" data-format="MM/dd/yyyy">
+            {{ 1100714612 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/dear-president-bush/">Dear President Bush</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1100645750" data-format="MM/dd/yyyy">
+            {{ 1100645750 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/its-alive/">It's Alive!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1098234704" data-format="MM/dd/yyyy">
+            {{ 1098234704 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/drummer-geekery/">Drummer Geekery</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1090973960" data-format="MM/dd/yyyy">
+            {{ 1090973960 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/hello-st-murphy-where-ya-been/">Hello St. Murphy. Where Ya Been?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1089917112" data-format="MM/dd/yyyy">
+            {{ 1089917112 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/my-first-gmail-spam/">My First Gmail Spam</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1089933392" data-format="MM/dd/yyyy">
+            {{ 1089933392 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/long-live-the-daily-show/">Long Live The Daily Show</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1089679286" data-format="MM/dd/yyyy">
+            {{ 1089679286 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-art-of-losing-things/">The Art of Losing Things</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1089479973" data-format="MM/dd/yyyy">
+            {{ 1089479973 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-real-hussein-ii-iraq-without-me/">The Real Hussein II: Iraq Without Me</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1085887406" data-format="MM/dd/yyyy">
+            {{ 1085887406 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/shrek-2-knows-lewis-black/">Shrek 2 Knows Lewis Black</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1084834508" data-format="MM/dd/yyyy">
+            {{ 1084834508 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-suspense-is-killing-me/">The Suspense Is Killing Me</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1080862649" data-format="MM/dd/yyyy">
+            {{ 1080862649 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/its-snowing/">It's Snowing</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1080527404" data-format="MM/dd/yyyy">
+            {{ 1080527404 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/strange-dreams/">Strange Dreams</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1077644529" data-format="MM/dd/yyyy">
+            {{ 1077644529 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/quoted-in-the-washington-times/">Quoted In The Washington Times</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1075230669" data-format="MM/dd/yyyy">
+            {{ 1075230669 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/i-love-slashdot-humor/">I Love Slashdot Humor</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1074823768" data-format="MM/dd/yyyy">
+            {{ 1074823768 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/howard-dean-scream/">Howard Dean Scream</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1074612158" data-format="MM/dd/yyyy">
+            {{ 1074612158 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mathematical-viewpoint/">Mathematical Viewpoint</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1070578984" data-format="MM/dd/yyyy">
+            {{ 1070578984 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/scobleized-again/">Scobleized Again</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1069282997" data-format="MM/dd/yyyy">
+            {{ 1069282997 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/for-the-sql-geek-in-you/">For The SQL Geek In You</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064754277" data-format="MM/dd/yyyy">
+            {{ 1064754277 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/smile/">Smile!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064619453" data-format="MM/dd/yyyy">
+            {{ 1064619453 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/identy-theft-gone-wrong/">Identy Theft Gone Wrong</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064367089" data-format="MM/dd/yyyy">
+            {{ 1064367089 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/hey-fuckwit/">Hey Fuckwit!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064268037" data-format="MM/dd/yyyy">
+            {{ 1064268037 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/things-that-make-me-giggle/">Things That Make Me Giggle</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1063416446" data-format="MM/dd/yyyy">
+            {{ 1063416446 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/bush-poster/">Bush Poster</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1063067595" data-format="MM/dd/yyyy">
+            {{ 1063067595 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/sco-python/">SCO Python</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1061760705" data-format="MM/dd/yyyy">
+            {{ 1061760705 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/linux-is-for-bitches/">Linux Is For Bitches</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060534452" data-format="MM/dd/yyyy">
+            {{ 1060534452 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/you-know-youre-whipped-when/">You Know You're Whipped When</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060037180" data-format="MM/dd/yyyy">
+            {{ 1060037180 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/i-told-you-so/">I Told You So</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1058747948" data-format="MM/dd/yyyy">
+            {{ 1058747948 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/low-tech-matrixslo-mo/">Low Tech Matrix  Slo Mo</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1058022512" data-format="MM/dd/yyyy">
+            {{ 1058022512 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/eating-your-own-dog-food-4-justice-files/">Eating Your Own Dog Food 4: Justice Files</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1057881449" data-format="MM/dd/yyyy">
+            {{ 1057881449 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/sue-all-the-world/">Sue All The World</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1056514841" data-format="MM/dd/yyyy">
+            {{ 1056514841 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/im-so-proud-1-google-results/">I'm So Proud. #1 Google Results</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1054863127" data-format="MM/dd/yyyy">
+            {{ 1054863127 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-credit-card-prank/">The Credit Card Prank</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1054768867" data-format="MM/dd/yyyy">
+            {{ 1054768867 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/email-disclaimers-lawyers-and-irony/">Email Disclaimers, Lawyers, and Irony</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1054174739" data-format="MM/dd/yyyy">
+            {{ 1054174739 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/its-official-sco-is-on-crack/">It's Official: SCO is on crack.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1054177216" data-format="MM/dd/yyyy">
+            {{ 1054177216 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/back-to-you-fuckers/">Back to you, fuckers.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1053965705" data-format="MM/dd/yyyy">
+            {{ 1053965705 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/anti-safety-photos/">Anti-Safety Photos</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1052880392" data-format="MM/dd/yyyy">
+            {{ 1052880392 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/spam-spam-spam-spam/">Spam Spam Spam Spam</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1050758778" data-format="MM/dd/yyyy">
+            {{ 1050758778 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-real-hussein-please-stand-up/">The Real Hussein, Please Stand Up</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1050546812" data-format="MM/dd/yyyy">
+            {{ 1050546812 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/we-have-floorage/">We Have Floorage</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1048953566" data-format="MM/dd/yyyy">
+            {{ 1048953566 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mustclean/">Must...Clean...</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1047424009" data-format="MM/dd/yyyy">
+            {{ 1047424009 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/best-buy-comments-are-fun/">Best Buy Comments Are Fun</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1044806334" data-format="MM/dd/yyyy">
+            {{ 1044806334 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/sun-says-java-sucks/">Sun Says Java Sucks</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1044720033" data-format="MM/dd/yyyy">
+            {{ 1044720033 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/thank-you-sir-may-i-have-another/">Thank You Sir, May I Have Another?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1044210632" data-format="MM/dd/yyyy">
+            {{ 1044210632 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/httpwwwclownpenisfart/">http://www.clownpenis.fart</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1043899912" data-format="MM/dd/yyyy">
+            {{ 1043899912 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/rent-my-chest-please/">Rent My Chest. Please.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1043597416" data-format="MM/dd/yyyy">
+            {{ 1043597416 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/dotmil-for-your-thoughts/">Dot.Mil For Your Thoughts?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1043278399" data-format="MM/dd/yyyy">
+            {{ 1043278399 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/just-a-jump-to-the-left/">Just A Jump To The Left</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1042069741" data-format="MM/dd/yyyy">
+            {{ 1042069741 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ouchie-it-burns/">Ouchie. It Burns!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1042067330" data-format="MM/dd/yyyy">
+            {{ 1042067330 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/eyodf-part-3/">EYODF: Part 3</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1041744120" data-format="MM/dd/yyyy">
+            {{ 1041744120 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/escaped-trained-shaved-monkeys/">Escaped Trained Shaved Monkeys</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1041403604" data-format="MM/dd/yyyy">
+            {{ 1041403604 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/2003-resolutions/">2003 Resolutions</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1041316600" data-format="MM/dd/yyyy">
+            {{ 1041316600 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/eating-your-own-dog-food/">Eating Your Own Dog Food</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1035504389" data-format="MM/dd/yyyy">
+            {{ 1035504389 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/understatement-of-the-year/">Understatement of The Year</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1035252687" data-format="MM/dd/yyyy">
+            {{ 1035252687 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/we-are-blog/">We Are Blog</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1035255865" data-format="MM/dd/yyyy">
+            {{ 1035255865 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/holy-too-much-free-time-batman/">Holy Too Much Free Time Batman!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034558568" data-format="MM/dd/yyyy">
+            {{ 1034558568 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/trained-unshaved-monkeys/">Trained (Un)Shaved Monkeys</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034457262" data-format="MM/dd/yyyy">
+            {{ 1034457262 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/xbox-owned-again/">XBox Owned. Again.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034378045" data-format="MM/dd/yyyy">
+            {{ 1034378045 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/whats-with-the-cows/">What's With The Cows?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1033954738" data-format="MM/dd/yyyy">
+            {{ 1033954738 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/riaa-sues-radio-stations/">RIAA Sues Radio Stations</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1033860093" data-format="MM/dd/yyyy">
+            {{ 1033860093 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/marry-a-sysadmin/">Marry A SysAdmin?</a>
+          </span>
+        </div>

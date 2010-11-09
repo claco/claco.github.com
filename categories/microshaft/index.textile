@@ -1,0 +1,278 @@
+---
+layout: default
+title: "MicroShaft"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202255791" data-format="MM/dd/yyyy">
+            {{ 1202255791 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/visual-studio-express-editions/">Visual Studio Express Editions</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1201920563" data-format="MM/dd/yyyy">
+            {{ 1201920563 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-associated-press-microsoft-makes-42b-bid-for-yahoo/">The Associated Press: Microsoft Makes $42B Bid for Yahoo</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1127242377" data-format="MM/dd/yyyy">
+            {{ 1127242377 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/why-ill-hate-aspnet-20vsnet-2005/">Why I'll Hate ASP.NET 2.0/VS.NET 2005</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1112034793" data-format="MM/dd/yyyy">
+            {{ 1112034793 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/why-i-still-hate-aspnet-20/">Why I Still Hate ASP.NET [2.0]</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1110288700" data-format="MM/dd/yyyy">
+            {{ 1110288700 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/microsoft-suing-kent-state-student/">Microsoft Suing Kent State Student</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1106314116" data-format="MM/dd/yyyy">
+            {{ 1106314116 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/things-i-hate-more-than-dll-hell/">Things I Hate More Than DLL Hell</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1095634604" data-format="MM/dd/yyyy">
+            {{ 1095634604 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/custom-xp-install-cd/">Custom XP Install CD</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1095447429" data-format="MM/dd/yyyy">
+            {{ 1095447429 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/when-the-same-sql-statementisnt/">When The Same SQL Statement...Isn't.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1093118158" data-format="MM/dd/yyyy">
+            {{ 1093118158 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/why-i-dislike-windows-part-xxxvii/">Why I Dislike Windows: Part XXXVII</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1090545491" data-format="MM/dd/yyyy">
+            {{ 1090545491 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/com-callable-wrappers-public-method-problems/">COM Callable Wrappers: Public Method Problems</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1087865083" data-format="MM/dd/yyyy">
+            {{ 1087865083 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/troubleshooting-common-problems-with-the-xmlserializer/">Troubleshooting Common Problems with the XmlSerializer</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1087612708" data-format="MM/dd/yyyy">
+            {{ 1087612708 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/linked-on-msdn/">Linked On MSDN</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1081281026" data-format="MM/dd/yyyy">
+            {{ 1081281026 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/msdn-net-api-shortcuts/">MSDN .NET API Shortcuts</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1080961919" data-format="MM/dd/yyyy">
+            {{ 1080961919 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/systemnetsocketstcpclient-connect-timeout/">System.Net.Sockets.TcpClient Connect Timeout</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1075055682" data-format="MM/dd/yyyy">
+            {{ 1075055682 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/linux-is-viral-right/">Linux Is Viral Right?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1070506928" data-format="MM/dd/yyyy">
+            {{ 1070506928 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/microsoft-wireless-hardware/">Microsoft Wireless Hardware</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1067473334" data-format="MM/dd/yyyy">
+            {{ 1067473334 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/w2k-com-and-deactivate-blues/">W2K, COM+ and Deactivate Blues</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1065656389" data-format="MM/dd/yyyy">
+            {{ 1065656389 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/putting-excel-in-its-place/">Putting Excel In Its Place</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064276327" data-format="MM/dd/yyyy">
+            {{ 1064276327 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/gates-gives-billions/">Gates Gives Billions</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1061851367" data-format="MM/dd/yyyy">
+            {{ 1061851367 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mssql-roles-somewhat-worthless/">MSSQL Roles Somewhat Worthless</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060261107" data-format="MM/dd/yyyy">
+            {{ 1060261107 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/why-xp-still-sucks/">Why XP Still Sucks</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060310232" data-format="MM/dd/yyyy">
+            {{ 1060310232 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/vss-getting-upgraded/">VSS Getting Upgraded?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1060262108" data-format="MM/dd/yyyy">
+            {{ 1060262108 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/robocopy-woes/">Robocopy Woes</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1057326451" data-format="MM/dd/yyyy">
+            {{ 1057326451 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/xbox-bitch-pimp-3/">Xbox: Bitch Pimp #3</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1054248173" data-format="MM/dd/yyyy">
+            {{ 1054248173 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/aspnet-server-controls-and-w3c-compliant-pages/">ASP.NET, Server Controls, and W3C Compliant Pages</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1052167640" data-format="MM/dd/yyyy">
+            {{ 1052167640 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/net-c%23-tinkerage/">.NET C# Tinkerage</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1051139710" data-format="MM/dd/yyyy">
+            {{ 1051139710 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/vsnet-how-to-lose-a-potential-customer/">VS.NET: How To Lose A Potential Customer</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1043876227" data-format="MM/dd/yyyy">
+            {{ 1043876227 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/windows-update-can-suck-my-ass/">Windows Update Can Suck My Ass</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1043519630" data-format="MM/dd/yyyy">
+            {{ 1043519630 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/yet-another-ms-sql-worm/">Yet Another MS SQL Worm</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1041741295" data-format="MM/dd/yyyy">
+            {{ 1041741295 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ie-not-in-my-house/">IE? Not In My House.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034717579" data-format="MM/dd/yyyy">
+            {{ 1034717579 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-switch-saga-continues/">The 'Switch' Saga Continues</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034623292" data-format="MM/dd/yyyy">
+            {{ 1034623292 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/what-a-jacknut/">What a JackNut</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034639078" data-format="MM/dd/yyyy">
+            {{ 1034639078 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/things-not-to-do-part-i/">Things Not To Do: Part I.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1034459081" data-format="MM/dd/yyyy">
+            {{ 1034459081 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/surprise-surprise/">Surprise Surprise.</a>
+          </span>
+        </div>

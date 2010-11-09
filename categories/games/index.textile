@@ -1,0 +1,182 @@
+---
+layout: default
+title: "Games"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1176900300" data-format="MM/dd/yyyy">
+            {{ 1176900300 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/counter-strike/">Counter Strike</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1176820512" data-format="MM/dd/yyyy">
+            {{ 1176820512 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/laptops-and-stalker/">Laptops And S.T.A.L.K.E.R.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1116373573" data-format="MM/dd/yyyy">
+            {{ 1116373573 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ps3-killzone-holy-shit/">PS3 + Killzone = Holy Shit!</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1114989725" data-format="MM/dd/yyyy">
+            {{ 1114989725 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/revenge-of-the-sith/">Revenge Of The Sith</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1112560073" data-format="MM/dd/yyyy">
+            {{ 1112560073 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/splinter-cell-3/">Splinter Cell 3</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1112566316" data-format="MM/dd/yyyy">
+            {{ 1112566316 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/geek-confessional-ii/">Geek Confessional II</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1111459661" data-format="MM/dd/yyyy">
+            {{ 1111459661 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/we-dont-go-to-ravenholm/">We Don't Go To Ravenholm</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1110324769" data-format="MM/dd/yyyy">
+            {{ 1110324769 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/i-was-wrong-i-admit-it/">I Was Wrong. I Admit It.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1110152970" data-format="MM/dd/yyyy">
+            {{ 1110152970 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/stargate-sg-1-the-alliance/">Stargate SG-1: The Alliance</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1109215359" data-format="MM/dd/yyyy">
+            {{ 1109215359 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/the-classics-still-work/">The Classics Still Work</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1100718441" data-format="MM/dd/yyyy">
+            {{ 1100718441 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/valve-half-life-2-and-steam/">VALVe, Half Life 2, and Steam</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1095124931" data-format="MM/dd/yyyy">
+            {{ 1095124931 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ut2k-is-evil/">UT2K* Is Evil</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1094774132" data-format="MM/dd/yyyy">
+            {{ 1094774132 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/wheres-my-hasenfeffer/">Where's My Hasenfeffer?</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1093735272" data-format="MM/dd/yyyy">
+            {{ 1093735272 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/stargate-farcry-mod/">Stargate FarCry Mod</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1088812812" data-format="MM/dd/yyyy">
+            {{ 1088812812 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/stargate-mmorpg/">Stargate MMORPG</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1072708091" data-format="MM/dd/yyyy">
+            {{ 1072708091 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/what-i-want-from-an-xbox/">What I Want From An XBox</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1064089971" data-format="MM/dd/yyyy">
+            {{ 1064089971 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/ragnos-defeated/">Ragnos Defeated</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1063752607" data-format="MM/dd/yyyy">
+            {{ 1063752607 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/jedi-academy-reserved/">Jedi Academy Reserved</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1061166896" data-format="MM/dd/yyyy">
+            {{ 1061166896 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/jk3-gone-gold/">JK3 Gone Gold</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1057892800" data-format="MM/dd/yyyy">
+            {{ 1057892800 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/enter-the-matrix-thoughts/">Enter The Matrix Thoughts</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1050464356" data-format="MM/dd/yyyy">
+            {{ 1050464356 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/jk3-announced/">JK3 Announced</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1048733211" data-format="MM/dd/yyyy">
+            {{ 1048733211 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/splinter-cell/">Splinter Cell</a>
+          </span>
+        </div>

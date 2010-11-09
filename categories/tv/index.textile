@@ -1,0 +1,38 @@
+---
+layout: default
+title: "TV"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            {{ 1202082658 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-prestart/">SuperBowl Pre-Start</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202095985" data-format="MM/dd/yyyy">
+            {{ 1202095985 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-done-great-game/">SuperBowl Done. Great Game.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202014418" data-format="MM/dd/yyyy">
+            {{ 1202014418 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/breakthrough-in-striking-writers-talks-yahoo-news/">Breakthrough in striking writers talks - Yahoo! News</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1188089931" data-format="MM/dd/yyyy">
+            {{ 1188089931 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/jekyll/">Jekyll</a>
+          </span>
+        </div>

@@ -1,0 +1,167 @@
+---
+layout: default
+title: Categories
+---
+
+<div class="index categories">
+        <div class="category">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/apache/">Apache</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1111020058" data-format="MM/dd/yyyy">
+            1111020058
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/cooking/">Cooking</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1124913928" data-format="MM/dd/yyyy">
+            1124913928
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/freebsd/">FreeBSD</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1176900300" data-format="MM/dd/yyyy">
+            1176900300
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/games/">Games</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1191544228" data-format="MM/dd/yyyy">
+            1191544228
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/hardware/">Hardware</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1202790996" data-format="MM/dd/yyyy">
+            1202790996
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/humor/">Humor</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1191374792" data-format="MM/dd/yyyy">
+            1191374792
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/linux/">Linux</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1202255791" data-format="MM/dd/yyyy">
+            1202255791
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/microshaft/">MicroShaft</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1209918247" data-format="MM/dd/yyyy">
+            1209918247
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/movies/">Movies</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1201916128" data-format="MM/dd/yyyy">
+            1201916128
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/music/">Music</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1202580499" data-format="MM/dd/yyyy">
+            1202580499
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/networking/">Networking</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/offtopic/">OffTopic</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1159025748" data-format="MM/dd/yyyy">
+            1159025748
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/perl/">Perl</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1203037730" data-format="MM/dd/yyyy">
+            1203037730
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/politics/">Politics</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1091385185" data-format="MM/dd/yyyy">
+            1091385185
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/security/">Security</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1221624682" data-format="MM/dd/yyyy">
+            1221624682
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/software/">Software</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1073446668" data-format="MM/dd/yyyy">
+            1073446668
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/static/">Static</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            1202082658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/tv/">TV</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1202867929" data-format="MM/dd/yyyy">
+            1202867929
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/wtf/">WTF</a>
+          </span>
+        </div>
+        <div class="category">
+          <span class="created" data-created="1211075594" data-format="MM/dd/yyyy">
+            1211075594
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/www/">WWW</a>
+          </span>
+        </div>
+</div>
