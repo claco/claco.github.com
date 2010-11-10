@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: football"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202095985" data-format="MM/dd/yyyy">
+            {{ 1202095985 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-done-great-game/">SuperBowl Done. Great Game.</a>
+          </span>
+        </div>

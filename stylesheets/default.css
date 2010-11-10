@@ -60,18 +60,39 @@ h1, h2, h3, .title {
 h2 {
   font-size: 1.6em;
 }
-.index .post .title, .index .category .title {
+.clear { clear : both; }
+.post .tags .tag, .post .category {
+  font-size: 0.9em;
+  font-style: italic;
+}
+.post .tag {
+  float: left;
+  margin-right: 5px;
+}
+.index .post .title,
+.index .category .title,
+.index .tag .title
+{
   font-size: 1.1em;
   letter-spacing: .05em;
 }
-.index .post .title a, .index .category .title a {
+.index .post .title a,
+.index .category .title a,
+.index .tag .title a
+{
   color: black;
   text-decoration: none;
 }
-.index .post, .index .category {
+.index .post,
+.index .category,
+.index .tag
+{
   margin-bottom: 10px;
 }
-.index .post .created, .index .category .created {
+.index .post .created,
+.index .category .created,
+.index .tag .created
+{
   font-weight: bold;
 }
 /* Disqus */

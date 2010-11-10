@@ -1,0 +1,30 @@
+---
+layout: default
+title: "Tag: superbowl"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            {{ 1202082658 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-prestart/">SuperBowl Pre-Start</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202095985" data-format="MM/dd/yyyy">
+            {{ 1202095985 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-done-great-game/">SuperBowl Done. Great Game.</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1202011976" data-format="MM/dd/yyyy">
+            {{ 1202011976 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/superbowl-time/">SuperBowl Time</a>
+          </span>
+        </div>

@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: parallels"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1157823387" data-format="MM/dd/yyyy">
+            {{ 1157823387 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/macbook-time/">MacBook Time</a>
+          </span>
+        </div>

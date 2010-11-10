@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Security"
+title: "Category: Security"
 ---
 
 <div class="index posts">

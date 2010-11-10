@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "OffTopic"
+title: "Category: OffTopic"
 ---
 
 <div class="index posts">

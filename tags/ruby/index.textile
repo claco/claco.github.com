@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Tag: ruby"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            {{ 1218395723 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mvc-marathon-part-3-creating-a-restaurants-controller-and-view/">MVC Marathon Part 3: Creating a Restaurants Controller and View</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1215906130" data-format="MM/dd/yyyy">
+            {{ 1215906130 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mvc-marathon-part-2-creating-a-database-and-model/">MVC Marathon Part 2: Creating a Database and Model</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1214714537" data-format="MM/dd/yyyy">
+            {{ 1214714537 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mvc-marathon/">MVC Marathon</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1214789059" data-format="MM/dd/yyyy">
+            {{ 1214789059 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/mvc-marathon-part-1-creating-a-new-application/">MVC Marathon Part 1: Creating a New Application</a>
+          </span>
+        </div>

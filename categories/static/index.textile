@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Static"
+title: "Category: Static"
 ---
 
 <div class="index posts">

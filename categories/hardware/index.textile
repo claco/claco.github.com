@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Hardware"
+title: "Category: Hardware"
 ---
 
 <div class="index posts">

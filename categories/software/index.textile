@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Software"
+title: "Category: Software"
 ---
 
 <div class="index posts">

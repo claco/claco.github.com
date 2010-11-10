@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Networking"
+title: "Category: Networking"
 ---
 
 <div class="index posts">

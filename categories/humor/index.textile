@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Humor"
+title: "Category: Humor"
 ---
 
 <div class="index posts">

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Linux"
+title: "Category: Linux"
 ---
 
 <div class="index posts">

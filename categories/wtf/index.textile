@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "WTF"
+title: "Category: WTF"
 ---
 
 <div class="index posts">

@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: mongers"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1159025748" data-format="MM/dd/yyyy">
+            {{ 1159025748 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/rubbercity-perl-mongers/">RubberCity Perl Mongers</a>
+          </span>
+        </div>

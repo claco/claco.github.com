@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: castle"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1203039836" data-format="MM/dd/yyyy">
+            {{ 1203039836 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/weekend-at-the-castle/">Weekend at the Castle</a>
+          </span>
+        </div>

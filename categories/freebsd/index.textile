@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "FreeBSD"
+title: "Category: FreeBSD"
 ---
 
 <div class="index posts">

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Perl"
+title: "Category: Perl"
 ---
 
 <div class="index posts">

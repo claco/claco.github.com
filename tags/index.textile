@@ -1,0 +1,615 @@
+---
+layout: default
+title: Tags
+---
+
+<div class="index tags">
+        <div class="tag">
+          <span class="created" data-created="1202006215" data-format="MM/dd/yyyy">
+            1202006215
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/apache/">apache</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/apache2/">apache2</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1158197383" data-format="MM/dd/yyyy">
+            1158197383
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/apple/">apple</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202255791" data-format="MM/dd/yyyy">
+            1202255791
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/asp.net/">asp.net</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/c%23/">c#</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/cakephp/">cakephp</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203039836" data-format="MM/dd/yyyy">
+            1203039836
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/castle/">castle</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/catalyst/">catalyst</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203037730" data-format="MM/dd/yyyy">
+            1203037730
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/contempt/">contempt</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/controller/">controller</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1221624682" data-format="MM/dd/yyyy">
+            1221624682
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/csv/">csv</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1215906130" data-format="MM/dd/yyyy">
+            1215906130
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/database/">database</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/django/">django</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1173713603" data-format="MM/dd/yyyy">
+            1173713603
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/dlink/">dlink</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1201916128" data-format="MM/dd/yyyy">
+            1201916128
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/drums/">drums</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159762835" data-format="MM/dd/yyyy">
+            1159762835
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/edgy/">edgy</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/fastcgi/">fastcgi</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203037730" data-format="MM/dd/yyyy">
+            1203037730
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/fisa/">fisa</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1187493851" data-format="MM/dd/yyyy">
+            1187493851
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/flickr/">flickr</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202095985" data-format="MM/dd/yyyy">
+            1202095985
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/football/">football</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            1202082658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/fox/">fox</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1157332758" data-format="MM/dd/yyyy">
+            1157332758
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/handel/">handel</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1174706880" data-format="MM/dd/yyyy">
+            1174706880
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/hardware/">hardware</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203037730" data-format="MM/dd/yyyy">
+            1203037730
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/house/">house</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1221624682" data-format="MM/dd/yyyy">
+            1221624682
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/idatareader/">idatareader</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1209918247" data-format="MM/dd/yyyy">
+            1209918247
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/iron%20man/">iron man</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1145365991" data-format="MM/dd/yyyy">
+            1145365991
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/jazz/">jazz</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1187406793" data-format="MM/dd/yyyy">
+            1187406793
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/juploadr/">juploadr</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1158197383" data-format="MM/dd/yyyy">
+            1158197383
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/laptop/">laptop</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1157380376" data-format="MM/dd/yyyy">
+            1157380376
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/laws/">laws</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1174706880" data-format="MM/dd/yyyy">
+            1174706880
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/lcd/">lcd</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202006215" data-format="MM/dd/yyyy">
+            1202006215
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/lighttpd/">lighttpd</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203039403" data-format="MM/dd/yyyy">
+            1203039403
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/links/">links</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159762835" data-format="MM/dd/yyyy">
+            1159762835
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/linux/">linux</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1209917142" data-format="MM/dd/yyyy">
+            1209917142
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/logitech/">logitech</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1158197383" data-format="MM/dd/yyyy">
+            1158197383
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/macbook/">macbook</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/mod_perl/">mod_perl</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1215906130" data-format="MM/dd/yyyy">
+            1215906130
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/model/">model</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159025748" data-format="MM/dd/yyyy">
+            1159025748
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/mongers/">mongers</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1209917142" data-format="MM/dd/yyyy">
+            1209917142
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/mouse/">mouse</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/movable%20type/">movable type</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1145365991" data-format="MM/dd/yyyy">
+            1145365991
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/music/">music</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1215906130" data-format="MM/dd/yyyy">
+            1215906130
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/mvc/">mvc</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1173713603" data-format="MM/dd/yyyy">
+            1173713603
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/nas/">nas</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1157380376" data-format="MM/dd/yyyy">
+            1157380376
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/ohio/">ohio</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1157823387" data-format="MM/dd/yyyy">
+            1157823387
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/parallels/">parallels</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/perl/">perl</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1187579473" data-format="MM/dd/yyyy">
+            1187579473
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/photos%20flickr/">photos flickr</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1187493851" data-format="MM/dd/yyyy">
+            1187493851
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/photos/">photos</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/php/">php</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/python/">python</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/rails/">rails</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1203039836" data-format="MM/dd/yyyy">
+            1203039836
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/ravenwood/">ravenwood</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/ruby/">ruby</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1173713603" data-format="MM/dd/yyyy">
+            1173713603
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/sata/">sata</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1215906130" data-format="MM/dd/yyyy">
+            1215906130
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/schema/">schema</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1187493851" data-format="MM/dd/yyyy">
+            1187493851
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/slides/">slides</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1174803069" data-format="MM/dd/yyyy">
+            1174803069
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/source%20control/">source control</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202014418" data-format="MM/dd/yyyy">
+            1202014418
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/strike/">strike</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1174803069" data-format="MM/dd/yyyy">
+            1174803069
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/subversion/">subversion</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            1202082658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/superbowl/">superbowl</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1174803069" data-format="MM/dd/yyyy">
+            1174803069
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/svk/">svk</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1145365991" data-format="MM/dd/yyyy">
+            1145365991
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/take%20five/">take five</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159025748" data-format="MM/dd/yyyy">
+            1159025748
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/tdd/">tdd</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/templates/">templates</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159025748" data-format="MM/dd/yyyy">
+            1159025748
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/testing/">testing</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202082658" data-format="MM/dd/yyyy">
+            1202082658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/tv/">tv</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1211075594" data-format="MM/dd/yyyy">
+            1211075594
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/twitter/">twitter</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1159762835" data-format="MM/dd/yyyy">
+            1159762835
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/ubuntu/">ubuntu</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202006215" data-format="MM/dd/yyyy">
+            1202006215
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/upgrade/">upgrade</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1209917142" data-format="MM/dd/yyyy">
+            1209917142
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/v450/">v450</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1221624682" data-format="MM/dd/yyyy">
+            1221624682
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/vb.net/">vb.net</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
+            1218395723
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/view%20mvc/">view mvc</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202255791" data-format="MM/dd/yyyy">
+            1202255791
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/visual%20studio%20express/">visual studio express</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1202084063" data-format="MM/dd/yyyy">
+            1202084063
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/wordpress/">wordpress</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1221624682" data-format="MM/dd/yyyy">
+            1221624682
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/2008/">2008</a>
+          </span>
+        </div>
+</div>

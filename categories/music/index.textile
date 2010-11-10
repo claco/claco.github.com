@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Music"
+title: "Category: Music"
 ---
 
 <div class="index posts">

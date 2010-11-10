@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "WWW"
+title: "Category: WWW"
 ---
 
 <div class="index posts">

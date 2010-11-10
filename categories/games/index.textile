@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Games"
+title: "Category: Games"
 ---
 
 <div class="index posts">

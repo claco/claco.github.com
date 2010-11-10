@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Movies"
+title: "Category: Movies"
 ---
 
 <div class="index posts">

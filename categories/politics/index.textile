@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Politics"
+title: "Category: Politics"
 ---
 
 <div class="index posts">

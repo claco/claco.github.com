@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: asp.net"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1202255791" data-format="MM/dd/yyyy">
+            {{ 1202255791 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/visual-studio-express-editions/">Visual Studio Express Editions</a>
+          </span>
+        </div>

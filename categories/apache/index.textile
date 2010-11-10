@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Apache"
+title: "Category: Apache"
 ---
 
 <div class="index posts">
