@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Jekyll Powered"
+published: true
+created:  1289875790
+tags: [jekyll]
+categories: [Software]
+---
+
+After a few weekends of tinkering, I finally finished converting my old old old MovableType site to "Jekyll":http://jekyllrb.com with the help of a quick and dirty "Perl script":https://github.com/claco/claco.github.com/blob/master/_scripts/convert.pl.
+
+In addition to converting the old blog to Jekyll, the same script also converted the comments to InstaDebate format, one of the formats Disqus can import. Since I have a paid GitHub account, the site is hosted using GitHub Page as well. Win. Win. Win. :-)
+
+Converted to Vim. Deleted WordPress. Deleted TextMate. Patched Jekyll. Patched Jekyll.vim. Good time had by all.
