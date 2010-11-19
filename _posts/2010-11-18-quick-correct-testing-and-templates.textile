@@ -1,0 +1,40 @@
+---
+layout: post
+title: "Quick, Correct, Testing and Templates"
+published: true
+created:  1290140746
+tags: [tdd, testing, time, templates]
+categories: [Software]
+---
+
+h2. Quick or Correct?
+
+Last night at the Hudson Software Craftsmanship meeting, one of the topics that came up was the same old struggle of testing and time. Should you truly test first, even if it means not delivering a product on time, or should you prototype rapidly and add tests later so you can show features early. Pay technical debt now. Pay technical debt later. Do the trade offs flip flop the more you practice test first development?
+
+It's always a fun topic of conversation, but it led me to spend some time thinking about my new job, new projects and what my bottlenecks are in a fresh new environment.
+
+h2. The First Step...
+
+The first step is admitting your have a problem. Well, many problems. :-) It's been just over 2 months since I started my new job and already I've had a few valleys of severe unproductively. More often than not, it seems that these periods are caused by being overwhelmed with the number of things to get done. When starting a new application, it seems like we're always doing the same mundane tasks over and over and over.
+
+Unit tests? Setup NUnit. Different connection strings on dev/live/ci? Config transformations. Database change management? Setup migrations. Integration tests? Setup db scripting. UI tests? Get Watir/Selenium running.
+
+Over, and over, and over. It drains my soul every time I have to wade through these things instead of writing code.
+
+h3. Rails Rules.
+
+On a side tangent, this is while people fall in love with Rails. Most of these things are taken care of already, at least compared to starting a new .NET MVC project.
+
+h2. We Have The Technology...
+
+Stronger. Better. Faster. We have things like snippets and templates in Visual Studio and @rails new@ and @rails generate integration_test@ that go a very very long way towards making the process quicker. Even in those cases, it seems we always do more work to setup our project the way we like them. That's just one person.
+
+When a person starts a new job, the problem is compounded by usually not having and of these thing customized for the business itself. You have to fumble around the network, look at other projects and try and find our way. The new NuGet tool set from Microsoft is a step in the right direction to mitigate these sorts of hurdles since it can install 3rd party dlls as well as alter configs, add files, add scaffold, etc. It's rather like a mix of ruby gems + generators in the same step.
+
+h2. One Click Productivity
+
+Ideally, the act of starting a new project should be all about writing new code and as little as possible about mundane setup. Here's my thoughts about ho to improve the process:
+
+* *Internal NuGet Repo*: Setup an internal NuGet repo to collect and serve all of the common bits across projects: DLLS, jquery plugins, test suite templates, config, company specific bits, setup, etc. Adding something to a project should be one command away: @Install-Package IntegrationTests@
+* *Starter Projects*: Invest in my process up front. Create complete start projects that have everything setup the way I like it. A new project should be one command away: @kickoff --rails NewProject@, @kickoff --mvc NewMvcSite@.
+* *More Snippets*: It seems most vim snippets in snipmate are small bits and pieces. In places where I don't have ReSharper, I need to make snippets that encapsulate whole files. @unit<TAB>@ create an entire new test file, etc. Get all languages on the same keywords and on the same page when generators don't exist.

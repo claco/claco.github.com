@@ -16,6 +16,19 @@ p, li {
   letter-spacing: 1px;
   line-height: 1.5em;
 }
+li {
+  padding-bottom: 10px;
+}
+code, samp, kbd {
+  color: #336699;
+  letter-spacing: 0;
+}
+strong, b {
+  font-weight: bold;
+}
+.category, .tags {
+  margin-top: 10px;
+}
 .highlight {
   border: 1px solid #dddddd;
   margin-top: 15px;
@@ -59,6 +72,10 @@ h1, h2, h3, .title {
 }
 h2 {
   font-size: 1.6em;
+}
+h3 {
+  font-size: 1.4em;
+  font-style: italic;
 }
 .clear { clear : both; }
 .post .tags .tag, .post .category {
