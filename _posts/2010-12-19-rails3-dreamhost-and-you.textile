@@ -1,0 +1,214 @@
+---
+layout: post
+title: "Rails3, DreamHost and You"
+published: true
+created:  1292788439
+tags: [rails, bundler, dreamhost, env]
+categories: [Rails]
+---
+
+bq. After wasting an entire Saturday leafing through old, unhelpful forum posts and trying to get a fresh Rails site deployed and running DreamHost without success I finally figured out my problem: Gem.clear_paths. But that isn't the only problem. For the sake of helping others and myself on the next project, this is what you have to do to start a new Rails 3.x project on DreamHost.
+
+h2. Assumptions
+
+For the sake of not covering too many details, I going to assume that you have a working ruby install, the @rvm@ and @bundler@ gems installed, ruby 1.8.7 installed using @rvm@, @git@ installed and already have a GitHub and DreamHost account.
+
+h2. Create a new Rails 3.x site
+
+First let's create a fresh new Rails 3 application:
+
+{% highlight bash %}
+$ rails new example.com
+{% endhighlight %}
+
+A heap of output will fly but leaving you with a fresh new example.com directory full of Rails 3 goodness.
+
+h2. Create an RVM Gemset
+
+Next, we'll create an rvm gemset just for this project.
+
+{% highlight bash %}
+$ vim example.com/.rvmrc
+{% endhighlight %}
+
+Add this to your new rvmrc file:
+
+{% highlight ruby %}
+rvm_gemset_create_on_use_flag=1
+rvm use 1.8.7@examplecom
+{% endhighlight %}
+
+DreamHost currently has Ruby 1.8.7 installed so lets develop under that. We're also auto creating a gemset just for this site.
+
+Now chenge directory into your new project:
+
+{% highlight bash %}
+$ cd example.com
+{% endhighlight %}
+
+When rvm sees your rvmrc, it will switch to your 1.8.7 install, then create and switch to a new gemset for examplecom.
+
+{% highlight bash %}
+Using /Users/claco/.rvm/gems/ruby-1.8.7 with gemset examplecom
+{% endhighlight %}
+
+h2. Bundle Your Gems
+
+Now that we have a fresh new empty gemset for this project, we need to bundle our gems. First, open your Gemfile and uncomment the following line:
+
+{% highlight ruby %}
+gem 'capistrano'
+{% endhighlight %}
+
+Since we're going to use *capistrano@ to deploy the site, we need to have bundler include it. While we're in there, let's add a specific version of sqlite-ruby.  DreamHost currently has sqlite3-ruby 1.2.1 while the latest gem is 1.2.2. Since I have problems compiling it on DreamHost, let's just use what they have:
+
+{% highlight ruby %}
+gem 'sqlite3-ruby', '1.2.1', :require => 'sqlite3'
+{% endhighlight %}
+
+Save your Gemfile, then run bundler to install the required gems into your currently empty examplecom gemset:
+
+{% highlight bash %}
+bundle install
+bundle package
+{% endhighlight %}
+
+This will install all of the gems needed to run this rails app and puts a copy into vandor/cache. When we deploy to DreamHost later, bundle install will pull from vendor/cache.
+
+h2. Make It Deployable
+
+Now let's make our project deployable to DreamHost. First, capify your site:
+
+{% highlight bash %}
+$ capify .
+{% endhighlight %}
+
+Next, let's add bundler support to our deployment tasks. Open @config/deploy.rb@ and add this to the top:
+
+{% highlight ruby %}
+require 'bundler/capistrano'
+{% endhighlight %}
+
+Next, we need to tell capistrano about our deployment details while still in deploy.rb. Let's start with some connection options:
+
+{% highlight ruby %}
+default_run_options[:pty] = false
+ssh_options[:forward_agent] = true
+set :use_sudo, false
+set :user, "dhusername"
+{% endhighlight %}
+
+First, we're telling capistrano to not use a pseudo tty, or to use the normal login tty. Next, we tell ssh to foward our gent to the remote server, so it can use our local key to get to GitHub. Finally, DreamHost doesn't allow sudo, so turn that off.
+
+Now, let's edit the file with our application/repository/git settings:
+
+{% highlight ruby %}
+set :application, "touchstart.net"
+set :repository,  "git@github.com:claco/example.com.git"
+set :scm, :git
+set :branch, 'master'
+set :git_shallow_clone, 1
+set :deploy_via, :remote_cache
+set :copy_compression, :bz2
+set :rails_env, 'production'
+set :deploy_to, "/home/momuggs/#{application}"
+{% endhighlight %}
+
+The application name is used in later settings and is usually the site/domain name. We point it to our git repository for the site and tell it what branch to checkout, how to clone and to compress the transfer. We set the rails env to production and tell cap what folder on DreamHost to copy the site to.
+
+Now all that's left is the app settings telling it what server to deploy to:
+
+{% highlight ruby %}
+role :web, "#{application}"                          # Your HTTP server, Apache/etc
+role :app, "#{application}"                          # This may be the same as your `Web` server
+role :db,  "#{application}", :primary => true # This is where Rails migrations will run
+# role :db,  "your slave db-server here"
+{% endhighlight %}
+
+Since we're deploying to the same place for everything, we'll just reuse the application name.
+
+{% highlight ruby %}
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+end
+{% endhighlight %}
+
+While you're in there, we need to uncomment the task to restart the app after deployment since DreamHost uses Passenger:
+
+{% highlight ruby %}
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+end
+{% endhighlight %}
+
+h2. Add Test Url
+
+The default rails page is public/index.html, which doesn't really tell you if the site actually runs. Let's add a quick test action to our rails app to test later:
+
+{% highlight bash %}
+$ rails g controller test index
+{% endhighlight %}
+
+h2. ENV for Passenger
+
+This is the part that cost me a day. DreamHost Passenger knows nothing about your users GEM_PATH or GEM_PATH. If you were to push this app to DreamHost as is, you would get "unknown constant: Bundler" since DreamHost does not have bundler installed in the system gems.
+
+To fix this, add this to the top of your config.ru:
+
+{% highlight ruby %}
+ENV['GEM_HOME']="#{ENV['HOME']}/.gems"
+ENV['GEM_PATH']="#{ENV['GEM_HOME']}:/usr/lib/ruby/gems/1.8"
+require 'rubygems'
+Gem.clear_paths
+{% endhighlight %}
+
+This will tell passenger where to look for gems when rails' @boot.rb@ fires. The Gem.clear_paths is critical.
+
+h2. Push to Git
+
+Let's push everything to GitHub before we move on to DreamHost setup.
+
+{% highlight bash %}
+git init
+git add .
+git commit -m "Initial Import"
+git remote add origin git@github.com:claco/example.com.git
+git push origin master
+{% endhighlight %}
+
+h2. Configure DreamHost
+
+Before we push the site to DreamHost, we need to configure a few things. First, we need to add GEM_PATH/GEM_HOME to your .bashrc so capistranos' ssh session can find your local gems and gem binaries. SSH into your CreamHost account and edit .bashrc and add:
+
+{% highlight bash %}
+export GEM_HOME="$HOME/.gems/"
+export GEM_PATH="$GEM_HOME:/usr/lib/ruby/gems/1.8"
+export PATH="$HOME/bin:$HOME/.gems/bin:$PATH"
+{% endhighlight %}
+
+Now, install bundler:
+
+{% highlight bash %}
+$ gem install bundler
+{% endhighlight %}
+
+Now, go to the domains management page in the DreamHost Web Panel, enabled the "Passenger (Ruby/Python apps only)" checkbox and change your Web directory to "example.com/current/public".
+
+h2. Deploy!
+
+Time for the moment of truth. Let's deploy our app!
+
+{% highlight bash %}
+cap deploy:setup
+cap deploy
+{% endhighlight %}
+
+If all goes as planned, http://example.com/ should show the rails index.html page and /test/index should show "Test#index Find me in app/views/test/index.html.erb"

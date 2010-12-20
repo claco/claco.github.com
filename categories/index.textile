@@ -117,6 +117,14 @@ title: Categories
           </span>
         </div>
         <div class="category">
+          <span class="created" data-created="1292788439" data-format="MM/dd/yyyy">
+            1292788439
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/categories/rails/">Rails</a>
+          </span>
+        </div>
+        <div class="category">
           <span class="created" data-created="1091385185" data-format="MM/dd/yyyy">
             1091385185
           </span> &raquo;  
