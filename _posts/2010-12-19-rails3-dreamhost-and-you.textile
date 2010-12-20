@@ -60,7 +60,7 @@ Now that we have a fresh new empty gemset for this project, we need to bundle ou
 gem 'capistrano'
 {% endhighlight %}
 
-Since we're going to use *capistrano@ to deploy the site, we need to have bundler include it. While we're in there, let's add a specific version of sqlite-ruby.  DreamHost currently has sqlite3-ruby 1.2.1 while the latest gem is 1.2.2. Since I have problems compiling it on DreamHost, let's just use what they have:
+Since we're going to use @capistrano@ to deploy the site, we need to have bundler include it. While we're in there, let's add a specific version of sqlite-ruby.  DreamHost currently has sqlite3-ruby 1.2.1 while the latest gem is 1.2.2. Since I have problems compiling it on DreamHost, let's just use what they have:
 
 {% highlight ruby %}
 gem 'sqlite3-ruby', '1.2.1', :require => 'sqlite3'
@@ -103,7 +103,7 @@ First, we're telling capistrano to not use a pseudo tty, or to use the normal lo
 Now, let's edit the file with our application/repository/git settings:
 
 {% highlight ruby %}
-set :application, "touchstart.net"
+set :application, "example.com"
 set :repository,  "git@github.com:claco/example.com.git"
 set :scm, :git
 set :branch, 'master'
@@ -111,7 +111,7 @@ set :git_shallow_clone, 1
 set :deploy_via, :remote_cache
 set :copy_compression, :bz2
 set :rails_env, 'production'
-set :deploy_to, "/home/momuggs/#{application}"
+set :deploy_to, "/home/dhusername/#{application}"
 {% endhighlight %}
 
 The application name is used in later settings and is usually the site/domain name. We point it to our git repository for the site and tell it what branch to checkout, how to clone and to compress the transfer. We set the rails env to production and tell cap what folder on DreamHost to copy the site to.
@@ -186,7 +186,7 @@ git push origin master
 
 h2. Configure DreamHost
 
-Before we push the site to DreamHost, we need to configure a few things. First, we need to add GEM_PATH/GEM_HOME to your .bashrc so capistranos' ssh session can find your local gems and gem binaries. SSH into your CreamHost account and edit .bashrc and add:
+Before we push the site to DreamHost, we need to configure a few things. First, we need to add GEM_PATH/GEM_HOME to your .bashrc so capistranos' ssh session can find your local gems and gem binaries. SSH into your DreamHost account and edit .bashrc and add:
 
 {% highlight bash %}
 export GEM_HOME="$HOME/.gems/"
@@ -200,7 +200,7 @@ Now, install bundler:
 $ gem install bundler
 {% endhighlight %}
 
-Now, go to the domains management page in the DreamHost Web Panel, enabled the "Passenger (Ruby/Python apps only)" checkbox and change your Web directory to "example.com/current/public".
+Now, go to the domains management page in the DreamHost Web Panel, enable the "Passenger (Ruby/Python apps only)" checkbox and change your Web directory to "example.com/current/public".
 
 h2. Deploy!
 
