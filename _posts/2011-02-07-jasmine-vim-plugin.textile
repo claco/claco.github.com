@@ -62,20 +62,20 @@ Following jasmine conventions, all *Spec.js and *SpecHelper.js files are now ass
 As such, it inherits all of the javascript snippets/styles in addition to the custom jasmine snippets/styles in the plugin.
 
 Here's the normal javascript highlighting:
-!/images/jasmine-vim-no-syntax.png!
+<a href="/images/jasmine-vim-no-syntax.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 Here's the same file with jasmine keywords highlghted:
-!/images/jasmine-vim-syntax.png!
+<a href="/images/jasmine-vim-syntax.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 Here's a screensht of most of the snippets I use all the time:
-!/images/jasmine-vim-snippets.png!
+<a href="/images/jasmine-vim-snippets.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 h2. Adding Files
 
 On of the things I hate is added new files to a project and having to fill them in even after I've told the editor what type they were. Vim has a nice template facility you can assign to the file types themselves. Just like snippets, *Spec.js and *SpecHelper.js jasmine file types have default templates which are loaded when new jasmine buffers are created.
 
 Here's a a new spec helper buffer:
-!/images/jasmine-vim-template.png!
+<a href="/images/jasmine-vim-template.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 If you hate templating, it can be disabled by setting this in your vimrc:
 
@@ -93,7 +93,7 @@ h2. Running Tests
 
 Inspired by various red/green bars inside of vim, I wanted to make running test as easy a possible. While t doesn't support red/green yet, it does support running the current buffer using the nearest rakefile using @:make@, which is mapped to @<leader>m@
 
-!/images/jasmine-vim-make.png!
+<a href="/images/jasmine-vim-make.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 IF you have two different buffers from two different projects open, jasmine.vim will start with the buffer file location and walk up the parent directories and use the first Rakefile it finds before running @rake jasmine:ci@
 
