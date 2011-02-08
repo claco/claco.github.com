@@ -13,6 +13,8 @@ In effort to scratch and itch, I decided to take a crack and making a vim plugin
 
 This is my story. |doink doink|
 
+You can find the plugin on GitHub: https://github.com/claco/jasmine.vim
+
 h2. Create a new project
 
 First, we need a jasmine based project to mess around with. Assuming you have the jasmine gem installed:
