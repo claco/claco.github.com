@@ -1,0 +1,102 @@
+---
+layout: post
+title: "Jasmine Vim Plugin"
+published: true
+created:  1297130108
+tags: [jasmine, bdd, javascript, vim, plugin]
+categories: [Software, Vim]
+---
+
+h2. The Spiel
+
+In effort to scratch and itch, I decided to take a crack and making a vim plugin to speed up Jasmine BDD test writing including faster creation of Spec/SpecHelper files, snippets, inline test running and some syntax highlighting goodness.
+
+This is my story. |doink doink|
+
+h2. Create a new project
+
+First, we need a jasmine based project to mess around with. Assuming you have the jasmine gem installed:
+
+{% highlight bash %}
+claco@mbp ~ $ mkdir JasmineProject
+claco@mbp ~ $ cd JasmineProject/
+claco@mbp ~/JasmineProject $ jasmine init
+Jasmine has been installed with example specs.
+
+To run the server:
+
+rake jasmine
+
+To run the automated CI task with Selenium:
+
+rake jasmine:ci
+{% endhighlight %}
+
+Just for giggles, run the sample tests just to make sure things work:
+
+{% highlight bash %}
+claco@mbp ~/JasmineProject $ rake jasmine:ci
+(in /Users/claco/JasmineProject)
+Waiting for jasmine server on 50468...
+Waiting for jasmine server on 50468...
+Waiting for jasmine server on 50468...
+[2011-02-07 21:11:36] INFO  WEBrick 1.3.1
+[2011-02-07 21:11:36] INFO  ruby 1.9.2 (2010-12-25) [x86_64-darwin10.6.0]
+[2011-02-07 21:11:36] INFO  WEBrick::HTTPServer#start: pid=2334 port=50468
+Waiting for jasmine server on 50468...
+jasmine server started.
+Running: java -jar "./gems/selenium-rc-2.2.4/vendor/selenium-server.jar" -port 50482 > /dev/null
+==> Waiting for Selenium RC server on port 50482... Ready!
+Waiting for suite to finish in browser ...
+.....
+
+Finished in 0.12994 seconds
+5 examples, 0 failures
+{% endhighlight %}
+
+h2. Editing Jasmine Files
+
+Following jasmine conventions, all *Spec.js and *SpecHelper.js files are now assigned to the @jasmine.javascript@ filetype in vim.
+As such, it inherits all of the javascript snippets/styles in addition to the custom jasmine snippets/styles in the plugin.
+
+Here's the normal javascript highlighting:
+!/images/jasmine-vim-no-syntax.png!
+
+Here's the same file with jasmine keywords highlghted:
+!/images/jasmine-vim-syntax.png!
+
+Here's a screensht of most of the snippets I use all the time:
+!/images/jasmine-vim-snippets.png!
+
+h2. Adding Files
+
+On of the things I hate is added new files to a project and having to fill them in even after I've told the editor what type they were. Vim has a nice template facility you can assign to the file types themselves. Just like snippets, *Spec.js and *SpecHelper.js jasmine file types have default templates which are loaded when new jasmine buffers are created.
+
+Here's a a new spec helper buffer:
+!/images/jasmine-vim-template.png!
+
+If you hate templating, it can be disabled by setting this in your vimrc:
+
+{% highlight vim %}
+let g:jasmine_use_templates = ""
+{% endhighlight %}
+
+You can also change the location of the snippets directory. By default, it's inside of the jasmine bundle directory.
+
+{% highlight vim %}
+let g:jasmine_snippets_directory = "~/my/snippets/jasmine"
+{% endhighlight %}
+
+h2. Running Tests
+
+Inspired by various red/green bars inside of vim, I wanted to make running test as easy a possible. While t doesn't support red/green yet, it does support running the current buffer using the nearest rakefile using @:make@, which is mapped to @<leader>m@
+
+!/images/jasmine-vim-make.png!
+
+IF you have two different buffers from two different projects open, jasmine.vim will start with the buffer file location and walk up the parent directories and use the first Rakefile it finds before running @rake jasmine:ci@
+
+h2. Moving Forward
+
+I'm currently working on patches to jasmine to allow you to run specific specs from the command line. The goal is to be able to run a specific spec or suite from the cursor context of the selected buffer.
+
+I also want to inspect the rspec output and Red/Green bar the test status. During failures, I also want to use QuickFix to deal with test failures

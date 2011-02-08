@@ -37,6 +37,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
+            1297130108
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/bdd/">bdd</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1292788439" data-format="MM/dd/yyyy">
             1292788439
           </span> &raquo;  
@@ -261,6 +269,22 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
+            1297130108
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/jasmine/">jasmine</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
+            1297130108
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/javascript/">javascript</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1145365991" data-format="MM/dd/yyyy">
             1145365991
           </span> &raquo;  
@@ -461,6 +485,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
+            1297130108
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/plugin/">plugin</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1218395723" data-format="MM/dd/yyyy">
             1218395723
           </span> &raquo;  
@@ -650,6 +682,14 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/view%20mvc/">view mvc</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
+            1297130108
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/vim/">vim</a>
           </span>
         </div>
         <div class="tag">
