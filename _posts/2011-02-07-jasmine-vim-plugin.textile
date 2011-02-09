@@ -65,17 +65,17 @@ Here's the normal javascript highlighting:
 <a href="/images/jasmine-vim-no-syntax.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
 
 Here's the same file with jasmine keywords highlghted:
-<a href="/images/jasmine-vim-syntax.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
+<a href="/images/jasmine-vim-syntax.png"><img src="/images/jasmine-vim-syntax.png" width="600" height="300" /></a>
 
 Here's a screensht of most of the snippets I use all the time:
-<a href="/images/jasmine-vim-snippets.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
+<a href="/images/jasmine-vim-snippets.png"><img src="/images/jasmine-vim-snippets.png" width="600" height="300" /></a>
 
 h2. Adding Files
 
 On of the things I hate is added new files to a project and having to fill them in even after I've told the editor what type they were. Vim has a nice template facility you can assign to the file types themselves. Just like snippets, *Spec.js and *SpecHelper.js jasmine file types have default templates which are loaded when new jasmine buffers are created.
 
 Here's a a new spec helper buffer:
-<a href="/images/jasmine-vim-template.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
+<a href="/images/jasmine-vim-template.png"><img src="/images/jasmine-vim-template.png" width="600" height="300" /></a>
 
 If you hate templating, it can be disabled by setting this in your vimrc:
 
@@ -93,7 +93,7 @@ h2. Running Tests
 
 Inspired by various red/green bars inside of vim, I wanted to make running test as easy a possible. While t doesn't support red/green yet, it does support running the current buffer using the nearest rakefile using @:make@, which is mapped to @<leader>m@
 
-<a href="/images/jasmine-vim-make.png"><img src="/images/jasmine-vim-no-syntax.png" width="600" height="300" /></a>
+<a href="/images/jasmine-vim-make.png"><img src="/images/jasmine-vim-make.png" width="600" height="300" /></a>
 
 IF you have two different buffers from two different projects open, jasmine.vim will start with the buffer file location and walk up the parent directories and use the first Rakefile it finds before running @rake jasmine:ci@
 
@@ -102,3 +102,13 @@ h2. Moving Forward
 I'm currently working on patches to jasmine to allow you to run specific specs from the command line. The goal is to be able to run a specific spec or suite from the cursor context of the selected buffer.
 
 I also want to inspect the rspec output and Red/Green bar the test status. During failures, I also want to use QuickFix to deal with test failures
+
+h2. Update: Red/Green Support!
+
+I just added the first round of support for Red/Green status messages when the tests pass/fail.
+
+<a href="/images/jasmine-vim-green.png"><img src="/images/jasmine-vim-green.png" width="600" height="300" /></a>
+
+<a href="/images/jasmine-vim-red.png"><img src="/images/jasmine-vim-red.png" width="600" height="300" /></a>
+
+
