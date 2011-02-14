@@ -12,7 +12,7 @@ ul li:before {
   content: "\00BB \0020";
 }
 p, li {
-  font-size: 0.95em;
+  font-size: 0.90em;
   letter-spacing: 1px;
   line-height: 1.5em;
 }
@@ -51,8 +51,10 @@ strong, b {
   text-align: center;
 }
 #header .created {
-  margin-top: 15px;
-  margin-bottom: 3px;
+  font-family: "Yanone Kaffeesatz", serif;
+  font-size: 1.3em;
+  margin-top: 10px;
+  margin-bottom: 7px;
 }
 .comments {
   margin-top: 65px;
@@ -65,17 +67,30 @@ strong, b {
 }
 h1, h2, h3, .title {
   color: black;
-  font-family: "American Typewriter", "Courier New", "Courier", serif;
-  font-size: 2.40em;
+  font-family: "PT Sans", "American Typewriter", "Courier New", "Courier", serif;
+  font-size: 2.00em;
   font-weight: normal;
-  letter-spacing: -.05em;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 h3 {
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-style: italic;
+}
+#header .title {
+  font-family: "Yanone Kaffeesatz", serif;
+  font-size: 46px;
+  letter-spacing: 0.02em;
+  word-spacing: 0.026em;
+}
+.post .title {
+  font-family: "PT Sans", sans-serif;
+}
+.post .created {
+  font-family: "Yanone Kaffeesatz", serif;
+  font-size: 1.2em;
 }
 .clear { clear : both; }
 .post .tags .tag, .post .category {
