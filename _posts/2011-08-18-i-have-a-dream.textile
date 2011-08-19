@@ -1,0 +1,37 @@
+---
+layout: post
+title: "I Have a Dream"
+published: true
+created:  1313718080
+tags: [cloud, instances, automation, vagrant, chef, knife, ec2, rackspace]
+categories: [Automation]
+---
+
+h2. I have a dream. An automation dream. 
+
+In this dream a new employee can setup an instance of our app on their machine day 1. They can spin up their own instance of our app in the cloud. They can spin up an instance of our app with any branch for people to play with or test at any time. They can even spin up a new production server and put it in the pool if the need to scale arises. I dream of automated electric sheep jumping over server instances.
+
+h2. Where are we now?
+
+We currently have a setup Rakefile that automates a new machine setup from out-of-the-box to running app. Some days it has issues but for the most part, people have been able to run the script, do some development, commit changes and deploy then to production on day 1. That's a big win.
+
+Unfortunately, that's not very reusable. We can't easily re use that same setup knowledge to create an EC2/RackSpace instance or setup new servers. This has to change.
+
+h2. What can we do about it?
+
+Luckily for us, these sorts of tasks are a solved problem with some initial setup work.
+
+For creating and launching instances in the cloud we have Knife. Knife can create instances on EC2, RackSpace (and others):
+
+  * https://github.com/opscode/knife-ec2
+  * https://github.com/opscode/knife-erackspace
+
+For creating local instances using VirtualBox we have Vagrant.
+
+  * http://vagrantup.com/
+
+In both cases we can use Chef cookbooks to configure the new servers and even a new MacBook setup locally.
+
+  * https://github.com/opscode/chef
+
+Let the games begin. Updates to follow.

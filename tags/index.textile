@@ -37,6 +37,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/automation/">automation</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1297130108" data-format="MM/dd/yyyy">
             1297130108
           </span> &raquo;  
@@ -82,6 +90,22 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/catalyst/">catalyst</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/chef/">chef</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/cloud/">cloud</a>
           </span>
         </div>
         <div class="tag">
@@ -162,6 +186,14 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/drums/">drums</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/ec2/">ec2</a>
           </span>
         </div>
         <div class="tag">
@@ -261,6 +293,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/instances/">instances</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1209918247" data-format="MM/dd/yyyy">
             1209918247
           </span> &raquo;  
@@ -306,6 +346,14 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/juploadr/">juploadr</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/knife/">knife</a>
           </span>
         </div>
         <div class="tag">
@@ -501,6 +549,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/rackspace/">rackspace</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1292788439" data-format="MM/dd/yyyy">
             1292788439
           </span> &raquo;  
@@ -666,6 +722,14 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/v450/">v450</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
+            1313718080
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/vagrant/">vagrant</a>
           </span>
         </div>
         <div class="tag">
