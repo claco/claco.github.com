@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Testing: It's Not Just For Your Code"
+published: true
+created:  1318535119
+tags: [testing, clerb, slides]
+categories: [Testing, Presentations]
+---
+
+Here are the "slides":http://chrislaco.com/slides/clerb-testing.pdf for this evenings presentation at the CLERB MeetUp.

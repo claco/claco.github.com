@@ -101,6 +101,14 @@ title: Tags
           </span>
         </div>
         <div class="tag">
+          <span class="created" data-created="1318535119" data-format="MM/dd/yyyy">
+            1318535119
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/clerb/">clerb</a>
+          </span>
+        </div>
+        <div class="tag">
           <span class="created" data-created="1313718080" data-format="MM/dd/yyyy">
             1313718080
           </span> &raquo;  
@@ -597,8 +605,8 @@ title: Tags
           </span>
         </div>
         <div class="tag">
-          <span class="created" data-created="1187493851" data-format="MM/dd/yyyy">
-            1187493851
+          <span class="created" data-created="1318535119" data-format="MM/dd/yyyy">
+            1318535119
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/slides/">slides</a>
@@ -669,8 +677,8 @@ title: Tags
           </span>
         </div>
         <div class="tag">
-          <span class="created" data-created="1290140746" data-format="MM/dd/yyyy">
-            1290140746
+          <span class="created" data-created="1318535119" data-format="MM/dd/yyyy">
+            1318535119
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/testing/">testing</a>
