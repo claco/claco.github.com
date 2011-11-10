@@ -1,0 +1,10 @@
+---
+layout: post
+title: "Servers So Easy A Caveman Can Do It"
+published: true
+created:  1320910231
+tags: [servers, vagrant, chef, ec2, rackspace, cloud, clerb, slides]
+categories: [Servers, Presentations]
+---
+
+Here are the "slides":http://chrislaco.com/slides/clerb-caveman.pdf for this evenings presentation at the CLERB MeetUp.
