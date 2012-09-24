@@ -1,0 +1,705 @@
+---
+layout: post
+title: "DevOps Toolbox: Define/Create a Vagrant Box"
+published: true
+created:  1348446443
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/define-create-vagrant-box
+---
+
+h1. Defining/Creating a Vagrant Box
+
+Technically, you can skip this step. But don't! There are quite a few preconfigured boxes you can download to get you started quicker, but it's important to understand how boostrapping a local box works because the same techniques apply to creating images in the cloud.
+
+The goal is to have a machine with just enough install to run the @chef-client@ successfully. Everything beyond that should be put into cookbooks/recipes themselves, keeping the machine create as simple as possible.
+
+First, let's clarify a few of the terms you'll be seeing. A @definition@ is a set of files that tells @veewee@ how to create a box from the raw @.iso@ install disc. A @basebox@ is the completed virtual machine image with the install completed. The @basebox@ is then exported to a @box@, that @vagrant@ then creates new VirtualBox instances from.
+
+See also "Base Boxes":http://vagrantup.com/v1/docs/base_boxes.html on the Vagrant website.
+
+# "Create a New Box Definition":#NEWDEFINITION
+# "Customize the Definition":#CUSTOMIZEDEFINITION
+# "Building the Box":#BUILDBASEBOX
+# "Validating the Box":#VALIDATEBASEBOX
+# "Export the Box":#EXPORTBASEBOX
+# "Commit Our Work":#COMMIT
+
+h2(#NEWDEFINITION). Create a New Box Definition
+
+First, let's see what basebox definitions are available by running @vagrant basebox templates@:
+
+{% highlight sh linenos %}
+$ vagrant basebox templates
+The following templates are available:
+vagrant basebox define '<boxname>' 'CentOS-4.8-i386'
+vagrant basebox define '<boxname>' 'CentOS-5.5-x86_64-netboot'
+vagrant basebox define '<boxname>' 'CentOS-5.6-i386'
+vagrant basebox define '<boxname>' 'CentOS-5.6-i386-netboot'
+vagrant basebox define '<boxname>' 'CentOS-5.6-x86_64-netboot'
+vagrant basebox define '<boxname>' 'CentOS-5.7-i386-netboot'
+vagrant basebox define '<boxname>' 'CentOS-5.7-x86_64-netboot'
+vagrant basebox define ')boxname>' 'CentOS-6.0-i386'
+vagrant basebox define '<boxname>' 'CentOS-6.0-i386-netboot'
+vagrant basebox define '<boxname>' 'CentOS-6.0-x86_64'
+vagrant basebox define '<boxname>' 'CentOS-6.0-x86_64-minimal'
+vagrant basebox define '<boxname>' 'CentOS-6.0-x86_64-netboot'
+vagrant basebox define '<boxname>' 'CentOS-6.1-x86_64-minimal'
+vagrant basebox define '<boxname>' 'CentOS-6.2-x86_64-minimal'
+vagrant basebox define '<boxname>' 'Debian-5.0.8-amd64-netboot'
+vagrant basebox define '<boxname>' 'Debian-5.0.8-i386-netboot'
+vagrant basebox define '<boxname>' 'Debian-6.0.3-amd64-netboot'
+vagrant basebox define '<boxname>' 'Debian-6.0.3-i386-netboot'
+vagrant basebox define '<boxname>' 'Fedora-14-amd64'
+vagrant basebox define '<boxname>' 'Fedora-14-amd64-netboot'
+vagrant basebox define '<boxname>' 'Fedora-14-i386'
+vagrant basebox define '<boxname>' 'Fedora-14-i386-netboot'
+vagrant basebox define '<boxname>' 'Fedora-15-i386'
+vagrant basebox define '<boxname>' 'Fedora-15-i386-netboot'
+vagrant basebox define '<boxname>' 'Fedora-15-x86_64'
+vagrant basebox define '<boxname>' 'Fedora-15-x86_64-netboot'
+vagrant basebox define '<boxname>' 'Fedora-16-i386'
+vagrant basebox define '<boxname>' 'Fedora-16-x86_64'
+vagrant basebox define '<boxname>' 'SLES-11-SP1-DVD-i586-GM'
+vagrant basebox define '<boxname>' 'SLES-11-SP1-DVD-x86_64-GM'
+vagrant basebox define '<boxname>' 'Sysrescuecd-2.0.0-experimental'
+vagrant basebox define '<boxname>' 'archlinux-i386'
+vagrant basebox define '<boxname>' 'archlinux-i386-netboot'
+vagrant basebox define '<boxname>' 'archlinux-x86_64'
+vagrant basebox define '<boxname>' 'archlinux-x86_64-netboot'
+vagrant basebox define '<boxname>' 'freebsd-8.2-experimental'
+vagrant basebox define '<boxname>' 'freebsd-8.2-pcbsd-i386'
+vagrant basebox define '<boxname>' 'freebsd-8.2-pcbsd-i386-netboot'
+vagrant basebox define '<boxname>' 'funtoo-latest-generic_64-stable'
+vagrant basebox define '<boxname>' 'gentoo-latest-i386-experimental'
+vagrant basebox define '<boxname>' 'gentoo-latest-x86_64-experimental'
+vagrant basebox define '<boxname>' 'openSUSE-11.4-DVD-i586'
+vagrant basebox define '<boxname>' 'openSUSE-11.4-DVD-x86_64'
+vagrant basebox define '<boxname>' 'openSUSE-11.4-NET-i586'
+vagrant basebox define '<boxname>' 'openSUSE-11.4-NET-x86_64'
+vagrant basebox define '<boxname>' 'openSUSE-12.1-DVD+NET-i586'
+vagrant basebox define '<boxname>' 'openSUSE-12.1-DVD+NET-x86_64'
+vagrant basebox define '<boxname>' 'openbsd50_amd64'
+vagrant basebox define '<boxname>' 'openbsd50_i386'
+vagrant basebox define '<boxname>' 'openindiana-148-ai-x86'
+vagrant basebox define '<boxname>' 'opensuse-11.4-i386-experimental'
+vagrant basebox define '<boxname>' 'scientificlinux-6.1-i386-netboot'
+vagrant basebox define '<boxname>' 'scientificlinux-6.1-x86_64-netboot'
+vagrant basebox define '<boxname>' 'solaris-11-express-i386'
+vagrant basebox define '<boxname>' 'ubuntu-10.04.2-amd64-netboot'
+vagrant basebox define '<boxname>' 'ubuntu-10.04.2-server-i386-netboot'
+vagrant basebox define '<boxname>' 'ubuntu-10.04.3-server-amd64'
+vagrant basebox define '<boxname>' 'ubuntu-10.04.3-server-amd64-alt'
+vagrant basebox define '<boxname>' 'ubuntu-10.04.3-server-i386'
+vagrant basebox define '<boxname>' 'ubuntu-10.10-server-amd64'
+vagrant basebox define '<boxname>' 'ubuntu-10.10-server-amd64-netboot'
+vagrant basebox define '<boxname>' 'ubuntu-10.10-server-i386'
+vagrant basebox define '<boxname>' 'ubuntu-10.10-server-i386-netboot'
+vagrant basebox define '<boxname>' 'ubuntu-11.04-server-amd64'
+vagrant basebox define '<boxname>' 'ubuntu-11.04-server-i386'
+vagrant basebox define '<boxname>' 'ubuntu-11.10-server-amd64'
+vagrant basebox define '<boxname>' 'ubuntu-11.10-server-amd64-ishaya'
+vagrant basebox define '<boxname>' 'ubuntu-11.10-server-amd64-ruby192'
+vagrant basebox define '<boxname>' 'ubuntu-11.10-server-i386'
+vagrant basebox define '<boxname>' 'ubuntu-8.04.4-server-amd64'
+vagrant basebox define '<boxname>' 'ubuntu-8.04.4-server-i386'
+vagrant basebox define '<boxname>' 'windows-2008R1-serverstandard-amd64'
+vagrant basebox define '<boxname>' 'windows-2008R2-amd64'
+vagrant basebox define '<boxname>' 'windows-2008R2-serverstandard-amd64'
+vagrant basebox define '<boxname>' 'windows-7-enterprise-amd64'
+vagrant basebox define '<boxname>' 'windows-7-enterprise-i386'
+vagrant basebox define '<boxname>' 'windows-7-premium-amd64'
+vagrant basebox define '<boxname>' 'windows-7-professional-amd64'
+vagrant basebox define '<boxname>' 'windows-7-ultimate-amd64'
+vagrant basebox define '<boxname>' 'windows-7sp1-ultimate-amd64'
+vagrant basebox define '<boxname>' 'windows-8-preview-dev-amd64'
+{% endhighlight %}
+
+Just because it's what I'm most familiar with at the moment, and because it will highlight some of the issues with older OSes, I'm going to create a CentOS 5.6 x64 basebox. To do that, we run the @vagrant basebox define@ command:
+
+{% highlight sh linenos %}
+$ vagrant basebox define 'MyServer' 'CentOS-5.6-x86_64-netboot'
+The basebox 'MyServer' has been successfully created from the template 'CentOS-5.6-x86_64-netboot'
+You can now edit the definition files stored in definitions/MyServer
+or build the box with:
+vagrant basebox build 'MyServer'
+{% endhighlight %}
+
+Now that we have a new basebox definition, let's take a look at the files it created:
+
+{% highlight sh lineos %}
+ls definitions/MyServer
+total 24
+-rw-r--r--  1 claco  staff   923 Sep 23 21:25 definition.rb
+-rw-r--r--  1 claco  staff  1396 Sep 23 21:25 ks.cfg
+-rw-r--r--  1 claco  staff  1884 Sep 23 21:25 postinstall.sh
+{% endhighlight %}
+
+bq. *From the top:* @definition.rb@ is the file that tells vagrant how to create a VirtualBox image (memory, disk size, etc). @ks.cfg@ is the Linux KickStart file, which tells the OS installer what to install and what to enable. *postinstall.sh@ is a shell script to run once the install has finished in order to perform any last minute configuration.
+
+h2(#CUSTOMIZEDEFINITION). Customize the Definition
+
+Now that we have a new definition, let's inspect the definition files customize them a little where needed.
+
+First, open @definitions/MyServer/definition.rb@ in your favorite editor:
+
+{% highlight ruby linenos %}
+Veewee::Session.declare({
+  :cpu_count => '1', :memory_size=> '384',
+  :disk_size => '10140', :disk_format => 'VDI', :hostiocache => 'off', :ioapic => 'on', :pae => 'on',
+  :os_type_id => 'RedHat_64',
+  :iso_file => "CentOS-5.6-x86_64-netinstall.iso",
+  :iso_src => "http://vault.centos.org/5.6/isos/x86_64/CentOS-5.6-x86_64-netinstall.iso",
+  :iso_md5 => "02cf3a5e32aaa5eed27af775ad292beb",
+  :iso_download_timeout => 1000,
+  :boot_wait => "10", :boot_cmd_sequence => [ 'linux text ks=http://%IP%:%PORT%/ks.cfg<Enter>' ],
+  :kickstart_port => "7122", :kickstart_timeout => 10000, :kickstart_file => "ks.cfg",
+  :ssh_login_timeout => "100", :ssh_user => "vagrant", :ssh_password => "vagrant", :ssh_key => "",
+  :ssh_host_port => "7222", :ssh_guest_port => "22",
+  :sudo_cmd => "echo '%p'|sudo -S sh '%f'",
+  :shutdown_cmd => "/sbin/halt -h -p",
+  :postinstall_files => [ "postinstall.sh"], :postinstall_timeout => 10000
+})
+{% endhighlight %}
+
+It's just a plain old Ruby file with settings that tell Vagrant how to configure the VirtualBox image when it is created. For example, line 2 tells it to create 1 CPU with a memory size of 384MB. That's not a terrible large machine, but it will do for the purposes of learning. IF your developers all have 4-8 core machines installed with 8GB of memory, making the default CPU setting a 2 and increasing memory to 1GB might make more sense.
+
+Close that file, and open @definitions/MyServer/ks.cfg@:
+
+{% highlight apache linenos %}
+# Kickstart file automatically generated by anaconda.
+
+install
+url --url=http://vault.centos.org/5.6/os/x86_64
+lang en_US.UTF-8
+langsupport --default=en_US.UTF-8 en_US.UTF-8
+keyboard us
+xconfig --card "VMWare" --videoram 16384 --hsync 31.5-37.9 --vsync 50-70 --resolution 800x600 --depth 16
+network --device eth0 --bootproto dhcp
+rootpw --iscrypted $1$vSG8FjAu$ekQ0grf16hS4G93HTPcco/
+firewall --enabled --trust eth0 --ssh
+selinux --enforcing
+authconfig --enableshadow --enablemd5
+timezone Europe/London
+bootloader --location=mbr
+# The following is the partition information you requested
+# Note that any partitions you deleted are not expressed
+# here so unless you clear all partitions first, this is
+# not guaranteed to work
+clearpart --all --drives=sda --initlabel
+part /boot --fstype ext3 --size=100 --ondisk=sda
+part pv.2 --size=0 --grow --ondisk=sda
+volgroup VolGroup00 --pesize=32768 pv.2
+logvol swap --fstype swap --name=LogVol01 --vgname=VolGroup00 --size=528 --grow --maxsize=1056
+logvol / --fstype ext3 --name=LogVol00 --vgname=VolGroup00 --size=1024 --grow
+reboot
+
+%packages
+#@ admin-tools
+#@ text-internet
+#@ dialup
+#@ smb-server
+#@ web-server
+#@ printing
+#@ server-cfg
+@ core
+grub"
+e2fsprogs
+lvm2
+
+%post
+/usr/sbin/groupadd vagrant
+/usr/sbin/useradd vagrant -g vagrant -G wheel
+echo "vagrant"|passwd --stdin vagrant
+echo "vagrant        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+{% endhighlight %}
+
+bq. *Fron the top:* As expected, this file is full of mostly readable commands that the OS installer follows to set the defaults. Line 9 turns on DHCP. Line 10 sets the default root password. Line 11 enables the firewall, etc. The last 5 lines create a *vagrant* user/group and adds that user to sodoers. When the install completes, *vagrant* will log in as this user to run the *postinstall.sh* script.
+
+If you were to run this script as is, a few obvious and not so obvious things would happen. First, your time zone would be "Europe/London", which would be nice, but not real. Next, SeLinux (Secure Linux) would be enabled, which is something that Chef cookbooks and recipes do not yet support. (In fact, cloud instances of CentOS 5.6 have SeLinux disabled already) To make matters even more interesting, while we will disabled selinux here, there's a KickStart bug in certain versions of CentOS, where the installer *ignores* the setting and enables it anyways. :-/ These are the kinds of things you run into depending on the OS you choose. Each has their own quirks.
+
+So, let's update the timezone and selinux settings in this file:
+
+{% highlight apache linenos %}
+# Kickstart file automatically generated by anaconda.
+
+install
+url --url=http://vault.centos.org/5.6/os/x86_64
+lang en_US.UTF-8
+langsupport --default=en_US.UTF-8 en_US.UTF-8
+keyboard us
+xconfig --card "VMWare" --videoram 16384 --hsync 31.5-37.9 --vsync 50-70 --resolution 800x600 --depth 16
+network --device eth0 --bootproto dhcp
+rootpw --iscrypted $1$vSG8FjAu$ekQ0grf16hS4G93HTPcco/
+firewall --enabled --trust eth0 --ssh
+selinux --disabled
+authconfig --enableshadow --enablemd5
+timezone America/New_York
+bootloader --location=mbr
+# The following is the partition information you requested
+# Note that any partitions you deleted are not expressed
+# here so unless you clear all partitions first, this is
+# not guaranteed to work
+clearpart --all --drives=sda --initlabel
+part /boot --fstype ext3 --size=100 --ondisk=sda
+part pv.2 --size=0 --grow --ondisk=sda
+volgroup VolGroup00 --pesize=32768 pv.2
+logvol swap --fstype swap --name=LogVol01 --vgname=VolGroup00 --size=528 --grow --maxsize=1056
+logvol / --fstype ext3 --name=LogVol00 --vgname=VolGroup00 --size=1024 --grow
+reboot
+
+%packages
+#@ admin-tools
+#@ text-internet
+#@ dialup
+#@ smb-server
+#@ web-server
+#@ printing
+#@ server-cfg
+@ core
+grub"
+e2fsprogs
+lvm2
+
+%post
+/usr/sbin/groupadd vagrant
+/usr/sbin/useradd vagrant -g vagrant -G wheel
+echo "vagrant"|passwd --stdin vagrant
+echo "vagrant        ALL=(ALL)       NOPASSWD: ALL" >> /etc/sudoers
+{% endhighlight %}
+
+Lastly, save and close that file and open @definitions/MyServer/postinstall.sh@:
+
+{% highlight sh linenos %}
+#http://chrisadams.me.uk/2010/05/10/setting-up-a-centos-base-box-for-development-and-testing-with-vagrant/
+
+date > /etc/vagrant_box_build_time
+
+fail()
+{
+  echo "FATAL: $*"
+  exit 1
+}
+
+#kernel source is needed for vbox additions
+yum -y install gcc bzip2 make kernel-devel-`uname -r`
+#yum -y update
+#yum -y upgrade
+
+yum -y install gcc-c++ zlib-devel openssl-devel readline-devel sqlite3-devel
+yum -y erase gtk2 libX11 hicolor-icon-theme avahi freetype bitstream-vera-fonts
+yum -y clean all
+
+#Installing ruby
+cd /tmp
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz || fail "Could not download Ruby source"
+tar xzvf ruby-1.9.2-p180.tar.gz 
+cd ruby-1.9.2-p180
+./configure
+make && make install
+cd /tmp
+rm -rf /tmp/ruby-1.9.2-p180
+rm /tmp/ruby-1.9.2-p180.tar.gz
+ln -s /usr/local/bin/ruby /usr/bin/ruby # Create a sym link for the same path
+ln -s /usr/local/bin/gem /usr/bin/gem # Create a sym link for the same path
+
+#Installing chef & Puppet
+echo "Installing chef and puppet"
+/usr/local/bin/gem install chef --no-ri --no-rdoc || fail "Could not install chef"
+/usr/local/bin/gem install puppet --no-ri --no-rdoc || fail "Could not install puppet"
+
+#Installing vagrant keys
+mkdir /home/vagrant/.ssh
+chmod 700 /home/vagrant/.ssh
+cd /home/vagrant/.ssh
+wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub' -O authorized_keys
+chown -R vagrant /home/vagrant/.ssh
+
+#Installing the virtualbox guest additions
+VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
+cd /tmp
+wget http://download.virtualbox.org/virtualbox/$VBOX_VERSION/VBoxGuestAdditions_$VBOX_VERSION.iso
+mount -o loop VBoxGuestAdditions_$VBOX_VERSION.iso /mnt
+sh /mnt/VBoxLinuxAdditions.run
+umount /mnt
+
+rm VBoxGuestAdditions_$VBOX_VERSION.iso
+
+
+sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
+sed -i "s/^\(.*env_keep = \"\)/\1PATH /" /etc/sudoers
+
+#poweroff -h
+
+exit
+{% endhighlight %}
+
+bq. *From the top:* The @postinstall.sh@ still is just a simple shell script that performs the rest of the machine configuration, including installing the required yum packages, installing Ruby, Chef, and the VirtualBox guess additions for mapping/sharing directories.
+
+As with the @ks.cfg@ file, leaving this file as it exist now will present a few problems down the road. For example, on Line 16:
+
+{% highlight sh %}
+yum -y install gcc bzip2 make kernel-devel-`uname -r`
+{% endhighlight %}
+
+This distro is so old that yum will fail to find @kernel-devel-2.6.18-238.el5.x86_64.rpm@ on the remote repository, which will then cause the VirtualBox Guest Additions install to fail, which in turn will cause vagrant to not be able to map a shared folder, which will make chef-client fail. :-/
+
+It also installs an older Ruby than we're using, sqlite3-devel is now sqlite-devel, and as mentioned before, we still have to disable SeLinux for real after KickStart has mucked it up for us.
+
+So, let's point yum to a newer rpm repository (Line 12), get the right devel headers (Line 14), sqlite (Line 15), ruby-shadow (Line 40), add Ruby 1.9.3 (Line 25), and disable selinuix (Line 65):
+
+{% highlight sh linenos %}
+#http://chrisadams.me.uk/2010/05/10/setting-up-a-centos-base-box-for-development-and-testing-with-vagrant/
+
+date > /etc/vagrant_box_build_time
+
+fail()
+{
+  echo "FATAL: $*"
+  exit 1
+}
+
+#kernel source is needed for vbox additions
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+rpm -i http://vault.centos.org/5.6/os/x86_64/CentOS/kernel-devel-2.6.18-238.el5.x86_64.rpm
+yum -y install gcc bzip2 make
+#yum -y update
+#yum -y upgrade
+
+yum -y install gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel libyaml-devel
+yum -y erase gtk2 libX11 hicolor-icon-theme avahi freetype bitstream-vera-fonts
+yum -y clean all
+
+#Installing ruby
+cd /tmp
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz || fail "Could not download Ruby source"
+tar xzvf ruby-1.9.3-p194.tar.gz
+cd ruby-1.9.3-p194
+./configure
+make && make install
+cd /tmp
+rm -rf /tmp/ruby-1.9.3-p194
+rm /tmp/ruby-1.9.3-p194.tar.gz
+ln -s /usr/local/bin/ruby /usr/bin/ruby # Create a sym link for the same path
+ln -s /usr/local/bin/gem /usr/bin/gem # Create a sym link for the same path
+
+#Installing chef & Puppet
+echo "Installing chef and puppet"
+/usr/local/bin/gem install chef --no-ri --no-rdoc || fail "Could not install chef"
+/usr/local/bin/gem install puppet --no-ri --no-rdoc || fail "Could not install puppet"
+
+#Installing shadow password support for chef
+echo "Installing ruby shadow password support for chef"
+/usr/local/bin/gem install ruby-shadow --no-ri --no-rdoc || fail "Could not install ruby-shadow"
+
+#Installing vagrant keys
+mkdir /home/vagrant/.ssh
+chmod 700 /home/vagrant/.ssh
+cd /home/vagrant/.ssh
+wget --no-check-certificate 'https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub' -O authorized_keys
+chown -R vagrant /home/vagrant/.ssh
+
+#Installing the virtualbox guest additions
+VBOX_VERSION=$(cat /home/vagrant/.vbox_version)
+cd /tmp
+wget http://download.virtualbox.org/virtualbox/$VBOX_VERSION/VBoxGuestAdditions_$VBOX_VERSION.iso
+mount -o loop VBoxGuestAdditions_$VBOX_VERSION.iso /mnt
+sh /mnt/VBoxLinuxAdditions.run
+umount /mnt
+
+rm VBoxGuestAdditions_$VBOX_VERSION.iso
+
+
+sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
+sed -i "s/^\(.*env_keep = \"\)/\1PATH /" /etc/sudoers
+
+# Disabling SELinux in config since kickstart ignores the flag
+echo "Disabling SELinux"
+sed -i "s/^SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
+
+#poweroff -h
+
+exit
+{% endhighlight %}
+
+Yes, the @ruby-shadow@ gem could be installed by a recipe in a cookbook within Chef using @gem_package@. I just like having it preinstalled and close to the machine. Feel free to experiment. :-)
+
+h2(#BUILDBASEBOX). Creating the Box
+
+Now that we've configured our basebox, it's time to let vagrant/veewee use their magic to download the iso, create a new VM image, install the OS, configure it, and leave us with a nice fresh login screen and ssh session that can run chef.
+
+To create a basebox, run the @vagrant basebox build@ command:
+
+{% highlight sh linenos %}
+$ vagrant basebox build MyServer
+
+We did not find an isofile in <currentdir>/iso. 
+
+The definition provided the following download information:
+- Download url: http://vault.centos.org/5.6/isos/x86_64/CentOS-5.6-x86_64-netinstall.iso
+- Md5 Checksum: 02cf3a5e32aaa5eed27af775ad292beb
+
+
+Download? (Yes/No)  |No|
+Yes
+Creating an iso directory
+Setting VM Flag ioapic to onooooooooooooooooooooooooooooooooo|  10.4MB 133.7KB/s ETA:   0:00:00
+Setting VM Flag pae to on
+Creating vm OLF2012 : 384M - 1 CPU - RedHat_64
+Creating new harddrive of size 10140 
+VBoxManage createhd --filename '/Users/claco/VirtualBox VMs/MyServer/MyServer.vdi' --size '10140' --format vdi > /dev/null
+Attaching disk: /Users/claco/VirtualBox VMs/MyServer/MyServer.vdi
+Mounting cdrom: /Users/claco/devops_toolbox/iso/CentOS-5.6-x86_64-netinstall.iso
+Waiting for the machine to boot
+
+Typing:[1]: linux text ks=http://192.168.10.18:7122/ks.cfg<Enter>
+Done typing.
+
+Starting a webserver on port 7122
+Serving file /Users/claco/devops_toolbox/definitions/MyServer/ks.cfg
+
+Waiting for ssh login with user vagrant to sshd on port => 7222 to work
+............................................................................................
+Transferring /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/vbox.version20120901-40343-1321urf to .vbox_version 
+{% endhighlight %}
+
+Once the VM image is started and the install process kicks off, you'll be prompted to allow VirtualBox to listen for incoming connections by OSX. Click Allow.
+
+!/images/devops-toolbox/01-basebox-build.png!
+
+The installer will start and process to use the @ks.cfg@ file uploaded by vagrant. If took too long to approve the incoming connection request, you might get an error that looks like this:
+
+!/images/devops-toolbox/02-basebox-build.png!
+
+Don't panic. Just quick the process and try again, and the install should continue this time.
+
+!/images/devops-toolbox/03-basebox-build.png!
+
+If you are using the "net install" option like I am here, you occasionally my get an error while the installer is downloadings a file. Hitting "Retry" will prompt the installer to rety the download, and that always seems to work.
+
+!/images/devops-toolbox/04-basebox-build.png!
+!/images/devops-toolbox/05-basebox-build.png!
+!/images/devops-toolbox/06-basebox-build.png!
+
+Once the KickStart is done running, you should see a login prompt like this.
+
+!/images/devops-toolbox/07-basebox-build.png!
+
+At this point, vagrant will upload the @postinstall.sh@ script, which it will then run. You'll then see a metric tonne of ssh output in your terminal as the script does it's thing:
+
+{% highlight sh linenos %}
+Waiting for ssh login with user vagrant to sshd on port => 7222 to work
+.Transferring /Users/claco/devops_toolbox/definitions/MyServer/postinstall.sh to postinstall.sh 
+..
+***echo 'vagrant'|sudo -S sh 'postinstall.sh'
+Executing command: echo 'vagrant'|sudo -S sh 'postinstall.sh'
+Retrieving http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+warning: /var/tmp/rpm-xfer.KooZeM: Header V3 DSA signature: NOKEY, key ID 217521f6
+Preparing...                ########################################### [100%]
+   1:epel-release           ########################################### [100%]
+.....
+
+--2012-09-01 17:08:20--  http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz
+Resolving ftp.ruby-lang.org... 221.186.184.68
+Connecting to ftp.ruby-lang.org|221.186.184.68|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12432239 (12M) [application/x-tar]
+Saving to: `ruby-1.9.3-p194.tar.gz'
+
+100%[======================================>] 12,432,239  81.5K/s   in 6m 16s  
+
+2012-09-01 17:14:37 (32.3 KB/s) - `ruby-1.9.3-p194.tar.gz' saved [12432239/12432239]
+
+ruby-1.9.3-p194/
+ruby-1.9.3-p194/doc/
+ruby-1.9.3-p194/defs/
+....
+
+Installing chef and puppet
+Fetching: mixlib-config-1.1.2.gem (100%)
+Fetching: mixlib-cli-1.2.2.gem (100%)
+Fetching: mixlib-log-1.4.1.gem (100%)
+....
+
+--2012-09-01 17:19:36--  https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub
+Resolving raw.github.com... 207.97.227.243
+Connecting to raw.github.com|207.97.227.243|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 409 [text/plain]
+Saving to: `authorized_keys'
+
+100%[======================================>] 409         --.-K/s   in 0s      
+
+2012-09-01 17:19:37 (55.7 MB/s) - `authorized_keys' saved [409/409]
+
+--2012-09-01 17:19:37--  http://download.virtualbox.org/virtualbox/4.2.1/VBoxGuestAdditions_4.2.1.iso
+Resolving download.virtualbox.org... 137.254.16.69
+Connecting to download.virtualbox.org|137.254.16.69|:80... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: http://dlc.sun.com.edgesuite.net/virtualbox/4.2.1/VBoxGuestAdditions_4.2.1.iso [following]
+--2012-09-01 17:19:37--  http://dlc.sun.com.edgesuite.net/virtualbox/4.2.1/VBoxGuestAdditions_4.2.1.iso
+Resolving dlc.sun.com.edgesuite.net... 65.197.244.75, 65.197.244.10
+Connecting to dlc.sun.com.edgesuite.net|65.197.244.75|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 52207616 (50M) [application/octet-stream]
+Saving to: `VBoxGuestAdditions_4.2.1.iso'
+
+100%[======================================>] 52,207,616   179K/s   in 4m 54s  
+
+2012-09-01 17:24:32 (174 KB/s) - `VBoxGuestAdditions_4.2.1.iso' saved [52207616/52207616]
+
+Verifying archive integrity... All good.
+Uncompressing VirtualBox 4.2.1 Guest Additions for Linux.........
+VirtualBox Guest Additions installer
+Removing existing VirtualBox DKMS kernel modules[  OK  ]
+Removing existing VirtualBox non-DKMS kernel modules[  OK  ]
+Building the VirtualBox Guest Additions kernel modules
+Not building the VirtualBox advanced graphics driver as this Linux version is
+too old to use it.
+Building the main Guest Additions module[  OK  ]
+Building the shared folder support module[  OK  ]
+Doing non-kernel setup of the Guest Additions[  OK  ]
+Starting the VirtualBox Guest Additions [  OK  ]
+Installing the Window System drivers[FAILED]
+(Could not find the X.Org or XFree86 Window System.)
+
+Step [1] was successfully - saving state
+MyServer was built successfully. 
+
+Now you can: 
+- verify your box by running               : vagrant basebox validate MyServer
+- export your vm to a .box file by running : vagrant basebox export   MyServer
+{% endhighlight %}
+
+h2(#VALIDATEBASEBOX). Validate the Box
+
+Once the base box is created, vagrant can run a series of tests to ensure it is configured properly using the @vagrant basebox validate@ command:
+
+{% highlight sh linenos %}
+$ vagrant basebox validate MyServer
+Feature: vagrant box validation
+  As a valid vagrant box
+  I need to comply to a set of rules
+
+  Scenario: Checking login                                    # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:5
+.    When I ssh to "127.0.0.1" with the following credentials: # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run "whoami"                                        # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      vagrant
+    Then I should see "vagrant" in the output                 # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking sudo                                     # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:12
+.    When I ssh to "127.0.0.1" with the following credentials: # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run "sudo whoami"                                   # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      root
+    Then I should see "root" in the output                    # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking ruby                                                          # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:19
+.    When I ssh to "127.0.0.1" with the following credentials:                      # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run ". /etc/profile ;ruby --version 2> /dev/null 1> /dev/null;  echo $?" # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      0
+    Then I should see "0" in the output                                            # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking gem                                                          # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:26
+.    When I ssh to "127.0.0.1" with the following credentials:                     # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run ". /etc/profile; gem --version 2> /dev/null 1> /dev/null ; echo $?" # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      0
+    Then I should see "0" in the output                                           # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking chef                                                               # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:33
+.    When I ssh to "127.0.0.1" with the following credentials:                           # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run ". /etc/profile ;chef-client --version 2> /dev/null 1>/dev/null; echo $?" # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      0
+    Then I should see "0" in the output                                                 # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking puppet                                                         # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:40
+.    When I ssh to "127.0.0.1" with the following credentials:                       # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password |
+      | vagrant  | vagrant  |
+    And I run ". /etc/profile ; puppet --version 2> /dev/null 1>/dev/null; echo $?" # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      0
+    Then I should see "0" in the output                                             # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+  Scenario: Checking shared folders                           # /Users/claco/.rvm/gems/ruby-1.9.3-p125@devops_toolbox/gems/veewee-0.2.3/lib/veewee/../../validation/vagrant.feature:47
+.    When I ssh to "127.0.0.1" with the following credentials: # veewee-0.2.3/validation/features/steps/ssh_steps.rb:56
+      | username | password | keyfile             |
+      | vagrant  | vagrant  | vagrant-private.key |
+    And I run "mount|grep veewee-validation"                  # veewee-0.2.3/validation/features/steps/ssh_steps.rb:98
+      done!
+      veewee-validation on /media/sf_veewee-validation type vboxsf (gid=501,rw)
+    Then I should see "veewee-validation" in the output       # veewee-0.2.3/validation/features/steps/ssh_steps.rb:167
+
+7 scenarios (7 passed)
+21 steps (21 passed)
+0m2.238s
+{% endhighlight %}
+
+h2(#EXPORTBASEBOX). Export the Box
+
+If you're still awake (that is a long process!), the last thing we need to do is export this basebox as a starting point for working with vagrant machine instances. To do that, run the @vagrant basebox export@ command:
+
+{% highlight sh linenos %}
+$ vagrant basebox export MyServer --output ./boxes/MyServer.box
+Vagrant requires the box to be shutdown, before it can export
+Sudo also needs to work for user vagrant
+Performing a clean shutdown now.
+Executing command: sudo /sbin/halt -h -p
+
+Broadcast message from root (pts/0) (Sat Sep  1 22:40:41 2012):
+
+The system is going down for system halt NOW!
+...........................
+Machine MyServer is powered off cleanly
+Executing vagrant voodoo:
+vagrant package --base 'MyServer' --output './boxes/MyServer.box'
+
+To import it into vagrant type:
+vagrant box add 'MyServer' './boxes/MyServer.box'
+
+To use it:
+vagrant init 'MyServer'
+vagrant up
+vagrant ssh
+{% endhighlight %}
+
+During that processing, vagrant will shut down your base box and export the image.
+
+!/images/devops-toolbox/08-basebox-export.png!
+
+h2(#COMMIT). Commit Our Work
+
+Let's add our basebox definition to the repository.
+
+{% highlight sh linenos %}
+$ git add .
+$ git commit -m "Added MyServer basebox definition"
+[master daada45] Added MyServer basebox definition
+ 3 files changed, 132 insertions(+)
+ create mode 100644 definitions/MyServer/definition.rb
+ create mode 100644 definitions/MyServer/ks.cfg
+ create mode 100644 definitions/MyServer/postinstall.sh
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+

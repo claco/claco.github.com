@@ -1,0 +1,38 @@
+---
+layout: post
+title: "DevOps Toolbox: Introduction"
+published: true
+created:  1348268618
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/introduction
+---
+
+h1. Introduction
+
+Welcome to the DevOps Toolbox, a step by step guide for the budding devops engineer who wants to enjoy the wonders of modern system configuration and management without having to become the "Server Guy".
+
+The goal of this guide to to teach you how to start simple, slowly adding more devops building blocks, and finally ending up with a reusable toolkit for you and your coworkers.
+
+This guide will take you from a fresh OSX 10.8.2 install all the way through cloud server creation/deployment, including:
+
+* Prerequisite Installation (XCode, Homebrew, RVM, Ruby 1.9.3, VirtualBox)
+* Setup Project Configuration
+* Vagrant/Veewee Installation
+* Define/Create Boxes using Vagrant
+* Provision Machine Instances (locally via VirtualBox)
+* Configuring Machines using Chef Solo for VirtualBox
+* Customize Chef Recipes for our Application
+* Create/Deploy a Simple Rails Application
+* Migrate Chef Solo to OpsCode/Chef Server
+* SignUp/Configure RackCloud
+* Provision cloud servers [re]deploy our application
+
+While this guide assumes you are on a OSX machine, most of this guide will apply to any Unix/Linux machine with a working compiler, supported Ruby version, and supported version of VirtualBox. While RackCloud is used, the same basic concepts and steps will apply to other cloud providers, like Amazon AWS/EC2.
+
+*Let's Get Started!*
+
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox

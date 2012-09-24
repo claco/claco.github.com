@@ -1,0 +1,347 @@
+---
+layout: post
+title: "DevOps Toolbox: Prerequisites"
+published: true
+created:  1348413377
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/prerequisites
+---
+
+h1. Prerequisites
+
+Before we start rolling in the servers, we need to install a few prerequisites.
+
+# "Install XCode":#XCODE
+# "Install Command Line Tools":#CLT
+# "Install Homebrew":#HOMEBREW
+# "Install RVM":#RVM
+# "Install Ruby 1.9.3":#RUBY
+# "Install VirtualBox":#VBOX
+
+h2(#XCODE). Install XCode
+
+First, let's install XCode from the App Store. Open App Store from Applications and search for XCode:
+
+!/images/devops-toolbox/01-appstore.png!
+
+Click on the "Free" button under XCode to install. Enter your Apple ID account information to sign into the App Store and being the download.
+
+!/images/devops-toolbox/02-install.png!
+
+Grab a fresh beverage and wait a while for the download to complete. :-)
+
+!/images/devops-toolbox/03-installing.png!
+
+Once the download is complete, XCode will be installed into your Applications folder.
+
+!/images/devops-toolbox/04-installed.png!
+
+Run the XCode app from your Applications folder and accept the license agreements.
+
+!/images/devops-toolbox/05-agreement.png!
+
+You will then be prompted to complete the installation. Click Install.
+
+!/images/devops-toolbox/06-moreinstall.png!
+
+XCode will install the System Components.
+
+!/images/devops-toolbox/07-moreinstalling.png!
+
+And finally, we're actually done installing XCode! W00t!
+
+!/images/devops-toolbox/08-done.png!
+
+Go ahead and click Start Using XCode.
+
+h2(#CLT). Install Command Line Tools
+
+In order to compile various ruby gems, and ruby itself, we need to install the traditional *nix command line tools.
+
+Within XCode, open the XCode menu, then select Preferences...
+From dialog box, choose the Downloads tab, and click the Install button next to the Command Line Tools item.
+
+!/images/devops-toolbox/09-commandlinetools.png!
+
+h2(#HOMEBREW). Install Homebew
+
+Homebew is the newer source/package management tool on the block for OSX. It makes it easy to download, configure and compile various open source software, like Ruby or MySQL.
+
+"Homebrew Home Page":http://mxcl.github.com/homebrew/
+"The Hitchhiker's Guide to Riding a Mountain Lion":http://robots.thoughtbot.com/post/27985816073/the-hitchhikers-guide-to-riding-a-mountain-lion
+
+To install Homebrew, open Terminal and enter the folowing command and hit RETURN:
+
+{% highlight sh linenos %}
+$ ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
+{% endhighlight %}
+
+This will download and run the latest Homebrew install script. It will prompt you for your password so it can configure directoy permissions:
+
+{% highlight sh linenos %}
+==> This script will install:
+/usr/local/bin/brew
+/usr/local/Library/...
+/usr/local/share/man/man1/brew.1
+
+Press enter to continue
+==> /usr/bin/sudo /bin/mkdir /usr/local
+
+WARNING: Improper use of the sudo command could lead to data loss
+or the deletion of important system files. Please double-check your
+typing when using sudo. Type "man sudo" for more information.
+
+To proceed, enter your password, or type Ctrl-C to abort.
+
+Password:
+{% endhighlight %}
+
+Once you enter your password and hit RETURN, homebrew will continue to be installed:
+
+{% highlight sh linenos %}
+==> /usr/bin/sudo /bin/chmod g+rwx /usr/local
+==> /usr/bin/sudo /usr/bin/chgrp admin /usr/local
+==> Downloading and Installing Homebrew...
+remote: Counting objects: 83262, done.
+remote: Compressing objects: 100% (39349/39349), done.
+remote: Total 83262 (delta 57515), reused 66222 (delta 43088)
+Receiving objects: 100% (83262/83262), 11.76 MiB | 236 KiB/s, done.
+Resolving deltas: 100% (57515/57515), done.
+From https://github.com/mxcl/homebrew
+ * [new branch]      master     -> origin/master
+HEAD is now at a63eec0 the_silver_searcher: don't assume /usr/local
+==> Installation successful!
+You should run `brew doctor' *before* you install anything.
+Now type: brew help
+{% endhighlight %}
+
+As suggested, run the @brew doctor@ command:
+
+{% highlight sh linenos %}
+$ brew doctor
+Your system is raring to brew.
+{% endhighlight %}
+
+h2(#RVM). Install RVM
+
+Now that we have Homebrew installed, let's install RVM. Not jut a clever title, RVM is a Ruby Version Manager that allows you to install and manage multiple versions of Ruby on your operating system in a sane manner.
+
+"RVM Home Page":https://rvm.io/
+
+Open Terminal and enter the following command and hit RETURN:
+
+{% highlight sh linenos %}
+$ curl -L https://get.rvm.io | bash -s stable
+{% endhighlight %}
+
+This will download and run the latest RVM installer:
+
+{% highlight sh linenos %}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   185  100   185    0     0    119      0  0:00:01  0:00:01 --:--:--   133
+100  9984  100  9984    0     0   4306      0  0:00:02  0:00:02 --:--:-- 31495
+Downloading RVM from wayneeseguin branch stable
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   125  100   125    0     0    176      0 --:--:-- --:--:-- --:--:--   494
+100 1047k  100 1047k    0     0   191k      0  0:00:05  0:00:05 --:--:--  252k
+
+Installing RVM to /Users/claco/.rvm/
+    Adding rvm PATH line to /Users/claco/.bashrc /Users/claco/.zshrc.
+    Adding rvm loading line to /Users/claco/.bash_login /Users/claco/.zlogin.
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm/
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues read output of 'rvm requirements' and/or 'rvm notes'
+
+Installation of RVM in /Users/claco/.rvm/ is almost complete:
+
+  * To start using RVM you need to run `source /Users/claco/.rvm/scripts/rvm`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+
+# claco,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and more enjoyable!!!
+#
+# ~Wayne
+
+
+rvm 1.15.8 (stable) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+{% endhighlight %}
+
+As suggested by the RVM installer, let's ensure rvm is loaded into the current Terminal session and try it out:
+
+{% highlight sh linenos %}
+$ source /Users/claco/.rvm/scripts/rvm
+$ rvm list
+
+rvm rubies
+
+
+# No rvm rubies installed yet. Try 'rvm help install'.
+{% endhighlight %}
+
+h2(#RUBY). Install Ruby 1.9.3
+
+While OSX comes with Ruby 1.8.7, we're going to install a more up to date Ruby, a version that we will also install on the servers we provision going forward.
+
+The install Ruby 1.9.3, open Terminal, type in the following command and hit RETURN:
+
+{% highlight sh linenos %}
+$ rvm install 1.9.3
+{% endhighlight %}
+
+The first time you install Ruby using RVM, you will be presented with a huge page of information that may or may not be pertinent. For Ruby 1.9.3, we received the following messages:
+
+{% highlight sh linenos %}
+Ruby (and needed base gems) for your selection will be installed shortly.
+Before it happens, please read and execute the instructions below.
+Please use a separate terminal to execute any additional commands.
+...
+For Ruby 1.9.3: Install libksba # If using Homebrew, 'brew install libksba'
+...
+Press 'q' to continue.
+{% endhighlight %}
+
+For OSX 10.8.2, XCode 4.5, and Ruby 1.9.3, we can ignore most of the output with the exception of having to install @libksba@:
+Hit CTRL-C to cancel that install, and run the following command in Terminal:
+
+{% highlight sh linenos %}
+$ brew install libksba
+{% endhighlight %}
+
+This will download, configure, and compile libkba:
+
+{% highlight sh linenos %}
+==> Installing libksba dependency: libgpg-error
+==> Downloading ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.10.tar.bz2
+######################################################################## 100.0%
+######################################################################## 100.0%==>
+    ./configure --prefix=/usr/local/Cellar/libgpg-error/1.10
+==> make install
+/usr/local/Cellar/libgpg-error/1.10: 14 files, 236K, built in 17 seconds
+==> Installing libksba
+==> Downloading ftp://ftp.gnupg.org/gcrypt/libksba/libksba-1.2.0.tar.bz2
+######################################################################## 100.0%
+######################################################################## 100.0%==>
+    ./configure --prefix=/usr/local/Cellar/libksba/1.2.0
+==> make install
+/usr/local/Cellar/libksba/1.2.0: 9 files, 308K, built in 23 seconds
+{% endhighlight %}
+
+Now, let's install that ruby. In a Terminal, rerun @rvm install 1.9.3@:
+
+{% highlight sh linenos %}
+$ rvm install 1.9.3
+Fetching yaml-0.1.4.tar.gz to /Users/claco/.rvm/archives
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  460k  100  460k    0     0   141k      0  0:00:03  0:00:03 --:--:--  167k
+Extracting yaml-0.1.4.tar.gz to /Users/claco/.rvm/src
+Configuring yaml in /Users/claco/.rvm/src/yaml-0.1.4.
+Compiling yaml in /Users/claco/.rvm/src/yaml-0.1.4.
+Installing yaml to /Users/claco/.rvm/usr
+Building 'ruby-1.9.3-p194' using clang - but it's not (fully) supported, expect errors.
+Installing Ruby from source to: /Users/claco/.rvm/rubies/ruby-1.9.3-p194, this may take a while depending on your cpu(s)...
+
+ruby-1.9.3-p194 - #downloading ruby-1.9.3-p194, this may take a while depending on your connection...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 9610k  100 9610k    0     0  40906      0  0:04:00  0:04:00 --:--:-- 33824
+ruby-1.9.3-p194 - #extracting ruby-1.9.3-p194 to /Users/claco/.rvm/src/ruby-1.9.3-p194
+ruby-1.9.3-p194 - #extracted to /Users/claco/.rvm/src/ruby-1.9.3-p194
+ruby-1.9.3-p194 - #configuring 
+ruby-1.9.3-p194 - #compiling 
+ruby-1.9.3-p194 - #installing 
+Retrieving rubygems-1.8.24
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  371k  100  371k    0     0   107k      0  0:00:03  0:00:03 --:--:--  132k
+Extracting rubygems-1.8.24 ...
+Removing old Rubygems files...
+Installing rubygems-1.8.24 for ruby-1.9.3-p194 ...
+Installation of rubygems completed successfully.
+ruby-1.9.3-p194 - adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+ruby-1.9.3-p194 - #importing default gemsets (/Users/claco/.rvm/gemsets/)
+Install of ruby-1.9.3-p194 - #complete 
+Ruby 'ruby-1.9.3-p194' was built using clang - but it's not (fully) supported, expect errors.
+{% endhighlight %}
+
+Feel free to ignore the warnings about clang and to expect errors. It's perfectly stable. Now let's check out our new Ruby 1.9.3 install:
+
+{% highlight sh lienos %}
+$ rvm list
+
+rvm rubies
+
+=* ruby-1.9.3-p194 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+
+$ ruby --version
+ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-darwin12.1.0]
+
+$ which gem
+/Users/claco/.rvm/rubies/ruby-1.9.3-p194/bin/gem
+
+gem list
+
+*** LOCAL GEMS ***
+
+bundler (1.2.0)
+rake (0.9.2.2)
+rubygems-bundler (1.1.0)
+rvm (1.11.3.5)
+{% endhighlight %}
+
+h2(#VBOX). Install VirtualBox
+
+Now that we have Homebrew installed, let's install RVM. Not jut a clever title, RVM is a Ruby Version Manager that allows you to install and manage multiple versions of Ruby on your operating system in a sane manner.
+
+"VirtualBox Downloads Page":https://www.virtualbox.org/wiki/Downloads
+
+Download the VirtualBox 4.2.1 installer from the downloads page. Double click @VirtualBox.mpkfg@ to start the install process.
+
+!/images/devops-toolbox/01-vb-install.png!
+
+You will be prompted to allow the software to scan your machine for compatibility. Click Continue.
+
+!/images/devops-toolbox/02-vb-install.png!
+
+Leave the default Destination. Click Continue on the next screen.
+
+!/images/devops-toolbox/03-vb-install.png!
+
+Leave the default Installation Type. Click Continue.
+
+!/images/devops-toolbox/04-vb-install.png!
+
+You will be prompted for your password so installation can write files to your computer. Enter your password and click Install Software.
+
+!/images/devops-toolbox/05-vb-install.png!
+
+The installer will do its magic and show it's progress.
+
+!/images/devops-toolbox/06-vb-install.png!
+
+And if all goes well, installation has finished!
+
+!/images/devops-toolbox/07-vb-install.png!
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+

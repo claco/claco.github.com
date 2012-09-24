@@ -1,0 +1,144 @@
+---
+layout: post
+title: "DevOps Toolbox: Project Setup"
+published: true
+created:  1348431290
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/project-setup
+---
+
+h1. Project Setup
+
+One of the goals of this guide is to create a "setup" project that you can share among your development team. This project can be checked into/out of git and will we be preconfigured to interact with VirtualBox locally, all of your chef cookbooks locally, OpCode servers upstream, and servers in the cloud using RackCloud.
+
+# "Project Directory/Git Repository":#PROJECTDIR
+# "Vagrant/Veewee Directories":#VAGRANTDIR
+# "Opcode/Chef Directories":#OPSCODEDIR
+# "Commit Our Work":#COMMIT
+
+h2(#PROJECTDIR). Project Directory / Git Repository
+
+First, let's create a directory, make it use our new ruby, and make it a git repository. Open Terminal from your Applications folder and do the following:
+
+{% highlight sh linenos %}
+$ cd ~
+$ mkdir devops_toolbox
+$ echo "rvm 1.9.3@devops_toolbox --create" > devops_toolbox/.rvmrc
+$ cd devops_toolbox
+$ git init .
+Initialized empty Git repository in /Users/claco/devops_toolbox/.git/
+{% endhighlight %}
+
+bq. *From the top:* Line 1 changes to your home directory. Line 2 creates the new project folder. Line 3 creates an @.rvmrc@ file to tell RVM what ruby to use when we enter this folder. Line 4 enters the new project directory, and Line 5 creates a new git repository out of that directory.
+
+When RVM encounters an @.rvmrc@ it doesn't know for the first time, it will present a prompt asking if you want to load/trust it. Say yes!
+
+{% highlight sh linenos %}
+====================================================================================
+= NOTICE                                                                           =
+====================================================================================
+= RVM has encountered a new or modified .rvmrc file in the current directory       =
+= This is a shell script and therefore may contain any shell commands.             =
+=                                                                                  =
+= Examine the contents of this file carefully to be sure the contents are          =
+= safe before trusting it! ( Choose v[iew] below to view the contents )            =
+====================================================================================
+Do you wish to trust this .rvmrc file? (/Users/claco/devops_toolbox/.rvmrc)
+y[es], n[o], v[iew], c[ancel]> y
+Using /Users/claco/.rvm/gems/ruby-1.9.3-p194 with gemset devops_toolbox
+Running /Users/claco/.rvm/hooks/after_use
+Running /Users/claco/.rvm/hooks/after_cd
+{% endhighlight %}
+
+Just for giggles, let's makes sure we're now using the new Ruby we installed earlier. Type the following command and hit RETURN
+
+{% highlight sh linenos %}
+$ rvm current
+ruby-1.9.3-p125@devops_toolbox
+{% endhighlight %}
+
+The @@devops_toolbox@ is an RVM "gem set". Think of it as just a named bucket where all of the gems we install later will go into. You can create buckets for different projects, keeping things nice and tidy and separated from each other.
+
+h2(#VAGRANTDIR). Vagrant/Veewee Directories
+
+Next, let's make our Vagrant/Veewee related directories inside of the @devops_toolbox@ folder buy running these commands:
+
+{% highlight sh linenos %}
+$ mkdir boxes; touch boxes/.gitkeep
+$ mkdir definitions; touch definitions/.gitkeep
+$ mkdir instances; touch instances/.gitkeep
+$ mkdir iso; touch iso/.gitkeep
+{% endhighlight %}
+
+bq. *From the top:* The @boxes@ folder is where we'll store boxes @veewee@ has created. The @definitions@ folder is where @veewee@ will store local box definitions. The @instances@ folder is where we'll store @vagrant@ configurations for specific instances of our boxes, and @iso@ is where veewee will download ISO install discs to when creating new boxes. More on that later.
+
+_You may be wondering what the @touch .gitkeep@ is all about. That tells git to keep a folder in source control even if it is empty._
+
+h2(#OPSCODEDIR). OpsCode Chef/Knife Directories
+
+Next, we'll create the directories related to using OpsCode Chef locally/hosted including our credentials and cookbooks.
+
+{% highlight sh linenos %}
+$ mkdir .chef; touch .chef/.gitkeep
+$ mkdir -p chef/cookbooks; touch chef/cookbooks/.gitkeep
+$ mkdir -p chef/data_bags; touch chef/data_bags/.gitkeep
+$ mkdir -p chef/environments; touch chef/environments/.gitkeep
+$ mkdir -p chef/roles; touch chef/roles/.gitkeep
+{% endhighlight %}
+
+bq. *From the top:* The @.chef@ directory will contain the configuration and credentials it use @knife@, the command line interface for Chef/OpsCode. The @chef@ directory will contain local copies of our cookbooks, data bags, environments, and roles. More on that later as well. :-)
+
+And for comparison, here's the directory structure you should have now:
+
+{% highlight sh linenos %}
+$ tree
+.
+├── boxes
+├── chef
+│   ├── cookbooks
+│   ├── data_bags
+│   ├── environments
+│   └── roles
+├── definitions
+├── instances
+└── iso
+{% endhighlight %}
+
+h2(#COMMIT). Commit Our Work
+
+If you don't want to commit your boxes or iso images to git for size/time/network speed reason, let's add them to the @.gitignore@ file:
+
+{% highlight sh linenos %}
+$ echo "*.iso" >> .gitignore
+$ echo "*.box" >> .gitignore
+{% endhighlight %}
+
+Then we can commit our work to the git repository:
+
+{% highlight sh linenos %}
+$ git add .
+$ git commit -m "Initial Commit"
+[master (root-commit) 8ada8b3] Initial Commit
+ 2 files changed, 3 insertions(+)
+ create mode 100644 .chef/.gitkeep
+ create mode 100644 .gitignore
+ create mode 100644 .rvmrc
+ create mode 100644 boxes/.gitkeep
+ create mode 100644 chef/cookbooks/.gitkeep
+ create mode 100644 chef/data_bags/.gitkeep
+ create mode 100644 chef/environments/.gitkeep
+ create mode 100644 chef/roles/.gitkeep
+ create mode 100644 definitions/.gitkeep
+ create mode 100644 instances/.gitkeep
+ create mode 100644 iso/.gitkeep
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+

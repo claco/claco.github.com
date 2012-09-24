@@ -19,6 +19,9 @@ p, li {
 li {
   padding-bottom: 10px;
 }
+em {
+  font-style: italic;
+}
 code, samp, kbd {
   color: #336699;
   letter-spacing: 0;
@@ -30,6 +33,7 @@ strong, b {
   margin-top: 10px;
 }
 .highlight {
+  background-color: #272822;
   border: 1px solid #dddddd;
   margin-top: 15px;
   margin-bottom: 15px;
@@ -38,9 +42,13 @@ strong, b {
 }
 .highlight pre {
   line-height: 1.2em;
+  overflow: auto;
+  overflow: scroll;
+  white-space: pre;
 }
 .lineno {
   padding: 3px;
+  color: #5B5C58;
 }
 #wrapper {
   margin: 40px auto 0 auto;
