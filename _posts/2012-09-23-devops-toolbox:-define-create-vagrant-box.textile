@@ -654,7 +654,7 @@ h2(#EXPORTBASEBOX). Export the Box
 If you're still awake (that is a long process!), the last thing we need to do is export this basebox as a starting point for working with vagrant machine instances. To do that, run the @vagrant basebox export@ command:
 
 {% highlight sh linenos %}
-$ vagrant basebox export MyServer --output ./boxes/MyServer.box
+$ vagrant basebox export MyServer
 Vagrant requires the box to be shutdown, before it can export
 Sudo also needs to work for user vagrant
 Performing a clean shutdown now.
@@ -666,15 +666,18 @@ The system is going down for system halt NOW!
 ...........................
 Machine MyServer is powered off cleanly
 Executing vagrant voodoo:
-vagrant package --base 'MyServer' --output './boxes/MyServer.box'
+vagrant package --base 'MyServer' --output 'MyServer.box'
 
 To import it into vagrant type:
-vagrant box add 'MyServer' './boxes/MyServer.box'
+vagrant box add 'MyServer' 'MyServer.box'
 
 To use it:
 vagrant init 'MyServer'
 vagrant up
 vagrant ssh
+
+# Move it into the boxes folder
+$ mv ./MyServer.box ./boxes
 {% endhighlight %}
 
 During that processing, vagrant will shut down your base box and export the image.

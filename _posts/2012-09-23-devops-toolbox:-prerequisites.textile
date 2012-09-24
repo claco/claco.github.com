@@ -309,7 +309,9 @@ Now that we have Homebrew installed, let's install RVM. Not jut a clever title, 
 
 "VirtualBox Downloads Page":https://www.virtualbox.org/wiki/Downloads
 
-Download the VirtualBox 4.2.1 installer from the downloads page. Double click @VirtualBox.mpkfg@ to start the install process.
+-Download the VirtualBox 4.2.1 installer from the downloads page. Double click @VirtualBox.mpkfg@ to start the install process.-
+
+_*At this moment, veewee, which we'll use later to create boxes, uses an outdated virtualbox gem, which crashes against VirtualBox 4.2.1. For now, install "VirtualBox 4.1.22":http://download.virtualbox.org/virtualbox/4.1.22/VirtualBox-4.1.22-80657-OSX.dmg, which works as intended until workarounds become available. Also note, 4.1.23 will be downloaded from the downloads page, but there are no 4.1.23 guest additions, so machine configuration will fail later if you're not careful.*_
 
 !/images/devops-toolbox/01-vb-install.png!
 
