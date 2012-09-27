@@ -1,0 +1,873 @@
+---
+layout: post
+title: "DevOps Toolbox: Configuring Machines Using Chef Solo"
+published: true
+created:  1348593097
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/configuring-machines-using-chef-solo
+---
+
+h1. Configuring Machines Using Chef (Solo)
+
+Now that we have a two server instances for web and database, we need to get some software installed, like Apache and MySQL. To do that, we're going to use OpsCode Chef. There are other tools out there that do the same kinds of things, like Puppet. Chef is what I'm the most familiar with and what I work with on a daily basis and it has an crazy amount of documentation to go along with it.
+
+We will need to configure @knife@, the Chef command line tool to manage @cookbooks@, @roles@ and other pieces of data used to install and configure software on the servers. Once @knife@ is configured, we'll start to import @cookbooks@ from the internet (GitHub) and get them to run automatically when @vagrant@ creates and boots a new machine instance.
+
+For now, we're going to use @Chef Solo@. Chef Solo is a version of Chef that loads all of it's configuration data from the local file system. Since we're configuring local vagrant machines, this is perfect first step. Later, we will migrate our local configuration up to OpsCode (Hosted Chef), and use Chef [Client] to load configuraiton data from the OpsCode servers. It is also possible to host your own Chef Server. We will not be covering that in this guide [right now].
+
+Just like other parts of this guide, I present the minimal steps needed to get working servers in place. The vendors documentation will cover things is much more detail than I ever could here.
+
+See also "Chef Documentation":http://wiki.opscode.com/display/chef/Documentation
+
+# "Installing Chef":#INSTALLCHEF
+# "Configuring Knife":#CONFIGUREKNIFE
+# "Import Cookbooks from GitHub":#IMPORTCOOKBOOKS
+# "Create Web/Database Roles":#CREATEROLES
+# "Configure Chef Solo in Vagrantfile":#CONFIGURECHEFSOLO
+# "Provision the Instances":#VAGRANTUP
+# "Commit Our Work":#COMMIT
+
+h2(#INSTALLCHEF). Install Chef
+
+To install Chef and its associate tools, we just need to add more gems to our @Gemfile@ and use @bundle install@ to download/install things for us. Open up @Gemfile@ in your favorite editor and add the following lines to the bottom:
+
+{% highlight ruby linenos %}
+gem 'chef'
+gem 'knife-github-cookbooks'
+{% endhighlight %}
+
+bq. *From the top:* The first line installs Chef, the @knive@ command line tool, and all the things chef needs to run locally. @knife-github-cookbooks@ is a knife plugin that allows us up install recipes from GitHub and track them in our project repository.
+
+Now, run @bundle install@:
+
+{% highlight sh linenos %}
+$ bundle install
+Fetching gem metadata from http://rubygems.org/......
+Using rake (0.9.2.2) 
+Using Platform (0.4.0) 
+Using archive-tar-minitar (0.5.2) 
+Using builder (3.1.3) 
+Installing bunny (0.8.0) 
+Using erubis (2.7.0) 
+Using highline (1.6.15) 
+Using json (1.5.4) 
+Installing mixlib-log (1.4.1) 
+Installing mixlib-authentication (1.3.0) 
+Installing mixlib-cli (1.2.2) 
+Installing mixlib-config (1.1.2) 
+Installing mixlib-shellout (1.0.0) 
+Installing moneta (0.6.0) 
+Using net-ssh (2.2.2) 
+Installing net-ssh-gateway (1.1.0) 
+Installing net-ssh-multi (1.1) 
+Installing ipaddress (0.8.0) 
+Installing systemu (2.5.2) 
+Installing yajl-ruby (1.1.0) with native extensions 
+Installing ohai (6.14.0) 
+Installing mime-types (1.19) 
+Installing rest-client (1.6.7) 
+Installing polyglot (0.3.3) 
+Installing treetop (1.4.10) 
+Installing uuidtools (2.1.3) 
+Installing chef (0.10.10) 
+Using ffi (1.0.11) 
+Using childprocess (0.3.5) 
+Installing configuration (1.3.2) 
+Using diff-lcs (1.1.3) 
+Using gherkin (2.11.2) 
+Using cucumber (1.2.1) 
+Using i18n (0.6.1) 
+Installing launchy (0.4.0) 
+Installing knife-github-cookbooks (0.1.6) 
+Using log4r (1.1.10) 
+Using net-scp (1.0.4) 
+Using open4 (1.3.0) 
+Using popen4 (0.1.2) 
+Using progressbar (0.11.0) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using thor (0.14.6) 
+Using vagrant (1.0.5) 
+Using virtualbox (0.9.2) 
+Using veewee (0.2.3) 
+Using bundler (1.1.5) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+{% endhighlight %}
+
+h2(#CONFIGUREKNIFE). Configuring Knife
+
+Before we use @knife@ to manage our configuration, we need to tweak its settings file to let it know where we want to store @cookbooks@, @roles@, etc. Later in the guide, this file will also tell @knife@ how to talk to the OpsCode servers and what authentication information to use when creating new machins in the cloud.
+
+First, let's take a look at the directory structure we created earlier in this guide:
+
+{% highlight sh linenos %}
+.
+├── .chef
+├── boxes
+├── chef
+│   ├── cookbooks
+│   ├── data_bags
+│   ├── environments
+│   └── roles
+├── definitions
+├── instances
+└── iso
+{% endhighlight %}
+
+bq. *From the top:* The @.chef@ directory will contain the configuration and credentials it use @knife@, the command line interface for Chef/OpsCode. The @chef@ directory will contain local copies of our cookbooks, data bags, environments, and roles.
+
+In your favorite editor, create a a new file in @.chef@ called @knife.rb@ and add this to it:
+
+{% highlight ruby linenos %}
+current_dir = File.dirname(__FILE__)                                                                                                         
+chef_dir    = File.expand_path("#{current_dir}/../chef")
+cookbook_path ["#{chef_dir}/cookbooks"]
+{% endhighlight %}
+
+bq. *From the top:* The first two lines just set where to find the main @chef@ configuration directory relative to @knife.rb@, and the last line tells knife where to store it's cookbooks.
+
+Before we go any further, let's just run @knife@ without any options to see what options are available:
+
+{% highlight sh linenos %}
+$ knife
+ERROR: You need to pass a sub-command (e.g., knife SUB-COMMAND)
+
+Usage: knife sub-command (options)
+    -s, --server-url URL             Chef Server URL
+    -k, --key KEY                    API Client Key
+        --[no-]color                 Use colored output, defaults to enabled
+    -c, --config CONFIG              The configuration file to use
+        --defaults                   Accept default values for all questions
+    -d, --disable-editing            Do not open EDITOR, just accept the data as is
+    -e, --editor EDITOR              Set the editor to use for interactive commands
+    -E, --environment ENVIRONMENT    Set the Chef environment
+    -F, --format FORMAT              Which format to use for output
+    -u, --user USER                  API Client Username
+        --print-after                Show the data after a destructive operation
+    -V, --verbose                    More verbose output. Use twice for max verbosity
+    -v, --version                    Show chef version
+    -y, --yes                        Say yes to all prompts for confirmation
+    -h, --help                       Show this message
+
+Available subcommands: (for details, knife SUB-COMMAND --help)
+
+** BOOTSTRAP COMMANDS **
+knife bootstrap FQDN (options)
+
+** CLIENT COMMANDS **
+knife client bulk delete REGEX (options)
+knife client create CLIENT (options)
+knife client delete CLIENT (options)
+knife client edit CLIENT (options)
+knife client list (options)
+knife client reregister CLIENT (options)
+knife client show CLIENT (options)
+
+** CONFIGURE COMMANDS **
+knife configure (options)
+knife configure client DIRECTORY
+
+** COOKBOOK COMMANDS **
+knife cookbook bulk delete REGEX (options)
+knife cookbook create COOKBOOK (options)
+knife cookbook delete COOKBOOK VERSION (options)
+knife cookbook download COOKBOOK [VERSION] (options)
+knife cookbook list (options)
+knife cookbook metadata COOKBOOK (options)
+knife cookbook metadata from FILE (options)
+knife cookbook show COOKBOOK [VERSION] [PART] [FILENAME] (options)
+knife cookbook test [COOKBOOKS...] (options)
+knife cookbook upload [COOKBOOKS...] (options)
+knife cookbook github compare COOKBOOK [USER/BRANCH] (options)
+knife cookbook github install USER/REPO [USER/REPO/BRANCH] (options)
+
+** COOKBOOK SITE COMMANDS **
+knife cookbook site download COOKBOOK [VERSION] (options)
+knife cookbook site install COOKBOOK [VERSION] (options)
+knife cookbook site list (options)
+knife cookbook site search QUERY (options)
+knife cookbook site share COOKBOOK CATEGORY (options)
+knife cookbook site show COOKBOOK [VERSION] (options)
+knife cookbook site unshare COOKBOOK
+
+** DATA BAG COMMANDS **
+knife data bag create BAG [ITEM] (options)
+knife data bag delete BAG [ITEM] (options)
+knife data bag edit BAG ITEM (options)
+knife data bag from file BAG FILE|FOLDER [FILE|FOLDER..] (options)
+knife data bag list (options)
+knife data bag show BAG [ITEM] (options)
+
+** ENVIRONMENT COMMANDS **
+knife environment create ENVIRONMENT (options)
+knife environment delete ENVIRONMENT (options)
+knife environment edit ENVIRONMENT (options)
+knife environment from file FILE (options)
+knife environment list (options)
+knife environment show ENVIRONMENT (options)
+
+** EXEC COMMANDS **
+knife exec [SCRIPT] (options)
+
+** HELP COMMANDS **
+knife help [list|TOPIC]
+
+** INDEX COMMANDS **
+knife index rebuild (options)
+
+** NODE COMMANDS **
+knife node bulk delete REGEX (options)
+knife node create NODE (options)
+knife node delete NODE (options)
+knife node edit NODE (options)
+knife node from file FILE (options)
+knife node list (options)
+knife node run_list add [NODE] [ENTRY[,ENTRY]] (options)
+knife node run_list remove [NODE] [ENTRIES] (options)
+knife node show NODE (options)
+
+** RECIPE COMMANDS **
+knife recipe list [PATTERN]
+
+** ROLE COMMANDS **
+knife role bulk delete REGEX (options)
+knife role create ROLE (options)
+knife role delete ROLE (options)
+knife role edit ROLE (options)
+knife role from file FILE [FILE..] (options)
+knife role list (options)
+knife role show ROLE (options)
+
+** SEARCH COMMANDS **
+knife search INDEX QUERY (options)
+
+** SSH COMMANDS **
+knife ssh QUERY COMMAND (options)
+
+** STATUS COMMANDS **
+knife status QUERY (options)
+
+** TAG COMMANDS **
+knife tag create NODE TAG ...
+knife tag delete NODE TAG ...
+knife tag list NODE
+{% endhighlight %}
+
+Wow. That's a lot of options! Take notice of lines 50-51:
+
+{% highlight sh %}
+knife cookbook github compare COOKBOOK [USER/BRANCH] (options)
+knife cookbook github install USER/REPO [USER/REPO/BRANCH] (options)
+{% endhighlight %}
+
+Those were added by the @knife-github-cookbooks@ gem we installed earlier.
+
+Before we continue on to adding cookbooks from github, we need to make sure all files in our project repository are comitted. If we don't, the plugin will fail to install cookbooks into our local git repository due to "uncomitted changes":
+
+{% highlight sh linenos %}
+$ git add .
+$ git commit -m "Installed Chef. Configured Knife."
+[master 5834d35] Installed Chef. Configured Knife.
+ 3 files changed, 66 insertions(+)
+ create mode 100644 .chef/knife.rb
+ {% endhighlight %}
+
+h2(#IMPORTCOOKBOOKS). Import Cookbooks from GitHub
+
+Before we import our first cookbook from github, let's talk a little about what it's going to do, and why. In the past, cookbooks, specifically OpsCode cookbooks were all in one big repository. To use a cookbook, you essentually had to copy it into your project and customize it, which left you somewhat detached and unaware of updates to the cookbook upstream in github. Some people would fork (a GitHub copy) a cookbook into their own account and customize it, and maybe that's the one you wanted to use instead of the OpsCode verision.
+
+Then along came @knife-github-cookbooks@ along with OpsCode splitting each cookbook into it's own separate github repository. Now when you add a cookbook using this plugin, it will add the remote repository to your product repository, make a @chef-vendor-cookbookname@ branch for it, and then merge it back into your main (master) branch. To customize your cookbook, simply make change to master like you would any other file. To update the cookbook from the OpsCode repository, update the @chef-vendor-cookbookname@ branch from the remote server, then merge those changes back into your master branch. 
+
+With that, let's add our first cookbook, @build-essential@ from here: :https://github.com/opscode-cookbooks/build-essential. This cookbook is required by almost all other cookbooks.
+
+When using the @github install@ option to @knife cookbook@, all it needs to know is the user/repo part of the github path, in this case @opscode-cookbooks/build-essential@:
+
+{% highlight sh linenos %}
+$ knife cookbook github install opscode-cookbooks/build-essential
+Installing build-essential from git://github.com/opscode-cookbooks/build-essential.git to /Users/claco/OLF2012/chef/cookbooks
+Checking out the master branch.
+Creating pristine copy branch chef-vendor-build-essential
+Removing pre-existing version.
+Found master amoung heads.
+1 files updated, committing changes
+Creating tag cookbook-site-imported-build-essential-0b47bc690e9100fdabd8bc87376725cec90eab83
+Checking out the master branch.
+Updating 5fa4628..8c17bcb
+Fast-forward
+ chef/cookbooks/build-essential/CHANGELOG.md          |  11 +++++
+ chef/cookbooks/build-essential/CONTRIBUTING          |  29 ++++++++++++
+ chef/cookbooks/build-essential/LICENSE               | 201 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/build-essential/README.md             | 124 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/build-essential/attributes/default.rb |  32 ++++++++++++++
+ chef/cookbooks/build-essential/metadata.rb           |  12 +++++
+ chef/cookbooks/build-essential/recipes/default.rb    |  79 +++++++++++++++++++++++++++++++++
+ 7 files changed, 488 insertions(+)
+ create mode 100644 chef/cookbooks/build-essential/CHANGELOG.md
+ create mode 100644 chef/cookbooks/build-essential/CONTRIBUTING
+ create mode 100644 chef/cookbooks/build-essential/LICENSE
+ create mode 100644 chef/cookbooks/build-essential/README.md
+ create mode 100644 chef/cookbooks/build-essential/attributes/default.rb
+ create mode 100644 chef/cookbooks/build-essential/metadata.rb
+ create mode 100644 chef/cookbooks/build-essential/recipes/default.rb
+Cookbook build-essential version 0b47bc690e9100fdabd8bc87376725cec90eab83 successfully installed
+{% endhighlight %}
+
+Just to verify what just happened, you should now have a @chef/cookbooks/build-essential@ folder, a @chef-vendor-build-essential@ branch in git, and a commit in @git log@:
+
+{% highlight sh lineno %}
+$ ls chef/cookbooks
+total 0
+drwxr-xr-x  9 claco  staff  306 Sep 25 14:34 build-essential
+
+$ git branch -l
+  chef-vendor-build-essential
+* master
+
+$ git log -n 1
+commit 6912b477ce8e0636c61b5fc685659a0d8e46edf5
+Author: Christopher H. Laco <claco@chrislaco.com>
+Date:   Tue Sep 25 14:34:39 2012 -0400
+
+    Import opscode-cookbooks/build-essential version 973f97efc279780c0f3de027bb020a1615a9f84d
+{% endhighlight %}
+
+Now, repeat the above process for @apache2@, @passenger_apache2@, @openssl@, and @mysql@:
+
+{% highlight sh linenos %}
+knife cookbook github install opscode-cookbooks/apache2
+knife cookbook github install opscode-cookbooks/passenger_apache2
+knife cookbook github install opscode-cookbooks/openssl
+knife cookbook github install opscode-cookbooks/mysql
+{% endhighlight %}
+
+When you're all done, you should have something that looks like this:
+
+{% highlight sh linenos %}
+.
+├── .chef
+├── boxes
+├── chef
+│   ├── cookbooks
+│   │   ├── apache2
+│   │   ├── build-essential
+│   │   ├── mysql
+│   │   ├── openssl
+│   │   └── passenger_apache2
+│   ├── data_bags
+│   ├── environments
+│   └── roles
+├── definitions
+│   └── MyServer
+├── instances
+│   └── cluster
+└── iso
+{% endhighlight %}
+
+h2(#CREATEROLES). Create Web/DB Roles
+
+Now that we've loaded some cookbooks, let's create two "roles"; one for the web instance and one for the db instance. A role is simply a group of cookbooks/recipes and possibly other roles, grouped together by name. Then later, we can assign the role to an instance rather than manually assigning all of the individual recipes.
+
+In your editor, create an open a new file in @chef/roles/db.rb@:
+
+{% highlight ruby linenos %}
+name "db"
+description "Database Server Role"
+run_list(
+  "recipe[mysql::server]"
+)
+{% endhighlight %}
+
+bq. *From the top:* For the db role, we assign a name, give it a description, then give it a "run list". The run list tells Chef what individual recipes within our cookbooks to run. In this case, we just want to install MySql Server.
+
+Now lets create the web role. In your editor, create an open a new file in @chef/roles/db.rb@:
+
+{% highlight ruby linenos %}
+name "web"
+description "Web Server Role"
+run_list(
+  "recipe[apache2]", \
+  "recipe[passenger_apache2::mod_rails]", \
+  "recipe[mysql::client]"
+)
+{% endhighlight %}
+
+bq. *From the top:* Just as the db role, we give it a name, description and a run list. In this role, we want to install Apache, Passenger, and the MySql Client.
+
+h2(#CONFIGURECHEFSOLO). Configure Chef Solo in Vagrantfile
+
+Now that we have loaded some cookbooks with recipes, and created a few roles, we need to edit our Vagrantfile to have Chef Solo run and install the software we've asked for.
+
+Go ahead and change to the @instances/cluster@ directory and open @Vagrantfile@ in your editor:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+{% endhighlight %}
+
+Where we defined our instances at the bottom of the file, we're going to add a block of code that enables the @:chef_solo@ provisioner, tells it where to find the @cookbooks@ and @roles@ relative to the current @Vagrantfile@, and what @role@ to run. For the @web_config@ block, we're also going to map port @8010@ on localhost to port @80@ inside of the web instance so we can test our apache install.
+
+{% highlight ruby linenos %}
+config.vm.define :web do |web_config|
+  web_config.vm.host_name = "web"
+  web_config.vm.network :hostonly, "10.10.10.10"
+  web_config.vm.forward_port 22, 2210
+  web_config.vm.forward_port 80, 8010
+
+  web_config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "../../chef/cookbooks"
+    chef.roles_path     = "../../chef/roles"
+    chef.add_role "web"
+  end
+end
+
+config.vm.define :db do |db_config|
+  db_config.vm.host_name = "db"                                                                                                            
+  db_config.vm.network :hostonly, "10.10.10.11"
+  db_config.vm.forward_port 22, 2211    
+
+  db_config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "../../chef/cookbooks"
+    chef.roles_path     = "../../chef/roles"
+    chef.add_role "db"
+  end
+end
+{% endhighlight %}
+
+h2(#VAGRANTUP). Provision the Instances
+
+Now that we've added cookbooks, defined roles, and configured vagrant to run Chef Solo when the instance boots, let's watch the magic happen. First let's start the database instance:
+
+{% highlight sh linenos %}
+$ vagrant up db
+[db] Importing base box 'MyServer'...
+[db] Matching MAC address for NAT networking...
+[db] Clearing any previously set forwarded ports...
+[db] Forwarding ports...
+[db] -- 22 => 2211 (adapter 1)
+[db] Creating shared folders metadata...
+[db] Clearing any previously set network interfaces...
+[db] Preparing network interfaces based on configuration...
+[db] Booting VM...
+[db] Waiting for VM to boot. This can take a few minutes.
+[db] VM booted and ready for use!
+[db] Configuring and enabling network interfaces...
+[db] Setting host name...
+[db] Mounting shared folders...
+[db] -- v-root: /vagrant
+[db] -- v-csr-2: /tmp/vagrant-chef-1/chef-solo-2/roles
+[db] -- v-csc-1: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[db] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[db] Generating chef JSON and uploading...
+[db] Running chef-solo...
+[2012-09-26T00:38:26+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-26T00:38:27+01:00] INFO: Setting the run_list to ["role[db]"] from JSON
+[2012-09-26T00:38:27+01:00] INFO: Run List is [role[db]]
+[2012-09-26T00:38:27+01:00] INFO: Run List expands to [mysql::server]
+[2012-09-26T00:38:27+01:00] INFO: Starting Chef Run for db
+[2012-09-26T00:38:27+01:00] INFO: Running start handlers
+[2012-09-26T00:38:27+01:00] INFO: Start handlers complete.
+[2012-09-26T00:38:27+01:00] INFO: Could not find previously defined grants.sql resource
+[2012-09-26T00:38:27+01:00] INFO: Processing package[mysql] action install (mysql::client line 46)
+[2012-09-26T00:38:49+01:00] INFO: package[mysql] installing mysql-5.0.95-1.el5_7.1 from updates repository
+[2012-09-26T00:40:11+01:00] INFO: package[mysql] installed version 5.0.95-1.el5_7.1
+[2012-09-26T00:40:11+01:00] INFO: Processing package[mysql-devel] action install (mysql::client line 46)
+[2012-09-26T00:40:12+01:00] INFO: package[mysql-devel] installing mysql-devel-5.0.95-1.el5_7.1 from updates repository
+[2012-09-26T00:40:48+01:00] INFO: package[mysql-devel] installed version 5.0.95-1.el5_7.1
+[2012-09-26T00:40:48+01:00] INFO: Processing package[mysql-server] action install (mysql::server line 78)
+[2012-09-26T00:40:49+01:00] INFO: package[mysql-server] installing mysql-server-5.0.95-1.el5_7.1 from updates repository
+[2012-09-26T00:41:24+01:00] INFO: package[mysql-server] installed version 5.0.95-1.el5_7.1
+[2012-09-26T00:41:24+01:00] INFO: Processing directory[/etc/mysql/conf.d] action create (mysql::server line 85)
+[2012-09-26T00:41:24+01:00] INFO: directory[/etc/mysql/conf.d] created directory /etc/mysql/conf.d
+[2012-09-26T00:41:24+01:00] INFO: directory[/etc/mysql/conf.d] owner changed to 27
+[2012-09-26T00:41:24+01:00] INFO: directory[/etc/mysql/conf.d] group changed to 27
+[2012-09-26T00:41:24+01:00] INFO: Processing service[mysql] action enable (mysql::server line 105)
+[2012-09-26T00:41:25+01:00] INFO: service[mysql] enabled
+[2012-09-26T00:41:25+01:00] INFO: Processing template[/etc/my.cnf] action create (mysql::server line 125)
+[2012-09-26T00:41:25+01:00] INFO: template[/etc/my.cnf] backed up to /var/chef/backup/etc/my.cnf.chef-20120926004125
+[2012-09-26T00:41:25+01:00] INFO: template[/etc/my.cnf] mode changed to 644
+[2012-09-26T00:41:25+01:00] INFO: template[/etc/my.cnf] updated content
+[2012-09-26T00:41:25+01:00] INFO: template[/etc/my.cnf] sending restart action to service[mysql] (immediate)
+[2012-09-26T00:41:25+01:00] INFO: Processing service[mysql] action restart (mysql::server line 105)
+[2012-09-26T00:41:26+01:00] INFO: service[mysql] restarted
+[2012-09-26T00:41:26+01:00] INFO: Processing execute[assign-root-password] action run (mysql::server line 153)
+[2012-09-26T00:41:26+01:00] INFO: execute[assign-root-password] ran successfully
+[2012-09-26T00:41:26+01:00] INFO: Processing template[/etc/mysql_grants.sql] action create (mysql::server line 175)
+[2012-09-26T00:41:26+01:00] INFO: template[/etc/mysql_grants.sql] updated content
+[2012-09-26T00:41:26+01:00] INFO: template[/etc/mysql_grants.sql] sending run action to execute[mysql-install-privileges] (immediate)
+[2012-09-26T00:41:26+01:00] INFO: Processing execute[mysql-install-privileges] action run (mysql::server line 191)
+[2012-09-26T00:41:26+01:00] INFO: execute[mysql-install-privileges] ran successfully
+[2012-09-26T00:41:26+01:00] INFO: Processing execute[mysql-install-privileges] action nothing (mysql::server line 191)
+[2012-09-26T00:41:26+01:00] INFO: Chef Run complete in 179.143542 seconds
+[2012-09-26T00:41:26+01:00] INFO: Running report handlers
+[2012-09-26T00:41:26+01:00] INFO: Report handlers complete
+{% endhighlight %}
+
+bq. *From the top:* Lines 2-14, the MyServer box is imported, instance created and booted up. Lines 15-21, vagrant maps shared folders containing the cooksbooks and roles to be loaded. Line 22+, Chef expands the db role into recipes, runs the recipes and installs MySQL server.
+
+Let's login and look around in our db instance.
+
+{% highlight sh linenos %}
+$ vagrant ssh db
+Last login: Wed Sep 26 00:48:04 2012 from 10.0.2.2
+
+[vagrant@db ~]$ sudo /sbin/service mysqld status
+mysqld (pid 5522) is running...
+
+[vagrant@db ~]$ mysql -u root
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+
+[vagrant@db ~]$ mysql -u root -p
+Enter password: 
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+
+[vagrant@db ~]$ grep bind /etc/my.cnf
+bind-address            = 10.0.2.15
+
+[vagrant@db ~]$ sudo /sbin/chkconfig --list mysqld
+mysqld         	0:off	1:off	2:off	3:off	4:off	5:off	6:off
+
+[vagrant@db ~]$ exit
+
+# if you don't have mysql installed locally, try:  telnet 10.0.2.15 3306
+mysql -u root -p -h 10.0.2.15
+Enter password: 
+ERROR 2003 (HY000): Can't connect to MySQL server on '10.0.2.15' (61)
+{% endhighlight %}
+
+bq. *From the top:* Once logged in, we check the service status. mysqld is running! Try logging in using mysql. No blank root password. Unfortunately, we don't know the randomly generated password either. Finally, mysql is bound to the first ip address it found, which is not 10.10.10.11 we assiend in Vagrantfile. But, MySQL is installed! Once logged out, we try logging into mysql externally. "Can't connect" instead of "Access denied" means the firewall on the instance itself is also blocking our access.
+
+bq. *From the trenches:* Just as another example of how you never know what might happen with older os installations and packages. The yum install of mysql and/or cookbook doesn't configure the mysqld service to automatically start after boot. Boo! If you were to reboot your instance and try to rerun mysql related recipes, they would fail because the service isn't running. It may even be fixed in the cookbook by the time you are reading this. :-)
+
+While we don't have a very useful MySQL server, we did just use Chef Solo to install a working copy of MySSQL. In the next part of the guide, we'll customze the cookbooks and vagrant to bind to our ip, set a know root password, created databases and open up the firewall so the web instance cal talk to it.
+
+Now let's provision the web instance:
+
+{% highlight sh linenos %}
+$ vagrant up web
+[web] Importing base box 'MyServer'...
+[web] Matching MAC address for NAT networking...
+[web] Clearing any previously set forwarded ports...
+[web] Forwarding ports...
+[web] -- 22 => 2210 (adapter 1)
+[web] -- 80 => 8010 (adapter 1)
+[web] Creating shared folders metadata...
+[web] Clearing any previously set network interfaces...
+[web] Preparing network interfaces based on configuration...
+[web] Booting VM...
+[web] Waiting for VM to boot. This can take a few minutes.
+[web] VM booted and ready for use!
+[web] Configuring and enabling network interfaces...
+[web] Setting host name...
+[web] Mounting shared folders...
+[web] -- v-root: /vagrant
+[web] -- v-csr-2: /tmp/vagrant-chef-1/chef-solo-2/roles
+[web] -- v-csc-1: /tmp/vagrant-chef-1/chef-solo-1/cookbooks
+[web] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[web] Generating chef JSON and uploading...
+[web] Running chef-solo...
+[2012-09-26T01:22:42+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-26T01:22:43+01:00] INFO: Setting the run_list to ["role[web]"] from JSON
+[2012-09-26T01:22:43+01:00] INFO: Run List is [role[web]]
+[2012-09-26T01:22:43+01:00] INFO: Run List expands to [apache2, passenger_apache2::mod_rails, mysql::client]
+[2012-09-26T01:22:43+01:00] INFO: Starting Chef Run for web
+[2012-09-26T01:22:43+01:00] INFO: Running start handlers
+[2012-09-26T01:22:43+01:00] INFO: Start handlers complete.
+[2012-09-26T01:22:43+01:00] INFO: Processing package[apache2] action install (apache2::default line 20)
+[2012-09-26T01:23:13+01:00] INFO: package[apache2] installing httpd-2.2.3-65.el5.centos from updates repository
+[2012-09-26T01:23:46+01:00] INFO: package[apache2] installed version 2.2.3-65.el5.centos
+[2012-09-26T01:23:46+01:00] INFO: Processing service[apache2] action enable (apache2::default line 25)
+[2012-09-26T01:23:46+01:00] INFO: service[apache2] enabled
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/var/log/httpd] action create (apache2::default line 60)
+[2012-09-26T01:23:46+01:00] INFO: directory[/var/log/httpd] mode changed to 755
+[2012-09-26T01:23:46+01:00] INFO: Processing package[perl] action install (apache2::default line 65)
+[2012-09-26T01:23:46+01:00] INFO: Processing cookbook_file[/usr/local/bin/apache2_module_conf_generate.pl] action create (apache2::default line 67)
+[2012-09-26T01:23:46+01:00] INFO: cookbook_file[/usr/local/bin/apache2_module_conf_generate.pl] mode changed to 755
+[2012-09-26T01:23:46+01:00] INFO: cookbook_file[/usr/local/bin/apache2_module_conf_generate.pl] created file /usr/local/bin/apache2_module_conf_generate.pl
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/sites-available] action create (apache2::default line 75)
+[2012-09-26T01:23:46+01:00] INFO: directory[/etc/httpd/sites-available] created directory /etc/httpd/sites-available
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/sites-enabled] action create (apache2::default line 75)
+[2012-09-26T01:23:46+01:00] INFO: directory[/etc/httpd/sites-enabled] created directory /etc/httpd/sites-enabled
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/mods-available] action create (apache2::default line 75)
+[2012-09-26T01:23:46+01:00] INFO: directory[/etc/httpd/mods-available] created directory /etc/httpd/mods-available
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/mods-enabled] action create (apache2::default line 75)
+[2012-09-26T01:23:46+01:00] INFO: directory[/etc/httpd/mods-enabled] created directory /etc/httpd/mods-enabled
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[generate-module-list] action run (apache2::default line 83)
+[2012-09-26T01:23:46+01:00] INFO: execute[generate-module-list] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/usr/sbin/a2ensite] action create (apache2::default line 89)
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2ensite] mode changed to 700
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2ensite] updated content
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/usr/sbin/a2dissite] action create (apache2::default line 89)
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2dissite] mode changed to 700
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2dissite] updated content
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/usr/sbin/a2enmod] action create (apache2::default line 89)
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2enmod] mode changed to 700
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2enmod] updated content
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/usr/sbin/a2dismod] action create (apache2::default line 89)
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2dismod] mode changed to 700
+[2012-09-26T01:23:46+01:00] INFO: template[/usr/sbin/a2dismod] updated content
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/proxy_ajp.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: file[/etc/httpd/conf.d/proxy_ajp.conf] deleted file at /etc/httpd/conf.d/proxy_ajp.conf
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/auth_pam.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/authz_ldap.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/webalizer.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/ssl.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/welcome.conf] action delete (apache2::default line 99)
+[2012-09-26T01:23:46+01:00] INFO: file[/etc/httpd/conf.d/welcome.conf] deleted file at /etc/httpd/conf.d/welcome.conf
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/conf.d/README] action delete (apache2::default line 106)
+[2012-09-26T01:23:46+01:00] INFO: file[/etc/httpd/conf.d/README] deleted file at /etc/httpd/conf.d/README
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/deflate.conf] action create (apache2::mod_deflate line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/deflate.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/deflate.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/deflate.load] action create (apache2::mod_deflate line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod deflate] action run (apache2::mod_deflate line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod deflate] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod deflate] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/ssl] action create (apache2::default line 138)
+[2012-09-26T01:23:46+01:00] INFO: directory[/etc/httpd/ssl] created directory /etc/httpd/ssl
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/etc/httpd/conf.d] action create (apache2::default line 145)
+[2012-09-26T01:23:46+01:00] INFO: Processing directory[/var/cache/httpd] action create (apache2::default line 152)
+[2012-09-26T01:23:46+01:00] INFO: directory[/var/cache/httpd] created directory /var/cache/httpd
+[2012-09-26T01:23:46+01:00] INFO: Processing template[apache2.conf] action create (apache2::default line 159)
+[2012-09-26T01:23:46+01:00] INFO: template[apache2.conf] backed up to /var/chef/backup/etc/httpd/conf/httpd.conf.chef-20120926012346
+[2012-09-26T01:23:46+01:00] INFO: template[apache2.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[apache2.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[apache2.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[security] action create (apache2::default line 175)
+[2012-09-26T01:23:46+01:00] INFO: template[security] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[security] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[security] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[charset] action create (apache2::default line 185)
+[2012-09-26T01:23:46+01:00] INFO: template[charset] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[charset] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[charset] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/ports.conf] action create (apache2::default line 195)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/ports.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/ports.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/ports.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/sites-available/default] action create (apache2::default line 204)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/sites-available/default] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/sites-available/default] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/sites-available/default] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/status.conf] action create (apache2::mod_status line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/status.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/status.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/status.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/status.load] action create (apache2::mod_status line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod status] action run (apache2::mod_status line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod status] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod status] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/alias.conf] action create (apache2::mod_alias line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/alias.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/alias.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/alias.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/alias.load] action create (apache2::mod_alias line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod alias] action run (apache2::mod_alias line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod alias] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod alias] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/auth_basic.load] action create (apache2::mod_auth_basic line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod auth_basic] action run (apache2::mod_auth_basic line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod auth_basic] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod auth_basic] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/authn_file.load] action create (apache2::mod_authn_file line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod authn_file] action run (apache2::mod_authn_file line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authn_file] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authn_file] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/authz_default.load] action create (apache2::mod_authz_default line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod authz_default] action run (apache2::mod_authz_default line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_default] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_default] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/authz_groupfile.load] action create (apache2::mod_authz_groupfile line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod authz_groupfile] action run (apache2::mod_authz_groupfile line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_groupfile] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_groupfile] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/authz_host.load] action create (apache2::mod_authz_host line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod authz_host] action run (apache2::mod_authz_host line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_host] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_host] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/authz_user.load] action create (apache2::mod_authz_user line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod authz_user] action run (apache2::mod_authz_user line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_user] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod authz_user] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/autoindex.conf] action create (apache2::mod_autoindex line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/autoindex.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/autoindex.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/autoindex.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/autoindex.load] action create (apache2::mod_autoindex line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod autoindex] action run (apache2::mod_autoindex line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod autoindex] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod autoindex] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/dir.conf] action create (apache2::mod_dir line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/dir.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/dir.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/dir.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/dir.load] action create (apache2::mod_dir line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod dir] action run (apache2::mod_dir line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod dir] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod dir] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/env.load] action create (apache2::mod_env line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod env] action run (apache2::mod_env line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod env] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod env] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/mime.conf] action create (apache2::mod_mime line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/mime.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/mime.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/mime.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/mime.load] action create (apache2::mod_mime line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod mime] action run (apache2::mod_mime line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod mime] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod mime] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/negotiation.conf] action create (apache2::mod_negotiation line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/negotiation.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/negotiation.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/negotiation.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/negotiation.load] action create (apache2::mod_negotiation line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod negotiation] action run (apache2::mod_negotiation line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod negotiation] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod negotiation] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing template[/etc/httpd/mods-available/setenvif.conf] action create (apache2::mod_setenvif line 21)
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/setenvif.conf] mode changed to 644
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/setenvif.conf] updated content
+[2012-09-26T01:23:46+01:00] INFO: template[/etc/httpd/mods-available/setenvif.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/setenvif.load] action create (apache2::mod_setenvif line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod setenvif] action run (apache2::mod_setenvif line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod setenvif] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod setenvif] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/log_config.load] action create (apache2::mod_log_config line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod log_config] action run (apache2::mod_log_config line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod log_config] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod log_config] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing file[/etc/httpd/mods-available/logio.load] action create (apache2::mod_logio line 31)
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2enmod logio] action run (apache2::mod_logio line 38)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod logio] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2enmod logio] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing execute[a2ensite default] action run (apache2::default line 24)
+[2012-09-26T01:23:46+01:00] INFO: execute[a2ensite default] ran successfully
+[2012-09-26T01:23:46+01:00] INFO: execute[a2ensite default] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-26T01:23:46+01:00] INFO: Processing service[apache2] action start (apache2::default line 219)
+[2012-09-26T01:23:46+01:00] INFO: service[apache2] started
+[2012-09-26T01:23:46+01:00] INFO: Processing package[gcc] action install (build-essential::default line 48)
+[2012-09-26T01:23:46+01:00] INFO: Processing package[gcc-c++] action install (build-essential::default line 48)
+[2012-09-26T01:23:46+01:00] INFO: Processing package[kernel-devel] action install (build-essential::default line 48)
+[2012-09-26T01:23:46+01:00] INFO: Processing package[make] action install (build-essential::default line 48)
+[2012-09-26T01:23:46+01:00] INFO: Processing package[autoconf] action install (build-essential::default line 55)
+[2012-09-26T01:23:46+01:00] INFO: package[autoconf] installing autoconf-2.59-12 from base repository
+[2012-09-26T01:23:51+01:00] INFO: package[autoconf] installed version 2.59-12
+[2012-09-26T01:23:51+01:00] INFO: Processing package[flex] action install (build-essential::default line 55)
+[2012-09-26T01:23:51+01:00] INFO: package[flex] installing flex-2.5.4a-41.fc6 from base repository
+[2012-09-26T01:23:53+01:00] INFO: package[flex] installed version 2.5.4a-41.fc6
+[2012-09-26T01:23:53+01:00] INFO: Processing package[bison] action install (build-essential::default line 55)
+[2012-09-26T01:23:54+01:00] INFO: package[bison] installing bison-2.3-2.1 from base repository
+[2012-09-26T01:23:57+01:00] INFO: package[bison] installed version 2.3-2.1
+[2012-09-26T01:23:57+01:00] INFO: Processing package[httpd-devel] action install (passenger_apache2::default line 32)
+[2012-09-26T01:23:57+01:00] INFO: package[httpd-devel] installing httpd-devel-2.2.3-65.el5.centos from updates repository
+[2012-09-26T01:24:27+01:00] INFO: package[httpd-devel] installed version 2.2.3-65.el5.centos
+[2012-09-26T01:24:27+01:00] INFO: Processing package[curl-devel] action install (passenger_apache2::default line 34)
+[2012-09-26T01:24:27+01:00] INFO: package[curl-devel] installing curl-devel-7.15.5-15.el5 from base repository
+[2012-09-26T01:24:47+01:00] INFO: package[curl-devel] installed version 7.15.5-15.el5
+[2012-09-26T01:24:47+01:00] INFO: Processing gem_package[passenger] action install (passenger_apache2::default line 48)
+[2012-09-26T01:25:24+01:00] INFO: gem_package[passenger] installed version 3.0.11
+[2012-09-26T01:25:24+01:00] INFO: Processing execute[passenger_module] action run (passenger_apache2::default line 52)
+[2012-09-26T01:26:06+01:00] INFO: execute[passenger_module] ran successfully
+[2012-09-26T01:26:06+01:00] INFO: Processing template[/etc/httpd/mods-available/passenger.conf] action create (passenger_apache2::mod_rails line 37)
+[2012-09-26T01:26:06+01:00] INFO: template[/etc/httpd/mods-available/passenger.conf] mode changed to 644
+[2012-09-26T01:26:06+01:00] INFO: template[/etc/httpd/mods-available/passenger.conf] updated content
+[2012-09-26T01:26:06+01:00] INFO: Processing file[/etc/httpd/mods-available/passenger.load] action create (passenger_apache2::mod_rails line 31)
+[2012-09-26T01:26:06+01:00] INFO: file[/etc/httpd/mods-available/passenger.load] created file /etc/httpd/mods-available/passenger.load
+[2012-09-26T01:26:06+01:00] INFO: Processing execute[a2enmod passenger] action run (passenger_apache2::mod_rails line 38)
+[2012-09-26T01:26:06+01:00] INFO: execute[a2enmod passenger] ran successfully
+[2012-09-26T01:26:06+01:00] INFO: Processing package[mysql] action install (mysql::client line 46)
+[2012-09-26T01:26:06+01:00] INFO: package[mysql] installing mysql-5.0.95-1.el5_7.1 from updates repository
+[2012-09-26T01:26:35+01:00] INFO: package[mysql] installed version 5.0.95-1.el5_7.1
+[2012-09-26T01:26:35+01:00] INFO: Processing package[mysql-devel] action install (mysql::client line 46)
+[2012-09-26T01:26:36+01:00] INFO: package[mysql-devel] installing mysql-devel-5.0.95-1.el5_7.1 from updates repository
+[2012-09-26T01:27:18+01:00] INFO: package[mysql-devel] installed version 5.0.95-1.el5_7.1
+[2012-09-26T01:27:18+01:00] INFO: template[/etc/httpd/mods-available/deflate.conf] sending restart action to service[apache2] (delayed)
+[2012-09-26T01:27:18+01:00] INFO: Processing service[apache2] action restart (apache2::default line 25)
+[2012-09-26T01:27:19+01:00] INFO: service[apache2] restarted
+[2012-09-26T01:27:19+01:00] INFO: execute[a2enmod passenger] sending restart action to service[apache2] (delayed)
+[2012-09-26T01:27:19+01:00] INFO: Processing service[apache2] action restart (apache2::default line 219)
+[2012-09-26T01:27:20+01:00] INFO: service[apache2] restarted
+[2012-09-26T01:27:20+01:00] INFO: Chef Run complete in 277.48792 seconds
+[2012-09-26T01:27:20+01:00] INFO: Running report handlers
+[2012-09-26T01:27:20+01:00] INFO: Report handlers complete
+{% endhighlight %}
+
+bq. *From the top:* Lines 2-14, the MyServer box is imported, instance created and booted up. Lines 15-21, vagrant maps shared folders containing the cooksbooks and roles to be loaded. Line 22+, Chef expands the web role into recipes, runs the recipes and installs Apache, Passenger, and the MySQL Client.
+
+Let's login and look around in our web instance.
+
+{% highlight sh linenos %}
+$ vagrant ssh web
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+
+[vagrant@web ~]$ sudo /sbin/service httpd status
+httpd (pid  8796) is running...
+
+[vagrant@web mods-enabled]$ cat /etc/httpd/mods-enabled/passenger.conf
+PassengerRoot /usr/local/lib/ruby/gems/1.9.1/gems/passenger-3.0.11
+PassengerRuby /usr/local/bin/ruby
+PassengerMaxPoolSize 6
+
+[vagrant@web mods-enabled]$ sudo passenger-status
+----------- General information -----------
+max      = 6
+count    = 0
+active   = 0
+inactive = 0
+Waiting on global queue: 0
+
+----------- Application groups -----------
+{% endhighlight %}
+
+bq. *From the top:* Once logged into the web instance, we can see the httpd service is running, the passenger module has been installed and configured to use our ruby, and passenger-status is installed.
+
+If we open up a browser and go to @http://localhost:8011@, we'll see a default Apache homepage waiting for us. This is because we've asked vagrant to map the port 8011 on the localhost to port 80 inside of the instance.
+
+!/images/devops-toolbox/01-web-apache-default.png!
+
+However, and as expected by now, the firewall on the web instance is blocking us from connecting to apache directly via @http://10.10.10.10:80@:
+
+!/images/devops-toolbox/02-web-apache-blocked.png!
+
+Again, like the db instance, in the next part of the guide we'll customize the cookbooks and settings to open up the firewall and install our application specific website. But, we have just provisioned apache and mysql using Chef Solo! w00t!
+
+For now, again, let's destroy our instances:
+
+{% highlight sh linenos %}
+$ vagrant destroy
+Are you sure you want to destroy the 'db' VM? [Y/N] Y
+[db] Forcing shutdown of VM...
+[db] Destroying VM and associated drives...
+Are you sure you want to destroy the 'web' VM? [Y/N] Y
+[web] Forcing shutdown of VM...
+[web] Destroying VM and associated drives...
+{% endhighlight %}
+
+h2(#COMMIT). Commit Our Work
+
+Let's add our update Vagrantfile, roles to the repository.
+
+{% highlight sh linenos %}
+$ cd ../..
+$ git add .
+$ git commit -m "Added web/db roles. Added chef solo to Vagrantfile"
+[master 474a4a8] Added web/db roles. Added chef solo to Vagrantfile.
+ 3 files changed, 28 insertions(+), 1 deletion(-)
+ create mode 100644 chef/roles/db.rb
+ create mode 100644 chef/roles/web.rb
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+

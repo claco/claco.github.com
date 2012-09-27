@@ -21,6 +21,7 @@ This guide will take you from a fresh OSX 10.8.2 install all the way through clo
 * Vagrant/Veewee Installation
 * Define/Create Boxes using Vagrant
 * Provision Machine Instances (locally via VirtualBox)
+* MultiVM management with Web server talking to a DB server
 * Configuring Machines using Chef Solo for VirtualBox
 * Customize Chef Recipes for our Application
 * Create/Deploy a Simple Rails Application
@@ -36,3 +37,7 @@ While this guide assumes you are on a OSX machine, most of this guide will apply
 # "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
 # "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
 # "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances

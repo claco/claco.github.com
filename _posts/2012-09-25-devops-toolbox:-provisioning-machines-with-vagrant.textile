@@ -1,0 +1,347 @@
+---
+layout: post
+title: "DevOps Toolbox: Provisioning Machines with Vagrant"
+published: true
+created:  1348582470
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/provisioning-machines-with-vagrant
+---
+
+h1. Provisioning Machines with Vagrant
+
+For this tutorial, we're going to dive right into a "multi vm" setup, that is, two machine instances that are managed in the same @Vagrantfile@ configuration file.
+
+See also: "Mutli-VM Environments":http://vagrantup.com/v1/docs/multivm.html
+
+Everyone always starts with just one server, but in the real world, we need multiple servers talking to each other, with all of the complexities that it brings; like firewall rules and database configuration settings.
+
+We'll be creating a "web" server and a "db" server. Later on in this guide, we'll be installing web/database software and configuring them to talk to each other, and finally deploying a simple application to both.
+
+# "Initializing a New Vagrant Instance":#INITVAGRANTFILE
+# "Creating a Vagrant Cluster":#CREATECLUSTER
+# "Commit Our Work":#COMMIT
+
+h2(#INITVAGRANTFILE). Initializing a New Vagrant Instance
+
+First, let's create a directory for our Vagrant cluster to live in:
+
+{% highlight sh linenos %}
+$ mkdir instances/cluster
+$ cd instances/cluster
+{% endhighlight %}
+
+Now let's create a default @Vagrantfile@ and point it to the @MyServer.box@ we created earlier:
+
+{% highlight sh linenos %}
+$ vagrant init MyServer ../../boxes/MyServer.box
+A `Vagrantfile` has been placed in this directory. You are now
+ready to `vagrant up` your first virtual environment! Please read
+the comments in the Vagrantfile as well as documentation on
+`vagrantup.com` for more information on using Vagrant.
+{% endhighlight %}
+
+Now, open up your fresh new @Vagrantfile@ and let's see what it has in it:
+
+{% highlight ruby linenos %}
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  # All Vagrant configuration is done here. The most common configuration
+  # options are documented and commented below. For a complete reference,
+  # please see the online documentation at vagrantup.com.
+
+  # Every Vagrant virtual environment requires a box to build off of.
+  config.vm.box = "MyServer"
+
+  # The url from where the 'config.vm.box' box will be fetched if it
+  # doesn't already exist on the user's system.
+  config.vm.box_url = "../../boxes/MyServer.box"
+
+  # Boot with a GUI so you can see the screen. (Default is headless)
+  # config.vm.boot_mode = :gui
+
+  # Assign this VM to a host-only network IP, allowing you to access it
+  # via the IP. Host-only networks can talk to the host machine as well as
+  # any other machines on the same network, but cannot be accessed (through this
+  # network interface) by any external networks.
+  # config.vm.network :hostonly, "192.168.33.10"
+
+  # Assign this VM to a bridged network, allowing you to connect directly to a
+  # network using the host's network device. This makes the VM appear as another
+  # physical device on your network.
+  # config.vm.network :bridged
+
+  # Forward a port from the guest to the host, which allows for outside
+  # computers to access the VM, whereas host only networking does not.
+  # config.vm.forward_port 80, 8080
+
+  # Share an additional folder to the guest VM. The first argument is
+  # an identifier, the second is the path on the guest to mount the
+  # folder, and the third is the path on the host to the actual folder.
+  # config.vm.share_folder "v-data", "/vagrant_data", "../data"
+
+  # Enable provisioning with Puppet stand alone.  Puppet manifests
+  # are contained in a directory path relative to this Vagrantfile.
+  # You will need to create the manifests directory and a manifest in
+  # the file MyServer.pp in the manifests_path directory.
+  #
+  # An example Puppet manifest to provision the message of the day:
+  #
+  # # group { "puppet":
+  # #   ensure => "present",
+  # # }
+  # #
+  # # File { owner => 0, group => 0, mode => 0644 }
+  # #
+  # # file { '/etc/motd':
+  # #   content => "Welcome to your Vagrant-built virtual machine!
+  # #               Managed by Puppet.\n"
+  # # }
+  #
+  # config.vm.provision :puppet do |puppet|
+  #   puppet.manifests_path = "manifests"
+  #   puppet.manifest_file  = "MyServer.pp"
+  # end
+
+  # Enable provisioning with chef solo, specifying a cookbooks path, roles
+  # path, and data_bags path (all relative to this Vagrantfile), and adding 
+  # some recipes and/or roles.
+  #
+  # config.vm.provision :chef_solo do |chef|
+  #   chef.cookbooks_path = "../my-recipes/cookbooks"
+  #   chef.roles_path = "../my-recipes/roles"
+  #   chef.data_bags_path = "../my-recipes/data_bags"
+  #   chef.add_recipe "mysql"
+  #   chef.add_role "web"
+  #
+  #   # You may also specify custom JSON attributes:
+  #   chef.json = { :mysql_password => "foo" }
+  # end
+
+  # Enable provisioning with chef server, specifying the chef server URL,
+  # and the path to the validation key (relative to this Vagrantfile).
+  #
+  # The Opscode Platform uses HTTPS. Substitute your organization for
+  # ORGNAME in the URL and validation key.
+  #
+  # If you have your own Chef Server, use the appropriate URL, which may be
+  # HTTP instead of HTTPS depending on your configuration. Also change the
+  # validation key to validation.pem.
+  #
+  # config.vm.provision :chef_client do |chef|
+  #   chef.chef_server_url = "https://api.opscode.com/organizations/ORGNAME"
+  #   chef.validation_key_path = "ORGNAME-validator.pem"
+  # end
+  #
+  # If you're using the Opscode platform, your validator client is
+  # ORGNAME-validator, replacing ORGNAME with your organization name.
+  #
+  # IF you have your own Chef Server, the default validation client name is
+  # chef-validator, unless you changed the configuration.
+  #
+  #   chef.validation_client_name = "ORGNAME-validator"
+end
+{% endhighlight %}
+
+The default Vagrantfile is configured to simply load the box into VirtualBox and start a new instance of it. Let's try that out jut to make sure everything is working as expected for far.
+
+{% highlight sh linenos %}
+$ vagrant up
+[default] Box MyServer was not found. Fetching box from specified URL...
+[vagrant] Downloading with Vagrant::Downloaders::File...
+[vagrant] Copying box to temporary location...
+[vagrant] Extracting box...
+[vagrant] Verifying box...
+[vagrant] Cleaning up downloaded box...
+[default] Importing base box 'MyServer'...
+[default] Matching MAC address for NAT networking...
+[default] Clearing any previously set forwarded ports...
+[default] Forwarding ports...
+[default] -- 22 => 2222 (adapter 1)
+[default] Creating shared folders metadata...
+[default] Clearing any previously set network interfaces...
+[default] Booting VM...
+[default] Waiting for VM to boot. This can take a few minutes.
+[default] VM booted and ready for use!
+[default] Mounting shared folders...
+[default] -- v-root: /vagrant
+{% endhighlight %}
+
+There you have it. One running instance of the MyServer box we've build. Don't believe me? Open VirtubalBox from your Applications. You'll see a running instance named after your cluster directory:
+
+!/images/devops-toolbox/01-vagrant-default-running.png!
+
+For further proof, let's ssh into that instance by running @vagrant ssh@:
+
+{% highlight sh linenos %}
+$ vagrant ssh
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+
+[vagrant@localhost ~]$ ruby --version
+ruby 1.9.3p194 (2012-04-20 revision 35410) [x86_64-linux]
+
+[vagrant@localhost ~]$ cat /etc/selinux/config
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#	enforcing - SELinux security policy is enforced.
+#	permissive - SELinux prints warnings instead of enforcing.
+#	disabled - SELinux is fully disabled.
+SELINUX=disabled
+# SELINUXTYPE= type of policy in use. Possible values are:
+#	targeted - Only targeted network daemons are protected.
+#	strict - Full SELinux protection.
+SELINUXTYPE=targeted
+
+exit
+Connection to 127.0.0.1 closed.
+{% endhighlight %}
+
+bq. *From the top:* Once logged into tha instance, we have the Ruby 1.9.3 we built and see that selinux is dsabled, work performed in @postinstall.sh@ when we build this box earlier.
+
+Lastly, let's destroy this instance before we create a multi vm cluster. Do that by simply running @vagrant destroy@:
+
+{% highlight sh linenos %}
+$ vagrant destroy
+Are you sure you want to destroy the 'default' VM? [Y/N] Y
+[default] Forcing shutdown of VM...
+[default] Destroying VM and associated drives...
+{% endhighlight %}
+
+IF you open up VirtualBox from Applications again, the instance should now be gone.
+
+!/images/devops-toolbox/02-vagrant-default-gone.png!
+
+h2(#CREATECLUSTER). Creating a Vagrant Cluster
+
+To create a cluster containing a web and db instance of the MyServer box, we simply define both at the bottom of the @Vagrantfile@ before the @end@:
+
+{% highlight ruby linenos %}
+  config.vm.define :web do |web_config|
+    web_config.vm.host_name = "web"
+    web_config.vm.network :hostonly, "10.10.10.10"
+    web_config.vm.forward_port 22, 2210
+  end
+
+  config.vm.define :db do |db_config|
+    db_config.vm.host_name = "db"                                                                                                            
+    db_config.vm.network :hostonly, "10.10.10.11"
+    db_config.vm.forward_port 22, 2211    
+  end
+end
+{% endhighlight %}
+
+bq. *From the top:* Multi-VM configurations are just a configuration block withing the main configuration, and it inherits all global settings. Onb Line 1 we create a web block, assign it a host name, tell it to use a specific ip address locally, and tell it how to forward the ssh port from localhost to the instance. WE do the same thing for the db instance, giving it a different ip address, and a *different* ssh port on localhost.
+
+bq. If we didn't supply different ssh ports, vagrant is smart enough to notice the collision and randomly pick another port.
+
+Now, just like before, we can start both cluster instance using @vagrant up@:
+
+{% highlight sh linenos %}
+$ vagrant up
+[web] Importing base box 'MyServer'...
+[web] Matching MAC address for NAT networking...
+[web] Clearing any previously set forwarded ports...
+[web] Forwarding ports...
+[web] -- 22 => 2210 (adapter 1)
+[web] Creating shared folders metadata...
+[web] Clearing any previously set network interfaces...
+[web] Preparing network interfaces based on configuration...
+[web] Booting VM...
+[web] Waiting for VM to boot. This can take a few minutes.
+[web] VM booted and ready for use!
+[web] Configuring and enabling network interfaces...
+[web] Setting host name...
+[web] Mounting shared folders...
+[web] -- v-root: /vagrant
+[db] Importing base box 'MyServer'...
+[db] Matching MAC address for NAT networking...
+[db] Clearing any previously set forwarded ports...
+[db] Forwarding ports...
+[db] -- 22 => 2211 (adapter 1)
+[db] Creating shared folders metadata...
+[db] Clearing any previously set network interfaces...
+[db] Preparing network interfaces based on configuration...
+[db] Booting VM...
+[db] Waiting for VM to boot. This can take a few minutes.
+[db] VM booted and ready for use!
+[db] Configuring and enabling network interfaces...
+[db] Setting host name...
+[db] Mounting shared folders...
+[db] -- v-root: /vagrant
+{% endhighlight %}
+
+If you open up VirtualBox again (last time, I promise), you will see both running instances:
+
+!/images/devops-toolbox/03-vagrant-cluster-instances.png!
+
+And we can now ssh into both instances by name:
+
+{% highlight sh linenos %}
+$ vagrant ssh web
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+[vagrant@web ~]$ exit
+
+$ vagrant ssh db
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+[vagrant@db ~]$ exit
+{% endhighlight %}
+
+And since we're specifying specific ip addresses, those are now available outside of the vagrant ssh command:
+
+{% highlight sh linenos %}
+$ ssh vagrant@10.10.10.10
+The authenticity of host '10.10.10.10 (10.10.10.10)' can't be established.
+RSA key fingerprint is e5:5d:14:33:5c:2b:c7:60:31:01:ea:74:ee:6b:50:50.
+Are you sure you want to continue connecting (yes/no)? yes
+vagrant@10.10.10.10's password:
+Last login: Tue Sep 25 16:47:53 2012 from 10.0.2.2
+[vagrant@web ~]$ exit
+
+$ ssh vagrant@10.10.10.11
+The authenticity of host '10.10.10.11 (10.10.10.11)' can't be established.
+RSA key fingerprint is e5:5d:14:33:5c:2b:c7:60:31:01:ea:74:ee:6b:50:50.
+Are you sure you want to continue connecting (yes/no)? yes
+vagrant@10.10.10.11's password: 
+Last login: Tue Sep 25 16:48:19 2012 from 10.0.2.2
+[vagrant@db ~]$ exit
+{% endhighlight %}
+
+Lastly, let's go aheaad and destroy these instances for now.
+
+{% highlight sh linenos %}
+$ vagrant destroy
+Are you sure you want to destroy the 'db' VM? [Y/N] Y
+[db] Forcing shutdown of VM...
+[db] Destroying VM and associated drives...
+Are you sure you want to destroy the 'web' VM? [Y/N] Y
+[web] Forcing shutdown of VM...
+[web] Destroying VM and associated drives...
+{% endhighlight %}
+
+h2(#COMMIT). Commit Our Work
+
+Let's add our vagrant cluster definition to the repository.
+
+{% highlight sh linenos %}
+$ cd ../..
+$ git add .
+$ git commit -m "Added cluster Vagrantfile"
+[master b196f9a] Added cluster Vagrantfile
+ 1 file changed, 111 insertions(+)
+ create mode 100644 instances/cluster/Vagrantfile
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+

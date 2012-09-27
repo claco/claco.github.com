@@ -1,0 +1,924 @@
+---
+layout: post
+title: "DevOps Toolbox: Customizing Recipes for Our Application"
+published: true
+created:  1348693622
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/customizing-recipes-for-our-application
+---
+
+h1. Customizing our Cookbooks
+
+Now that we have a working structure to load and run cookbooks, we need to start customizing them to make the servers ready to receive our application deployments. This includes setting up up accounts, passwords, firewall rules, and directories.
+
+# "MySQL Password/Binding Address":#MYSQLPASSWORDBINDINGS
+# "Create DB User/Database":#MYSQLUSERDATABASE
+# "Enable MySQL Port in Firewall":#ENABLEMYSQLPORT
+# "Enable Apache Port in Firewall":#ENABLEAPACHEPORT
+# "Create Website Directories":#CREATEWEBDIRECTORIES
+# "Create Website Conf File":#CREATEWEBCONF
+# "Create Website Database Config":#CREATEWEBDBCONFIG
+# "Commit Our Work":#COMMIT
+
+h2(#MYSQLPASSWORDBINDINGS). Set MySQL Root Password and Binding Address
+
+First, open up the following file in your mysql cookbook: @chef/cookbooks/mysql/attributes/server.rb@
+
+{% highlight ruby linenos %}
+default['mysql']['bind_address'] = attribute?('cloud') ? cloud['local_ipv4'] : ipaddress
+default['mysql']['port']         = 3306
+{% endhighlight %}
+
+Chef cookbooks and recipes are built around the concept of setting attributes during the installation. ("See the Chef Attributes wiki page for more.":http://wiki.opscode.com/display/chef/Attributes). These two lines towards the top of the file tell the server recipe that unless we specify otherwise, bund to the defined ipaddress on port 3306.
+
+Now open up the mysql server recipe: @chef/cookbooks/mysql/recipes/server.rb@
+
+{% highlight ruby linenos %}
+node.set_unless['mysql']['server_root_password']   = secure_password
+{% endhighlight %}
+
+Somewhere towards the top you'll see the line above. This tells the recipe that if we haven't specified a root password, randomly generate one.
+
+So, how do we tell the recipes what root password we want to use and what ip address to bind to? Why, the Vagrantfile of course!. Open @instances/cluster/Vagrantfile@ and add the following code to the db instance chef solo config block:
+
+{% highlight ruby linenos %}
+db_config.vm.provision :chef_solo do |chef|
+  chef.cookbooks_path = "../../chef/cookbooks"
+  chef.roles_path     = "../../chef/roles"
+  chef.add_role "db"
+
+  chef.json = {
+    :mysql => {
+      :server_root_password => "abcd1234",
+      :bind_address => "10.10.10.11"
+    }
+  }
+end
+{% endhighlight %}
+)
+bq. *From the top:* After @add_role@, we set the @json@ property of the @chef@ object with a hash of attributes to pass into Chef Solo when the recipes are run. In this case, we're setting the root password to abcd1234 and binding mysql to the 10.10.10.11 address.
+
+Now, let's re provision our db server instance and check our new settings:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+$ vagrant up
+{% endhighlight %}
+
+Once vagrant up completes and chef solo has completed, let's login and check our handywork:
+
+{% highlight sh linenos %}
+$ vagrant ssh db
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+
+[vagrant@db ~]$ grep bind /etc/my.cnf
+bind-address            = 10.10.10.11
+
+[vagrant@db ~]$ mysql -u root -p
+Enter password: abcd1234
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 5
+Server version: 5.0.95-log Source distribution
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+
+exit
+{% endhighlight %}
+
+Success! Got now, go ahead and leave the db machine instance running this time.
+
+h2(#MYSQLUSERDATABASE). Create a Database and User
+
+To create a database and user for our application, we're going to need to import another cookbook from github. Before we do that, we need to commit our work in git. While we're at it, let's ignore a file that vagrant uses to store instance state @.vagrant@:
+
+{% highlight sh linenos %}
+$ cd ../..
+$ echo ".vagrant" >> .gitignore
+$ git add .
+$ git commit -m "Added mysql password/binding. Ignore .vagrant file."
+{% endhighlight %}
+
+Now, let's import the @database@ cookbook, which knows how to create and maintain databases and database users using the @knife cookbook github install@ command from before:
+
+{% highlight sh linenos %}
+$ knife cookbook github install opscode-cookbooks/database
+Installing database from git://github.com/opscode-cookbooks/database.git to /Users/claco/devops_toolbox/chef/cookbooks
+Checking out the master branch.
+Creating pristine copy branch chef-vendor-database
+Removing pre-existing version.
+Found master amoung heads.
+1 files updated, committing changes
+Creating tag cookbook-site-imported-database-549c441c0064b986b1fc369ed23a2c1fbe421ec3
+Checking out the master branch.
+Updating e190921..dda093a
+Fast-forward
+ chef/cookbooks/database/.gitignore                                             |   1 +
+ chef/cookbooks/database/CHANGELOG.md                                           |  46 +++++++++++++++++++
+ chef/cookbooks/database/CONTRIBUTING                                           |  29 ++++++++++++
+ chef/cookbooks/database/LICENSE                                                | 201 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/README.md                                              | 468 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_mysql.rb                   | 103 +++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_mysql_user.rb              |  76 ++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_postgresql.rb              | 131 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_postgresql_user.rb         |  83 +++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_sql_server.rb              | 109 +++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/provider_database_sql_server_user.rb         | 106 ++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/resource_database.rb                         | 119 +++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/resource_database_user.rb                    |  90 ++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/libraries/resource_mysql_database.rb                   |  34 ++++++++++++++
+ chef/cookbooks/database/libraries/resource_mysql_database_user.rb              |  34 ++++++++++++++
+ chef/cookbooks/database/libraries/resource_postgresql_database.rb              |  35 ++++++++++++++
+ chef/cookbooks/database/libraries/resource_postgresql_database_user.rb         |  35 ++++++++++++++
+ chef/cookbooks/database/libraries/resource_sql_server_database.rb              |  34 ++++++++++++++
+ chef/cookbooks/database/libraries/resource_sql_server_database_user.rb         |  34 ++++++++++++++
+ chef/cookbooks/database/metadata.rb                                            |  22 +++++++++
+ chef/cookbooks/database/recipes/default.rb                                     |  20 ++++++++
+ chef/cookbooks/database/recipes/ebs_backup.rb                                  |  89 +++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/recipes/ebs_volume.rb                                  | 204 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ chef/cookbooks/database/recipes/master.rb                                      |  78 +++++++++++++++++++++++++++++++
+ chef/cookbooks/database/recipes/mysql.rb                                       |  20 ++++++++
+ chef/cookbooks/database/recipes/postgresql.rb                                  |  20 ++++++++
+ chef/cookbooks/database/recipes/snapshot.rb                                    |  62 +++++++++++++++++++++++++
+ chef/cookbooks/database/templates/default/app_grants.sql.erb                   |   8 ++++
+ chef/cookbooks/database/templates/default/aws_config.erb                       |   3 ++
+ chef/cookbooks/database/templates/default/chef-solo-database-snapshot.cron.erb |   6 +++
+ chef/cookbooks/database/templates/default/chef-solo-database-snapshot.json.erb |   1 +
+ chef/cookbooks/database/templates/default/chef-solo-database-snapshot.rb.erb   |   6 +++
+ chef/cookbooks/database/templates/default/ebs-backup-cron.erb                  |   2 +
+ chef/cookbooks/database/templates/default/ebs-db-backup.sh.erb                 |   8 ++++
+ chef/cookbooks/database/templates/default/ebs-db-restore.sh.erb                |  10 ++++
+ chef/cookbooks/database/templates/default/s3cfg.erb                            |  27 +++++++++++
+ 36 files changed, 2354 insertions(+)
+ create mode 100644 chef/cookbooks/database/.gitignore
+ create mode 100644 chef/cookbooks/database/CHANGELOG.md
+ create mode 100644 chef/cookbooks/database/CONTRIBUTING
+ create mode 100644 chef/cookbooks/database/LICENSE
+ create mode 100644 chef/cookbooks/database/README.md
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_mysql.rb
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_mysql_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_postgresql.rb
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_postgresql_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_sql_server.rb
+ create mode 100644 chef/cookbooks/database/libraries/provider_database_sql_server_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_database.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_database_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_mysql_database.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_mysql_database_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_postgresql_database.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_postgresql_database_user.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_sql_server_database.rb
+ create mode 100644 chef/cookbooks/database/libraries/resource_sql_server_database_user.rb
+ create mode 100644 chef/cookbooks/database/metadata.rb
+ create mode 100644 chef/cookbooks/database/recipes/default.rb
+ create mode 100644 chef/cookbooks/database/recipes/ebs_backup.rb
+ create mode 100644 chef/cookbooks/database/recipes/ebs_volume.rb
+ create mode 100644 chef/cookbooks/database/recipes/master.rb
+ create mode 100644 chef/cookbooks/database/recipes/mysql.rb
+ create mode 100644 chef/cookbooks/database/recipes/postgresql.rb
+ create mode 100644 chef/cookbooks/database/recipes/snapshot.rb
+ create mode 100644 chef/cookbooks/database/templates/default/app_grants.sql.erb
+ create mode 100644 chef/cookbooks/database/templates/default/aws_config.erb
+ create mode 100644 chef/cookbooks/database/templates/default/chef-solo-database-snapshot.cron.erb
+ create mode 100644 chef/cookbooks/database/templates/default/chef-solo-database-snapshot.json.erb
+ create mode 100644 chef/cookbooks/database/templates/default/chef-solo-database-snapshot.rb.erb
+ create mode 100644 chef/cookbooks/database/templates/default/ebs-backup-cron.erb
+ create mode 100644 chef/cookbooks/database/templates/default/ebs-db-backup.sh.erb
+ create mode 100644 chef/cookbooks/database/templates/default/ebs-db-restore.sh.erb
+ create mode 100644 chef/cookbooks/database/templates/default/s3cfg.erb
+Cookbook database version 549c441c0064b986b1fc369ed23a2c1fbe421ec3 successfully installed
+{% endhighlight %}
+
+Now this is where the fun begines We're going to create a new cookbook for our application, and create a new db recipe to create the database and database user.
+
+To create the cookbook, use the @knife cookbook create@ command:
+
+{% highlight sh linenos %}
+$ knife cookbook create myapp
+** Creating cookbook myapp
+** Creating README for cookbook: myapp
+** Creating metadata for cookbook: myapp
+
+$ tree chef/cookbooks/myapp
+chef/cookbooks/myapp
+├── README.md
+├── attributes
+├── definitions
+├── files
+│   └── default
+├── libraries
+├── metadata.rb
+├── providers
+├── recipes
+│   └── default.rb
+├── resources
+└── templates
+    └── default
+
+10 directories, 3 files
+{% endhighlight %}
+
+bq. *From the top:* After running the cookbook create command, a new chef/cookbooks/myapp folder is created. It contains the default structure for creating recipes including default attributes, metdata, and a README.
+
+Now that we have a cookbook for our application, we need to add default attributes for the database/user we're creating, and a recipe to use those attributes to actually create the database/user using the @database@ cookbook we imported earlier. Since myapp is split into two server, the web role and the db role, we're going to follow that pattern in the cookbook by creating a web recipe and a db recipe, each with their own attributes files.
+
+First, create and open a new attributes file in @chef/cookbooks/myapp/attributes/db.rb@. In that file we're going to set two attributes: the default database nane, and the default user name:
+
+{% highlight ruby linenos %}
+default['myapp']['database']['name'] = 'myapp'
+default['myapp']['database']['user'] = 'myapp'
+{% endhighlight %}
+
+Next, let's create the recipe itself. Create and open a new recipe file in @chef/cookbooks/myapp/recipes/db.rb@ with this content:
+
+{% highlight ruby linenos %}
+include_recipe "database::mysql"
+
+mysql_connection_info = {
+  :host => "localhost",
+  :username => 'root',
+  :password => node['mysql']['server_root_password']
+}
+
+mysql_database node['myapp']['database']['name'] do
+  connection mysql_connection_info
+  action :create
+end
+
+mysql_database_user node['myapp']['database']['user'] do
+  connection mysql_connection_info
+  password node['myapp']['database']['password']
+  database_name node['myapp']['database']['name']
+  host '%'
+  action :grant
+end
+{% endhighlight %}
+
+bq. *From the top:* Line 1, we include the @database::mysql@ recipe, which contains methods that know how to manage mysql databases and users. Lines 3-7 we setup our current mysql auth information that the recipe will use to manage mysql, including using the root password we've already set earlier. Lines 9-12 create the database with the default name (@myapp@), and Lines 14-20 creates a database user and grants them access to the new database.
+
+As you may have noticed, the one thing we didn't declare a default attribute for is the database users password. So, let's add that to the recipe settings in @Vagrantfile:
+
+{% highlight ruby linenos %}
+db_config.vm.provision :chef_solo do |chef|
+  chef.cookbooks_path = "../../chef/cookbooks"
+  chef.roles_path     = "../../chef/roles"
+  chef.add_role "db"
+
+  chef.json = {
+    :mysql => {
+      :server_root_password => "abcd1234",
+      :bind_address => "10.10.10.11"
+    },
+    :myapp => {
+      :database => {
+        :password => 'myapp_1234'
+      }
+    }
+
+  }
+end
+{% endhighlight %}
+
+Now that we have a db recipe ready to go, we just need to add it to our db role in @chef/roles/db.rb@:
+
+{% highlight ruby linenos %}
+name "db"
+description "Database Server Role"
+run_list(
+  "recipe[mysql::server]", \
+  "recipe[myapp::db]"
+)
+{% endhighlight %}
+
+Now, let's run chef solo again so it can create our database/user. Since our vagrant instance is still running, we can just use the @provision@ command:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+$ vagrant provision db
+[db] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[db] Generating chef JSON and uploading...
+[db] Running chef-solo...
+[2012-09-27T02:52:00+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-27T02:52:01+01:00] INFO: Setting the run_list to ["role[db]"] from JSON
+[2012-09-27T02:52:01+01:00] INFO: Run List is [role[db]]
+[2012-09-27T02:52:01+01:00] INFO: Run List expands to [mysql::server, myapp::db]
+...
+[2012-09-27T02:53:33+01:00] INFO: Processing mysql_database[myapp] action create (myapp::db line 9)
+[2012-09-27T02:53:33+01:00] INFO: Processing mysql_database_user[myapp] action grant (myapp::db line 14)
+[2012-09-27T02:53:33+01:00] INFO: mysql_database_user[myapp]: granting access with statement [GRANT all ON myapp.* TO 'myapp'@'%' IDENTIFIED BY 'myapp_1234']
+{% endhighlight %}
+
+bq. *From the top:* This time, line 9 has our @myapp::db@ recipe in the run list, via the db role, and towards the end you can see the @myapp@ database being created, the @myapp@ user being created, and the user being granted access to the new database.
+
+Let's log into the db instace just to make sure things worked properly:
+
+{% highlight sh linenos %}
+$ vagrant ssh db
+Last login: Thu Sep 27 02:57:26 2012 from 10.0.2.2
+
+[vagrant@db ~]$ mysql -u myapp -p -D myapp -h 10.10.10.11
+Enter password: myapp_1234
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 14
+Server version: 5.0.95-log Source distribution
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+$ exit
+{% endhighlight %}
+
+Fantastic!
+
+We're going to be importing a few more cookbooks, so let's save our work:
+
+{% highlight sh lienos %}
+$ cd ../..
+$ git add .
+$ git commit -m "Added myapp cookbook. Added db recipe. Updated db role."
+[master e7f4f0c] Added myapp cookbook. Added db recipe. Updated db role.
+ 7 files changed, 55 insertions(+), 1 deletion(-)
+ create mode 100644 chef/cookbooks/myapp/README.md
+ create mode 100644 chef/cookbooks/myapp/attributes/db.rb
+ create mode 100644 chef/cookbooks/myapp/metadata.rb
+ create mode 100644 chef/cookbooks/myapp/recipes/db.rb
+ create mode 100644 chef/cookbooks/myapp/recipes/default.rb
+{% endhighlight %}
+
+h2(#ENABLEMYSQLPORT). Enable MySQL Port in the Firewall
+
+Now that we have configured database, we still can't talk to it from other machines, namely the web server we're going to be creating. Luckily for us, there's an @iptables@ cookbook that knows how to add/update firewall rules. Unfortunately for me, and fortunately for you, the first time I applied rules using the @iptables@ cookbook, it added the mysql port, but also disabled the ssh port. This was because we were now loading iptable rules explicitely and the default ssh port that was enabled by KickStart OS install no longer applies. So, with that said, we will also import the @openssh@ cookbook so we can encorporate its attributes and settings into the firewall rules.
+
+Also, if you look around the apache/mysql/openssh cookbooks, you'll find @port_*.erb@ files. These are the template files the @iptables@ cookbook uses to aply firewall rules.
+
+First, inport both cookbooks:
+
+{% highlight sh lienos %}
+knife cookbook github install opscode-cookbooks/iptables
+knife cookbook github install opscode-cookbooks/openssh
+{% endhighlight %}
+
+Next, let's call @iptables@ and run the appropriate firewall rules for mysql (and ssh!) by adding the following to your myapp db recipe.
+
+{% highlight ruby linenos %}
+include_recipe "database::mysql"
+include_recipe "iptables"
+
+iptables_rule "port_mysql" do
+  cookbook "mysql"
+end
+ 
+iptables_rule "port_ssh" do
+  cookbook "openssh"
+end
+
+mysql_connection_info = {
+  :host => "localhost",
+  :username => 'root',
+  :password => node['mysql']['server_root_password']
+}
+ 
+mysql_database node['myapp']['database']['name'] do
+  connection mysql_connection_info
+  action :create
+end
+
+mysql_database_user node['myapp']['database']['user'] do
+  connection mysql_connection_info
+  password node['myapp']['database']['password']
+  database_name node['myapp']['database']['name']
+  host '%'
+  action :grant
+end
+{% endhighlight %}
+
+bq. *From the top:* On line 2, we include the iptables recipe. Lines 4-10 call the iptables rule helper, asking it to load the port_* rules from their respective cookbooks; in this case port_mysql from the mysql coobook and port_ssh from the openssh recipe.
+
+bq. *Food for thought*: This is the easiest way to open the ports in the firewall, but one could arue these  decisions belong in the mysql::server recipe, or maybe in a new custom mysql::iptables recipe.
+
+Lastly, let's run chef solo again on the db instance to setup the firewall rules:
+
+{% highlight sh linenos %}
+$ vagrant provision db
+[db] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[db] Generating chef JSON and uploading...
+[db] Running chef-solo...
+...
+[2012-09-27T04:00:40+01:00] INFO: Processing template[/etc/iptables.d/port_mysql] action create (myapp::db line 23)
+[2012-09-27T04:00:40+01:00] INFO: template[/etc/iptables.d/port_mysql] mode changed to 644
+[2012-09-27T04:00:40+01:00] INFO: template[/etc/iptables.d/port_mysql] updated content
+[2012-09-27T04:00:40+01:00] INFO: template[/etc/iptables.d/port_mysql] not queuing delayed action run on execute[rebuild-iptables] (delayed), as it's already been queued
+[2012-09-27T04:00:40+01:00] INFO: Processing template[/etc/iptables.d/port_ssh] action create (myapp::db line 23)
+{% endhighlight %}
+
+bq. *From the top:* After running chef solo again, among the output you'll see it now adding the mysql and ssh rules.
+
+Just for giggles, we should be able to now connect directly to mysql using the external ip address (10.10.10.11) locally, as well as the web instance:
+
+{% highlight sh linenos %}
+$ mysql -u myapp -p -D myapp -h 10.10.10.11
+Enter password: myapp_1234
+
+$ vagrant ssh web
+Last login: Sun Sep  2 18:51:55 2012 from 10.0.2.2
+
+[vagrant@web ~]$ mysql -u myapp -p -D myapp -h 10.10.10.11
+Enter password: myapp_1234
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+{% endhighlight %}
+
+h2(#ENABLEAPACHEPORT). Enable Apache Port in the Firewall
+
+Since we're on a role with firewall rules, let's move over to the web machien instance and configure the firewall to allow port 80. To do that, we need to create a new recipe our application in the web role. Create and open a new recipe in @chef/cookbooks/myapp/recipes/web.db@. In it, load the @iptables@ cookbook and call the @port_apache@ rule from the @apache2@ cookbook:
+
+_Remember, since we're setting up custom firewall rules, we need to remember to include the ssh port too!_
+
+{% highlight ruby linenos %}
+include_recipe "iptables"
+
+iptables_rule "port_apache" do
+  cookbook  "apache2"
+  variables :port => 80
+end
+
+iptables_rule "port_ssh" do
+  cookbook "openssh"
+end
+{% endhighlight %}
+
+bq. *From the top:* Just as with the db recipe, we include the @iptables@ cookbook. Next we call the @port_apache@ rule from the @apache2@ cookbook and give it a port [as a template variable]. Then we call the @port_ssh@ rule from the @openssh@ cookbook.
+
+So why the "variables" thingy? The @port_apache@ file uses a "template variable" to assign the port instead of hard coding the port in the file, like @port_ssh@ and @port_mysql@ do:
+
+{% highlight ruby lineno %}
+# Port <%= @port %> 
+-A FWR -p tcp -m tcp --dport <%= @port %> -j ACCEPT
+{% endhighlight %}
+
+Next, let's add this recipe to our web role. Open @chef/roles/web.rb@ and add the myapp::web recipe:
+
+{% highlight ruby linenos %}
+name "web"
+description "Web Server Role"
+run_list(
+  "recipe[apache2]", \
+  "recipe[passenger_apache2::mod_rails]", \
+  "recipe[mysql::client]", \
+  "recipe[myapp::web]"
+)
+{% endhighlight %}
+
+Now, let's provision our web instance with the firewall changes. If your instance is still running, use @vagrant provision web@, otherwise, run @vagrant ip web@:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+$ vagrant up web
+
+[web] Running provisioner: Vagrant::Provisioners::ChefSolo...
+[web] Generating chef JSON and uploading...
+[web] Running chef-solo...
+[2012-09-27T13:04:53+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-27T13:04:53+01:00] INFO: Setting the run_list to ["role[web]"] from JSON
+[2012-09-27T13:04:53+01:00] INFO: Run List is [role[web]]
+[2012-09-27T13:04:53+01:00] INFO: Run List expands to [apache2, passenger_apache2::mod_rails, mysql::client, myapp::web]
+...
+[2012-09-27T13:04:55+01:00] INFO: Processing template[/etc/iptables.d/port_apache] action create (myapp::web line 23)
+[2012-09-27T13:04:55+01:00] INFO: Processing template[/etc/iptables.d/port_ssh] action create (myapp::web line 23)
+{% endhighlight %}
+
+bq. *From the top:* Just like the db provisioning, the myapp::web is in the run list, and towards the end we see it adding rules to the firewall for ssh and apache.
+
+Now, we should be able to see the default Apache page from the external ip address. In your browser, open http://10.10.10.10:80/
+
+!/images/devops-toolbox/01-recipe-apache-firewall.png!
+
+h2(#CREATEWEBDIRECTORIES). Create Webite Directories
+
+Now we need to create all of the directories where we want out application to live and a user to own those directories.
+
+First, like the db recipe, let's set some default attributes for our web recipe. Create and open @chef/cookbooks/myapp/attributes/web.rb@ and add the following:
+
+{% highlight ruby linenos %}
+default['myapp']['website']['approot'] = '/var/www/myapp'
+default['myapp']['website']['docroot'] = '/var/www/myapp/current/public'
+default['myapp']['website']['server_name'] = ''
+default['myapp']['website']['server_aliases'] = []
+default['myapp']['website']['rails_env'] = 'development'
+{% endhighlight %}
+
+bq. *From the top:* By default, we set the approot to /var/www/myapp, the docroot to the current/public folder in docroot, set the server_name/aliases to empty, and the rails environment to development. These will be used to create the directories as well as configure apache/passenger for the rails applicaiton we'll be deploying later.
+
+Now, open @chef/cookbooks/myapp/recipes/web.rb@ and add the following:
+
+{% highlight ruby linenos %}
+include_recipe "apache2"
+include_recipe "passenger_apache2"
+
+approot = node['myapp']['website']['approot'] 
+
+group "myapp" do
+  gid 1000
+end
+
+user "myapp" do
+  comment "MyApp User"
+  uid 1000
+  gid "myapp"
+  home "/home/myapp"
+  shell "/bin/bash"
+  password "$1$wp3nGnOs$NYH9NB05fC504YH2UsAW61"
+end
+
+directory approot do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+  recursive true
+end
+
+directory "#{approot}/shared" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+
+directory "#{approot}/releases" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+
+directory "#{approot}/releases/20110101010101" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+
+directory "#{approot}/releases/20110101010101/public" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+
+directory "#{approot}/releases/20110101010101/public/system" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+
+execute "maintenance.html" do
+  command "echo \"System Maintenance In Progress\" > #{approot}/releases/20110101010101/public/system/maintenance.html"
+end
+
+link "#{approot}/current" do
+  to "#{approot}/releases/20110101010101"
+  owner "myapp"
+  group "myapp"
+  not_if do
+    File.exists?("#{approot}/current")
+  end
+end
+
+directory "#{approot}/current/public" do
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+end
+{% endhighlight %}
+
+That's a pretty big change, so let's break it down a bit.
+
+Line 1-2 we're including the apache2/passenger recipes. We'll be using those in a little bit.
+Lines 6-16, we're create a user and group called @myapp@ with the shadow password "myapp_1234"
+Lines 13-54, we're creating a @capistrano@ style directory layout. We'll be using Capstrano later to deploy our sample Rails application.
+Line 56-48, we're creating a "System Maintenance In Progress" page to display by default until we deploy the application.
+Lines 60-73, we create a symlink for the current directory and create a public folder.
+
+Let's reprovision our web instance again and verify the changes:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+$ vagrant provision web
+...
+[2012-09-27T13:54:24+01:00] INFO: Processing user[myapp] action create (myapp::web line 20)
+[2012-09-27T13:54:24+01:00] INFO: user[myapp] created
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp] action create (myapp::web line 29)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp] created directory /var/www/myapp
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp/shared] action create (myapp::web line 36)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/shared] created directory /var/www/myapp/shared
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/shared] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/shared] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp/releases] action create (myapp::web line 42)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases] created directory /var/www/myapp/releases
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp/releases/20110101010101] action create (myapp::web line 48)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101] created directory /var/www/myapp/releases/20110101010101
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp/releases/20110101010101/public] action create (myapp::web line 54)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public] created directory /var/www/myapp/releases/20110101010101/public
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing directory[/var/www/myapp/releases/20110101010101/public/system] action create (myapp::web line 60)
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public/system] created directory /var/www/myapp/releases/20110101010101/public/system
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public/system] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: directory[/var/www/myapp/releases/20110101010101/public/system] group changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: Processing execute[maintenance.html] action run (myapp::web line 66)
+[2012-09-27T13:54:24+01:00] INFO: execute[maintenance.html] ran successfully
+[2012-09-27T13:54:24+01:00] INFO: Processing link[/var/www/myapp/current] action create (myapp::web line 70)
+[2012-09-27T13:54:24+01:00] INFO: link[/var/www/myapp/current] created
+[2012-09-27T13:54:24+01:00] INFO: link[/var/www/myapp/current] owner changed to 1000
+[2012-09-27T13:54:24+01:00] INFO: link[/var/www/myapp/current] group changed to 1000
+...
+{% endhighlight %}
+
+bq. *From the top:* Now when chef solo is run, you should now see a bunch of lines about creating users, group, and all of the directories.
+
+Now, let's login to the web instance and check things out:
+
+{% highlight sh linenos %}
+$ vagrant ssh web
+Last login: Thu Sep 27 13:58:48 2012 from 10.0.2.2
+
+[vagrant@web ~]$ su myapp
+Password: myapp_1234
+
+[myapp@web vagrant]$ cd /var/www
+
+[myapp@web www]$ ls -lta
+total 32
+drwxr-xr-x  7 root  root  4096 Sep 27 13:54 .
+drwxr-xr-x  4 myapp myapp 4096 Sep 27 13:54 myapp
+drwxr-xr-x 21 root  root  4096 Sep 27 01:34 ..
+drwxr-xr-x  3 root  root  4096 Sep 27 01:34 error
+drwxr-xr-x  3 root  root  4096 Sep 27 01:34 icons
+drwxr-xr-x  2 root  root  4096 Jun  6 15:04 cgi-bin
+drwxr-xr-x  2 root  root  4096 Jun  6 15:04 html
+
+[myapp@web www]$ tree myapp
+myapp
+|-- current -> /var/www/myapp/releases/20110101010101
+|-- releases
+|   `-- 20110101010101
+|       `-- public
+|           `-- system
+|               `-- maintenance.html
+`-- shared
+
+6 directories, 1 file
+{% endhighlight %}
+
+h2(#CREATEWEBCONF). Create Website Httpd Conf File
+
+Now that we have a website directory structure and a "System Maintenance In Progress" page, let's configure Apache to server up this website instead of the default Apache website.
+
+Add the following to the bottom of your @chef/cookbooks/myapp/recipes/web.db@:
+
+{% highlight ruby linenos %}
+web_app "myapp" do
+  cookbook "passenger_apache2"
+  docroot "#{approot}/current/public"
+  server_name node['myapp']['website']['server_name']
+  server_aliases node['myapp']['website']['server_aliases']
+  rails_env node['myapp']['website']['rails_env']
+end
+{% endhighlight %}
+
+bq. *From the top:* We're using the web_app helper from the Apache cookbook to creete a "debian style" enabled site configuration with the defaults we set in @chef/cookbook/myapp/attributes/web.rb@
+
+Now, open your @instances/cluster/Vagrantfile@, and add the following to the web instance configuration:
+
+{% highlight ruby linenos %}
+web_config.vm.provision :chef_solo do |chef|
+  chef.cookbooks_path = "../../chef/cookbooks"
+  chef.roles_path     = "../../chef/roles"
+  chef.add_role "web"
+
+  chef.json = {
+    :myapp => {
+      :website => {
+        :server_name => "10.10.10.10",
+        :server_aliases => ["10.10.10.10"],
+      }
+    }
+  }
+end
+{% endhighlight %}
+
+bq. *From the top:* Just like we added attribute settings to the db instance configuration, here we're telling the web instance recipes what server name/aliases to send to the apache conf file we're creating.
+
+LEt's once again, reprovision the web instance:
+
+{% highlight sh linenos %}
+$ vagrant provision web
+...
+[2012-09-27T14:23:11+01:00] INFO: Processing template[/etc/httpd/sites-available/myapp.conf] action create (myapp::web line 29)
+[2012-09-27T14:23:11+01:00] INFO: template[/etc/httpd/sites-available/myapp.conf] mode changed to 644
+[2012-09-27T14:23:11+01:00] INFO: template[/etc/httpd/sites-available/myapp.conf] updated content
+[2012-09-27T14:23:11+01:00] INFO: Processing execute[a2ensite myapp.conf] action run (myapp::web line 24)
+[2012-09-27T14:23:11+01:00] INFO: execute[a2ensite myapp.conf] ran successfully
+[2012-09-27T14:23:11+01:00] INFO: execute[a2ensite myapp.conf] not queuing delayed action restart on service[apache2] (delayed), as it's already been queued
+[2012-09-27T14:23:11+01:00] INFO: execute[a2enmod rewrite] sending restart action to service[apache2] (delayed)
+[2012-09-27T14:23:11+01:00] INFO: Processing service[apache2] action restart (apache2::default line 219)
+[2012-09-27T14:23:12+01:00] INFO: service[apache2] restarted
+...
+{% endhighlight %}
+
+bq. *From the top:* This time, chef solo created our myapp.conf file in the sites-available directory structure and reloaded apache.
+
+Let's login and check out that config file:
+
+{% highlight sh linenos %}
+$ vagrant ssh web
+Last login: Thu Sep 27 14:03:25 2012 from 10.0.2.2
+
+[vagrant@web ~]$ cat /etc/httpd/sites-enabled/myapp.conf
+<VirtualHost *:80>
+  ServerName 10.10.10.10
+  ServerAlias 10.10.10.10 
+  DocumentRoot /var/www/myapp/current/public
+
+  RailsBaseURI /
+  RailsEnv development
+
+  <Directory /var/www/myapp/current/public>
+    Options FollowSymLinks
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  LogLevel info
+  ErrorLog /var/log/httpd/myapp-error.log
+  CustomLog /var/log/httpd/myapp-access.log combined
+
+  RewriteEngine On
+  RewriteLog /var/log/httpd/myapp-rewrite.log
+  RewriteLogLevel 0
+  # Canonical host
+  RewriteCond %{HTTP_HOST}   !^10.10.10.10 [NC]
+  RewriteCond %{HTTP_HOST}   !^$
+  RewriteRule ^/(.*)$        http://10.10.10.10/$1 [L,R=301]
+
+  RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
+  RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+  RewriteRule ^.*$ /system/maintenance.html [L]
+
+</VirtualHost>
+{% endhighlight %}
+
+bq. *From the top:* Within the VirtualHost block in the conf file, you see our default rails environment, the docroot, the server name/aliases, and towards the end, the check for the system/maintenance.html page.
+
+And now that we have told apache to load our website, let's check it in a browser again. Open http://10.10.10.10:80/
+
+!/images/devops-toolbox/02-web-myapp-maint.png!
+
+Woohoo!
+
+h2(#CREATEWEBDBCONFIG). Create Website Database Config"
+
+The last thing we need to do before we deploy our application is to have a database config file ready for Rails to use after deployment.
+
+First, we need to create a template file. In your editor, create and open @chef/cookbooks/myapp/templates/default/database.yml.erb@ with the folowing content:
+
+{% highlight ruby linenos %}
+<%=@rails_env%>:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  database: <%=@database%>
+  pool: 5
+  username: <%=@username%>
+  password: <%=@password%>
+  host: <%=@host%>
+{% endhighlight %}
+
+Add the following to the bottom of your @chef/cookbooks/myapp/recipes/web.db@:
+
+{% highlight ruby linenos %}
+template "#{approot}/shared/database.yml" do
+  source "database.yml.erb"
+  owner "myapp"
+  group "myapp"
+  mode "0755"
+  variables(
+    :database  => node['myapp']['database']['name'],
+    :username  => node['myapp']['database']['user'],
+    :password  => node['myapp']['database']['password'],
+    :host      => node['myapp']['database']['host'],
+    :rails_env => node['myapp']['website']['rails_env']
+  )
+end
+
+gem_package "bundler" do
+  action :install
+end
+{% endhighlight %}
+
+bq. *From the top:* We're using the template helper to turn an erb template into a real file in the file system. In this case, /var/www/myapp/shared/database.yml, with the specified database name, user, password, host, and rails environment. And just for giggles, let's also ensure @bundler@ is installed.
+
+Lastly, before we reprovision the web instance to create this file, we need to add more attributes to @Vagrantfile@
+
+{% highlight ruby linenos %}
+web_config.vm.provision :chef_solo do |chef|
+  chef.cookbooks_path = "../../chef/cookbooks"
+  chef.roles_path     = "../../chef/roles"
+  chef.add_role "web"
+
+  chef.json = {
+    :myapp => {
+      :database => {
+        :name => "myapp",
+        :host => "10.10.10.11",
+        :user => "myapp",
+        :password => "myapp_1234"
+      },
+      :website => {
+        :server_name => "10.10.10.10",
+        :server_aliases => ["10.10.10.10"],
+        :rails_env => "development"
+      }
+    }
+  }
+end
+{% endhighlight %}
+
+Now, once more, let's reprovision the web instance:
+
+{% highlight sh linenos %}
+$ cd instances/cluster
+$ vagrant provision web
+...
+[2012-09-27T14:46:22+01:00] INFO: Processing template[/var/www/myapp/shared/database.yml] action create (myapp::web line 93)
+[2012-09-27T14:46:22+01:00] INFO: template[/var/www/myapp/shared/database.yml] owner changed to 1000
+[2012-09-27T14:46:22+01:00] INFO: template[/var/www/myapp/shared/database.yml] group changed to 1000
+[2012-09-27T14:46:22+01:00] INFO: template[/var/www/myapp/shared/database.yml] mode changed to 755
+[2012-09-27T14:46:22+01:00] INFO: template[/var/www/myapp/shared/database.yml] updated content
+...
+{% endhighlight %}
+
+Let's login to the web instance and verify that file:
+
+{% highlight sh linenos %}
+$ vagrant ssh web
+Last login: Thu Sep 27 14:25:17 2012 from 10.0.2.2
+
+[vagrant@web ~]$ cat /var/www/myapp/shared/database.yml
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  database: myapp
+  pool: 5
+  username: myapp
+  password: myapp_1234
+  host: 10.10.10.11
+{% endhighlight %}
+
+Awesome! We are now ready to create a simple Rails application and deploy it to our local vagrant instances.
+
+h2(#COMMIT). Commit Our Work
+
+Let's commit our cookbook/recipe customizations to the git repository.
+
+{% highlight sh linenos %}
+$ cd ../..
+$ git add .
+git commit -m "Customized Recipes for application deployment"
+[master 887f558] Customized Recipes for application deployment
+ 6 files changed, 149 insertions(+), 1 deletion(-)
+ create mode 100644 chef/cookbooks/myapp/attributes/web.rb
+ create mode 100644 chef/cookbooks/myapp/recipes/web.rb
+ create mode 100644 chef/cookbooks/myapp/templates/default/database.yml.erb
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+

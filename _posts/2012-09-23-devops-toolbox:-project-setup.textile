@@ -89,11 +89,12 @@ $ mkdir -p chef/roles; touch chef/roles/.gitkeep
 
 bq. *From the top:* The @.chef@ directory will contain the configuration and credentials it use @knife@, the command line interface for Chef/OpsCode. The @chef@ directory will contain local copies of our cookbooks, data bags, environments, and roles. More on that later as well. :-)
 
-And for comparison, here's the directory structure you should have now:
+And for comparison, here's the directory structure you should have now: (If you don't have tree installed, try @brew install tree@)
 
 {% highlight sh linenos %}
 $ tree
 .
+├── .chef
 ├── boxes
 ├── chef
 │   ├── cookbooks
@@ -141,4 +142,8 @@ h2. To Continue...
 # "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
 # "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
 # "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
 

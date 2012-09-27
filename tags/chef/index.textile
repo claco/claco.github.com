@@ -5,6 +5,62 @@ title: "Tag: chef"
 
 <div class="index posts">
         <div class="post">
+          <span class="created" data-created="1348582470" data-format="MM/dd/yyyy">
+            {{ 1348582470 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/provisioning-machines-with-vagrant/">DevOps Toolbox: Provisioning Machines with Vagrant</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348593097" data-format="MM/dd/yyyy">
+            {{ 1348593097 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/configuring-machines-using-chef-solo/">DevOps Toolbox: Configuring Machines Using Chef Solo</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348441303" data-format="MM/dd/yyyy">
+            {{ 1348441303 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/vagrant-veewee-installation/">DevOps Toolbox: Vagrant/Veewee Installation</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348431290" data-format="MM/dd/yyyy">
+            {{ 1348431290 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/project-setup/">DevOps Toolbox: Project Setup</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348413377" data-format="MM/dd/yyyy">
+            {{ 1348413377 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/prerequisites/">DevOps Toolbox: Prerequisites</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348446443" data-format="MM/dd/yyyy">
+            {{ 1348446443 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/define-create-vagrant-box/">DevOps Toolbox: Define/Create a Vagrant Box</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348268618" data-format="MM/dd/yyyy">
+            {{ 1348268618 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/introduction/">DevOps Toolbox: Introduction</a>
+          </span>
+        </div>
+        <div class="post">
           <span class="created" data-created="1320910231" data-format="MM/dd/yyyy">
             {{ 1320910231 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  

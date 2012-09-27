@@ -1,0 +1,697 @@
+---
+layout: post
+title: "DevOps Toolbox: Creating and Deploying a Rails Application"
+published: true
+created:  1348767648
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: devops-toolbox/create-deploy-rails-application
+---
+
+h1. Creating and Deploying a Simple Rails Application
+
+Now that we've configured our servers to receive our applicaiton, let's create one and deploy it! We're going to create a simple "Ruby on Rails":http://rubyonrails.org/ applicaiton and us Capistrano for the deployment process.
+
+# "Install Rails/Capistrano":#INSTALLRAILS
+# "Create a New Application":#CREATEAPP
+# "Create a Simple People Page":#PEOPLECRUD
+# "Create Deployment File":#CREATEDEPLOY
+# "Deploy the Application":#DEPLOYAPP
+# "Commit Our Work":#COMMIT
+
+h2(#INSTALLRAILS). Install Rails/Capistrano
+
+Open up your Gemfile and add the following lines:
+
+{% highlight ruby linenos %}
+gem 'rails'
+gem 'capistrano'
+{% endhighlight %}
+
+Now, run @bundle install@ to install rails and capistrano:
+
+{% highlight sh linenos %}
+$ bundle install
+Fetching gem metadata from http://rubygems.org/.....
+Using rake (0.9.2.2) 
+Using Platform (0.4.0) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.6) 
+Using activesupport (3.2.8) 
+Using builder (3.0.3) 
+Using activemodel (3.2.8) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.1) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.1) 
+Using tilt (1.3.3) 
+Using sprockets (2.1.3) 
+Using actionpack (3.2.8) 
+Using mime-types (1.19) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.4.4) 
+Using actionmailer (3.2.8) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.33) 
+Using activerecord (3.2.8) 
+Using activeresource (3.2.8) 
+Using archive-tar-minitar (0.5.2) 
+Using bunny (0.7.9) 
+Using highline (1.6.15) 
+Using json (1.5.4) 
+Using mixlib-log (1.4.1) 
+Using mixlib-authentication (1.3.0) 
+Using mixlib-cli (1.2.2) 
+Using mixlib-config (1.1.2) 
+Using mixlib-shellout (1.1.0) 
+Using moneta (0.6.0) 
+Using net-ssh (2.2.2) 
+Using net-ssh-gateway (1.1.0) 
+Using net-ssh-multi (1.1) 
+Using ipaddress (0.8.0) 
+Using systemu (2.5.2) 
+Using yajl-ruby (1.1.0) 
+Using ohai (6.14.0) 
+Using rest-client (1.6.7) 
+Using uuidtools (2.1.3) 
+Using chef (10.14.2) 
+Using ffi (1.0.11) 
+Using childprocess (0.3.5) 
+Using configuration (1.3.2) 
+Using diff-lcs (1.1.3) 
+Using gherkin (2.11.2) 
+Using cucumber (1.2.1) 
+Using launchy (0.4.0) 
+Using knife-github-cookbooks (0.1.7) 
+Using log4r (1.1.10) 
+Using net-scp (1.0.4) 
+Using open4 (1.3.0) 
+Using popen4 (0.1.2) 
+Using progressbar (0.11.0) 
+Using rack-ssl (1.3.2) 
+Using bundler (1.1.5) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.2.8) 
+Installing rails (3.2.8) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using vagrant (1.0.5) 
+Using virtualbox (0.9.2) 
+Using veewee (0.2.3) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+{% endhighlight %}
+
+h2(#CREATEAPP). Create a New Application
+
+To create our new applicationm run the @rails new@ command:
+
+{% highlight sh linenos %}
+$ rails new myapp
+rails new myapp
+      create  
+      create  README.rdoc
+      create  Rakefile
+      create  config.ru
+      create  .gitignore
+      create  Gemfile
+      create  app
+      create  app/assets/images/rails.png
+      create  app/assets/javascripts/application.js
+      create  app/assets/stylesheets/application.css
+      create  app/controllers/application_controller.rb
+      create  app/helpers/application_helper.rb
+      create  app/mailers
+      create  app/models
+      create  app/views/layouts/application.html.erb
+      create  app/mailers/.gitkeep
+      create  app/models/.gitkeep
+      create  config
+      create  config/routes.rb
+      create  config/application.rb
+      create  config/environment.rb
+      create  config/environments
+      create  config/environments/development.rb
+      create  config/environments/production.rb
+      create  config/environments/test.rb
+      create  config/initializers
+      create  config/initializers/backtrace_silencers.rb
+      create  config/initializers/inflections.rb
+      create  config/initializers/mime_types.rb
+      create  config/initializers/secret_token.rb
+      create  config/initializers/session_store.rb
+      create  config/initializers/wrap_parameters.rb
+      create  config/locales
+      create  config/locales/en.yml
+      create  config/boot.rb
+      create  config/database.yml
+      create  db
+      create  db/seeds.rb
+      create  doc
+      create  doc/README_FOR_APP
+      create  lib
+      create  lib/tasks
+      create  lib/tasks/.gitkeep
+      create  lib/assets
+      create  lib/assets/.gitkeep
+      create  log
+      create  log/.gitkeep
+      create  public
+      create  public/404.html
+      create  public/422.html
+      create  public/500.html
+      create  public/favicon.ico
+      create  public/index.html
+      create  public/robots.txt
+      create  script
+      create  script/rails
+      create  test/fixtures
+      create  test/fixtures/.gitkeep
+      create  test/functional
+      create  test/functional/.gitkeep
+      create  test/integration
+      create  test/integration/.gitkeep
+      create  test/unit
+      create  test/unit/.gitkeep
+      create  test/performance/browsing_test.rb
+      create  test/test_helper.rb
+      create  tmp/cache
+      create  tmp/cache/assets
+      create  vendor/assets/javascripts
+      create  vendor/assets/javascripts/.gitkeep
+      create  vendor/assets/stylesheets
+      create  vendor/assets/stylesheets/.gitkeep
+      create  vendor/plugins
+      create  vendor/plugins/.gitkeep
+         run  bundle install
+Fetching gem metadata from https://rubygems.org/.........
+Using rake (0.9.2.2) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.6) 
+Using activesupport (3.2.8) 
+Using builder (3.0.3) 
+Using activemodel (3.2.8) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.1) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.1) 
+Using tilt (1.3.3) 
+Using sprockets (2.1.3) 
+Using actionpack (3.2.8) 
+Using mime-types (1.19) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.4.4) 
+Using actionmailer (3.2.8) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.33) 
+Using activerecord (3.2.8) 
+Using activeresource (3.2.8) 
+Using bundler (1.1.5) 
+Installing coffee-script-source (1.3.3) 
+Installing execjs (1.4.0) 
+Installing coffee-script (2.2.0) 
+Using rack-ssl (1.3.2) 
+Using json (1.7.5) 
+Using rdoc (3.12) 
+Using thor (0.16.0) 
+Using railties (3.2.8) 
+Installing coffee-rails (3.2.2) 
+Installing jquery-rails (2.1.3) 
+Using rails (3.2.8) 
+Installing sass (3.2.1) 
+Installing sass-rails (3.2.5) 
+Installing sqlite3 (1.3.6) with native extensions 
+Installing uglifier (1.3.0) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+{% endhighlight %}
+
+Now, let's configure our new application to use @mysql@ and @capistrano@. @cd@ into your new applicaiton directory:
+
+{% highlight sh linenos %}
+$ cd myapp
+{% endhighlight %}
+
+and open the @Gemfile@ there. Add the following lines:
+
+{% highlight ruby linenos %}
+gem 'mysql2'
+gem 'capistrano'
+gem 'therubyracer', :platforms => :ruby
+{% endhighlight %}
+
+Now run the @bundle install@ command to install those new gems:
+
+{% highlight sh linenos %}
+$ bundle install
+Fetching gem metadata from https://rubygems.org/........
+Using rake (0.9.2.2) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.6) 
+Using activesupport (3.2.8) 
+Using builder (3.0.3) 
+Using activemodel (3.2.8) 
+...
+Installing capistrano (2.13.4) 
+Using coffee-script-source (1.3.3) 
+Using execjs (1.4.0) 
+Using coffee-script (2.2.0) 
+Using rack-ssl (1.3.2) 
+Using json (1.7.5) 
+Using rdoc (3.12) 
+Using thor (0.16.0) 
+Using railties (3.2.8) 
+Using coffee-rails (3.2.2) 
+Using jquery-rails (2.1.3) 
+Installing mysql2 (0.3.11) with native extensions 
+...
+{% endhighlight %}
+
+h2(#PEOPLECRUD). Create a Simple People Page"
+
+Next, we're going to create a simple people page whee you can create, update and delete names of people in the database. Rails already has "scaffolding" which means we can do this without writing any code. :-)
+
+Within the myapp directory, use the @rails generate@ command to create the poeple scaffolding:
+
+{% highlight sh linenos %}
+$ rails generate scaffold Person name:string
+      invoke  active_record
+      create    db/migrate/20120927193700_create_people.rb
+      create    app/models/person.rb
+      invoke    test_unit
+      create      test/unit/person_test.rb
+      create      test/fixtures/people.yml
+      invoke  resource_route
+       route    resources :people
+      invoke  scaffold_controller
+      create    app/controllers/people_controller.rb
+      invoke    erb
+      create      app/views/people
+      create      app/views/people/index.html.erb
+      create      app/views/people/edit.html.erb
+      create      app/views/people/show.html.erb
+      create      app/views/people/new.html.erb
+      create      app/views/people/_form.html.erb
+      invoke    test_unit
+      create      test/functional/people_controller_test.rb
+      invoke    helper
+      create      app/helpers/people_helper.rb
+      invoke      test_unit
+      create        test/unit/helpers/people_helper_test.rb
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/people.js.coffee
+      invoke    scss
+      create      app/assets/stylesheets/people.css.scss
+      invoke  scss
+      create    app/assets/stylesheets/scaffolds.css.scss
+{% endhighlight %}
+
+bq. *From the top:* The rails scaffolding generator creates a heap of working code for us, including the database table migrations, test files, controllers, views, forms and all the glue necessary for it all to work together.
+
+Let's test out our application locally by migrating the database (creating new tables) and running the local server:
+
+{% highlight sh lienos %}
+rake db:migrate
+==  CreatePeople: migrating ===================================================
+-- create_table(:people)
+   -> 0.0010s
+==  CreatePeople: migrated (0.0010s) ==========================================
+
+claco@hank ~/devops_toolbox/myapp (master) (ruby-1.9.3-p125@devops_toolbox)
+ → rails s
+=> Booting WEBrick
+=> Rails 3.2.8 application starting in development on http://0.0.0.0:3000
+=> Call with -d to detach
+=> Ctrl-C to shutdown server
+[2012-09-27 15:45:36] INFO  WEBrick 1.3.1
+[2012-09-27 15:45:36] INFO  ruby 1.9.3 (2012-02-16) [x86_64-darwin11.3.0]
+[2012-09-27 15:45:36] INFO  WEBrick::HTTPServer#start: pid=40938 port=3000
+{% endhighlight %}
+
+Now point to your browser to http://localhost:3000/people. Click the New Person link and have some fun!
+
+!/images/devops-toolbox/01-rails-app-localhost.png!
+
+Back in the console, hit CTRL-C to quit the local development server. Before we start the deployment process, let's delete the local development database and also take a look at the default @database.yml@ file:
+
+{% highlight sh linenos %}
+^C[2012-09-27 15:51:31] INFO  going to shutdown ...
+[2012-09-27 15:51:31] INFO  WEBrick::HTTPServer#start done.
+Exiting
+
+$ rm db/development.sqlite3
+
+$ cat config/database.yml
+
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
+  timeout: 5000
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
+{% endhighlight %}
+
+If you remember when we customized our webb server recipe, we created a custom database.yml that contained the correct information for the web server instances we're deploying to. Rails best practices usually dictate that rails applications copy the stock database.yml [above] to database.yml.example, then tell git to ignore database.yml. The idea is that database.yml is never comitted to source code, keeping and server passwords private. Then during deployments, a server local version [like the one we have in our recipe] will be copied into place.
+
+{% highlight sh linenos %}
+$ cp config/database.yml config/database.yml.example
+$ echo "database.yml" >> .gitignore
+{% endhighlight %}
+
+h2(#CREATEDEPLOY). Create Deployment File
+
+We're going to use "Capistrano":https://github.com/capistrano/capistrano/wiki to deploy our application to the cagrant server instances. Within the myapp directory, run the @capify@ command:
+
+{% highlight sh linenos %}
+capify .
+[add] writing './Capfile'
+[add] writing './config/deploy.rb'
+[done] capified!
+{% endhighlight %}
+
+Now, open @config/deploy.rb@ in your editor and replace it's contents with the following:
+
+{% highlight ruby linenos %}
+require "bundler/capistrano"
+
+set :application, "myapp"
+set :deploy_to, "/var/www/myapp"
+set :deploy_via, :copy
+set :user, "myapp"
+
+set :rails_env, "development"
+set :use_sudo, false
+
+set :scm, :none
+set :repository, "./"
+
+role :web, "10.10.10.10"                          # Your HTTP server, Apache/etc
+role :app, "10.10.10.10"                          # This may be the same as your `Web` server
+role :db,  "10.10.10.10", :primary => true # This is where Rails migrations will run
+
+after "deploy:finalize_update", "deploy:copy_database_yml"
+
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+
+  task :copy_database_yml do
+    run "cp #{shared_path}/database.yml #{release_path}/config/database.yml"
+  end
+end
+{% endhighlight %}
+
+That's a lot of code, but it's pretty simple. Let's brea it down.
+
+On Line 1, we load the bundler/capistrano code. This makes the deployment process aware of bundle and Gemfiles.
+Lines 3-6, we se the app name, the directory to deploy to, the deployment method (file copy) and the remote user to run the commands as. That's the user we created in our customer recipes!
+Lines 8-9, we set the default rails environment and disable sudo since the myapp user won't need it.
+Lines 14-16, we tell capistrano the server to deploy to, in this case, our local vagrant instances.
+Lines 18 says "after updating, copy over the database yml we created" in our cookbook recipe.
+Lines 20-29 tells capistrano how to make passenger restart the app, how to copy the database.yml file.
+
+h2(#DEPLOYAPP). Deploy the Application
+
+Now that we've got a deployment script, let's ensure our vagrant instances are fully up to date, then use the @deploy:setup@ and @deploy:cold@ to deploy our application:
+
+{% highlight sh linenos %}
+$ cd ../instances/cluster
+$ vagrant up
+$ vagrant provision
+
+$ cd ../../myapp
+
+$ cap deploy:setup
+  * executing `deploy:setup'
+  * executing "mkdir -p /var/www/myapp /var/www/myapp/releases /var/www/myapp/shared /var/www/myapp/shared/system /var/www/myapp/shared/log /var/www/myapp/shared/pids"
+    servers: ["10.10.10.10"]
+Password: myapp_1234
+    [10.10.10.10] executing command
+    command finished in 20ms
+  * executing "chmod g+w /var/www/myapp /var/www/myapp/releases /var/www/myapp/shared /var/www/myapp/shared/system /var/www/myapp/shared/log /var/www/myapp/shared/pids"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 17ms
+{% endhighlight %}
+
+bq. *From the top:* The very first time we run capistrano to deploy to a server, we need to run the setup task. This creates all of the remote directories capistrano will ned in the future for itself and passenger, like log directories, pid directories, etc.
+
+
+{% highlight sh linenos %}
+$ cap deploy:cold
+
+  * executing `deploy:cold'
+  * executing `deploy:update'
+ ** transaction: start
+  * executing `deploy:update_code'
+  * getting (via checkout) revision  to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120927203353
+    executing locally: cp -R ./ /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120927203353
+    command finished in 38ms
+  * Compressing /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120927203353 to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120927203353.tar.gz
+    executing locally: tar czf 20120927203353.tar.gz 20120927203353
+    command finished in 89ms
+    servers: ["10.10.10.10"]
+Password: myapp_1234
+ ** sftp upload /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120927203353.tar.gz -> /tmp/20120927203353.tar.gz
+    [10.10.10.10] /tmp/20120927203353.tar.gz
+    [10.10.10.10] done
+  * sftp upload complete
+  * executing "cd /var/www/myapp/releases && tar xzf /tmp/20120927203353.tar.gz && rm /tmp/20120927203353.tar.gz"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 37ms
+  * executing `deploy:finalize_update'
+    triggering before callbacks for `deploy:finalize_update'
+  * executing `bundle:install'
+  * executing "cd /var/www/myapp/releases/20120927203353 && bundle install --gemfile /var/www/myapp/releases/20120927203353/Gemfile --path /var/www/myapp/shared/bundle --deployment --quiet --without development test"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 23721ms
+  * executing "chmod -R g+w /var/www/myapp/releases/20120927203353"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "rm -rf /var/www/myapp/releases/20120927203353/public/system && mkdir -p /var/www/myapp/releases/20120927203353/public/"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "ln -s /var/www/myapp/shared/system /var/www/myapp/releases/20120927203353/public/system"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 17ms
+  * executing "rm -rf /var/www/myapp/releases/20120927203353/log"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "ln -s /var/www/myapp/shared/log /var/www/myapp/releases/20120927203353/log"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 15ms
+  * executing "rm -rf /var/www/myapp/releases/20120927203353/tmp/pids && mkdir -p /var/www/myapp/releases/20120927203353/tmp/"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 17ms
+  * executing "ln -s /var/www/myapp/shared/pids /var/www/myapp/releases/20120927203353/tmp/pids"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 15ms
+  * executing "find /var/www/myapp/releases/20120927203353/public/images /var/www/myapp/releases/20120927203353/public/stylesheets /var/www/myapp/releases/20120927203353/public/javascripts -exec touch -t 201209272034.21 {} ';'; true"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+*** [err :: 10.10.10.10] find: /var/www/myapp/releases/20120927203353/public/images: No such file or directory
+*** [err :: 10.10.10.10] find: /var/www/myapp/releases/20120927203353/public/stylesheets: No such file or directory
+*** [err :: 10.10.10.10] find: /var/www/myapp/releases/20120927203353/public/javascripts: No such file or directory
+    command finished in 16ms
+    triggering after callbacks for `deploy:finalize_update'
+  * executing `deploy:copy_database_yml'
+  * executing "cp /var/www/myapp/shared/database.yml /var/www/myapp/releases/20120927203353/config/database.yml"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing `deploy:create_symlink'
+  * executing "rm -f /var/www/myapp/current && ln -s /var/www/myapp/releases/20120927203353 /var/www/myapp/current"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+ ** transaction: commit
+  * executing `deploy:migrate'
+  * executing "cd /var/www/myapp/releases/20120927203353 && bundle exec rake RAILS_ENV=development  db:migrate"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+ ** [out :: 10.10.10.10] ==  CreatePeople: migrating ===================================================
+ ** [out :: 10.10.10.10] -- create_table(:people)
+ ** [out :: 10.10.10.10] -> 0.0030s
+ ** [out :: 10.10.10.10] ==  CreatePeople: migrated (0.0031s) ==========================================
+ ** [out :: 10.10.10.10] 
+    command finished in 3214ms
+  * executing `deploy:start'
+{% endhighlight %}
+
+bq. *From the top:* IF all goes well, the deploy cold task copied up your myapp source, installed the gems using bundler, copied the database.yml, and connected to the db server instance to migrate the database and create the table.
+
+Let's open up a browser and try it out: http://10.10.10.10/people
+
+!/images/devops-toolbox/02-rails-app-deployed.png!
+
+Let's look around the servers and inspect our work!
+
+{% highlight sh linenos %}
+$ cd ../instances/cluster
+$ vagrant ssh web
+[vagrant@web ~]$ ls /var/www/myapp/current
+app  Capfile  config  config.ru  db  doc  Gemfile  Gemfile.lock  lib  log  public  Rakefile  README.rdoc  REVISION  script  test  tmp  vendor
+
+$ mysql -u myapp -p -D myapp -h 10.10.10.11
+Enter password: myapp_1234
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 18
+Server version: 5.0.95-log Source distribution
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> select * from people;
++----+-------+---------------------+---------------------+
+| id | name  | created_at          | updated_at          |
++----+-------+---------------------+---------------------+
+|  1 | Chris | 2012-09-27 20:39:42 | 2012-09-27 20:39:42 | 
++----+-------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql>
+{% endhighlight %}
+
+Fan-flippin-tastic!
+
+h2(#COMMIT). Commit Our Work
+
+Let's commit our new application and other changes into the git repo.
+
+{% highlight sh linenos %}
+$ cd ../..
+$ git add .
+git commit -m "Created rails applicaiton and deployment."
+[master 39d129f] Created rails applicaiton and deployment.
+ 59 files changed, 1673 insertions(+), 11 deletions(-)
+ create mode 100644 myapp/.gitignore
+ create mode 100644 myapp/Capfile
+ create mode 100644 myapp/Gemfile
+ create mode 100644 myapp/Gemfile.lock
+ create mode 100644 myapp/README.rdoc
+ create mode 100644 myapp/Rakefile
+ create mode 100644 myapp/app/assets/images/rails.png
+ create mode 100644 myapp/app/assets/javascripts/application.js
+ create mode 100644 myapp/app/assets/javascripts/people.js.coffee
+ create mode 100644 myapp/app/assets/stylesheets/application.css
+ create mode 100644 myapp/app/assets/stylesheets/people.css.scss
+ create mode 100644 myapp/app/assets/stylesheets/scaffolds.css.scss
+ create mode 100644 myapp/app/controllers/application_controller.rb
+ create mode 100644 myapp/app/controllers/people_controller.rb
+ create mode 100644 myapp/app/helpers/application_helper.rb
+ create mode 100644 myapp/app/helpers/people_helper.rb
+ create mode 100644 myapp/app/mailers/.gitkeep
+ create mode 100644 myapp/app/models/.gitkeep
+ create mode 100644 myapp/app/models/person.rb
+ create mode 100644 myapp/app/views/layouts/application.html.erb
+ create mode 100644 myapp/app/views/people/_form.html.erb
+ create mode 100644 myapp/app/views/people/edit.html.erb
+ create mode 100644 myapp/app/views/people/index.html.erb
+ create mode 100644 myapp/app/views/people/new.html.erb
+ create mode 100644 myapp/app/views/people/show.html.erb
+ create mode 100644 myapp/config.ru
+ create mode 100644 myapp/config/application.rb
+ create mode 100644 myapp/config/boot.rb
+ create mode 100644 myapp/config/database.yml.example
+ create mode 100644 myapp/config/deploy.rb
+ create mode 100644 myapp/config/environment.rb
+ create mode 100644 myapp/config/environments/development.rb
+ create mode 100644 myapp/config/environments/production.rb
+ create mode 100644 myapp/config/environments/test.rb
+ create mode 100644 myapp/config/initializers/backtrace_silencers.rb
+ create mode 100644 myapp/config/initializers/inflections.rb
+ create mode 100644 myapp/config/initializers/mime_types.rb
+ create mode 100644 myapp/config/initializers/secret_token.rb
+ create mode 100644 myapp/config/initializers/session_store.rb
+ create mode 100644 myapp/config/initializers/wrap_parameters.rb
+ create mode 100644 myapp/config/locales/en.yml
+ create mode 100644 myapp/config/routes.rb
+ create mode 100644 myapp/db/migrate/20120927193700_create_people.rb
+ create mode 100644 myapp/db/schema.rb
+ create mode 100644 myapp/db/seeds.rb
+ create mode 100644 myapp/doc/README_FOR_APP
+ create mode 100644 myapp/lib/assets/.gitkeep
+ create mode 100644 myapp/lib/tasks/.gitkeep
+ create mode 100644 myapp/log/.gitkeep
+ create mode 100644 myapp/public/404.html
+ create mode 100644 myapp/public/422.html
+ create mode 100644 myapp/public/500.html
+ create mode 100644 myapp/public/favicon.ico
+ create mode 100644 myapp/public/index.html
+ create mode 100644 myapp/public/robots.txt
+ create mode 100755 myapp/script/rails
+ create mode 100644 myapp/test/fixtures/.gitkeep
+ create mode 100644 myapp/test/fixtures/people.yml
+ create mode 100644 myapp/test/functional/.gitkeep
+ create mode 100644 myapp/test/functional/people_controller_test.rb
+ create mode 100644 myapp/test/integration/.gitkeep
+ create mode 100644 myapp/test/performance/browsing_test.rb
+ create mode 100644 myapp/test/test_helper.rb
+ create mode 100644 myapp/test/unit/.gitkeep
+ create mode 100644 myapp/test/unit/helpers/people_helper_test.rb
+ create mode 100644 myapp/test/unit/person_test.rb
+ create mode 100644 myapp/vendor/assets/javascripts/.gitkeep
+ create mode 100644 myapp/vendor/assets/stylesheets/.gitkeep
+ create mode 100644 myapp/vendor/plugins/.gitkeep
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+
+
