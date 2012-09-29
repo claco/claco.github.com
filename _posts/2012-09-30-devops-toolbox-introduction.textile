@@ -2,10 +2,10 @@
 layout: post
 title: "DevOps Toolbox: Introduction"
 published: true
-created:  1348268618
+created:  1348846000
 tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
 categories: [DevOps Toolbox]
-permalink: devops-toolbox/introduction
+permalink: /devops-toolbox/introduction
 ---
 
 h1. Introduction
@@ -41,3 +41,5 @@ While this guide assumes you are on a OSX machine, most of this guide will apply
 # "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
 # "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
 # "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+# "Migrate from Chef Solo to Hosted Chef":../migrate-to-hosted-chef/ - Migrate from using Chef Solo to hosted Chef at OpsCode
+# "Migrate Servers to RackCloud":../migrate-to-rackcloud/  - Migrate your servers from VirtualBox to "The Cloud" using Rackspace.

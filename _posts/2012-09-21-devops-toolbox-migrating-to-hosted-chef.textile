@@ -1,0 +1,438 @@
+---
+layout: post
+title: "DevOps Toolbox: Migrate From Chef Solo to Hosted Chef"
+published: true
+created:  1348845439
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: /devops-toolbox/migrate-to-hosted-chef
+---
+
+h1. Migrating to OpsCode Hosted Chef
+
+Now that we got a working local testing instance of our app running in VirtualBox using Vagrant/Chef Solo, we're going to want to start deploying testing/staging instances out in the world for other users to mess with (technical term). To do that, we'll probably want to deploy some servers in the cloud, and before we do _that_, we're going to want to setup a Chef server for those cloud servers to get their configuration from.
+
+While you can create and host your own Chef server locally, for now we'll take an easier route by signing up for a hosted Chef account at OpsCode.
+
+# "Sign Up for Hosted Chef":#SIGNUP
+# "Configure Knife for Hosted Chef":#CONFIGUREKNIFE
+# "Upload Your Cookbooks/Roles":#UPLOADCOOKBOOKS
+# "Provision Vagrant Instances w/Chef Client":#PROVISIONVAGRANT
+# "Deploy Myapp. Again!":#DEPLOYAPP
+# "Commit Our Work":#COMMIT
+
+h2(#SIGNUP). Sign Up for an OpsCode Account
+
+First, open your browser and head over to http://opscode.com/
+
+!/images/devops-toolbox/01-opscode-signup.png!
+
+Click the "Sign Up" link in the top right corner of the page.
+
+!/images/devops-toolbox/02-opscode-signup.png!
+
+Click on the "Free Trial" button. This will give us up to 5 nodes, which is more than plenty for for our two vagrant instances, and later our two RackCloud instances.
+
+!/images/devops-toolbox/03-opscode-signup.png!
+
+Enter all of the required information. And click "Next". Once you've filled everything out correctly, you'll be prompted to download your personal key and sent to the organizations page. Save your personal key to @.chef/yourusername.pem@.
+
+If you already have an OpsCode account like I did, you can just create a new organization within the Organization management page. You can get to that page via the "Organizations" link at the top right of the page once you're signed in.
+
+!/images/devops-toolbox/04-opscode-signup.png!
+
+Ogranization names and short names must be unique across every everywhere in OpsCode Land. For this demo, I chose @claco-personal@.
+
+!/images/devops-toolbox/05-opscode-signup.png!
+
+Once you've created an organization for the demo, download the validation key and the knife.rb config file.
+
+Save the validation key to @/.chef/yourorgname-validator.pem@ and knife config to @.chef/knife.rb@
+
+!/images/devops-toolbox/06-opscode-signup.png!
+
+!/images/devops-toolbox/07-opscode-signup.png!
+
+If you don't have your user key, or didn't download it, you can reset it and get a new one on your profile page:
+
+!/images/devops-toolbox/08-opscode-signup.png!
+
+h2(#CONFIGUREKNIFE). Configure Knife for Hosted Chef
+
+Now that we've signed up and created an OpsCode account/organization and downloaded a new @knife.rb@ config, let's tweak it and make sure it points to our local chef cookbooks folder. 
+
+Open @./chef/knife.rb@ on your editor. It should look like this. Most of the file was pre confiigured for your ogranization when you downloaded it. Check the @cookbook_path@ option and ensure it is correct.
+
+{% highlight ruby linenos %}
+current_dir = File.dirname(__FILE__)
+log_level                :info
+log_location             STDOUT
+node_name                "claco"
+client_key               "#{current_dir}/claco.pem"
+validation_client_name   "claco-personal-validator"
+validation_key           "#{current_dir}/claco-personal-validator.pem"
+chef_server_url          "https://api.opscode.com/organizations/claco-personal"
+cache_type               'BasicFile'
+cache_options( :path => "#{ENV['HOME']}/.chef/checksums" )
+cookbook_path            ["#{current_dir}/../chef/cookbooks"]
+{% endhighlight %}
+
+Just to ensure you're properly setup, run the @knife cookbook list@ command. This will connect to OpsCode and list the existing cookbooks, which is currently empty. But, it should not return any errors if you're properly setup.
+
+{% highlight sh linenos %}
+$ knife cookbook list
+
+{% endhighlight %}
+
+h2(#UPLOADCOOKBOOKS). Upload Cookbooks/Roles
+
+Now that we are connected to a Hosted Chef account, we need to upload our existing cookbooks and roles.
+
+To upload your cookbooks, use the @knife cookbook upload@ command. This wil upload all cookbooks in your chef/cookbooks directory to the OpsCode servers.
+
+{% highlight sh linenos %}
+$ knife cookbook upload -all
+Uploading apache2      [1.1.16]
+Uploading build-essential [1.1.2]
+Uploading database     [1.3.4]
+ERROR: Chef::Exceptions::CookbookNotFoundInRepo: Cannot find a cookbook named postgresql; did you forget to add metadata to a cookbook? (http://wiki.opscode.com/display/chef/Metadata)
+{% endhighlight %}
+
+Uh oh? Wat? Don't panic. Now's a great time to talk about Chef Solo cookbooks vs HostedChef Cookbooks. :-)
+
+In each cookbook, there's a @metadata.rb@ file that tells chef that other cookbooks the current cookbook depends on. In this case, the metadata for the @database@ cookbook says that it depends on the @postgres@ cookbook, which we don't have in our @chef/cookbooks@ directory. Whenbrunning Chef Solo, it maps the entire chef/cookboks directory to the server so we didn't have to worry about cookbook dependencies too much. When using Hosted Chef or your Chef Server, the Chef Client will inspect metadata files and ensure all of the required cookbooks are downloaded. Making sure your metadata file reflects your cookbook dependencies and any @include_recipe@ statements you've used is pretty important.
+
+So, with that in mind, we're not really interested in postgres a the moment. Let's open up @chef/cookbooks/database/metadata.rb@ and tweak it a bit to suit our needs. In our case, we're only using mysql, so let's comment out the other dependencies for now:
+
+{% highlight ruby linenos %}
+name             "database"
+maintainer       "Opscode, Inc."
+maintainer_email "cookbooks@opscode.com"
+license          "Apache 2.0"
+description      "Sets up the database master or slave"
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
+version          "1.3.4"
+
+recipe "database", "Empty placeholder"
+recipe "database::ebs_backup", "Considered deprecated, older way of backing up EBS volumes"
+recipe "database::ebs_volume", "Sets up an EBS volume in EC2 for the database"
+recipe "database::master", "Creates application specific user and database"
+recipe "database::snapshot", "Locks tables and freezes XFS filesystem for replication, assumes EC2 + EBS"
+
+depends "mysql", ">= 1.3.0"
+# depends "postgresql", ">= 1.0.0"
+# depends "aws"
+# depends "xfs"
+
+%w{ debian ubuntu centos suse fedora redhat scientific }.each do |os|
+  supports os
+end
+{% endhighlight %}
+
+While we're fixing metadata files, let's ensure that our @chef/cookbooks/myapp/metadata.rb@ cookbook file properly declares that it needs the @iptables@, @openssh@, @apache2@, and other recipes:
+
+{% highlight ruby linenos %}
+depends "iptables"
+depends "apache2"
+depends "passenger_apache2"
+depends "openssh"
+depends "mysql"
+depends "database"
+{% endhighlight %}
+
+Now let's try uploading our cookbooks again:
+
+{% highlight sh linenos %}
+$ knife cookbook upload -all
+Uploading apache2      [1.1.16]
+Uploading build-essential [1.1.2]
+Uploading database     [1.3.4]
+Uploading iptables     [0.10.0]
+Uploading myapp        [0.0.1]
+Uploading mysql        [1.3.0]
+Uploading openssh      [1.0.0]
+Uploading openssl      [1.0.0]
+Uploading passenger_apache2 [1.0.1]
+Uploaded all cookbooks.
+
+$ knife cookbook list
+  apache2             1.1.16
+  build-essential     1.1.2
+  database            1.3.4
+  iptables            0.10.0
+  myapp               0.0.1
+  mysql               1.3.0
+  openssh             1.0.0
+  openssl             1.0.0
+  passenger_apache2   1.0.1 
+{% endhighlight %}
+
+Now, if you go to the cookbooks tab of your ogranization on the OpsCode site, you should now see your uploaded cookbooks:
+
+!/images/devops-toolbox/01-cookbooks-online.png!
+
+Now, let's upload our)roles to OpsCode. To do that, just issue the @knife role from file@ command for each role we have locally. This will load, convert and upload the role to Opscode:
+
+{% highlight sh linenos %}
+$ knife role from file chef/roles/web.rb
+Updated Role web!
+
+$ knife role from file chef/roles/db.rb
+Updated Role db!
+
+$ knife role list
+  db
+  web
+{% endhighlight %}
+
+Go to the roles tab in your organization o the OpsCode site. You should now see your roles listed!
+
+!/images/devops-toolbox/02-roles-online.png!
+
+h2(#PROVISIONVAGRANRT). Provision Vagrant Instances w/Chef Client
+
+Now that all of our cooksbooks and roles are hosted up in the cloud at OpsCode, we just need to change our @Vagrantfile@ to use Chef CLient instead of Chef Solo. This is pretty straight forward. We just need to change the chef blocks for both instances to use the chef client and point it to the proper keys and settings:
+
+{% highlight ruby linenos %}
+    web_config.vm.provision :chef_client do |chef|
+      chef.chef_server_url = "https://api.opscode.com/organizations/claco-personal"
+      chef.validation_client_name = "claco-personal-validator"
+      chef.validation_key_path = "../../.chef/claco-personal-validator.pem"
+      chef.node_name = "vagrant-web"
+      
+      chef.add_role "web"
+
+...
+
+    db_config.vm.provision :chef_client do |chef|
+      chef.chef_server_url = "https://api.opscode.com/organizations/claco-personal"
+      chef.validation_client_name = "claco-personal-validator"
+      chef.validation_key_path = "../../.chef/claco-personal-validator.pem"
+      chef.node_name = "vagrant-db"
+
+      chef.add_role "db"
+{% endhighlight %}
+
+bq. *From the top:" For in both the @web_config@ and @db_config@ blocks, we're removing the cookbook/rols path settings, and instead replaced them with the chef server url, the validation key, validation client name, and given each instance a node name.
+
+Now for the moment of truth. Let's re provision our vagrant machine instances!
+
+{% highlight sh linenos %}
+$ vagrant provision db
+[db] Running provisioner: Vagrant::Provisioners::ChefClient...
+[db] Creating folder to hold client key...
+[db] Uploading chef client validation key...
+[db] Generating chef JSON and uploading...
+[db] Running chef-client...
+[2012-09-28T15:19:59+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-28T15:19:59+01:00] INFO: Client key /etc/chef/client.pem is not present - registering
+[2012-09-28T15:20:03+01:00] INFO: Setting the run_list to ["role[db]"] from JSON
+[2012-09-28T15:20:04+01:00] INFO: Run List is [role[db]]
+[2012-09-28T15:20:04+01:00] INFO: Run List expands to [mysql::server, myapp::db]
+[2012-09-28T15:20:04+01:00] INFO: Starting Chef Run for vagrant-db
+[2012-09-28T15:20:04+01:00] INFO: Running start handlers
+[2012-09-28T15:20:04+01:00] INFO: Start handlers complete.
+[2012-09-28T15:20:05+01:00] INFO: Loading cookbooks [apache2, build-essential, database, iptables, myapp, mysql, openssh, openssl, passenger_apache2]
+[2012-09-28T15:20:08+01:00] INFO: Storing updated cookbooks/mysql/recipes/client.rb in the cache.
+[2012-09-28T15:20:09+01:00] INFO: Storing updated cookbooks/mysql/recipes/default.rb in the cache.
+...
+[2012-09-28T15:26:06+01:00] INFO: Processing package[gcc] action install (build-essential::default line 48)
+[2012-09-28T15:26:09+01:00] INFO: Processing package[gcc-c++] action install (build-essential::default line 48)
+[2012-09-28T15:26:09+01:00] INFO: Processing package[kernel-devel] action install (build-essential::default line 48)
+[2012-09-28T15:26:09+01:00] INFO: Processing package[make] action install (build-essential::default line 48)
+...
+[2012-09-28T15:26:16+01:00] INFO: Chef Run complete in 58.172269 seconds
+[2012-09-28T15:26:16+01:00] INFO: Running report handlers
+[2012-09-28T15:26:16+01:00] INFO: Report handlers complete
+{% endhighlight %}
+
+bq. *From the top:* This time, the provisioner is ChefClient, which then downloads all the cookbooks it needs base on the recipes we've specified in roles and in those cookbooks metadata. Then it runs those just as it did when using Chef Solo.
+
+And the web instance:
+
+{% highlight sh linenos %}
+$ vagrant provision web
+[web] Running provisioner: Vagrant::Provisioners::ChefClient...
+[web] Creating folder to hold client key...
+[web] Uploading chef client validation key...
+[web] Generating chef JSON and uploading...
+[web] Running chef-client...
+[2012-09-28T15:28:41+01:00] INFO: *** Chef 10.12.0 ***
+[2012-09-28T15:28:41+01:00] INFO: Client key /etc/chef/client.pem is not present - registering
+[2012-09-28T15:28:44+01:00] INFO: Setting the run_list to ["role[web]"] from JSON
+[2012-09-28T15:28:45+01:00] INFO: Run List is [role[web]]
+[2012-09-28T15:28:45+01:00] INFO: Run List expands to [apache2, passenger_apache2::mod_rails, mysql::client, myapp::web]
+[2012-09-28T15:28:45+01:00] INFO: Starting Chef Run for vagrant-web
+[2012-09-28T15:28:45+01:00] INFO: Running start handlers
+[2012-09-28T15:28:45+01:00] INFO: Start handlers complete.
+[2012-09-28T15:28:47+01:00] INFO: Loading cookbooks [apache2, build-essential, database, iptables, myapp, mysql, openssh, openssl, passenger_apache2]
+[2012-09-28T15:28:47+01:00] INFO: Storing updated cookbooks/passenger_apache2/recipes/default.rb in the cache.
+[2012-09-28T15:28:48+01:00] INFO: Storing updated cookbooks/passenger_apache2/recipes/mod_rails.rb in the cache.
+[2012-09-28T15:28:48+01:00] INFO: Storing updated cookbooks/passenger_apache2/attributes/default.rb in the cache.
+[2012-09-28T15:28:49+01:00] INFO: Storing updated cookbooks/passenger_apache2/.gitignore in the cache.
+...
+[2012-09-28T15:34:00+01:00] INFO: Processing package[apache2] action install (apache2::default line 20)
+[2012-09-28T15:34:02+01:00] INFO: Processing service[apache2] action enable (apache2::default line 25)
+[2012-09-28T15:34:02+01:00] INFO: Processing directory[/var/log/httpd] action create (apache2::default line 60)
+[2012-09-28T15:34:02+01:00] INFO: Processing package[perl] action install (apache2::default line 65)
+[2012-09-28T15:34:02+01:00] INFO: Processing cookbook_file[/usr/local/bin/apache2_module_conf_generate.pl] action create (apache2::default line 67)
+[2012-09-28T15:34:02+01:00] INFO: Processing directory[/etc/httpd/sites-available] action create (apache2::default line 75)
+...
+[2012-09-28T15:34:34+01:00] INFO: Chef Run complete in 348.888283 seconds
+[2012-09-28T15:34:34+01:00] INFO: Running report handlers
+[2012-09-28T15:34:34+01:00] INFO: Report handlers complete
+{% endhighlight %}
+
+Woot! Now that we've provisioned our instances using hosted Chef, let's look arounf knife and the OpsCode site for anew clients/nodes.
+
+A "node" is just a machine instances. A "client" is the pem keypair that is used to authenticated the node to the OpsCode APIs. Later, if you decide to share this setup repository with co workers, you can and should remove your personal pem file and instead use another client keypair with enough access to create/provision nodes.
+
+Also, if you destroy your instances, and try to reprovision them, you will get an error fromn OpsCode that the client/node already exists. This is because Vagrant has created a new machine instance without those specific nodes client keys and it's trying to recreate them. You can simple delete the node/client no the OpsCode site, or tweak the Vagrant file to use the existing keys and download them to your .chef directory.
+
+{% highlight sh linenos %}
+$ knife client list
+  claco-personal-validator
+  vagrant-db
+  vagrant-web
+
+$ knife node list
+  vagrant-db
+  vagrant-web
+{% endhighlight %}
+
+If you check the clients and nodes tabs on the OpsCode site, you should now see the two new nodes and their clients:
+
+!/images/devops-toolbox/03-clients-online.png!
+!/images/devops-toolbox/04-nodes-online.png!
+
+h2(#DEPLOYAPP). Deploy Your Application. Again.
+
+Now that we've provisioned our machines using Chef Client and Hosted Chef, let's redeploy our Rails application and make sure it still works.
+
+{% highlight sh linenos %}
+$ cd myapp
+$ cap deploy:cold
+  * executing `deploy:cold'
+  * executing `deploy:update'
+ ** transaction: start
+  * executing `deploy:update_code'
+  * getting (via checkout) revision  to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928145003
+    executing locally: cp -R ./ /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928145003
+    command finished in 50ms
+  * Compressing /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928145003 to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928145003.tar.gz
+    executing locally: tar czf 20120928145003.tar.gz 20120928145003
+    command finished in 87ms
+    servers: ["10.10.10.10"]
+Password: 
+ ** sftp upload /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928145003.tar.gz -> /tmp/20120928145003.tar.gz
+    [10.10.10.10] /tmp/20120928145003.tar.gz
+    [10.10.10.10] done
+  * sftp upload complete
+  * executing "cd /var/www/myapp/releases && tar xzf /tmp/20120928145003.tar.gz && rm /tmp/20120928145003.tar.gz"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 33ms
+  * executing `deploy:finalize_update'
+    triggering before callbacks for `deploy:finalize_update'
+  * executing `bundle:install'
+  * executing "cd /var/www/myapp/releases/20120928145003 && bundle install --gemfile /var/www/myapp/releases/20120928145003/Gemfile --path /var/www/myapp/shared/bundle --deployment --quiet --without development test"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 352ms
+  * executing "chmod -R g+w /var/www/myapp/releases/20120928145003"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 18ms
+  * executing "rm -rf /var/www/myapp/releases/20120928145003/public/system && mkdir -p /var/www/myapp/releases/20120928145003/public/"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "ln -s /var/www/myapp/shared/system /var/www/myapp/releases/20120928145003/public/system"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 19ms
+  * executing "rm -rf /var/www/myapp/releases/20120928145003/log"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "ln -s /var/www/myapp/shared/log /var/www/myapp/releases/20120928145003/log"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "rm -rf /var/www/myapp/releases/20120928145003/tmp/pids && mkdir -p /var/www/myapp/releases/20120928145003/tmp/"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 17ms
+  * executing "ln -s /var/www/myapp/shared/pids /var/www/myapp/releases/20120928145003/tmp/pids"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing "find /var/www/myapp/releases/20120928145003/public/images /var/www/myapp/releases/20120928145003/public/stylesheets /var/www/myapp/releases/20120928145003/public/javascripts -exec touch -t 201209281450.09 {} ';'; true"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+*** [err :: 10.10.10.10] find:
+*** [err :: 10.10.10.10] /var/www/myapp/releases/20120928145003/public/images
+*** [err :: 10.10.10.10] : No such file or directory
+*** [err :: 10.10.10.10] 
+*** [err :: 10.10.10.10] find:
+*** [err :: 10.10.10.10] /var/www/myapp/releases/20120928145003/public/stylesheets
+*** [err :: 10.10.10.10] : No such file or directory
+*** [err :: 10.10.10.10] 
+*** [err :: 10.10.10.10] find:
+*** [err :: 10.10.10.10] /var/www/myapp/releases/20120928145003/public/javascripts
+*** [err :: 10.10.10.10] : No such file or directory
+*** [err :: 10.10.10.10] 
+    command finished in 22ms
+    triggering after callbacks for `deploy:finalize_update'
+  * executing `deploy:copy_database_yml'
+  * executing "cp /var/www/myapp/shared/database.yml /var/www/myapp/releases/20120928145003/config/database.yml"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+  * executing `deploy:create_symlink'
+  * executing "rm -f /var/www/myapp/current && ln -s /var/www/myapp/releases/20120928145003 /var/www/myapp/current"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 16ms
+ ** transaction: commit
+  * executing `deploy:migrate'
+  * executing "cd /var/www/myapp/releases/20120928145003 && bundle exec rake RAILS_ENV=development  db:migrate"
+    servers: ["10.10.10.10"]
+    [10.10.10.10] executing command
+    command finished in 2436ms
+  * executing `deploy:start'
+{% endhighlight %}
+
+And in your browser:
+
+!/images/devops-toolbox/02-rails-app-deployed.png!
+
+h2(#COMMIT). Commit Our Work
+
+Let's commit our new application and other changes into the git repo.
+
+{% highlight sh linenos %}
+$ cd ..
+$ git add .
+$ git commit -m "Converted to Hosted Chef"
+[master bfd62b8] Converted to Hosted Chef
+ 6 files changed, 87 insertions(+), 13 deletions(-)
+ create mode 100644 .chef/claco-personal-validator.pem
+ create mode 100644 .chef/claco.pem
+ rewrite .chef/knife.rb (100%)
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+# "Migrate from Chef Solo to Hosted Chef":../migrate-to-hosted-chef/ - Migrate from using Chef Solo to hosted Chef at OpsCode
+# "Migrate Servers to RackCloud":../migrate-to-rackcloud/  - Migrate your servers from VirtualBox to "The Cloud" using Rackspace.
+

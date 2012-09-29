@@ -1,0 +1,938 @@
+---
+layout: post
+title: "DevOps Toolbox: Migrate Servers to RackCloud"
+published: true
+created:  1348845440
+tags: [devops, vagrant, veewee, virtualbox, chef, opscode, knife, ec2, rackspace]
+categories: [DevOps Toolbox]
+permalink: /devops-toolbox/migrate-to-rackcloud
+---
+
+h1. Migrating to RackCloud
+
+As a final exercise, we're going to migrate our servers out into the cloud. For this, I've chosen Rackspace RackCloud because a) it's what I know worked at the moment, and b) even after a day of creating and destroying instances in the clouse, it cost me nothing. :-)
+
+# "Create a Rackspace Account":#SIGNUP
+# "Configure Knife for Rackspace":#CONFIGUREKNIFE
+# "Boostrap a Cloud Instances":#BOOTSTRAP
+# "Convert Deployment Process":#CONVERTDEPLOYMENT
+# "Commit Our Work":#COMMIT
+
+h2(#SIGNUP). Create a Rackspace Account
+
+Signing up for a cloud account is pretty easy. Point your browser to "the pricing page":http://www.rackspace.com/cloud/public/servers/pricing/ and click on the cart icon in the middle of the page.
+
+Fill out the forms and login. It really is as easy as that! They will ask you for a billing credit card. Don't be alarmed! At $0.022 cents an hour, I've yet to be charged anything after a full day of createing and destroying instances for this tutorial.
+
+!/images/devops-toolbox/01-rackspace-signup.png!
+!/images/devops-toolbox/02-rackspace-signup.png!
+!/images/devops-toolbox/03-rackspace-signup.png!
+!/images/devops-toolbox/04-rackspace-signup.png!
+!/images/devops-toolbox/05-rackspace-signup.png!
+!/images/devops-toolbox/06-rackspace-signup.png!
+
+h2(#CONFIGUREKNIFE). Configure Knife for Rackspace
+
+Now that we have a rackspace account, we need to configure our @knife.rb@ file to be able to talk to the Rackspace API.
+
+First, login to the RackCloud interface and get your API key.
+
+!/images/devops-toolbox/01-rackspace-api.png!
+
+Select "API Keys" from the drop down account menu in the upper right corner.
+
+!/images/devops-toolbox/02-rackspace-api.png!
+
+Now, at the end of your @.chef/knife.rb@, add the following code:
+
+{% highlight ruby linenos %}
+knife[:rackspace_username] =  "youraccountname"
+knife[:rackspace_api_key] =   "yourapikey"   # looks likes this -> b936bd3468844f0ec1ddefa53e625fee4"
+
+require 'excon'
+Excon.defaults[:read_timeout] = 500
+{% endhighlight %}
+
+bq. *From the trenches:* Due to my crappy DSL connection, I ended up with a lot of Excon timeouts errors while waiting for instancs to spin up. The last two lines extend that timeout period and make things stable for me.
+
+Now, in your @Gemfile@, add the @knife-rackspace@ gem, which allows the knife command line utility to talk to the Rackspace API, and run @bundle install@.
+
+{% highlight ruby linenos %}
+source :rubygems
+
+gem 'vagrant'
+gem 'veewee'
+gem 'chef'
+gem 'knife-github-cookbooks'
+gem 'rails'
+gem 'knife-rackspace'
+{% endhighlight %}
+
+{% highlight sh linenos %}
+$ bundle install
+Fetching gem metadata from http://rubygems.org/.....
+Using rake (0.9.2.2) 
+Using Platform (0.4.0) 
+Using i18n (0.6.1) 
+Using multi_json (1.3.6) 
+Using activesupport (3.2.8) 
+Using builder (3.0.3) 
+Using activemodel (3.2.8) 
+Using erubis (2.7.0) 
+Using journey (1.0.4) 
+Using rack (1.4.1) 
+Using rack-cache (1.2) 
+Using rack-test (0.6.2) 
+Using hike (1.2.1) 
+Using tilt (1.3.3) 
+Using sprockets (2.1.3) 
+Using actionpack (3.2.8) 
+Using mime-types (1.19) 
+Using polyglot (0.3.3) 
+Using treetop (1.4.10) 
+Using mail (2.4.4) 
+Using actionmailer (3.2.8) 
+Using arel (3.0.2) 
+Using tzinfo (0.3.33) 
+Using activerecord (3.2.8) 
+Using activeresource (3.2.8) 
+Using archive-tar-minitar (0.5.2) 
+Using bundler (1.1.5) 
+Using bunny (0.7.9) 
+Using highline (1.6.15) 
+Using json (1.5.4) 
+Using mixlib-log (1.4.1) 
+Using mixlib-authentication (1.3.0) 
+Using mixlib-cli (1.2.2) 
+Using mixlib-config (1.1.2) 
+Using mixlib-shellout (1.1.0) 
+Using moneta (0.6.0) 
+Using net-ssh (2.2.2) 
+Using net-ssh-gateway (1.1.0) 
+Using net-ssh-multi (1.1) 
+Using ipaddress (0.8.0) 
+Using systemu (2.5.2) 
+Using yajl-ruby (1.1.0) 
+Using ohai (6.14.0) 
+Using rest-client (1.6.7) 
+Using uuidtools (2.1.3) 
+Using chef (10.14.2) 
+Using ffi (1.0.11) 
+Using childprocess (0.3.5) 
+Using configuration (1.3.2) 
+Using diff-lcs (1.1.3) 
+Using gherkin (2.11.2) 
+Using cucumber (1.2.1) 
+Installing excon (0.16.4) 
+Installing formatador (0.2.3) 
+Using net-scp (1.0.4) 
+Installing nokogiri (1.5.5) with native extensions 
+Installing ruby-hmac (0.4.0) 
+Installing fog (1.6.0) 
+Using launchy (0.4.0) 
+Using knife-github-cookbooks (0.1.7) 
+Installing knife-rackspace (0.5.16) 
+Using log4r (1.1.10) 
+Using open4 (1.3.0) 
+Using popen4 (0.1.2) 
+Using progressbar (0.11.0) 
+Using rack-ssl (1.3.2) 
+Using rdoc (3.12) 
+Using thor (0.14.6) 
+Using railties (3.2.8) 
+Using rails (3.2.8) 
+Using rspec-core (2.11.1) 
+Using rspec-expectations (2.11.3) 
+Using rspec-mocks (2.11.3) 
+Using rspec (2.11.0) 
+Using vagrant (1.0.5) 
+Using virtualbox (0.9.2) 
+Using veewee (0.2.3) 
+Your bundle is complete! Use `bundle show [gemname]` to see where a bundled gem is installed.
+{% endhighlight %}
+
+Let's test out our configuration by listing out what images and flavors RackCloud supports:
+
+{% highlight sh linenos %}
+$ knife rackspace image list
+ID   Name                                                     
+100  Arch 2012.08                                             
+114  CentOS 5.6                                               
+121  CentOS 5.8                                               
+118  CentOS 6.0                                               
+122  CentOS 6.2                                               
+127  CentOS 6.3                                               
+104  Debian 6 (Squeeze)                                       
+120  Fedora 16                                                
+126  Fedora 17                                                
+107  FreeBSD 9.0                                              
+108  Gentoo 12.3                                              
+110  Red Hat Enterprise Linux 5.5                             
+111  Red Hat Enterprise Linux 6                               
+112  Ubuntu 10.04 LTS                                         
+115  Ubuntu 11.04                                             
+119  Ubuntu 11.10                                             
+125  Ubuntu 12.04 LTS                                         
+85   Windows Server 2008 R2 x64                               
+86   Windows Server 2008 R2 x64 + SQL Server 2008 R2 Standard 
+89   Windows Server 2008 R2 x64 + SQL Server 2008 R2 Web      
+91   Windows Server 2008 R2 x64 + SQL Server 2012 Standard    
+92   Windows Server 2008 R2 x64 + SQL Server 2012 Web         
+24   Windows Server 2008 SP2 x64                              
+57   Windows Server 2008 SP2 x64 + SQL Server 2008 R2 Standard
+31   Windows Server 2008 SP2 x86                              
+56   Windows Server 2008 SP2 x86 + SQL Server 2008 R2 Standard
+109  openSUSE 12                                              
+
+$ knife rackspace flavor list
+ID  Name           Architecture  RAM    Disk   
+1   256 server     64-bit        256    10 GB  
+2   512 server     64-bit        512    20 GB  
+3   1GB server     64-bit        1024   40 GB  
+4   2GB server     64-bit        2048   80 GB  
+5   4GB server     64-bit        4096   160 GB 
+6   8GB server     64-bit        8192   320 GB 
+7   15.5GB server  64-bit        15872  620 GB 
+8   30GB server    64-bit        30720  1200 GB
+{% endhighlight %}
+
+And we're connected to the cloud!
+
+h2(#BOOTSTRAP). Boostrap a Cloud Instance
+
+Now that we can talk to Rackspace, it's time to bootstrap a cloud image. This process is much like creating Vagrant instances. Once we've asked the cloud provider to create a server, knife will hand it a "bootstrap" file. This file serves the exact same purpose as the @postinstall.sh@ file we used with Vagrant/Veewee when creating a box. The only difference is that we don't need vagrant specific user or ssh key in the cloud, nor do we need to install the VirtualBox Guest Additions.
+
+In fact, let's create a @bootstrap@ directory for knife and copy over the @postinstall.sh@ from our box definition:
+
+{% highlight sh linenos %}
+$ mkdir .chef/bootstrap
+$ cp definitions/MyServer/postinstall.sh .chef/bootstrap/centos-5.6.erb
+{% endhighlight %}
+
+Now open @.chef/bootstrap/centos-5.6.erb@ in your editor and remove the lines related to creating a vagrant user and installing the guest additions. You should end up with a file that looks like this:
+
+{% highlight sh linenoes %}
+#http://chrisadams.me.uk/2010/05/10/setting-up-a-centos-base-box-for-development-and-testing-with-vagrant/
+
+date > /etc/vagrant_box_build_time
+
+fail()
+{
+  echo "FATAL: $*"
+  exit 1
+}
+
+#kernel source is needed for vbox additions
+rpm -Uvh http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+rpm -i http://vault.centos.org/5.6/os/x86_64/CentOS/kernel-devel-2.6.18-238.el5.x86_64.rpm
+yum -y install gcc bzip2 make
+#yum -y update
+#yum -y upgrade
+
+yum -y install gcc-c++ zlib-devel openssl-devel readline-devel sqlite-devel libyaml-devel
+yum -y erase gtk2 libX11 hicolor-icon-theme avahi freetype bitstream-vera-fonts
+yum -y clean all
+
+#Installing ruby
+cd /tmp
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p194.tar.gz || fail "Could not download Ruby source"
+tar xzvf ruby-1.9.3-p194.tar.gz
+cd ruby-1.9.3-p194
+./configure
+make && make install
+cd /tmp
+rm -rf /tmp/ruby-1.9.3-p194
+rm /tmp/ruby-1.9.3-p194.tar.gz
+ln -s /usr/local/bin/ruby /usr/bin/ruby # Create a sym link for the same path
+ln -s /usr/local/bin/gem /usr/bin/gem # Create a sym link for the same path
+
+#Installing chef & Puppet
+echo "Installing chef and puppet"
+/usr/local/bin/gem install chef --no-ri --no-rdoc || fail "Could not install chef"
+/usr/local/bin/gem install puppet --no-ri --no-rdoc || fail "Could not install puppet"
+
+#Installing shadow password support for chef
+echo "Installing ruby shadow password support for chef"
+/usr/local/bin/gem install ruby-shadow --no-ri --no-rdoc || fail "Could not install ruby-shadow"
+
+sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
+sed -i "s/^\(.*env_keep = \"\)/\1PATH /" /etc/sudoers
+
+# Disabling SELinux in config since kickstart ignores the flag
+echo "Disabling SELinux"
+sed -i "s/^SELINUX=enforcing/SELINUX=disabled/" /etc/selinux/config
+
+#poweroff -h
+
+exit
+{% endhighlight %}
+
+We're not quite ready yet though. One of the things vagrant does for us automatically is configuring and running the chef client. With a custom boostrap file for knife and cloud instances, we need to ensure those same steps are performed in the bootstrap file.
+
+At the end of @centos-5.6.erb@, add the following code right before the "exit" line:
+
+{% highlight sh linenos %}
+# Configure Chef
+echo "Configuring Chef Client"
+mkdir -p /etc/chef
+
+cat << 'EOP' >> /tmp/validation.pem
+<%= validation_key %>
+EOP
+awk NF /tmp/validation.pem > /etc/chef/validation.pem
+rm /tmp/validation.pem
+
+cat << 'EOP' >> /etc/chef/client.rb
+<%= config_content %>
+EOP
+
+cat << 'EOP' >> /etc/chef/first-boot.json
+<%= first_boot.to_json %>
+EOP
+
+<%= start_chef %>
+{% endhighlight %}
+
+bq. *From the top:* This code creates the chef directory, saves the validation key, configures the client, adds the initial run list, then kicks off the Chef Client run.
+
+Now it's time to ask RackCloud to make us a server! We'll do that using the @knife rackspace server create@ command.
+
+When you run this command, you're going to see a lot of output. I mean a LOT. This will be the output from every command the server is running, including the yum updates, install commands, compiling ruby, etc.
+
+Also, towards the top, you will see your temporary root password float by. Take note of it. You'll need it. But don't worry if you miss it. You can reset the root password in the RackCloud Control Panel on their website.
+
+{% highlight sh linenos %}
+$ knife rackspace server create -S rackspace-db -N rackspace-db -I 114 -f 1 -d centos-5.6 -r 'role[db]' -j '{"mysql":{"server_root_password":"abcd1234"},"myapp":{"database":{"password":"myapp_1234"}}}'
+{% endhighlight %}
+
+bq. *From the left:* The create command has a heap of options. In our case, we ask it to name the server rackspace-db (-S), name the chef node rackspace-db (-N), use image #114/CenstOS 5.6 (-I), use flavor #1/256MB server (-f) and use our custom centos5.6.erb boostrap file (-d), set the chef run list to role[db] (-r), and supply the attributes (in JSON format) for mysql server root password and out app database password (-j)
+
+Yes, that's a lot of command options to remember. In future posts, we'll look at making those more manageable, namely a set of Rake tasks for developers to use without having to remember all of those options every time. More over, passing in passwords is not only awkword, but means your storing them in your task. We'll cover how to store passwords in encrypted data bags later on.
+
+{% highlight sh lineno %}
+$ knife rackspace server create -S rackspace-db -N rackspace-db -I 114 -f 1 -d centos-5.6 -r 'role[db]' -j '{"mysql":{"server_root_password":"abcd1234"},"myapp":{"database":{"password":"myapp_1234"}}}'
+Instance ID: 21162952
+Host ID: c33bb243be8ca28e0bd42f0583000a30
+Name: rackspace-db
+Flavor: 256 server
+Image: CentOS 5.6
+Metadata: {}
+
+Waiting server........................................................................
+Public DNS Name: 198-101-233-114.static.cloud-ips.com
+Public IP Address: 198.101.233.114
+Private IP Address: 10.180.147.191
+Password: uhDWm72J1rackspace-db
+
+Waiting for sshddone
+Bootstrapping Chef on 198.101.233.114
+198.101.233.114 Retrieving http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+198.101.233.114 warning: 
+198.101.233.114 /var/tmp/rpm-xfer.4j5AaH: Header V3 DSA signature: NOKEY, key ID 217521f6
+198.101.233.114 Preparing...                
+198.101.233.114 ####################                        (100%)
+...
+198.101.233.114 2012-09-28 19:16:06 (1.23 MB/s) - `ruby-1.9.3-p194.tar.gz' saved [12432239/12432239]
+198.101.233.114 
+198.101.233.114 ruby-1.9.3-p194/
+198.101.233.114 ruby-1.9.3-p194/doc/
+198.101.233.114 ruby-1.9.3-p194/defs/
+198.101.233.114 ruby-1.9.3-p194/goruby.c
+198.101.233.114 ruby-1.9.3-p194/complex.c
+198.101.233.114 ruby-1.9.3-p194/regparse.c
+198.101.233.114 ruby-1.9.3-p194/README.EXT
+...
+198.101.233.114 Configuring Chef Client
+198.101.233.114 [2012-09-28T19:23:19+00:00] INFO: *** Chef 10.14.4 ***
+198.101.233.114 [2012-09-28T19:23:21+00:00] INFO: Client key /etc/chef/client.pem is not present - registering
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Setting the run_list to ["role[db]"] from JSON
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Run List is [role[db]]
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Run List expands to [mysql::server, myapp::db]
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Starting Chef Run for rackspace-db
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Running start handlers
+198.101.233.114 [2012-09-28T19:23:23+00:00] INFO: Start handlers complete.
+198.101.233.114 [2012-09-28T19:23:24+00:00] INFO: Loading cookbooks [apache2, build-essential, database, iptables, myapp, mysql, openssh, openssl, passenger_apache2]
+198.101.233.114 [2012-09-28T19:23:24+00:00] INFO: Storing updated cookbooks/mysql/recipes/client.rb in the cache.
+198.101.233.114 [2012-09-28T19:23:25+00:00] INFO: Storing updated cookbooks/mysql/recipes/default.rb in the cache.
+198.101.233.114 [2012-09-28T19:23:25+00:00] INFO: Storing updated cookbooks/mysql/recipes/ruby.rb in the cache.
+...
+198.101.233.114 [2012-09-28T19:24:56+00:00] INFO: Chef Run complete in 92.387689 seconds
+198.101.233.114 [2012-09-28T19:24:56+00:00] INFO: Running report handlers
+198.101.233.114 [2012-09-28T19:24:56+00:00] INFO: Report handlers complete
+
+Instance ID: 21162952
+Host ID: c33bb243be8ca28e0bd42f0583000a30
+Name: rackspace-db
+Flavor: 256 server
+Image: CentOS 5.6
+Metadata: {}
+Public DNS Name: 198-101-233-114.static.cloud-ips.com
+Public IP Address: 198.101.233.114
+Private IP Address: 10.180.147.191
+Password: uhDWm72J1rackspace-db
+Environment: _default
+Run List: role[db]
+{% endhighlight %}
+
+Let's login to our new instance and check things out.
+
+{% highlight sh lineno %}
+ssh root@198.101.233.114
+root@198.101.233.114's password: uhDWm72J1rackspace-db
+Last login: Fri Sep 28 19:13:49 2012 from adsl-76-253-135-65.dsl.akrnoh.sbcglobal.net
+
+[root@rackspace-db ~]# mysql -u root -p
+Enter password: abcd1234
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 7
+Server version: 5.0.95-log Source distribution
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use myapp;
+Database changed
+mysql> exit
+
+[root@rackspace-db ~]# grep bind /etc/my.cnf
+bind-address            = 10.180.147.191
+
+[root@rackspace-db ~]# /sbin/service iptables status
+Table: filter
+Chain INPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+1    FWR        all  --  0.0.0.0/0            0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+num  target     prot opt source               destination         
+
+Chain FWR (1 references)
+num  target     prot opt source               destination         
+1    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           
+2    ACCEPT     all  --  0.0.0.0/0            0.0.0.0/0           state RELATED,ESTABLISHED 
+3    ACCEPT     icmp --  0.0.0.0/0            0.0.0.0/0           
+4    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:3306 
+5    ACCEPT     udp  --  0.0.0.0/0            0.0.0.0/0           udp dpt:3306 
+6    ACCEPT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp dpt:22 
+7    REJECT     tcp  --  0.0.0.0/0            0.0.0.0/0           tcp flags:0x16/0x02 reject-with icmp-port-unreachable 
+8    REJECT     udp  --  0.0.0.0/0            0.0.0.0/0           reject-with icmp-port-unreachable 
+{% endhighlight %}
+
+MySQL is running, root password is set, and MySQL has bound to the Rackspace Private IP address, which is what we want. (The web server and db server can talk to each other using the private internal IP addresses). The iptables firewall rules are in place as well.
+
+Now in your OpsCode site, you should see the @rackspace-db@ machine under the clients and nodes tabs as well as within the knife utility itself:
+
+{% highlight sh linenos %}
+$ knife client list
+  claco-personal-validator
+  rackspace-db
+  vagrant-db
+  vagrant-web
+
+$ knife node list
+  rackspace-db
+  vagrant-db
+  vagrant-web
+{% endhighlight %}
+
+!/images/devops-toolbox/05-rackspacedb-nodes.png!
+!/images/devops-toolbox/06-rackspacedb-clients.png!
+
+Now, let's create a cloud server for our web role in the same manner:
+
+{% highlight sh linenos %}
+$ knife rackspace server create -S rackspace-web -N rackspace-web -I 114 -f 1 -d centos-5.6 -r 'role[web]' -j '{"myapp":{"database":{"host":"10.180.147.191","password":"myapp_1234"}}}'
+{% endhighlight %}
+
+bq. *From the left:* In this case, we ask it to name the server rackspace-web (-S), name the chef node rackspace-web (-N), use image #114/CenstOS 5.6 (-I), use flavor #1/256MB server (-f) and use our custom centos5.6.erb boostrap file (-d), set the chef run list to role[web] (-r), and supply the attributes (in JSON format) for myapp database password and host (-j)
+
+{% highlight sh lineno %}
+$ knife rackspace server create -S rackspace-web -N rackspace-web -I 114 -f 1 -d centos-5.6 -r 'role[web]' -j '{"myapp":{"database":{"host":"10.180.147.191","password":"myapp_1234"}}}'
+Instance ID: 21163069
+Host ID: 039a7acde829ad51d7f8405103db4ed6
+Name: rackspace-web
+Flavor: 256 server
+Image: CentOS 5.6
+Metadata: {}
+
+Waiting server.........................................................
+Public DNS Name: 198-61-206-121.static.cloud-ips.com
+Public IP Address: 198.61.206.121
+Private IP Address: 10.178.109.29
+Password: g6XsP7uS7rackspace-web
+
+Waiting for sshddone
+Bootstrapping Chef on 198.61.206.121
+198.61.206.121 Retrieving http://dl.fedoraproject.org/pub/epel/5/x86_64/epel-release-5-4.noarch.rpm
+198.61.206.121 warning: 
+198.61.206.121 /var/tmp/rpm-xfer.ljhMwC: Header V3 DSA signature: NOKEY, key ID 217521f6
+198.61.206.121 Preparing...                
+198.61.206.121 ####################                        (100%)
+...
+198.61.206.121 Saving to: `ruby-1.9.3-p194.tar.gz'
+198.61.206.121 
+100%[======================================>] 12,432,239   723K/s   in 13s     
+198.61.206.121 
+198.61.206.121 2012-09-28 20:22:06 (906 KB/s) - `ruby-1.9.3-p194.tar.gz' saved [12432239/12432239]
+198.61.206.121 
+198.61.206.121 ruby-1.9.3-p194/
+198.61.206.121 ruby-1.9.3-p194/doc/
+198.61.206.121 ruby-1.9.3-p194/defs/
+198.61.206.121 ruby-1.9.3-p194/goruby.c
+198.61.206.121 ruby-1.9.3-p194/complex.c
+198.61.206.121 ruby-1.9.3-p194/regparse.c
+...
+198.61.206.121 Configuring Chef Client
+198.61.206.121 [2012-09-28T20:29:09+00:00] INFO: *** Chef 10.14.4 ***
+198.61.206.121 [2012-09-28T20:29:11+00:00] INFO: Client key /etc/chef/client.pem is not present - registering
+198.61.206.121 [2012-09-28T20:29:13+00:00] INFO: Setting the run_list to ["role[web]"] from JSON
+198.61.206.121 [2012-09-28T20:29:14+00:00] INFO: Run List is [role[web]]
+198.61.206.121 [2012-09-28T20:29:14+00:00] INFO: Run List expands to [apache2, passenger_apache2::mod_rails, mysql::client, myapp::web]
+198.61.206.121 [2012-09-28T20:29:14+00:00] INFO: Starting Chef Run for rackspace-web
+198.61.206.121 [2012-09-28T20:29:14+00:00] INFO: Running start handlers
+198.61.206.121 [2012-09-28T20:29:14+00:00] INFO: Start handlers complete.
+198.61.206.121 [2012-09-28T20:29:15+00:00] INFO: Loading cookbooks [apache2, build-essential, database, iptables, myapp, mysql, openssh, openssl, passenger_apache2]
+...
+198.61.206.121 [2012-09-28T20:35:11+00:00] INFO: Chef Run complete in 357.585831 seconds
+198.61.206.121 [2012-09-28T20:35:11+00:00] INFO: Running report handlers
+198.61.206.121 [2012-09-28T20:35:11+00:00] INFO: Report handlers complete
+
+Instance ID: 21163069
+Host ID: 039a7acde829ad51d7f8405103db4ed6
+Name: rackspace-web
+Flavor: 256 server
+Image: CentOS 5.6
+Metadata: {}
+Public DNS Name: 198-61-206-121.static.cloud-ips.com
+Public IP Address: 198.61.206.121
+Private IP Address: 10.178.109.29
+Password: g6XsP7uS7rackspace-web
+Environment: _default
+Run List: role[web]
+{% endhighlight %}
+
+Let's login to the new server and chack things out:
+
+{% highlight sh linenos %}
+$ ssh root@198.61.206.121
+root@198.61.206.121's password: 
+Last login: Fri Sep 28 20:20:11 2012 from adsl-76-253-135-65.dsl.akrnoh.sbcglobal.net
+
+[root@rackspace-web ~]# cat /var/www/myapp/shared/database.yml
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: true
+  database: myapp
+  pool: 5
+  username: myapp
+  password: myapp_1234
+  host: 10.180.147.191
+
+[root@rackspace-web ~]# mysql -u myapp -p -D myapp -h 10.180.147.191
+Enter password: 
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 8
+Server version: 5.0.95-log Source distribution
+
+Copyright (c) 2000, 2011, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> exit
+Bye
+
+[root@rackspace-web ~]# cat /etc/httpd/sites-enabled/myapp.conf
+<VirtualHost *:80>
+  ServerName 198.61.206.121
+  ServerAlias 198.61.206.121 
+  DocumentRoot /var/www/myapp/current/public
+
+  RailsBaseURI /
+  RailsEnv development
+
+  <Directory /var/www/myapp/current/public>
+    Options FollowSymLinks
+    AllowOverride None
+    Order allow,deny
+    Allow from all
+  </Directory>
+
+  LogLevel info
+  ErrorLog /var/log/httpd/myapp-error.log
+  CustomLog /var/log/httpd/myapp-access.log combined
+
+  RewriteEngine On
+  RewriteLog /var/log/httpd/myapp-rewrite.log
+  RewriteLogLevel 0
+  # Canonical host
+  RewriteCond %{HTTP_HOST}   !^198.61.206.121 [NC]
+  RewriteCond %{HTTP_HOST}   !^$
+  RewriteRule ^/(.*)$        http://198.61.206.121/$1 [L,R=301]
+
+  RewriteCond %{DOCUMENT_ROOT}/system/maintenance.html -f
+  RewriteCond %{SCRIPT_FILENAME} !maintenance.html
+  RewriteRule ^.*$ /system/maintenance.html [L]
+
+</VirtualHost>
+{% endhighlight %}
+
+Our database.yml is setup correctly. We can login to the rackspace-db server, so the firewall works. Our application apache conf file is configured with the public ip address.
+
+We should now have another client/node in knife and on the website.
+
+{% highlight sh linenos %}
+$ knife client list
+  claco-personal-validator
+  rackspace-db
+  rackspace-web
+  vagrant-db
+  vagrant-web
+
+$ knife node list
+  rackspace-db
+  rackspace-web
+  vagrant-db
+  vagrant-web
+{% endhighlight %}
+
+!/images/devops-toolbox/07-rackspaceweb-clients.png!
+!/images/devops-toolbox/08-rackspaceweb-nodes.png!
+
+In your browser, go to the public ip address of the web server, in this case http://198.61.206.121/
+
+!/images/devops-toolbox/01-rackspaceweb-default.png!
+
+Uh oh! That should be our System Maint. page, not the apache default. What happened? Good quesiton. I don't know. :-) My guess is that it has something to do with apache binging to port 80, and the difference in the order that happens between machines with one network card (our Vagrant instances) and two network cards (Rackspace instances).
+
+In either case, the solution is simple. Disabled the default site in apache. Now we could login and simple delete this file: @/etc/httpd/sites-enabled/000-default@. The proper way given we're using Chef/Knife is to change the nodes @apache.default_site_enabled@ property to false, then rereun the apache recipe.
+
+We can do that using the @knife node edit@ command:
+
+{% highlight sh linenos %}
+$ knife node edit rackspace-web
+{% endhighlight %}
+
+Doing so will open the nodes attributes, in JSON format, in your editor:
+
+{% highlight json linenos %}
+{
+  "name": "rackspace-web",
+  "chef_environment": "_default",
+  "normal": {
+    "myapp": {
+      "database": {
+        "host": "10.180.147.191",
+        "password": "myapp_1234"
+      }
+    },
+    "tags": [
+
+    ],
+    "mysql": {
+      "conf_dir": "/etc",
+      "confd_dir": "/etc/mysql/conf.d",
+      "socket": "/var/lib/mysql/mysql.sock",
+      "pid_file": "/var/run/mysqld/mysqld.pid",
+      "old_passwords": 1,
+      "grants_path": "/etc/mysql_grants.sql",
+      "tunable": {
+        "innodb_adaptive_flushing": false
+      }
+    },
+    "platform?": "ubuntu",
+    "apache": {
+      "root_group": "root",
+      "package": "httpd",
+      "dir": "/etc/httpd",
+      "log_dir": "/var/log/httpd",
+      "error_log": "error.log",
+      "user": "apache",
+      "group": "apache",
+      "binary": "/usr/sbin/httpd",
+      "icondir": "/var/www/icons",
+      "cache_dir": "/var/cache/httpd",
+      "pid_file": "/var/run/httpd.pid",
+      "lib_dir": "/usr/lib64/httpd",
+      "libexecdir": "/usr/lib64/httpd/modules",
+      "default_site_enabled": false
+    }
+  },
+  "run_list": [
+    "role[web]"
+  ]
+}
+{% endhighlight %}
+
+Find the @default_site_enabled@ on line 40 and change it @false@. Then save and close your editor. Knife will then upload the changes to your node.
+
+{% highlight sh linenos %}
+Saving updated normal on node rackspace-web
+{% endhighlight %}
+
+Now let's run a remote comand using knife to trigger another run of the chec client:
+
+{% highlight sh lineno %}
+$ knife ssh "name:rackspace-web" "chef-client" -V -x root -P g6XsP7uS7rackspace-web -a ipaddress
+198.61.206.121 [2012-09-28T21:16:52+00:00] INFO: *** Chef 10.14.4 ***
+198.61.206.121 [2012-09-28T21:16:54+00:00] INFO: Run List is [role[web]]
+198.61.206.121 [2012-09-28T21:16:54+00:00] INFO: Run List expands to [apache2, passenger_apache2::mod_rails, mysql::client, myapp::web]
+198.61.206.121 [2012-09-28T21:16:54+00:00] INFO: Starting Chef Run for rackspace-web
+...
+{% endhighlight %}
+
+bq. *From the top:* The knife ssh command search for a list of nodes, then runs the specified command. We search for nodes with the name rackspace-web, run chef-client, then pass in options to tell ssh what username/password to use, and what ip address attribute to connect to. As your toolkit matures, you'll probably install a company ssh account/key rather than using the root credentials.
+
+If you check your browser again, you'll see... that this didn't work. :-( That's ok. I think it's a bug in the cookbook itself. But we needed to see how to run remote commands anyways. In the future, this is how you would update recipes/attribues and kick off new provisioning with chef-client.
+
+For now, let's implement our original idea and just remote the file from sites-enabled:
+
+{% highlight sh lineno %}
+$ knife ssh "name:rackspace-web" "rm /etc/httpd/sites-enabled/000-default" -V -x root -P g6XsP7uS7rackspace-web -a ipaddress
+$ knife ssh "name:rackspace-web" "/sbin/service httpd restart" -V -x root -P g6XsP7uS7rackspace-web -a ipaddress
+198.61.206.121 Stopping httpd: 
+198.61.206.121                                             [
+198.61.206.121   OK  
+198.61.206.121 ]
+198.61.206.121 
+198.61.206.121 Starting httpd: 
+198.61.206.121 httpd: Could not reliably determine the server's fully qualified domain name, using 198.61.206.121 for ServerName
+198.61.206.121                                             [
+198.61.206.121   OK  
+198.61.206.121 ]
+198.61.206.121 
+{% endhighlight %}
+
+Now, this time, you'll see the system maint. page. 
+
+!/images/devops-toolbox/01-rackspaceweb-systemmaint.png!
+
+h2(#CONVERTDEPLOYMENT). Convert Deployment Process
+
+The last thing we need to do is deploy our app. Now that we have two possible destinations, vagrant, and rackcloud, let's tweak our @myapp/config/deploy.app@ file:
+
+{% highlight ruby linenos %}
+require "bundler/capistrano"
+
+set :application, "myapp"
+set :deploy_to, "/var/www/myapp"
+set :deploy_via, :copy
+set :user, "myapp"
+
+set :rails_env, "development"
+set :use_sudo, false
+
+set :scm, :none
+set :repository, "./"
+
+task :vagrant do
+  role :web, "10.10.10.10"                          # Your HTTP server, Apache/etc
+  role :app, "10.10.10.10"                          # This may be the same as your `Web` server
+  role :db,  "10.10.10.10", :primary => true # This is where Rails migrations will run
+end
+
+task :rackspace do
+  role :web, ENV['address']                          # Your HTTP server, Apache/etc
+  role :app, ENV['address']                          # This may be the same as your `Web` server
+  role :db,  ENV['address'], :primary => true # This is where Rails migrations will run
+end
+
+after "deploy:finalize_update", "deploy:copy_database_yml"
+
+namespace :deploy do
+  task :start do ; end
+  task :stop do ; end
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
+  end
+
+  task :copy_database_yml do
+    run "cp #{shared_path}/database.yml #{release_path}/config/database.yml"
+  end
+end
+{% endhighlight %}
+
+bq. *From the top:* We've added a rackspace task to the deployment file and moved the vagrant settings into a vagrant task. Running this task in conjunction with the deploy commands simple overrides the default vagrant ip addresses with whatever address we send in ENV.
+
+Now, let's go for the gold and deploy out application to rackspace!
+
+{% highlight ruby linenos %}
+$ cd myapp
+$ cap rackspace deploy:setup address=198.61.206.121
+  * executing `rackspace'
+  * executing `deploy:setup'
+  * executing "mkdir -p /var/www/myapp /var/www/myapp/releases /var/www/myapp/shared /var/www/myapp/shared/system /var/www/myapp/shared/log /var/www/myapp/shared/pids"
+    servers: ["198.61.206.121"]
+Password: myapp_1234
+    [198.61.206.121] executing command
+    command finished in 768ms
+  * executing "chmod g+w /var/www/myapp /var/www/myapp/releases /var/www/myapp/shared /var/www/myapp/shared/system /var/www/myapp/shared/log /var/www/myapp/shared/pids"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 240ms
+{% endhighlight %}
+
+{% highlight sh linenos %}
+$ cap rackspace deploy:cold address=198.61.206.121
+  * executing `rackspace'
+  * executing `deploy:cold'
+  * executing `deploy:update'
+ ** transaction: start
+  * executing `deploy:update_code'
+  * getting (via checkout) revision  to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928215119
+    executing locally: cp -R ./ /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928215119
+    command finished in 72ms
+  * Compressing /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928215119 to /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928215119.tar.gz
+    executing locally: tar czf 20120928215119.tar.gz 20120928215119
+    command finished in 114ms
+    servers: ["198.61.206.121"]
+Password: 
+ ** sftp upload /var/folders/nf/zwnznxhj35n_143061ppg9rr0000gn/T/20120928215119.tar.gz -> /tmp/20120928215119.tar.gz
+    [198.61.206.121] /tmp/20120928215119.tar.gz
+    [198.61.206.121] done
+  * sftp upload complete
+  * executing "cd /var/www/myapp/releases && tar xzf /tmp/20120928215119.tar.gz && rm /tmp/20120928215119.tar.gz"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 374ms
+  * executing `deploy:finalize_update'
+    triggering before callbacks for `deploy:finalize_update'
+  * executing `bundle:install'
+  * executing "cd /var/www/myapp/releases/20120928215119 && bundle install --gemfile /var/www/myapp/releases/20120928215119/Gemfile --path /var/www/myapp/shared/bundle --deployment --quiet --without development test"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 33040ms
+  * executing "chmod -R g+w /var/www/myapp/releases/20120928215119"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 330ms
+  * executing "rm -rf /var/www/myapp/releases/20120928215119/public/system && mkdir -p /var/www/myapp/releases/20120928215119/public/"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 229ms
+  * executing "ln -s /var/www/myapp/shared/system /var/www/myapp/releases/20120928215119/public/system"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 228ms
+  * executing "rm -rf /var/www/myapp/releases/20120928215119/log"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 228ms
+  * executing "ln -s /var/www/myapp/shared/log /var/www/myapp/releases/20120928215119/log"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 227ms
+  * executing "rm -rf /var/www/myapp/releases/20120928215119/tmp/pids && mkdir -p /var/www/myapp/releases/20120928215119/tmp/"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 230ms
+  * executing "ln -s /var/www/myapp/shared/pids /var/www/myapp/releases/20120928215119/tmp/pids"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 235ms
+  * executing "find /var/www/myapp/releases/20120928215119/public/images /var/www/myapp/releases/20120928215119/public/stylesheets /var/www/myapp/releases/20120928215119/public/javascripts -exec touch -t 201209282152.06 {} ';'; true"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+*** [err :: 198.61.206.121] find:
+*** [err :: 198.61.206.121] /var/www/myapp/releases/20120928215119/public/images
+*** [err :: 198.61.206.121] : No such file or directory
+*** [err :: 198.61.206.121] 
+*** [err :: 198.61.206.121] find:
+*** [err :: 198.61.206.121] /var/www/myapp/releases/20120928215119/public/stylesheets
+*** [err :: 198.61.206.121] : No such file or directory
+*** [err :: 198.61.206.121] 
+*** [err :: 198.61.206.121] find:
+*** [err :: 198.61.206.121] /var/www/myapp/releases/20120928215119/public/javascripts
+*** [err :: 198.61.206.121] : No such file or directory
+*** [err :: 198.61.206.121] 
+    command finished in 335ms
+    triggering after callbacks for `deploy:finalize_update'
+  * executing `deploy:copy_database_yml'
+  * executing "cp /var/www/myapp/shared/database.yml /var/www/myapp/releases/20120928215119/config/database.yml"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 239ms
+  * executing `deploy:create_symlink'
+  * executing "rm -f /var/www/myapp/current && ln -s /var/www/myapp/releases/20120928215119 /var/www/myapp/current"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+    command finished in 229ms
+ ** transaction: commit
+  * executing `deploy:migrate'
+  * executing "cd /var/www/myapp/releases/20120928215119 && bundle exec rake RAILS_ENV=development  db:migrate"
+    servers: ["198.61.206.121"]
+    [198.61.206.121] executing command
+ ** [out :: 198.61.206.121] ==  CreatePeople: migrating ===================================================
+ ** [out :: 198.61.206.121] -- create_table(:people)
+ ** [out :: 198.61.206.121] -> 0.0091s
+ ** [out :: 198.61.206.121] ==  CreatePeople: migrated (0.0092s) ==========================================
+ ** [out :: 198.61.206.121] 
+    command finished in 6495ms
+  * executing `deploy:start'
+{% endhighlight %}
+
+Congratualtions! You're app is in the cloud! Go to the website and check it out!
+
+!/images/devops-toolbox/01-rackspaceweb-deployed.png!
+
+Don't forget to delete your cloud instances when you're done! Although I suspect at 2.2 cents an hour, you're not going to go broken any time soon.
+
+Whenever you're ready to do that, pass in the node name and Chef will also delete the client/node from the OpsCode website:
+
+{% highlight sh lineno %}
+$ knife rackspace server list
+Instance ID  Public IP        Private IP      Flavor  Image  Name           State 
+21163069     198.61.206.121   10.178.109.29   1       114    rackspace-web  active
+21162952     198.101.233.114  10.180.147.191  1       114    rackspace-db   active
+
+$ knife rackspace server delete 21163069 -N rackspace-web
+Instance ID: 21163069
+Host ID: 039a7acde829ad51d7f8405103db4ed6
+Name: rackspace-web
+Flavor: 256 server
+Image: CentOS 5.6
+Public IP Address: 198.61.206.121
+Private IP Address: 10.178.109.29
+
+Do you really want to delete this server? (Y/N) Y
+{% endhighlight %}
+
+h2(#COMMIT). Commit Our Work
+
+Let's commit all of our changes to git.
+
+{% highlight sh linenos %}
+$ cd ~/devops_toolbox
+$ git add .
+$ git commit -m "Added cloud boostrap"
+[master 3cda16c] Added cloud boostrap
+ 5 files changed, 110 insertions(+), 3 deletions(-)
+ create mode 100644 .chef/bootstrap/centos-5.6.erb
+{% endhighlight %}
+
+h2. To Continue...
+
+# "Introduction":../introduction/ - Introduction
+# "Installing Prerequisites":../prerequisites/ - XCode, CommandLineTools, Homebrew, RVM, Ruby, and VirtualBox
+# "Project Setup":../project-setup/ - Create the git repository and directory structure for Vagrant, Chef, etc.
+# "Vagrant/Veewee Installation":../vagrant-veewee-installation/ - Install Vagrant/Vewee to create/control VirtualBox machines
+# "Define/Create a Vagrant Box":../define-create-vagrant-box/ - Define and Create a Vagrant Box for use i VirtualBox
+# "Provisioning Machines with Vagrant":../provisioning-machines-with-vagrant/ - Provision a cluster (Web/DB) of machines using Vagrant
+# "Configuring Machines Using Chef Solo":../configuring-machines-using-chef-solo/ - Configuring our new machine instances using Chef Solo
+# "Customizing Recipes for Our Application":../customizing-recipes-for-our-application/ - Customize the recipes we have to prepare for our application deployment
+# "Create and Deploy a Rails Applications":../create-deploy-rails-application/ - Create a simple Rails application and deploy it to our Vagrant instances
+# "Migrate from Chef Solo to Hosted Chef":../migrate-to-hosted-chef/ - Migrate from using Chef Solo to hosted Chef at OpsCode
+# "Migrate Servers to RackCloud":../migrate-to-rackcloud/  - Migrate your servers from VirtualBox to "The Cloud" using Rackspace.
+

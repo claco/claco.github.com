@@ -6,7 +6,7 @@
   </div>
 
   <div class="category">
-    See more posts about: {% if page.categories != empty %}<a href="/categories/{{ page.categories | first | downcase | cgi_escape }}/">{{ page.categories | first }}</a> |{% endif %}
+    See more posts about: {% if page.categories != empty %}<a href="/categories/{{ page.categories | first | downcase | uri_escape }}/">{{ page.categories | first }}</a> |{% endif %}
     <a href="/categories/">All Categories</a>
   </div>
   {% if page.tags != empty %}

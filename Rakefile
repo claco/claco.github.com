@@ -62,7 +62,7 @@ task :categories do
             {{ #{post_data['created']} | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="#{post.url}/">#{post_data['title']}</a>
+            <a class="permalink" href="#{post.permalink || post.url}/">#{post_data['title']}</a>
           </span>
         </div>
         html

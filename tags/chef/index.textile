@@ -5,59 +5,91 @@ title: "Tag: chef"
 
 <div class="index posts">
         <div class="post">
-          <span class="created" data-created="1348582470" data-format="MM/dd/yyyy">
-            {{ 1348582470 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          <span class="created" data-created="1348846000" data-format="MM/dd/yyyy">
+            {{ 1348846000 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/provisioning-machines-with-vagrant/">DevOps Toolbox: Provisioning Machines with Vagrant</a>
+            <a class="permalink" href="/devops-toolbox/introduction/">DevOps Toolbox: Introduction</a>
           </span>
         </div>
         <div class="post">
-          <span class="created" data-created="1348593097" data-format="MM/dd/yyyy">
-            {{ 1348593097 | date: "%Y-%m-%dT%H:%M:%S%z" }}
-          </span> &raquo;  
-          <span class="title">
-            <a class="permalink" href="devops-toolbox/configuring-machines-using-chef-solo/">DevOps Toolbox: Configuring Machines Using Chef Solo</a>
-          </span>
-        </div>
-        <div class="post">
-          <span class="created" data-created="1348441303" data-format="MM/dd/yyyy">
-            {{ 1348441303 | date: "%Y-%m-%dT%H:%M:%S%z" }}
-          </span> &raquo;  
-          <span class="title">
-            <a class="permalink" href="devops-toolbox/vagrant-veewee-installation/">DevOps Toolbox: Vagrant/Veewee Installation</a>
-          </span>
-        </div>
-        <div class="post">
-          <span class="created" data-created="1348431290" data-format="MM/dd/yyyy">
-            {{ 1348431290 | date: "%Y-%m-%dT%H:%M:%S%z" }}
-          </span> &raquo;  
-          <span class="title">
-            <a class="permalink" href="devops-toolbox/project-setup/">DevOps Toolbox: Project Setup</a>
-          </span>
-        </div>
-        <div class="post">
-          <span class="created" data-created="1348413377" data-format="MM/dd/yyyy">
-            {{ 1348413377 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          <span class="created" data-created="1348845431" data-format="MM/dd/yyyy">
+            {{ 1348845431 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="devops-toolbox/prerequisites/">DevOps Toolbox: Prerequisites</a>
           </span>
         </div>
         <div class="post">
-          <span class="created" data-created="1348446443" data-format="MM/dd/yyyy">
-            {{ 1348446443 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          <span class="created" data-created="1348845432" data-format="MM/dd/yyyy">
+            {{ 1348845432 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/project-setup/">DevOps Toolbox: Project Setup</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845433" data-format="MM/dd/yyyy">
+            {{ 1348845433 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/vagrant-veewee-installation/">DevOps Toolbox: Vagrant/Veewee Installation</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845434" data-format="MM/dd/yyyy">
+            {{ 1348845434 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="devops-toolbox/define-create-vagrant-box/">DevOps Toolbox: Define/Create a Vagrant Box</a>
           </span>
         </div>
         <div class="post">
-          <span class="created" data-created="1348268618" data-format="MM/dd/yyyy">
-            {{ 1348268618 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          <span class="created" data-created="1348845435" data-format="MM/dd/yyyy">
+            {{ 1348845435 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/introduction/">DevOps Toolbox: Introduction</a>
+            <a class="permalink" href="devops-toolbox/provisioning-machines-with-vagrant/">DevOps Toolbox: Provisioning Machines with Vagrant</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845436" data-format="MM/dd/yyyy">
+            {{ 1348845436 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/configuring-machines-using-chef-solo/">DevOps Toolbox: Configuring Machines Using Chef Solo</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845437" data-format="MM/dd/yyyy">
+            {{ 1348845437 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/customizing-recipes-for-our-application/">DevOps Toolbox: Customizing Recipes for Our Application</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845438" data-format="MM/dd/yyyy">
+            {{ 1348845438 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/create-deploy-rails-application/">DevOps Toolbox: Creating and Deploying a Rails Application</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845439" data-format="MM/dd/yyyy">
+            {{ 1348845439 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/migrate-to-hosted-chef/">DevOps Toolbox: Migrate From Chef Solo to Hosted Chef</a>
+          </span>
+        </div>
+        <div class="post">
+          <span class="created" data-created="1348845440" data-format="MM/dd/yyyy">
+            {{ 1348845440 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="devops-toolbox/migrate-to-rackcloud/">DevOps Toolbox: Migrate Servers to RackCloud</a>
           </span>
         </div>
         <div class="post">
