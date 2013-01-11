@@ -17,7 +17,7 @@ title: "Tag: vagrant"
             {{ 1348845431 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/prerequisites/">DevOps Toolbox: Prerequisites</a>
+            <a class="permalink" href="/devops-toolbox/prerequisites/">DevOps Toolbox: Prerequisites</a>
           </span>
         </div>
         <div class="post">
@@ -25,7 +25,7 @@ title: "Tag: vagrant"
             {{ 1348845432 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/project-setup/">DevOps Toolbox: Project Setup</a>
+            <a class="permalink" href="/devops-toolbox/project-setup/">DevOps Toolbox: Project Setup</a>
           </span>
         </div>
         <div class="post">
@@ -33,7 +33,7 @@ title: "Tag: vagrant"
             {{ 1348845433 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/vagrant-veewee-installation/">DevOps Toolbox: Vagrant/Veewee Installation</a>
+            <a class="permalink" href="/devops-toolbox/vagrant-veewee-installation/">DevOps Toolbox: Vagrant/Veewee Installation</a>
           </span>
         </div>
         <div class="post">
@@ -41,7 +41,7 @@ title: "Tag: vagrant"
             {{ 1348845434 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/define-create-vagrant-box/">DevOps Toolbox: Define/Create a Vagrant Box</a>
+            <a class="permalink" href="/devops-toolbox/define-create-vagrant-box/">DevOps Toolbox: Define/Create a Vagrant Box</a>
           </span>
         </div>
         <div class="post">
@@ -49,7 +49,7 @@ title: "Tag: vagrant"
             {{ 1348845435 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/provisioning-machines-with-vagrant/">DevOps Toolbox: Provisioning Machines with Vagrant</a>
+            <a class="permalink" href="/devops-toolbox/provisioning-machines-with-vagrant/">DevOps Toolbox: Provisioning Machines with Vagrant</a>
           </span>
         </div>
         <div class="post">
@@ -57,7 +57,7 @@ title: "Tag: vagrant"
             {{ 1348845436 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/configuring-machines-using-chef-solo/">DevOps Toolbox: Configuring Machines Using Chef Solo</a>
+            <a class="permalink" href="/devops-toolbox/configuring-machines-using-chef-solo/">DevOps Toolbox: Configuring Machines Using Chef Solo</a>
           </span>
         </div>
         <div class="post">
@@ -65,7 +65,7 @@ title: "Tag: vagrant"
             {{ 1348845437 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/customizing-recipes-for-our-application/">DevOps Toolbox: Customizing Recipes for Our Application</a>
+            <a class="permalink" href="/devops-toolbox/customizing-recipes-for-our-application/">DevOps Toolbox: Customizing Recipes for Our Application</a>
           </span>
         </div>
         <div class="post">
@@ -73,7 +73,7 @@ title: "Tag: vagrant"
             {{ 1348845438 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/create-deploy-rails-application/">DevOps Toolbox: Creating and Deploying a Rails Application</a>
+            <a class="permalink" href="/devops-toolbox/create-deploy-rails-application/">DevOps Toolbox: Creating and Deploying a Rails Application</a>
           </span>
         </div>
         <div class="post">
@@ -81,7 +81,7 @@ title: "Tag: vagrant"
             {{ 1348845439 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/migrate-to-hosted-chef/">DevOps Toolbox: Migrate From Chef Solo to Hosted Chef</a>
+            <a class="permalink" href="/devops-toolbox/migrate-to-hosted-chef/">DevOps Toolbox: Migrate From Chef Solo to Hosted Chef</a>
           </span>
         </div>
         <div class="post">
@@ -89,7 +89,7 @@ title: "Tag: vagrant"
             {{ 1348845440 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  
           <span class="title">
-            <a class="permalink" href="devops-toolbox/migrate-to-rackcloud/">DevOps Toolbox: Migrate Servers to RackCloud</a>
+            <a class="permalink" href="/devops-toolbox/migrate-to-rackcloud/">DevOps Toolbox: Migrate Servers to RackCloud</a>
           </span>
         </div>
         <div class="post">

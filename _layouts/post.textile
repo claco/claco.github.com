@@ -11,7 +11,7 @@
   </div>
   {% if page.tags != empty %}
     <div class="tags">
-      <div class="tag">See more posts containing:</div>{% for tag in page.tags %}<div class="tag"><a href="/tags/{{ tag | cgi_escape }}/">{{ tag }}</a></div>{% endfor %}
+      <div class="tag">See more posts containing:</div>{% for tag in page.tags %}<div class="tag"><a href="/tags/{{ tag | downcase | uri_escape }}/">{{ tag }}</a></div>{% endfor %}
       <div class="tag">| <a href="/tags/">All Tags</a></div>
       <div class="clear"></div>
     </div>
