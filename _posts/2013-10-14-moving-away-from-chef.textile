@@ -45,9 +45,9 @@ Bundler could not find compatible versions for gem "net-ssh":
       net-ssh (2.7.0)
 </pre>
 
-Scour the issues lists for Berkshelf, Chef, Kitchen, Vagrant and the various plugins for this things and this becomes a common theme. IF seems the primary offenders are always @net-ssh@, @chef@, @json@, and/or @multi_json@. In fact, iirc, this was one of the motivations of Vagrant moving to Omnibus because this situation was untenable unless you controlled the entire ruby stack and what specific gems were installed. 
+Scour the issues lists for Berkshelf, Chef, Kitchen, Vagrant and the various plugins for this things and this becomes a common theme. It seems the primary offenders are always @net-ssh@, @chef@, @json@, and/or @multi_json@. In fact, iirc, this was one of the motivations of Vagrant moving to Omnibus because this situation was untenable with vagrant as a gem unless you controlled the entire ruby stack and what specific gems were installed. 
 
-Yes, one could argue that this is a module author issue and not a bundler issue. But what difference does it make whenever I just want to write tests and things exploded whenever someone upstream abuses the version hints? Or breaks every other week when a new version of something comes out? It used to be that gems and their upgrades just worked more often than not. Now we're headed back in the other direction. It's rare that I can do Rails development because of these types of happenings, nor that I can just load RSpec and write specs. Yet just loading Test Kitchen to write some tests is not quite easy any more.
+Yes, one could argue that this is a module author issue and not a bundler issue. But what difference does it make whenever I just want to write tests and things exploded whenever someone upstream abuses the version hints? Or breaks every other week when a new version of something comes out? It used to be that gems and their upgrades just worked more often than not and locking in a version was a rare need. Now we're headed back in the other direction. It's rare that I can't do Rails development because of these types of happenings, nor that I can't just load RSpec and write specs. Yet just loading Test Kitchen to write some tests is not quite easy any more.
 
 This leads me to my second gripe...
 
@@ -76,7 +76,7 @@ This is a feature and an asset. It's also a weakness and a constant struggle. Th
 
 To make thing worse, any update to any one of these tools can render the other ones or the entire stack useless. Someone updates Berkfile, then vagrant-berkshelf stops working. Someone updates kitchen-vagrant and then vagrant-berkshelf goes to hell. Sometimes with seemingly small changes to functionality, and sometimes something as simple as a change Gemfile/Gemfile.lock.
 
-Please please please. Core authors of Chef, Vagrant (and plugins), Berkshelf (and plugins), Test Kitchen (and plugins): everyone get into a room, fix all outstanding interoperability issues, and lock down a long serious of stable versions that just work. As it stands now I can't just do:
+Please please please. Core authors of Chef, Vagrant (and plugins), Berkshelf (and plugins), Test Kitchen (and plugins): everyone get into a room, fix all outstanding interoperability issues, and lock down a long series of stable versions that just work. As it stands now I can't just do:
 
 <pre>
 gem "berkshelf"
@@ -93,11 +93,13 @@ bq. Yup. That's what I mean :smile:. I don't know why, but I experience your pro
 
 Daily. A core maintainer. How do I have any chance then. :-/
 
-Lastly, my general gripe is that you have to know way too much about hose chef works internally to navigate the chaos and build cookbooks successfully. This seems to imply that for all the abstraction, we're just not there yet. Granted, provisions a server is a complex feat to be sure.
+Lastly, my general gripe is that you have to know way too much about how chef works internally to navigate the chaos and build cookbooks successfully. This seems to imply that for all the abstraction, we're just not there yet. Granted, provisions a server is a complex feat to be sure.
 
 h2. Conclusions (for now)
 
-Yes, some things are in flux. Some in beta. Some in growth spurts. People are working hard on all of these tools. I get it. Any of the above issues might be small and/or tolerable on their own. But stacked up as a constant barrage month after month, version after version where I spend more time troubleshooting the tools more than writing (or troubleshooting my code) and this is an adjective fail. I don't struggle this much with Rspec. I don't struggle this much with Rails. But in this case, the complexity and constant issues are simply too much to keep dealing with when I'd rather be provisioning servers and writing code. This could be a useless observation, but the amount of issues in these github projects are staggering, and the same goes for for COOK tickets. They may mean things are way to complex or unstable. Maybe not.
+Yes, some things are in flux. Some in beta. Some in growth spurts. People are working hard on all of these tools. I get it. Any of the above issues might be small and/or tolerable on their own. But stacked up as a constant barrage month after month, version after version where I spend more time troubleshooting the tools more than writing (or troubleshooting my code) and this is an adjective fail. I don't struggle this much with Rspec. I don't struggle this much with Rails. But in this case, the complexity and constant issues are simply too much to keep dealing with when I'd rather be provisioning servers and writing code.
+
+This could be a useless observation, but the amount of issues in these github projects are staggering, and the same goes for for COOK tickets. They may mean things are way to complex or unstable. Maybe not. I get the feeling that Chef got too popular too quickly and there's a struggle to stabalize given the scope of the tellchain complexity. Maybe they just need another 20 devs and some truckloads of Code Red. :-)
 
 I'm also willing to acknowledge sometimes, I'm doing some crazy shit, and that for less than complex things, people might not struggle with these things nearly as often.
 
