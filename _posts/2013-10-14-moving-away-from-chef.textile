@@ -1,0 +1,104 @@
+---
+layout: post
+title: "Moving Away From Chef"
+published: true
+created:  1381794383
+tags: [chef, ruby, vagrant, berkshelf, test-kitchen]
+categories: [DevOps]
+---
+
+h2. Warning
+
+_Severe Rant Ahead_. You've been warned. :-)
+
+h2. Disclaimer 
+
+First, let's cover the requisites. The opinions expressed here are my own and do not reflect those of my employer.
+
+Second, I have no beef with anyone at a personal level that works for one of the companies or products mentioned below. They've been nothing but professional when confronted with my constant complaints. :-)
+
+h2. Dropping the anchors
+
+Back in mid 2011, I started my foray into using Chef to setup the development/staging/production server infrastructure at my previous employer. This was a mission born out of the frustration of setting up my development machine during my first week. Chef was Ruby. We were ruby developers. Things went from painful to fully automated. Life was good.
+
+Fast forward to the beginning of this year where I now have DevOps in my new jobs' title and am still doing Chef things on a daily basis. But those things are now more complex than the previous job. I also have a startup that I'm helping to launch that uses Chef; but that stuff is more simple. I've done talks in the past about using Chef to automate all the things and still have a few conference things in the mix. I'm not a Chef expert by any means, but I would consider myself to be in the more intermediate->advance camp of users.
+
+When the test-kitchen/chefspec waves rolled through, I was pretty happy that I could test my cookbooks. I like tests. I like testing. I like knowing things work. Again, these things worked [for a while] and life was good.
+
+h2. Pulling up the anchors
+
+Over the last few months though, it seems like I'm spending more time trying to get things to work than I am actually writing tests, let alone cookbooks. I can boil my issues down into the same few problems that seem to happen over and over again.
+
+h3. Bundler/Gemfile/Gemfile.lock Dependency Conflicts
+
+First, I think bundler and the communities use of it is somewhat of a failure. I surmise that the issue is peoples over use of @<~@ and using version hints when they just don't have to. "For example":https://github.com/RiotGames/vagrant-berkshelf/issues/102
+
+<pre>
+Fetching gem metadata from https://rubygems.org/..
+Resolving dependencies...
+Bundler could not find compatible versions for gem "net-ssh":
+  In Gemfile:
+    vagrant-berkshelf (~> 1.3.3) ruby depends on
+      net-ssh (~> 2.6.6) ruby
+
+    chef (~> 11.6.0) ruby depends on
+      net-ssh (2.7.0)
+</pre>
+
+Scour the issues lists for Berkshelf, Chef, Kitchen, Vagrant and the various plugins for this things and this becomes a common theme. IF seems the primary offenders are always @net-ssh@, @chef@, @json@, and/or @multi_json@. In fact, iirc, this was one of the motivations of Vagrant moving to Omnibus because this situation was untenable unless you controlled the entire ruby stack and what specific gems were installed. 
+
+Yes, one could argue that this is a module author issue and not a bundler issue. But what difference does it make whenever I just want to write tests and things exploded whenever someone upstream abuses the version hints? Or breaks every other week when a new version of something comes out? It used to be that gems and their upgrades just worked more often than not. Now we're headed back in the other direction. It's rare that I can do Rails development because of these types of happenings, nor that I can just load RSpec and write specs. Yet just loading Test Kitchen to write some tests is not quite easy any more.
+
+This leads me to my second gripe...
+
+h3. Vagrant, Omnibus, and Plugins
+
+Now that Vagrant is omnibus based, we've compounded the Bundler/Gemfile lock file conflict issues ever further. Two plugins might install just fine, but when Vagrant tries to load them both, the gem version dependency issue bubbles to the top and vagrant just quits with a stack trace at best, and at worst nothing. Bury this problem under a running Test Kitchen, and it's even worse. I like Omnibus in theory, and having a simple way to get a running chef-client or chef-server that way works very well. But for things that take in plugins, or install extra gems into the embedded ruby, it does downhill fast. Sometimes you see this with chef_gem under omnibus chef as well.
+
+h3. Patterns & Practices
+
+One of the things to surface over the last year or so has been some patterns and practices around cookbooks. Specifically, the library/application and wrapper patterns. On paper and in an enclosed environment, these are quite useful patterns and work quite well. But because the various levels of chaos in the community cookbooks, specifically on things around dropping config files, then having services immediately restart instead of delayed restarts, it's getting harder and harder to configure complex systems using Chef.
+
+For examples:
+
+* "https://github.com/opscode-cookbooks/mysql/commit/e412e32f639517b572aaba54465401b8ed5a7dae":https://github.com/opscode-cookbooks/mysql/commit/e412e32f639517b572aaba54465401b8ed5a7dae  (fixed later for other reasons)
+* "https://tickets.opscode.com/browse/COOK-3752":https://tickets.opscode.com/browse/COOK-3752
+* "https://github.com/opscode-cookbooks/postgresql/pull/69":https://github.com/opscode-cookbooks/postgresql/pull/69
+* "https://tickets.opscode.com/browse/COOK-3427":https://tickets.opscode.com/browse/COOK-3427
+
+My concern is not necessarily that cookbooks are or aren't broken at any given time. It's that given the vastness of the amount of Opscode cookbooks, we still don't have an official set of patterns and practices with any amount of great detail. I know they're constantly working to get COOK in order. But in the end sometimes, it's tough to live with people not wanting to change cookbooks because they would break a long history (do a major version bump?) of it always working that way. I know, everyone has different requirements and goals, so this is where a detailed set of practices needs to be officially set forth. How to break up recipes properly. When/where do declare services. When to restart them. How to ensure your library recipes are wrapper-able. Composability. How to deal with the damn clone resource issues and the ton of warnings it spits it, etc.
+
+The Chef community needs something like this, but in official form, from Opscode themselves: "http://www.puppetbestpractices.com/":http://www.puppetbestpractices.com/. Yes, I'm sure it's in the works. In the mean time, the cookbooks and various consumers of them continue to try and tread water to deal with the never ending onslaught of complexity.
+
+h3. Too Many Tools and Options
+
+This is a feature and an asset. It's also a weakness and a constant struggle. There are simply to many ways to provision and converge a server. Knife, knife plugins, vagrant, vagrant provisions, kitchens and kitchen plugins and boostrapping, spiceweasel, knifes-solo. Pushing. Pulling. Bootstrapping vs. Preconfiguring machines. Yes, they all tackle different core problems, but they all seem to miss some crucial things, like multi-run chef setups, multi node setups, etc. Chef is a great tool for configuring, but it's horrible and orchestration.
+
+To make thing worse, any update to any one of these tools can render the other ones or the entire stack useless. Someone updates Berkfile, then vagrant-berkshelf stops working. Someone updates kitchen-vagrant and then vagrant-berkshelf goes to hell. Sometimes with seemingly small changes to functionality, and sometimes something as simple as a change Gemfile/Gemfile.lock.
+
+Please please please. Core authors of Chef, Vagrant (and plugins), Berkshelf (and plugins), Test Kitchen (and plugins): everyone get into a room, fix all outstanding interoperability issues, and lock down a long serious of stable versions that just work. As it stands now I can't just do:
+
+<pre>
+gem "berkshelf"
+gem "chef"
+gem "test-kitchen"
+...
+</pre>
+
+and have it remotely work on the first 10 tries do to bundler issues, gem version issues, requires --pre version issues, and things like Berkshelf 2 ignoring lockfiles (only fixed in 3, and 3.x is still beta). I can barely go through all of the community cookbooks and find the same Gemfile to use a guidance and even then
+
+I can do the same thing above with rails, rspec and some other big name gems and it works more often than not. Stabilize it. Please. I'm calling out this comment because it says what I feel:  "https://github.com/opscode/test-kitchen/issues/183#issuecomment-26180986":https://github.com/opscode/test-kitchen/issues/183#issuecomment-26180986
+
+bq. Yup. That's what I mean :smile:. I don't know why, but I experience your problem daily when testing stuff for the COOK project.
+
+Daily. A core maintainer. How do I have any chance then. :-/
+
+Lastly, my general gripe is that you have to know way too much about hose chef works internally to navigate the chaos and build cookbooks successfully. This seems to imply that for all the abstraction, we're just not there yet. Granted, provisions a server is a complex feat to be sure.
+
+h2. Conclusions (for now)
+
+Yes, some things are in flux. Some in beta. Some in growth spurts. People are working hard on all of these tools. I get it. Any of the above issues might be small and/or tolerable on their own. But stacked up as a constant barrage month after month, version after version where I spend more time troubleshooting the tools more than writing (or troubleshooting my code) and this is an adjective fail. I don't struggle this much with Rspec. I don't struggle this much with Rails. But in this case, the complexity and constant issues are simply too much to keep dealing with when I'd rather be provisioning servers and writing code. This could be a useless observation, but the amount of issues in these github projects are staggering, and the same goes for for COOK tickets. They may mean things are way to complex or unstable. Maybe not.
+
+I'm also willing to acknowledge sometimes, I'm doing some crazy shit, and that for less than complex things, people might not struggle with these things nearly as often.
+
+As I said above, I like everyone in the community. I like the ideas. I'm sure whatever frustration I feel, they get it in multiples from the user base and for surviving that, I salute them. At some point those, you just have to choose another toolset. I think that time is now for me. Thanks for all the fish.

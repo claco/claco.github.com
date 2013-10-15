@@ -20,7 +20,6 @@ GEM
     maruku (0.6.1)
       syntax (>= 1.0.0)
     posix-spawn (0.3.6)
-    pygmentize (0.0.3)
     syntax (1.0.0)
 
 PLATFORMS
@@ -29,4 +28,3 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   jekyll
-  pygmentize
