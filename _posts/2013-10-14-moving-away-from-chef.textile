@@ -89,7 +89,7 @@ and have it remotely work on the first 10 tries do to bundler issues, gem versio
 
 I can do the same thing above with rails, rspec and some other big name gems and it works more often than not. Stabilize it. Please. I'm calling out this thread because it says what I feel:  "https://github.com/opscode/test-kitchen/issues/183":https://github.com/opscode/test-kitchen/issues/183
 
-Daily. How do I have any chance then. :-/
+How do I have any chance then. :-/
 
 Lastly, my general gripe is that you have to know way too much about how chef works internally to navigate the chaos and build cookbooks successfully. This seems to imply that for all the abstraction, we're just not there yet. Granted, provisions a server is a complex feat to be sure.
 
