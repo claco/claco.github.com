@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: pytennessee"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1393033242" data-format="MM/dd/yyyy">
+            {{ 1393033242 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/pytennessee-2014-slides/">PyTennessee 2014 Slides</a>
+          </span>
+        </div>

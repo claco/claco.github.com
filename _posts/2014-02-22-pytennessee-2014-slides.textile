@@ -1,0 +1,10 @@
+---
+layout: post
+title: "PyTennessee 2014 Slides"
+published: true
+created:  1393033242
+tags: [pytennessee, slides]
+categories: [Presentations]
+---
+
+"Testing: It's Not Just For Your Code":/slides/pyten-testing.pdf
