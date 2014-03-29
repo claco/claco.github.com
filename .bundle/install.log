@@ -1,0 +1,13 @@
+# Logfile created on 2014-03-28 21:29:19 -0400 by logger.rb/31641
+I, [2014-03-28T21:29:19.908729 #47583]  INFO -- : 0:  RedCloth (4.2.9) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/RedCloth-4.2.9.gemspec
+I, [2014-03-28T21:29:21.446756 #47583]  INFO -- : 0:  posix-spawn (0.3.6) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/posix-spawn-0.3.6.gemspec
+I, [2014-03-28T21:29:22.570589 #47583]  INFO -- : 0:  albino (1.3.3) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/albino-1.3.3.gemspec
+I, [2014-03-28T21:29:24.361304 #47583]  INFO -- : 0:  fast-stemmer (1.0.1) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/fast-stemmer-1.0.1.gemspec
+I, [2014-03-28T21:29:24.929690 #47583]  INFO -- : 0:  classifier (1.3.3) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/classifier-1.3.3.gemspec
+I, [2014-03-28T21:29:25.621460 #47583]  INFO -- : 0:  directory_watcher (1.4.1) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/directory_watcher-1.4.1.gemspec
+I, [2014-03-28T21:29:28.041758 #47583]  INFO -- : 0:  kramdown (0.14.0) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/kramdown-0.14.0.gemspec
+I, [2014-03-28T21:29:28.913734 #47583]  INFO -- : 0:  liquid (2.4.1) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/liquid-2.4.1.gemspec
+I, [2014-03-28T21:29:29.426336 #47583]  INFO -- : 0:  syntax (1.0.0) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/syntax-1.0.0.gemspec
+I, [2014-03-28T21:29:30.712838 #47583]  INFO -- : 0:  maruku (0.6.1) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/maruku-0.6.1.gemspec
+I, [2014-03-28T21:29:31.529875 #47583]  INFO -- : 0:  jekyll (0.11.2) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@jekyll/specifications/jekyll-0.11.2.gemspec
+I, [2014-03-28T21:29:31.530537 #47583]  INFO -- : 0:  bundler (1.5.1) from /Users/claco/.rvm/gems/ruby-1.9.3-p484@global/specifications/bundler-1.5.1.gemspec

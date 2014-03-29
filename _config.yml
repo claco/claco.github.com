@@ -2,4 +2,5 @@
 base: http://claco.github.com
 pygments: true
 permalink: /blog/:title
+include: [.well-known]
 exclude: [Rakefile, jekyll.pid]
