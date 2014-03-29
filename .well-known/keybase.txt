@@ -1,0 +1,70 @@
+==================================================================
+https://keybase.io/claco
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://chrislaco.com
+  * I am claco (https://keybase.io/claco) on keybase.
+  * I have a public key with fingerprint D4B5 9C03 E9E2 960F 3118  8168 8286 F09D FEC8 72AD
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "d4b59c03e9e2960f311881688286f09dfec872ad",
+            "host": "keybase.io",
+            "key_id": "8286F09DFEC872AD",
+            "uid": "f9fab728101db8a0aa1b6d8613891f00",
+            "username": "claco"
+        },
+        "service": {
+            "hostname": "chrislaco.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1396055507,
+    "expire_in": 157680000,
+    "prev": "d6bc35d312ab7cd4a474d45c4e0d675a0391ef40f9219699a91b3e0448cb2210",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
+Comment: GPGTools - https://gpgtools.org
+
+owGbwMvMwMXY1PZh7r8TRWsZTx94n8QQbCZ7pVopKT+lUsmqWik7FUylZealpxYV
+FGXmlShZKaWYJJlaJhsYp1qmGlmaGaQZGxpaWBiaWVgYWZilGVimpKUmW5gbJaYo
+6Shl5BeDdACNSUosTtXLzAeKATnxmSlAUZB6NwNLFzdXZ6B6RxegXClYIs0yLTHJ
+3MjC0MAwJcki0SAx0TDJLMXCzNDYwtIwzcAApLA4tSgvMTcVqDo5JzE5X6lWRwko
+VJaZnApyMMhemHRGUWYxSIlecn4uUGdBUX5JfnJ+DlAqo6SkwAqks6SyAKS0PDUp
+HmpIfFJmXgrQ10ANZalFxZn5eUpWhkCVySWZIFMNjYEeNzU1NTDXUUqtKMgsSo3P
+BKkwNTezMAACkDWpZaCwMktKNjZNMTY0AvooOcUk0cTcJMXENNkk1SDFzNw00cDY
+0jA1zcQgzdLI0NLM0jLR0jDJONXAxMQiOcnIyBDk1eLUwrx8JSugTSWJ6UAjizPT
+8xJLSotSlWo7mWRYGBi5GNhYmUDxxsDFKQCLzfTLAgzdm1b7G/PsufTgw/vKRnF9
+XUdJ7n/L57IZH+QoNP2oZDx3xfTSj/lbNzz9UWKRy5HEoCq+OynmN0/0wQWJcXcE
++sK6LMxO9LjqbSyt3d+w/o/Zv9VvN9T2veteG3AkY6PKkt0Mu0XZntxYs3xlVvHD
+tIRlvdeaqycWPb68UeoHK9uyLqm2rv3vWAWqAro3Pl5YrXPM5WzHNYX3n9o+snut
+fc8iLLVB3lZQqkLC00TdVSgkYUHMHtdDlU0NX/Y0zdKJOvzIoCObf/nv7tDAT2uE
+oub7vv529dfM6MRNJw7cm2Wky+ZudilvWuIimSnnrp1is47z2b6j/K9K+tSHBlYZ
+mgft+dt28swN6rBR2bFK+umdkoVTC69b+/9NZDnN7dbE3fst+WDQPfVns0X3JAtU
+6jvtvXK9NSCx82V97F12z/k7BCuTj/BJR3wovep+WSH6rPI/1ZY7t+dWqwgLbd7L
+tWGj5Ktd8s6iH46v3c4cI5KVtLiv++1Uo3LN9dtXK7Eevfb0zg5rzmk3lWsvL+/P
+z7S5stF3w5/St76HpVVbzs/71MagxPrSq5mz/5u/8P7t7vPiZfSOPN4aZSWr1bXD
+eBXbhk2sbRs//ugOu5inlelU1bRjddLmcvWjBxebPHF7kr1H+6rFxw8NDF1hxSUC
+maXTecJqLGLf68+rDF34jEt1QuLy6x68Z7bm2svGvj8Xe6bGmffDtoUt3gA=
+=DmIz
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/claco
+
+==================================================================
