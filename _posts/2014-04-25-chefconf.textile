@@ -15,4 +15,4 @@ In a true instance of irony, even while working in Ansible for some projects, I 
 
 With that said, I had a great time at ChefConf. There are great things happening in this space. But more importantly, I got to meet various Chef people in person finally (Matt Ray, Seth Vargo, Julian Dunn, Joshua Timberman), and they most generously accepted my apologies and allowed me the opportunity to start mending some fences. I blame my wife for this newly found behavior, and of course Michael Ducy for tracking me down at CodeMash and just reaching out with a hug.
 
-Since that time, KitchenCI released, found a new place on GitHub. Plugins are getting love. Cookbooks too. Things are definately in a better state now than they were in October in most respects.
+Since that time, KitchenCI released, found a new place on GitHub. Plugins are getting love. Cookbooks too. Things are definately in a better state now than they were in October in most respects. And of course, they're all great people. Sometimes it's too easy to let computer frustrations get in the way of remembering that.
