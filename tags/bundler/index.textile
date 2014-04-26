@@ -5,6 +5,14 @@ title: "Tag: bundler"
 
 <div class="index posts">
         <div class="post">
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            {{ 1398468658 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/chefconf/">ChefConf 2014</a>
+          </span>
+        </div>
+        <div class="post">
           <span class="created" data-created="1292788439" data-format="MM/dd/yyyy">
             {{ 1292788439 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  

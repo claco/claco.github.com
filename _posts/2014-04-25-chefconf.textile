@@ -1,0 +1,18 @@
+---
+layout: post
+title: "ChefConf 2014"
+published: true
+created: 1398468658
+tags: [chef, chefconf, berkshelf, cookbooks, bundler]
+categories: [Conferences]
+---
+
+For those in the audience that follow me on "Twitter":https://twitter.com/claco, or read this blog, or work with me, you are likely aware that back in October, I publicly "rage quit":/blog/moving-away-from-chef/ "Opscode" Chef:http://getchef.com. This bore out of a general frustration with being bit by the same sorts of issues over and over, causing me to spend more time fighting the tools rather than writing code and deploying things.
+
+While I still believe every one of these gripes is valid, I certainly didn't deliver these frustrations in the most productive manner. As I understand it, this caused a few internal wiki posts and some meetings. (I'm sorry!). On top of that, I am most certain that I was being various levels of pain in the ass in some JIRA threads about chef client/cookbook issues. Again, not being terribly helpful, productive, or positive.
+
+In a true instance of irony, even while working in Ansible for some projects, I still work in Chef for some side projects and at work. In an even more fitting bout of self schadenfreude, I submitted a talk to ChefConf 2014 and it was accepted. For those keeping score, rage quitting a specific technology usually means not continuing to work with it and not talking at its conference. :-)
+
+With that said, I had a great time at ChefConf. There are great things happening in this space. But more importantly, I got to meet various Chef people in person finally (Matt Ray, Seth Vargo, Julian Dunn, Joshua Timberman), and they most generously accepted my apologies and allowed me the opportunity to start mending some fences. I blame my wife for this newly found behavior, and of course Michael Ducy for tracking me down at CodeMash and just reaching out with a hug.
+
+Since that time, KitchenCI released, found a new place on GitHub. Plugins are getting love. Cookbooks too. Things are definately in a better state now than they were in October in most respects.

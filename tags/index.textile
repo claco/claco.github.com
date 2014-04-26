@@ -53,16 +53,16 @@ title: Tags
           </span>
         </div>
         <div class="tag">
-          <span class="created" data-created="1381794383" data-format="MM/dd/yyyy">
-            1381794383
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            1398468658
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/berkshelf/">berkshelf</a>
           </span>
         </div>
         <div class="tag">
-          <span class="created" data-created="1292788439" data-format="MM/dd/yyyy">
-            1292788439
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            1398468658
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/bundler/">bundler</a>
@@ -101,11 +101,19 @@ title: Tags
           </span>
         </div>
         <div class="tag">
-          <span class="created" data-created="1381794383" data-format="MM/dd/yyyy">
-            1381794383
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            1398468658
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/chef/">chef</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            1398468658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/chefconf/">chefconf</a>
           </span>
         </div>
         <div class="tag">
@@ -154,6 +162,14 @@ title: Tags
           </span> &raquo;  
           <span class="title">
             <a class="permalink" href="/tags/controller/">controller</a>
+          </span>
+        </div>
+        <div class="tag">
+          <span class="created" data-created="1398468658" data-format="MM/dd/yyyy">
+            1398468658
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/tags/cookbooks/">cookbooks</a>
           </span>
         </div>
         <div class="tag">
