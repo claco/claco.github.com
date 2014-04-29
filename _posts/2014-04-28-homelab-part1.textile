@@ -20,7 +20,7 @@ h2. The Servers
 
 The stock N54L cube comes with 2GB Ram, 250GB hard drive, and a single onboard GB Ethernet port. To test bonding/aggregation, we need more NICs. While the CPU will do native kvm/VT-X, 2GB ram isn't going to cut it. While the specs state 8GB of ram max, it actually supposrts 16GB. After some online searching, I found "a page":http://n40l.wikia.com/wiki/Memory that lists all of the ram part numbers people have confirmed working. For the extra NICs, some cheap half-height TP-LINKS will do the trick. They don't support full 9K jumbo frames, but they do support 5K frames. Good enough for config/testing.
 
-* (x3) "HP N54L MiocroServer":http://www.newegg.com/Product/Product.aspx?Item=N82E16859107921
+* (x3) "HP N54L MicroServer":http://www.newegg.com/Product/Product.aspx?Item=N82E16859107921
 * (x3) "Kingston HyperX Blu 16GB Kit":http://www.amazon.com/gp/product/B007TTEHMW/
 * (x6) "TP-LINK TG-3468 10/100/1000Mbps Gigabit PCI Express Network Adapter":http://www.amazon.com/gp/product/B003CFATNI/
 
@@ -40,13 +40,13 @@ This is where things get fun. There are some things to note in the setup above.
 
 First, because I have 3 N54L servers, I can arrange them in a few different configurations: Controller/Compute/Storage, HA Controller1/HA Controller2/Compute1, Controller/Compute1/Compute2, etc.
 
-Second, because they all have 3NIC cards, I can also tinker with different network setups: Host/Provider(Bonded) networks, Public/Internal/Provider networks, Host/Provider/Data networks, etc.
+Second, because they all have 3 NIC cards, I can also tinker with different network setups: Host/Provider(Bonded) networks, Public/Internal/Provider networks, Host/Provider/Data networks, etc.
 
-This can be shuffled quite easily by ensuring all of the NICs come up in the same order (more on that in another post since the onboard controller likes to be eth2) and using a scheduling PXE/Image/Restore solution like FOG, CloneZilla, etc. I'm currently using an Ubuntu VM on my MBP for this. As soon as these go on a Shell Shocker again, I will be snagging another 1-2. :-)
+This can be shuffled quite easily by ensuring all of the NICs come up in the same order (more on that in another post since the onboard controller likes to be eth2) and using a scheduling PXE/Image/Restore solution like FOG, CloneZilla, etc. I'm currently using an Ubuntu VM on my MBP for this. In about 3 miutes, FOG can WakeOnLAN the 3 machines, restore them to CentOS/Ubuntu, and we're ready to go again. As soon as these go on a Shell Shocker again, I will be snagging another 1-2. :-)
 
 Finally, I'm using the SG300-10 on my desk trunked over to the SG300-20 on the bookshelf so I can work on a specific machine on the desk and other such tinkerings.
 
-In the end, if you time it right, for about $1500, you can have a pretty legit lab setup that "fits on a bookshelf":https://twitter.com/claco/status/450810061208944640.
+In the end, if you time it right, for about $1500, you can have a pretty legit lab setup that "fits on a bookshelf":https://twitter.com/claco/status/450810061208944640. Let's just home it doesn't "escelate into this":http://i.imgur.com/GQs7P.jpg.
 
 h3. Next Time on This Old Homelab
 
