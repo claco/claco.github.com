@@ -1,0 +1,14 @@
+---
+layout: default
+title: "Tag: cisco"
+---
+
+<div class="index posts">
+        <div class="post">
+          <span class="created" data-created="1398735809" data-format="MM/dd/yyyy">
+            {{ 1398735809 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/homelab-part1/">OpenStack Home Lab: Part 1</a>
+          </span>
+        </div>
