@@ -14,7 +14,7 @@ As luck would have it, about 2 days into determining whether to retrofit some ol
 
 On the networking front, Cisco has an amazingly cheap line of Small Business L3 Managed Switches, so I initially bought a "SG300-20":http://www.amazon.com/gp/product/B0041ORN9M/. For $300, you get a very Cisco IOS-like switch/router with a ton of "high end features":http://www.cisco.com/c/en/us/products/collateral/switches/small-business-smart-switches/data_sheet_c78-610061.html. I've since added a smaller SG300-10 to put on the desk when I'm working on a single machine plugged into a monitor, and to force myself to tinker with VLAN trunking, aggregation between 2 of these switches.
 
-To round out the networking, I need to run this lab network-in-a-network double NAT style since I can't add routes to the Apple Airport Extreme. As an added challenge, this lab is upstairs on a bookshelf where it only has wifi access to the parent network. Luckily, "TP-LINK TL-WR710N":http://www.amazon.com/gp/product/B00FRMAOIO/ is perfect for this. Not only is it a steal at $28, but it supports WISP (Wireless Internet Service Provider) mode. In English, it can act as a Wifi Client AND a Wifi Access Point w/NAT/DHCP at the same time. Perfect for connecting the upstairs lab to the network downstairs.
+To round out the networking, I need to run this lab network-in-a-network double NAT style since I can't add routes to the Apple Airport Extreme. As an added challenge, this lab is upstairs on a bookshelf where it only has wifi access to the parent network. Luckily, "TP-LINK TL-WR710N":http://www.amazon.com/gp/product/B00FRMAOIO/ is perfect for this. Not only is it a steal at $28, but it supports WISP (Wireless Internet Service Provider) mode. In English, it can act as a Wifi Client AND a Wifi Access Point w/NAT/DHCP at the same time along with *two* ethernet LAN ports. Perfect for connecting the upstairs lab to the network downstairs and when I get lazy, I can just wifi into the lab upstairs from downstairs.
 
 h2. The Servers
 
@@ -28,13 +28,13 @@ These machines are not easy to work on however. There's not a lot of room in the
 
 h2. The Network
 
-As mentioned above, I'm going to be running this lab as a network in a network using the TL-WR710N in Wisp mode, connecting the SG300-20 to the Apple Airport Extreme.
+As mentioned above, I'm going to be running this lab as a network in a network using the TL-WR710N in WISP mode, connecting the SG300-20 to the Apple Airport Extreme.
 
 * "TP-LINK TL-WR710N 150Mbps Wireless N Mini Pocket Router":http://www.amazon.com/gp/product/B00FRMAOIO/
 * "Cisco SG300-20 20-port Gigabit Managed Switch":http://www.amazon.com/gp/product/B0041ORN9M/
 * "Cisco SG300-10 10-port Gigabit Managed Switch":http://www.amazon.com/gp/product/B0041ORN6U/
 
-!/images/lab.png!
+!/images/homelab/lab1-1.png!
 
 This is where things get fun. There are some things to note in the setup above.
 
