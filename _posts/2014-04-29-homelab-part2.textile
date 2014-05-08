@@ -8,7 +8,7 @@ categories: [OpenStack, Lab, Networking]
 ---
 h2. OpenStack Home Lab Part Duex: Network in a Network
 
-In the "last post":/blog/homelab-part2/, I mentioned that due to not being able to add routes to the Apple Airport Extreme, I decided on running double NAT, a network in a network, using the "TP-LINK TL-WR710N 150Mbps Wireless N Mini Pocket Router":http://www.amazon.com/gp/product/B00FRMAOIO/. In this port, I'll configure the pocket wifi router to connect to my existing Wifi network and expose a new Wifi lab network using the gateway address we'll point to later in the switch configurations.
+In the "last post":/blog/homelab-part1/, I mentioned that due to not being able to add routes to the Apple Airport Extreme, I decided on running double NAT, a network in a network, using the "TP-LINK TL-WR710N 150Mbps Wireless N Mini Pocket Router":http://www.amazon.com/gp/product/B00FRMAOIO/. In this port, I'll configure the pocket wifi router to connect to my existing Wifi network and expose a new Wifi lab network using the gateway address we'll point to later in the switch configurations.
 
 !/images/homelab/lab-wisp.png!
 
