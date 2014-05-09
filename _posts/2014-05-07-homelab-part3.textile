@@ -18,6 +18,10 @@ In the "last post":/blog/homelab-part2/, we configured our Wireless AP to connec
 
 !/images/homelab/lab-switch1.png!
 
+h3. Dans Courses
+
+Disclaimer: I don't know jack about switches/routers/vlans...well, I didn't. I can not praise this "youtube channel":https://www.youtube.com/user/danscourses enough for being a huge resource for getting your mind into working with Cisco-ish hardware. After watching those CCNA videos for a few weeks, I at least had half a chance to understand what I was doing.
+
 h2. Connecting to the switch
 
 While this switch has a pretty awesome GUI interface to configure various, the main goal is to learn a lot of things at once, I'm going to force myself to use the CLI. While this switch is not a Cisco IOS based switch, the cli that is provided is VERY close to IOS.
