@@ -14,7 +14,7 @@ categories: [OpenStack, Lab, Networking]
 
 h2. OpenStack Home Lab Part 3: Switcheroo
 
-In the "last post":/blog/homelab-part3/, we configured our Wireless AP to connect to the existing network and expose a new LAN for the lab. Now it's time to start configuring our switch to get the proper time, use the new lan network address space, hand out addresses and route to the WAP gateway to the internets.
+In the "last post":/blog/homelab-part2/, we configured our Wireless AP to connect to the existing network and expose a new LAN for the lab. Now it's time to start configuring our switch to get the proper time, use the new lan network address space, hand out addresses and route to the WAP gateway to the internets.
 
 !/images/homelab/lab-switch1.png!
 
@@ -635,9 +635,9 @@ Now that we've configured the native vlan1 network, we can start adding vlans fo
 
 !/images/homelab/switch-ports.png!
 
-Since I have 3 (and soon 4) servers, I'm going to divide up the ports in a visual way; in groups of 4: top left (green) is the host network on vlan10, top right (red) is the sometimes used vlan20 network, and the bottom left/right (blue) ports in each group will be the vim/instance vlan30 network. These will either have both ports plugged in for a bond/lagg/lacp, or will be only one port plugged in if we're also using vlan20 (top right).
+Since I have 3 (and soon 4) servers, I'm going to divide up the ports in a visual way; in groups of 4: top left (green) is the host network on vlan10, top right (yellow) is the sometimes used vlan20 network, and the bottom left/right (blue) ports in each group will be the vim/instance vlan30 network. These will either have both ports plugged in for a bond/lagg/lacp, or will be only one port plugged in if we're also using vlan20 (top right).
 
-Now, given that image, we will be adding ports (as they are numbered on the switch) 2, 4, 6, and 8 to vlan10.
+Now, given that image, we will be adding ports (as they are numbered on the switch) 1, 3, 5, and 7 to vlan10. Ports 2, 4, 6, and 8 will be vlan20, and ports 9-16 will be vlan30. Ports 17/18 (orange) will be the native vlan. Port 18 will be the trunk port to the other router for all vlans, and port 20 is the link to the WAP gateway (also vlan1)
 
 First, we'll create VLAN10 and add a [router] interface for it:
 
@@ -670,7 +670,7 @@ SG300-20(config)#
 Next, we'll configure each port in the same way, setting the port mode, adding it to the vlan, and enabling portfast:
 
 <pre><code>
-SG300-20(config)#interface ge2
+SG300-20(config)#interface ge1
 SG300-20(config-if)#switchport mode ?
   general              generic port mode
   access               vlan unaware port
@@ -688,8 +688,8 @@ SG300-20(config-if)#exit
 Now for each of those ports, we should see that it is now assigned to vlan10:
 
 <pre><code>
-SG300-20#show interface switchport ge2
-Port : gi2
+SG300-20#show interface switchport ge1
+Port : gi1
 Port Mode: Access
 Gvrp Status: disabled
 Ingress Filtering: true
@@ -731,6 +731,58 @@ h2. VLAN30 - OpenStack VM/Instance Network
 This network will carry the GRE tunnel traffic from all of the "private" VM instance networks to the Neutron node.
 
 To create the VLAN30 network, simply follow the instructions above for VLAN10, but use @10.10.30.0/24@ with a default gateway/interface of @10.10.30.1@. Unlike the other networks, do *NOT* create a dhcp pool for this network. All interfaces connected to it will have *no* ip address assigned and will all bridge.
+
+h2. VLAN Trunk Port
+
+We're also going to need a trunk port to carry all vlan traffic between this switch and the SG300-10 we'll configure later. To do that, we just need to set the mode to trunk, and add the allowed vlans to that port:
+
+<pre><code>
+SG300-20#conf t
+SG300-20(config)#int gi19
+SG300-20(config-if)#switchport mode ?
+  general              generic port mode
+  access               vlan unaware port
+  trunk                vlan aware port
+  customer             customer equipment port
+SG300-20(config-if)#switchport mode trunk
+SG300-20(config-if)#switchport trunk ?
+  allowed              Specify trunk as allowed
+  native               vlan unaware port
+SG300-20(config-if)#switchport trunk allowed ?
+  vlan                 Configure VLANs in a trunk port
+SG300-20(config-if)#switchport trunk allowed vlan ?
+  add                  Specify which VLAN to add to the port.
+  remove               Specify the VLAN to remove from port.
+SG300-20(config-if)#switchport trunk allowed vlan add ?
+  <2-4094>             Specify which VLAN to add to the port.
+  all                  Specify all existing IEEE 802.1 VLANs.
+SG300-20(config-if)#switchport trunk allowed vlan add all
+SG300-20(config-if)#exit
+SG300-20(config)#exit
+</code></pre>
+
+Now we should see all vlans listed on the g19 interface:
+
+<pre><code>
+SG300-20#show interface switchport gi19
+Port : gi10
+Port Mode: Trunk
+Gvrp Status: disabled
+Ingress Filtering: true
+Acceptable Frame Type: admitAll
+Ingress UnTagged VLAN ( NATIVE ): 1
+
+Port is member in:
+
+Vlan               Name               Egress rule Port Membership Type
+---- -------------------------------- ----------- --------------------
+ 1                  1                  Untagged          Static
+ 10               oshost                Tagged           Static
+ 20               osdata                Tagged           Static
+ 30                osvm                 Tagged           Static
+</pre></code>
+
+Time to test out some things, like dhcp. :-P
 
 h2. Plug In Some Cables
 
