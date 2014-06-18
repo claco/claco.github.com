@@ -5,6 +5,14 @@ title: "Category: OpenStack"
 
 <div class="index posts">
         <div class="post">
+          <span class="created" data-created="1403055355" data-format="MM/dd/yyyy">
+            {{ 1403055355 | date: "%Y-%m-%dT%H:%M:%S%z" }}
+          </span> &raquo;  
+          <span class="title">
+            <a class="permalink" href="/blog/homelab-part5/">OpenStack Home Lab: Part 5</a>
+          </span>
+        </div>
+        <div class="post">
           <span class="created" data-created="1399648306" data-format="MM/dd/yyyy">
             {{ 1399648306 | date: "%Y-%m-%dT%H:%M:%S%z" }}
           </span> &raquo;  

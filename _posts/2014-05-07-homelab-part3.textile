@@ -3,7 +3,7 @@ layout: post
 title: "OpenStack Home Lab: Part 3"
 published: true
 created: 1399502695
-tags: [openstack, rackspace, lab, microserverm hp, cisco, switch, pxe, dhcp]
+tags: [openstack, rackspace, lab, microserver, hp, cisco, switch, pxe, dhcp]
 categories: [OpenStack, Lab, Networking]
 ---
 
@@ -30,7 +30,7 @@ And to heighten the old school experience, I'm going to use the serial console p
 
 !{width:45%;height:45%;}/images/homelab/usb-serial.jpg!:/images/homelab/usb-serial.jpg
 
-Assuming you have all the cables connected, the switch powered on, and you have a compatible adatper, you should now have a new tty device for this serial connection. Most of the compatible adapters use the "PL2303" chipset, so they usually look something like this:
+Assuming you have all the cables connected, the switch powered on, and you have a compatible adapter, you should now have a new tty device for this serial connection. Most of the compatible adapters use the "PL2303" chipset, so they usually look something like this:
 
 <pre><code>
 → ls /dev/*PL*
@@ -357,7 +357,7 @@ SG300-20(config)#clock source sntp ?
 SG300-20(config)#clock source sntp
 </code></pre>
 
-Now, we need to tell the switch about our location; specifically what our time zone is, and if we follow dyalight savings, etc:
+Now, we need to tell the switch about our location; specifically what our time zone is, and if we follow daylight savings, etc:
 
 <pre><code>
 SG300-20(config)#clock timezone ?
@@ -577,7 +577,7 @@ Save your config!
 
 h2. Disable Spanning Tree Negotiation
 
-As a quick tangent, but before we configure another vlan and assign switch ports to it, we need to tweak some unused, but on by default spanning tree configurations. Without too much detail, with spanning tree enabled, when a cable is plugged into each port, the link will come up/down/up and take a few seconds. This is because the switch is trying to figure out if it is being plugged into another switch to see if STP nedotiation needs to happen.
+As a quick tangent, but before we configure another vlan and assign switch ports to it, we need to tweak some unused, but on by default spanning tree configurations. Without too much detail, with spanning tree enabled, when a cable is plugged into each port, the link will come up/down/up and take a few seconds. This is because the switch is trying to figure out if it is being plugged into another switch to see if STP negotiation needs to happen.
 
 <pre><code>
 SG300-20#show spanning-tree ge20
@@ -615,7 +615,7 @@ SG300-20(config-if)#exit
 SG300-20(config)#exit
 </code></pre>
 
-While we could completely disable spanning tree on this interface, seems like most people just to portfast. Not sure why. :-)
+While we could completely disable spanning tree on this interface, seems like most people just do portfast. Not sure why. :-)
 
 <pre><code>
 SG300-20#show spanning-tree ge20
@@ -631,7 +631,7 @@ Number of transitions to forwarding state: 1
 BPDU: sent 203, received 4
 </code></pre>
 
-Now that we've told the switch to just put that port directly into forward mode, if you unplug/plug in that cable again, you'll notive the link comes up once, and quickly.
+Now that we've told the switch to just put that port directly into forward mode, if you unplug/plug in that cable again, you'll native the link comes up once, and quickly.
 
 h2. VLAN10 - OpenStack Host/Management Network
 
@@ -639,7 +639,7 @@ Now that we've configured the native vlan1 network, we can start adding vlans fo
 
 !/images/homelab/switch-ports.png!
 
-Since I have 3 (and soon 4) servers, I'm going to divide up the ports in a visual way; in groups of 4: top left (green) is the host network on vlan10, top right (yellow) is the sometimes used vlan20 network, and the bottom left/right (blue) ports in each group will be the vim/instance vlan30 network. These will either have both ports plugged in for a bond/lagg/lacp, or will be only one port plugged in if we're also using vlan20 (top right).
+Since I have 3 (and soon 4) servers, I'm going to divide up the ports in a visual way; in groups of 4: top left (green) is the host network on vlan10, top right (yellow) is the sometimes used vlan20 network, and the bottom left/right (blue) ports in each group will be the vm/instance vlan30 network. These will either have both ports plugged in for a bond/lagg/lacp, or will be only one port plugged in if we're also using vlan20 (top right).
 
 Now, given that image, we will be adding ports (as they are numbered on the switch) 1, 3, 5, and 7 to vlan10. Ports 2, 4, 6, and 8 will be vlan20, and ports 9-16 will be vlan30. Ports 17/18 (orange) will be the native vlan. Port 18 will be the trunk port to the other router for all vlans, and port 20 is the link to the WAP gateway (also vlan1)
 
@@ -671,7 +671,7 @@ SG300-20(config-if)#exit
 SG300-20(config)#
 </code></pre>
 
-Next, we'll configure each port in the same way, setting the port mode, adding it to the vlan, and enabling portfast:
+Next, we'll configure each port (ge1, ge5, ge9, ge13) in the same way, setting the port mode, adding it to the vlan, and enabling portfast:
 
 <pre><code>
 SG300-20(config)#interface ge1
@@ -689,7 +689,7 @@ SG300-20(config-if)#spanning-tree portfast
 SG300-20(config-if)#exit
 </code></pre>
 
-Now for each of those ports, we should see that it is now assigned to vlan10:
+Now for each of those green vlan10 (ge1, ge5, ge9, ge13) ports in the pic, we should see that it is now assigned to vlan10:
 
 <pre><code>
 SG300-20#show interface switchport ge1
@@ -711,7 +711,7 @@ Finally, let's add a dhcp pool for this vlan:
 
 <pre><code>
 SG300-20(config)#ip dhcp pool network oshost
-SG300-20(config-dhcp)#$10.10.10.100 high 10.10.10.150 255.255.255.0
+SG300-20(config-dhcp)#address low10.10.10.100 high 10.10.10.150 255.255.255.0
 SG300-20(config-dhcp)#
 SG300-20(config-dhcp)#default-router 10.10.10.1
 SG300-20(config-dhcp)#dns-server 8.8.8.8
@@ -726,9 +726,9 @@ Easy peasy right? :-)
 
 h2. VLAN20 - OpenStack Private/Internal Network
 
-Depending on the type of setup we're running in the lab, we might have split our host/management network into two separate networks: public and internal. TThis could also be a "dmz" network for floating ip addresses, and other crazy configs.
+Depending on the type of setup we're running in the lab, we might have split our host/management network into two separate networks: public and internal. This could also be a "dmz" network for floating ip addresses, and other crazy configs.
 
-To create the VLAN20 network, simply follow the instructions above for VLAN10, but use @10.10.20.0/24@ with a default gateway/interface of @10.10.20.1@ with a corresponging dhcp pool for @10.10.20.100-10.10.20.150@.
+To create the VLAN20 network, simply follow the instructions above for VLAN10, but use @10.10.20.0/24@ with a default gateway/interface of @10.10.20.1@ with a corresponding dhcp pool for @10.10.20.100-10.10.20.150@.
 
 h2. VLAN30 - OpenStack VM/Instance Network
 
@@ -769,7 +769,7 @@ Now we should see all vlans listed on the g19 interface:
 
 <pre><code>
 SG300-20#show interface switchport gi19
-Port : gi10
+Port : gi19
 Port Mode: Trunk
 Gvrp Status: disabled
 Ingress Filtering: true

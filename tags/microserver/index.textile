@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Tag: cisco"
+title: "Tag: microserver"
 ---
 
 <div class="index posts">

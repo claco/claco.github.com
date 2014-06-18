@@ -3,12 +3,12 @@ layout: post
 title: "OpenStack Home Lab: Part 2"
 published: true
 created: 1398822161
-tags: [openstack, rackspace, lab, microserverm hp, cisco, switch, pxe, dhcp]
+tags: [openstack, rackspace, lab, microserver, hp, cisco, switch, pxe, dhcp]
 categories: [OpenStack, Lab, Networking]
 ---
 h2. OpenStack Home Lab Part Duex: Network in a Network
 
-In the "last post":/blog/homelab-part1/, I mentioned that due to not being able to add routes to the Apple Airport Extreme, I decided on running double NAT, a network in a network, using the "TP-LINK TL-WR710N 150Mbps Wireless N Mini Pocket Router":http://www.amazon.com/gp/product/B00FRMAOIO/. In this port, I'll configure the pocket wifi router to connect to my existing Wifi network and expose a new Wifi lab network using the gateway address we'll point to later in the switch configurations.
+In the "last post":/blog/homelab-part1/, I mentioned that due to not being able to add routes to the Apple Airport Extreme, I decided on running double NAT, a network in a network, using the "TP-LINK TL-WR710N 150Mbps Wireless N Mini Pocket Router":http://www.amazon.com/gp/product/B00FRMAOIO/. In this post, I'll configure the pocket wifi router to connect to my existing Wifi network and expose a new Wifi lab network using the gateway address we'll point to later in the switch configurations.
 
 !/images/homelab/lab-wisp.png!
 
@@ -34,7 +34,7 @@ On the *Working Mode* page, select *WISP Client Router* and hit *Next*.
 
 !{width: 85%; height: 85%;}/images/homelab/lab2-5.png!:/images/homelab/lab2-5.png
 
-On te *WAN Connection Type* screen, choose *Dynamic IP* since we will be getting our access from the other networks DHCP services. We could also select *Static IP*, but in my case, I've already reserved a specific IP for this routers Host/MAC. Click *Next*
+On the *WAN Connection Type* screen, choose *Dynamic IP* since we will be getting our access from the other networks DHCP services. We could also select *Static IP*, but in my case, I've already reserved a specific IP for this routers Host/MAC. Click *Next*
 
 !{width: 85%; height: 85%;}/images/homelab/lab2-6.png!:/images/homelab/lab2-6.png
 
@@ -44,7 +44,7 @@ In the *AP Setting* section, enter a new SSID for the LAN side of this router al
 
 !{width: 85%; height: 85%;}/images/homelab/lab2-7.png!:/images/homelab/lab2-7.png
 
-At this point, it will save the new settings and prompt you to reboot the pocket wifi router. CLick *Reboot*.
+At this point, it will save the new settings and prompt you to reboot the pocket wifi router. Click *Reboot*.
 
 !{width: 85%; height: 85%;}/images/homelab/lab2-8.png!:/images/homelab/lab2-8.png
 
@@ -56,7 +56,7 @@ After a minute or so, once the unit reboots, you should now see the new network 
 
 h2. Disabling DHCP
 
-Because we're going to have the SG300-20 do different DHCP pools based on VLANS, we're going to disable DHCP in this AP itself to avoid and confusion later amungst all of the devices.
+Because we're going to have the SG300-20 do different DHCP pools based on VLANS, we're going to disable DHCP in this AP itself to avoid and confusion later amongst all of the devices.
 
 Once connected to the new network, go to the *Network* tab, click *Disable* and then *Save*
 
@@ -64,7 +64,7 @@ Once connected to the new network, go to the *Network* tab, click *Disable* and 
 
 h2. Configuring the LAN IP
 
-All that's left to do is configure the LAN IP of this AP to be the Gateway IP i our lab diagram. Choose *Network* -> *LAN*, anter the new IP address and click *Save*
+All that's left to do is configure the LAN IP of this AP to be the Gateway IP in our lab diagram. Choose *Network* -> *LAN*, enter the new IP address and click *Save*
 
 !{width: 85%; height: 85%;}/images/homelab/lab2-12.png!:/images/homelab/lab2-12.png
 
@@ -72,7 +72,7 @@ Once the unit reboots, and because the AP no longer hands out IP addresses via i
 
 !/images/homelab/lab2-13.png!
 
-And that's it. We now have our Lab Network -> Existing Network via Wifi configured.
+And that's it. We now have our Lab Network -> Existing Network via Wifi configured. At this point, you should be able to browse the interweb series of tubes.
 
 h3. Next Time on This Old Homelab
 

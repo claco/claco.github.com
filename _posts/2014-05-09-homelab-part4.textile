@@ -3,7 +3,7 @@ layout: post
 title: "OpenStack Home Lab: Part 4"
 published: true
 created: 1399648306
-tags: [openstack, rackspace, lab, microserverm hp, cisco, switch, pxe, dhcp]
+tags: [openstack, rackspace, lab, microserver, hp, cisco, switch, pxe, dhcp]
 categories: [OpenStack, Lab, Networking]
 ---
 
@@ -51,7 +51,7 @@ Confirm new password: ***********
 switchc72a1d#
 </code></pre>
 
-We will leave this switch and L2 (Switch) mode, but configure all of the other nicities, like dns, sntp, etc.
+We will leave this switch and L2 (Switch) mode, but configure all of the other niceties, like dns, sntp, etc.
 
 h2. Change the Hostname
 
@@ -328,18 +328,15 @@ Vlan               Name               Egress rule Port Membership Type
  30                 30                  Tagged           Static
 </code></pre>
 
-Now for realz, plug port 10 into the other switches port 19 and behold!
+Now for realz, plug the SG300-10 port 10 into the SG300-20 port 19 and behold!
 
 <pre><code>
-Now plug port 10 into the other port 19.
-
-
-02-May-2013 15:05:45 %LINK-I-Up:  gi10
-02-May-2013 15:05:45 %LINK-I-Up:  Vlan 1
-02-May-2013 15:05:45 %LINK-I-Up:  Vlan 10
-02-May-2013 15:05:45 %LINK-I-Up:  Vlan 20
-02-May-2013 15:05:45 %LINK-I-Up:  Vlan 30
-02-May-2013 15:05:45 %STP-W-PORTSTATUS: gi10: STP status Forwarding
+02-May-2014 15:05:45 %LINK-I-Up:  gi10
+02-May-2014 15:05:45 %LINK-I-Up:  Vlan 1
+02-May-2014 15:05:45 %LINK-I-Up:  Vlan 10
+02-May-2014 15:05:45 %LINK-I-Up:  Vlan 20
+02-May-2014 15:05:45 %LINK-I-Up:  Vlan 30
+02-May-2014 15:05:45 %STP-W-PORTSTATUS: gi10: STP status Forwarding
 </code></pre>
 
 Now if you plug your ethernet cable into any of the ports 1-9, you should get an address from dhcp pool "native" (10.10.1.0/24) and you should be able to get to the internets.
@@ -402,6 +399,8 @@ Nice! vlan1 ip and router, dns servers, and default domain name. Now, let's conn
 !/images/homelab/lab3-2.png!
 
 Winning! If you've created vlan20/30, give those a shot as well. Also, if we now connect to the WAP via wifi, we should also get a @10.10.1.x@ address from the switches dhcp server on vlan1.
+
+_Now don't do what I did, which is forget to save your config and wonder why is wasn't working a week later_ :-)
 
 h3. Next Time on This Old Homelab
 
